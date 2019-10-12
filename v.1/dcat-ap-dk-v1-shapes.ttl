@@ -16,8 +16,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcatdk: <http://data.gov.dk/model/profile/dcatdk#> .
 
-
-### UNDER UDVIKLING (developement)
+## SHAPES GRAPH 
+## UNDER UDVIKLING (development)
 
 :DatasetShape
     a sh:NodeShape ;
