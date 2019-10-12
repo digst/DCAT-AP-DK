@@ -5,5 +5,4 @@
 * SHACL-Specifikation: https://lnkd.in/d8vhyDW
 * SHACL-Playground: https://lnkd.in/d2DEkrB
 
-* DCAT-AP-DK (v.1) Shapes Graph 
-* DCAT-AP-DK (v.1) Example Data Graph
+Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graph i filerne ovenfor
