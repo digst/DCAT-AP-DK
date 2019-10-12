@@ -1,22 +1,5 @@
 [
-  {
-    "@id": "http://data.gov.dk/model/concept/core/dataprotection/NonPersonalData",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
-  {
-    "@id": "http://publications.europa.eu/resource/authority/language/DAN",
-    "@type": [
-      "http://www.w3.org/2004/02/skos/core#Concept"
-    ]
-  },
+
   {
     "@id": "https://data.gov.dk/dataset/456ef843-f9d4-496c-8150-cf1e3073ef78",
     "@type": [
@@ -102,4 +85,26 @@
       }
     ]
   }
+  
+  
+  {
+    "@id": "http://data.gov.dk/model/concept/core/dataprotection/NonPersonalData",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "http://publications.europa.eu/resource/authority/language/DAN",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  
+  
 ]
