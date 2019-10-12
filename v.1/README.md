@@ -1,6 +1,4 @@
-## DCAT-AP-DK V.1 (under udvikling)
-
-# Anvendelsesprofil (SHACL)
+## Anvendelsesprofil: DCAT-AP-DK V.1 (udtrykt med SHACL) - under udvikling
 
 * SHACL-Specifikation: https://www.w3.org/TR/shacl/
 * SHACL-Playground: https://shacl.org/playground/
