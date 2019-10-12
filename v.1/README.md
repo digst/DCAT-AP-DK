@@ -2,8 +2,8 @@
 
 # Anvendelsesprofil (SHACL)
 
-SHACL-Specifikation: https://lnkd.in/d8vhyDW
-SHACL-Playground: https://lnkd.in/d2DEkrB
+* SHACL-Specifikation: https://lnkd.in/d8vhyDW
+* SHACL-Playground: https://lnkd.in/d2DEkrB
 
-DCAT-AP-DK (v.1) Shapes Graph 
-DCAT-AP-DK (v.1) Example Data Graph
+* DCAT-AP-DK (v.1) Shapes Graph 
+* DCAT-AP-DK (v.1) Example Data Graph
