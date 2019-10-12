@@ -1,4 +1,4 @@
-## V.1
+## DCAT-AP-DK V.1 (under udvikling)
 
 # Anvendelsesprofil (SHACL)
 
