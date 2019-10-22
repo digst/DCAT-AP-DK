@@ -7,5 +7,5 @@
 
 Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JSON-LD) i filerne ovenfor
 
-## Subject Areas
-![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/DCAT-AP-DKv1.png "UML Diagram")
+## UML-diagram for anvendelseprofil
+![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/v.1/DCAT-AP-DKv1.png "UML Diagram")
