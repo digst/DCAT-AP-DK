@@ -1,5 +1,5 @@
 # Anvendelsesprofil: DCAT-AP-DK V.1 
-(udtrykt med SHACL) 
+(udtrykt med SHACL - visualiseret med UML) 
 
 ## OBS: Denne side er under udvikling
 
