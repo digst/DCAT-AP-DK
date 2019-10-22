@@ -15,6 +15,10 @@ Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JS
 
 DATASET PROPERTIES:
 
+DCAT Application Profile for Data Portals in Europe - Final 1.0: 
+https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/10
++ enkelte danske egenskaber (se nederst)
+
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
 | description|  dct:description	 |  rdfs:Literal |  This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.	 |  1..n |   |	
