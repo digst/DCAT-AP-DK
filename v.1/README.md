@@ -30,3 +30,5 @@ Property|	URI|	Range|	Usage note|	Card |
 public administrative task type|	dcat-dk:publicAdministrativeTaskType|	skos:Concept|(OBS: Dansk tilføjelse) Forvaltningsopgave: Angiver en eller flere forvaltningsopgaver jf. FORM som har dannet grundlag for dataindsamlingen|	0..n	|
 | personal data category 	|dcat-dk:personalDataCategory	|skos:Concept	|(OBS: Dansk tilføjelse) Personoplysningskategori: Angiver hvilken type af personoplysninger som datasættet indeholder.|0..n	
 | legal ressource |cv:hasLegalResource	|eli:LegalResource|(OBS: Dansk tilføjelse)	Hjemmel: Den hjemmel forankret i lovgivningen som har været gældende for dataindsamlingen.	 |0..n	|
+
+EU-kodelister (kontrollerede udfaldsrum) for hhv. frequency og language kan findes her: https://publications.europa.eu/en/web/eu-vocabularies/authority-tables
