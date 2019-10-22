@@ -1,8 +1,8 @@
 ## Anvendelsesprofil: DCAT-AP-DK V.1 (udtrykt med SHACL) - under udvikling
 
 * SHACL-Specifikation: https://www.w3.org/TR/shacl/
-* SHACL-Playground: https://shacl.org/playground/ (her kan datagrafer automatisk valideres op imod SHACL-anvendelssprofilen) 
-* Interoperability Test Bed: https://joinup.ec.europa.eu/solution/interoperability-test-bed/news/shacl-validator-updates
+* SHACL-Playground: https://shacl.org/playground/ 
+(I denne SHACL-sandkasse kan eksempeldatagrafer automatisk valideres op imod SHACL-anvendelssprofilen -dcat-ap-dk-v1-shapes.ttl) 
 * RDF converter: http://www.easyrdf.org/converter
 
 Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JSON-LD) i filerne ovenfor
@@ -32,3 +32,5 @@ public administrative task type|	dcat-dk:publicAdministrativeTaskType|	skos:Conc
 | legal ressource |cv:hasLegalResource	|eli:LegalResource|(OBS: Dansk tilføjelse)	Hjemmel: Den hjemmel forankret i lovgivningen som har været gældende for dataindsamlingen.	 |0..n	|
 
 EU-kodelister (kontrollerede udfaldsrum) for hhv. frequency og language kan findes her: https://publications.europa.eu/en/web/eu-vocabularies/authority-tables
+
+Se evt. også: Interoperability Test Bed: https://joinup.ec.europa.eu/solution/interoperability-test-bed/news/shacl-validator-updates
