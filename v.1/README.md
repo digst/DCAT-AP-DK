@@ -1,4 +1,4 @@
-# Anvendelsesprofil: DCAT-AP-DK V.1 
+# Anvendelsesprofil: DCAT-AP-DK v.1.0.0 
 Anvendelsesprofilen er udtrykt med SHACL og visualiseret med UML.
 
 OBS: Denne side er under udvikling
