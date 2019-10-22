@@ -15,8 +15,9 @@ Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JS
 
 DATASET PROPERTIES:
 
-DCAT Application Profile for Data Portals in Europe - Final 1.0: 
-https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/10
+DCAT Application Profile for Data Portals in Europe - Final 1.1: 
+https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/11
+DOCX-fil med specifikation: https://github.com/SEMICeu/DCAT-AP/raw/master/releases/1.1/dcat-ap_1.1.docx
 + enkelte danske egenskaber (se nederst)
 
 Property|	URI|	Range|	Usage note|	Card |
