@@ -1,6 +1,6 @@
-## Anvendelsesprofil: DCAT-AP-DK V.1 (udtrykt med SHACL) 
+# Anvendelsesprofil: DCAT-AP-DK V.1 (udtrykt med SHACL) 
 
-# OBS: Denne side er under udvikling
+## OBS: Denne side er under udvikling
 
 * SHACL-Specifikation: https://www.w3.org/TR/shacl/
 * SHACL-Playground: https://shacl.org/playground/ 
