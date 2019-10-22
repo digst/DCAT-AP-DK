@@ -6,3 +6,6 @@
 * RDF converter: http://www.easyrdf.org/converter
 
 Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JSON-LD) i filerne ovenfor
+
+## Subject Areas
+![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/DCAT-AP-DKv1.png "UML Diagram")
