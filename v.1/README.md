@@ -27,6 +27,6 @@ Property|	URI|	Range|	Usage note|	Card |
 | spatial/ geographical coverage|	dct:spatial|	dct:Location|	This property refers to a geographic region that is covered by the Dataset. |	0..n|
 | data responsible organisation |	dcat-dk:dataResponsibleOrganisation|	dcat-dk:DataResponsibleOrganisation	|dataansvarlig organisation|0..1|
 | payment imposed|	dcat-dk:paymentImposedContents|	xsd:Boolean	|	betalingspålagt |0..1|
-public administrative task type / forvaltningsopgave|	dcat-dk:publicAdministrativeTaskType|	skos:Concept	0..n	|
+public administrative task type|	dcat-dk:publicAdministrativeTaskType|	skos:Concept|Forvaltningsopgave|	0..n	|
 | personal data category 	|dcat-dk:personalDataCategory	|skos:Concept	|Personoplysningskategori|0..n	
-| legal ressource |cv:hasLegalResource	|eli:LegalResource|	hjemmel	 |0..n	|
+| legal ressource |cv:hasLegalResource	|eli:LegalResource|	Hjemmel	 |0..n	|
