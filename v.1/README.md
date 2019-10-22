@@ -1,4 +1,5 @@
-# Anvendelsesprofil: DCAT-AP-DK V.1 (udtrykt med SHACL) 
+# Anvendelsesprofil: DCAT-AP-DK V.1 
+(udtrykt med SHACL) 
 
 ## OBS: Denne side er under udvikling
 
