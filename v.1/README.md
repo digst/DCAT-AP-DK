@@ -5,13 +5,15 @@ Anvendelsesprofilen visualiseret med UML og udtrykt med SHACL.
 ![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/v.1/DCAT-AP-DKv1.png "UML Diagram")
 
 
-## Datasætegenskaber:
+
 
 * DCAT Application Profile for Data Portals in Europe - Final 1.1: 
 https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/11
 * DOCX-fil med specifikation: https://github.com/SEMICeu/DCAT-AP/raw/master/releases/1.1/dcat-ap_1.1.docx
 + enkelte danske tilføjelser (se nederst)
 
+
+## Klasse:Dataset (datasæt) <<MANDATORY>>:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
 | description|  dct:description	 |  rdfs:Literal |  This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.	 |  1..n |   |	
@@ -29,6 +31,18 @@ Property|	URI|	Range|	Usage note|	Card |
 public administrative task type|	dcat-dk: publicAdministrativeTaskType|	skos:Concept|(OBS: Dansk tilføjelse) Forvaltningsopgave: Angiver en eller flere forvaltningsopgaver jf. FORM som har dannet grundlag for dataindsamlingen|	0..n	|
 | personal data category 	|dcat-dk: personalDataCategory	|skos:Concept	|(OBS: Dansk tilføjelse) Personoplysningskategori: Angiver hvilken type af personoplysninger som datasættet indeholder.|0..n	
 | legal ressource |cv:hasLegalResource	|eli:LegalResource|(OBS: Dansk tilføjelse)	Hjemmel: Den hjemmel forankret i lovgivningen som har været gældende for dataindsamlingen.	 |0..n	|
+
+
+## Klasse:distribution (Datasætrepræsentation) <<RECCOMMENDED>>:
+Property|	URI|	Range|	Usage note|	Card |
+|---|---|---|---|---|
+| accessURL	|dcat:accessURL	|rdfs:Resource|	A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint.	|1..n|		
+| description|  dct:description	 |  rdfs:Literal |  This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.	 |  0..n |   |	
+| title	|dct:title	|rdfs:Literal|	This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the name.	|0..n|		
+| byte size|dcat:byteSize|xsd:decimal|This property contains the size of a Distribution in bytes.|---|
+| format |dct:format|dct:MediaTypeOrExtent|This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA|0..1|
+| licence|dct:license|dct:LicenseDocument|This property refers to the licence under which the Distribution is made available. |0..1|
+| language	|dct:language	|dct:LinguisticSystem	|This property refers to a language of the Distribution. This property can be repeated if there are multiple languages in the Dataset.|	0..n|
 
 EU-kodelister (kontrollerede udfaldsrum) for hhv. frequency og language kan findes her: https://publications.europa.eu/en/web/eu-vocabularies/authority-tables
 
