@@ -13,7 +13,7 @@ https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europ
 + enkelte danske tilføjelser (se nederst)
 
 
-## Klasse:Dataset (datasæt) <<MANDATORY>>:
+## Klasse:Dataset (datasæt) - MANDATORY:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
 | description|  dct:description	 |  rdfs:Literal |  This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.	 |  1..n |   |	
@@ -33,13 +33,13 @@ public administrative task type|	dcat-dk: publicAdministrativeTaskType|	skos:Con
 | legal ressource |cv:hasLegalResource	|eli:LegalResource|(OBS: Dansk tilføjelse)	Hjemmel: Den hjemmel forankret i lovgivningen som har været gældende for dataindsamlingen.	 |0..n	|
 
 
-## Klasse:distribution (Datasætrepræsentation) <<RECCOMMENDED>>:
+## Klasse:Distribution (Datasætrepræsentation) - RECCOMMENDED:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
 | accessURL	|dcat:accessURL	|rdfs:Resource|	A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint.	|1..n|		
 | description|  dct:description	 |  rdfs:Literal |  This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.	 |  0..n |   |	
 | title	|dct:title	|rdfs:Literal|	This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the name.	|0..n|		
-| byte size|dcat:byteSize|xsd:decimal|This property contains the size of a Distribution in bytes.|---|
+| byte size|dcat:byteSize|xsd:decimal|This property contains the size of a Distribution in bytes.|0..1|
 | format |dct:format|dct:MediaTypeOrExtent|This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA|0..1|
 | licence|dct:license|dct:LicenseDocument|This property refers to the licence under which the Distribution is made available. |0..1|
 | language	|dct:language	|dct:LinguisticSystem	|This property refers to a language of the Distribution. This property can be repeated if there are multiple languages in the Dataset.|	0..n|
