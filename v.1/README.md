@@ -1,5 +1,10 @@
 # Anvendelsesprofil: DCAT-AP-DK v.1.0.0 (Under udvikling)
-Anvendelsesprofilen visualiseret med UML og udtrykt med SHACL. 
+DCAT-AP-DK er en anvendelsesprofil til beskrivelse af datasæt i det fællesoffentlige datasætkatalog.
+
+DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP-DK v.1.1 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 1.1, men tilføjer også enkelte elementer for at opfylde behovet i en dansk administrativ kontekst
+
+
+Anvendelsesprofilen er visualiseret med UML og udtrykt med SHACL (mangler opdatering). 
 
 ## Anvendelseprofil visualiseret med UML-diagram
 ![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/v.1/DCAT-AP-DKv1.png "UML Diagram")
