@@ -5,7 +5,7 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 
 
 Anvendelsesprofilen er visualiseret med UML og udtrykt med SHACL 
-(SHACL-shapes og dataeksempler mangler pt. opdatering da distributionn fx mangler). 
+(SHACL-shapes og dataeksempler mangler pt. opdatering da distribution fx mangler). 
 
 ## Anvendelseprofil visualiseret med UML-diagram
 ![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/v.1/DCAT-AP-DKv1.png "UML Diagram")
