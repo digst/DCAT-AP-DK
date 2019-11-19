@@ -7,6 +7,6 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 
 https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe
 
-DCAT-AP-DK i version 1.0 er aktuelt implementeret i Det fællesoffentlige Datasætkatalog. En opdateret version er under udarbejdelse.
+DCAT-AP-DK i version 1.0 er aktuelt implementeret i Det fællesoffentlige Datasætkatalog (https://github.com/digst/datasetcatalogue). En opdateret version er under udarbejdelse.
 
 Se yderligere informationer om de forkskellige versioner af DCAT-AP-DK i de underliggende mapper. 
