@@ -9,6 +9,7 @@ Anvendelsesprofilen er visualiseret med UML og udtrykt med SHACL (mangler opdate
 ## Anvendelseprofil visualiseret med UML-diagram
 ![alt text](https://github.com/digst/DCAT-AP-DK/blob/master/v.1/DCAT-AP-DKv1.png "UML Diagram")
 Bemærk at modelleringen af relationen til kontrollerede udfaldsrum (EU-kodelisterne m.fl) vil blive revideret.
+
 EU-kodelisterne for fx frequency og language kan findes her: https://publications.europa.eu/en/web/eu-vocabularies/authority-tables
 
 * DCAT Application Profile for Data Portals in Europe - Final 1.1: 
