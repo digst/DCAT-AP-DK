@@ -6,7 +6,7 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 DCAT-AP-DK i version 1.0 er aktuelt implementeret i Det fællesoffentlige Datasætkatalog (https://github.com/digst/datasetcatalogue). En opdateret version er under udarbejdelse.
 
 
-# DCAT-AP-DK v.1.1.0 (Under udvikling)
+## DCAT-AP-DK v.1.1.0 (Under udvikling)
 DCAT-AP-DK er en anvendelsesprofil til beskrivelse af datasæt i det fællesoffentlige datasætkatalog.
 
 DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP-DK v.1.1 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 1.1, men tilføjer også enkelte elementer for at opfylde behovet i en dansk administrativ kontekst
@@ -15,7 +15,7 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 Anvendelsesprofilen er visualiseret med UML og udtrykt med SHACL 
 (SHACL-shapes og dataeksempler mangler pt. opdatering da distribution fx mangler). 
 
-## Anvendelseprofil visualiseret med UML-diagram
+### Anvendelseprofil visualiseret med UML-diagram
 ![UML-diagram](https://github.com/digst/DCAT-AP-DK/blob/master/DCAT-AP-DKv1.png "UML Diagram")
 Bemærk at modelleringen af relationen til kontrollerede udfaldsrum (EU-kodelisterne m.fl) vil blive revideret.
 
@@ -27,7 +27,7 @@ https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europ
 + enkelte danske tilføjelser (se nederst)
 
 
-## Klasse:Dataset (datasæt) - MANDATORY:
+### Klasse:Dataset (datasæt) - MANDATORY:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
 | description|  dct:description	 |  rdfs:Literal |  This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.	 |  1..n |   |	
@@ -47,7 +47,7 @@ public administrative task type|	dcat-dk: publicAdministrative TaskType|	skos:Co
 | legal ressource |cv:hasLegalResource	|eli:LegalResource|(OBS: Dansk tilføjelse)	Hjemmel: Den hjemmel forankret i lovgivningen som har været gældende for dataindsamlingen.	 |0..n	|
 
 
-## Klasse:Distribution (Datasætrepræsentation) - RECCOMMENDED:
+### Klasse:Distribution (Datasætrepræsentation) - RECCOMMENDED:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
 | accessURL	|dcat:accessURL	|rdfs:Resource|	A URL of the resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint.	|1..n|		
@@ -61,7 +61,7 @@ Property|	URI|	Range|	Usage note|	Card |
 
 
 
-## Om Shapes Constraint Language (SHACL)
+### Om Shapes Constraint Language (SHACL)
 
 * SHACL-Specifikation: https://www.w3.org/TR/shacl/
 * SHACL-Playground: https://shacl.org/playground/ 
