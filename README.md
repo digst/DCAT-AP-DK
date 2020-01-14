@@ -6,7 +6,7 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 DCAT-AP-DK i version 1.0 er aktuelt implementeret i Det fællesoffentlige Datasætkatalog (https://github.com/digst/datasetcatalogue). En opdateret version er under udarbejdelse.
 
 
-## DCAT-AP-DK v.1.1.0 (Under udvikling)
+## DCAT-AP-DK v.1.1.1 (Under udvikling)
 DCAT-AP-DK er en anvendelsesprofil til beskrivelse af datasæt i det fællesoffentlige datasætkatalog.
 
 DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP-DK v.1.1 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 1.1, men tilføjer også enkelte elementer for at opfylde behovet i en dansk administrativ kontekst
@@ -42,9 +42,10 @@ Property|	URI|	Range|	Usage note|	Card |
 | spatial/ geographical coverage|	dct:spatial|	dct:Location|	This property refers to a geographic region that is covered by the Dataset. |	0..n|
 | data responsible organisation |	dcat-dk: dataResponsible Organisation|	org:FormalOrganisation	|(OBS: Dansk tilføjelse) Dataansvarlig organisation: organisation der er ansvarlig for indsamlingen af data, og som har dispositionsretten og træffer afgørelse om hvordan data skal behandles|0..1|
 | payment imposed|	dcat-dk: payment ImposedContents|	xsd:Boolean	|	(OBS: Dansk tilføjelse) Betalingspålagt: Angiver om der er pålagt en betaling på det pågældende datasæt. |0..1|
-public administrative task type|	dcat-dk: publicAdministrative TaskType|	skos:Concept|(OBS: Dansk tilføjelse) Forvaltningsopgave: Angiver en eller flere forvaltningsopgaver jf. FORM som har dannet grundlag for dataindsamlingen|	0..n	|
 | personal data category 	|dcat-dk: personalDataCategory	|skos:Concept	|(OBS: Dansk tilføjelse) Personoplysningskategori: Angiver hvilken type af personoplysninger som datasættet indeholder.|0..n	
 | legal ressource |cv:hasLegalResource	|eli:LegalResource|(OBS: Dansk tilføjelse)	Hjemmel: Den hjemmel forankret i lovgivningen som har været gældende for dataindsamlingen.	 |0..n	|
+public administrative task type|	dcat-dk: publicAdministrative TaskType|	skos:Concept|(OBS: Dansk tilføjelse) Forvaltningsopgave: Angiver en eller flere forvaltningsopgaver jf. FORM som har dannet grundlag for dataindsamlingen|	0..n	|
+FORMversionNumber|	dcat-dk:FORMversionNumber TaskType|	rdfs:Literal|(OBS: Dansk tilføjelse) FORM-versionsnummer: angivelse af den version af klassifikationen FORM som anvendes til angivelse af relaterede forvaltningsopgaver |	0..1	|
 
 
 ### Klasse:Distribution (Datasætrepræsentation) - RECCOMMENDED:
