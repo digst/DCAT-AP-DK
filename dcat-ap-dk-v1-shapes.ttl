@@ -115,6 +115,11 @@
     ] ;
 
     sh:property [
+      sh:path dcatdk:FORMversionNumber ;
+      sh:name "FORM-versionsnummer" ;
+    ] ;
+
+    sh:property [
       sh:path dcat:theme ;
       sh:nodeKind sh:IRI ;
     ] .
