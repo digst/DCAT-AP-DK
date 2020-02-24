@@ -1,12 +1,4 @@
-# DCAT-AP-DK
-DCAT-AP-DK er en anvendelsesprofil til beskrivelse af datasæt i det fællesoffentlige datasætkatalog.
-
-DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene: https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe
-
-DCAT-AP-DK i version 1.0 er aktuelt implementeret i Det fællesoffentlige Datasætkatalog (https://github.com/digst/datasetcatalogue). En opdateret version er under udarbejdelse.
-
-
-## DCAT-AP-DK v.1.1.1 (Under udvikling)
+# DCAT-AP-DK v.1.1
 DCAT-AP-DK er en anvendelsesprofil til beskrivelse af datasæt i det fællesoffentlige datasætkatalog.
 
 DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP-DK v.1.1 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 1.1, men tilføjer også enkelte elementer for at opfylde behovet i en dansk administrativ kontekst
