@@ -193,6 +193,11 @@ Katalog
 A catalogue or repository that hosts the Datasets being described.
 
 
+<table class=".def">
+	<tr><td>URI</td><td>test</td></tr>
+	<tr><td>label</td><td>test</td></tr>	
+<table>	
+
 Aktør
 ----
 An entity that is associated with Catalogues and/or Datasets. 
