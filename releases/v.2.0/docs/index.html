@@ -1,5 +1,5 @@
 
-<!doctype html><html lang="en">
+<!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>Standard for beskrivelse af datasæt - DCAT-AP-DK</title>
@@ -1506,8 +1506,14 @@ pre .property::before, pre .property::after {
       <li><a href="#forml"><span class="secno">1.1</span> <span class="content">Formål</span></a>
       <li><a href="#baggrund"><span class="secno">1.2</span> <span class="content">Baggrund</span></a>
       <li><a href="#metode"><span class="secno">1.3</span> <span class="content">Metode</span></a>
+      <li><a href="#konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.4</span> <span class="content">Konformans og afvigelser fra DCAT-AP</span></a>
      </ol>
-    <li><a href="#oversigt-over-anvendelsesprofilen"><span class="secno">2</span> <span class="content">Oversigt over anvendelsesprofilen</span></a>
+    <li>
+     <a href="#oversigt-over-anvendelsesprofilen"><span class="secno">2</span> <span class="content">Oversigt over anvendelsesprofilen</span></a>
+     <ol class="toc">
+      <li><a href="#diagram"><span class="secno">2.1</span> <span class="content">Diagram</span></a>
+      <li><a href="#namespaces"><span class="secno">2.2</span> <span class="content">Namespaces</span></a>
+     </ol>
     <li>
      <a href="#modellens-elementer"><span class="secno">3</span> <span class="content">Modellens elementer</span></a>
      <ol class="toc">
@@ -1518,6 +1524,8 @@ pre .property::before, pre .property::after {
       <li><a href="#dataservice"><span class="secno">3.5</span> <span class="content">Dataservice</span></a>
      </ol>
     <li><a href="#emner"><span class="secno">4</span> <span class="content">Emner</span></a>
+    <li><a href="#referencer"><span class="secno">5</span> <span class="content">Referencer</span></a>
+    <li><a href="#bilag"><span class="secno">6</span> <span class="content">Bilag</span></a>
    </ol>
   </nav>
   <main>
@@ -1530,7 +1538,46 @@ pre .property::before, pre .property::after {
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
    <p>Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som indeholder de basisoplysninger om datsæt, der indgår i typiske datasætoverblik.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.</p>
    <p>Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.</p>
+   <h3 class="heading settled" data-level="1.4" id="konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.4. </span><span class="content">Konformans og afvigelser fra DCAT-AP</span><a class="self-link" href="#konformans-og-afvigelser-fra-dcat-ap"></a></h3>
    <h2 class="heading settled" data-level="2" id="oversigt-over-anvendelsesprofilen"><span class="secno">2. </span><span class="content">Oversigt over anvendelsesprofilen</span><a class="self-link" href="#oversigt-over-anvendelsesprofilen"></a></h2>
+   <h3 class="heading settled" data-level="2.1" id="diagram"><span class="secno">2.1. </span><span class="content">Diagram</span><a class="self-link" href="#diagram"></a></h3>
+   <h3 class="heading settled" data-level="2.2" id="namespaces"><span class="secno">2.2. </span><span class="content">Namespaces</span><a class="self-link" href="#namespaces"></a></h3>
+   <ul>
+    <li data-md>
+     <p>adms: http://www.w3.org/ns/adms#</p>
+    <li data-md>
+     <p>dcat: http://www.w3.org/ns/dcat#</p>
+    <li data-md>
+     <p>dcatap: http://data.europa.eu/r5r/</p>
+    <li data-md>
+     <p>dct: http://purl.org/dc/terms/</p>
+    <li data-md>
+     <p>foaf: http://xmlns.com/foaf/0.1/</p>
+    <li data-md>
+     <p>locn: http://www.w3.org/ns/locn#</p>
+    <li data-md>
+     <p>owl: http://www.w3.org/2002/07/owl#</p>
+    <li data-md>
+     <p>odrl: http://www.w3.org/ns/odrl/2/</p>
+    <li data-md>
+     <p>rdfs: http://www.w3.org/2000/01/rdf-schema#</p>
+    <li data-md>
+     <p>schema: http://schema.org/</p>
+    <li data-md>
+     <p>skos: http://www.w3.org/2004/02/skos/core#</p>
+    <li data-md>
+     <p>spdx: http://spdx.org/rdf/terms#</p>
+    <li data-md>
+     <p>xsd: http://www.w3.org/2001/XMLSchema#</p>
+    <li data-md>
+     <p>vann: http://purl.org/vocab/vann/</p>
+    <li data-md>
+     <p>voaf: http://purl.org/vocommons/voaf#</p>
+    <li data-md>
+     <p>vcard: http://www.w3.org/2006/vcard/ns#</p>
+    <li data-md>
+     <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
+   </ul>
    <h2 class="heading settled" data-level="3" id="modellens-elementer"><span class="secno">3. </span><span class="content">Modellens elementer</span><a class="self-link" href="#modellens-elementer"></a></h2>
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
     A catalogue or repository that hosts the Datasets being described. 
@@ -1565,6 +1612,8 @@ pre .property::before, pre .property::after {
     <li data-md>
      <p>Proveniens og historik</p>
    </ul>
+   <h2 class="heading settled" data-level="5" id="referencer"><span class="secno">5. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
+   <h2 class="heading settled" data-level="6" id="bilag"><span class="secno">6. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <p>arkitektur.digst.dk</p>
   </main>
 <script>
