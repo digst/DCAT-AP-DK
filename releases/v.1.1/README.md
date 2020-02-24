@@ -16,7 +16,7 @@ Anvendelsesprofilen er visualiseret med UML og udtrykt med SHACL
 (SHACL-shapes og dataeksempler mangler pt. opdatering da distribution fx mangler). 
 
 ### Anvendelseprofil visualiseret med UML-diagram
-![UML-diagram](https://github.com/digst/DCAT-AP-DK/blob/master/DCAT-AP-DKv1.png "UML Diagram")
+![UML-diagram](https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.1.1/DCAT-AP-DKv1.png "UML Diagram")
 Bemærk at modelleringen af relationen til kontrollerede udfaldsrum (EU-kodelisterne m.fl) vil blive revideret.
 
 EU-kodelisterne for fx frequency og language kan findes her: https://publications.europa.eu/en/web/eu-vocabularies/authority-tables
