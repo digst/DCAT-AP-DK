@@ -12,3 +12,5 @@ Link til DCAT (W3C): https://www.w3.org/TR/vocab-dcat-2/
 /releases: DCAT-AP-DK releases (1.1,2.0 etc), og hver release kan have flere distributioner
 
 [https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/docs/index.html](link)
+
+<a href="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/docs/index.html">
