@@ -156,9 +156,32 @@ Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som in
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.
 
+Konformans og afvigelser fra DCAT-AP
+----------
 
 Oversigt over anvendelsesprofilen
 ================
+
+Namespaces
+----------
+* adms: http://www.w3.org/ns/adms#
+* dcat: http://www.w3.org/ns/dcat#
+* dcatap: http://data.europa.eu/r5r/
+* dct: http://purl.org/dc/terms/
+* foaf: http://xmlns.com/foaf/0.1/
+* locn: http://www.w3.org/ns/locn#
+* owl: http://www.w3.org/2002/07/owl#
+* odrl: http://www.w3.org/ns/odrl/2/
+* rdfs: http://www.w3.org/2000/01/rdf-schema#
+* schema: http://schema.org/
+* skos: http://www.w3.org/2004/02/skos/core#
+* spdx: http://spdx.org/rdf/terms#
+* xsd: http://www.w3.org/2001/XMLSchema#
+* vann: http://purl.org/vocab/vann/
+* voaf: http://purl.org/vocommons/voaf#
+* vcard: http://www.w3.org/2006/vcard/ns#
+* dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/
+
 
 Modellens elementer
 ================
