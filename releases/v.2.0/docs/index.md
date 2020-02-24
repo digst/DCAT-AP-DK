@@ -162,6 +162,10 @@ Konformans og afvigelser fra DCAT-AP
 Oversigt over anvendelsesprofilen
 ================
 
+
+Diagram
+----------
+
 Namespaces
 ----------
 * adms: http://www.w3.org/ns/adms#
