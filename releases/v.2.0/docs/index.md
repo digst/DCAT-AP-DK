@@ -110,7 +110,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 <pre class="metadata">
 Title: Standard for beskrivelse af datasæt - DCAT-AP-DK
 Status: LS
-URL: https://github.com/digst/DCAT-AP-DK/blob/v.2/
+URL: https://github.com/digst/DCAT-AP-DK/releases/v.2.0/
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 
 Abstract: Dette dokument 'Standard for beskrivelse af datasæt (DCAT-AP-DK)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt.
@@ -120,18 +120,18 @@ Revision: 1.0.0
 Date: 2019-02-03
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
-Repository: digst/DCAT-AP-DK/blob/v.2/
+Repository: digst/DCAT-AP-DK/DCAT-AP-DK/releases/v.2.0
 Inline Github Issues: full
 Logo: digst...
 </pre>
 
 
-<h1>Standard for beskrivelse af datasæt - DCAT-AP-DK</h1>
+<h1>DCAT-AP-DK - Standard for beskrivelse af datasæt </h1>
 
 
-Version 1.0.0
+Version 2.0.0
 
-Februar 2019
+Februar 2020
                                             
 
 Introduktion
