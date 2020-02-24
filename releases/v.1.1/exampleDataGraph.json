@@ -1,0 +1,110 @@
+[
+
+  {
+    "@id": "https://data.gov.dk/dataset/456ef843-f9d4-496c-8150-cf1e3073ef78",
+    "@type": [
+      "http://www.w3.org/ns/dcat#Dataset"
+    ],
+    "http://data.europa.eu/m8g/hasLegalResource": [
+      {
+        "@id": "http://www.example.com/"
+      }
+    ],
+    "http://data.gov.dk/model/profile/dcatdk#dataResponsibleOrganisation": [
+      {
+        "@id": "https://data.gov.dk/organization/34051178"
+      }
+    ],
+    "http://data.gov.dk/model/profile/dcatdk#paymentRequired": [
+      {
+        "@value": false
+      }
+    ],
+    "http://data.gov.dk/model/profile/dcatdk#personalDataCategory": [
+      {
+        "@id": "http://data.gov.dk/model/concept/core/dataprotection/NonPersonalData"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/accrualPeriodicity": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/frequency/ANNUAL"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/conformsTo": [
+      {
+        "@id": "http://www.example.com/"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/description": [
+      {
+        "@language": "da",
+        "@value": "Datasættets beskrivelse"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/language": [
+      {
+        "@id": "http://publications.europa.eu/resource/authority/language/DAN"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/publisher": [
+      {
+        "@id": "https://data.gov.dk/organization/34051178"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/subject": [
+      {
+        "@value": "06.38.10"
+      }
+    ],
+    "http://purl.org/dc/elements/1.1/title": [
+      {
+        "@language": "da",
+        "@value": "Datasættets titel"
+      }
+    ],
+    "http://www.w3.org/ns/dcat#landingPage": [
+      {
+        "@id": "http://www.example.com/"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/page": [
+      {
+        "@id": "http://www.example.com/"
+      }
+    ]
+  },
+  {
+    "@id": "https://data.gov.dk/organization/34051178",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@language": "da",
+        "@value": "Digitaliseringsstyrelsen"
+      }
+    ]
+  }
+  
+  
+  {
+    "@id": "http://data.gov.dk/model/concept/core/dataprotection/NonPersonalData",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/ANNUAL",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  {
+    "@id": "http://publications.europa.eu/resource/authority/language/DAN",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ]
+  },
+  
+  
+]
