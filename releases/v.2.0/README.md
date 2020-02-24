@@ -116,9 +116,7 @@ Property|	URI|	Range|	Usage note|	Card |
 
 
 ### Om Shapes Constraint Language (SHACL)
-SHACL-Specifikation: https://www.w3.org/TR/shacl/
-SHACL-Playground: https://shacl.org/playground/ (I denne SHACL-sandkasse kan eksempeldatagrafer automatisk valideres op imod SHACL-anvendelssprofilen -dcat-ap-dk-v1-shapes.ttl)
-RDF converter: http://www.easyrdf.org/converter
-Se DCAT-AP-DK (v.1) Shapes Graph samt Example Data Graphs (i RDF-XML, TTL, og JSON-LD) i filerne ovenfor
-
-Se evt. også: Interoperability Test Bed DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
+* SHACL-Specifikation: https://www.w3.org/TR/shacl/
+* SHACL-Playground: https://shacl.org/playground/ (I denne SHACL-sandkasse kan eksempeldatagrafer automatisk valideres op imod SHACL-anvendelssprofilen -dcat-ap-dk-v1-shapes.ttl)
+* RDF converter: http://www.easyrdf.org/converter
+* Interoperability Test Bed DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
