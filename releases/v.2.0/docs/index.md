@@ -131,54 +131,45 @@ Logo: digst...
 UDKAST til Version 2.0
 Februar 2020
    
-   
-# 1
-
-## 2
-
-### 3 
-
-#### 4
-
-##### 5
 
 
-Introduktion
-================
+
+# Introduktion
+
 
 Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt. Standarden omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om it-systemer på en effektiv måde. 
 
-Formål
-----------
+## Formål
 
 
 
-Baggrund
-------------
+
+## Baggrund
 
 
 
-Metode
-----------
+
+## Metode
+
 
 Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som indeholder de basisoplysninger om datsæt, der indgår i typiske datasætoverblik.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.
 
 
-Konformans og afvigelser fra DCAT-AP
-----------
+## Konformans og afvigelser fra DCAT-AP
 
 
-Oversigt over anvendelsesprofilen
-================
+
+# Oversigt over anvendelsesprofilen
 
 
-Diagram
-----------
 
-Namespaces
-----------
+## Diagram
+
+
+## Namespaces
+
 * adms: http://www.w3.org/ns/adms#
 * dcat: http://www.w3.org/ns/dcat#
 * dcatap: http://data.europa.eu/r5r/
@@ -198,11 +189,11 @@ Namespaces
 * dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/
 
 
-Modellens elementer
-================
+# Modellens elementer
 
-Katalog
-----
+
+## Katalog
+
 A catalogue or repository that hosts the Datasets being described.
 
 
@@ -211,29 +202,29 @@ A catalogue or repository that hosts the Datasets being described.
 	<tr><td>label</td><td>test</td></tr>	
 <table>	
 
-Aktør
-----
+## Aktør
+
 An entity that is associated with Catalogues and/or Datasets. 
 
 
-Datasæt
-----
+## Datasæt
+
 A conceptual entity that represents the information published.
 
 
-Datasætrepræsentation
-----
+## Datasætrepræsentation
+
 physical embodiment of the Dataset in a particular format
 
 
-Dataservice
----
+## Dataservice
+
 A collection of operations that provides access to one or more datasets or data processing functions.
 
 
 
-Emner
-================
+# Emner
+
 * Basisinformation
 * Identifikation
 * Aktører
@@ -247,18 +238,28 @@ Emner
 
 
 
-Referencer
-================
+# Referencer
 
 
-Bilag
+
+# Bilag
 ================
 
 arkitektur.digst.dk
 
 
-Short hands
-================
+# Short hands
+
+   
+# h1
+
+## h2
+
+### h3 
+
+#### h4
+
+##### h5
 
 <p align="center"><a href="img/test.jpg"><img src="img/test.jpg" alt="test" width="800"/></a></p>
 
