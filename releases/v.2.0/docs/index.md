@@ -244,3 +244,36 @@ Bilag
 arkitektur.digst.dk
 
 
+Short hands
+================
+
+<p align="center"><a href="img/test.jpg"><img src="img/test.jpg" alt="test" width="800"/></a></p>
+
+Links: [Test](https://www.example.om)
+
+
+<p class="note">Note</p>
+
+<p class="example">Example</p>
+
+<p class="assertion">assertion</p>
+
+<p class="advisement">advisement</p>
+
+<p class="issue">Issue</p>
+
+definition list:
+<dl class="def"> 
+<dt>1</dt><dd></dd>a<dt>
+<dt>2</dt><dd></dd>b<dt>
+</dl>
+	
+* bullit 1	
+* bullit 2
+* bullit 3
+
+*kursiv*
+
+**fed**
+
+
