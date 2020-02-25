@@ -108,8 +108,8 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 </style>
 
 <pre class="metadata">
-Title: Standard for beskrivelse af datasæt (DCAT-AP-DK)
-Status: LS
+Title: UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)
+Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/releases/v.2.0/
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 
@@ -130,7 +130,18 @@ Logo: digst...
 
 UDKAST til Version 2.0
 Februar 2020
-                                            
+   
+   
+# 1
+
+## 2
+
+### 3 
+
+#### 4
+
+##### 5
+
 
 Introduktion
 ================
@@ -154,8 +165,10 @@ Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som in
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.
 
+
 Konformans og afvigelser fra DCAT-AP
 ----------
+
 
 Oversigt over anvendelsesprofilen
 ================
@@ -252,11 +265,11 @@ Short hands
 Links: [Test](https://www.example.om)
 
 
-<p class="note">Note</p>
+<p class="note">Note 1</p>
 
-<p class="example">Example</p>
+<p class="example">Example 2</p>
 
-<p class="assertion">assertion</p>
+<p class="assertion">assertion 3</p>
 
 <p class="advisement">advisement</p>
 
