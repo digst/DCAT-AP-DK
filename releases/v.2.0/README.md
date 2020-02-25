@@ -13,7 +13,7 @@ https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europ
 + enkelte danske tilføjelser (se nederst)
 
 
-## Klasse:Catalog (katalog) 
+## Klasse: Catalog (katalog) 
 ### MANDATORY:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
@@ -23,7 +23,7 @@ Property|	URI|	Range|	Usage note|	Card |
 |title	|dct:title	|rdfs:Literal|	This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.	|1..n|
 
 
-## Klasse:Dataset (datasæt) - 
+## Klasse: Dataset (datasæt) - 
 ### MANDATORY:
 Property|	URI|	Range|	Usage note|	Card |
 |---|---|---|---|---|
@@ -75,7 +75,7 @@ Property|	URI|	Range|	Usage note|	Card |
 |spatial resolution	|dcat:spatialResolutionInMeters	|	xsd:decimal|	This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.	|0..n|
 |temporal resolution	| dcat:temporalResolution	|xsd:duration	|This property refers to the minimum time period resolvable in the dataset.	|0..n|
 
-## Klasse:Distribution (Datasætrepræsentation) 
+## Klasse: Distribution (Datasætrepræsentation) 
 
 ### MANDATORY:
 Property|	URI|	Range|	Usage note|	Card |
