@@ -116,8 +116,8 @@ Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Abstract: Dette dokument 'Standard for beskrivelse af datasæt (DCAT-AP-DK)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt.
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
-Revision: 1.0.0
-Date: 2019-02-03
+Revision: 2.0.0
+Date: 2019-02-25
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK/DCAT-AP-DK/releases/v.2.0
@@ -126,9 +126,9 @@ Logo: digst...
 </pre>
 
 
-<h1>Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
+<h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
 
-Version 2.0
+UDKAST til Version 2.0
 Februar 2020
                                             
 
