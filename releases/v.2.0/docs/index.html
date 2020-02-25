@@ -1,8 +1,8 @@
 
-<!doctype html><html lang="da">
+<!doctype html><html lang="en">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>Standard for beskrivelse af datasæt (DCAT-AP-DK)</title>
+  <title>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1483,7 +1483,7 @@ pre .property::before, pre .property::after {
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Standard, <time class="dt-updated" datetime="2019-02-25">25 February 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-02-25">25 February 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1503,49 +1503,63 @@ pre .property::before, pre .property::after {
    <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li>
-     <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
+     <a href="#1"><span class="secno">1</span> <span class="content">1</span></a>
      <ol class="toc">
-      <li><a href="#forml"><span class="secno">1.1</span> <span class="content">Formål</span></a>
-      <li><a href="#baggrund"><span class="secno">1.2</span> <span class="content">Baggrund</span></a>
-      <li><a href="#metode"><span class="secno">1.3</span> <span class="content">Metode</span></a>
-      <li><a href="#konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.4</span> <span class="content">Konformans og afvigelser fra DCAT-AP</span></a>
+      <li>
+       <a href="#2"><span class="secno">1.1</span> <span class="content">2</span></a>
+       <ol class="toc">
+        <li><a href="#3"><span class="secno">1.1.1</span> <span class="content">3</span></a>
+       </ol>
      </ol>
     <li>
-     <a href="#oversigt-over-anvendelsesprofilen"><span class="secno">2</span> <span class="content">Oversigt over anvendelsesprofilen</span></a>
+     <a href="#introduktion"><span class="secno">2</span> <span class="content">Introduktion</span></a>
      <ol class="toc">
-      <li><a href="#diagram"><span class="secno">2.1</span> <span class="content">Diagram</span></a>
-      <li><a href="#namespaces"><span class="secno">2.2</span> <span class="content">Namespaces</span></a>
+      <li><a href="#forml"><span class="secno">2.1</span> <span class="content">Formål</span></a>
+      <li><a href="#baggrund"><span class="secno">2.2</span> <span class="content">Baggrund</span></a>
+      <li><a href="#metode"><span class="secno">2.3</span> <span class="content">Metode</span></a>
+      <li><a href="#konformans-og-afvigelser-fra-dcat-ap"><span class="secno">2.4</span> <span class="content">Konformans og afvigelser fra DCAT-AP</span></a>
      </ol>
     <li>
-     <a href="#modellens-elementer"><span class="secno">3</span> <span class="content">Modellens elementer</span></a>
+     <a href="#oversigt-over-anvendelsesprofilen"><span class="secno">3</span> <span class="content">Oversigt over anvendelsesprofilen</span></a>
      <ol class="toc">
-      <li><a href="#katalog"><span class="secno">3.1</span> <span class="content">Katalog</span></a>
-      <li><a href="#aktr"><span class="secno">3.2</span> <span class="content">Aktør</span></a>
-      <li><a href="#datast"><span class="secno">3.3</span> <span class="content">Datasæt</span></a>
-      <li><a href="#datastreprsentation"><span class="secno">3.4</span> <span class="content">Datasætrepræsentation</span></a>
-      <li><a href="#dataservice"><span class="secno">3.5</span> <span class="content">Dataservice</span></a>
+      <li><a href="#diagram"><span class="secno">3.1</span> <span class="content">Diagram</span></a>
+      <li><a href="#namespaces"><span class="secno">3.2</span> <span class="content">Namespaces</span></a>
      </ol>
-    <li><a href="#emner"><span class="secno">4</span> <span class="content">Emner</span></a>
-    <li><a href="#referencer"><span class="secno">5</span> <span class="content">Referencer</span></a>
-    <li><a href="#bilag"><span class="secno">6</span> <span class="content">Bilag</span></a>
-    <li><a href="#short-hands"><span class="secno">7</span> <span class="content">Short hands</span></a>
+    <li>
+     <a href="#modellens-elementer"><span class="secno">4</span> <span class="content">Modellens elementer</span></a>
+     <ol class="toc">
+      <li><a href="#katalog"><span class="secno">4.1</span> <span class="content">Katalog</span></a>
+      <li><a href="#aktr"><span class="secno">4.2</span> <span class="content">Aktør</span></a>
+      <li><a href="#datast"><span class="secno">4.3</span> <span class="content">Datasæt</span></a>
+      <li><a href="#datastreprsentation"><span class="secno">4.4</span> <span class="content">Datasætrepræsentation</span></a>
+      <li><a href="#dataservice"><span class="secno">4.5</span> <span class="content">Dataservice</span></a>
+     </ol>
+    <li><a href="#emner"><span class="secno">5</span> <span class="content">Emner</span></a>
+    <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
+    <li><a href="#bilag"><span class="secno">7</span> <span class="content">Bilag</span></a>
+    <li><a href="#short-hands"><span class="secno">8</span> <span class="content">Short hands</span></a>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
    <p>UDKAST til Version 2.0
 Februar 2020</p>
-   <h2 class="heading settled" data-level="1" id="introduktion"><span class="secno">1. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
+   <h2 class="heading settled" data-level="1" id="1"><span class="secno">1. </span><span class="content">1</span><a class="self-link" href="#1"></a></h2>
+   <h3 class="heading settled" data-level="1.1" id="2"><span class="secno">1.1. </span><span class="content">2</span><a class="self-link" href="#2"></a></h3>
+   <h4 class="heading settled" data-level="1.1.1" id="3"><span class="secno">1.1.1. </span><span class="content">3</span><a class="self-link" href="#3"></a></h4>
+   <h5 class="heading settled" data-level="1.1.1.1" id="4"><span class="secno">1.1.1.1. </span><span class="content">4</span><a class="self-link" href="#4"></a></h5>
+   <h6 class="heading settled" data-level="1.1.1.1.1" id="5"><span class="secno">1.1.1.1.1. </span><span class="content">5</span><a class="self-link" href="#5"></a></h6>
+   <h2 class="heading settled" data-level="2" id="introduktion"><span class="secno">2. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
    <p>Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt. Standarden omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om it-systemer på en effektiv måde.</p>
-   <h3 class="heading settled" data-level="1.1" id="forml"><span class="secno">1.1. </span><span class="content">Formål</span><a class="self-link" href="#forml"></a></h3>
-   <h3 class="heading settled" data-level="1.2" id="baggrund"><span class="secno">1.2. </span><span class="content">Baggrund</span><a class="self-link" href="#baggrund"></a></h3>
-   <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
+   <h3 class="heading settled" data-level="2.1" id="forml"><span class="secno">2.1. </span><span class="content">Formål</span><a class="self-link" href="#forml"></a></h3>
+   <h3 class="heading settled" data-level="2.2" id="baggrund"><span class="secno">2.2. </span><span class="content">Baggrund</span><a class="self-link" href="#baggrund"></a></h3>
+   <h3 class="heading settled" data-level="2.3" id="metode"><span class="secno">2.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
    <p>Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som indeholder de basisoplysninger om datsæt, der indgår i typiske datasætoverblik.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.</p>
    <p>Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.</p>
-   <h3 class="heading settled" data-level="1.4" id="konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.4. </span><span class="content">Konformans og afvigelser fra DCAT-AP</span><a class="self-link" href="#konformans-og-afvigelser-fra-dcat-ap"></a></h3>
-   <h2 class="heading settled" data-level="2" id="oversigt-over-anvendelsesprofilen"><span class="secno">2. </span><span class="content">Oversigt over anvendelsesprofilen</span><a class="self-link" href="#oversigt-over-anvendelsesprofilen"></a></h2>
-   <h3 class="heading settled" data-level="2.1" id="diagram"><span class="secno">2.1. </span><span class="content">Diagram</span><a class="self-link" href="#diagram"></a></h3>
-   <h3 class="heading settled" data-level="2.2" id="namespaces"><span class="secno">2.2. </span><span class="content">Namespaces</span><a class="self-link" href="#namespaces"></a></h3>
+   <h3 class="heading settled" data-level="2.4" id="konformans-og-afvigelser-fra-dcat-ap"><span class="secno">2.4. </span><span class="content">Konformans og afvigelser fra DCAT-AP</span><a class="self-link" href="#konformans-og-afvigelser-fra-dcat-ap"></a></h3>
+   <h2 class="heading settled" data-level="3" id="oversigt-over-anvendelsesprofilen"><span class="secno">3. </span><span class="content">Oversigt over anvendelsesprofilen</span><a class="self-link" href="#oversigt-over-anvendelsesprofilen"></a></h2>
+   <h3 class="heading settled" data-level="3.1" id="diagram"><span class="secno">3.1. </span><span class="content">Diagram</span><a class="self-link" href="#diagram"></a></h3>
+   <h3 class="heading settled" data-level="3.2" id="namespaces"><span class="secno">3.2. </span><span class="content">Namespaces</span><a class="self-link" href="#namespaces"></a></h3>
    <ul>
     <li data-md>
      <p>adms: http://www.w3.org/ns/adms#</p>
@@ -1582,8 +1596,8 @@ Februar 2020</p>
     <li data-md>
      <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    </ul>
-   <h2 class="heading settled" data-level="3" id="modellens-elementer"><span class="secno">3. </span><span class="content">Modellens elementer</span><a class="self-link" href="#modellens-elementer"></a></h2>
-   <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
+   <h2 class="heading settled" data-level="4" id="modellens-elementer"><span class="secno">4. </span><span class="content">Modellens elementer</span><a class="self-link" href="#modellens-elementer"></a></h2>
+   <h3 class="heading settled" data-level="4.1" id="katalog"><span class="secno">4.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
     A catalogue or repository that hosts the Datasets being described. 
    <table class=".def">
     <tbody>
@@ -1594,15 +1608,15 @@ Februar 2020</p>
       <td>label
       <td>test
    </table>
-   <h3 class="heading settled" data-level="3.2" id="aktr"><span class="secno">3.2. </span><span class="content">Aktør</span><a class="self-link" href="#aktr"></a></h3>
+   <h3 class="heading settled" data-level="4.2" id="aktr"><span class="secno">4.2. </span><span class="content">Aktør</span><a class="self-link" href="#aktr"></a></h3>
     An entity that is associated with Catalogues and/or Datasets. 
-   <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
+   <h3 class="heading settled" data-level="4.3" id="datast"><span class="secno">4.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
     A conceptual entity that represents the information published. 
-   <h3 class="heading settled" data-level="3.4" id="datastreprsentation"><span class="secno">3.4. </span><span class="content">Datasætrepræsentation</span><a class="self-link" href="#datastreprsentation"></a></h3>
+   <h3 class="heading settled" data-level="4.4" id="datastreprsentation"><span class="secno">4.4. </span><span class="content">Datasætrepræsentation</span><a class="self-link" href="#datastreprsentation"></a></h3>
     physical embodiment of the Dataset in a particular format 
-   <h3 class="heading settled" data-level="3.5" id="dataservice"><span class="secno">3.5. </span><span class="content">Dataservice</span><a class="self-link" href="#dataservice"></a></h3>
+   <h3 class="heading settled" data-level="4.5" id="dataservice"><span class="secno">4.5. </span><span class="content">Dataservice</span><a class="self-link" href="#dataservice"></a></h3>
     A collection of operations that provides access to one or more datasets or data processing functions. 
-   <h2 class="heading settled" data-level="4" id="emner"><span class="secno">4. </span><span class="content">Emner</span><a class="self-link" href="#emner"></a></h2>
+   <h2 class="heading settled" data-level="5" id="emner"><span class="secno">5. </span><span class="content">Emner</span><a class="self-link" href="#emner"></a></h2>
    <ul>
     <li data-md>
      <p>Basisinformation</p>
@@ -1625,15 +1639,15 @@ Februar 2020</p>
     <li data-md>
      <p>Proveniens og historik</p>
    </ul>
-   <h2 class="heading settled" data-level="5" id="referencer"><span class="secno">5. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
-   <h2 class="heading settled" data-level="6" id="bilag"><span class="secno">6. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
+   <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
+   <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <p>arkitektur.digst.dk</p>
-   <h2 class="heading settled" data-level="7" id="short-hands"><span class="secno">7. </span><span class="content">Short hands</span><a class="self-link" href="#short-hands"></a></h2>
+   <h2 class="heading settled" data-level="8" id="short-hands"><span class="secno">8. </span><span class="content">Short hands</span><a class="self-link" href="#short-hands"></a></h2>
    <p align="center"><a href="img/test.jpg"><img alt="test" src="img/test.jpg" width="800"></a></p>
    <p>Links: <a href="https://www.example.om">Test</a></p>
-   <p class="note" role="note">Note</p>
-   <p class="example" id="example-0a527305"><a class="self-link" href="#example-0a527305"></a>Example</p>
-   <p class="assertion">assertion</p>
+   <p class="note" role="note">Note 1</p>
+   <p class="example" id="example-5f3a8aa0"><a class="self-link" href="#example-5f3a8aa0"></a>Example 2</p>
+   <p class="assertion">assertion 3</p>
    <p class="advisement">advisement</p>
    <p class="issue" id="issue-642facf6"><a class="self-link" href="#issue-642facf6"></a>Issue</p>
    <p>definition list:</p>
