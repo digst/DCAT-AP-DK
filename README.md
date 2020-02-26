@@ -1,6 +1,7 @@
 # DCAT-AP-DK
 DCAT-AP-DK er en anvendelsesprofil til beskrivelse af datasæt i det fællesoffentlige datasætkatalog.
 
+Link til DCAT-AP-DK v.1.1 https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.1.1
 Link til DCAT-AP-DK v.2.0 (Under udvikling) https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/
 
 ## Baggrund
