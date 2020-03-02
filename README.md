@@ -13,5 +13,3 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 ## Repositoriets struktur
 /releases: DCAT-AP-DK releases (1.1,2.0 etc), og hver release kan have flere distributioner
 
-* Link til v.2.0.0 (under  udvikling): https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/
-* LInk til v.1.1.0: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.1.1
