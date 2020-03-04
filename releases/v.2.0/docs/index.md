@@ -226,20 +226,27 @@ A collection of operations that provides access to one or more datasets or data 
 # Emner
 
 * Basisinformation
-* Identifikation
-* Aktører
 * Emneinddeling
-* Dataadgang
+* Aktører
 * Dataindhold
 * Afgrænsning
-* Jura og regulering
 * Datakvalitet
+* Jura og regulering
 * Proveniens og historik
 
 
 
 # Referencer
 
+DCAT 2.0: https://www.w3.org/TR/vocab-dcat-2/
+DCAT-AP 2.0: https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200
+DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
+DCAT-AP-OP (1.1): http://data.europa.eu/euodp/en/developerscorner
+Overblik over nationale DCAT-APer: https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf
+EDP Goldbook: https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf
+W3C Data Quality Vocabulary: https://www.w3.org/TR/vocab-dqv/
+Fælles sprog for datakvalitet: https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx
+W3C Data on the Web Best practices: https://www.w3.org/TR/dwbp/
 
 
 # Bilag
