@@ -111,9 +111,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 Title: UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)
 Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/releases/v.2.0/
-Editor Term: Bidragsyder,Bidragsydere
-
-
+Editor Term: Bidragsyder, Bidragsydere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Editor: SDFE
 Editor: ERST
@@ -121,6 +119,7 @@ Editor: STAR
 Editor: KL
 Editor: MFVM – Miljøportalen
 Editor: Danmarks Statistik
+Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
 Abstract: Dette dokument 'Standard for beskrivelse af datasæt (DCAT-AP-DK)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt.
@@ -140,14 +139,14 @@ Logo: digst...
 
 UDKAST til Version 2.0
 Februar 2020
-   
+   
 
 
 
 # Introduktion
 
 
-Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt. Standarden omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om it-systemer på en effektiv måde. 
+Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt. Standarden omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om it-systemer på en effektiv måde. 
 
 ## Formål
 
@@ -162,7 +161,7 @@ Dette dokument udgør en fællesoffentlig standard for beskrivelse af offentlige
 ## Metode
 
 
-Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som indeholder de basisoplysninger om datsæt, der indgår i typiske datasætoverblik.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
+Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som indeholder de basisoplysninger om datsæt, der indgår i typiske datasætoverblik.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
 
 Selve udviklingsarbejdet er foretaget i henhold de Fællesoffentlige regler for begrebs- og datamodellering, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.
 
