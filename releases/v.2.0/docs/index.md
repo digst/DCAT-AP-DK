@@ -111,7 +111,17 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 Title: UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)
 Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/releases/v.2.0/
+Editor Term: Bidragsyder,Bidragsydere
+
+
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
+Editor: SDFE
+Editor: ERST
+Editor: STAR
+Editor: KL
+Editor: MFVM – Miljøportalen
+Editor: Danmarks Statistik
+
 
 Abstract: Dette dokument 'Standard for beskrivelse af datasæt (DCAT-AP-DK)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt.
 Boilerplate: copyright no, conformance no, abstract no
