@@ -139,8 +139,8 @@ Logo: digst...
 
 <h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
 
-UDKAST til Version 2.0
-Februar 2020
+UDKAST til DCAT-AP-DK 2.0
+Marts 2020
    
 
 
