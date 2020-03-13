@@ -1221,7 +1221,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 5200e023b5b76bb01f8f0ff295f799cb9f4a94f0" name="generator">
+  <meta content="Bikeshed version 7dd49ddf2b095c0a9accc859934f2349a4fb5d3c" name="generator">
   <link href="https://github.com/digst/DCAT-AP-DK/releases/v.2.0/" rel="canonical">
 <style>
 @media print {
@@ -1485,7 +1485,7 @@ pre .property::before, pre .property::after {
    <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-03-11">11 March 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
-     <dt>Denne version:
+     <dt>This version:
      <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/releases/v.2.0/">https://github.com/digst/DCAT-AP-DK/releases/v.2.0/</a>
      <dt>Bidragsydere:
      <dd>
@@ -1513,7 +1513,7 @@ pre .property::before, pre .property::after {
   </div>
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
-   <h2 class="no-num no-toc no-ref" id="contents">Indholdsfortegnelse</h2>
+   <h2 class="no-num no-toc no-ref" id="contents">Table of Contents</h2>
    <ol class="toc" role="directory">
     <li>
      <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
@@ -1559,9 +1559,8 @@ Marts 2020</p>
     Specifikationen skal være med til sørge for at begreber til beskrivelse af datasæt anvendes mere ens, og dermed skal den understøtte højere grad af interoperablitet og kvalitet i oplysningerne. 
    <h3 class="heading settled" data-level="1.2" id="baggrund"><span class="secno">1.2. </span><span class="content">Baggrund</span><a class="self-link" href="#baggrund"></a></h3>
    <p>De grundlæggende strukturer og elementer hentes fra EU-Kommissionens specifikation DCAT-AP 2.0 der har til formål at standardisere og etablere sammen-hæng mellem dataportaler i medlemslandene. EU-Kommissionens specifikation tager ligeledes afsæt i W3C specifikationen DCAT (Data Catalog Vocabulary). EU-Kommissionens specifikation angiver ikke blot hvilke felter der er <em>obligatoriske</em>, men angiver også <em>anbefalede</em> og <em>valgfrie</em> egenskaber og giver mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0, men vil også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.</p>
-   <p>Standarden er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer fra følgende interessentorganisationer: Digitaliseringsstyrelsen, Styrelsen for data og effektivisering, Styrelsen for arbejdsmarked og rekruttering, Erhvervstyrelsen, Geodatastyrelsen, Danmarks Miljøportal, Danmarks Statistik, Kommunernes Landsforening og KOMBIT.</p>
-   <p>Der er også blevet gennemført en analyse af myndigheders og virksomheders behov og barrierer for adgang til offentlige data med 50+ informanter fra statslige og kommunale myndigheder, semioffentlige virksomheder, start-ups samt mellemstore og store virksomheder.</p>
-   <p>For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0 samt behovsanalysen.</p>
+   <p>Standarden er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder.</p>
+   <p>For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0.</p>
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
    <p>Denne standard udgøres af en dansk basisprofil for datsæt (DCAT-AP-DK), som indeholder de basisoplysninger om datsæt, der indgår i typiske datasætoverblik.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.</p>
    <p>Selve udviklingsarbejdet er foretaget i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.</p>
@@ -1612,6 +1611,15 @@ Marts 2020</p>
    <h2 class="heading settled" data-level="3" id="modellens-elementer"><span class="secno">3. </span><span class="content">Modellens elementer</span><a class="self-link" href="#modellens-elementer"></a></h2>
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
    <p>A catalogue or repository that hosts the Datasets being described.</p>
+   <table class=".def">
+    <tbody>
+     <tr>
+      <td>URI
+      <td>test
+     <tr>
+      <td>label
+      <td>test
+   </table>
    <h3 class="heading settled" data-level="3.2" id="aktr"><span class="secno">3.2. </span><span class="content">Aktør</span><a class="self-link" href="#aktr"></a></h3>
    <p>An entity that is associated with Catalogues and/or Datasets.</p>
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
@@ -1663,7 +1671,7 @@ Marts 2020</p>
    <h2 class="heading settled" data-level="6" id="bilag"><span class="secno">6. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
     ================ 
    <p>arkitektur.digst.dk</p>
-  </main>
+   <table>
 <script>
 (function() {
   "use strict";
@@ -1793,3 +1801,5 @@ Marts 2020</p>
 
 })();
 </script>
+   </table>
+  </main>
