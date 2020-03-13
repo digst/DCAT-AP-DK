@@ -157,11 +157,9 @@ Specifikationen skal være med til sørge for at begreber til beskrivelse af dat
 
 De grundlæggende strukturer og elementer hentes fra EU-Kommissionens specifikation DCAT-AP 2.0 der har til formål at standardisere og etablere sammen-hæng mellem dataportaler i medlemslandene. EU-Kommissionens specifikation tager ligeledes afsæt i W3C specifikationen DCAT (Data Catalog Vocabulary). EU-Kommissionens specifikation angiver ikke blot hvilke felter der er *obligatoriske*, men angiver også *anbefalede* og *valgfrie* egenskaber og giver mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0, men vil også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.
 
-Standarden er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer fra følgende interessentorganisationer: Digitaliseringsstyrelsen, Styrelsen for data og effektivisering, Styrelsen for arbejdsmarked og rekruttering, Erhvervstyrelsen, Geodatastyrelsen, Danmarks Miljøportal, Danmarks Statistik, Kommunernes Landsforening og KOMBIT.
+Standarden er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder.
 
-Der er også blevet gennemført en analyse af myndigheders og virksomheders behov og barrierer for adgang til offentlige data med 50+ informanter fra statslige og kommunale myndigheder, semioffentlige virksomheder, start-ups samt mellemstore og store virksomheder.  
-
-For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0 samt behovsanalysen. 
+For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
 
 
 
