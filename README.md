@@ -11,7 +11,11 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 * Link til DCAT (W3C): https://www.w3.org/TR/vocab-dcat-2/ 
 
 ## Kommentarer til DCAT-AP-DK
-Indsend venligt kommentarer og ændringsforslag via den indbyggede  issue tracker i dette respositorium: https://github.com/digst/DCAT-AP-DK/issues. Kommentarer til selve DCAT-vokabularet eller den europæiske anvendelsesprofil DCAT-AP kan oprettes via https://github.com/SEMICeu/DCAT-AP/issues og https://github.com/w3c/dxwg/issues.
+Indsend venligt kommentarer og ændringsforslag via den indbyggede  issue tracker i dette respositorium: https://github.com/digst/DCAT-AP-DK/issues. 
+
+Kommentarer til  DCAT-vokabularet kan oprettes via https://github.com/w3c/dxwg/issues.
+
+Kommentarer til  DCAT-vokabularet til den europæiske anvendelsesprofil DCAT-AP kan oprettes via https://github.com/SEMICeu/DCAT-AP/issues .
 
 ## Repositoriets struktur
 /releases: DCAT-AP-DK releases (1.1,2.0 etc), og hver release kan have flere distributioner
