@@ -161,10 +161,10 @@ Search "@da" (144 hits in 1 file)
 	Line 1237:   rdfs:label "service"@da ;  
 	Line 1250:   skos:definition "En side eller et endpoint som er en del af kataloget."@da ;    
   
-	Line 1258:   rdfs:comment "mindste rumlig afstand som kan resolveres i et datasæt, målt i meter."@da ;     
+	Line 1258:   rdfs:comment "mindste rumlige afstand som kan resolveres i et datasæt, målt i meter."@da ;     
 	Line 1264:   rdfs:label "rumlig opløsning (meter)"@da ;  
 	Line 1271:   skos:changeNote "Ny genskab tilføjet i DCAT 2.0."@da ;  
-	Line 1276:   skos:definition "minimal rumlig afstand som kan resolveres i et datasæt, målt i meter."@da ;   
+	Line 1276:   skos:definition "mindste rumlige afstand som kan resolveres i et datasæt, målt i meter.."@da ;   
 	Line 1282:   skos:editorialNote "Kan optræde i forbindelse med beskrivelse af datasættet eller datasætditributionen, så der er ikke angivet et domæne for egenskaben."@da ;  
 	Line 1285:   skos:scopeNote "Alternative rumlige opløsninger kan leveres som forskellige datasætdistributioner."@da ;  
 	Line 1286:   skos:scopeNote "Hvis datasættet udgøres af et billede eller et grid, så bør dette svare til afstanden mellem elementerne. For andre typer af spatiale datasæt, vil denne egenskab typisk indikere den mindste afstand mellem elementerne i datasættet."@da ; 
