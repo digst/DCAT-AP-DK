@@ -104,8 +104,7 @@ Search "@da" (144 hits in 1 file)
   
 	Line 855:   rdfs:label "slutdato"@da ;  
 	Line 861:   skos:changeNote "Ny egenskab i DCAT 2.0."@da ;  
-  
-	Line 866:   skos:definition "Periodens slutdao."@da ;   
+	Line 866:   skos:definition "Periodens slutdato."@da ;   
 	Line 871:   skos:scopeNote "Rækkeviden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige niveauer af tidslig præcision ifm. angivelse af slutdatoen for en periode. Den kan eksempelvis udtrykkes som en dato(xsd:date), en dato og et tidspunkt (xsd:dateTime), eller et årstal (xsd:gYear)."@da ;  
   
 	Line 879:   rdfs:comment "En beskrivelse af det pågældende serviceendpoint, inklusiv dets operationer, parametre etc."@da ;     
