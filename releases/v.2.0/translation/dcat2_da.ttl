@@ -475,7 +475,7 @@ dcat:Role
 .
 dcat:accessService
   a owl:ObjectProperty ;
-  rdfs:comment "En side eller endpoint der giver adgang til en distribution af datasættet."@da ;     
+  rdfs:comment "En side eller endpoint der giver adgang til en repræsentation af datasættet."@da ;     
   rdfs:comment "A site or end-point that gives access to the distribution of the dataset."@en ;
   rdfs:comment "Umístění či přístupový bod zpřístupňující distribuci datové sady."@cs ;
   rdfs:comment "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."@es ;
