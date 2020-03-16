@@ -863,7 +863,7 @@ dcat:endDate
   skos:changeNote "Nuova proprietà aggiunta in DCAT 2.0."@it ;
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva propiedad agregada en DCAT 2.0."@es ;
-  skos:definition "Periodens slutdao."@da ;   
+  skos:definition "Periodens slutdato."@da ;   
   skos:definition "El fin del período."@es ;
   skos:definition "Konec doby trvání."@cs ;
   skos:definition "The end of the period."@en ; 
