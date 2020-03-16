@@ -113,14 +113,14 @@ Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/releases/v.2.0/
 Editor Term: Bidragsyder, Bidragsydere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
-Editor: Styrelsen for data og effektivisering
-Editor: Styrelsen for arbejdsmarked og rekruttering
-Editor: Geodatastyrelsen 
-Editor: Erhvervstyrelsen
-Editor: Danmarks Miljøportal
-Editor: Danmarks Statistik
-Editor: Kommunernes Landsforening
-Editor: KOMBIT
+Editor: [Styrelsen for data og effektivisering]
+Editor: [Styrelsen for arbejdsmarked og rekruttering]
+Editor: [Geodatastyrelsen]
+Editor: [Erhvervstyrelsen]
+Editor: [Danmarks Miljøportal]
+Editor: [Danmarks Statistik]
+Editor: [Kommunernes Landsforening]
+Editor: [KOMBIT]
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
@@ -187,9 +187,8 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 # Oversigt over anvendelsesprofilen
 
-
-
 ## Diagram
+
 
 
 ## Namespaces
@@ -213,40 +212,202 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 * dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/
 
 
+# Modellens grundlæggende struktur
+DCAT beskriver en ramme metadata om datasæt i tre forskellige lag, et kataloglag, på datasætlag og på repræsentationslag. Hvert element i et givet lag kan beskrives med metadata, såsom titel, beskrivelse osv. 
+
+## Kataloglaget
+Kataloglaget er det øverste lag i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
+
+## Datasætlaget
+Dette lag udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information. Det kan referere til mange forskellige repræsentatationer at netop dette datasæt. 
+
+## Repræsentationslaget
+Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgangsURL, formatet, størrelse, downloadURL adgangsservice etc..
+
+
+# Elementer i DCAT-AP-DK 
+I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
+
+## Klasse: Katalog (Obligatorisk)
+En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)
+dcat:Catalog
+
+
+### Egenskab: titel (Obligatorisk)
+dct:title
+
+### Egenskab: beskrivelse (Obligatorisk)  
+dct:description
+
+### Egenskab: udgiver (Obligatorisk)  
+dct:publisher
+
+### Egenskab: datasæt (Obligatorisk) 
+dcat:dataset
+
+### Egenskab: hjemmeside (Anbefalet) 
+foaf:homepage
+
+### Egenskab: sprog  (Anbefalet) 
+dct:language
+
+### Egenskab: licens (Anbefalet) 
+dct:license
+
+### Egenskab: udgivelsesdato  (Anbefalet) 
+dct:issued
+
+### Egenskab: seneste opdateringsdato  (Anbefalet)  
+dct:modified
+
+### Egenskab: geografisk afgrænsning  (Anbefalet)   
+dct:spatial
+
+### Egenskab: anvendt klassifikation (Anbefalet)  
+dcat:themeTaxonomy
+
+### Egenskab: har del (Valgfri)
+dct:hasPart
+
+### Egenskab: er del af (Valgfri)
+dct:isPartOf
+
+### Egenskab: optegnelse (Valgfri)
+dcat:record
+
+### Egenskab: adgangsrettigheder (Valgfri)
+dct:rights
+
+### Egenskab: service (Valgfri)
+dcat:service
+
+### Egenskab: katalog (Valgfri)
+dcat:catalog
+
+### Egenskab: skaber (Valgfri)
+dct:creator
+
+
+## Klassen Katalogoptegnelse
+En optegnelse i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice
+
+### Egenskab: optegnelsens genstand (Obligatorisk)
+Den ressource (datasæt, dataservice eller katalog) optegnelsen i kataloget handler om
+foaf:primaryTopic 
+
+### Egenskab: seneste opdateringsdato (Obligatorisk)
+dct:modified
+
+### Egenskab: i overenstemmelse med (Anbefalet)
+dct:conformsTo
+
+### Egenskab: status (Anbefalet)
+adms:status
+
+### Egenskab: udgivelsesdato (Anbefalet)
+dct:issued
+
+### Egenskab: bskrivelse (Valgfri)
+dct:description
+
+### Egenskab: sprog (Valgfri)
+dct:language
+
+### Egenskab: kilde(Valgfri)
+dct:source
+
+### Egenskab: titel (Valgfri)
+dct:title
 
 
 
-# Modellens elementer
+
+## Klassen Datasæt
+A conceptual entity that represents the information published.
 
 
-## Katalog
+### Egenskab: titel (Obligatorisk)
+dct:title
 
-A catalogue or repository that hosts the Datasets being described.
+### Egenskab: beskrivelse (Obligatorisk)
+dct:description
+
+### Egenskab: udgiver (?)
+dct:publisher
+
+### Egenskab: dataansvarlig organisation (?)
+dcat-dk:dataResponsibleOrganisation
+
+### Egenskab: Kontaktpunkt (Anbefalet)
+dcat:contactPoint
+
+### Egenskab: identifikator (Anbefalet)
+dct:identifier
+
+### Egenskab: anden identifikator (Valgfri)
+adms:identifier
+
+### Egenskab: datatema ()
+EUs datatemaer
+Forvaltningsopgaver (FORM/KLE) - versionsnummer
+dct:theme
+
+### Egenskab: nøgleord (Valgfri)
+dcat:keyword
+
+### Egenskab: hjemmel (Anbefalet)
+cv:hasLegalResource
+
+### Egenskab: personoplysningskategori (Anbefalet)
+
+### Egenskab: betalingspålagt (Anbefalet)
+dcat-dk: payment ImposedContents|
+
+### Egenskab: datasærepræsentation (Anbefalet)
+dcat:distribution
 
 
-<table class=".def">
-	<tr><td>URI</td><td>test</td></tr>
-	<tr><td>label</td><td>test</td></tr>	
-<table>	
 
-## Aktør
+### Egenskab:  (Valgfri)
+dct:spatial
+dct:temporal
+dct:accessRights
+dct:creator
+schema:maintainer
+dct:conformsTo
+foaf:page
+dct:accrualPeriodicity
+dct:hasVersion
+dct:isReferencedBy
+dct:isVersionOf
+dcat:landingPage
+dct:language
+dqv:hasQualityMetadata 
+duv:hasUsage
+
+## Klassen Datasætrepræsentation
+physical embodiment of the Dataset in a particular format
+
+
+## Klassen Dataservice
+
+A collection of operations that provides access to one or more datasets or data processing functions.
+
+
+## Klassen Aktør
 
 An entity that is associated with Catalogues and/or Datasets. 
 
 
-## Datasæt
-
-A conceptual entity that represents the information published.
 
 
-## Datasætrepræsentation
-
-physical embodiment of the Dataset in a particular format
 
 
-## Dataservice
 
-A collection of operations that provides access to one or more datasets or data processing functions.
+
+
+
+
 
 
 
@@ -277,9 +438,20 @@ A collection of operations that provides access to one or more datasets or data 
 
 
 # Bilag
+
+## UML-diagrammer
+
+## Eksempler 
+
+## Begrebsliste
+
+
+
 ================
 
 arkitektur.digst.dk
+
+
 
 
 # Short hands
