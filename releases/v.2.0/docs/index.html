@@ -1,3 +1,4 @@
+
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -1491,21 +1492,21 @@ pre .property::before, pre .property::after {
      <dd>
       <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Styrelsen for data og effektivisering</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Styrelsen for data og effektivisering]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Styrelsen for arbejdsmarked og rekruttering</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Styrelsen for arbejdsmarked og rekruttering]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Geodatastyrelsen</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Geodatastyrelsen]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Erhvervstyrelsen</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Erhvervstyrelsen]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Danmarks Miljøportal</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Danmarks Miljøportal]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Danmarks Statistik</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Danmarks Statistik]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">Kommunernes Landsforening</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Kommunernes Landsforening]</span>
      <dd>
-      <dd class="editor p-author h-card vcard"><span class="p-name fn">KOMBIT</span>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[KOMBIT]</span>
     </dl>
    </div>
    <div data-fill-with="warning"></div>
@@ -1537,17 +1538,81 @@ pre .property::before, pre .property::after {
       <li><a href="#namespaces"><span class="secno">2.2</span> <span class="content">Namespaces</span></a>
      </ol>
     <li>
-     <a href="#modellens-elementer"><span class="secno">3</span> <span class="content">Modellens elementer</span></a>
+     <a href="#modellens-grundlggende-struktur"><span class="secno">3</span> <span class="content">Modellens grundlæggende struktur</span></a>
      <ol class="toc">
-      <li><a href="#katalog"><span class="secno">3.1</span> <span class="content">Katalog</span></a>
-      <li><a href="#aktr"><span class="secno">3.2</span> <span class="content">Aktør</span></a>
-      <li><a href="#datast"><span class="secno">3.3</span> <span class="content">Datasæt</span></a>
-      <li><a href="#datastreprsentation"><span class="secno">3.4</span> <span class="content">Datasætrepræsentation</span></a>
-      <li><a href="#dataservice"><span class="secno">3.5</span> <span class="content">Dataservice</span></a>
+      <li><a href="#kataloglaget"><span class="secno">3.1</span> <span class="content">Kataloglaget</span></a>
+      <li><a href="#datastlaget"><span class="secno">3.2</span> <span class="content">Datasætlaget</span></a>
+      <li><a href="#reprsentationslaget"><span class="secno">3.3</span> <span class="content">Repræsentationslaget</span></a>
      </ol>
-    <li><a href="#emner"><span class="secno">4</span> <span class="content">Emner</span></a>
-    <li><a href="#referencer"><span class="secno">5</span> <span class="content">Referencer</span></a>
-    <li><a href="#bilag"><span class="secno">6</span> <span class="content">Bilag</span></a>
+    <li>
+     <a href="#elementer-i-dcat-ap-dk"><span class="secno">4</span> <span class="content">Elementer i DCAT-AP-DK</span></a>
+     <ol class="toc">
+      <li>
+       <a href="#klasse-katalog-obligatorisk"><span class="secno">4.1</span> <span class="content">Klasse: Katalog (Obligatorisk)</span></a>
+       <ol class="toc">
+        <li><a href="#egenskab-titel-obligatorisk"><span class="secno">4.1.1</span> <span class="content">Egenskab: titel (Obligatorisk)</span></a>
+        <li><a href="#egenskab-beskrivelse-obligatorisk"><span class="secno">4.1.2</span> <span class="content">Egenskab: beskrivelse (Obligatorisk)</span></a>
+        <li><a href="#egenskab-udgiver-obligatorisk"><span class="secno">4.1.3</span> <span class="content">Egenskab: udgiver (Obligatorisk)</span></a>
+        <li><a href="#egenskab-datast-obligatorisk"><span class="secno">4.1.4</span> <span class="content">Egenskab: datasæt (Obligatorisk)</span></a>
+        <li><a href="#egenskab-hjemmeside-anbefalet"><span class="secno">4.1.5</span> <span class="content">Egenskab: hjemmeside (Anbefalet)</span></a>
+        <li><a href="#egenskab-sprog-anbefalet"><span class="secno">4.1.6</span> <span class="content">Egenskab: sprog  (Anbefalet)</span></a>
+        <li><a href="#egenskab-licens-anbefalet"><span class="secno">4.1.7</span> <span class="content">Egenskab: licens (Anbefalet)</span></a>
+        <li><a href="#egenskab-udgivelsesdato-anbefalet"><span class="secno">4.1.8</span> <span class="content">Egenskab: udgivelsesdato  (Anbefalet)</span></a>
+        <li><a href="#egenskab-seneste-opdateringsdato-anbefalet"><span class="secno">4.1.9</span> <span class="content">Egenskab: seneste opdateringsdato  (Anbefalet)</span></a>
+        <li><a href="#egenskab-geografisk-afgrnsning-anbefalet"><span class="secno">4.1.10</span> <span class="content">Egenskab: geografisk afgrænsning  (Anbefalet)</span></a>
+        <li><a href="#egenskab-anvendt-klassifikation-anbefalet"><span class="secno">4.1.11</span> <span class="content">Egenskab: anvendt klassifikation (Anbefalet)</span></a>
+        <li><a href="#egenskab-har-del-valgfri"><span class="secno">4.1.12</span> <span class="content">Egenskab: har del (Valgfri)</span></a>
+        <li><a href="#egenskab-er-del-af-valgfri"><span class="secno">4.1.13</span> <span class="content">Egenskab: er del af (Valgfri)</span></a>
+        <li><a href="#egenskab-optegnelse-valgfri"><span class="secno">4.1.14</span> <span class="content">Egenskab: optegnelse (Valgfri)</span></a>
+        <li><a href="#egenskab-adgangsrettigheder-valgfri"><span class="secno">4.1.15</span> <span class="content">Egenskab: adgangsrettigheder (Valgfri)</span></a>
+        <li><a href="#egenskab-service-valgfri"><span class="secno">4.1.16</span> <span class="content">Egenskab: service (Valgfri)</span></a>
+        <li><a href="#egenskab-katalog-valgfri"><span class="secno">4.1.17</span> <span class="content">Egenskab: katalog (Valgfri)</span></a>
+        <li><a href="#egenskab-skaber-valgfri"><span class="secno">4.1.18</span> <span class="content">Egenskab: skaber (Valgfri)</span></a>
+       </ol>
+      <li>
+       <a href="#klassen-katalogoptegnelse"><span class="secno">4.2</span> <span class="content">Klassen Katalogoptegnelse</span></a>
+       <ol class="toc">
+        <li><a href="#egenskab-optegnelsens-genstand-obligatorisk"><span class="secno">4.2.1</span> <span class="content">Egenskab: optegnelsens genstand (Obligatorisk)</span></a>
+        <li><a href="#egenskab-seneste-opdateringsdato-obligatorisk"><span class="secno">4.2.2</span> <span class="content">Egenskab: seneste opdateringsdato (Obligatorisk)</span></a>
+        <li><a href="#egenskab-i-overenstemmelse-med-anbefalet"><span class="secno">4.2.3</span> <span class="content">Egenskab: i overenstemmelse med (Anbefalet)</span></a>
+        <li><a href="#egenskab-status-anbefalet"><span class="secno">4.2.4</span> <span class="content">Egenskab: status (Anbefalet)</span></a>
+        <li><a href="#egenskab-udgivelsesdato-anbefalet①"><span class="secno">4.2.5</span> <span class="content">Egenskab: udgivelsesdato (Anbefalet)</span></a>
+        <li><a href="#egenskab-bskrivelse-valgfri"><span class="secno">4.2.6</span> <span class="content">Egenskab: bskrivelse (Valgfri)</span></a>
+        <li><a href="#egenskab-sprog-valgfri"><span class="secno">4.2.7</span> <span class="content">Egenskab: sprog (Valgfri)</span></a>
+        <li><a href="#egenskab-kilde-valgfri"><span class="secno">4.2.8</span> <span class="content">Egenskab: kilde(Valgfri)</span></a>
+        <li><a href="#egenskab-titel-valgfri"><span class="secno">4.2.9</span> <span class="content">Egenskab: titel (Valgfri)</span></a>
+       </ol>
+      <li>
+       <a href="#klassen-datast"><span class="secno">4.3</span> <span class="content">Klassen Datasæt</span></a>
+       <ol class="toc">
+        <li><a href="#egenskab-titel-obligatorisk①"><span class="secno">4.3.1</span> <span class="content">Egenskab: titel (Obligatorisk)</span></a>
+        <li><a href="#egenskab-beskrivelse-obligatorisk①"><span class="secno">4.3.2</span> <span class="content">Egenskab: beskrivelse (Obligatorisk)</span></a>
+        <li><a href="#egenskab-udgiver"><span class="secno">4.3.3</span> <span class="content">Egenskab: udgiver (?)</span></a>
+        <li><a href="#egenskab-dataansvarlig-organisation"><span class="secno">4.3.4</span> <span class="content">Egenskab: dataansvarlig organisation (?)</span></a>
+        <li><a href="#egenskab-kontaktpunkt-anbefalet"><span class="secno">4.3.5</span> <span class="content">Egenskab: Kontaktpunkt (Anbefalet)</span></a>
+        <li><a href="#egenskab-identifikator-anbefalet"><span class="secno">4.3.6</span> <span class="content">Egenskab: identifikator (Anbefalet)</span></a>
+        <li><a href="#egenskab-anden-identifikator-valgfri"><span class="secno">4.3.7</span> <span class="content">Egenskab: anden identifikator (Valgfri)</span></a>
+        <li><a href="#egenskab-datatema"><span class="secno">4.3.8</span> <span class="content">Egenskab: datatema ()</span></a>
+        <li><a href="#egenskab-ngleord-valgfri"><span class="secno">4.3.9</span> <span class="content">Egenskab: nøgleord (Valgfri)</span></a>
+        <li><a href="#egenskab-hjemmel-anbefalet"><span class="secno">4.3.10</span> <span class="content">Egenskab: hjemmel (Anbefalet)</span></a>
+        <li><a href="#egenskab-personoplysningskategori-anbefalet"><span class="secno">4.3.11</span> <span class="content">Egenskab: personoplysningskategori (Anbefalet)</span></a>
+        <li><a href="#egenskab-betalingsplagt-anbefalet"><span class="secno">4.3.12</span> <span class="content">Egenskab: betalingspålagt (Anbefalet)</span></a>
+        <li><a href="#egenskab-datasreprsentation-anbefalet"><span class="secno">4.3.13</span> <span class="content">Egenskab: datasærepræsentation (Anbefalet)</span></a>
+        <li><a href="#egenskab-valgfri"><span class="secno">4.3.14</span> <span class="content">Egenskab:  (Valgfri)</span></a>
+       </ol>
+      <li><a href="#klassen-datastreprsentation"><span class="secno">4.4</span> <span class="content">Klassen Datasætrepræsentation</span></a>
+      <li><a href="#klassen-dataservice"><span class="secno">4.5</span> <span class="content">Klassen Dataservice</span></a>
+      <li><a href="#klassen-aktr"><span class="secno">4.6</span> <span class="content">Klassen Aktør</span></a>
+     </ol>
+    <li><a href="#emner"><span class="secno">5</span> <span class="content">Emner</span></a>
+    <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
+    <li>
+     <a href="#bilag"><span class="secno">7</span> <span class="content">Bilag</span></a>
+     <ol class="toc">
+      <li><a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
+      <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
+      <li><a href="#begrebsliste"><span class="secno">7.3</span> <span class="content">Begrebsliste</span></a>
+     </ol>
    </ol>
   </nav>
   <main>
@@ -1608,27 +1673,128 @@ Marts 2020</p>
     <li data-md>
      <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    </ul>
-   <h2 class="heading settled" data-level="3" id="modellens-elementer"><span class="secno">3. </span><span class="content">Modellens elementer</span><a class="self-link" href="#modellens-elementer"></a></h2>
-   <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
-   <p>A catalogue or repository that hosts the Datasets being described.</p>
-   <table class=".def">
-    <tbody>
-     <tr>
-      <td>URI
-      <td>test
-     <tr>
-      <td>label
-      <td>test
-   </table>
-   <h3 class="heading settled" data-level="3.2" id="aktr"><span class="secno">3.2. </span><span class="content">Aktør</span><a class="self-link" href="#aktr"></a></h3>
-   <p>An entity that is associated with Catalogues and/or Datasets.</p>
-   <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
-   <p>A conceptual entity that represents the information published.</p>
-   <h3 class="heading settled" data-level="3.4" id="datastreprsentation"><span class="secno">3.4. </span><span class="content">Datasætrepræsentation</span><a class="self-link" href="#datastreprsentation"></a></h3>
-   <p>physical embodiment of the Dataset in a particular format</p>
-   <h3 class="heading settled" data-level="3.5" id="dataservice"><span class="secno">3.5. </span><span class="content">Dataservice</span><a class="self-link" href="#dataservice"></a></h3>
+   <h2 class="heading settled" data-level="3" id="modellens-grundlggende-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
+    DCAT beskriver en ramme metadata om datasæt i tre forskellige lag, et kataloglag, på datasætlag og på repræsentationslag. Hvert element i et givet lag kan beskrives med metadata, såsom titel, beskrivelse osv. 
+   <h3 class="heading settled" data-level="3.1" id="kataloglaget"><span class="secno">3.1. </span><span class="content">Kataloglaget</span><a class="self-link" href="#kataloglaget"></a></h3>
+    Kataloglaget er det øverste lag i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
+   <h3 class="heading settled" data-level="3.2" id="datastlaget"><span class="secno">3.2. </span><span class="content">Datasætlaget</span><a class="self-link" href="#datastlaget"></a></h3>
+    Dette lag udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information. Det kan referere til mange forskellige repræsentatationer at netop dette datasæt. 
+   <h3 class="heading settled" data-level="3.3" id="reprsentationslaget"><span class="secno">3.3. </span><span class="content">Repræsentationslaget</span><a class="self-link" href="#reprsentationslaget"></a></h3>
+    Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgangsURL, formatet, størrelse, downloadURL adgangsservice etc.. 
+   <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
+    I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
+   <h3 class="heading settled" data-level="4.1" id="klasse-katalog-obligatorisk"><span class="secno">4.1. </span><span class="content">Klasse: Katalog (Obligatorisk)</span><a class="self-link" href="#klasse-katalog-obligatorisk"></a></h3>
+    En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)
+dcat:Catalog 
+   <h4 class="heading settled" data-level="4.1.1" id="egenskab-titel-obligatorisk"><span class="secno">4.1.1. </span><span class="content">Egenskab: titel (Obligatorisk)</span><a class="self-link" href="#egenskab-titel-obligatorisk"></a></h4>
+    dct:title 
+   <h4 class="heading settled" data-level="4.1.2" id="egenskab-beskrivelse-obligatorisk"><span class="secno">4.1.2. </span><span class="content">Egenskab: beskrivelse (Obligatorisk)</span><a class="self-link" href="#egenskab-beskrivelse-obligatorisk"></a></h4>
+    dct:description 
+   <h4 class="heading settled" data-level="4.1.3" id="egenskab-udgiver-obligatorisk"><span class="secno">4.1.3. </span><span class="content">Egenskab: udgiver (Obligatorisk)</span><a class="self-link" href="#egenskab-udgiver-obligatorisk"></a></h4>
+    dct:publisher 
+   <h4 class="heading settled" data-level="4.1.4" id="egenskab-datast-obligatorisk"><span class="secno">4.1.4. </span><span class="content">Egenskab: datasæt (Obligatorisk)</span><a class="self-link" href="#egenskab-datast-obligatorisk"></a></h4>
+    dcat:dataset 
+   <h4 class="heading settled" data-level="4.1.5" id="egenskab-hjemmeside-anbefalet"><span class="secno">4.1.5. </span><span class="content">Egenskab: hjemmeside (Anbefalet)</span><a class="self-link" href="#egenskab-hjemmeside-anbefalet"></a></h4>
+    foaf:homepage 
+   <h4 class="heading settled" data-level="4.1.6" id="egenskab-sprog-anbefalet"><span class="secno">4.1.6. </span><span class="content">Egenskab: sprog  (Anbefalet)</span><a class="self-link" href="#egenskab-sprog-anbefalet"></a></h4>
+    dct:language 
+   <h4 class="heading settled" data-level="4.1.7" id="egenskab-licens-anbefalet"><span class="secno">4.1.7. </span><span class="content">Egenskab: licens (Anbefalet)</span><a class="self-link" href="#egenskab-licens-anbefalet"></a></h4>
+    dct:license 
+   <h4 class="heading settled" data-level="4.1.8" id="egenskab-udgivelsesdato-anbefalet"><span class="secno">4.1.8. </span><span class="content">Egenskab: udgivelsesdato  (Anbefalet)</span><a class="self-link" href="#egenskab-udgivelsesdato-anbefalet"></a></h4>
+    dct:issued 
+   <h4 class="heading settled" data-level="4.1.9" id="egenskab-seneste-opdateringsdato-anbefalet"><span class="secno">4.1.9. </span><span class="content">Egenskab: seneste opdateringsdato  (Anbefalet)</span><a class="self-link" href="#egenskab-seneste-opdateringsdato-anbefalet"></a></h4>
+    dct:modified 
+   <h4 class="heading settled" data-level="4.1.10" id="egenskab-geografisk-afgrnsning-anbefalet"><span class="secno">4.1.10. </span><span class="content">Egenskab: geografisk afgrænsning  (Anbefalet)</span><a class="self-link" href="#egenskab-geografisk-afgrnsning-anbefalet"></a></h4>
+    dct:spatial 
+   <h4 class="heading settled" data-level="4.1.11" id="egenskab-anvendt-klassifikation-anbefalet"><span class="secno">4.1.11. </span><span class="content">Egenskab: anvendt klassifikation (Anbefalet)</span><a class="self-link" href="#egenskab-anvendt-klassifikation-anbefalet"></a></h4>
+    dcat:themeTaxonomy 
+   <h4 class="heading settled" data-level="4.1.12" id="egenskab-har-del-valgfri"><span class="secno">4.1.12. </span><span class="content">Egenskab: har del (Valgfri)</span><a class="self-link" href="#egenskab-har-del-valgfri"></a></h4>
+    dct:hasPart 
+   <h4 class="heading settled" data-level="4.1.13" id="egenskab-er-del-af-valgfri"><span class="secno">4.1.13. </span><span class="content">Egenskab: er del af (Valgfri)</span><a class="self-link" href="#egenskab-er-del-af-valgfri"></a></h4>
+    dct:isPartOf 
+   <h4 class="heading settled" data-level="4.1.14" id="egenskab-optegnelse-valgfri"><span class="secno">4.1.14. </span><span class="content">Egenskab: optegnelse (Valgfri)</span><a class="self-link" href="#egenskab-optegnelse-valgfri"></a></h4>
+    dcat:record 
+   <h4 class="heading settled" data-level="4.1.15" id="egenskab-adgangsrettigheder-valgfri"><span class="secno">4.1.15. </span><span class="content">Egenskab: adgangsrettigheder (Valgfri)</span><a class="self-link" href="#egenskab-adgangsrettigheder-valgfri"></a></h4>
+    dct:rights 
+   <h4 class="heading settled" data-level="4.1.16" id="egenskab-service-valgfri"><span class="secno">4.1.16. </span><span class="content">Egenskab: service (Valgfri)</span><a class="self-link" href="#egenskab-service-valgfri"></a></h4>
+    dcat:service 
+   <h4 class="heading settled" data-level="4.1.17" id="egenskab-katalog-valgfri"><span class="secno">4.1.17. </span><span class="content">Egenskab: katalog (Valgfri)</span><a class="self-link" href="#egenskab-katalog-valgfri"></a></h4>
+    dcat:catalog 
+   <h4 class="heading settled" data-level="4.1.18" id="egenskab-skaber-valgfri"><span class="secno">4.1.18. </span><span class="content">Egenskab: skaber (Valgfri)</span><a class="self-link" href="#egenskab-skaber-valgfri"></a></h4>
+    dct:creator 
+   <h3 class="heading settled" data-level="4.2" id="klassen-katalogoptegnelse"><span class="secno">4.2. </span><span class="content">Klassen Katalogoptegnelse</span><a class="self-link" href="#klassen-katalogoptegnelse"></a></h3>
+    En optegnelse i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice 
+   <h4 class="heading settled" data-level="4.2.1" id="egenskab-optegnelsens-genstand-obligatorisk"><span class="secno">4.2.1. </span><span class="content">Egenskab: optegnelsens genstand (Obligatorisk)</span><a class="self-link" href="#egenskab-optegnelsens-genstand-obligatorisk"></a></h4>
+    Den ressource (datasæt, dataservice eller katalog) optegnelsen i kataloget handler om
+foaf:primaryTopic 
+   <h4 class="heading settled" data-level="4.2.2" id="egenskab-seneste-opdateringsdato-obligatorisk"><span class="secno">4.2.2. </span><span class="content">Egenskab: seneste opdateringsdato (Obligatorisk)</span><a class="self-link" href="#egenskab-seneste-opdateringsdato-obligatorisk"></a></h4>
+    dct:modified 
+   <h4 class="heading settled" data-level="4.2.3" id="egenskab-i-overenstemmelse-med-anbefalet"><span class="secno">4.2.3. </span><span class="content">Egenskab: i overenstemmelse med (Anbefalet)</span><a class="self-link" href="#egenskab-i-overenstemmelse-med-anbefalet"></a></h4>
+    dct:conformsTo 
+   <h4 class="heading settled" data-level="4.2.4" id="egenskab-status-anbefalet"><span class="secno">4.2.4. </span><span class="content">Egenskab: status (Anbefalet)</span><a class="self-link" href="#egenskab-status-anbefalet"></a></h4>
+    adms:status 
+   <h4 class="heading settled" data-level="4.2.5" id="egenskab-udgivelsesdato-anbefalet①"><span class="secno">4.2.5. </span><span class="content">Egenskab: udgivelsesdato (Anbefalet)</span><a class="self-link" href="#egenskab-udgivelsesdato-anbefalet①"></a></h4>
+    dct:issued 
+   <h4 class="heading settled" data-level="4.2.6" id="egenskab-bskrivelse-valgfri"><span class="secno">4.2.6. </span><span class="content">Egenskab: bskrivelse (Valgfri)</span><a class="self-link" href="#egenskab-bskrivelse-valgfri"></a></h4>
+    dct:description 
+   <h4 class="heading settled" data-level="4.2.7" id="egenskab-sprog-valgfri"><span class="secno">4.2.7. </span><span class="content">Egenskab: sprog (Valgfri)</span><a class="self-link" href="#egenskab-sprog-valgfri"></a></h4>
+    dct:language 
+   <h4 class="heading settled" data-level="4.2.8" id="egenskab-kilde-valgfri"><span class="secno">4.2.8. </span><span class="content">Egenskab: kilde(Valgfri)</span><a class="self-link" href="#egenskab-kilde-valgfri"></a></h4>
+    dct:source 
+   <h4 class="heading settled" data-level="4.2.9" id="egenskab-titel-valgfri"><span class="secno">4.2.9. </span><span class="content">Egenskab: titel (Valgfri)</span><a class="self-link" href="#egenskab-titel-valgfri"></a></h4>
+    dct:title 
+   <h3 class="heading settled" data-level="4.3" id="klassen-datast"><span class="secno">4.3. </span><span class="content">Klassen Datasæt</span><a class="self-link" href="#klassen-datast"></a></h3>
+    A conceptual entity that represents the information published. 
+   <h4 class="heading settled" data-level="4.3.1" id="egenskab-titel-obligatorisk①"><span class="secno">4.3.1. </span><span class="content">Egenskab: titel (Obligatorisk)</span><a class="self-link" href="#egenskab-titel-obligatorisk①"></a></h4>
+    dct:title 
+   <h4 class="heading settled" data-level="4.3.2" id="egenskab-beskrivelse-obligatorisk①"><span class="secno">4.3.2. </span><span class="content">Egenskab: beskrivelse (Obligatorisk)</span><a class="self-link" href="#egenskab-beskrivelse-obligatorisk①"></a></h4>
+    dct:description 
+   <h4 class="heading settled" data-level="4.3.3" id="egenskab-udgiver"><span class="secno">4.3.3. </span><span class="content">Egenskab: udgiver (?)</span><a class="self-link" href="#egenskab-udgiver"></a></h4>
+    dct:publisher 
+   <h4 class="heading settled" data-level="4.3.4" id="egenskab-dataansvarlig-organisation"><span class="secno">4.3.4. </span><span class="content">Egenskab: dataansvarlig organisation (?)</span><a class="self-link" href="#egenskab-dataansvarlig-organisation"></a></h4>
+    dcat-dk:dataResponsibleOrganisation 
+   <h4 class="heading settled" data-level="4.3.5" id="egenskab-kontaktpunkt-anbefalet"><span class="secno">4.3.5. </span><span class="content">Egenskab: Kontaktpunkt (Anbefalet)</span><a class="self-link" href="#egenskab-kontaktpunkt-anbefalet"></a></h4>
+    dcat:contactPoint 
+   <h4 class="heading settled" data-level="4.3.6" id="egenskab-identifikator-anbefalet"><span class="secno">4.3.6. </span><span class="content">Egenskab: identifikator (Anbefalet)</span><a class="self-link" href="#egenskab-identifikator-anbefalet"></a></h4>
+    dct:identifier 
+   <h4 class="heading settled" data-level="4.3.7" id="egenskab-anden-identifikator-valgfri"><span class="secno">4.3.7. </span><span class="content">Egenskab: anden identifikator (Valgfri)</span><a class="self-link" href="#egenskab-anden-identifikator-valgfri"></a></h4>
+    adms:identifier 
+   <h4 class="heading settled" data-level="4.3.8" id="egenskab-datatema"><span class="secno">4.3.8. </span><span class="content">Egenskab: datatema ()</span><a class="self-link" href="#egenskab-datatema"></a></h4>
+    EUs datatemaer
+Forvaltningsopgaver (FORM/KLE) - versionsnummer
+dct:theme 
+   <h4 class="heading settled" data-level="4.3.9" id="egenskab-ngleord-valgfri"><span class="secno">4.3.9. </span><span class="content">Egenskab: nøgleord (Valgfri)</span><a class="self-link" href="#egenskab-ngleord-valgfri"></a></h4>
+    dcat:keyword 
+   <h4 class="heading settled" data-level="4.3.10" id="egenskab-hjemmel-anbefalet"><span class="secno">4.3.10. </span><span class="content">Egenskab: hjemmel (Anbefalet)</span><a class="self-link" href="#egenskab-hjemmel-anbefalet"></a></h4>
+    cv:hasLegalResource 
+   <h4 class="heading settled" data-level="4.3.11" id="egenskab-personoplysningskategori-anbefalet"><span class="secno">4.3.11. </span><span class="content">Egenskab: personoplysningskategori (Anbefalet)</span><a class="self-link" href="#egenskab-personoplysningskategori-anbefalet"></a></h4>
+   <h4 class="heading settled" data-level="4.3.12" id="egenskab-betalingsplagt-anbefalet"><span class="secno">4.3.12. </span><span class="content">Egenskab: betalingspålagt (Anbefalet)</span><a class="self-link" href="#egenskab-betalingsplagt-anbefalet"></a></h4>
+    dcat-dk: payment ImposedContents| 
+   <h4 class="heading settled" data-level="4.3.13" id="egenskab-datasreprsentation-anbefalet"><span class="secno">4.3.13. </span><span class="content">Egenskab: datasærepræsentation (Anbefalet)</span><a class="self-link" href="#egenskab-datasreprsentation-anbefalet"></a></h4>
+    dcat:distribution 
+   <h4 class="heading settled" data-level="4.3.14" id="egenskab-valgfri"><span class="secno">4.3.14. </span><span class="content">Egenskab:  (Valgfri)</span><a class="self-link" href="#egenskab-valgfri"></a></h4>
+    dct:spatial
+dct:temporal
+dct:accessRights
+dct:creator
+schema:maintainer
+dct:conformsTo
+foaf:page
+dct:accrualPeriodicity
+dct:hasVersion
+dct:isReferencedBy
+dct:isVersionOf
+dcat:landingPage
+dct:language
+dqv:hasQualityMetadata 
+duv:hasUsage 
+   <h3 class="heading settled" data-level="4.4" id="klassen-datastreprsentation"><span class="secno">4.4. </span><span class="content">Klassen Datasætrepræsentation</span><a class="self-link" href="#klassen-datastreprsentation"></a></h3>
+    physical embodiment of the Dataset in a particular format 
+   <h3 class="heading settled" data-level="4.5" id="klassen-dataservice"><span class="secno">4.5. </span><span class="content">Klassen Dataservice</span><a class="self-link" href="#klassen-dataservice"></a></h3>
    <p>A collection of operations that provides access to one or more datasets or data processing functions.</p>
-   <h2 class="heading settled" data-level="4" id="emner"><span class="secno">4. </span><span class="content">Emner</span><a class="self-link" href="#emner"></a></h2>
+   <h3 class="heading settled" data-level="4.6" id="klassen-aktr"><span class="secno">4.6. </span><span class="content">Klassen Aktør</span><a class="self-link" href="#klassen-aktr"></a></h3>
+   <p>An entity that is associated with Catalogues and/or Datasets.</p>
+   <h2 class="heading settled" data-level="5" id="emner"><span class="secno">5. </span><span class="content">Emner</span><a class="self-link" href="#emner"></a></h2>
    <ul>
     <li data-md>
      <p>Basisinformation</p>
@@ -1647,7 +1813,7 @@ Marts 2020</p>
     <li data-md>
      <p>Proveniens og historik</p>
    </ul>
-   <h2 class="heading settled" data-level="5" id="referencer"><span class="secno">5. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
+   <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <ul>
     <li data-md>
      <p>DCAT 2.0: https://www.w3.org/TR/vocab-dcat-2/</p>
@@ -1668,10 +1834,13 @@ Marts 2020</p>
     <li data-md>
      <p>W3C Data on the Web Best practices: https://www.w3.org/TR/dwbp/</p>
    </ul>
-   <h2 class="heading settled" data-level="6" id="bilag"><span class="secno">6. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
+   <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
+   <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
+   <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
+   <h3 class="heading settled" data-level="7.3" id="begrebsliste"><span class="secno">7.3. </span><span class="content">Begrebsliste</span><a class="self-link" href="#begrebsliste"></a></h3>
     ================ 
    <p>arkitektur.digst.dk</p>
-   <table>
+  </main>
 <script>
 (function() {
   "use strict";
@@ -1801,5 +1970,3 @@ Marts 2020</p>
 
 })();
 </script>
-   </table>
-  </main>
