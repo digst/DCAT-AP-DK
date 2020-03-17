@@ -13,6 +13,9 @@ https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europ
 + enkelte danske tilføjelser (se nederst)
 
 
+# UDKAST
+
+
 ## Klasse: Catalog (katalog) 
 ### MANDATORY:
 Property|	URI|	Range|	Usage note|	Card |
