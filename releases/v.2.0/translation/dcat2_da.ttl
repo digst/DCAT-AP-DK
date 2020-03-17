@@ -458,7 +458,7 @@ dcat:Role
   skos:definition "Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji."@cs ;
   skos:definition "Un rol es la función de un recurso o agente con respecto a otro recuros, en el contexto de atribución del recurso o de las relaciones entre recursos."@es ;
   skos:definition "Un ruolo è la funzione di una risorsa o di un agente rispetto ad un'altra risorsa, nel contesto dell'attribuzione delle risorse o delle relazioni tra risorse."@it ;
-  skos:editorialNote "Introduceret i DCAT for at komplementere prov:Role (hvis anvendelse er begrænset til roller i forbindelse med en aktivitet, som er rækkevidde for prov:hadRole)."@da ;  
+  skos:editorialNote "Introduceret i DCAT for at supplere prov:Role (hvis anvendelse er begrænset til roller i forbindelse med en aktivitet, som er rækkevidde for prov:hadRole)."@da ;  
   skos:editorialNote "Incluída en DCAT para complementar prov:Role (cuyo uso está limitado a roles en el contexto de una actividad, ya que es el rango es prov:hadRole)."@es ;
   skos:editorialNote "Introdotta in DCAT per completare prov:Role (il cui uso è limitato ai ruoli nel contesto di un'attività, in conseguenza alla definizione del codominio di prov:hadRole)."@it ;
   skos:editorialNote "Introduced into DCAT to complement prov:Role (whose use is limited to roles in the context of an activity, as the range of prov:hadRole)."@en ;
@@ -1167,7 +1167,7 @@ dcat:qualifiedRelation
 dcat:record
   a rdf:Property ;
   a owl:ObjectProperty ;
-  rdfs:comment "En optegnelse der beskriver registreringen af et enkelt datasæt eller en dataservice som er en del af kataloget."@da ;     
+  rdfs:comment "En optegnelse der beskriver registreringen af et enkelt datasæt eller en dataservice som er opført i kataloget."@da ;     
   rdfs:comment "A record describing the registration of a single dataset or data service that is part of the catalog."@en ;
   rdfs:comment "Describe la registración de un conjunto de datos o un servicio de datos en el catálogo."@es ;
   rdfs:comment "Propojuje katalog a jeho záznamy."@cs ;
@@ -1189,7 +1189,7 @@ dcat:record
   rdfs:label "سجل"@ar ;
   rdfs:label "カタログ・レコード"@ja ;
   rdfs:range dcat:CatalogRecord ;
-  skos:definition "En optegnelse der beskriver registreringen af et enkelt datasæt eller en dataservice som er en del af kataloget."@da ;  
+  skos:definition "En optegnelse der beskriver registreringen af et enkelt datasæt eller en dataservice som er opført i kataloget."@da ;  
   skos:definition "A record describing the registration of a single dataset or data service that is part of the catalog."@en ;
   skos:definition "Describe la registración de un conjunto de datos o un servicio de datos en el catálogo."@es ;
   skos:definition "Propojuje katalog a jeho záznamy."@cs ;
