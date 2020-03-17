@@ -119,7 +119,7 @@
   dct:modified "2013-11-28"^^xsd:date ;
   dct:modified "2017-12-19"^^xsd:date ;
   dct:modified "2019" ;
-  rdfs:comment "DCAT er et RDF-vokabular som har til formål at understøtte interoperabilitet mellem datakataloger udgivet på nettet. Ved at anvende DCAT til at beskrive datasæt i datakataloger, kan udgivere optimere synlighed og gøre det gøre det lettere for applikationer at anvende metadata fra forskellige kataloger. Derudover understøttes decentraliseret udstilling af kataloger og fødererede datasætsøgninger på tværs af websider. Aggregerede DCAT-metadata kan fungere som fortegnelsesfiler der kan understøtte digital bevaring. "@da ;  
+  rdfs:comment "DCAT er et RDF-vokabular som har til formål at understøtte interoperabilitet mellem datakataloger udgivet på nettet. Ved at anvende DCAT til at beskrive datasæt i datakataloger, kan udgivere øge findbarhed og gøre det gøre det lettere for applikationer at anvende metadata fra forskellige kataloger. Derudover understøttes decentraliseret udstilling af kataloger og fødererede datasætsøgninger på tværs af websider. Aggregerede DCAT-metadata kan fungere som fortegnelsesfiler der kan understøtte digital bevaring. DCAT er defineret på http://www.w3.org/TR/vocab-dcat/. Enhver forskel mellem det normative dokument og dette schema er en fejl i dette schema"@da ;  
   rdfs:comment "DCAT es un vocabulario RDF diseñado para facilitar la interoperabilidad entre catálogos de datos publicados en la Web. Utilizando DCAT para describir datos disponibles en catálogos se aumenta la posibilidad de que sean descubiertos y se permite que las aplicaciones consuman fácilmente los metadatos de varios catálogos."@es ;
   rdfs:comment "DCAT est un vocabulaire développé pour faciliter l'interopérabilité entre les jeux de données publiées sur le Web. En utilisant DCAT pour décrire les jeux de données dans les catalogues de données, les fournisseurs de données augmentent leur découverte et permettent que les applications facilement les métadonnées de plusieurs catalogues. Il permet en plus la publication décentralisée des catalogues et facilitent la recherche fédérée des données entre plusieurs sites. Les métadonnées DCAT aggrégées peuvent servir comme un manifeste pour faciliter la préservation digitale des ressources. DCAT est définie à l'adresse http://www.w3.org/TR/vocab-dcat/. Une quelconque version de ce document normatif et ce vocabulaire est une erreur dans ce vocabulaire."@fr ;
   rdfs:comment "DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web. By using DCAT to describe datasets in data catalogs, publishers increase discoverability and enable applications easily to consume metadata from multiple catalogs. It further enables decentralized publishing of catalogs and facilitates federated dataset search across sites. Aggregated DCAT metadata can serve as a manifest file to facilitate digital preservation. DCAT is defined at http://www.w3.org/TR/vocab-dcat/. Any variance between that normative document and this schema is an error in this schema."@en ;
@@ -128,7 +128,7 @@
   rdfs:comment "DCATは、ウェブ上で公開されたデータ・カタログ間の相互運用性の促進を目的とするRDFの語彙です。このドキュメントでは、その利用のために、スキーマを定義し、例を提供します。データ・カタログ内のデータセットを記述するためにDCATを用いると、公開者が、発見可能性を増加させ、アプリケーションが複数のカタログのメタデータを容易に利用できるようになります。さらに、カタログの分散公開を可能にし、複数のサイトにまたがるデータセットの統合検索を促進します。集約されたDCATメタデータは、ディジタル保存を促進するためのマニフェスト・ファイルとして使用できます。"@ja ;
   rdfs:comment "Το DCAT είναι ένα RDF λεξιλόγιο που σχεδιάσθηκε για να κάνει εφικτή τη διαλειτουργικότητα μεταξύ καταλόγων δεδομένων στον Παγκόσμιο Ιστό. Χρησιμοποιώντας το DCAT για την περιγραφή συνόλων δεδομένων, οι εκδότες αυτών αυξάνουν την ανακαλυψιμότητα και επιτρέπουν στις εφαρμογές την εύκολη κατανάλωση μεταδεδομένων από πολλαπλούς καταλόγους. Επιπλέον, δίνει τη δυνατότητα για αποκεντρωμένη έκδοση και διάθεση καταλόγων και επιτρέπει δυνατότητες ενοποιημένης αναζήτησης μεταξύ διαφορετικών πηγών. Συγκεντρωτικά μεταδεδομένα που έχουν περιγραφεί με το DCAT μπορούν να χρησιμοποιηθούν σαν ένα δηλωτικό αρχείο (manifest file) ώστε να διευκολύνουν την ψηφιακή συντήρηση."@el ;
   rdfs:comment "هي أنطولوجية تسهل تبادل البيانات بين مختلف الفهارس على الوب. استخدام هذه الأنطولوجية يساعد على اكتشاف قوائم  البيانات المنشورة على الوب و يمكن التطبيقات المختلفة من الاستفادة أتوماتيكيا من البيانات المتاحة من مختلف الفهارس."@ar ;
-  rdfs:label "Vokabular for datakataloger"@da ;
+  rdfs:label "Vokabular til datakataloger"@da ;
   rdfs:label "El vocabulario de catálogo de datos"@es ;
   rdfs:label "Il vocabolario del catalogo dei dati"@it ;
   rdfs:label "Le vocabulaire des jeux de données"@fr ;
@@ -246,7 +246,7 @@ dcat:CatalogRecord
 .
 dcat:DataService
   a owl:Class ;
-  rdfs:comment "Et site eller endpoint der giver operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ;   
+  rdfs:comment "Et site eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ;   
   rdfs:comment "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en ;
   rdfs:comment "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs ;
   rdfs:comment "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es ;
@@ -267,7 +267,7 @@ dcat:DataService
   skos:changeNote "Nová třída přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva clase añadida en DCAT 2.0."@es ;
   skos:changeNote "Nuova classe aggiunta in DCAT 2.0."@it ;
-  skos:definition "Et site eller endpoint der giver operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ;    
+  skos:definition "Et site eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ;    
   skos:definition "A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources."@en ;
   skos:definition "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs ;
   skos:definition "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es ;
@@ -424,7 +424,7 @@ dcat:Resource
   skos:definition "Resource published or curated by a single agent."@en ;
   skos:definition "Risorsa pubblicata o curata da un singolo agente."@it ;
   skos:definition "Zdroj publikovaný či řízený jediným činitelem."@cs ;
-  skos:scopeNote "Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder datset og dataservices. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse."@da ;   
+  skos:scopeNote "Klassen for alle katalogiserede ressourcer, den overordnede klasse for dcat:Dataset, dcat:DataService, dcat:Catalog og enhvert medlem af et dcat:Catalog. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer, herunder dataset og dataservices. Det anbefales kraftigt at mere specifikke subklasser oprettes. Når der beskrives ressourcer der ikke er dcat:Dataset eller dcat:DataService, anbefales det at oprette passende subklasser af dcat:Resource eller at dcat:Resource anvendes sammen med egenskaben dct:type til opmærkning med en specifik typeangivelse."@da ;   
   skos:scopeNote "La clase de todos los recursos catalogados, la superclase de dcat:Dataset, dcat:DataService, dcat:Catalog y cualquier otro miembro de un dcat:Catalog. Esta clase tiene propiedades comunes a todos los recursos catalogados, incluyendo conjuntos de datos y servicios de datos. Se recomienda fuertemente que se use una clase más específica. Cuando se describe un recurso que no es un dcat:Dataset o dcat:DataService, se recomienda crear una sub-clase apropiada de dcat:Resource, o usar dcat:Resource con la propiedad dct:type to indicar el tipo específico."@es ;
   skos:scopeNote "La classe di tutte le risorse catalogate, la Superclasse di dcat:Dataset, dcat:DataService, dcat:Catalog e qualsiasi altro membro di dcat:Catalog. Questa classe porta proprietà comuni a tutte le risorse catalogate, inclusi set di dati e servizi dati. Si raccomanda vivamente di utilizzare una sottoclasse più specifica. Quando si descrive una risorsa che non è un dcat:Dataset o dcat:DataService, si raccomanda di creare una sottoclasse di dcat:Resource appropriata, o utilizzare dcat:Resource con la proprietà dct:type per indicare il tipo specifico."@it ;
   skos:scopeNote "The class of all catalogued resources, the Superclass of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog. This class carries properties common to all catalogued resources, including datasets and data services. It is strongly recommended to use a more specific sub-class. When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dct:type property to indicate the specific type."@en ;
@@ -436,7 +436,7 @@ dcat:Resource
 .
 dcat:Role
   a owl:Class ;
-  rdfs:comment "En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcetildeling eller ressourcerelationer."@da ;     
+  rdfs:comment "En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcetilskrivning eller relationer mellem ressourcer."@da ;     
   rdfs:comment "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships."@en ;
   rdfs:comment "Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji."@cs ;
   rdfs:comment "Un rol es la función de un recurso o agente con respecto a otro recuros, en el contexto de atribución del recurso o de las relaciones entre recursos."@es ;
@@ -475,7 +475,7 @@ dcat:Role
 .
 dcat:accessService
   a owl:ObjectProperty ;
-  rdfs:comment "En side eller endpoint der giver adgang til en repræsentation af datasættet."@da ;     
+  rdfs:comment "Et websted eller endpoint der giver adgang til en repræsentation af datasættet."@da ;     
   rdfs:comment "A site or end-point that gives access to the distribution of the dataset."@en ;
   rdfs:comment "Umístění či přístupový bod zpřístupňující distribuci datové sady."@cs ;
   rdfs:comment "Un sitio o end-point que da acceso a la distribución de un conjunto de datos."@es ;
@@ -510,7 +510,7 @@ dcat:accessURL
   rdfs:comment "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja ;
   rdfs:domain dcat:Distribution ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
-  rdfs:label "andgangsURL"@da ;  
+  rdfs:label "adgangsURL"@da ;  
   rdfs:label "URL d'accès"@fr ;
   rdfs:label "URL de acceso"@es ;
   rdfs:label "URL πρόσβασης"@el ;
@@ -559,7 +559,7 @@ dcat:bbox
   skos:changeNote "Nuova proprietà aggiunta in DCAT 2.0."@it ;
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Propiedad nueva agregada en DCAT 2.0."@es ;
-  skos:definition "Den geografiske afgrænsning af en ressource."@en ;  
+  skos:definition "Den geografiske afgrænsning af en ressource."@da ;  
   skos:definition "El cuadro delimitador geográfico para un recurso."@es ;
   skos:definition "Ohraničení geografické oblasti zdroje."@cs ;
   skos:definition "The geographic bounding box of a resource."@en ;
@@ -594,7 +594,7 @@ dcat:byteSize
   rdfs:label "الحجم بالبايت"@ar ;
   rdfs:label "バイト・サイズ"@ja ;
   rdfs:range rdfs:Literal ;
-  skos:definition "Størrelsen af en datasætrepræsentationen angivet i bytes."@da ;     
+  skos:definition "Størrelsen af en datasætrepræsentation angivet i bytes."@da ;     
   skos:definition "El tamaño de una distribución en bytes."@es ;
   skos:definition "La dimensione di una distribuzione in byte."@it ;
   skos:definition "La taille de la distribution en octects."@fr ;
@@ -701,7 +701,7 @@ dcat:compressFormat
 dcat:contactPoint
   a rdf:Property ;
   a owl:ObjectProperty ;
-  rdfs:comment "Relevante kontaktoplysinger for katalogressourcen. Anvendelse af vCard anbefales."@da ;     
+  rdfs:comment "Relevante kontaktoplysinger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da ;     
   rdfs:comment "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es ;
   rdfs:comment "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it ;
   rdfs:comment "Relevant contact information for the catalogued resource. Use of vCard is recommended."@en ;
@@ -721,7 +721,7 @@ dcat:contactPoint
   rdfs:label "عنوان اتصال"@ar ;
   rdfs:label "窓口"@ja ;
   rdfs:range vcard:Kind ;
-  skos:definition "Relevante kontaktoplysinger for katalogressourcen. Anvendelse af vCard anbefales."@da ;   
+  skos:definition "Relevante kontaktoplysinger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da ;   
   skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es ;
   skos:definition "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it ;
   skos:definition "Relevant contact information for the catalogued resource. Use of vCard is recommended."@en ;
@@ -735,7 +735,7 @@ dcat:contactPoint
 dcat:dataset
   a rdf:Property ;
   a owl:ObjectProperty ;
-  rdfs:comment "En samling af data som er en del af kataloget."@da ;     
+  rdfs:comment "En samling af data som er opført i kataloget."@da ;     
   rdfs:comment "A collection of data that is listed in the catalog."@en ;
   rdfs:comment "Kolekce dat, která je katalogizována v katalogu."@cs ;
   rdfs:comment "Relie un catalogue à un jeu de données faisant partie de ce catalogue."@fr ;
@@ -758,7 +758,7 @@ dcat:dataset
   rdfs:range dcat:Dataset ;
   rdfs:subPropertyOf dct:hasPart ;
   rdfs:subPropertyOf rdfs:member ;
-  skos:definition "En samling af data som er en del af kataloget."@da ;      
+  skos:definition "En samling af data som er opført i kataloget."@da ;      
   skos:definition "A collection of data that is listed in the catalog."@en ;
   skos:definition "Kolekce dat, která je katalogizována v katalogu."@cs ;
   skos:definition "Relie un catalogue à un jeu de données faisant partie de ce catalogue."@fr ;
@@ -783,7 +783,7 @@ dcat:distribution
   rdfs:comment "データセットを、その利用可能な配信に接続します。"@ja ;
   rdfs:domain dcat:Dataset ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
-  rdfs:label "datasætrepræsentaiton"@da ;  
+  rdfs:label "datasætrepræsentation"@da ;  
   rdfs:label "distribuce"@cs ;
   rdfs:label "distribución"@es ;
   rdfs:label "distribution"@en ;
@@ -819,7 +819,7 @@ dcat:downloadURL
   rdfs:comment "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dct:format dcat:mediaType "@ar ;
   rdfs:domain dcat:Distribution ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
-  rdfs:label "download-URL"@da ;  
+  rdfs:label "downloadURL"@da ;  
   rdfs:label "URL de descarga"@es ;
   rdfs:label "URL de téléchargement"@fr ;
   rdfs:label "URL di scarico"@it ;
@@ -962,7 +962,7 @@ dcat:hadRole
   skos:definition "La función de una entidad o agente con respecto a otra entidad o recurso."@es ;
   skos:definition "La funzione di un'entità o un agente rispetto ad un'altra entità o risorsa."@it ;
   skos:definition "The function of an entity or agent with respect to another entity or resource."@en ;
-  skos:editorialNote "Introduceret i DCAT for at komplementere prov:hadRole (hvis anvendelse er begrænset til roller i forbindelse med en aktivitet med domænet prov:Association)."@da ;   
+  skos:editorialNote "Introduceret i DCAT for at supplere prov:hadRole (hvis anvendelse er begrænset til roller i forbindelse med en aktivitet med domænet prov:Association)."@da ;   
   skos:editorialNote "Agregada en DCAT para complementar prov:hadRole (cuyo uso está limitado a roles en el contexto de una actividad, con dominio prov:Association."@es ;
   skos:editorialNote "Introdotta in DCAT per completare prov:hadRole (il cui uso è limitato ai ruoli nel contesto di un'attività, con il dominio di prov:Association."@it ;
   skos:editorialNote "Introduced into DCAT to complement prov:hadRole (whose use is limited to roles in the context of an activity, with the domain of prov:Association."@en ;
@@ -1153,7 +1153,7 @@ dcat:qualifiedRelation
   skos:definition "Link a una descrizione di una relazione con un'altra risorsa."@it ;
   skos:definition "Link to a description of a relationship with another resource."@en ;
   skos:definition "Odkaz na popis vztahu s jiným zdrojem."@cs ;
-  skos:editorialNote "Introduceret i DCAT med henblik på at komplementere de øvrige præciserede relationer fra PROV. "@da ;  
+  skos:editorialNote "Introduceret i DCAT med henblik på at supplere de øvrige præciserede relationer fra PROV. "@da ;  
   skos:editorialNote "Introdotta in DCAT per integrare le altre relazioni qualificate di PROV."@it ;
   skos:editorialNote "Introduced into DCAT to complement the other PROV qualified relations. "@en ;
   skos:editorialNote "Přidáno do DCAT k doplnění jiných kvalifikovaných vztahů ze slovníku PROV."@cs ;
@@ -1228,7 +1228,7 @@ dcat:servesDataset
 .
 dcat:service
   a owl:ObjectProperty ;
-  rdfs:comment "En side eller et endpoint som er en del af kataloget."@da ;     
+  rdfs:comment "Et websted eller et endpoint som er opført i kataloget."@da ;     
   rdfs:comment "A site or endpoint that is listed in the catalog."@en ;
   rdfs:comment "Umístění či přístupový bod registrovaný v katalogu."@cs ;
   rdfs:comment "Un sitio o 'endpoint' que está listado en el catálogo."@es ;
@@ -1247,7 +1247,7 @@ dcat:service
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva propiedad añadida en DCAT 2.0."@es ;
   skos:changeNote "Nuova proprietà aggiunta in DCAT 2.0."@it ;
-  skos:definition "En side eller et endpoint som er en del af kataloget."@da ;    
+  skos:definition "Et websted eller et endpoint som er opført i kataloget."@da ;    
   skos:definition "A site or endpoint that is listed in the catalog."@en ;
   skos:definition "Umístění či přístupový bod registrovaný v katalogu."@cs ;
   skos:definition "Un sitio o 'endpoint' que está listado en el catálogo."@es ;
@@ -1307,7 +1307,7 @@ dcat:startDate
   skos:changeNote "Nuova proprietà aggiunta in DCAT 2.0."@it ;
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva propiedad agregada en DCAT 2.0."@es ;
-  skos:definition "Periodens startdato"@en ;  
+  skos:definition "Periodens startdato"@da ;  
   skos:definition "El comienzo del período"@es ;
   skos:definition "The start of the period"@en ;
   skos:definition "L'inizio del periodo"@it ;
@@ -1388,7 +1388,7 @@ dcat:theme
   skos:definition "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar ;
   skos:definition "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja ;
   skos:editorialNote "Status: English Definition text modified by DCAT revision team, all except for Italian, Czech and Danish translations are pending."@en ;
-  skos:scopeNote "Samlingen af begreber (skos:Concept) der anvendes til at klassificere ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget"@da ;  
+  skos:scopeNote "Samlingen af begreber (skos:Concept) der anvendes til at emneklassificere ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget"@da ;  
   skos:scopeNote "El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo."@es ;
   skos:scopeNote "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo."@it ;
   skos:scopeNote "Sada instancí třídy skos:Concept použitá pro kategorizaci zdrojů je organizována do schématu konceptů skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy."@cs ;
