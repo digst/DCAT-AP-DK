@@ -231,14 +231,13 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 
-
 ## Klasse: Katalog 
 
 <dl class="def"> 
 <dt>URI</dt><dd></dd>dcat:Catalog<dt>
-<dt>Definition</dt><dd></dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)<dt>
-<dt>Anvendelsesnote</dt><dd></dd>Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser.<dt>
-<dt>Kravniveau</dt><dd></dd>Obligatorisk<dt>
+<dt>Definition</dt><dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)</dd>
+<dt>Anvendelsesnote</dt><dd>Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser.</dd>
+<dt>Kravniveau</dt><dd>Obligatorisk</dd>
 </dl>
 
 
@@ -246,11 +245,11 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
  
 <dl class="def"> 
 <dt>URI</dt><dd></dd>dct:description<dt>
-<dt>Definition</dt><dd></dd>En tekstbaseret beskrivelse af ressourcen.<dt>
-<dt>Anvendelsesnote</dt><dd></dd>Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog.<dt>
-<dt>Rækkevidde</dt><dd></dd>rdfs:Literal<dt>
-<dt>Multiplicitet</dt><dd></dd>1 - *<dt>
-<dt>Kravniveau</dt><dd></dd>Obligatorisk<dt>
+<dt>Definition</dt><dd>En tekstbaseret beskrivelse af ressourcen.</dd>
+<dt>Anvendelsesnote</dt><dd>Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog.</dd>
+<dt>Rækkevidde</dt><dd>rdfs:Literal</dd>
+<dt>Multiplicitet</dt><dd>1 - *</dd>
+<dt>Kravniveau</dt><dd>Obligatorisk</dd>
 </dl>
 
 
