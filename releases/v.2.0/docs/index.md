@@ -329,6 +329,7 @@ dct:creator
 
 
 <p class="example">
+'
 ex:catalog
   a dcat:Catalog ;
   dct:publisher ex:Organization-001 ;
@@ -339,6 +340,7 @@ ex:catalog
   dcat:dataset ex:dataset-003 ;
   foaf:homepage <http://example.org/catalog> ;
 .
+'
 </p>
 
 
