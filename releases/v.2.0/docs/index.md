@@ -234,17 +234,17 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 ## Klasse: Katalog (Obligatorisk)    STIL1!
 
-Denne klasse anvendes til at beskrive eller katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen
+Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen
 
 (dcat:Catalog)
 
 
 ## Klasse: Katalog (dcat:Catalog)  STIL2!
-Denne klasse anvendes til at beskrive eller katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen.
+Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen.
 
 
 ## Klasse: Katalog  STIL3!
-Denne klasse anvendes til at beskrive eller katalog hvori der indgår datasætbeskrivelser.
+Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser.
 <dl class="def"> 
 <dt>RDF-egenskab</dt><dd></dd>dcat:Catalog<dt>
 <dt>Definition</dt><dd></dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)<dt>
