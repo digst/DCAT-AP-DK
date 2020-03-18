@@ -232,44 +232,25 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 
-## Klasse: Katalog (Obligatorisk)    STIL1!
+## Klasse: Katalog 
 
-Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen
-
-(dcat:Catalog)
-
-
-## Klasse: Katalog (dcat:Catalog)  STIL2!
-Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen.
-
-
-## Klasse: Katalog  STIL3!
-Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser.
 <dl class="def"> 
-<dt>RDF-egenskab</dt><dd></dd>dcat:Catalog<dt>
+<dt>URI</dt><dd></dd>dcat:Catalog<dt>
 <dt>Definition</dt><dd></dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)<dt>
-<dt>Anvendelsesnote</dt><dd></dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)<dt>
+<dt>Anvendelsesnote</dt><dd></dd>Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser.<dt>
 <dt>Kravniveau</dt><dd></dd>Obligatorisk<dt>
 </dl>
 
 
-
-
-### Egenskab: beskrivelse (Obligatorisk)   STIL1!
-Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. Multipliciteten skal være 1 - *.
-
-(dct:description)
-
-### Egenskab: beskrivelse (dct:description)    STIL2!
-Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. Multipliciteten skal være 1 - * (Obligatorisk)
-
-### Egenskab: beskrivelse     STIL3!
-Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. 
+### Egenskab: beskrivelse   
+ 
 <dl class="def"> 
-<dt>RDF-egenskab</dt><dd></dd>dct:description<dt>
+<dt>URI</dt><dd></dd>dct:description<dt>
 <dt>Definition</dt><dd></dd>En tekstbaseret beskrivelse af ressourcen.<dt>
+<dt>Anvendelsesnote</dt><dd></dd>Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog.<dt>
 <dt>Rækkevidde</dt><dd></dd>rdfs:Literal<dt>
-<dt>Kravniveau</dt><dd></dd>Obligatorisk (Multiplicitet:1 - *)<dt>
+<dt>Multiplicitet</dt><dd></dd>1 - *<dt>
+<dt>Kravniveau</dt><dd></dd>Obligatorisk<dt>
 </dl>
 
 
