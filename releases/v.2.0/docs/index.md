@@ -228,16 +228,56 @@ Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgan
 # Elementer i DCAT-AP-DK 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
-## Klasse: Katalog (Obligatorisk)
-En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)
-dcat:Catalog
+
+
+
+
+## Klasse: Katalog (Obligatorisk)    STIL1!
+
+Denne klasse anvendes til at beskrive eller katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen
+
+(dcat:Catalog)
+
+
+## Klasse: Katalog (dcat:Catalog)  STIL2!
+Denne klasse anvendes til at beskrive eller katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen.
+
+
+## Klasse: Katalog  STIL3!
+Denne klasse anvendes til at beskrive eller katalog hvori der indgår datasætbeskrivelser.
+<dl class="def"> 
+<dt>RDF-egenskab</dt><dd></dd>dcat:Catalog<dt>
+<dt>Definition</dt><dd></dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)<dt>
+<dt>Anvendelsesnote</dt><dd></dd>En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)<dt>
+<dt>Kravniveau</dt><dd></dd>Obligatorisk<dt>
+</dl>
+
+
+
+
+### Egenskab: beskrivelse (Obligatorisk)   STIL1!
+Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. Multipliciteten skal være 1 - *.
+
+(dct:description)
+
+### Egenskab: beskrivelse (dct:description)    STIL2!
+Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. Multipliciteten skal være 1 - * (Obligatorisk)
+
+### Egenskab: beskrivelse     STIL3!
+Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. 
+<dl class="def"> 
+<dt>RDF-egenskab</dt><dd></dd>dct:description<dt>
+<dt>Definition</dt><dd></dd>En tekstbaseret beskrivelse af ressourcen.<dt>
+<dt>Rækkevidde</dt><dd></dd>rdfs:Literal<dt>
+<dt>Kravniveau</dt><dd></dd>Obligatorisk (Multiplicitet:1 - *)<dt>
+</dl>
+
 
 
 ### Egenskab: titel (Obligatorisk)
-dct:title
+Det eller de ord, der navngiver datasættet
+(dct:title)
 
-### Egenskab: beskrivelse (Obligatorisk)  
-dct:description
 
 ### Egenskab: udgiver (Obligatorisk)  
 dct:publisher
@@ -286,6 +326,20 @@ dcat:catalog
 
 ### Egenskab: skaber (Valgfri)
 dct:creator
+
+
+<p class="example">
+ex:catalog
+  a dcat:Catalog ;
+  dct:publisher ex:Organization-001 ;
+  dct:title "Imaginary Catalog"@en ;
+  rdfs:label "Imaginary Catalog"@en ;
+  dcat:dataset ex:dataset-001 ;
+  dcat:dataset ex:dataset-002 ;
+  dcat:dataset ex:dataset-003 ;
+  foaf:homepage <http://example.org/catalog> ;
+.
+</p>
 
 
 ## Klassen Katalogoptegnelse
