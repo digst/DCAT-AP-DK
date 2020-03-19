@@ -1222,7 +1222,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 8c5cd69b2db6b377093f1f5e0c00b44e6d9e986b" name="generator">
+  <meta content="Bikeshed version 576ef4f5126e3fb83bf07d9bbe1a64f99aa4944e" name="generator">
   <link href="https://github.com/digst/DCAT-AP-DK/releases/v.2.0/" rel="canonical">
 <style>
 @media print {
@@ -1547,66 +1547,173 @@ pre .property::before, pre .property::after {
     <li>
      <a href="#elementer-i-dcat-ap-dk"><span class="secno">4</span> <span class="content">Elementer i DCAT-AP-DK</span></a>
      <ol class="toc">
-      <li><a href="#klasse-katalog-obligatorisk-stil1"><span class="secno">4.1</span> <span class="content">Klasse: Katalog (Obligatorisk)    STIL1!</span></a>
-      <li><a href="#klasse-katalog-dcatcatalog-stil2"><span class="secno">4.2</span> <span class="content">Klasse: Katalog (dcat:Catalog)  STIL2!</span></a>
       <li>
-       <a href="#klasse-katalog-stil3"><span class="secno">4.3</span> <span class="content">Klasse: Katalog  STIL3!</span></a>
+       <a href="#-datakatalog"><span class="secno">4.1</span> <span class="content">## Datakatalog</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-beskrivelse-obligatorisk-stil1"><span class="secno">4.3.1</span> <span class="content">Egenskab: beskrivelse (Obligatorisk)   STIL1!</span></a>
-        <li><a href="#egenskab-beskrivelse-dctdescription-stil2"><span class="secno">4.3.2</span> <span class="content">Egenskab: beskrivelse (dct:description)    STIL2!</span></a>
-        <li><a href="#egenskab-beskrivelse-stil3"><span class="secno">4.3.3</span> <span class="content">Egenskab: beskrivelse     STIL3!</span></a>
-        <li><a href="#egenskab-titel-obligatorisk"><span class="secno">4.3.4</span> <span class="content">Egenskab: titel (Obligatorisk)</span></a>
-        <li><a href="#egenskab-udgiver-obligatorisk"><span class="secno">4.3.5</span> <span class="content">Egenskab: udgiver (Obligatorisk)</span></a>
-        <li><a href="#egenskab-datast-obligatorisk"><span class="secno">4.3.6</span> <span class="content">Egenskab: datasæt (Obligatorisk)</span></a>
-        <li><a href="#egenskab-hjemmeside-anbefalet"><span class="secno">4.3.7</span> <span class="content">Egenskab: hjemmeside (Anbefalet)</span></a>
-        <li><a href="#egenskab-sprog-anbefalet"><span class="secno">4.3.8</span> <span class="content">Egenskab: sprog  (Anbefalet)</span></a>
-        <li><a href="#egenskab-licens-anbefalet"><span class="secno">4.3.9</span> <span class="content">Egenskab: licens (Anbefalet)</span></a>
-        <li><a href="#egenskab-udgivelsesdato-anbefalet"><span class="secno">4.3.10</span> <span class="content">Egenskab: udgivelsesdato  (Anbefalet)</span></a>
-        <li><a href="#egenskab-seneste-opdateringsdato-anbefalet"><span class="secno">4.3.11</span> <span class="content">Egenskab: seneste opdateringsdato  (Anbefalet)</span></a>
-        <li><a href="#egenskab-geografisk-afgrnsning-anbefalet"><span class="secno">4.3.12</span> <span class="content">Egenskab: geografisk afgrænsning  (Anbefalet)</span></a>
-        <li><a href="#egenskab-anvendt-klassifikation-anbefalet"><span class="secno">4.3.13</span> <span class="content">Egenskab: anvendt klassifikation (Anbefalet)</span></a>
-        <li><a href="#egenskab-har-del-valgfri"><span class="secno">4.3.14</span> <span class="content">Egenskab: har del (Valgfri)</span></a>
-        <li><a href="#egenskab-er-del-af-valgfri"><span class="secno">4.3.15</span> <span class="content">Egenskab: er del af (Valgfri)</span></a>
-        <li><a href="#egenskab-optegnelse-valgfri"><span class="secno">4.3.16</span> <span class="content">Egenskab: optegnelse (Valgfri)</span></a>
-        <li><a href="#egenskab-adgangsrettigheder-valgfri"><span class="secno">4.3.17</span> <span class="content">Egenskab: adgangsrettigheder (Valgfri)</span></a>
-        <li><a href="#egenskab-service-valgfri"><span class="secno">4.3.18</span> <span class="content">Egenskab: service (Valgfri)</span></a>
-        <li><a href="#egenskab-katalog-valgfri"><span class="secno">4.3.19</span> <span class="content">Egenskab: katalog (Valgfri)</span></a>
-        <li><a href="#egenskab-skaber-valgfri"><span class="secno">4.3.20</span> <span class="content">Egenskab: skaber (Valgfri)</span></a>
+        <li><a href="#-titel"><span class="secno">4.1.1</span> <span class="content">titel</span></a>
+        <li><a href="#-beskrivelse"><span class="secno">4.1.2</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#-udgiver"><span class="secno">4.1.3</span> <span class="content">udgiver</span></a>
+        <li><a href="#-skaber"><span class="secno">4.1.4</span> <span class="content">skaber</span></a>
+        <li><a href="#-udgivelsesdato"><span class="secno">4.1.5</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#-seneste-opdateringsdato"><span class="secno">4.1.6</span> <span class="content">seneste opdateringsdato</span></a>
+        <li><a href="#-geografisk-omrde"><span class="secno">4.1.7</span> <span class="content">geografisk område</span></a>
+        <li><a href="#-sprog"><span class="secno">4.1.8</span> <span class="content">sprog</span></a>
+        <li><a href="#-licens"><span class="secno">4.1.9</span> <span class="content">licens</span></a>
+        <li><a href="#-adgangsrettigheder"><span class="secno">4.1.10</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#-katalogpost"><span class="secno">4.1.11</span> <span class="content">katalogpost</span></a>
+        <li><a href="#-emneklassifikation"><span class="secno">4.1.12</span> <span class="content">emneklassifikation</span></a>
+        <li><a href="#-dataservice"><span class="secno">4.1.13</span> <span class="content">dataservice</span></a>
+        <li><a href="#-katalog"><span class="secno">4.1.14</span> <span class="content">katalog</span></a>
+        <li><a href="#-datast"><span class="secno">4.1.15</span> <span class="content">datasæt</span></a>
+        <li><a href="#-websted"><span class="secno">4.1.16</span> <span class="content">websted</span></a>
+        <li><a href="#-delkatalog"><span class="secno">4.1.17</span> <span class="content">delkatalog</span></a>
+        <li><a href="#-del-af-katalog"><span class="secno">4.1.18</span> <span class="content">del af katalog</span></a>
        </ol>
       <li>
-       <a href="#klassen-katalogoptegnelse"><span class="secno">4.4</span> <span class="content">Klassen Katalogoptegnelse</span></a>
+       <a href="#-katalogpost①"><span class="secno">4.2</span> <span class="content">## katalogpost</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-optegnelsens-genstand-obligatorisk"><span class="secno">4.4.1</span> <span class="content">Egenskab: optegnelsens genstand (Obligatorisk)</span></a>
-        <li><a href="#egenskab-seneste-opdateringsdato-obligatorisk"><span class="secno">4.4.2</span> <span class="content">Egenskab: seneste opdateringsdato (Obligatorisk)</span></a>
-        <li><a href="#egenskab-i-overenstemmelse-med-anbefalet"><span class="secno">4.4.3</span> <span class="content">Egenskab: i overenstemmelse med (Anbefalet)</span></a>
-        <li><a href="#egenskab-status-anbefalet"><span class="secno">4.4.4</span> <span class="content">Egenskab: status (Anbefalet)</span></a>
-        <li><a href="#egenskab-udgivelsesdato-anbefalet①"><span class="secno">4.4.5</span> <span class="content">Egenskab: udgivelsesdato (Anbefalet)</span></a>
-        <li><a href="#egenskab-bskrivelse-valgfri"><span class="secno">4.4.6</span> <span class="content">Egenskab: bskrivelse (Valgfri)</span></a>
-        <li><a href="#egenskab-sprog-valgfri"><span class="secno">4.4.7</span> <span class="content">Egenskab: sprog (Valgfri)</span></a>
-        <li><a href="#egenskab-kilde-valgfri"><span class="secno">4.4.8</span> <span class="content">Egenskab: kilde(Valgfri)</span></a>
-        <li><a href="#egenskab-titel-valgfri"><span class="secno">4.4.9</span> <span class="content">Egenskab: titel (Valgfri)</span></a>
+        <li><a href="#"><span class="secno">4.2.1</span> <span class="content"></span></a>
+        <li><a href="#-titel①"><span class="secno">4.2.2</span> <span class="content">titel</span></a>
+        <li><a href="#-beskrivelse①"><span class="secno">4.2.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#-udgivelsesdato①"><span class="secno">4.2.4</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#-seneste-ndringsdato"><span class="secno">4.2.5</span> <span class="content">seneste ændringsdato</span></a>
+        <li><a href="#-status"><span class="secno">4.2.6</span> <span class="content">status</span></a>
+        <li><a href="#-sprog①"><span class="secno">4.2.7</span> <span class="content">sprog</span></a>
+        <li><a href="#-kilde"><span class="secno">4.2.8</span> <span class="content">kilde</span></a>
+        <li><a href="#-overenstemmelse"><span class="secno">4.2.9</span> <span class="content">overenstemmelse</span></a>
        </ol>
       <li>
-       <a href="#klassen-datast"><span class="secno">4.5</span> <span class="content">Klassen Datasæt</span></a>
+       <a href="#-datast①"><span class="secno">4.3</span> <span class="content">## Datasæt</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-titel-obligatorisk①"><span class="secno">4.5.1</span> <span class="content">Egenskab: titel (Obligatorisk)</span></a>
-        <li><a href="#egenskab-beskrivelse-obligatorisk"><span class="secno">4.5.2</span> <span class="content">Egenskab: beskrivelse (Obligatorisk)</span></a>
-        <li><a href="#egenskab-udgiver"><span class="secno">4.5.3</span> <span class="content">Egenskab: udgiver (?)</span></a>
-        <li><a href="#egenskab-dataansvarlig-organisation"><span class="secno">4.5.4</span> <span class="content">Egenskab: dataansvarlig organisation (?)</span></a>
-        <li><a href="#egenskab-kontaktpunkt-anbefalet"><span class="secno">4.5.5</span> <span class="content">Egenskab: Kontaktpunkt (Anbefalet)</span></a>
-        <li><a href="#egenskab-identifikator-anbefalet"><span class="secno">4.5.6</span> <span class="content">Egenskab: identifikator (Anbefalet)</span></a>
-        <li><a href="#egenskab-anden-identifikator-valgfri"><span class="secno">4.5.7</span> <span class="content">Egenskab: anden identifikator (Valgfri)</span></a>
-        <li><a href="#egenskab-datatema"><span class="secno">4.5.8</span> <span class="content">Egenskab: datatema ()</span></a>
-        <li><a href="#egenskab-ngleord-valgfri"><span class="secno">4.5.9</span> <span class="content">Egenskab: nøgleord (Valgfri)</span></a>
-        <li><a href="#egenskab-hjemmel-anbefalet"><span class="secno">4.5.10</span> <span class="content">Egenskab: hjemmel (Anbefalet)</span></a>
-        <li><a href="#egenskab-personoplysningskategori-anbefalet"><span class="secno">4.5.11</span> <span class="content">Egenskab: personoplysningskategori (Anbefalet)</span></a>
-        <li><a href="#egenskab-betalingsplagt-anbefalet"><span class="secno">4.5.12</span> <span class="content">Egenskab: betalingspålagt (Anbefalet)</span></a>
-        <li><a href="#egenskab-datasreprsentation-anbefalet"><span class="secno">4.5.13</span> <span class="content">Egenskab: datasærepræsentation (Anbefalet)</span></a>
-        <li><a href="#egenskab-valgfri"><span class="secno">4.5.14</span> <span class="content">Egenskab:  (Valgfri)</span></a>
+        <li><a href="#-identifikator"><span class="secno">4.3.1</span> <span class="content">identifikator</span></a>
+        <li><a href="#-anden-identifikator"><span class="secno">4.3.2</span> <span class="content">anden identifikator</span></a>
+        <li><a href="#-titel②"><span class="secno">4.3.3</span> <span class="content">titel</span></a>
+        <li><a href="#-beskrivelse②"><span class="secno">4.3.4</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#-udgiver①"><span class="secno">4.3.5</span> <span class="content">udgiver</span></a>
+        <li><a href="#-skaber①"><span class="secno">4.3.6</span> <span class="content">skaber</span></a>
+        <li><a href="#-kontaktpunkt"><span class="secno">4.3.7</span> <span class="content">kontaktpunkt</span></a>
+        <li><a href="#-distribution"><span class="secno">4.3.8</span> <span class="content">distribution</span></a>
+        <li><a href="#-prve"><span class="secno">4.3.9</span> <span class="content">prøve</span></a>
+        <li><a href="#-destinationsside"><span class="secno">4.3.10</span> <span class="content">destinationsside</span></a>
+        <li><a href="#-overenstemmelse①"><span class="secno">4.3.11</span> <span class="content">overenstemmelse</span></a>
+        <li><a href="#-dokumentation"><span class="secno">4.3.12</span> <span class="content">dokumentation</span></a>
+        <li><a href="#-emne"><span class="secno">4.3.13</span> <span class="content">emne</span></a>
+        <li><a href="#-type"><span class="secno">4.3.14</span> <span class="content">type</span></a>
+        <li><a href="#-ngleord"><span class="secno">4.3.15</span> <span class="content">nøgleord</span></a>
+        <li><a href="#-sprog②"><span class="secno">4.3.16</span> <span class="content">sprog</span></a>
+        <li><a href="#-adgangsrettigheder①"><span class="secno">4.3.17</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#-geografisk-omrde①"><span class="secno">4.3.18</span> <span class="content">geografisk område</span></a>
+        <li><a href="#-rumlig-oplsning-i-meter"><span class="secno">4.3.19</span> <span class="content">rumlig opløsning (i meter)</span></a>
+        <li><a href="#-dkningsperiode"><span class="secno">4.3.20</span> <span class="content">dækningsperiode</span></a>
+        <li><a href="#-tidslig-oplsning"><span class="secno">4.3.21</span> <span class="content">tidslig opløsning</span></a>
+        <li><a href="#-opdateringsfrekvens"><span class="secno">4.3.22</span> <span class="content">opdateringsfrekvens</span></a>
+        <li><a href="#-udgivelsesdato②"><span class="secno">4.3.23</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#-ndringsdato"><span class="secno">4.3.24</span> <span class="content">ændringsdato</span></a>
+        <li><a href="#-versionsnummer"><span class="secno">4.3.25</span> <span class="content">versionsnummer</span></a>
+        <li><a href="#-versionsnoter"><span class="secno">4.3.26</span> <span class="content">versionsnoter</span></a>
+        <li><a href="#-har-version"><span class="secno">4.3.27</span> <span class="content">har version</span></a>
+        <li><a href="#-er-version-af"><span class="secno">4.3.28</span> <span class="content">er version af</span></a>
+        <li><a href="#-proveniensudsagn"><span class="secno">4.3.29</span> <span class="content">proveniensudsagn</span></a>
+        <li><a href="#-relation"><span class="secno">4.3.30</span> <span class="content">relation</span></a>
+        <li><a href="#-kildedatast"><span class="secno">4.3.31</span> <span class="content">kildedatasæt</span></a>
+        <li><a href="#-refereres-af"><span class="secno">4.3.32</span> <span class="content">refereres af</span></a>
+        <li><a href="#-prciseret-tilskrivning"><span class="secno">4.3.33</span> <span class="content">præciseret tilskrivning</span></a>
+        <li><a href="#-prciseret-relation"><span class="secno">4.3.34</span> <span class="content">præciseret relation</span></a>
+        <li><a href="#-blev-genereret-ved"><span class="secno">4.3.35</span> <span class="content">blev genereret ved</span></a>
        </ol>
-      <li><a href="#klassen-datastreprsentation"><span class="secno">4.6</span> <span class="content">Klassen Datasætrepræsentation</span></a>
-      <li><a href="#klassen-dataservice"><span class="secno">4.7</span> <span class="content">Klassen Dataservice</span></a>
-      <li><a href="#klassen-aktr"><span class="secno">4.8</span> <span class="content">Klassen Aktør</span></a>
+      <li>
+       <a href="#-distribution①"><span class="secno">4.4</span> <span class="content">## Distribution</span></a>
+       <ol class="toc">
+        <li><a href="#-adgangsurl"><span class="secno">4.4.1</span> <span class="content">adgangsURL</span></a>
+        <li><a href="#-download-url"><span class="secno">4.4.2</span> <span class="content">download-URL</span></a>
+        <li><a href="#-adgangsservice"><span class="secno">4.4.3</span> <span class="content">adgangsservice</span></a>
+        <li><a href="#①"><span class="secno">4.4.4</span> <span class="content"></span></a>
+        <li><a href="#-beskrivelse③"><span class="secno">4.4.5</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#-overenstemmelse②"><span class="secno">4.4.6</span> <span class="content">overenstemmelse</span></a>
+        <li><a href="#-udgivelsesdato③"><span class="secno">4.4.7</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#-seneste-ndringsdato①"><span class="secno">4.4.8</span> <span class="content">seneste ændringsdato</span></a>
+        <li><a href="#-status①"><span class="secno">4.4.9</span> <span class="content">status</span></a>
+        <li><a href="#-sprog③"><span class="secno">4.4.10</span> <span class="content">sprog</span></a>
+        <li><a href="#-adgangsrettigheder②"><span class="secno">4.4.11</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#-checksum"><span class="secno">4.4.12</span> <span class="content">checksum</span></a>
+        <li><a href="#-bytesize"><span class="secno">4.4.13</span> <span class="content">byteSize</span></a>
+        <li><a href="#-medietype"><span class="secno">4.4.14</span> <span class="content">medietype</span></a>
+        <li><a href="#-dokumentation①"><span class="secno">4.4.15</span> <span class="content">dokumentation</span></a>
+        <li><a href="#-har-politik"><span class="secno">4.4.16</span> <span class="content">har politik</span></a>
+        <li><a href="#-kompressionsformat"><span class="secno">4.4.17</span> <span class="content">kompressionsformat</span></a>
+        <li><a href="#-pakkeformat"><span class="secno">4.4.18</span> <span class="content">pakkeformat</span></a>
+        <li><a href="#-tidslig-oplsning①"><span class="secno">4.4.19</span> <span class="content">tidslig opløsning</span></a>
+        <li><a href="#-rumlig-oplsning-i-meter①"><span class="secno">4.4.20</span> <span class="content">rumlig opløsning (i meter)</span></a>
+        <li><a href="#-tilgngeligstype"><span class="secno">4.4.21</span> <span class="content">tilgængeligstype</span></a>
+        <li><a href="#-format"><span class="secno">4.4.22</span> <span class="content">format</span></a>
+        <li><a href="#-licens①"><span class="secno">4.4.23</span> <span class="content">licens</span></a>
+       </ol>
+      <li>
+       <a href="#②"><span class="secno">4.5</span> <span class="content">## </span></a>
+       <ol class="toc">
+        <li><a href="#-titel③"><span class="secno">4.5.1</span> <span class="content">titel</span></a>
+        <li><a href="#-beskrivelse④"><span class="secno">4.5.2</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#-endpoint-url"><span class="secno">4.5.3</span> <span class="content">endpoint-URL</span></a>
+        <li><a href="#-endpointbeskrivelse"><span class="secno">4.5.4</span> <span class="content">endpointbeskrivelse</span></a>
+        <li><a href="#-leverer-datast"><span class="secno">4.5.5</span> <span class="content">leverer datasæt</span></a>
+        <li><a href="#-licens②"><span class="secno">4.5.6</span> <span class="content">licens</span></a>
+        <li><a href="#-adgangsrettigheder③"><span class="secno">4.5.7</span> <span class="content">adgangsrettigheder</span></a>
+       </ol>
+      <li>
+       <a href="#-aktr"><span class="secno">4.6</span> <span class="content">## Aktør</span></a>
+       <ol class="toc">
+        <li><a href="#-navn"><span class="secno">4.6.1</span> <span class="content">navn</span></a>
+        <li><a href="#-type①"><span class="secno">4.6.2</span> <span class="content">type</span></a>
+       </ol>
+      <li>
+       <a href="#-klassifikationssystem"><span class="secno">4.7</span> <span class="content">## Klassifikationssystem</span></a>
+       <ol class="toc">
+        <li><a href="#-titel④"><span class="secno">4.7.1</span> <span class="content">titel</span></a>
+       </ol>
+      <li>
+       <a href="#-klassifikationsemne"><span class="secno">4.8</span> <span class="content">## Klassifikationsemne</span></a>
+       <ol class="toc">
+        <li><a href="#-foretrukken-betegnelse"><span class="secno">4.8.1</span> <span class="content">foretrukken betegnelse</span></a>
+       </ol>
+      <li>
+       <a href="#-checksum①"><span class="secno">4.9</span> <span class="content">## Checksum</span></a>
+       <ol class="toc">
+        <li><a href="#-algoritme"><span class="secno">4.9.1</span> <span class="content">algoritme</span></a>
+        <li><a href="#-checksumvrdi"><span class="secno">4.9.2</span> <span class="content">checksumværdi</span></a>
+       </ol>
+      <li><a href="#-katalogressource"><span class="secno">4.10</span> <span class="content">## Katalogressource</span></a>
+      <li>
+       <a href="#-identifikator①"><span class="secno">4.11</span> <span class="content">## Identifikator</span></a>
+       <ol class="toc">
+        <li><a href="#③"><span class="secno">4.11.1</span> <span class="content"></span></a>
+       </ol>
+      <li>
+       <a href="#-licensdokument"><span class="secno">4.12</span> <span class="content">## Licensdokument</span></a>
+       <ol class="toc">
+        <li><a href="#④"><span class="secno">4.12.1</span> <span class="content"></span></a>
+       </ol>
+      <li>
+       <a href="#-lokation"><span class="secno">4.13</span> <span class="content">## Lokation</span></a>
+       <ol class="toc">
+        <li><a href="#⑤"><span class="secno">4.13.1</span> <span class="content"></span></a>
+        <li><a href="#-geografisk-tyngdepunkt"><span class="secno">4.13.2</span> <span class="content">geografisk tyngdepunkt</span></a>
+        <li><a href="#-geometri"><span class="secno">4.13.3</span> <span class="content">geometri</span></a>
+       </ol>
+      <li>
+       <a href="#-periode"><span class="secno">4.14</span> <span class="content">## Periode</span></a>
+       <ol class="toc">
+        <li><a href="#⑥"><span class="secno">4.14.1</span> <span class="content"></span></a>
+        <li><a href="#-har-begyndelse"><span class="secno">4.14.2</span> <span class="content">har begyndelse</span></a>
+        <li><a href="#-har-slut"><span class="secno">4.14.3</span> <span class="content">har slut</span></a>
+        <li><a href="#-startdato"><span class="secno">4.14.4</span> <span class="content">startdato</span></a>
+       </ol>
+      <li>
+       <a href="#-relation①"><span class="secno">4.15</span> <span class="content">## relation</span></a>
+       <ol class="toc">
+        <li><a href="#-relation②"><span class="secno">4.15.1</span> <span class="content">relation</span></a>
+        <li><a href="#-havde-rolle"><span class="secno">4.15.2</span> <span class="content">havde rolle</span></a>
+       </ol>
+      <li><a href="#-tidsdatatype"><span class="secno">4.16</span> <span class="content">## Tidsdatatype</span></a>
      </ol>
     <li><a href="#emner"><span class="secno">5</span> <span class="content">Emner</span></a>
     <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
@@ -1687,176 +1794,1599 @@ Marts 2020</p>
     Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgangsURL, formatet, størrelse, downloadURL adgangsservice etc.. 
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <h3 class="heading settled" data-level="4.1" id="klasse-katalog-obligatorisk-stil1"><span class="secno">4.1. </span><span class="content">Klasse: Katalog (Obligatorisk)    STIL1!</span><a class="self-link" href="#klasse-katalog-obligatorisk-stil1"></a></h3>
-   <p>Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen</p>
-   <p>(dcat:Catalog)</p>
-   <h3 class="heading settled" data-level="4.2" id="klasse-katalog-dcatcatalog-stil2"><span class="secno">4.2. </span><span class="content">Klasse: Katalog (dcat:Catalog)  STIL2!</span><a class="self-link" href="#klasse-katalog-dcatcatalog-stil2"></a></h3>
-    Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. Det er obligatorisk at anvende klassen. 
-   <h3 class="heading settled" data-level="4.3" id="klasse-katalog-stil3"><span class="secno">4.3. </span><span class="content">Klasse: Katalog  STIL3!</span><a class="self-link" href="#klasse-katalog-stil3"></a></h3>
-    Denne klasse anvendes til at beskrive et katalog hvori der indgår datasætbeskrivelser. 
+   <h3 class="heading settled" data-level="4.1" id="-datakatalog"><span class="secno">4.1. </span><span class="content">## Datakatalog</span><a class="self-link" href="#-datakatalog"></a></h3>
    <dl class="def">
-    <dt>RDF-egenskab
+    <dt>URI
     <dd>
-    dcat:Catalog
-    <dt>
     <dt>Definition
     <dd>
-    En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)
-    <dt>
+    <dt>Anvendelsesnote
+    <dd>En organiseret samling af datarelaterede ressourcer i et katalog.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.1" id="-titel"><span class="secno">4.1.1. </span><span class="content">titel</span><a class="self-link" href="#-titel"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>datakatalogets titel
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.1.2" id="-beskrivelse"><span class="secno">4.1.2. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>tekstbaseret beskrivelse af datakatalogets formål og indhold
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.1.3" id="-udgiver"><span class="secno">4.1.3. </span><span class="content">udgiver</span><a class="self-link" href="#-udgiver"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/publisher
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>aktør der har udgivet kataloget
+    <dt>Multiplicitet
+    <dd>1..1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.1.4" id="-skaber"><span class="secno">4.1.4. </span><span class="content">skaber</span><a class="self-link" href="#-skaber"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/creator
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>aktør der har skabt kataloget
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.5" id="-udgivelsesdato"><span class="secno">4.1.5. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/issued
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>den dato datakataloget først blev udgivet
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.6" id="-seneste-opdateringsdato"><span class="secno">4.1.6. </span><span class="content">seneste opdateringsdato</span><a class="self-link" href="#-seneste-opdateringsdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/modified
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>den dato hvor indholdet i datakataloget seneste er blevet ændret
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.7" id="-geografisk-omrde"><span class="secno">4.1.7. </span><span class="content">geografisk område</span><a class="self-link" href="#-geografisk-omrde"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/spatial
+    <dt>Definition
+    <dd>
     <dt>Anvendelsesnote
     <dd>
-    En organiseret samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog)
-    <dt>
+    <dt>Multiplicitet
+    <dd>
     <dt>Kravniveau
     <dd>
-    Obligatorisk
-    <dt>
    </dl>
-   <h4 class="heading settled" data-level="4.3.1" id="egenskab-beskrivelse-obligatorisk-stil1"><span class="secno">4.3.1. </span><span class="content">Egenskab: beskrivelse (Obligatorisk)   STIL1!</span><a class="self-link" href="#egenskab-beskrivelse-obligatorisk-stil1"></a></h4>
-    Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. Multipliciteten skal være 1 - *. 
-   <p>(dct:description)</p>
-   <h4 class="heading settled" data-level="4.3.2" id="egenskab-beskrivelse-dctdescription-stil2"><span class="secno">4.3.2. </span><span class="content">Egenskab: beskrivelse (dct:description)    STIL2!</span><a class="self-link" href="#egenskab-beskrivelse-dctdescription-stil2"></a></h4>
-    Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. Multipliciteten skal være 1 - * (Obligatorisk) 
-   <h4 class="heading settled" data-level="4.3.3" id="egenskab-beskrivelse-stil3"><span class="secno">4.3.3. </span><span class="content">Egenskab: beskrivelse     STIL3!</span><a class="self-link" href="#egenskab-beskrivelse-stil3"></a></h4>
-    Denne egenskab giver en tekstbaseret beskrivelse af kataloget.  Denne egenskab kan gentages for hver sprog. 
+   <h4 class="heading settled" data-level="4.1.8" id="-sprog"><span class="secno">4.1.8. </span><span class="content">sprog</span><a class="self-link" href="#-sprog"></a></h4>
    <dl class="def">
-    <dt>RDF-egenskab
-    <dd>
-    dct:description
-    <dt>
+    <dt>URI
+    <dd>http://purl.org/dc/terms/language
     <dt>Definition
     <dd>
-    En tekstbaseret beskrivelse af ressourcen.
-    <dt>
-    <dt>Rækkevidde
+    <dt>Anvendelsesnote
     <dd>
-    rdfs:Literal
-    <dt>
+    <dt>Multiplicitet
+    <dd>
     <dt>Kravniveau
     <dd>
-    Obligatorisk (Multiplicitet:1 - *)
-    <dt>
    </dl>
-   <h4 class="heading settled" data-level="4.3.4" id="egenskab-titel-obligatorisk"><span class="secno">4.3.4. </span><span class="content">Egenskab: titel (Obligatorisk)</span><a class="self-link" href="#egenskab-titel-obligatorisk"></a></h4>
-    Det eller de ord, der navngiver datasættet
-(dct:title) 
-   <h4 class="heading settled" data-level="4.3.5" id="egenskab-udgiver-obligatorisk"><span class="secno">4.3.5. </span><span class="content">Egenskab: udgiver (Obligatorisk)</span><a class="self-link" href="#egenskab-udgiver-obligatorisk"></a></h4>
-    dct:publisher 
-   <h4 class="heading settled" data-level="4.3.6" id="egenskab-datast-obligatorisk"><span class="secno">4.3.6. </span><span class="content">Egenskab: datasæt (Obligatorisk)</span><a class="self-link" href="#egenskab-datast-obligatorisk"></a></h4>
-    dcat:dataset 
-   <h4 class="heading settled" data-level="4.3.7" id="egenskab-hjemmeside-anbefalet"><span class="secno">4.3.7. </span><span class="content">Egenskab: hjemmeside (Anbefalet)</span><a class="self-link" href="#egenskab-hjemmeside-anbefalet"></a></h4>
-    foaf:homepage 
-   <h4 class="heading settled" data-level="4.3.8" id="egenskab-sprog-anbefalet"><span class="secno">4.3.8. </span><span class="content">Egenskab: sprog  (Anbefalet)</span><a class="self-link" href="#egenskab-sprog-anbefalet"></a></h4>
-    dct:language 
-   <h4 class="heading settled" data-level="4.3.9" id="egenskab-licens-anbefalet"><span class="secno">4.3.9. </span><span class="content">Egenskab: licens (Anbefalet)</span><a class="self-link" href="#egenskab-licens-anbefalet"></a></h4>
-    dct:license 
-   <h4 class="heading settled" data-level="4.3.10" id="egenskab-udgivelsesdato-anbefalet"><span class="secno">4.3.10. </span><span class="content">Egenskab: udgivelsesdato  (Anbefalet)</span><a class="self-link" href="#egenskab-udgivelsesdato-anbefalet"></a></h4>
-    dct:issued 
-   <h4 class="heading settled" data-level="4.3.11" id="egenskab-seneste-opdateringsdato-anbefalet"><span class="secno">4.3.11. </span><span class="content">Egenskab: seneste opdateringsdato  (Anbefalet)</span><a class="self-link" href="#egenskab-seneste-opdateringsdato-anbefalet"></a></h4>
-    dct:modified 
-   <h4 class="heading settled" data-level="4.3.12" id="egenskab-geografisk-afgrnsning-anbefalet"><span class="secno">4.3.12. </span><span class="content">Egenskab: geografisk afgrænsning  (Anbefalet)</span><a class="self-link" href="#egenskab-geografisk-afgrnsning-anbefalet"></a></h4>
-    dct:spatial 
-   <h4 class="heading settled" data-level="4.3.13" id="egenskab-anvendt-klassifikation-anbefalet"><span class="secno">4.3.13. </span><span class="content">Egenskab: anvendt klassifikation (Anbefalet)</span><a class="self-link" href="#egenskab-anvendt-klassifikation-anbefalet"></a></h4>
-    dcat:themeTaxonomy 
-   <h4 class="heading settled" data-level="4.3.14" id="egenskab-har-del-valgfri"><span class="secno">4.3.14. </span><span class="content">Egenskab: har del (Valgfri)</span><a class="self-link" href="#egenskab-har-del-valgfri"></a></h4>
-    dct:hasPart 
-   <h4 class="heading settled" data-level="4.3.15" id="egenskab-er-del-af-valgfri"><span class="secno">4.3.15. </span><span class="content">Egenskab: er del af (Valgfri)</span><a class="self-link" href="#egenskab-er-del-af-valgfri"></a></h4>
-    dct:isPartOf 
-   <h4 class="heading settled" data-level="4.3.16" id="egenskab-optegnelse-valgfri"><span class="secno">4.3.16. </span><span class="content">Egenskab: optegnelse (Valgfri)</span><a class="self-link" href="#egenskab-optegnelse-valgfri"></a></h4>
-    dcat:record 
-   <h4 class="heading settled" data-level="4.3.17" id="egenskab-adgangsrettigheder-valgfri"><span class="secno">4.3.17. </span><span class="content">Egenskab: adgangsrettigheder (Valgfri)</span><a class="self-link" href="#egenskab-adgangsrettigheder-valgfri"></a></h4>
-    dct:rights 
-   <h4 class="heading settled" data-level="4.3.18" id="egenskab-service-valgfri"><span class="secno">4.3.18. </span><span class="content">Egenskab: service (Valgfri)</span><a class="self-link" href="#egenskab-service-valgfri"></a></h4>
-    dcat:service 
-   <h4 class="heading settled" data-level="4.3.19" id="egenskab-katalog-valgfri"><span class="secno">4.3.19. </span><span class="content">Egenskab: katalog (Valgfri)</span><a class="self-link" href="#egenskab-katalog-valgfri"></a></h4>
-    dcat:catalog 
-   <h4 class="heading settled" data-level="4.3.20" id="egenskab-skaber-valgfri"><span class="secno">4.3.20. </span><span class="content">Egenskab: skaber (Valgfri)</span><a class="self-link" href="#egenskab-skaber-valgfri"></a></h4>
-    dct:creator 
-   <p class="example" id="example-f647e913">
-    <a class="self-link" href="#example-f647e913"></a> ex:catalog
-  a dcat:Catalog ;
-  dct:publisher ex:Organization-001 ;
-  dct:title "Imaginary Catalog"@en ;
-  rdfs:label "Imaginary Catalog"@en ;
-  dcat:dataset ex:dataset-001 ;
-  dcat:dataset ex:dataset-002 ;
-  dcat:dataset ex:dataset-003 ;
-  foaf:homepage 
-    <httpU0003A catalog example.org> ;
-. </httpU0003A>
-   </p>
-   <h3 class="heading settled" data-level="4.4" id="klassen-katalogoptegnelse"><span class="secno">4.4. </span><span class="content">Klassen Katalogoptegnelse</span><a class="self-link" href="#klassen-katalogoptegnelse"></a></h3>
-    En optegnelse i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice 
-   <h4 class="heading settled" data-level="4.4.1" id="egenskab-optegnelsens-genstand-obligatorisk"><span class="secno">4.4.1. </span><span class="content">Egenskab: optegnelsens genstand (Obligatorisk)</span><a class="self-link" href="#egenskab-optegnelsens-genstand-obligatorisk"></a></h4>
-    Den ressource (datasæt, dataservice eller katalog) optegnelsen i kataloget handler om
-foaf:primaryTopic 
-   <h4 class="heading settled" data-level="4.4.2" id="egenskab-seneste-opdateringsdato-obligatorisk"><span class="secno">4.4.2. </span><span class="content">Egenskab: seneste opdateringsdato (Obligatorisk)</span><a class="self-link" href="#egenskab-seneste-opdateringsdato-obligatorisk"></a></h4>
-    dct:modified 
-   <h4 class="heading settled" data-level="4.4.3" id="egenskab-i-overenstemmelse-med-anbefalet"><span class="secno">4.4.3. </span><span class="content">Egenskab: i overenstemmelse med (Anbefalet)</span><a class="self-link" href="#egenskab-i-overenstemmelse-med-anbefalet"></a></h4>
-    dct:conformsTo 
-   <h4 class="heading settled" data-level="4.4.4" id="egenskab-status-anbefalet"><span class="secno">4.4.4. </span><span class="content">Egenskab: status (Anbefalet)</span><a class="self-link" href="#egenskab-status-anbefalet"></a></h4>
-    adms:status 
-   <h4 class="heading settled" data-level="4.4.5" id="egenskab-udgivelsesdato-anbefalet①"><span class="secno">4.4.5. </span><span class="content">Egenskab: udgivelsesdato (Anbefalet)</span><a class="self-link" href="#egenskab-udgivelsesdato-anbefalet①"></a></h4>
-    dct:issued 
-   <h4 class="heading settled" data-level="4.4.6" id="egenskab-bskrivelse-valgfri"><span class="secno">4.4.6. </span><span class="content">Egenskab: bskrivelse (Valgfri)</span><a class="self-link" href="#egenskab-bskrivelse-valgfri"></a></h4>
-    dct:description 
-   <h4 class="heading settled" data-level="4.4.7" id="egenskab-sprog-valgfri"><span class="secno">4.4.7. </span><span class="content">Egenskab: sprog (Valgfri)</span><a class="self-link" href="#egenskab-sprog-valgfri"></a></h4>
-    dct:language 
-   <h4 class="heading settled" data-level="4.4.8" id="egenskab-kilde-valgfri"><span class="secno">4.4.8. </span><span class="content">Egenskab: kilde(Valgfri)</span><a class="self-link" href="#egenskab-kilde-valgfri"></a></h4>
-    dct:source 
-   <h4 class="heading settled" data-level="4.4.9" id="egenskab-titel-valgfri"><span class="secno">4.4.9. </span><span class="content">Egenskab: titel (Valgfri)</span><a class="self-link" href="#egenskab-titel-valgfri"></a></h4>
-    dct:title 
-   <h3 class="heading settled" data-level="4.5" id="klassen-datast"><span class="secno">4.5. </span><span class="content">Klassen Datasæt</span><a class="self-link" href="#klassen-datast"></a></h3>
-    A conceptual entity that represents the information published. 
-   <h4 class="heading settled" data-level="4.5.1" id="egenskab-titel-obligatorisk①"><span class="secno">4.5.1. </span><span class="content">Egenskab: titel (Obligatorisk)</span><a class="self-link" href="#egenskab-titel-obligatorisk①"></a></h4>
-    dct:title 
-   <h4 class="heading settled" data-level="4.5.2" id="egenskab-beskrivelse-obligatorisk"><span class="secno">4.5.2. </span><span class="content">Egenskab: beskrivelse (Obligatorisk)</span><a class="self-link" href="#egenskab-beskrivelse-obligatorisk"></a></h4>
-    dct:description 
-   <h4 class="heading settled" data-level="4.5.3" id="egenskab-udgiver"><span class="secno">4.5.3. </span><span class="content">Egenskab: udgiver (?)</span><a class="self-link" href="#egenskab-udgiver"></a></h4>
-    dct:publisher 
-   <h4 class="heading settled" data-level="4.5.4" id="egenskab-dataansvarlig-organisation"><span class="secno">4.5.4. </span><span class="content">Egenskab: dataansvarlig organisation (?)</span><a class="self-link" href="#egenskab-dataansvarlig-organisation"></a></h4>
-    dcat-dk:dataResponsibleOrganisation 
-   <h4 class="heading settled" data-level="4.5.5" id="egenskab-kontaktpunkt-anbefalet"><span class="secno">4.5.5. </span><span class="content">Egenskab: Kontaktpunkt (Anbefalet)</span><a class="self-link" href="#egenskab-kontaktpunkt-anbefalet"></a></h4>
-    dcat:contactPoint 
-   <h4 class="heading settled" data-level="4.5.6" id="egenskab-identifikator-anbefalet"><span class="secno">4.5.6. </span><span class="content">Egenskab: identifikator (Anbefalet)</span><a class="self-link" href="#egenskab-identifikator-anbefalet"></a></h4>
-    dct:identifier 
-   <h4 class="heading settled" data-level="4.5.7" id="egenskab-anden-identifikator-valgfri"><span class="secno">4.5.7. </span><span class="content">Egenskab: anden identifikator (Valgfri)</span><a class="self-link" href="#egenskab-anden-identifikator-valgfri"></a></h4>
-    adms:identifier 
-   <h4 class="heading settled" data-level="4.5.8" id="egenskab-datatema"><span class="secno">4.5.8. </span><span class="content">Egenskab: datatema ()</span><a class="self-link" href="#egenskab-datatema"></a></h4>
-    EUs datatemaer
-Forvaltningsopgaver (FORM/KLE) - versionsnummer
-dct:theme 
-   <h4 class="heading settled" data-level="4.5.9" id="egenskab-ngleord-valgfri"><span class="secno">4.5.9. </span><span class="content">Egenskab: nøgleord (Valgfri)</span><a class="self-link" href="#egenskab-ngleord-valgfri"></a></h4>
-    dcat:keyword 
-   <h4 class="heading settled" data-level="4.5.10" id="egenskab-hjemmel-anbefalet"><span class="secno">4.5.10. </span><span class="content">Egenskab: hjemmel (Anbefalet)</span><a class="self-link" href="#egenskab-hjemmel-anbefalet"></a></h4>
-    cv:hasLegalResource 
-   <h4 class="heading settled" data-level="4.5.11" id="egenskab-personoplysningskategori-anbefalet"><span class="secno">4.5.11. </span><span class="content">Egenskab: personoplysningskategori (Anbefalet)</span><a class="self-link" href="#egenskab-personoplysningskategori-anbefalet"></a></h4>
-   <h4 class="heading settled" data-level="4.5.12" id="egenskab-betalingsplagt-anbefalet"><span class="secno">4.5.12. </span><span class="content">Egenskab: betalingspålagt (Anbefalet)</span><a class="self-link" href="#egenskab-betalingsplagt-anbefalet"></a></h4>
-    dcat-dk: payment ImposedContents| 
-   <h4 class="heading settled" data-level="4.5.13" id="egenskab-datasreprsentation-anbefalet"><span class="secno">4.5.13. </span><span class="content">Egenskab: datasærepræsentation (Anbefalet)</span><a class="self-link" href="#egenskab-datasreprsentation-anbefalet"></a></h4>
-    dcat:distribution 
-   <h4 class="heading settled" data-level="4.5.14" id="egenskab-valgfri"><span class="secno">4.5.14. </span><span class="content">Egenskab:  (Valgfri)</span><a class="self-link" href="#egenskab-valgfri"></a></h4>
-    dct:spatial
-dct:temporal
-dct:accessRights
-dct:creator
-schema:maintainer
-dct:conformsTo
-foaf:page
-dct:accrualPeriodicity
-dct:hasVersion
-dct:isReferencedBy
-dct:isVersionOf
-dcat:landingPage
-dct:language
-dqv:hasQualityMetadata 
-duv:hasUsage 
-   <h3 class="heading settled" data-level="4.6" id="klassen-datastreprsentation"><span class="secno">4.6. </span><span class="content">Klassen Datasætrepræsentation</span><a class="self-link" href="#klassen-datastreprsentation"></a></h3>
-    physical embodiment of the Dataset in a particular format 
-   <h3 class="heading settled" data-level="4.7" id="klassen-dataservice"><span class="secno">4.7. </span><span class="content">Klassen Dataservice</span><a class="self-link" href="#klassen-dataservice"></a></h3>
-   <p>A collection of operations that provides access to one or more datasets or data processing functions.</p>
-   <h3 class="heading settled" data-level="4.8" id="klassen-aktr"><span class="secno">4.8. </span><span class="content">Klassen Aktør</span><a class="self-link" href="#klassen-aktr"></a></h3>
-   <p>An entity that is associated with Catalogues and/or Datasets.</p>
+   <h4 class="heading settled" data-level="4.1.9" id="-licens"><span class="secno">4.1.9. </span><span class="content">licens</span><a class="self-link" href="#-licens"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/license
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.10" id="-adgangsrettigheder"><span class="secno">4.1.10. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/rights
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.11" id="-katalogpost"><span class="secno">4.1.11. </span><span class="content">katalogpost</span><a class="self-link" href="#-katalogpost"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#record
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.12" id="-emneklassifikation"><span class="secno">4.1.12. </span><span class="content">emneklassifikation</span><a class="self-link" href="#-emneklassifikation"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#themeTaxonomy
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.13" id="-dataservice"><span class="secno">4.1.13. </span><span class="content">dataservice</span><a class="self-link" href="#-dataservice"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#service
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.14" id="-katalog"><span class="secno">4.1.14. </span><span class="content">katalog</span><a class="self-link" href="#-katalog"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#catalog
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.15" id="-datast"><span class="secno">4.1.15. </span><span class="content">datasæt</span><a class="self-link" href="#-datast"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#dataset
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.1.16" id="-websted"><span class="secno">4.1.16. </span><span class="content">websted</span><a class="self-link" href="#-websted"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/0.1/homepage
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.17" id="-delkatalog"><span class="secno">4.1.17. </span><span class="content">delkatalog</span><a class="self-link" href="#-delkatalog"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/hasPart
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.1.18" id="-del-af-katalog"><span class="secno">4.1.18. </span><span class="content">del af katalog</span><a class="self-link" href="#-del-af-katalog"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/isPartOf
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.2" id="-katalogpost①"><span class="secno">4.2. </span><span class="content">## katalogpost</span><a class="self-link" href="#-katalogpost①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.1" id><span class="secno">4.2.1. </span><span class="content"></span><a class="self-link" href="#"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/0.1/primaryTopic
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1..1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.2.2" id="-titel①"><span class="secno">4.2.2. </span><span class="content">titel</span><a class="self-link" href="#-titel①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.3" id="-beskrivelse①"><span class="secno">4.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.4" id="-udgivelsesdato①"><span class="secno">4.2.4. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/issued
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.5" id="-seneste-ndringsdato"><span class="secno">4.2.5. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#-seneste-ndringsdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/modified
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1..1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.2.6" id="-status"><span class="secno">4.2.6. </span><span class="content">status</span><a class="self-link" href="#-status"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/adms#status
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.7" id="-sprog①"><span class="secno">4.2.7. </span><span class="content">sprog</span><a class="self-link" href="#-sprog①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/language
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.8" id="-kilde"><span class="secno">4.2.8. </span><span class="content">kilde</span><a class="self-link" href="#-kilde"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/source
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.9" id="-overenstemmelse"><span class="secno">4.2.9. </span><span class="content">overenstemmelse</span><a class="self-link" href="#-overenstemmelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/conformsTo
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.3" id="-datast①"><span class="secno">4.3. </span><span class="content">## Datasæt</span><a class="self-link" href="#-datast①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.1" id="-identifikator"><span class="secno">4.3.1. </span><span class="content">identifikator</span><a class="self-link" href="#-identifikator"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/identifier
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>Global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.2" id="-anden-identifikator"><span class="secno">4.3.2. </span><span class="content">anden identifikator</span><a class="self-link" href="#-anden-identifikator"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/adms#identifier
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.3" id="-titel②"><span class="secno">4.3.3. </span><span class="content">titel</span><a class="self-link" href="#-titel②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>Datasættets titel. Egenskaben kan gentages for hvert sprog.
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.3.4" id="-beskrivelse②"><span class="secno">4.3.4. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>Tekstbaseret beskrivelse af datasættets formål og indhold.  Egenskaben kan gentages for hvert sprog.
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.3.5" id="-udgiver①"><span class="secno">4.3.5. </span><span class="content">udgiver</span><a class="self-link" href="#-udgiver①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/publisher
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.6" id="-skaber①"><span class="secno">4.3.6. </span><span class="content">skaber</span><a class="self-link" href="#-skaber①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/creator
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.7" id="-kontaktpunkt"><span class="secno">4.3.7. </span><span class="content">kontaktpunkt</span><a class="self-link" href="#-kontaktpunkt"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#contactPoint
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.8" id="-distribution"><span class="secno">4.3.8. </span><span class="content">distribution</span><a class="self-link" href="#-distribution"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#distribution
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.9" id="-prve"><span class="secno">4.3.9. </span><span class="content">prøve</span><a class="self-link" href="#-prve"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/adms#sample
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.10" id="-destinationsside"><span class="secno">4.3.10. </span><span class="content">destinationsside</span><a class="self-link" href="#-destinationsside"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#landingPage
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.11" id="-overenstemmelse①"><span class="secno">4.3.11. </span><span class="content">overenstemmelse</span><a class="self-link" href="#-overenstemmelse①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/conformsTo
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.12" id="-dokumentation"><span class="secno">4.3.12. </span><span class="content">dokumentation</span><a class="self-link" href="#-dokumentation"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/0.1/page
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.13" id="-emne"><span class="secno">4.3.13. </span><span class="content">emne</span><a class="self-link" href="#-emne"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#theme
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.14" id="-type"><span class="secno">4.3.14. </span><span class="content">type</span><a class="self-link" href="#-type"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/type
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.15" id="-ngleord"><span class="secno">4.3.15. </span><span class="content">nøgleord</span><a class="self-link" href="#-ngleord"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#keyword
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.16" id="-sprog②"><span class="secno">4.3.16. </span><span class="content">sprog</span><a class="self-link" href="#-sprog②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/language
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.17" id="-adgangsrettigheder①"><span class="secno">4.3.17. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/accessRights
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.18" id="-geografisk-omrde①"><span class="secno">4.3.18. </span><span class="content">geografisk område</span><a class="self-link" href="#-geografisk-omrde①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/spatial
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.19" id="-rumlig-oplsning-i-meter"><span class="secno">4.3.19. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#-rumlig-oplsning-i-meter"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.20" id="-dkningsperiode"><span class="secno">4.3.20. </span><span class="content">dækningsperiode</span><a class="self-link" href="#-dkningsperiode"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/temporal
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.21" id="-tidslig-oplsning"><span class="secno">4.3.21. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#-tidslig-oplsning"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#temporalResolution
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.22" id="-opdateringsfrekvens"><span class="secno">4.3.22. </span><span class="content">opdateringsfrekvens</span><a class="self-link" href="#-opdateringsfrekvens"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/accrualPeriodicity
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.23" id="-udgivelsesdato②"><span class="secno">4.3.23. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/issued
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.24" id="-ndringsdato"><span class="secno">4.3.24. </span><span class="content">ændringsdato</span><a class="self-link" href="#-ndringsdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/modified
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.25" id="-versionsnummer"><span class="secno">4.3.25. </span><span class="content">versionsnummer</span><a class="self-link" href="#-versionsnummer"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2002/07/owl#versionInfo
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.26" id="-versionsnoter"><span class="secno">4.3.26. </span><span class="content">versionsnoter</span><a class="self-link" href="#-versionsnoter"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/adms#versionNotes
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.27" id="-har-version"><span class="secno">4.3.27. </span><span class="content">har version</span><a class="self-link" href="#-har-version"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/hasVersion
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.28" id="-er-version-af"><span class="secno">4.3.28. </span><span class="content">er version af</span><a class="self-link" href="#-er-version-af"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/isVersionOf
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.29" id="-proveniensudsagn"><span class="secno">4.3.29. </span><span class="content">proveniensudsagn</span><a class="self-link" href="#-proveniensudsagn"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/provenance
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.30" id="-relation"><span class="secno">4.3.30. </span><span class="content">relation</span><a class="self-link" href="#-relation"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/relation
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.31" id="-kildedatast"><span class="secno">4.3.31. </span><span class="content">kildedatasæt</span><a class="self-link" href="#-kildedatast"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/source
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.32" id="-refereres-af"><span class="secno">4.3.32. </span><span class="content">refereres af</span><a class="self-link" href="#-refereres-af"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/elements/1.1/isReferencedBy
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.33" id="-prciseret-tilskrivning"><span class="secno">4.3.33. </span><span class="content">præciseret tilskrivning</span><a class="self-link" href="#-prciseret-tilskrivning"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/prov#qualifiedAttribution
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.34" id="-prciseret-relation"><span class="secno">4.3.34. </span><span class="content">præciseret relation</span><a class="self-link" href="#-prciseret-relation"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#qualifiedRelation
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.3.35" id="-blev-genereret-ved"><span class="secno">4.3.35. </span><span class="content">blev genereret ved</span><a class="self-link" href="#-blev-genereret-ved"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/prov#wasGeneratedBy
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.4" id="-distribution①"><span class="secno">4.4. </span><span class="content">## Distribution</span><a class="self-link" href="#-distribution①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.1" id="-adgangsurl"><span class="secno">4.4.1. </span><span class="content">adgangsURL</span><a class="self-link" href="#-adgangsurl"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#accessURL
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.4.2" id="-download-url"><span class="secno">4.4.2. </span><span class="content">download-URL</span><a class="self-link" href="#-download-url"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#downloadURL
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.3" id="-adgangsservice"><span class="secno">4.4.3. </span><span class="content">adgangsservice</span><a class="self-link" href="#-adgangsservice"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#accessService
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.4" id="①"><span class="secno">4.4.4. </span><span class="content"></span><a class="self-link" href="#①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>distributionens titel
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.5" id="-beskrivelse③"><span class="secno">4.4.5. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>tekstbaseret beskrivelse af distributionen
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.6" id="-overenstemmelse②"><span class="secno">4.4.6. </span><span class="content">overenstemmelse</span><a class="self-link" href="#-overenstemmelse②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/conformsTo
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.7" id="-udgivelsesdato③"><span class="secno">4.4.7. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/issued
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.8" id="-seneste-ndringsdato①"><span class="secno">4.4.8. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#-seneste-ndringsdato①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/modified
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.9" id="-status①"><span class="secno">4.4.9. </span><span class="content">status</span><a class="self-link" href="#-status①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/adms#status
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.10" id="-sprog③"><span class="secno">4.4.10. </span><span class="content">sprog</span><a class="self-link" href="#-sprog③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/language
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.11" id="-adgangsrettigheder②"><span class="secno">4.4.11. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/rights
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.12" id="-checksum"><span class="secno">4.4.12. </span><span class="content">checksum</span><a class="self-link" href="#-checksum"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://spdx.org/rdf/terms#checksum
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.13" id="-bytesize"><span class="secno">4.4.13. </span><span class="content">byteSize</span><a class="self-link" href="#-bytesize"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#byteSize
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.14" id="-medietype"><span class="secno">4.4.14. </span><span class="content">medietype</span><a class="self-link" href="#-medietype"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#mediaType
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.15" id="-dokumentation①"><span class="secno">4.4.15. </span><span class="content">dokumentation</span><a class="self-link" href="#-dokumentation①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/0.1/page
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.16" id="-har-politik"><span class="secno">4.4.16. </span><span class="content">har politik</span><a class="self-link" href="#-har-politik"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/odrl/2/hasPolicy
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.17" id="-kompressionsformat"><span class="secno">4.4.17. </span><span class="content">kompressionsformat</span><a class="self-link" href="#-kompressionsformat"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#compressFormat
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.18" id="-pakkeformat"><span class="secno">4.4.18. </span><span class="content">pakkeformat</span><a class="self-link" href="#-pakkeformat"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#packageFormat
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.19" id="-tidslig-oplsning①"><span class="secno">4.4.19. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#-tidslig-oplsning①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#temporalResolution
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.20" id="-rumlig-oplsning-i-meter①"><span class="secno">4.4.20. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#-rumlig-oplsning-i-meter①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.21" id="-tilgngeligstype"><span class="secno">4.4.21. </span><span class="content">tilgængeligstype</span><a class="self-link" href="#-tilgngeligstype"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://data.europa.eu/r5ravailability
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.22" id="-format"><span class="secno">4.4.22. </span><span class="content">format</span><a class="self-link" href="#-format"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/format
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.23" id="-licens①"><span class="secno">4.4.23. </span><span class="content">licens</span><a class="self-link" href="#-licens①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/license
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.5" id="②"><span class="secno">4.5. </span><span class="content">## </span><a class="self-link" href="#②"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.5.1" id="-titel③"><span class="secno">4.5.1. </span><span class="content">titel</span><a class="self-link" href="#-titel③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>dataservicens titel
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.5.2" id="-beskrivelse④"><span class="secno">4.5.2. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse④"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>tekstbaseret beskrivelse af dataservicen
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.5.3" id="-endpoint-url"><span class="secno">4.5.3. </span><span class="content">endpoint-URL</span><a class="self-link" href="#-endpoint-url"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#endpointURL
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.5.4" id="-endpointbeskrivelse"><span class="secno">4.5.4. </span><span class="content">endpointbeskrivelse</span><a class="self-link" href="#-endpointbeskrivelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#endpointDescription
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.5.5" id="-leverer-datast"><span class="secno">4.5.5. </span><span class="content">leverer datasæt</span><a class="self-link" href="#-leverer-datast"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#servesDataset
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.5.6" id="-licens②"><span class="secno">4.5.6. </span><span class="content">licens</span><a class="self-link" href="#-licens②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/licence
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.5.7" id="-adgangsrettigheder③"><span class="secno">4.5.7. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/accessRights
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.6" id="-aktr"><span class="secno">4.6. </span><span class="content">## Aktør</span><a class="self-link" href="#-aktr"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.6.1" id="-navn"><span class="secno">4.6.1. </span><span class="content">navn</span><a class="self-link" href="#-navn"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/0.1/name
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.6.2" id="-type①"><span class="secno">4.6.2. </span><span class="content">type</span><a class="self-link" href="#-type①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/type
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.7" id="-klassifikationssystem"><span class="secno">4.7. </span><span class="content">## Klassifikationssystem</span><a class="self-link" href="#-klassifikationssystem"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.7.1" id="-titel④"><span class="secno">4.7.1. </span><span class="content">titel</span><a class="self-link" href="#-titel④"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h3 class="heading settled" data-level="4.8" id="-klassifikationsemne"><span class="secno">4.8. </span><span class="content">## Klassifikationsemne</span><a class="self-link" href="#-klassifikationsemne"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.8.1" id="-foretrukken-betegnelse"><span class="secno">4.8.1. </span><span class="content">foretrukken betegnelse</span><a class="self-link" href="#-foretrukken-betegnelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2004/02/skos/core#prefLabel
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h3 class="heading settled" data-level="4.9" id="-checksum①"><span class="secno">4.9. </span><span class="content">## Checksum</span><a class="self-link" href="#-checksum①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.9.1" id="-algoritme"><span class="secno">4.9.1. </span><span class="content">algoritme</span><a class="self-link" href="#-algoritme"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://spdx.org/rdf/terms#algorithm
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1..1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.9.2" id="-checksumvrdi"><span class="secno">4.9.2. </span><span class="content">checksumværdi</span><a class="self-link" href="#-checksumvrdi"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://spdx.org/rdf/terms#checksumValue
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1..1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h3 class="heading settled" data-level="4.10" id="-katalogressource"><span class="secno">4.10. </span><span class="content">## Katalogressource</span><a class="self-link" href="#-katalogressource"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>the union of Catalog, Dataset and DataService
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.11" id="-identifikator①"><span class="secno">4.11. </span><span class="content">## Identifikator</span><a class="self-link" href="#-identifikator①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.11.1" id="③"><span class="secno">4.11.1. </span><span class="content"></span><a class="self-link" href="#③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2004/02/skos/core#notation
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.12" id="-licensdokument"><span class="secno">4.12. </span><span class="content">## Licensdokument</span><a class="self-link" href="#-licensdokument"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.12.1" id="④"><span class="secno">4.12.1. </span><span class="content"></span><a class="self-link" href="#④"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/type
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.13" id="-lokation"><span class="secno">4.13. </span><span class="content">## Lokation</span><a class="self-link" href="#-lokation"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.13.1" id="⑤"><span class="secno">4.13.1. </span><span class="content"></span><a class="self-link" href="#⑤"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#bbox
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.13.2" id="-geografisk-tyngdepunkt"><span class="secno">4.13.2. </span><span class="content">geografisk tyngdepunkt</span><a class="self-link" href="#-geografisk-tyngdepunkt"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#centroid
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.13.3" id="-geometri"><span class="secno">4.13.3. </span><span class="content">geometri</span><a class="self-link" href="#-geometri"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/locn#geometry
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.14" id="-periode"><span class="secno">4.14. </span><span class="content">## Periode</span><a class="self-link" href="#-periode"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.14.1" id="⑥"><span class="secno">4.14.1. </span><span class="content"></span><a class="self-link" href="#⑥"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#endDate
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.14.2" id="-har-begyndelse"><span class="secno">4.14.2. </span><span class="content">har begyndelse</span><a class="self-link" href="#-har-begyndelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2006/time#hasBeginning
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.14.3" id="-har-slut"><span class="secno">4.14.3. </span><span class="content">har slut</span><a class="self-link" href="#-har-slut"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2006/time#hasEnd
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.14.4" id="-startdato"><span class="secno">4.14.4. </span><span class="content">startdato</span><a class="self-link" href="#-startdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#startDate
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.15" id="-relation①"><span class="secno">4.15. </span><span class="content">## relation</span><a class="self-link" href="#-relation①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.15.1" id="-relation②"><span class="secno">4.15.1. </span><span class="content">relation</span><a class="self-link" href="#-relation②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/relation
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.15.2" id="-havde-rolle"><span class="secno">4.15.2. </span><span class="content">havde rolle</span><a class="self-link" href="#-havde-rolle"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#hadRole
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>1
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h3 class="heading settled" data-level="4.16" id="-tidsdatatype"><span class="secno">4.16. </span><span class="content">## Tidsdatatype</span><a class="self-link" href="#-tidsdatatype"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal
+    <dt>Kravniveau
+    <dd>
+   </dl>
    <h2 class="heading settled" data-level="5" id="emner"><span class="secno">5. </span><span class="content">Emner</span><a class="self-link" href="#emner"></a></h2>
    <ul>
     <li data-md>
