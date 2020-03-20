@@ -1332,6 +1332,8 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <link href="convert.css" rel="stylesheet" type="text/css">
 <style>/* style-md-lists */
 
 /* This is a weird hack for me not yet following the commonmark spec
@@ -1488,6 +1490,8 @@ pre .property::before, pre .property::after {
     <dl>
      <dt>This version:
      <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/releases/v.2.0/">https://github.com/digst/DCAT-AP-DK/releases/v.2.0/</a>
+     <dt>Issue Tracking:
+     <dd><a href="#issues-index">Inline In Spec</a>
      <dt>Bidragsydere:
      <dd>
       <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
@@ -1548,172 +1552,167 @@ pre .property::before, pre .property::after {
      <a href="#elementer-i-dcat-ap-dk"><span class="secno">4</span> <span class="content">Elementer i DCAT-AP-DK</span></a>
      <ol class="toc">
       <li>
-       <a href="#-datakatalog"><span class="secno">4.1</span> <span class="content">## Datakatalog</span></a>
+       <a href="#katalog"><span class="secno">4.1</span> <span class="content">Katalog</span></a>
        <ol class="toc">
-        <li><a href="#-titel"><span class="secno">4.1.1</span> <span class="content">titel</span></a>
-        <li><a href="#-beskrivelse"><span class="secno">4.1.2</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#-udgiver"><span class="secno">4.1.3</span> <span class="content">udgiver</span></a>
-        <li><a href="#-skaber"><span class="secno">4.1.4</span> <span class="content">skaber</span></a>
-        <li><a href="#-udgivelsesdato"><span class="secno">4.1.5</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#-seneste-opdateringsdato"><span class="secno">4.1.6</span> <span class="content">seneste opdateringsdato</span></a>
-        <li><a href="#-geografisk-omrde"><span class="secno">4.1.7</span> <span class="content">geografisk område</span></a>
-        <li><a href="#-sprog"><span class="secno">4.1.8</span> <span class="content">sprog</span></a>
-        <li><a href="#-licens"><span class="secno">4.1.9</span> <span class="content">licens</span></a>
-        <li><a href="#-adgangsrettigheder"><span class="secno">4.1.10</span> <span class="content">adgangsrettigheder</span></a>
-        <li><a href="#-katalogpost"><span class="secno">4.1.11</span> <span class="content">katalogpost</span></a>
-        <li><a href="#-emneklassifikation"><span class="secno">4.1.12</span> <span class="content">emneklassifikation</span></a>
-        <li><a href="#-dataservice"><span class="secno">4.1.13</span> <span class="content">dataservice</span></a>
-        <li><a href="#-katalog"><span class="secno">4.1.14</span> <span class="content">katalog</span></a>
-        <li><a href="#-datast"><span class="secno">4.1.15</span> <span class="content">datasæt</span></a>
-        <li><a href="#-websted"><span class="secno">4.1.16</span> <span class="content">websted</span></a>
-        <li><a href="#-delkatalog"><span class="secno">4.1.17</span> <span class="content">delkatalog</span></a>
-        <li><a href="#-del-af-katalog"><span class="secno">4.1.18</span> <span class="content">del af katalog</span></a>
+        <li><a href="#titel"><span class="secno">4.1.1</span> <span class="content">titel</span></a>
+        <li><a href="#beskrivelse"><span class="secno">4.1.2</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#udgiver"><span class="secno">4.1.3</span> <span class="content">udgiver</span></a>
+        <li><a href="#skaber"><span class="secno">4.1.4</span> <span class="content">skaber</span></a>
+        <li><a href="#udgivelsesdato"><span class="secno">4.1.5</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#seneste-opdateringsdato"><span class="secno">4.1.6</span> <span class="content">seneste opdateringsdato</span></a>
+        <li><a href="#geografisk-omrde"><span class="secno">4.1.7</span> <span class="content">geografisk område</span></a>
+        <li><a href="#sprog"><span class="secno">4.1.8</span> <span class="content">sprog</span></a>
+        <li><a href="#licens"><span class="secno">4.1.9</span> <span class="content">licens</span></a>
+        <li><a href="#adgangsrettigheder"><span class="secno">4.1.10</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#katalogpost"><span class="secno">4.1.11</span> <span class="content">katalogpost</span></a>
+        <li><a href="#emneklassifikation"><span class="secno">4.1.12</span> <span class="content">emneklassifikation</span></a>
+        <li><a href="#dataservice"><span class="secno">4.1.13</span> <span class="content">dataservice</span></a>
+        <li><a href="#katalog①"><span class="secno">4.1.14</span> <span class="content">katalog</span></a>
+        <li><a href="#datast"><span class="secno">4.1.15</span> <span class="content">datasæt</span></a>
+        <li><a href="#websted"><span class="secno">4.1.16</span> <span class="content">websted</span></a>
+        <li><a href="#delkatalog"><span class="secno">4.1.17</span> <span class="content">delkatalog</span></a>
+        <li><a href="#del-af-katalog"><span class="secno">4.1.18</span> <span class="content">del af katalog</span></a>
        </ol>
       <li>
-       <a href="#-katalogpost①"><span class="secno">4.2</span> <span class="content">## katalogpost</span></a>
+       <a href="#katalogpost①"><span class="secno">4.2</span> <span class="content">katalogpost</span></a>
        <ol class="toc">
-        <li><a href="#"><span class="secno">4.2.1</span> <span class="content"></span></a>
-        <li><a href="#-titel①"><span class="secno">4.2.2</span> <span class="content">titel</span></a>
-        <li><a href="#-beskrivelse①"><span class="secno">4.2.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#-udgivelsesdato①"><span class="secno">4.2.4</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#-seneste-ndringsdato"><span class="secno">4.2.5</span> <span class="content">seneste ændringsdato</span></a>
-        <li><a href="#-status"><span class="secno">4.2.6</span> <span class="content">status</span></a>
-        <li><a href="#-sprog①"><span class="secno">4.2.7</span> <span class="content">sprog</span></a>
-        <li><a href="#-kilde"><span class="secno">4.2.8</span> <span class="content">kilde</span></a>
-        <li><a href="#-overenstemmelse"><span class="secno">4.2.9</span> <span class="content">overenstemmelse</span></a>
+        <li><a href="#genstand-for-registrering"><span class="secno">4.2.1</span> <span class="content">genstand for registrering</span></a>
+        <li><a href="#titel①"><span class="secno">4.2.2</span> <span class="content">titel</span></a>
+        <li><a href="#beskrivelse①"><span class="secno">4.2.3</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#udgivelsesdato①"><span class="secno">4.2.4</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#seneste-ndringsdato"><span class="secno">4.2.5</span> <span class="content">seneste ændringsdato</span></a>
+        <li><a href="#status"><span class="secno">4.2.6</span> <span class="content">status</span></a>
+        <li><a href="#sprog①"><span class="secno">4.2.7</span> <span class="content">sprog</span></a>
+        <li><a href="#kilde"><span class="secno">4.2.8</span> <span class="content">kilde</span></a>
+        <li><a href="#overenstemmelse"><span class="secno">4.2.9</span> <span class="content">overenstemmelse</span></a>
        </ol>
       <li>
-       <a href="#-datast①"><span class="secno">4.3</span> <span class="content">## Datasæt</span></a>
+       <a href="#datast①"><span class="secno">4.3</span> <span class="content">Datasæt</span></a>
        <ol class="toc">
-        <li><a href="#-identifikator"><span class="secno">4.3.1</span> <span class="content">identifikator</span></a>
-        <li><a href="#-anden-identifikator"><span class="secno">4.3.2</span> <span class="content">anden identifikator</span></a>
-        <li><a href="#-titel②"><span class="secno">4.3.3</span> <span class="content">titel</span></a>
-        <li><a href="#-beskrivelse②"><span class="secno">4.3.4</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#-udgiver①"><span class="secno">4.3.5</span> <span class="content">udgiver</span></a>
-        <li><a href="#-skaber①"><span class="secno">4.3.6</span> <span class="content">skaber</span></a>
-        <li><a href="#-kontaktpunkt"><span class="secno">4.3.7</span> <span class="content">kontaktpunkt</span></a>
-        <li><a href="#-distribution"><span class="secno">4.3.8</span> <span class="content">distribution</span></a>
-        <li><a href="#-prve"><span class="secno">4.3.9</span> <span class="content">prøve</span></a>
-        <li><a href="#-destinationsside"><span class="secno">4.3.10</span> <span class="content">destinationsside</span></a>
-        <li><a href="#-overenstemmelse①"><span class="secno">4.3.11</span> <span class="content">overenstemmelse</span></a>
-        <li><a href="#-dokumentation"><span class="secno">4.3.12</span> <span class="content">dokumentation</span></a>
-        <li><a href="#-emne"><span class="secno">4.3.13</span> <span class="content">emne</span></a>
-        <li><a href="#-type"><span class="secno">4.3.14</span> <span class="content">type</span></a>
-        <li><a href="#-ngleord"><span class="secno">4.3.15</span> <span class="content">nøgleord</span></a>
-        <li><a href="#-sprog②"><span class="secno">4.3.16</span> <span class="content">sprog</span></a>
-        <li><a href="#-adgangsrettigheder①"><span class="secno">4.3.17</span> <span class="content">adgangsrettigheder</span></a>
-        <li><a href="#-geografisk-omrde①"><span class="secno">4.3.18</span> <span class="content">geografisk område</span></a>
-        <li><a href="#-rumlig-oplsning-i-meter"><span class="secno">4.3.19</span> <span class="content">rumlig opløsning (i meter)</span></a>
-        <li><a href="#-dkningsperiode"><span class="secno">4.3.20</span> <span class="content">dækningsperiode</span></a>
-        <li><a href="#-tidslig-oplsning"><span class="secno">4.3.21</span> <span class="content">tidslig opløsning</span></a>
-        <li><a href="#-opdateringsfrekvens"><span class="secno">4.3.22</span> <span class="content">opdateringsfrekvens</span></a>
-        <li><a href="#-udgivelsesdato②"><span class="secno">4.3.23</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#-ndringsdato"><span class="secno">4.3.24</span> <span class="content">ændringsdato</span></a>
-        <li><a href="#-versionsnummer"><span class="secno">4.3.25</span> <span class="content">versionsnummer</span></a>
-        <li><a href="#-versionsnoter"><span class="secno">4.3.26</span> <span class="content">versionsnoter</span></a>
-        <li><a href="#-har-version"><span class="secno">4.3.27</span> <span class="content">har version</span></a>
-        <li><a href="#-er-version-af"><span class="secno">4.3.28</span> <span class="content">er version af</span></a>
-        <li><a href="#-proveniensudsagn"><span class="secno">4.3.29</span> <span class="content">proveniensudsagn</span></a>
-        <li><a href="#-relation"><span class="secno">4.3.30</span> <span class="content">relation</span></a>
-        <li><a href="#-kildedatast"><span class="secno">4.3.31</span> <span class="content">kildedatasæt</span></a>
-        <li><a href="#-refereres-af"><span class="secno">4.3.32</span> <span class="content">refereres af</span></a>
-        <li><a href="#-prciseret-tilskrivning"><span class="secno">4.3.33</span> <span class="content">præciseret tilskrivning</span></a>
-        <li><a href="#-prciseret-relation"><span class="secno">4.3.34</span> <span class="content">præciseret relation</span></a>
-        <li><a href="#-blev-genereret-ved"><span class="secno">4.3.35</span> <span class="content">blev genereret ved</span></a>
+        <li><a href="#identifikator"><span class="secno">4.3.1</span> <span class="content">identifikator</span></a>
+        <li><a href="#anden-identifikator"><span class="secno">4.3.2</span> <span class="content">anden identifikator</span></a>
+        <li><a href="#titel②"><span class="secno">4.3.3</span> <span class="content">titel</span></a>
+        <li><a href="#beskrivelse②"><span class="secno">4.3.4</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#udgiver①"><span class="secno">4.3.5</span> <span class="content">udgiver</span></a>
+        <li><a href="#dataansvarlig-organisation"><span class="secno">4.3.6</span> <span class="content">dataansvarlig organisation</span></a>
+        <li><a href="#skaber①"><span class="secno">4.3.7</span> <span class="content">skaber</span></a>
+        <li><a href="#bidragsyder"><span class="secno">4.3.8</span> <span class="content">bidragsyder</span></a>
+        <li><a href="#vedligeholder"><span class="secno">4.3.9</span> <span class="content">vedligeholder</span></a>
+        <li><a href="#kontaktpunkt"><span class="secno">4.3.10</span> <span class="content">kontaktpunkt</span></a>
+        <li><a href="#distribution"><span class="secno">4.3.11</span> <span class="content">distribution</span></a>
+        <li><a href="#prve"><span class="secno">4.3.12</span> <span class="content">prøve</span></a>
+        <li><a href="#destinationsside"><span class="secno">4.3.13</span> <span class="content">destinationsside</span></a>
+        <li><a href="#overenstemmelse①"><span class="secno">4.3.14</span> <span class="content">overenstemmelse</span></a>
+        <li><a href="#dokumentation"><span class="secno">4.3.15</span> <span class="content">dokumentation</span></a>
+        <li><a href="#emne"><span class="secno">4.3.16</span> <span class="content">emne</span></a>
+        <li><a href="#type"><span class="secno">4.3.17</span> <span class="content">type</span></a>
+        <li><a href="#ngleord"><span class="secno">4.3.18</span> <span class="content">nøgleord</span></a>
+        <li><a href="#sprog②"><span class="secno">4.3.19</span> <span class="content">sprog</span></a>
+        <li><a href="#adgangsrettigheder①"><span class="secno">4.3.20</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#geografisk-omrde①"><span class="secno">4.3.21</span> <span class="content">geografisk område</span></a>
+        <li><a href="#rumlig-oplsning-i-meter"><span class="secno">4.3.22</span> <span class="content">rumlig opløsning (i meter)</span></a>
+        <li><a href="#dkningsperiode"><span class="secno">4.3.23</span> <span class="content">dækningsperiode</span></a>
+        <li><a href="#tidslig-oplsning"><span class="secno">4.3.24</span> <span class="content">tidslig opløsning</span></a>
+        <li><a href="#opdateringsfrekvens"><span class="secno">4.3.25</span> <span class="content">opdateringsfrekvens</span></a>
+        <li><a href="#udgivelsesdato②"><span class="secno">4.3.26</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#har-kvalitetsmetadata"><span class="secno">4.3.27</span> <span class="content">har kvalitetsmetadata</span></a>
+        <li><a href="#har-anvendelse"><span class="secno">4.3.28</span> <span class="content">har anvendelse</span></a>
+        <li><a href="#betalingsplagt"><span class="secno">4.3.29</span> <span class="content">betalingspålagt</span></a>
+        <li><a href="#personoplysningskategori"><span class="secno">4.3.30</span> <span class="content">personoplysningskategori</span></a>
+        <li><a href="#fortrolighedsgrad"><span class="secno">4.3.31</span> <span class="content">fortrolighedsgrad</span></a>
+        <li><a href="#hjemmel"><span class="secno">4.3.32</span> <span class="content">hjemmel</span></a>
+        <li><a href="#versionsnummer"><span class="secno">4.3.33</span> <span class="content">versionsnummer</span></a>
+        <li><a href="#versionsnoter"><span class="secno">4.3.34</span> <span class="content">versionsnoter</span></a>
+        <li><a href="#har-version"><span class="secno">4.3.35</span> <span class="content">har version</span></a>
+        <li><a href="#er-version-af"><span class="secno">4.3.36</span> <span class="content">er version af</span></a>
+        <li><a href="#proveniensudsagn"><span class="secno">4.3.37</span> <span class="content">proveniensudsagn</span></a>
+        <li><a href="#relation"><span class="secno">4.3.38</span> <span class="content">relation</span></a>
+        <li><a href="#kildedatast"><span class="secno">4.3.39</span> <span class="content">kildedatasæt</span></a>
+        <li><a href="#refereres-af"><span class="secno">4.3.40</span> <span class="content">refereres af</span></a>
+        <li><a href="#prciseret-tilskrivning"><span class="secno">4.3.41</span> <span class="content">præciseret tilskrivning</span></a>
+        <li><a href="#prciseret-relation"><span class="secno">4.3.42</span> <span class="content">præciseret relation</span></a>
+        <li><a href="#blev-genereret-ved"><span class="secno">4.3.43</span> <span class="content">blev genereret ved</span></a>
        </ol>
       <li>
-       <a href="#-distribution①"><span class="secno">4.4</span> <span class="content">## Distribution</span></a>
+       <a href="#distribution①"><span class="secno">4.4</span> <span class="content">Distribution</span></a>
        <ol class="toc">
-        <li><a href="#-adgangsurl"><span class="secno">4.4.1</span> <span class="content">adgangsURL</span></a>
-        <li><a href="#-download-url"><span class="secno">4.4.2</span> <span class="content">download-URL</span></a>
-        <li><a href="#-adgangsservice"><span class="secno">4.4.3</span> <span class="content">adgangsservice</span></a>
-        <li><a href="#①"><span class="secno">4.4.4</span> <span class="content"></span></a>
-        <li><a href="#-beskrivelse③"><span class="secno">4.4.5</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#-overenstemmelse②"><span class="secno">4.4.6</span> <span class="content">overenstemmelse</span></a>
-        <li><a href="#-udgivelsesdato③"><span class="secno">4.4.7</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#-seneste-ndringsdato①"><span class="secno">4.4.8</span> <span class="content">seneste ændringsdato</span></a>
-        <li><a href="#-status①"><span class="secno">4.4.9</span> <span class="content">status</span></a>
-        <li><a href="#-sprog③"><span class="secno">4.4.10</span> <span class="content">sprog</span></a>
-        <li><a href="#-adgangsrettigheder②"><span class="secno">4.4.11</span> <span class="content">adgangsrettigheder</span></a>
-        <li><a href="#-checksum"><span class="secno">4.4.12</span> <span class="content">checksum</span></a>
-        <li><a href="#-bytesize"><span class="secno">4.4.13</span> <span class="content">byteSize</span></a>
-        <li><a href="#-medietype"><span class="secno">4.4.14</span> <span class="content">medietype</span></a>
-        <li><a href="#-dokumentation①"><span class="secno">4.4.15</span> <span class="content">dokumentation</span></a>
-        <li><a href="#-har-politik"><span class="secno">4.4.16</span> <span class="content">har politik</span></a>
-        <li><a href="#-kompressionsformat"><span class="secno">4.4.17</span> <span class="content">kompressionsformat</span></a>
-        <li><a href="#-pakkeformat"><span class="secno">4.4.18</span> <span class="content">pakkeformat</span></a>
-        <li><a href="#-tidslig-oplsning①"><span class="secno">4.4.19</span> <span class="content">tidslig opløsning</span></a>
-        <li><a href="#-rumlig-oplsning-i-meter①"><span class="secno">4.4.20</span> <span class="content">rumlig opløsning (i meter)</span></a>
-        <li><a href="#-tilgngeligstype"><span class="secno">4.4.21</span> <span class="content">tilgængeligstype</span></a>
-        <li><a href="#-format"><span class="secno">4.4.22</span> <span class="content">format</span></a>
-        <li><a href="#-licens①"><span class="secno">4.4.23</span> <span class="content">licens</span></a>
+        <li><a href="#adgangsurl"><span class="secno">4.4.1</span> <span class="content">adgangsURL</span></a>
+        <li><a href="#download-url"><span class="secno">4.4.2</span> <span class="content">download-URL</span></a>
+        <li><a href="#adgangsservice"><span class="secno">4.4.3</span> <span class="content">adgangsservice</span></a>
+        <li><a href="#beskrivelse③"><span class="secno">4.4.4</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#overenstemmelse②"><span class="secno">4.4.5</span> <span class="content">overenstemmelse</span></a>
+        <li><a href="#udgivelsesdato③"><span class="secno">4.4.6</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#seneste-ndringsdato①"><span class="secno">4.4.7</span> <span class="content">seneste ændringsdato</span></a>
+        <li><a href="#status①"><span class="secno">4.4.8</span> <span class="content">status</span></a>
+        <li><a href="#sprog③"><span class="secno">4.4.9</span> <span class="content">sprog</span></a>
+        <li><a href="#adgangsrettigheder②"><span class="secno">4.4.10</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#checksum"><span class="secno">4.4.11</span> <span class="content">checksum</span></a>
+        <li><a href="#bytesize"><span class="secno">4.4.12</span> <span class="content">byteSize</span></a>
+        <li><a href="#medietype"><span class="secno">4.4.13</span> <span class="content">medietype</span></a>
+        <li><a href="#dokumentation①"><span class="secno">4.4.14</span> <span class="content">dokumentation</span></a>
+        <li><a href="#har-politik"><span class="secno">4.4.15</span> <span class="content">har politik</span></a>
+        <li><a href="#kompressionsformat"><span class="secno">4.4.16</span> <span class="content">kompressionsformat</span></a>
+        <li><a href="#pakkeformat"><span class="secno">4.4.17</span> <span class="content">pakkeformat</span></a>
+        <li><a href="#tidslig-oplsning①"><span class="secno">4.4.18</span> <span class="content">tidslig opløsning</span></a>
+        <li><a href="#rumlig-oplsning-i-meter①"><span class="secno">4.4.19</span> <span class="content">rumlig opløsning (i meter)</span></a>
+        <li><a href="#tilgngeligstype"><span class="secno">4.4.20</span> <span class="content">tilgængeligstype</span></a>
+        <li><a href="#format"><span class="secno">4.4.21</span> <span class="content">format</span></a>
+        <li><a href="#licens①"><span class="secno">4.4.22</span> <span class="content">licens</span></a>
+        <li><a href="#titel③"><span class="secno">4.4.23</span> <span class="content">titel</span></a>
+        <li><a href="#beskrivelse④"><span class="secno">4.4.24</span> <span class="content">beskrivelse</span></a>
+        <li><a href="#endpoint-url"><span class="secno">4.4.25</span> <span class="content">endpoint-URL</span></a>
+        <li><a href="#endpointbeskrivelse"><span class="secno">4.4.26</span> <span class="content">endpointbeskrivelse</span></a>
+        <li><a href="#leverer-datast"><span class="secno">4.4.27</span> <span class="content">leverer datasæt</span></a>
+        <li><a href="#licens②"><span class="secno">4.4.28</span> <span class="content">licens</span></a>
+        <li><a href="#adgangsrettigheder③"><span class="secno">4.4.29</span> <span class="content">adgangsrettigheder</span></a>
        </ol>
       <li>
-       <a href="#②"><span class="secno">4.5</span> <span class="content">## </span></a>
+       <a href="#aktr"><span class="secno">4.5</span> <span class="content">Aktør</span></a>
        <ol class="toc">
-        <li><a href="#-titel③"><span class="secno">4.5.1</span> <span class="content">titel</span></a>
-        <li><a href="#-beskrivelse④"><span class="secno">4.5.2</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#-endpoint-url"><span class="secno">4.5.3</span> <span class="content">endpoint-URL</span></a>
-        <li><a href="#-endpointbeskrivelse"><span class="secno">4.5.4</span> <span class="content">endpointbeskrivelse</span></a>
-        <li><a href="#-leverer-datast"><span class="secno">4.5.5</span> <span class="content">leverer datasæt</span></a>
-        <li><a href="#-licens②"><span class="secno">4.5.6</span> <span class="content">licens</span></a>
-        <li><a href="#-adgangsrettigheder③"><span class="secno">4.5.7</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#navn"><span class="secno">4.5.1</span> <span class="content">navn</span></a>
+        <li><a href="#type①"><span class="secno">4.5.2</span> <span class="content">type</span></a>
        </ol>
       <li>
-       <a href="#-aktr"><span class="secno">4.6</span> <span class="content">## Aktør</span></a>
+       <a href="#klassifikationssystem"><span class="secno">4.6</span> <span class="content">Klassifikationssystem</span></a>
        <ol class="toc">
-        <li><a href="#-navn"><span class="secno">4.6.1</span> <span class="content">navn</span></a>
-        <li><a href="#-type①"><span class="secno">4.6.2</span> <span class="content">type</span></a>
+        <li><a href="#titel④"><span class="secno">4.6.1</span> <span class="content">titel</span></a>
        </ol>
       <li>
-       <a href="#-klassifikationssystem"><span class="secno">4.7</span> <span class="content">## Klassifikationssystem</span></a>
+       <a href="#klassifikationsemne"><span class="secno">4.7</span> <span class="content">Klassifikationsemne</span></a>
        <ol class="toc">
-        <li><a href="#-titel④"><span class="secno">4.7.1</span> <span class="content">titel</span></a>
+        <li><a href="#foretrukken-betegnelse"><span class="secno">4.7.1</span> <span class="content">foretrukken betegnelse</span></a>
        </ol>
       <li>
-       <a href="#-klassifikationsemne"><span class="secno">4.8</span> <span class="content">## Klassifikationsemne</span></a>
+       <a href="#checksum①"><span class="secno">4.8</span> <span class="content">Checksum</span></a>
        <ol class="toc">
-        <li><a href="#-foretrukken-betegnelse"><span class="secno">4.8.1</span> <span class="content">foretrukken betegnelse</span></a>
+        <li><a href="#algoritme"><span class="secno">4.8.1</span> <span class="content">algoritme</span></a>
+        <li><a href="#checksumvrdi"><span class="secno">4.8.2</span> <span class="content">checksumværdi</span></a>
+       </ol>
+      <li><a href="#katalogressource"><span class="secno">4.9</span> <span class="content">Katalogressource</span></a>
+      <li><a href="#identifikator①"><span class="secno">4.10</span> <span class="content">Identifikator</span></a>
+      <li><a href="#licensdokument"><span class="secno">4.11</span> <span class="content">Licensdokument</span></a>
+      <li>
+       <a href="#lokation"><span class="secno">4.12</span> <span class="content">Lokation</span></a>
+       <ol class="toc">
+        <li><a href="#bounding-box"><span class="secno">4.12.1</span> <span class="content">bounding box</span></a>
+        <li><a href="#geografisk-tyngdepunkt"><span class="secno">4.12.2</span> <span class="content">geografisk tyngdepunkt</span></a>
+        <li><a href="#geometri"><span class="secno">4.12.3</span> <span class="content">geometri</span></a>
        </ol>
       <li>
-       <a href="#-checksum①"><span class="secno">4.9</span> <span class="content">## Checksum</span></a>
+       <a href="#periode"><span class="secno">4.13</span> <span class="content">Periode</span></a>
        <ol class="toc">
-        <li><a href="#-algoritme"><span class="secno">4.9.1</span> <span class="content">algoritme</span></a>
-        <li><a href="#-checksumvrdi"><span class="secno">4.9.2</span> <span class="content">checksumværdi</span></a>
-       </ol>
-      <li><a href="#-katalogressource"><span class="secno">4.10</span> <span class="content">## Katalogressource</span></a>
-      <li>
-       <a href="#-identifikator①"><span class="secno">4.11</span> <span class="content">## Identifikator</span></a>
-       <ol class="toc">
-        <li><a href="#③"><span class="secno">4.11.1</span> <span class="content"></span></a>
+        <li><a href="#startdato"><span class="secno">4.13.1</span> <span class="content">startdato</span></a>
+        <li><a href="#slutdato"><span class="secno">4.13.2</span> <span class="content">slutdato</span></a>
+        <li><a href="#har-begyndelse"><span class="secno">4.13.3</span> <span class="content">har begyndelse</span></a>
+        <li><a href="#har-slut"><span class="secno">4.13.4</span> <span class="content">har slut</span></a>
        </ol>
       <li>
-       <a href="#-licensdokument"><span class="secno">4.12</span> <span class="content">## Licensdokument</span></a>
+       <a href="#relation①"><span class="secno">4.14</span> <span class="content">relation</span></a>
        <ol class="toc">
-        <li><a href="#④"><span class="secno">4.12.1</span> <span class="content"></span></a>
+        <li><a href="#relation②"><span class="secno">4.14.1</span> <span class="content">relation</span></a>
+        <li><a href="#havde-rolle"><span class="secno">4.14.2</span> <span class="content">havde rolle</span></a>
        </ol>
-      <li>
-       <a href="#-lokation"><span class="secno">4.13</span> <span class="content">## Lokation</span></a>
-       <ol class="toc">
-        <li><a href="#⑤"><span class="secno">4.13.1</span> <span class="content"></span></a>
-        <li><a href="#-geografisk-tyngdepunkt"><span class="secno">4.13.2</span> <span class="content">geografisk tyngdepunkt</span></a>
-        <li><a href="#-geometri"><span class="secno">4.13.3</span> <span class="content">geometri</span></a>
-       </ol>
-      <li>
-       <a href="#-periode"><span class="secno">4.14</span> <span class="content">## Periode</span></a>
-       <ol class="toc">
-        <li><a href="#⑥"><span class="secno">4.14.1</span> <span class="content"></span></a>
-        <li><a href="#-har-begyndelse"><span class="secno">4.14.2</span> <span class="content">har begyndelse</span></a>
-        <li><a href="#-har-slut"><span class="secno">4.14.3</span> <span class="content">har slut</span></a>
-        <li><a href="#-startdato"><span class="secno">4.14.4</span> <span class="content">startdato</span></a>
-       </ol>
-      <li>
-       <a href="#-relation①"><span class="secno">4.15</span> <span class="content">## relation</span></a>
-       <ol class="toc">
-        <li><a href="#-relation②"><span class="secno">4.15.1</span> <span class="content">relation</span></a>
-        <li><a href="#-havde-rolle"><span class="secno">4.15.2</span> <span class="content">havde rolle</span></a>
-       </ol>
-      <li><a href="#-tidsdatatype"><span class="secno">4.16</span> <span class="content">## Tidsdatatype</span></a>
+      <li><a href="#tidsdatatype"><span class="secno">4.15</span> <span class="content">Tidsdatatype</span></a>
      </ol>
     <li><a href="#emner"><span class="secno">5</span> <span class="content">Emner</span></a>
     <li><a href="#referencer"><span class="secno">6</span> <span class="content">Referencer</span></a>
@@ -1724,6 +1723,17 @@ pre .property::before, pre .property::after {
       <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
       <li><a href="#begrebsliste"><span class="secno">7.3</span> <span class="content">Begrebsliste</span></a>
      </ol>
+    <li><a href="#short-hands"><span class="secno">8</span> <span class="content">Short hands</span></a>
+    <li>
+     <a href="#h1"><span class="secno">9</span> <span class="content">h1</span></a>
+     <ol class="toc">
+      <li>
+       <a href="#h2"><span class="secno">9.1</span> <span class="content">h2</span></a>
+       <ol class="toc">
+        <li><a href="#h3"><span class="secno">9.1.1</span> <span class="content">h3</span></a>
+       </ol>
+     </ol>
+    <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
@@ -1794,7 +1804,8 @@ Marts 2020</p>
     Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgangsURL, formatet, størrelse, downloadURL adgangsservice etc.. 
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <h3 class="heading settled" data-level="4.1" id="-datakatalog"><span class="secno">4.1. </span><span class="content">## Datakatalog</span><a class="self-link" href="#-datakatalog"></a></h3>
+   <title>KONVERTERING</title>
+   <h3 class="heading settled" data-level="4.1" id="katalog"><span class="secno">4.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -1805,7 +1816,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.1" id="-titel"><span class="secno">4.1.1. </span><span class="content">titel</span><a class="self-link" href="#-titel"></a></h4>
+   <h4 class="heading settled" data-level="4.1.1" id="titel"><span class="secno">4.1.1. </span><span class="content">titel</span><a class="self-link" href="#titel"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
@@ -1818,7 +1829,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.2" id="-beskrivelse"><span class="secno">4.1.2. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse"></a></h4>
+   <h4 class="heading settled" data-level="4.1.2" id="beskrivelse"><span class="secno">4.1.2. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
@@ -1831,7 +1842,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.3" id="-udgiver"><span class="secno">4.1.3. </span><span class="content">udgiver</span><a class="self-link" href="#-udgiver"></a></h4>
+   <h4 class="heading settled" data-level="4.1.3" id="udgiver"><span class="secno">4.1.3. </span><span class="content">udgiver</span><a class="self-link" href="#udgiver"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/publisher
@@ -1844,7 +1855,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.4" id="-skaber"><span class="secno">4.1.4. </span><span class="content">skaber</span><a class="self-link" href="#-skaber"></a></h4>
+   <h4 class="heading settled" data-level="4.1.4" id="skaber"><span class="secno">4.1.4. </span><span class="content">skaber</span><a class="self-link" href="#skaber"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/creator
@@ -1855,9 +1866,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.5" id="-udgivelsesdato"><span class="secno">4.1.5. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato"></a></h4>
+   <h4 class="heading settled" data-level="4.1.5" id="udgivelsesdato"><span class="secno">4.1.5. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
@@ -1868,9 +1879,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.6" id="-seneste-opdateringsdato"><span class="secno">4.1.6. </span><span class="content">seneste opdateringsdato</span><a class="self-link" href="#-seneste-opdateringsdato"></a></h4>
+   <h4 class="heading settled" data-level="4.1.6" id="seneste-opdateringsdato"><span class="secno">4.1.6. </span><span class="content">seneste opdateringsdato</span><a class="self-link" href="#seneste-opdateringsdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
@@ -1881,9 +1892,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.7" id="-geografisk-omrde"><span class="secno">4.1.7. </span><span class="content">geografisk område</span><a class="self-link" href="#-geografisk-omrde"></a></h4>
+   <h4 class="heading settled" data-level="4.1.7" id="geografisk-omrde"><span class="secno">4.1.7. </span><span class="content">geografisk område</span><a class="self-link" href="#geografisk-omrde"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
@@ -1896,7 +1907,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.8" id="-sprog"><span class="secno">4.1.8. </span><span class="content">sprog</span><a class="self-link" href="#-sprog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.8" id="sprog"><span class="secno">4.1.8. </span><span class="content">sprog</span><a class="self-link" href="#sprog"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
@@ -1909,7 +1920,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.9" id="-licens"><span class="secno">4.1.9. </span><span class="content">licens</span><a class="self-link" href="#-licens"></a></h4>
+   <h4 class="heading settled" data-level="4.1.9" id="licens"><span class="secno">4.1.9. </span><span class="content">licens</span><a class="self-link" href="#licens"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
@@ -1920,9 +1931,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.10" id="-adgangsrettigheder"><span class="secno">4.1.10. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder"></a></h4>
+   <h4 class="heading settled" data-level="4.1.10" id="adgangsrettigheder"><span class="secno">4.1.10. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/rights
@@ -1933,9 +1944,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.11" id="-katalogpost"><span class="secno">4.1.11. </span><span class="content">katalogpost</span><a class="self-link" href="#-katalogpost"></a></h4>
+   <h4 class="heading settled" data-level="4.1.11" id="katalogpost"><span class="secno">4.1.11. </span><span class="content">katalogpost</span><a class="self-link" href="#katalogpost"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#record
@@ -1948,7 +1959,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.12" id="-emneklassifikation"><span class="secno">4.1.12. </span><span class="content">emneklassifikation</span><a class="self-link" href="#-emneklassifikation"></a></h4>
+   <h4 class="heading settled" data-level="4.1.12" id="emneklassifikation"><span class="secno">4.1.12. </span><span class="content">emneklassifikation</span><a class="self-link" href="#emneklassifikation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#themeTaxonomy
@@ -1961,7 +1972,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.13" id="-dataservice"><span class="secno">4.1.13. </span><span class="content">dataservice</span><a class="self-link" href="#-dataservice"></a></h4>
+   <h4 class="heading settled" data-level="4.1.13" id="dataservice"><span class="secno">4.1.13. </span><span class="content">dataservice</span><a class="self-link" href="#dataservice"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#service
@@ -1974,7 +1985,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.14" id="-katalog"><span class="secno">4.1.14. </span><span class="content">katalog</span><a class="self-link" href="#-katalog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.14" id="katalog①"><span class="secno">4.1.14. </span><span class="content">katalog</span><a class="self-link" href="#katalog①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#catalog
@@ -1987,7 +1998,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.15" id="-datast"><span class="secno">4.1.15. </span><span class="content">datasæt</span><a class="self-link" href="#-datast"></a></h4>
+   <h4 class="heading settled" data-level="4.1.15" id="datast"><span class="secno">4.1.15. </span><span class="content">datasæt</span><a class="self-link" href="#datast"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#dataset
@@ -2000,7 +2011,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.16" id="-websted"><span class="secno">4.1.16. </span><span class="content">websted</span><a class="self-link" href="#-websted"></a></h4>
+   <h4 class="heading settled" data-level="4.1.16" id="websted"><span class="secno">4.1.16. </span><span class="content">websted</span><a class="self-link" href="#websted"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/homepage
@@ -2011,9 +2022,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.17" id="-delkatalog"><span class="secno">4.1.17. </span><span class="content">delkatalog</span><a class="self-link" href="#-delkatalog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.17" id="delkatalog"><span class="secno">4.1.17. </span><span class="content">delkatalog</span><a class="self-link" href="#delkatalog"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasPart
@@ -2026,7 +2037,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.1.18" id="-del-af-katalog"><span class="secno">4.1.18. </span><span class="content">del af katalog</span><a class="self-link" href="#-del-af-katalog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.18" id="del-af-katalog"><span class="secno">4.1.18. </span><span class="content">del af katalog</span><a class="self-link" href="#del-af-katalog"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isPartOf
@@ -2039,7 +2050,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.2" id="-katalogpost①"><span class="secno">4.2. </span><span class="content">## katalogpost</span><a class="self-link" href="#-katalogpost①"></a></h3>
+   <h3 class="heading settled" data-level="4.2" id="katalogpost①"><span class="secno">4.2. </span><span class="content">katalogpost</span><a class="self-link" href="#katalogpost①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -2050,7 +2061,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.1" id><span class="secno">4.2.1. </span><span class="content"></span><a class="self-link" href="#"></a></h4>
+   <h4 class="heading settled" data-level="4.2.1" id="genstand-for-registrering"><span class="secno">4.2.1. </span><span class="content">genstand for registrering</span><a class="self-link" href="#genstand-for-registrering"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/primaryTopic
@@ -2063,7 +2074,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.2.2" id="-titel①"><span class="secno">4.2.2. </span><span class="content">titel</span><a class="self-link" href="#-titel①"></a></h4>
+   <h4 class="heading settled" data-level="4.2.2" id="titel①"><span class="secno">4.2.2. </span><span class="content">titel</span><a class="self-link" href="#titel①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
@@ -2076,7 +2087,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.3" id="-beskrivelse①"><span class="secno">4.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse①"></a></h4>
+   <h4 class="heading settled" data-level="4.2.3" id="beskrivelse①"><span class="secno">4.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
@@ -2089,7 +2100,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.4" id="-udgivelsesdato①"><span class="secno">4.2.4. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato①"></a></h4>
+   <h4 class="heading settled" data-level="4.2.4" id="udgivelsesdato①"><span class="secno">4.2.4. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
@@ -2102,7 +2113,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.5" id="-seneste-ndringsdato"><span class="secno">4.2.5. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#-seneste-ndringsdato"></a></h4>
+   <h4 class="heading settled" data-level="4.2.5" id="seneste-ndringsdato"><span class="secno">4.2.5. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#seneste-ndringsdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
@@ -2115,7 +2126,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.2.6" id="-status"><span class="secno">4.2.6. </span><span class="content">status</span><a class="self-link" href="#-status"></a></h4>
+   <h4 class="heading settled" data-level="4.2.6" id="status"><span class="secno">4.2.6. </span><span class="content">status</span><a class="self-link" href="#status"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
@@ -2128,7 +2139,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.7" id="-sprog①"><span class="secno">4.2.7. </span><span class="content">sprog</span><a class="self-link" href="#-sprog①"></a></h4>
+   <h4 class="heading settled" data-level="4.2.7" id="sprog①"><span class="secno">4.2.7. </span><span class="content">sprog</span><a class="self-link" href="#sprog①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
@@ -2141,7 +2152,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.8" id="-kilde"><span class="secno">4.2.8. </span><span class="content">kilde</span><a class="self-link" href="#-kilde"></a></h4>
+   <h4 class="heading settled" data-level="4.2.8" id="kilde"><span class="secno">4.2.8. </span><span class="content">kilde</span><a class="self-link" href="#kilde"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
@@ -2154,7 +2165,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.2.9" id="-overenstemmelse"><span class="secno">4.2.9. </span><span class="content">overenstemmelse</span><a class="self-link" href="#-overenstemmelse"></a></h4>
+   <h4 class="heading settled" data-level="4.2.9" id="overenstemmelse"><span class="secno">4.2.9. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2167,7 +2178,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.3" id="-datast①"><span class="secno">4.3. </span><span class="content">## Datasæt</span><a class="self-link" href="#-datast①"></a></h3>
+   <h3 class="heading settled" data-level="4.3" id="datast①"><span class="secno">4.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -2178,7 +2189,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.3.1" id="-identifikator"><span class="secno">4.3.1. </span><span class="content">identifikator</span><a class="self-link" href="#-identifikator"></a></h4>
+   <h4 class="heading settled" data-level="4.3.1" id="identifikator"><span class="secno">4.3.1. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/identifier
@@ -2189,9 +2200,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.2" id="-anden-identifikator"><span class="secno">4.3.2. </span><span class="content">anden identifikator</span><a class="self-link" href="#-anden-identifikator"></a></h4>
+   <h4 class="heading settled" data-level="4.3.2" id="anden-identifikator"><span class="secno">4.3.2. </span><span class="content">anden identifikator</span><a class="self-link" href="#anden-identifikator"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#identifier
@@ -2202,9 +2213,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.3" id="-titel②"><span class="secno">4.3.3. </span><span class="content">titel</span><a class="self-link" href="#-titel②"></a></h4>
+   <h4 class="heading settled" data-level="4.3.3" id="titel②"><span class="secno">4.3.3. </span><span class="content">titel</span><a class="self-link" href="#titel②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
@@ -2217,7 +2228,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.4" id="-beskrivelse②"><span class="secno">4.3.4. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse②"></a></h4>
+   <h4 class="heading settled" data-level="4.3.4" id="beskrivelse②"><span class="secno">4.3.4. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
@@ -2230,7 +2241,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.5" id="-udgiver①"><span class="secno">4.3.5. </span><span class="content">udgiver</span><a class="self-link" href="#-udgiver①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.5" id="udgiver①"><span class="secno">4.3.5. </span><span class="content">udgiver</span><a class="self-link" href="#udgiver①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/publisher
@@ -2241,9 +2252,22 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.6" id="-skaber①"><span class="secno">4.3.6. </span><span class="content">skaber</span><a class="self-link" href="#-skaber①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.6" id="dataansvarlig-organisation"><span class="secno">4.3.6. </span><span class="content">dataansvarlig organisation</span><a class="self-link" href="#dataansvarlig-organisation"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>https://data.gov.dk/model/core/dcat-dk/dataresponsibleorganisation
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>aktør der er ansvarlig for overordnet administration af alle forhold omkring et datasæt 
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>ObligatoriskObligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.3.7" id="skaber①"><span class="secno">4.3.7. </span><span class="content">skaber</span><a class="self-link" href="#skaber①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/creator
@@ -2254,9 +2278,35 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.7" id="-kontaktpunkt"><span class="secno">4.3.7. </span><span class="content">kontaktpunkt</span><a class="self-link" href="#-kontaktpunkt"></a></h4>
+   <h4 class="heading settled" data-level="4.3.8" id="bidragsyder"><span class="secno">4.3.8. </span><span class="content">bidragsyder</span><a class="self-link" href="#bidragsyder"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/contributor
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.9" id="vedligeholder"><span class="secno">4.3.9. </span><span class="content">vedligeholder</span><a class="self-link" href="#vedligeholder"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://schema.org/maintainer
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.10" id="kontaktpunkt"><span class="secno">4.3.10. </span><span class="content">kontaktpunkt</span><a class="self-link" href="#kontaktpunkt"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#contactPoint
@@ -2267,9 +2317,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.8" id="-distribution"><span class="secno">4.3.8. </span><span class="content">distribution</span><a class="self-link" href="#-distribution"></a></h4>
+   <h4 class="heading settled" data-level="4.3.11" id="distribution"><span class="secno">4.3.11. </span><span class="content">distribution</span><a class="self-link" href="#distribution"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#distribution
@@ -2280,9 +2330,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.9" id="-prve"><span class="secno">4.3.9. </span><span class="content">prøve</span><a class="self-link" href="#-prve"></a></h4>
+   <h4 class="heading settled" data-level="4.3.12" id="prve"><span class="secno">4.3.12. </span><span class="content">prøve</span><a class="self-link" href="#prve"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#sample
@@ -2293,9 +2343,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.10" id="-destinationsside"><span class="secno">4.3.10. </span><span class="content">destinationsside</span><a class="self-link" href="#-destinationsside"></a></h4>
+   <h4 class="heading settled" data-level="4.3.13" id="destinationsside"><span class="secno">4.3.13. </span><span class="content">destinationsside</span><a class="self-link" href="#destinationsside"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#landingPage
@@ -2306,9 +2356,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.11" id="-overenstemmelse①"><span class="secno">4.3.11. </span><span class="content">overenstemmelse</span><a class="self-link" href="#-overenstemmelse①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.14" id="overenstemmelse①"><span class="secno">4.3.14. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2319,9 +2369,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.12" id="-dokumentation"><span class="secno">4.3.12. </span><span class="content">dokumentation</span><a class="self-link" href="#-dokumentation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.15" id="dokumentation"><span class="secno">4.3.15. </span><span class="content">dokumentation</span><a class="self-link" href="#dokumentation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/page
@@ -2332,9 +2382,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.13" id="-emne"><span class="secno">4.3.13. </span><span class="content">emne</span><a class="self-link" href="#-emne"></a></h4>
+   <h4 class="heading settled" data-level="4.3.16" id="emne"><span class="secno">4.3.16. </span><span class="content">emne</span><a class="self-link" href="#emne"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#theme
@@ -2345,9 +2395,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.14" id="-type"><span class="secno">4.3.14. </span><span class="content">type</span><a class="self-link" href="#-type"></a></h4>
+   <h4 class="heading settled" data-level="4.3.17" id="type"><span class="secno">4.3.17. </span><span class="content">type</span><a class="self-link" href="#type"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
@@ -2358,9 +2408,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.15" id="-ngleord"><span class="secno">4.3.15. </span><span class="content">nøgleord</span><a class="self-link" href="#-ngleord"></a></h4>
+   <h4 class="heading settled" data-level="4.3.18" id="ngleord"><span class="secno">4.3.18. </span><span class="content">nøgleord</span><a class="self-link" href="#ngleord"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#keyword
@@ -2371,9 +2421,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.16" id="-sprog②"><span class="secno">4.3.16. </span><span class="content">sprog</span><a class="self-link" href="#-sprog②"></a></h4>
+   <h4 class="heading settled" data-level="4.3.19" id="sprog②"><span class="secno">4.3.19. </span><span class="content">sprog</span><a class="self-link" href="#sprog②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
@@ -2384,9 +2434,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.17" id="-adgangsrettigheder①"><span class="secno">4.3.17. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.20" id="adgangsrettigheder①"><span class="secno">4.3.20. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
@@ -2397,9 +2447,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.18" id="-geografisk-omrde①"><span class="secno">4.3.18. </span><span class="content">geografisk område</span><a class="self-link" href="#-geografisk-omrde①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.21" id="geografisk-omrde①"><span class="secno">4.3.21. </span><span class="content">geografisk område</span><a class="self-link" href="#geografisk-omrde①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
@@ -2410,9 +2460,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.19" id="-rumlig-oplsning-i-meter"><span class="secno">4.3.19. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#-rumlig-oplsning-i-meter"></a></h4>
+   <h4 class="heading settled" data-level="4.3.22" id="rumlig-oplsning-i-meter"><span class="secno">4.3.22. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#rumlig-oplsning-i-meter"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
@@ -2423,9 +2473,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.20" id="-dkningsperiode"><span class="secno">4.3.20. </span><span class="content">dækningsperiode</span><a class="self-link" href="#-dkningsperiode"></a></h4>
+   <h4 class="heading settled" data-level="4.3.23" id="dkningsperiode"><span class="secno">4.3.23. </span><span class="content">dækningsperiode</span><a class="self-link" href="#dkningsperiode"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/temporal
@@ -2436,9 +2486,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.21" id="-tidslig-oplsning"><span class="secno">4.3.21. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#-tidslig-oplsning"></a></h4>
+   <h4 class="heading settled" data-level="4.3.24" id="tidslig-oplsning"><span class="secno">4.3.24. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#tidslig-oplsning"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
@@ -2449,9 +2499,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.22" id="-opdateringsfrekvens"><span class="secno">4.3.22. </span><span class="content">opdateringsfrekvens</span><a class="self-link" href="#-opdateringsfrekvens"></a></h4>
+   <h4 class="heading settled" data-level="4.3.25" id="opdateringsfrekvens"><span class="secno">4.3.25. </span><span class="content">opdateringsfrekvens</span><a class="self-link" href="#opdateringsfrekvens"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accrualPeriodicity
@@ -2462,9 +2512,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.23" id="-udgivelsesdato②"><span class="secno">4.3.23. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato②"></a></h4>
+   <h4 class="heading settled" data-level="4.3.26" id="udgivelsesdato②"><span class="secno">4.3.26. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
@@ -2475,12 +2525,12 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.3.24" id="-ndringsdato"><span class="secno">4.3.24. </span><span class="content">ændringsdato</span><a class="self-link" href="#-ndringsdato"></a></h4>
+   <h4 class="heading settled" data-level="4.3.27" id="har-kvalitetsmetadata"><span class="secno">4.3.27. </span><span class="content">har kvalitetsmetadata</span><a class="self-link" href="#har-kvalitetsmetadata"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>http://purl.org/dc/terms/modified
+    <dd>http://www.w3.org/ns/dqv#hasQualityMetadata
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -2488,9 +2538,74 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.25" id="-versionsnummer"><span class="secno">4.3.25. </span><span class="content">versionsnummer</span><a class="self-link" href="#-versionsnummer"></a></h4>
+   <h4 class="heading settled" data-level="4.3.28" id="har-anvendelse"><span class="secno">4.3.28. </span><span class="content">har anvendelse</span><a class="self-link" href="#har-anvendelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/duv#usage
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.29" id="betalingsplagt"><span class="secno">4.3.29. </span><span class="content">betalingspålagt</span><a class="self-link" href="#betalingsplagt"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>specification of whether payment is imposed on the dataset or not 
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.30" id="personoplysningskategori"><span class="secno">4.3.30. </span><span class="content">personoplysningskategori</span><a class="self-link" href="#personoplysningskategori"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>specification of a relation to specific personal data category
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.31" id="fortrolighedsgrad"><span class="secno">4.3.31. </span><span class="content">fortrolighedsgrad</span><a class="self-link" href="#fortrolighedsgrad"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>the extent by which information contained in a dataset can be disclosed
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.32" id="hjemmel"><span class="secno">4.3.32. </span><span class="content">hjemmel</span><a class="self-link" href="#hjemmel"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://data.europa.eu/m8g/hasLegalResource
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>legal framework for the dataset
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.33" id="versionsnummer"><span class="secno">4.3.33. </span><span class="content">versionsnummer</span><a class="self-link" href="#versionsnummer"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2002/07/owl#versionInfo
@@ -2501,9 +2616,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>..1
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.26" id="-versionsnoter"><span class="secno">4.3.26. </span><span class="content">versionsnoter</span><a class="self-link" href="#-versionsnoter"></a></h4>
+   <h4 class="heading settled" data-level="4.3.34" id="versionsnoter"><span class="secno">4.3.34. </span><span class="content">versionsnoter</span><a class="self-link" href="#versionsnoter"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#versionNotes
@@ -2514,9 +2629,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.27" id="-har-version"><span class="secno">4.3.27. </span><span class="content">har version</span><a class="self-link" href="#-har-version"></a></h4>
+   <h4 class="heading settled" data-level="4.3.35" id="har-version"><span class="secno">4.3.35. </span><span class="content">har version</span><a class="self-link" href="#har-version"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasVersion
@@ -2527,9 +2642,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.28" id="-er-version-af"><span class="secno">4.3.28. </span><span class="content">er version af</span><a class="self-link" href="#-er-version-af"></a></h4>
+   <h4 class="heading settled" data-level="4.3.36" id="er-version-af"><span class="secno">4.3.36. </span><span class="content">er version af</span><a class="self-link" href="#er-version-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isVersionOf
@@ -2540,9 +2655,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.29" id="-proveniensudsagn"><span class="secno">4.3.29. </span><span class="content">proveniensudsagn</span><a class="self-link" href="#-proveniensudsagn"></a></h4>
+   <h4 class="heading settled" data-level="4.3.37" id="proveniensudsagn"><span class="secno">4.3.37. </span><span class="content">proveniensudsagn</span><a class="self-link" href="#proveniensudsagn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/provenance
@@ -2553,9 +2668,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.30" id="-relation"><span class="secno">4.3.30. </span><span class="content">relation</span><a class="self-link" href="#-relation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.38" id="relation"><span class="secno">4.3.38. </span><span class="content">relation</span><a class="self-link" href="#relation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
@@ -2566,9 +2681,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.31" id="-kildedatast"><span class="secno">4.3.31. </span><span class="content">kildedatasæt</span><a class="self-link" href="#-kildedatast"></a></h4>
+   <h4 class="heading settled" data-level="4.3.39" id="kildedatast"><span class="secno">4.3.39. </span><span class="content">kildedatasæt</span><a class="self-link" href="#kildedatast"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
@@ -2579,9 +2694,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.32" id="-refereres-af"><span class="secno">4.3.32. </span><span class="content">refereres af</span><a class="self-link" href="#-refereres-af"></a></h4>
+   <h4 class="heading settled" data-level="4.3.40" id="refereres-af"><span class="secno">4.3.40. </span><span class="content">refereres af</span><a class="self-link" href="#refereres-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/elements/1.1/isReferencedBy
@@ -2592,9 +2707,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.33" id="-prciseret-tilskrivning"><span class="secno">4.3.33. </span><span class="content">præciseret tilskrivning</span><a class="self-link" href="#-prciseret-tilskrivning"></a></h4>
+   <h4 class="heading settled" data-level="4.3.41" id="prciseret-tilskrivning"><span class="secno">4.3.41. </span><span class="content">præciseret tilskrivning</span><a class="self-link" href="#prciseret-tilskrivning"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#qualifiedAttribution
@@ -2605,9 +2720,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.34" id="-prciseret-relation"><span class="secno">4.3.34. </span><span class="content">præciseret relation</span><a class="self-link" href="#-prciseret-relation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.42" id="prciseret-relation"><span class="secno">4.3.42. </span><span class="content">præciseret relation</span><a class="self-link" href="#prciseret-relation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#qualifiedRelation
@@ -2618,9 +2733,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.35" id="-blev-genereret-ved"><span class="secno">4.3.35. </span><span class="content">blev genereret ved</span><a class="self-link" href="#-blev-genereret-ved"></a></h4>
+   <h4 class="heading settled" data-level="4.3.43" id="blev-genereret-ved"><span class="secno">4.3.43. </span><span class="content">blev genereret ved</span><a class="self-link" href="#blev-genereret-ved"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#wasGeneratedBy
@@ -2631,9 +2746,9 @@ Marts 2020</p>
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.4" id="-distribution①"><span class="secno">4.4. </span><span class="content">## Distribution</span><a class="self-link" href="#-distribution①"></a></h3>
+   <h3 class="heading settled" data-level="4.4" id="distribution①"><span class="secno">4.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -2644,7 +2759,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.1" id="-adgangsurl"><span class="secno">4.4.1. </span><span class="content">adgangsURL</span><a class="self-link" href="#-adgangsurl"></a></h4>
+   <h4 class="heading settled" data-level="4.4.1" id="adgangsurl"><span class="secno">4.4.1. </span><span class="content">adgangsURL</span><a class="self-link" href="#adgangsurl"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessURL
@@ -2657,7 +2772,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.4.2" id="-download-url"><span class="secno">4.4.2. </span><span class="content">download-URL</span><a class="self-link" href="#-download-url"></a></h4>
+   <h4 class="heading settled" data-level="4.4.2" id="download-url"><span class="secno">4.4.2. </span><span class="content">download-URL</span><a class="self-link" href="#download-url"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#downloadURL
@@ -2670,7 +2785,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.3" id="-adgangsservice"><span class="secno">4.4.3. </span><span class="content">adgangsservice</span><a class="self-link" href="#-adgangsservice"></a></h4>
+   <h4 class="heading settled" data-level="4.4.3" id="adgangsservice"><span class="secno">4.4.3. </span><span class="content">adgangsservice</span><a class="self-link" href="#adgangsservice"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessService
@@ -2683,20 +2798,20 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.4" id="①"><span class="secno">4.4.4. </span><span class="content"></span><a class="self-link" href="#①"></a></h4>
+    ### 
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>distributionens titel
+    <dd>titeldistributionens titel
     <dt>Multiplicitet
     <dd>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.5" id="-beskrivelse③"><span class="secno">4.4.5. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse③"></a></h4>
+   <h4 class="heading settled" data-level="4.4.4" id="beskrivelse③"><span class="secno">4.4.4. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse③"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
@@ -2709,7 +2824,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.6" id="-overenstemmelse②"><span class="secno">4.4.6. </span><span class="content">overenstemmelse</span><a class="self-link" href="#-overenstemmelse②"></a></h4>
+   <h4 class="heading settled" data-level="4.4.5" id="overenstemmelse②"><span class="secno">4.4.5. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2722,7 +2837,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.7" id="-udgivelsesdato③"><span class="secno">4.4.7. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#-udgivelsesdato③"></a></h4>
+   <h4 class="heading settled" data-level="4.4.6" id="udgivelsesdato③"><span class="secno">4.4.6. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato③"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
@@ -2735,7 +2850,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.8" id="-seneste-ndringsdato①"><span class="secno">4.4.8. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#-seneste-ndringsdato①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.7" id="seneste-ndringsdato①"><span class="secno">4.4.7. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#seneste-ndringsdato①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
@@ -2748,7 +2863,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.9" id="-status①"><span class="secno">4.4.9. </span><span class="content">status</span><a class="self-link" href="#-status①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.8" id="status①"><span class="secno">4.4.8. </span><span class="content">status</span><a class="self-link" href="#status①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
@@ -2761,7 +2876,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.10" id="-sprog③"><span class="secno">4.4.10. </span><span class="content">sprog</span><a class="self-link" href="#-sprog③"></a></h4>
+   <h4 class="heading settled" data-level="4.4.9" id="sprog③"><span class="secno">4.4.9. </span><span class="content">sprog</span><a class="self-link" href="#sprog③"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
@@ -2774,7 +2889,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.11" id="-adgangsrettigheder②"><span class="secno">4.4.11. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder②"></a></h4>
+   <h4 class="heading settled" data-level="4.4.10" id="adgangsrettigheder②"><span class="secno">4.4.10. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/rights
@@ -2787,7 +2902,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.12" id="-checksum"><span class="secno">4.4.12. </span><span class="content">checksum</span><a class="self-link" href="#-checksum"></a></h4>
+   <h4 class="heading settled" data-level="4.4.11" id="checksum"><span class="secno">4.4.11. </span><span class="content">checksum</span><a class="self-link" href="#checksum"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksum
@@ -2800,7 +2915,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.13" id="-bytesize"><span class="secno">4.4.13. </span><span class="content">byteSize</span><a class="self-link" href="#-bytesize"></a></h4>
+   <h4 class="heading settled" data-level="4.4.12" id="bytesize"><span class="secno">4.4.12. </span><span class="content">byteSize</span><a class="self-link" href="#bytesize"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#byteSize
@@ -2813,7 +2928,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.14" id="-medietype"><span class="secno">4.4.14. </span><span class="content">medietype</span><a class="self-link" href="#-medietype"></a></h4>
+   <h4 class="heading settled" data-level="4.4.13" id="medietype"><span class="secno">4.4.13. </span><span class="content">medietype</span><a class="self-link" href="#medietype"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#mediaType
@@ -2826,7 +2941,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.15" id="-dokumentation①"><span class="secno">4.4.15. </span><span class="content">dokumentation</span><a class="self-link" href="#-dokumentation①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.14" id="dokumentation①"><span class="secno">4.4.14. </span><span class="content">dokumentation</span><a class="self-link" href="#dokumentation①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/page
@@ -2839,7 +2954,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.16" id="-har-politik"><span class="secno">4.4.16. </span><span class="content">har politik</span><a class="self-link" href="#-har-politik"></a></h4>
+   <h4 class="heading settled" data-level="4.4.15" id="har-politik"><span class="secno">4.4.15. </span><span class="content">har politik</span><a class="self-link" href="#har-politik"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/odrl/2/hasPolicy
@@ -2852,7 +2967,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.17" id="-kompressionsformat"><span class="secno">4.4.17. </span><span class="content">kompressionsformat</span><a class="self-link" href="#-kompressionsformat"></a></h4>
+   <h4 class="heading settled" data-level="4.4.16" id="kompressionsformat"><span class="secno">4.4.16. </span><span class="content">kompressionsformat</span><a class="self-link" href="#kompressionsformat"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#compressFormat
@@ -2865,7 +2980,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.18" id="-pakkeformat"><span class="secno">4.4.18. </span><span class="content">pakkeformat</span><a class="self-link" href="#-pakkeformat"></a></h4>
+   <h4 class="heading settled" data-level="4.4.17" id="pakkeformat"><span class="secno">4.4.17. </span><span class="content">pakkeformat</span><a class="self-link" href="#pakkeformat"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#packageFormat
@@ -2878,7 +2993,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.19" id="-tidslig-oplsning①"><span class="secno">4.4.19. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#-tidslig-oplsning①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.18" id="tidslig-oplsning①"><span class="secno">4.4.18. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#tidslig-oplsning①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
@@ -2891,7 +3006,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.20" id="-rumlig-oplsning-i-meter①"><span class="secno">4.4.20. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#-rumlig-oplsning-i-meter①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.19" id="rumlig-oplsning-i-meter①"><span class="secno">4.4.19. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#rumlig-oplsning-i-meter①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
@@ -2904,7 +3019,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.21" id="-tilgngeligstype"><span class="secno">4.4.21. </span><span class="content">tilgængeligstype</span><a class="self-link" href="#-tilgngeligstype"></a></h4>
+   <h4 class="heading settled" data-level="4.4.20" id="tilgngeligstype"><span class="secno">4.4.20. </span><span class="content">tilgængeligstype</span><a class="self-link" href="#tilgngeligstype"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/r5ravailability
@@ -2917,7 +3032,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.22" id="-format"><span class="secno">4.4.22. </span><span class="content">format</span><a class="self-link" href="#-format"></a></h4>
+   <h4 class="heading settled" data-level="4.4.21" id="format"><span class="secno">4.4.21. </span><span class="content">format</span><a class="self-link" href="#format"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/format
@@ -2930,7 +3045,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.23" id="-licens①"><span class="secno">4.4.23. </span><span class="content">licens</span><a class="self-link" href="#-licens①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.22" id="licens①"><span class="secno">4.4.22. </span><span class="content">licens</span><a class="self-link" href="#licens①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
@@ -2943,7 +3058,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.5" id="②"><span class="secno">4.5. </span><span class="content">## </span><a class="self-link" href="#②"></a></h3>
+    ## 
    <dl class="def">
     <dt>URI
     <dd>
@@ -2954,7 +3069,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.5.1" id="-titel③"><span class="secno">4.5.1. </span><span class="content">titel</span><a class="self-link" href="#-titel③"></a></h4>
+   <h4 class="heading settled" data-level="4.4.23" id="titel③"><span class="secno">4.4.23. </span><span class="content">titel</span><a class="self-link" href="#titel③"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
@@ -2967,7 +3082,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.5.2" id="-beskrivelse④"><span class="secno">4.5.2. </span><span class="content">beskrivelse</span><a class="self-link" href="#-beskrivelse④"></a></h4>
+   <h4 class="heading settled" data-level="4.4.24" id="beskrivelse④"><span class="secno">4.4.24. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse④"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
@@ -2980,7 +3095,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.5.3" id="-endpoint-url"><span class="secno">4.5.3. </span><span class="content">endpoint-URL</span><a class="self-link" href="#-endpoint-url"></a></h4>
+   <h4 class="heading settled" data-level="4.4.25" id="endpoint-url"><span class="secno">4.4.25. </span><span class="content">endpoint-URL</span><a class="self-link" href="#endpoint-url"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointURL
@@ -2993,7 +3108,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.5.4" id="-endpointbeskrivelse"><span class="secno">4.5.4. </span><span class="content">endpointbeskrivelse</span><a class="self-link" href="#-endpointbeskrivelse"></a></h4>
+   <h4 class="heading settled" data-level="4.4.26" id="endpointbeskrivelse"><span class="secno">4.4.26. </span><span class="content">endpointbeskrivelse</span><a class="self-link" href="#endpointbeskrivelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointDescription
@@ -3006,7 +3121,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.5.5" id="-leverer-datast"><span class="secno">4.5.5. </span><span class="content">leverer datasæt</span><a class="self-link" href="#-leverer-datast"></a></h4>
+   <h4 class="heading settled" data-level="4.4.27" id="leverer-datast"><span class="secno">4.4.27. </span><span class="content">leverer datasæt</span><a class="self-link" href="#leverer-datast"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#servesDataset
@@ -3019,7 +3134,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.5.6" id="-licens②"><span class="secno">4.5.6. </span><span class="content">licens</span><a class="self-link" href="#-licens②"></a></h4>
+   <h4 class="heading settled" data-level="4.4.28" id="licens②"><span class="secno">4.4.28. </span><span class="content">licens</span><a class="self-link" href="#licens②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/licence
@@ -3032,7 +3147,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.5.7" id="-adgangsrettigheder③"><span class="secno">4.5.7. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#-adgangsrettigheder③"></a></h4>
+   <h4 class="heading settled" data-level="4.4.29" id="adgangsrettigheder③"><span class="secno">4.4.29. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder③"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
@@ -3045,7 +3160,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.6" id="-aktr"><span class="secno">4.6. </span><span class="content">## Aktør</span><a class="self-link" href="#-aktr"></a></h3>
+   <h3 class="heading settled" data-level="4.5" id="aktr"><span class="secno">4.5. </span><span class="content">Aktør</span><a class="self-link" href="#aktr"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3056,7 +3171,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.6.1" id="-navn"><span class="secno">4.6.1. </span><span class="content">navn</span><a class="self-link" href="#-navn"></a></h4>
+   <h4 class="heading settled" data-level="4.5.1" id="navn"><span class="secno">4.5.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/name
@@ -3069,7 +3184,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.6.2" id="-type①"><span class="secno">4.6.2. </span><span class="content">type</span><a class="self-link" href="#-type①"></a></h4>
+   <h4 class="heading settled" data-level="4.5.2" id="type①"><span class="secno">4.5.2. </span><span class="content">type</span><a class="self-link" href="#type①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
@@ -3082,7 +3197,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.7" id="-klassifikationssystem"><span class="secno">4.7. </span><span class="content">## Klassifikationssystem</span><a class="self-link" href="#-klassifikationssystem"></a></h3>
+   <h3 class="heading settled" data-level="4.6" id="klassifikationssystem"><span class="secno">4.6. </span><span class="content">Klassifikationssystem</span><a class="self-link" href="#klassifikationssystem"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3093,7 +3208,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.7.1" id="-titel④"><span class="secno">4.7.1. </span><span class="content">titel</span><a class="self-link" href="#-titel④"></a></h4>
+   <h4 class="heading settled" data-level="4.6.1" id="titel④"><span class="secno">4.6.1. </span><span class="content">titel</span><a class="self-link" href="#titel④"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
@@ -3106,7 +3221,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.8" id="-klassifikationsemne"><span class="secno">4.8. </span><span class="content">## Klassifikationsemne</span><a class="self-link" href="#-klassifikationsemne"></a></h3>
+   <h3 class="heading settled" data-level="4.7" id="klassifikationsemne"><span class="secno">4.7. </span><span class="content">Klassifikationsemne</span><a class="self-link" href="#klassifikationsemne"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3117,7 +3232,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.8.1" id="-foretrukken-betegnelse"><span class="secno">4.8.1. </span><span class="content">foretrukken betegnelse</span><a class="self-link" href="#-foretrukken-betegnelse"></a></h4>
+   <h4 class="heading settled" data-level="4.7.1" id="foretrukken-betegnelse"><span class="secno">4.7.1. </span><span class="content">foretrukken betegnelse</span><a class="self-link" href="#foretrukken-betegnelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#prefLabel
@@ -3130,7 +3245,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.9" id="-checksum①"><span class="secno">4.9. </span><span class="content">## Checksum</span><a class="self-link" href="#-checksum①"></a></h3>
+   <h3 class="heading settled" data-level="4.8" id="checksum①"><span class="secno">4.8. </span><span class="content">Checksum</span><a class="self-link" href="#checksum①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3141,7 +3256,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.9.1" id="-algoritme"><span class="secno">4.9.1. </span><span class="content">algoritme</span><a class="self-link" href="#-algoritme"></a></h4>
+   <h4 class="heading settled" data-level="4.8.1" id="algoritme"><span class="secno">4.8.1. </span><span class="content">algoritme</span><a class="self-link" href="#algoritme"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#algorithm
@@ -3154,7 +3269,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.9.2" id="-checksumvrdi"><span class="secno">4.9.2. </span><span class="content">checksumværdi</span><a class="self-link" href="#-checksumvrdi"></a></h4>
+   <h4 class="heading settled" data-level="4.8.2" id="checksumvrdi"><span class="secno">4.8.2. </span><span class="content">checksumværdi</span><a class="self-link" href="#checksumvrdi"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksumValue
@@ -3167,18 +3282,18 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.10" id="-katalogressource"><span class="secno">4.10. </span><span class="content">## Katalogressource</span><a class="self-link" href="#-katalogressource"></a></h3>
+   <h3 class="heading settled" data-level="4.9" id="katalogressource"><span class="secno">4.9. </span><span class="content">Katalogressource</span><a class="self-link" href="#katalogressource"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
     <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
     <dd>the union of Catalog, Dataset and DataService
+    <dt>Anvendelsesnote
+    <dd>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.11" id="-identifikator①"><span class="secno">4.11. </span><span class="content">## Identifikator</span><a class="self-link" href="#-identifikator①"></a></h3>
+   <h3 class="heading settled" data-level="4.10" id="identifikator①"><span class="secno">4.10. </span><span class="content">Identifikator</span><a class="self-link" href="#identifikator①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3189,7 +3304,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.11.1" id="③"><span class="secno">4.11.1. </span><span class="content"></span><a class="self-link" href="#③"></a></h4>
+    ### 
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#notation
@@ -3202,7 +3317,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.12" id="-licensdokument"><span class="secno">4.12. </span><span class="content">## Licensdokument</span><a class="self-link" href="#-licensdokument"></a></h3>
+   <h3 class="heading settled" data-level="4.11" id="licensdokument"><span class="secno">4.11. </span><span class="content">Licensdokument</span><a class="self-link" href="#licensdokument"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3213,7 +3328,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.12.1" id="④"><span class="secno">4.12.1. </span><span class="content"></span><a class="self-link" href="#④"></a></h4>
+    ### 
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
@@ -3226,7 +3341,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.13" id="-lokation"><span class="secno">4.13. </span><span class="content">## Lokation</span><a class="self-link" href="#-lokation"></a></h3>
+   <h3 class="heading settled" data-level="4.12" id="lokation"><span class="secno">4.12. </span><span class="content">Lokation</span><a class="self-link" href="#lokation"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3237,7 +3352,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.13.1" id="⑤"><span class="secno">4.13.1. </span><span class="content"></span><a class="self-link" href="#⑤"></a></h4>
+   <h4 class="heading settled" data-level="4.12.1" id="bounding-box"><span class="secno">4.12.1. </span><span class="content">bounding box</span><a class="self-link" href="#bounding-box"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#bbox
@@ -3250,7 +3365,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.13.2" id="-geografisk-tyngdepunkt"><span class="secno">4.13.2. </span><span class="content">geografisk tyngdepunkt</span><a class="self-link" href="#-geografisk-tyngdepunkt"></a></h4>
+   <h4 class="heading settled" data-level="4.12.2" id="geografisk-tyngdepunkt"><span class="secno">4.12.2. </span><span class="content">geografisk tyngdepunkt</span><a class="self-link" href="#geografisk-tyngdepunkt"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#centroid
@@ -3263,7 +3378,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.13.3" id="-geometri"><span class="secno">4.13.3. </span><span class="content">geometri</span><a class="self-link" href="#-geometri"></a></h4>
+   <h4 class="heading settled" data-level="4.12.3" id="geometri"><span class="secno">4.12.3. </span><span class="content">geometri</span><a class="self-link" href="#geometri"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/locn#geometry
@@ -3276,7 +3391,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.14" id="-periode"><span class="secno">4.14. </span><span class="content">## Periode</span><a class="self-link" href="#-periode"></a></h3>
+   <h3 class="heading settled" data-level="4.13" id="periode"><span class="secno">4.13. </span><span class="content">Periode</span><a class="self-link" href="#periode"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3287,46 +3402,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.14.1" id="⑥"><span class="secno">4.14.1. </span><span class="content"></span><a class="self-link" href="#⑥"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/dcat#endDate
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.14.2" id="-har-begyndelse"><span class="secno">4.14.2. </span><span class="content">har begyndelse</span><a class="self-link" href="#-har-begyndelse"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/2006/time#hasBeginning
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.14.3" id="-har-slut"><span class="secno">4.14.3. </span><span class="content">har slut</span><a class="self-link" href="#-har-slut"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/2006/time#hasEnd
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.14.4" id="-startdato"><span class="secno">4.14.4. </span><span class="content">startdato</span><a class="self-link" href="#-startdato"></a></h4>
+   <h4 class="heading settled" data-level="4.13.1" id="startdato"><span class="secno">4.13.1. </span><span class="content">startdato</span><a class="self-link" href="#startdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#startDate
@@ -3339,7 +3415,46 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.15" id="-relation①"><span class="secno">4.15. </span><span class="content">## relation</span><a class="self-link" href="#-relation①"></a></h3>
+   <h4 class="heading settled" data-level="4.13.2" id="slutdato"><span class="secno">4.13.2. </span><span class="content">slutdato</span><a class="self-link" href="#slutdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#endDate
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.13.3" id="har-begyndelse"><span class="secno">4.13.3. </span><span class="content">har begyndelse</span><a class="self-link" href="#har-begyndelse"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2006/time#hasBeginning
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>beginning of a temporal entity
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.13.4" id="har-slut"><span class="secno">4.13.4. </span><span class="content">har slut</span><a class="self-link" href="#har-slut"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2006/time#hasEnd
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>
+    <dt>Multiplicitet
+    <dd>..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.14" id="relation①"><span class="secno">4.14. </span><span class="content">relation</span><a class="self-link" href="#relation①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
@@ -3350,7 +3465,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.15.1" id="-relation②"><span class="secno">4.15.1. </span><span class="content">relation</span><a class="self-link" href="#-relation②"></a></h4>
+   <h4 class="heading settled" data-level="4.14.1" id="relation②"><span class="secno">4.14.1. </span><span class="content">relation</span><a class="self-link" href="#relation②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
@@ -3363,7 +3478,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.15.2" id="-havde-rolle"><span class="secno">4.15.2. </span><span class="content">havde rolle</span><a class="self-link" href="#-havde-rolle"></a></h4>
+   <h4 class="heading settled" data-level="4.14.2" id="havde-rolle"><span class="secno">4.14.2. </span><span class="content">havde rolle</span><a class="self-link" href="#havde-rolle"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#hadRole
@@ -3376,14 +3491,14 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.16" id="-tidsdatatype"><span class="secno">4.16. </span><span class="content">## Tidsdatatype</span><a class="self-link" href="#-tidsdatatype"></a></h3>
+   <h3 class="heading settled" data-level="4.15" id="tidsdatatype"><span class="secno">4.15. </span><span class="content">Tidsdatatype</span><a class="self-link" href="#tidsdatatype"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>
     <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
     <dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal
+    <dt>Anvendelsesnote
+    <dd>
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3433,6 +3548,40 @@ Marts 2020</p>
    <h3 class="heading settled" data-level="7.3" id="begrebsliste"><span class="secno">7.3. </span><span class="content">Begrebsliste</span><a class="self-link" href="#begrebsliste"></a></h3>
     ================ 
    <p>arkitektur.digst.dk</p>
+   <h2 class="heading settled" data-level="8" id="short-hands"><span class="secno">8. </span><span class="content">Short hands</span><a class="self-link" href="#short-hands"></a></h2>
+   <h2 class="heading settled" data-level="9" id="h1"><span class="secno">9. </span><span class="content">h1</span><a class="self-link" href="#h1"></a></h2>
+   <h3 class="heading settled" data-level="9.1" id="h2"><span class="secno">9.1. </span><span class="content">h2</span><a class="self-link" href="#h2"></a></h3>
+   <h4 class="heading settled" data-level="9.1.1" id="h3"><span class="secno">9.1.1. </span><span class="content">h3</span><a class="self-link" href="#h3"></a></h4>
+   <h5 class="heading settled" data-level="9.1.1.1" id="h4"><span class="secno">9.1.1.1. </span><span class="content">h4</span><a class="self-link" href="#h4"></a></h5>
+   <h6 class="heading settled" data-level="9.1.1.1.1" id="h5"><span class="secno">9.1.1.1.1. </span><span class="content">h5</span><a class="self-link" href="#h5"></a></h6>
+   <p align="center"><a href="img/test.jpg"><img alt="test" src="img/test.jpg" width="800"></a></p>
+   <p>Links: <a href="https://www.example.om">Test</a></p>
+   <p class="note" role="note">Note 1</p>
+   <p class="example" id="example-5f3a8aa0"><a class="self-link" href="#example-5f3a8aa0"></a>Example 2</p>
+   <p class="assertion">assertion 3</p>
+   <p class="advisement">advisement</p>
+   <p class="issue" id="issue-642facf6"><a class="self-link" href="#issue-642facf6"></a>Issue</p>
+   <p>definition list:</p>
+   <dl class="def">
+    <dt>1
+    <dd>
+    a
+    <dt>
+    <dt>2
+    <dd>
+    b
+    <dt>
+   </dl>
+   <ul>
+    <li data-md>
+     <p>bullit 1</p>
+    <li data-md>
+     <p>bullit 2</p>
+    <li data-md>
+     <p>bullit 3</p>
+   </ul>
+   <p><em>kursiv</em></p>
+   <p><strong>fed</strong></p>
   </main>
 <script>
 (function() {
@@ -3563,3 +3712,7 @@ Marts 2020</p>
 
 })();
 </script>
+  <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
+  <div style="counter-reset:issue">
+   <div class="issue">Issue<a href="#issue-642facf6"> ↵ </a></div>
+  </div>
