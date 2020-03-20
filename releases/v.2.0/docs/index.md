@@ -228,1599 +228,273 @@ Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgan
 # Elementer i DCAT-AP-DK 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
-<h3>## Datakatalog</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>En organiseret samling af datarelaterede ressourcer i et katalog.</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### titel</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/title</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>datakatalogets titel</dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### beskrivelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/description</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>tekstbaseret beskrivelse af datakatalogets formål og indhold</dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### udgiver</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/publisher</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>aktør der har udgivet kataloget</dd>
-<dt>Multiplicitet</dt>
-<dd>1..1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### skaber</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/creator</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>aktør der har skabt kataloget</dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### udgivelsesdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/issued</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>den dato datakataloget først blev udgivet</dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### seneste opdateringsdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/modified</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>den dato hvor indholdet i datakataloget seneste er blevet ændret</dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### geografisk område</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/spatial</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### sprog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/language</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### licens</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/license</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### adgangsrettigheder</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/rights</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### katalogpost</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#record</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### emneklassifikation</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#themeTaxonomy</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### dataservice</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#service</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### katalog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#catalog</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### datasæt</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#dataset</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### websted</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://xmlns.com/foaf/0.1/homepage</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### delkatalog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/hasPart</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### del af katalog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/isPartOf</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## katalogpost</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice.</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### </h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://xmlns.com/foaf/0.1/primaryTopic</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1..1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### titel</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/title</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### beskrivelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/description</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### udgivelsesdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/issued</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### seneste ændringsdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/modified</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1..1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### status</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/adms#status</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### sprog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/language</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### kilde</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/source</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### overenstemmelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/conformsTo</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Datasæt</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### identifikator</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/identifier</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>Global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik</dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### anden identifikator</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/adms#identifier</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### titel</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/title</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>Datasættets titel. Egenskaben kan gentages for hvert sprog.</dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### beskrivelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/description</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>Tekstbaseret beskrivelse af datasættets formål og indhold.  Egenskaben kan gentages for hvert sprog.</dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### udgiver</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/publisher</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### skaber</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/creator</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### kontaktpunkt</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#contactPoint</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### distribution</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#distribution</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### prøve</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/adms#sample</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### destinationsside</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#landingPage</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### overenstemmelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/conformsTo</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### dokumentation</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://xmlns.com/foaf/0.1/page</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### emne</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#theme</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### type</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/type</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### nøgleord</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#keyword</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### sprog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/language</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### adgangsrettigheder</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/accessRights</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### geografisk område</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/spatial</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### rumlig opløsning (i meter)</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### dækningsperiode</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/temporal</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### tidslig opløsning</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#temporalResolution</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### opdateringsfrekvens</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### udgivelsesdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/issued</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### ændringsdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/modified</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### versionsnummer</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2002/07/owl#versionInfo</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### versionsnoter</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/adms#versionNotes</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### har version</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/hasVersion</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### er version af</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/isVersionOf</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### proveniensudsagn</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/provenance</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### relation</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/relation</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### kildedatasæt</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/source</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### refereres af</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/elements/1.1/isReferencedBy</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### præciseret tilskrivning</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/prov#qualifiedAttribution</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### præciseret relation</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#qualifiedRelation</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### blev genereret ved</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/prov#wasGeneratedBy</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Distribution</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### adgangsURL</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#accessURL</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### download-URL</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#downloadURL</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### adgangsservice</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#accessService</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### </h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/title</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>distributionens titel</dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### beskrivelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/description</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>tekstbaseret beskrivelse af distributionen</dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### overenstemmelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/conformsTo</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### udgivelsesdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/issued</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### seneste ændringsdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/modified</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### status</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/adms#status</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### sprog</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/language</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### adgangsrettigheder</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/rights</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### checksum</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://spdx.org/rdf/terms#checksum</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### byteSize</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#byteSize</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### medietype</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#mediaType</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### dokumentation</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://xmlns.com/foaf/0.1/page</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### har politik</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/odrl/2/hasPolicy</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### kompressionsformat</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#compressFormat</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### pakkeformat</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#packageFormat</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### tidslig opløsning</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#temporalResolution</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### rumlig opløsning (i meter)</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### tilgængeligstype</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://data.europa.eu/r5ravailability</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### format</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/format</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### licens</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/license</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## </h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### titel</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/title</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>dataservicens titel</dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### beskrivelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/description</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>tekstbaseret beskrivelse af dataservicen</dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### endpoint-URL</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#endpointURL</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### endpointbeskrivelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#endpointDescription</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### leverer datasæt</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#servesDataset</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### licens</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/licence</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### adgangsrettigheder</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/accessRights</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Aktør</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### navn</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://xmlns.com/foaf/0.1/name</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### type</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/type</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Klassifikationssystem</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### titel</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/title</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h3>## Klassifikationsemne</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### foretrukken betegnelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h3>## Checksum</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### algoritme</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://spdx.org/rdf/terms#algorithm</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1..1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### checksumværdi</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://spdx.org/rdf/terms#checksumValue</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1..1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h3>## Katalogressource</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>the union of Catalog, Dataset and DataService</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Identifikator</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### </h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2004/02/skos/core#notation</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Licensdokument</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### </h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/type</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Lokation</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### </h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#bbox</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### geografisk tyngdepunkt</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#centroid</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### geometri</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/locn#geometry</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## Periode</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### </h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#endDate</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### har begyndelse</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2006/time#hasBeginning</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### har slut</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2006/time#hasEnd</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### startdato</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#startDate</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>..1</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h3>## relation</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
-<h4>### relation</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/relation</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h4>### havde rolle</h4>
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#hadRole</dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd></dd>
-<dt>Multiplicitet</dt>
-<dd>1</dd>
-<dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
-</dl>
-<h3>## Tidsdatatype</h3>
-<dl class="def">
-<dt>URI</dt>
-<dd></dd>
-<dt>Definition</dt>
-<dd></dd>
-<dt>Anvendelsesnote</dt>
-<dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal</dd>
-<dt>Kravniveau</dt>
-<dd></dd>
-</dl>
+<html lang="da"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>KONVERTERING</title><link rel="stylesheet" type="text/css" href="convert.css"></head><body>				
+## Katalog
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>En organiseret samling af datarelaterede ressourcer i et katalog.</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### titel
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/title</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>datakatalogets titel</dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### beskrivelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/description</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>tekstbaseret beskrivelse af datakatalogets formål og indhold</dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### udgiver
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/publisher</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>aktør der har udgivet kataloget</dd><dt>Multiplicitet</dt><dd>1..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### skaber
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/creator</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>aktør der har skabt kataloget</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### udgivelsesdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/issued</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>den dato datakataloget først blev udgivet</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### seneste opdateringsdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/modified</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>den dato hvor indholdet i datakataloget seneste er blevet ændret</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### geografisk område
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/spatial</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### sprog
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/language</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### licens
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/license</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### adgangsrettigheder
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/rights</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### katalogpost
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#record</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### emneklassifikation
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#themeTaxonomy</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### dataservice
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#service</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### katalog
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#catalog</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### datasæt
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#dataset</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### websted
+<dl class="def"><dt>URI</dt><dd>http://xmlns.com/foaf/0.1/homepage</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### delkatalog
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/hasPart</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### del af katalog
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/isPartOf</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## katalogpost
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice.</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### genstand for registrering
+<dl class="def"><dt>URI</dt><dd>http://xmlns.com/foaf/0.1/primaryTopic</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### titel
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/title</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### beskrivelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/description</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### udgivelsesdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/issued</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### seneste ændringsdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/modified</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### status
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/adms#status</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### sprog
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/language</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### kilde
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/source</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### overenstemmelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/conformsTo</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Datasæt
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### identifikator
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/identifier</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>Global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik</dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### anden identifikator
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/adms#identifier</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### titel
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/title</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>Datasættets titel. Egenskaben kan gentages for hvert sprog.</dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### beskrivelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/description</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>Tekstbaseret beskrivelse af datasættets formål og indhold.  Egenskaben kan gentages for hvert sprog.</dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### udgiver
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/publisher</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### dataansvarlig organisation
+<dl class="def"><dt>URI</dt><dd>https://data.gov.dk/model/core/dcat-dk/dataresponsibleorganisation</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>aktør der er ansvarlig for overordnet administration af alle forhold omkring et datasæt </dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>ObligatoriskObligatorisk</dd></dl>				
+### skaber
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/creator</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### bidragsyder
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/contributor</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### vedligeholder
+<dl class="def"><dt>URI</dt><dd>http://schema.org/maintainer</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### kontaktpunkt
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#contactPoint</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### distribution
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#distribution</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### prøve
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/adms#sample</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### destinationsside
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#landingPage</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### overenstemmelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/conformsTo</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### dokumentation
+<dl class="def"><dt>URI</dt><dd>http://xmlns.com/foaf/0.1/page</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### emne
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#theme</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### type
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/type</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### nøgleord
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#keyword</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### sprog
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/language</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### adgangsrettigheder
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/accessRights</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### geografisk område
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/spatial</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### rumlig opløsning (i meter)
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### dækningsperiode
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/temporal</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### tidslig opløsning
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#temporalResolution</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### opdateringsfrekvens
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/accrualPeriodicity</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### udgivelsesdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/issued</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### har kvalitetsmetadata
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dqv#hasQualityMetadata</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### har anvendelse
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/duv#usage</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### betalingspålagt
+<dl class="def"><dt>URI</dt><dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>specification of whether payment is imposed on the dataset or not </dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### personoplysningskategori
+<dl class="def"><dt>URI</dt><dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>specification of a relation to specific personal data category</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### fortrolighedsgrad
+<dl class="def"><dt>URI</dt><dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>the extent by which information contained in a dataset can be disclosed</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### hjemmel
+<dl class="def"><dt>URI</dt><dd>http://data.europa.eu/m8g/hasLegalResource</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>legal framework for the dataset</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### versionsnummer
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/2002/07/owl#versionInfo</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### versionsnoter
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/adms#versionNotes</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### har version
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/hasVersion</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### er version af
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/isVersionOf</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### proveniensudsagn
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/provenance</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### relation
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/relation</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### kildedatasæt
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/source</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### refereres af
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/elements/1.1/isReferencedBy</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### præciseret tilskrivning
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/prov#qualifiedAttribution</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### præciseret relation
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#qualifiedRelation</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+### blev genereret ved
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/prov#wasGeneratedBy</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd>Valgfri</dd></dl>				
+## Distribution
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### adgangsURL
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#accessURL</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### download-URL
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#downloadURL</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### adgangsservice
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#accessService</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### 
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/title</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>titeldistributionens titel</dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### beskrivelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/description</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>tekstbaseret beskrivelse af distributionen</dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### overenstemmelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/conformsTo</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### udgivelsesdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/issued</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### seneste ændringsdato
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/modified</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### status
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/adms#status</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### sprog
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/language</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### adgangsrettigheder
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/rights</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### checksum
+<dl class="def"><dt>URI</dt><dd>http://spdx.org/rdf/terms#checksum</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### byteSize
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#byteSize</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### medietype
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#mediaType</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### dokumentation
+<dl class="def"><dt>URI</dt><dd>http://xmlns.com/foaf/0.1/page</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### har politik
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/odrl/2/hasPolicy</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### kompressionsformat
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#compressFormat</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### pakkeformat
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#packageFormat</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### tidslig opløsning
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#temporalResolution</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### rumlig opløsning (i meter)
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### tilgængeligstype
+<dl class="def"><dt>URI</dt><dd>http://data.europa.eu/r5ravailability</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### format
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/format</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### licens
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/license</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## 
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### titel
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/title</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>dataservicens titel</dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### beskrivelse
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/description</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>tekstbaseret beskrivelse af dataservicen</dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### endpoint-URL
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#endpointURL</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### endpointbeskrivelse
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#endpointDescription</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### leverer datasæt
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#servesDataset</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### licens
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/licence</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### adgangsrettigheder
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/accessRights</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Aktør
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### navn
+<dl class="def"><dt>URI</dt><dd>http://xmlns.com/foaf/0.1/name</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### type
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/type</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Klassifikationssystem
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### titel
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/title</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+## Klassifikationsemne
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### foretrukken betegnelse
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+## Checksum
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### algoritme
+<dl class="def"><dt>URI</dt><dd>http://spdx.org/rdf/terms#algorithm</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### checksumværdi
+<dl class="def"><dt>URI</dt><dd>http://spdx.org/rdf/terms#checksumValue</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1..1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+## Katalogressource
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd>the union of Catalog, Dataset and DataService</dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Identifikator
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### 
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/2004/02/skos/core#notation</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Licensdokument
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### 
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/type</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Lokation
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### bounding box
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#bbox</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### geografisk tyngdepunkt
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#centroid</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### geometri
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/locn#geometry</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## Periode
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### startdato
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#startDate</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### slutdato
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#endDate</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### har begyndelse
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/2006/time#hasBeginning</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd>beginning of a temporal entity</dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+### har slut
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/2006/time#hasEnd</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>..1</dd><dt>Kravniveau</dt><dd></dd></dl>				
+## relation
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl>				
+### relation
+<dl class="def"><dt>URI</dt><dd>http://purl.org/dc/terms/relation</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+### havde rolle
+<dl class="def"><dt>URI</dt><dd>http://www.w3.org/ns/dcat#hadRole</dd><dt>Definition</dt><dd></dd><dt>Anvendelsesnote</dt><dd></dd><dt>Multiplicitet</dt><dd>1</dd><dt>Kravniveau</dt><dd>Obligatorisk</dd></dl>				
+## Tidsdatatype
+<dl class="def"><dt>URI</dt><dd></dd><dt>Definition</dt><dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal</dd><dt>Anvendelsesnote</dt><dd></dd><dt>Kravniveau</dt><dd></dd></dl></body></html>
 
 # Emner
 
