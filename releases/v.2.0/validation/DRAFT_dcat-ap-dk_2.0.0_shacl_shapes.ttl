@@ -1,7 +1,6 @@
-﻿@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcat-ap: <http://data.europa.eu/r5r#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcat-ap: <http://data.europa.eu/r5r/> .
 @prefix dc: <http://purl.org/dc/terms/> .
-@prefix cc: <http://creativecommons.org/ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -16,149 +15,160 @@
 <http://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
   dcat:accessURL <http://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
   dcat:downloadURL <http://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml> ;
-  dcat-ap:r5ravailability <http://data.europa.eu/r5r/experimental> ;
+  dcat-ap:availability <http://data.europa.eu/r5r/experimental> ;
   dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dc:conformsTo <https://www.w3.org/TR/shacl> ;
   dc:license <https://creativecommons.org/licenses/by/4.0> ;
-  cc:attributionURL <http://ec.europa.eu/> ;
   dc:modified "2019-03-19"^^xsd:date ;
   dc:publisher <http://digst.dk> ;
   dc:relation <https://arkitektur.digst.dk/rammearkitektur/datastandarder> ;
   dc:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-DK in SHACL" ;
   dc:title "The constraints of a Danish DCAT Application Profile " .
 
-<https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+<https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   a <http://www.w3.org/ns/shacl#/PropertyGroup> ;
   rdfs:label "Obligatorisk"@da .
 
-<https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+<https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   a <http://www.w3.org/ns/shacl#/PropertyGroup> ;
   rdfs:label "Anbefalet"@da .
 
-<https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+<https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   a <http://www.w3.org/ns/shacl#/PropertyGroup> ;
   rdfs:label "Valgfri"@da .
 
 dcat-ap:Catalog_Shape
   a <http://www.w3.org/ns/shacl#NodeShape> ;
   sh:name "Catalog"@en, "Katalog"@da ;
-  sh:description "En organiseret samling af datarelaterede ressourcer i et katalog."@da ;
+  sh:description "A catalogue or repository that hosts the Datasets being described."@en, "En organiseret samling af datarelaterede ressourcer i et katalog."@da ;
+  rdfs:comment "A curated collection of metadata about datasets"@en ;
   sh:targetClass dcat:Catalog ;
   sh:property [
-    sh:name "titel"@da ;
-    sh:description "datakatalogets titel"@da ;
+    sh:name "title"@en, "titel"@da ;
+    sh:description "This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name."@en, "datakatalogets titel"@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dc:title ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "beskrivelse"@da ;
-    sh:description "tekstbaseret beskrivelse af datakatalogets formål og indhold"@da ;
+    sh:name "description"@en, "beskrivelse"@da ;
+    sh:description "This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description."@en, "tekstbaseret beskrivelse af datakatalogets formål og indhold"@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dc:description ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "udgiver"@da ;
-    sh:description "aktør der har udgivet kataloget"@da ;
+    sh:name "publisher"@en, "udgiver"@da ;
+    sh:description "This property refers to an entity (organisation) responsible for making the Catalogue available. "@en, "aktør der har udgivet kataloget"@da ;
     sh:class foaf:Agent ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path dc:publisher ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "skaber"@da ;
-    sh:description "aktør der har skabt kataloget"@da ;
+    sh:name "creator"@en, "skaber"@da ;
+    sh:description "This property refers to the entity primarily responsible for producing the catalogue"@en, "aktør der har skabt kataloget"@da ;
     sh:class foaf:Agent ;
     sh:maxCount 1 ;
     sh:path dc:creator ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "udgivelsesdato"@da ;
-    sh:description "den dato datakataloget først blev udgivet"@da ;
+    sh:name "release date"@en, "udgivelsesdato"@da ;
+    sh:description "This property contains the date of formal issuance (e.g., publication) of the Catalogue."@en, "den dato datakataloget først blev udgivet"@da ;
     sh:maxCount 1 ;
     sh:node dcat-ap:DateOrDateTimeDataType_Shape ;
     sh:path dc:issued ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "seneste opdateringsdato"@da ;
-    sh:description "den dato hvor indholdet i datakataloget seneste er blevet ændret"@da ;
+    sh:name "update/modification date"@en, "seneste opdateringsdato"@da ;
+    sh:description "This property contains the most recent date on which the Catalogue was changed or modified."@en, "den dato hvor indholdet i datakataloget seneste er blevet ændret"@da ;
     sh:maxCount 1 ;
     sh:node dcat-ap:DateOrDateTimeDataType_Shape ;
     sh:path dc:modified ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "geografisk område"@da ;
-    sh:comment "det geografiske område datakataloget dækker"@da ;
+    sh:name "spatial/geographic"@en, "geografisk område"@da ;
+    sh:description "This property refers to a geographical area covered by the Catalogue. "@en, "det geografiske område datakataloget dækker"@da ;
     sh:class dc:Location ;
     sh:path dc:spatial ;
     sh:severity sh:Violation
   ], [
-    sh:name "sprog"@da ;
+    sh:name "language"@en, "sprog"@da ;
+    sh:description "This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages."@en, "det sprog der er anvendt i kataloget"@da ;
     sh:class dc:LinguisticSystem ;
     sh:path dc:language ;
     sh:severity sh:Violation
   ], [
-    sh:name "licens"@da ;
+    sh:name "license"@en, "licens"@da ;
+    sh:description "This property refers to the licence under which the Catalogue can be used or reused."@en, "den licens under hvilken kataloget kan anvendes eller genbruges"@da ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
     sh:path dc:license ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "adgangsrettigheder"@da ;
+    sh:name "rights"@en, "adgangsrettigheder"@da ;
+    sh:description "This property refers to a statement that specifies rights associated with the Catalogue."@en, "reference til dokument der beskriver adgangsrettigheederne til datasættet"@da ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
     sh:path dc:rights ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "katalogpost"@da ;
+    sh:name "catalog record"@en, "katalogpost"@da ;
+    sh:description "This property refers to a Catalogue Record that is part of the Catalogue"@en, "katalogpost som er en del af kataloget"@da ;
     sh:class dcat:CatalogRecord ;
     sh:path dcat:record ;
     sh:severity sh:Violation
   ], [
-    sh:name "emneklassifikation"@da ;
+    sh:name "themes"@en, "emneklassifikation"@da ;
+    sh:description "This property refers to a knowledge organization system used to classify the Catalogue's Datasets."@en, "emneklassifikation der anvendes til kategorisering af datasæt i kataloget"@da ;
     sh:class skos:ConceptScheme ;
     sh:path dcat:themeTaxonomy ;
     sh:severity sh:Violation
   ], [
-    sh:name "dataservice"@da ;
+    sh:name "service"@en, "dataservice"@da ;
+    sh:description "This property refers to a site or end-point that is listed in the catalog."@en, ""@da ;
     sh:class dcat:DataService ;
     sh:path dcat:service ;
     sh:severity sh:Violation
   ], [
-    sh:name "katalog"@da ;
+    sh:name "catalog"@en, "katalog"@da ;
+    sh:description "This property refers to a catalog whose contents are of interest in the context of this catalog"@en, ""@da ;
     sh:class dcat:Catalog ;
     sh:path dcat:catalog ;
     sh:severity sh:Violation
   ], [
-    sh:name "datasæt"@da ;
+    sh:name "dataset"@en, "datasæt"@da ;
+    sh:description "This property links the Catalogue with a Dataset that is part of the Catalogue."@en, ""@da ;
     sh:class dcat:Dataset ;
     sh:minCount 1 ;
     sh:path dcat:dataset ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "websted"@da ;
+    sh:name "homepage"@en, "websted"@da ;
+    sh:description "This property refers to a web page that acts as the main page for the Catalogue."@en, ""@da ;
     sh:class foaf:Document ;
     sh:maxCount 1 ;
     sh:path foaf:homepage ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "delkatalog"@da ;
+    sh:name "has part"@en, "delkatalog"@da ;
+    sh:description "This property refers to a related Catalogue that is part of the described Catalogue"@en, ""@da ;
     sh:class dcat:Catalog ;
     sh:path dc:hasPart ;
     sh:severity sh:Violation
   ], [
-    sh:name "del af katalog"@da ;
+    sh:name "is part of"@en, "del af katalog"@da ;
+    sh:description "This property refers to a related Catalogue in which the described Catalogue is physically or logically included."@en, ""@da ;
     sh:class dcat:Catalog ;
     sh:maxCount 1 ;
     sh:path dc:isPartOf ;
@@ -169,64 +179,67 @@ dcat-ap:CatalogRecord_Shape
   a sh:NodeShape ;
   sh:targetClass dcat:CatalogRecord ;
   sh:name "Catalog Record"@en, "Katalogpost"@da ;
-  sh:description "Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice."@da ;
+  sh:description "A description of a Dataset’s entry in the Catalogue. "@en, "Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice."@da ;
   sh:property [
-    sh:name "genstand for registrering"@da ;
+    sh:name "primary topic"@en, "genstand for registrering"@da ;
+    sh:description "This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."@en, ""@da ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:node dcat-ap:DcatResource_Shape ;
     sh:path foaf:primaryTopic ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "titel"@da ;
-    sh:description ""@da ;
-    sh:nodeKind sh:Literal ;
-    sh:path dc:title ;
-    sh:severity sh:Violation
+    sh:name "update/ modification date"@en, "seneste ændringsdato"@da ;
+    sh:description "This property contains the most recent date on which the Catalogue entry was changed or modified."@en, ""@da ;
+    sh:maxCount 1 ;
+    sh:minCount 1 ;
+    sh:path dc:modified ;
+    sh:severity sh:Violation ;
+    sh:shape dcat-ap:DateOrDateTimeDataType_Shape ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "beskrivelse"@da ;
-    sh:description ""@da ;
-    sh:nodeKind sh:Literal ;
-    sh:path dc:description ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "udgivelsesdato"@da ;
-    sh:description ""@da ;
+    sh:name "listing date"@en, "udgivelsesdato"@da ;
+    sh:description "This property contains the date on which the description of the Dataset was included in the Catalogue."@en, ""@da ;
     sh:maxCount 1 ;
     sh:node dcat-ap:DateOrDateTimeDataType_Shape ;
     sh:path dc:issued ;
     sh:severity sh:Violation
   ], [
-    sh:name "seneste ændringsdato"@da ;
-    sh:description ""@da ;
-    sh:maxCount 1 ;
-    sh:minCount 1 ;
-    sh:path dc:modified ;
-    sh:severity sh:Violation ;
-    sh:shape dcat-ap:DateOrDateTimeDataType_Shape
+    sh:name "title"@en, "titel"@da ;
+    sh:description "This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name."@en, ""@da ;
+    sh:nodeKind sh:Literal ;
+    sh:path dc:title ;
+    sh:severity sh:Violation
   ], [
-    sh:name "status"@da ;
-    sh:description ""@da ;
+    sh:name "description"@en, "beskrivelse"@da ;
+    sh:description "This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description."@en, ""@da ;
+    sh:nodeKind sh:Literal ;
+    sh:path dc:description ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "change type"@en, "status"@da ;
+    sh:description "This property refers to the type of the latest revision of a Dataset's entry in the Catalogue. "@en, ""@da ;
     sh:class skos:Concept ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/adms#status> ;
     sh:severity sh:Violation
   ], [
-    sh:name "sprog"@da ;
-    sh:description ""@da ;
+    sh:name "language"@en, "sprog"@da ;
+    sh:description "This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages."@en, ""@da ;
     sh:class dc:LinguisticSystem ;
     sh:path dc:language ;
     sh:severity sh:Violation
   ], [
-    sh:name "kilde"@da ;
-    sh:description ""@da ;
+    sh:name "source metadata"@en, "kilde"@da ;
+    sh:description "This property refers to the original metadata that was used in creating metadata for the Dataset"@en, ""@da ;
     sh:class dcat:CatalogRecord ;
     sh:maxCount 1 ;
     sh:path dc:source ;
     sh:severity sh:Violation
   ], [
-    sh:name "overenstemmelse"@da ;
-    sh:description ""@da ;
+    sh:name "application profile"@en, "overenstemmelse"@da ;
+    sh:description "This property refers to an Application Profile that the Dataset’s metadata conforms to"@en, ""@da ;
     sh:class dc:Standard ;
     sh:maxCount 1 ;
     sh:path dc:conformsTo ;
@@ -237,474 +250,490 @@ dcat-ap:Dataset_Shape
   a sh:NodeShape ;
   sh:targetClass dcat:Dataset ;
   sh:name "Dataset"@en, "Datasæt"@da ;
-  sh:description "En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;
+  sh:description "A conceptual entity that represents the information published. "@en, "En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;
   sh:property [
-    sh:name "identifikator"@da ;
-    sh:description "Global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik"@da ;
+    sh:name "identifikator"@da, "identifier"@en ;
+    sh:description "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en, "Global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik"@da ;
     sh:nodeKind sh:Literal ;
     sh:path dc:identifier ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "anden identifikator"@da ;
-    sh:description ""@da ;
+    sh:name "anden identifikator"@da, "other identifier"@en ;
+    sh:description "This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5]."@en, ""@da ;
     sh:class <http://www.w3.org/ns/adms#Identifier> ;
     sh:path <http://www.w3.org/ns/adms#identifier> ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "titel"@da ;
-    sh:description "Datasættets titel. Egenskaben kan gentages for hvert sprog."@da ;
+    sh:name "title"@en, "titel"@da ;
+    sh:description "This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name."@en, "Datasættets titel. Egenskaben kan gentages for hvert sprog."@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dc:title ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "beskrivelse"@da ;
-    sh:description "Tekstbaseret beskrivelse af datasættets formål og indhold.  Egenskaben kan gentages for hvert sprog."@da ;
+    sh:name "description"@en, "beskrivelse"@da ;
+    sh:description "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."@en, "Tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog."@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dc:description ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "udgiver"@da ;
+    sh:name "publisher"@en, "udgiver"@da ;
+    sh:description "This property refers to the entity (organisation) responsible for making the Dataset available."@en, ""@da ;
     sh:class foaf:Agent ;
     sh:maxCount 1 ;
     sh:path dc:publisher ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "dataansvarlig organisation"@da ;
-    sh:description "aktør der er ansvarlig for overordnet administration af alle forhold omkring et datasæt "@da ;
+    sh:name "dataresponsible organisation"@en, "dataansvarlig organisation"@da ;
+    sh:description "This property refers to the agent responsible for the general administration of all aspects concerning a dataset"@en, "aktør der er ansvarlig for overordnet administration af alle forhold omkring et datasæt "@da ;
     sh:class foaf:Agent ;
     sh:maxCount 1 ;
     sh:path <https://data.gov.dk/model/core/dcat-dk/dataresponsibleorganisation> ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Mandatory>, <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "skaber"@da ;
-    sh:description ""@da ;
+    sh:name "creator"@en, "skaber"@da ;
+    sh:description "This property refers to the entity primarily responsible for producing the dataset"@en, ""@da ;
     sh:class foaf:Agent ;
     sh:maxCount 1 ;
     sh:path dc:creator ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "bidragsyder"@da ;
-    sh:description ""@da ;
+    sh:name "contributor"@en, "bidragsyder"@da ;
+    sh:description "This property refers to the entity responsible for making contributions to the resource."@en, ""@da ;
     sh:class foaf:Agent ;
     sh:maxCount 0 ;
     sh:path dc:contributor ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "vedligeholder"@da ;
-    sh:description ""@da ;
+    sh:name "maintainer"@en, "vedligeholder"@da ;
+    sh:description "This property refers to the agent that manages contributions to, and/or publication of a dataset"@en, ""@da ;
     sh:class foaf:Agent ;
     sh:maxCount 0 ;
     sh:path schema:maintainer ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "kontaktpunkt"@da ;
+    sh:name "contact point"@en, "kontaktpunkt"@da ;
+    sh:description "This property contains contact information that can be used for sending comments about the Dataset."@en, ""@da ;
     sh:class vcard:Kind ;
     sh:path dcat:contactPoint ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "distribution"@da ;
+    sh:name "dataset distribution"@en, "distribution"@da ;
+    sh:description "This property links the Dataset to an available Distribution."@en, ""@da ;
     sh:class dcat:Distribution ;
     sh:path dcat:distribution ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "prøve"@da ;
-    sh:description ""@da ;
+    sh:name "sample"@en, "prøve"@da ;
+    sh:description "This property refers to a sample distribution of the dataset."@en, ""@da ;
     sh:class dcat:Distribution ;
     sh:path <http://www.w3.org/ns/adms#sample> ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "destinationsside"@da ;
-    sh:description ""@da ;
+    sh:name "landing page"@en, "destinationsside"@da ;
+    sh:description "This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en, ""@da ;
     sh:class foaf:Document ;
     sh:path dcat:landingPage ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "overenstemmelse"@da ;
-    sh:description ""@da ;
+    sh:name "conforms to"@en, "overenstemmelse"@da ;
+    sh:description "This property refers to an implementing rule or other specification."@en, ""@da ;
     sh:class dc:Standard ;
     sh:path dc:conformsTo ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "dokumentation"@da ;
-    sh:description ""@da ;
+    sh:name "documentation"@en, "dokumentation"@da ;
+    sh:description "This property refers to a page or document about this Dataset."@en, ""@da ;
     sh:class foaf:Document ;
     sh:path foaf:page ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "emne"@da ;
+    sh:name "theme/ category"@en, "emne"@da ;
+    sh:description "This property refers to a category of the Dataset. A Dataset may be associated with multiple themes."@en, ""@da ;
     sh:class skos:Concept ;
     sh:path dcat:theme ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "type"@da ;
-    sh:description ""@da ;
+    sh:name "type"@en, "type"@da ;
+    sh:description "This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established."@en, ""@da ;
     sh:class skos:Concept ;
     sh:path dc:type ;
+    sh:maxCount 1 ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "nøgleord"@da ;
+    sh:name "keyword/ tag"@en, "nøgleord"@da ;
+    sh:description "This property contains a keyword or tag describing the Dataset."@en, ""@da ;
     sh:nodeKind sh:Literal ;
     sh:path dcat:keyword ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "sprog"@da ;
-    sh:description ""@da ;
+    sh:name "language"@en, "sprog"@da ;
+    sh:description "This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset."@en, "det sprog der er anvendt i datasættet"@da ;
     sh:class dc:LinguisticSystem ;
     sh:path dc:language ;
     sh:severity sh:Info ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "adgangsrettigheder"@da ;
-    sh:description ""@da ;
+    sh:name "access rights"@en, "adgangsrettigheder"@da ;
+    sh:description "This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. "@en, ""@da ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
     sh:path dc:accessRights ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "geografisk område"@da ;
+    sh:name "spatial/ geographical coverage"@en, "geografisk område"@da ;
+    sh:description "This property refers to a geographic region that is covered by the Dataset. "@en, "det geografiske område datasættet dækker"@da ;
     sh:class dc:Location ;
     sh:path dc:spatial ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "rumlig opløsning (i meter)"@da ;
-    sh:description ""@da ;
+    sh:name "spatial resolution in meters"@en, "rumlig opløsning (i meter)"@da ;
+    sh:description ""@en, ""@da ;
     sh:datatype xsd:decimal ;
     sh:path dcat:spatialResolutionInMeters ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "dækningsperiode"@da ;
+    sh:name "temporal coverage"@en, "dækningsperiode"@da ;
+    sh:description "This property refers to a temporal period that the Dataset covers."@en, "den periode datasættet dækker"@da ;
     sh:class dc:PeriodOfTime ;
     sh:path dc:temporal ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "tidslig opløsning"@da ;
-    sh:description ""@da ;
+    sh:name "temporal resolution"@en, "tidslig opløsning"@da ;
+    sh:description "This property refers to the minimum time period resolvable in the dataset."@en, ""@da ;
     sh:datatype xsd:duration ;
     sh:path dcat:temporalResolution ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "opdateringsfrekvens"@da ;
-    sh:description ""@da ;
+    sh:name "frequency"@en, "opdateringsfrekvens"@da ;
+    sh:description "This property refers to the frequency at which the Dataset is updated."@en, ""@da ;
     sh:class dc:Frequency ;
     sh:maxCount 1 ;
     sh:path dc:accrualPeriodicity ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "udgivelsesdato"@da ;
-    sh:description ""@da ;
+    sh:name "release date"@en, "udgivelsesdato"@da ;
+    sh:description "This property contains the date of formal issuance (e.g., publication) of the Dataset."@en, ""@da ;
     sh:maxCount 1 ;
     sh:path dc:issued ;
     sh:severity sh:Violation ;
     sh:shape dcat-ap:DateOrDateTimeDataType_Shape ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Recommended>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "har kvalitetsmetadata"@da ;
-    sh:description ""@da ;
+    sh:name "update/ modification date"@en, "opdateringsdato"@da ;
+    sh:description "This property contains the most recent date on which the Dataset was changed or modified."@en, ""@da ;
+    sh:maxCount 1 ;
+    sh:path dc:modified ;
+    sh:severity sh:Violation ;
+    sh:shape dcat-ap:DateOrDateTimeDataType_Shape ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
+  ], [
+    sh:name "has quality metadata"@en, "har kvalitetsmetadata"@da ;
+    sh:description "This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph."@en, ""@da ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/dqv#hasQualityMetadata> ;
     sh:severity sh:Violation ;
     sh:shape <http://www.w3.org/ns/dqv#QualityMetadata> ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "har anvendelse"@da ;
-    sh:description ""@da ;
+    sh:name "has usage"@en, "har anvendelse"@da ;
+    sh:description "This property refers to dataset or distribution usage guidance/instructions."@en, ""@da ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/duv#usage> ;
     sh:severity sh:Violation ;
     sh:shape <http://www.w3.org/ns/duv#Usage> ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "betalingspålagt"@da ;
-    sh:description "specification of whether payment is imposed on the dataset or not "@da ;
+    sh:name "payment imposed"@en, "betalingspålagt"@da ;
+    sh:description "This property specifies whether payment is imposed on the dataset or not"@en, "angivelse af hvorvidt datasættet er betalingspålagt eller ej"@da ;
     sh:maxCount 1 ;
-    sh:path <https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
+    sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
     sh:severity sh:Violation ;
     sh:shape xsd:boolean ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "personoplysningskategori"@da ;
-    sh:description "specification of a relation to specific personal data category"@da ;
-    sh:maxCount 1 ;
-    sh:path <https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
+    sh:name "personal data category"@en, "personoplysningskategori"@da ;
+    sh:description "This property specifies a relation to specific personal data category"@en, ""@da ;
+    sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
     sh:severity sh:Violation ;
     sh:shape skos:Concept ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "fortrolighedsgrad"@da ;
-    sh:description "the extent by which information contained in a dataset can be disclosed"@da ;
+    sh:name "confidentiality type"@en, "fortrolighedsgrad"@da ;
+    sh:description "This property specifies the extent by which information contained in a dataset can be disclosed"@en, ""@da ;
     sh:maxCount 1 ;
-    sh:path <https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
+    sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
     sh:severity sh:Violation ;
     sh:shape skos:Concept ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "hjemmel"@da ;
-    sh:description "legal framework for the dataset"@da ;
-    sh:maxCount 1 ;
+    sh:name "has legal resource"@en, "hjemmel"@da ;
+    sh:description "This property specifies the legal framework for the dataset"@en, ""@da ;
     sh:path <http://data.europa.eu/m8g/hasLegalResource> ;
     sh:severity sh:Violation ;
     sh:shape <http://data.europa.eu/eli/ontology#LegalResource> ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "versionsnummer"@da ;
-    sh:description ""@da ;
+    sh:name "version"@en, "versionsnummer"@da ;
+    sh:description "This property contains a version number or other version designation of the Dataset."@en, ""@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path owl:versionInfo ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "versionsnoter"@da ;
-    sh:description ""@da ;
+    sh:name "version notes"@en, "versionsnoter"@da ;
+    sh:description "This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."@en, ""@da ;
     sh:nodeKind sh:Literal ;
     sh:path <http://www.w3.org/ns/adms#versionNotes> ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "har version"@da ;
-    sh:description ""@da ;
+    sh:name "has version"@en, "har version"@da ;
+    sh:description "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset."@en, ""@da ;
     sh:class dcat:Dataset ;
     sh:path dc:hasVersion ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "er version af"@da ;
-    sh:description ""@da ;
+    sh:name "is version of"@en, "er version af"@da ;
+    sh:description "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."@en, ""@da ;
     sh:class dcat:Dataset ;
     sh:path dc:isVersionOf ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "proveniensudsagn"@da ;
-    sh:description ""@da ;
+    sh:name "provenance"@en, "proveniensudsagn"@da ;
+    sh:description "This property contains a statement about the lineage of a Dataset."@en, ""@da ;
     sh:class dc:ProvenanceStatement ;
     sh:path dc:provenance ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "relation"@da ;
-    sh:description ""@da ;
+    sh:name "related resource"@en, "relateret ressource"@da ;
+    sh:description "This property refers to a related resource."@en, ""@da ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dc:relation ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "kildedatasæt"@da ;
-    sh:description ""@da ;
+    sh:name "source dataset"@en, "kildedatasæt"@da ;
+    sh:description "This property refers to a related Dataset from which the described Dataset is derived."@en, ""@da ;
     sh:class dcat:Dataset ;
     sh:path dc:source ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "refereres af"@da ;
-    sh:description ""@da ;
+    sh:name "is referenced by"@en, "refereres af"@da ;
+    sh:description "This property provides a link to a description of a relationship with another resource"@en, ""@da ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dc11:isReferencedBy ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "præciseret tilskrivning"@da ;
-    sh:description ""@da ;
+    sh:name "qualified attribution"@en, "præciseret tilskrivning"@da ;
+    sh:description "This property refers to a liink to an Agent having some form of responsibility for the resource"@en, ""@da ;
     sh:class prov:Attribution ;
     sh:path prov:qualifiedAttribution ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "præciseret relation"@da ;
-    sh:description ""@da ;
+    sh:name "qualified relation"@en, "præciseret relation"@da ;
+    sh:description "This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en, ""@da ;
     sh:class dcat:Relationship ;
     sh:path dcat:qualifiedRelation ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "blev genereret ved"@da ;
-    sh:description ""@da ;
+    sh:name "was generated by"@en, "blev genereret ved"@da ;
+    sh:description "This property refers to an activity that generated, or provides the business context for, the creation of the dataset."@en, ""@da ;
     sh:class prov:Activity ;
     sh:path prov:wasGeneratedBy ;
     sh:severity sh:Violation ;
-    sh:group <https:/data.gov.dk/model/profile/dcat-ap-dk#Optional>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ] .
 
 dcat-ap:Distribution_Shape
   a sh:NodeShape ;
   sh:targetClass dcat:Distribution ;
   sh:name "Distribution"@en, "Distribution"@da ;
+  sh:description "A physical embodiment of the Dataset in a particular format."@en, ""@da ;
   sh:property [
-    sh:name "adgangsURL"@da ;
-    sh:description ""@da ;
+    sh:name "access URL"@en, "adgangsURL"@da ;
+    sh:description "This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset. "@en, ""@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dcat:accessURL ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "download-URL"@da ;
-    sh:description ""@da ;
+    sh:name "download URL"@en, "download-URL"@da ;
+    sh:description "This property contains a URL that is a direct link to a downloadable file in a given format. "@en, ""@da ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dcat:downloadURL ;
     sh:severity sh:Violation
   ], [
-    sh:name "adgangsservice"@da ;
-    sh:description ""@da ;
+    sh:name "access service "@en, "adgangsservice"@da ;
+    sh:description "This property refers to a data service that gives access to the distribution of the dataset"@en, ""@da ;
     sh:class dcat:DataService ;
     sh:path dcat:accessService ;
     sh:severity sh:Violation
   ], [
-    sh:description "titel"@da, "distributionens titel"@da ;
+    sh:description "title"@en, "titel"@da, "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."@en, "distributionens titel"@da ;
     sh:nodeKind sh:Literal ;
     sh:path dc:title ;
     sh:severity sh:Violation
   ], [
-    sh:name "beskrivelse"@da ;
-    sh:description ""@da, "tekstbaseret beskrivelse af distributionen"@da ;
+    sh:name "description"@en, "beskrivelse"@da ;
+    sh:description "This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description."@en, "tekstbaseret beskrivelse af distributionen"@da ;
     sh:nodeKind sh:Literal ;
     sh:path dc:description ;
     sh:severity sh:Violation
   ], [
-    sh:name "overenstemmelse"@da ;
-    sh:description ""@da ;
+    sh:name "linked schemas"@en, "overenstemmelse"@da ;
+    sh:description "This property refers to an established schema to which the described Distribution conforms."@en, ""@da ;
     sh:class dc:Standard ;
     sh:path dc:conformsTo ;
     sh:severity sh:Violation
   ], [
-    sh:name "udgivelsesdato"@da ;
-    sh:description ""@da ;
+    sh:name "release date"@en, "udgivelsesdato"@da ;
+    sh:description "This property contains the date of formal issuance (e.g., publication) of the Distribution."@en, ""@da ;
     sh:maxCount 1 ;
     sh:node dcat-ap:DateOrDateTimeDataType_Shape ;
     sh:path dc:issued ;
     sh:severity sh:Violation
   ], [
-    sh:name "seneste ændringsdato"@da ;
-    sh:description ""@da ;
+    sh:name "update/ modification date"@en, "seneste ændringsdato"@da ;
+    sh:description "This property contains the most recent date on which the Distribution was changed or modified."@en, ""@da ;
     sh:maxCount 1 ;
     sh:node dcat-ap:DateOrDateTimeDataType_Shape ;
     sh:path dc:modified ;
     sh:severity sh:Violation
   ], [
-    sh:name "status"@da ;
-    sh:description ""@da ;
+    sh:name "status"@en, "status"@da ;
+    sh:description "This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. "@en, ""@da ;
     sh:class skos:Concept ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/adms#status> ;
     sh:severity sh:Violation
   ], [
-    sh:name "sprog"@da ;
-    sh:description ""@da ;
+    sh:name "availability"@en, "tilgængeligstype"@da ;
+    sh:description "This property indicates how long it is planned to keep the Distribution of the Dataset available. "@en, ""@da ;
+    sh:class skos:Concept ;
+    sh:maxCount 1 ;
+    sh:path <http://data.europa.eu/r5r/availability> ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "language"@en, "sprog"@da ;
+    sh:description "This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages."@en, ""@da ;
     sh:class dc:LinguisticSystem ;
     sh:path dc:language ;
     sh:severity sh:Violation
   ], [
-    sh:name "adgangsrettigheder"@da ;
-    sh:description ""@da ;
-    sh:class dc:RightsStatement ;
-    sh:maxCount 1 ;
-    sh:path dc:rights ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "checksum"@da ;
-    sh:description ""@da ;
+    sh:name "checksum"@en, "checksum"@da ;
+    sh:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL"@en, ""@da ;
     sh:class <http://spdx.org/rdf/terms#Checksum> ;
     sh:maxCount 1 ;
     sh:path <http://spdx.org/rdf/terms#checksum> ;
     sh:severity sh:Violation
   ], [
-    sh:name "bytestørrelse"@da ;
-    sh:description ""@da ;
+    sh:name "byte size"@en, "bytestørrelse"@da ;
+    sh:description "This property contains the size of a Distribution in bytes."@en, ""@da ;
     sh:datatype xsd:decimal ;
     sh:maxCount 1 ;
     sh:path dcat:byteSize ;
     sh:severity sh:Violation
   ], [
-    sh:name "medietype"@da ;
-    sh:description ""@da ;
+    sh:name "media type"@en, "medietype"@da ;
+    sh:description "This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA."@en, ""@da ;
     sh:class dc:MediaType ;
     sh:maxCount 1 ;
     sh:path dcat:mediaType ;
     sh:severity sh:Violation
   ], [
-    sh:name "dokumentation"@da ;
-    sh:description ""@da ;
-    sh:class foaf:Document ;
-    sh:path foaf:page ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "har politik"@da ;
-    sh:description ""@da ;
-    sh:class <http://www.w3.org/ns/odrl/2/Policy> ;
-    sh:maxCount 1 ;
-    sh:path <http://www.w3.org/ns/odrl/2/hasPolicy> ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "kompressionsformat"@da ;
-    sh:description ""@da ;
-    sh:class dc:MediaType ;
-    sh:maxCount 1 ;
-    sh:path dcat:compressFormat ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "pakkeformat"@da ;
-    sh:description ""@da ;
-    sh:class dc:MediaType ;
-    sh:maxCount 1 ;
-    sh:path dcat:packageFormat ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "tidslig opløsning"@da ;
-    sh:description ""@da ;
-    sh:datatype xsd:duration ;
-    sh:path dcat:temporalResolution ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "rumlig opløsning (i meter)"@da ;
-    sh:description ""@da ;
-    sh:datatype xsd:decimal ;
-    sh:path dcat:spatialResolutionInMeters ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "tilgængeligstype"@da ;
-    sh:description ""@da ;
-    sh:class skos:Concept ;
-    sh:maxCount 1 ;
-    sh:path dcat-ap:r5ravailability ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "format"@da ;
-    sh:description ""@da ;
+    sh:name "format"@en, "format"@da ;
+    sh:description "This property refers to the file format of the Distribution"@en, ""@da ;
     sh:class dc:MediaTypeOrExtent ;
     sh:maxCount 1 ;
     sh:path dc:format ;
     sh:severity sh:Violation
   ], [
-    sh:name "licens"@da ;
-    sh:description ""@da ;
+    sh:name "compression format"@en, "kompressionsformat"@da ;
+    sh:description "This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA."@en, ""@da ;
+    sh:class dc:MediaType ;
+    sh:maxCount 1 ;
+    sh:path dcat:compressFormat ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "packaging format"@en, "pakkeformat"@da ;
+    sh:description "This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA."@en, ""@da ;
+    sh:class dc:MediaType ;
+    sh:maxCount 1 ;
+    sh:path dcat:packageFormat ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "documentation"@en, "dokumentation"@da ;
+    sh:description "This property refers to a page or document about this Distribution."@en, ""@da ;
+    sh:class foaf:Document ;
+    sh:path foaf:page ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "has policy"@en, "har politik"@da ;
+    sh:description "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary"@en, ""@da ;
+    sh:class <http://www.w3.org/ns/odrl/2/Policy> ;
+    sh:maxCount 1 ;
+    sh:path <http://www.w3.org/ns/odrl/2/hasPolicy> ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "rights"@en, "adgangsrettigheder"@da ;
+    sh:description "This property refers to a statement that specifies rights associated with the Distribution."@en, ""@da ;
+    sh:class dc:RightsStatement ;
+    sh:maxCount 1 ;
+    sh:path dc:rights ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "license"@en, "licens"@da ;
+    sh:description "This property refers to the licence under which the Distribution is made available."@en, ""@da ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
     sh:path dc:license ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "temporal resolution"@en, "tidslig opløsning"@da ;
+    sh:description "This property refers to the minimum time period resolvable in the dataset distribution."@en, ""@da ;
+    sh:datatype xsd:duration ;
+    sh:path dcat:temporalResolution ;
+    sh:severity sh:Violation
+  ], [
+    sh:name "spatial resolution"@en, "rumlig opløsning (i meter)"@da ;
+    sh:description "This property refers to the  minimum spatial separation resolvable in a dataset distribution, measured in meters."@en, ""@da ;
+    sh:datatype xsd:decimal ;
+    sh:path dcat:spatialResolutionInMeters ;
     sh:severity sh:Violation
   ] .
 
@@ -712,67 +741,76 @@ dcat-ap:DataService_Shape
   a sh:NodeShape ;
   sh:targetClass dcat:DataService ;
   sh:name "Data Service"@en, "Dataservice"@en ;
+  sh:description "A collection of operations that provides access to one or more datasets or data processing functions."@en, ""@da ;
   sh:property [
-    sh:name "titel"@da ;
-    sh:description "dataservicens titel"@da ;
-    sh:minCount 1 ;
-    sh:nodeKind sh:Literal ;
-    sh:path dc:title ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "beskrivelse"@da ;
-    sh:description "tekstbaseret beskrivelse af dataservicen"@da ;
-    sh:nodeKind sh:Literal ;
-    sh:path dc:description ;
-    sh:severity sh:Violation
-  ], [
-    sh:name "endpoint-URL"@da ;
-    sh:description ""@da ;
+    sh:name "endpoint URL "@en, "endpoint-URL"@da ;
+    sh:description "The root location or primary endpoint of the service (an IRI)."@en, ""@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dcat:endpointURL ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ], [
-    sh:name "endpointbeskrivelse"@da ;
-    sh:description ""@da ;
+    sh:name "title"@en, "titel"@da ;
+    sh:description "This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name."@en, "dataservicens titel"@da ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:path dc:title ;
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+  ], [
+    sh:name "endpoint description "@en, "endpointbeskrivelse"@da ;
+    sh:description "This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement."@en, ""@da ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dcat:endpointDescription ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "leverer datasæt"@da ;
-    sh:description ""@da ;
+    sh:name "description"@en, "beskrivelse"@da ;
+    sh:description "This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description."@en, "tekstbaseret beskrivelse af dataservicen"@da ;
+    sh:nodeKind sh:Literal ;
+    sh:path dc:description ;
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#ROptional>
+  ], [
+    sh:name "serves dataset"@en, "leverer datasæt"@da ;
+    sh:description "This property refers to a collection of data that this data service can distribute"@en, ""@da ;
     sh:class dcat:Dataset ;
     sh:path dcat:servesDataset ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "licens"@da ;
-    sh:description ""@da ;
+    sh:name "license"@en, "licens"@da ;
+    sh:description "This property contains the licence under which the Data service is made available."@en, ""@da ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
     sh:path dc:licence ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#ROptional>
   ], [
-    sh:name "adgangsrettigheder"@da ;
-    sh:description ""@da ;
+    sh:name "access rights"@en, "adgangsrettigheder"@da ;
+    sh:description "This property MAY include information regarding access or restrictions based on privacy, security, or other policies."@en, ""@da ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
     sh:path dc:accessRights ;
-    sh:severity sh:Violation
+    sh:severity sh:Violation ;
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#ROptional>
   ] .
 
 dcat-ap:Agent_Shape
   a sh:NodeShape ;
   sh:name "Agent"@en, "Aktør"@da ;
+  sh:description "An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended. "@en, ""@da ;
   sh:property [
-    sh:name "navn"@da ;
-    sh:description ""@da ;
+    sh:name "name"@en, "navn"@da ;
+    sh:description "This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)"@en, ""@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path foaf:name ;
     sh:severity sh:Violation
   ], [
-    sh:name "type"@da ;
-    sh:description ""@da ;
+    sh:name "type"@en, "aktørtype"@da ;
+    sh:description "This property refers to a type of the agent that makes the Catalogue or Dataset available"@en, ""@da ;
     sh:class skos:Concept ;
     sh:maxCount 1 ;
     sh:path dc:type ;
@@ -782,10 +820,11 @@ dcat-ap:Agent_Shape
 
 dcat-ap:CategoryScheme_Shape
   a sh:NodeShape ;
-  sh:name "Category Scheme"@en, "Klassifikationssystem"@da ;
+  sh:name "Category Scheme"@en, "Emneklassifikation"@da ;
+  sh:description "A concept collection (e.g. controlled vocabulary) in which the Category is defined."@en, ""@da ;
   sh:property [
-    sh:name "titel"@da ;
-    sh:description ""@da ;
+    sh:name "title"@en, "titel"@da ;
+    sh:description "This property contains a name of the category scheme. May be repeated for different versions of the name"@en, ""@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dc:title ;
@@ -798,8 +837,8 @@ dcat-ap:Category_Shape
   sh:targetClass skos:Concept ;
   sh:name "Category"@en, "Klassifikationsemne"@da ;
   sh:property [
-    sh:name "foretrukken betegnelse"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "foretrukken betegnelse"@da ;
+    sh:description "This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label."@en, ""@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path skos:prefLabel ;
@@ -809,18 +848,19 @@ dcat-ap:Category_Shape
 dcat-ap:Checksum_Shape
   a sh:NodeShape ;
   sh:targetClass <http://spdx.org/rdf/terms#Checksum> ;
-  sh:name "Category"@en, "Checksum"@da ;
+  sh:name "Checksum"@en, "Checksum"@da ;
+  sh:description ""@en, ""@da ;
   sh:property [
-    sh:name "algoritme"@da ;
-    sh:description ""@da ;
+    sh:name "algorithm"@en, "algoritme"@da ;
+    sh:description "This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time."@en, ""@da ;
     sh:hasValue <http://spdx.org/rdf/terms#checksumAlgorithm_sha1> ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:path <http://spdx.org/rdf/terms#algorithm> ;
     sh:severity sh:Violation
   ], [
-    sh:name "checksumværdi"@da ;
-    sh:description ""@da ;
+    sh:name "checksum value"@en, "checksumværdi"@da ;
+    sh:description "This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm"@en, ""@da ;
     sh:dateTime xsd:hexBinary ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
@@ -831,22 +871,24 @@ dcat-ap:Checksum_Shape
 dcat-ap:DcatResource_Shape
   a sh:NodeShape ;
   sh:name "Katalogressource"@da ;
-  sh:description ""@da ;
+  sh:description ""@en, ""@da ;
   rdfs:comment "the union of Catalog, Dataset and DataService" ;
   rdfs:label "dcat:Resource" ;
   sh:message "The node is either a Catalog, Dataset or a DataService" ;
   sh:or (
-   _:genid108
-   _:genid110
-   _:genid112
+   _:genid109
+   _:genid111
+   _:genid113
  ) .
 
 dcat-ap:Identifier_Shape
   a sh:NodeShape ;
   sh:targetClass <http://www.w3.org/ns/adms#Identifier> ;
   sh:name "Identifier"@en, "Identifikator"@da ;
-  sh:description ""@da ;
+  sh:description ""@en, ""@da ;
   sh:property [
+    sh:name "notation"@en, "notation"@da ;
+    sh:description "This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype."@en, ""@da ;
     sh:maxCount 1 ;
     sh:path skos:notation ;
     sh:severity sh:Violation
@@ -856,8 +898,10 @@ dcat-ap:LicenceDocument_Shape
   a sh:NodeShape ;
   sh:targetClass dc:LicenseDocument ;
   sh:name "Licence Document"@en, "Licensdokument"@da ;
-  sh:description ""@da ;
+  sh:description ""@en, ""@da ;
   sh:property [
+    sh:name "license type"@en, "licenstype"@da ;
+    sh:description "This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’."@en, ""@da ;
     sh:class skos:Concept ;
     sh:path dc:type ;
     sh:severity sh:Violation
@@ -866,24 +910,24 @@ dcat-ap:LicenceDocument_Shape
 dcat-ap:Location_Shape
   a sh:NodeShape ;
   sh:name "Location"@en, "Lokation"@da ;
-  sh:description ""@da ;
+  sh:description ""@en, ""@da ;
   sh:targetClass dc:Location ;
   sh:property [
-    sh:name "bounding box"@da ;
+    sh:name ""@en, "bounding box"@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dcat:bbox ;
     sh:severity sh:Violation
   ], [
-    sh:name "geografisk tyngdepunkt"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "geografisk tyngdepunkt"@da ;
+    sh:description ""@en, ""@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dcat:centroid ;
     sh:severity sh:Violation
   ], [
-    sh:name "geometri"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "geometri"@da ;
+    sh:description ""@en, ""@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path <http://www.w3.org/ns/locn#geometry> ;
@@ -894,30 +938,30 @@ dcat-ap:PeriodOfTime_Shape
   a sh:NodeShape ;
   sh:targetClass dc:PeriodOfTime ;
   sh:name "PeriodOfTime"@en, "Periode"@da ;
-  sh:description ""@da ;
+  sh:description ""@en, ""@da ;
   sh:property [
-    sh:name "startdato"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "startdato"@da ;
+    sh:description ""@en, ""@da ;
     sh:maxCount 1 ;
     sh:path dcat:startDate ;
     sh:severity sh:Violation ;
     sh:shape dcat-ap:DateOrDateTimeDataType_Shape
   ], [
-    sh:name "slutdato"@da ;
+    sh:name ""@en, "slutdato"@da ;
     sh:maxCount 1 ;
     sh:path dcat:endDate ;
     sh:severity sh:Violation ;
     sh:shape dcat-ap:DateOrDateTimeDataType_Shape
   ], [
-    sh:name "har begyndelse"@da ;
+    sh:name ""@en, "har begyndelse"@da ;
     sh:description "beginning of a temporal entity"@en ;
     sh:class <http://www.w3.org/2006/time#Instant> ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/2006/time#hasBeginning> ;
     sh:severity sh:Violation
   ], [
-    sh:name "har slut"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "har slut"@da ;
+    sh:description ""@en, ""@da ;
     sh:class <http://www.w3.org/2006/time#Instant> ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/2006/time#hasEnd> ;
@@ -927,18 +971,18 @@ dcat-ap:PeriodOfTime_Shape
 dcat-ap:Relationship_Shape
   a sh:NodeShape ;
   sh:targetClass dcat:Relationship ;
-  sh:name "Relationship"@en, "relation"@da ;
-  sh:description ""@da ;
+  sh:name "Relationship"@en, "Relation"@da ;
+  sh:description ""@en, ""@da ;
   sh:property [
-    sh:name "relation"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "relation"@da ;
+    sh:description ""@en, ""@da ;
     sh:class dcat:Role ;
     sh:minCount 1 ;
     sh:path dc:relation ;
     sh:severity sh:Violation
   ], [
-    sh:name "havde rolle"@da ;
-    sh:description ""@da ;
+    sh:name ""@en, "havde rolle"@da ;
+    sh:description ""@en, ""@da ;
     sh:minCount 1 ;
     sh:nodeKind dcat-ap:DcatResource_Shape ;
     sh:path dcat:hadRole ;
@@ -947,17 +991,17 @@ dcat-ap:Relationship_Shape
 
 dcat-ap:DateOrDateTimeDataType_Shape
   a sh:NodeShape ;
-  sh:name "Tidsdatatype"@da ;
+  sh:name ""@en, "Tidsdatatype"@da ;
   rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
   rdfs:label "Date time date disjunction" ;
   sh:message "The values must be data typed as either xsd:date or xsd:dateTime" ;
   sh:or (
-   _:genid125
-   _:genid127
+   _:genid126
+   _:genid128
  ) .
 
-_:genid108 sh:class dcat:Catalog .
-_:genid110 sh:class dcat:Dataset .
-_:genid112 sh:class dcat:DataService .
-_:genid125 sh:datatype xsd:date .
-_:genid127 sh:datatype xsd:dateTime .
+_:genid109 sh:class dcat:Catalog .
+_:genid111 sh:class dcat:Dataset .
+_:genid113 sh:class dcat:DataService .
+_:genid126 sh:datatype xsd:date .
+_:genid128 sh:datatype xsd:dateTime .
