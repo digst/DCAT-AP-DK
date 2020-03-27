@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -1332,8 +1331,6 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-  <link href="convert.css" rel="stylesheet" type="text/css">
 <style>/* style-md-lists */
 
 /* This is a weird hack for me not yet following the commonmark spec
@@ -1485,7 +1482,7 @@ pre .property::before, pre .property::after {
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-03-11">11 March 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-03-27">27 March 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1544,9 +1541,9 @@ pre .property::before, pre .property::after {
     <li>
      <a href="#modellens-grundlggende-struktur"><span class="secno">3</span> <span class="content">Modellens grundlæggende struktur</span></a>
      <ol class="toc">
-      <li><a href="#kataloglaget"><span class="secno">3.1</span> <span class="content">Kataloglaget</span></a>
-      <li><a href="#datastlaget"><span class="secno">3.2</span> <span class="content">Datasætlaget</span></a>
-      <li><a href="#reprsentationslaget"><span class="secno">3.3</span> <span class="content">Repræsentationslaget</span></a>
+      <li><a href="#katalogniveauet"><span class="secno">3.1</span> <span class="content">Katalogniveauet</span></a>
+      <li><a href="#datastnvieauet"><span class="secno">3.2</span> <span class="content">Datasætnvieauet</span></a>
+      <li><a href="#distributionsniveauet"><span class="secno">3.3</span> <span class="content">Distributionsniveauet</span></a>
      </ol>
     <li>
      <a href="#elementer-i-dcat-ap-dk"><span class="secno">4</span> <span class="content">Elementer i DCAT-AP-DK</span></a>
@@ -1574,13 +1571,13 @@ pre .property::before, pre .property::after {
         <li><a href="#del-af-katalog"><span class="secno">4.1.18</span> <span class="content">del af katalog</span></a>
        </ol>
       <li>
-       <a href="#katalogpost①"><span class="secno">4.2</span> <span class="content">katalogpost</span></a>
+       <a href="#katalogpost①"><span class="secno">4.2</span> <span class="content">Katalogpost</span></a>
        <ol class="toc">
         <li><a href="#genstand-for-registrering"><span class="secno">4.2.1</span> <span class="content">genstand for registrering</span></a>
-        <li><a href="#titel①"><span class="secno">4.2.2</span> <span class="content">titel</span></a>
-        <li><a href="#beskrivelse①"><span class="secno">4.2.3</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#udgivelsesdato①"><span class="secno">4.2.4</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#seneste-ndringsdato"><span class="secno">4.2.5</span> <span class="content">seneste ændringsdato</span></a>
+        <li><a href="#seneste-ndringsdato"><span class="secno">4.2.2</span> <span class="content">seneste ændringsdato</span></a>
+        <li><a href="#udgivelsesdato①"><span class="secno">4.2.3</span> <span class="content">udgivelsesdato</span></a>
+        <li><a href="#titel①"><span class="secno">4.2.4</span> <span class="content">titel</span></a>
+        <li><a href="#beskrivelse①"><span class="secno">4.2.5</span> <span class="content">beskrivelse</span></a>
         <li><a href="#status"><span class="secno">4.2.6</span> <span class="content">status</span></a>
         <li><a href="#sprog①"><span class="secno">4.2.7</span> <span class="content">sprog</span></a>
         <li><a href="#kilde"><span class="secno">4.2.8</span> <span class="content">kilde</span></a>
@@ -1615,23 +1612,24 @@ pre .property::before, pre .property::after {
         <li><a href="#tidslig-oplsning"><span class="secno">4.3.24</span> <span class="content">tidslig opløsning</span></a>
         <li><a href="#opdateringsfrekvens"><span class="secno">4.3.25</span> <span class="content">opdateringsfrekvens</span></a>
         <li><a href="#udgivelsesdato②"><span class="secno">4.3.26</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#har-kvalitetsmetadata"><span class="secno">4.3.27</span> <span class="content">har kvalitetsmetadata</span></a>
-        <li><a href="#har-anvendelse"><span class="secno">4.3.28</span> <span class="content">har anvendelse</span></a>
-        <li><a href="#betalingsplagt"><span class="secno">4.3.29</span> <span class="content">betalingspålagt</span></a>
-        <li><a href="#personoplysningskategori"><span class="secno">4.3.30</span> <span class="content">personoplysningskategori</span></a>
-        <li><a href="#fortrolighedsgrad"><span class="secno">4.3.31</span> <span class="content">fortrolighedsgrad</span></a>
-        <li><a href="#hjemmel"><span class="secno">4.3.32</span> <span class="content">hjemmel</span></a>
-        <li><a href="#versionsnummer"><span class="secno">4.3.33</span> <span class="content">versionsnummer</span></a>
-        <li><a href="#versionsnoter"><span class="secno">4.3.34</span> <span class="content">versionsnoter</span></a>
-        <li><a href="#har-version"><span class="secno">4.3.35</span> <span class="content">har version</span></a>
-        <li><a href="#er-version-af"><span class="secno">4.3.36</span> <span class="content">er version af</span></a>
-        <li><a href="#proveniensudsagn"><span class="secno">4.3.37</span> <span class="content">proveniensudsagn</span></a>
-        <li><a href="#relation"><span class="secno">4.3.38</span> <span class="content">relation</span></a>
-        <li><a href="#kildedatast"><span class="secno">4.3.39</span> <span class="content">kildedatasæt</span></a>
-        <li><a href="#refereres-af"><span class="secno">4.3.40</span> <span class="content">refereres af</span></a>
-        <li><a href="#prciseret-tilskrivning"><span class="secno">4.3.41</span> <span class="content">præciseret tilskrivning</span></a>
-        <li><a href="#prciseret-relation"><span class="secno">4.3.42</span> <span class="content">præciseret relation</span></a>
-        <li><a href="#blev-genereret-ved"><span class="secno">4.3.43</span> <span class="content">blev genereret ved</span></a>
+        <li><a href="#opdateringsdato"><span class="secno">4.3.27</span> <span class="content">opdateringsdato</span></a>
+        <li><a href="#har-kvalitetsmetadata"><span class="secno">4.3.28</span> <span class="content">har kvalitetsmetadata</span></a>
+        <li><a href="#har-anvendelse"><span class="secno">4.3.29</span> <span class="content">har anvendelse</span></a>
+        <li><a href="#betalingsplagt"><span class="secno">4.3.30</span> <span class="content">betalingspålagt</span></a>
+        <li><a href="#personoplysningskategori"><span class="secno">4.3.31</span> <span class="content">personoplysningskategori</span></a>
+        <li><a href="#fortrolighedsgrad"><span class="secno">4.3.32</span> <span class="content">fortrolighedsgrad</span></a>
+        <li><a href="#hjemmel"><span class="secno">4.3.33</span> <span class="content">hjemmel</span></a>
+        <li><a href="#versionsnummer"><span class="secno">4.3.34</span> <span class="content">versionsnummer</span></a>
+        <li><a href="#versionsnoter"><span class="secno">4.3.35</span> <span class="content">versionsnoter</span></a>
+        <li><a href="#har-version"><span class="secno">4.3.36</span> <span class="content">har version</span></a>
+        <li><a href="#er-version-af"><span class="secno">4.3.37</span> <span class="content">er version af</span></a>
+        <li><a href="#proveniensudsagn"><span class="secno">4.3.38</span> <span class="content">proveniensudsagn</span></a>
+        <li><a href="#relateret-ressource"><span class="secno">4.3.39</span> <span class="content">relateret ressource</span></a>
+        <li><a href="#kildedatast"><span class="secno">4.3.40</span> <span class="content">kildedatasæt</span></a>
+        <li><a href="#refereres-af"><span class="secno">4.3.41</span> <span class="content">refereres af</span></a>
+        <li><a href="#prciseret-tilskrivning"><span class="secno">4.3.42</span> <span class="content">præciseret tilskrivning</span></a>
+        <li><a href="#prciseret-relation"><span class="secno">4.3.43</span> <span class="content">præciseret relation</span></a>
+        <li><a href="#blev-genereret-ved"><span class="secno">4.3.44</span> <span class="content">blev genereret ved</span></a>
        </ol>
       <li>
        <a href="#distribution①"><span class="secno">4.4</span> <span class="content">Distribution</span></a>
@@ -1644,24 +1642,24 @@ pre .property::before, pre .property::after {
         <li><a href="#udgivelsesdato③"><span class="secno">4.4.6</span> <span class="content">udgivelsesdato</span></a>
         <li><a href="#seneste-ndringsdato①"><span class="secno">4.4.7</span> <span class="content">seneste ændringsdato</span></a>
         <li><a href="#status①"><span class="secno">4.4.8</span> <span class="content">status</span></a>
-        <li><a href="#sprog③"><span class="secno">4.4.9</span> <span class="content">sprog</span></a>
-        <li><a href="#adgangsrettigheder②"><span class="secno">4.4.10</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#tilgngeligstype"><span class="secno">4.4.9</span> <span class="content">tilgængeligstype</span></a>
+        <li><a href="#sprog③"><span class="secno">4.4.10</span> <span class="content">sprog</span></a>
         <li><a href="#checksum"><span class="secno">4.4.11</span> <span class="content">checksum</span></a>
-        <li><a href="#bytesize"><span class="secno">4.4.12</span> <span class="content">byteSize</span></a>
+        <li><a href="#bytestrrelse"><span class="secno">4.4.12</span> <span class="content">bytestørrelse</span></a>
         <li><a href="#medietype"><span class="secno">4.4.13</span> <span class="content">medietype</span></a>
-        <li><a href="#dokumentation①"><span class="secno">4.4.14</span> <span class="content">dokumentation</span></a>
-        <li><a href="#har-politik"><span class="secno">4.4.15</span> <span class="content">har politik</span></a>
-        <li><a href="#kompressionsformat"><span class="secno">4.4.16</span> <span class="content">kompressionsformat</span></a>
-        <li><a href="#pakkeformat"><span class="secno">4.4.17</span> <span class="content">pakkeformat</span></a>
-        <li><a href="#tidslig-oplsning①"><span class="secno">4.4.18</span> <span class="content">tidslig opløsning</span></a>
-        <li><a href="#rumlig-oplsning-i-meter①"><span class="secno">4.4.19</span> <span class="content">rumlig opløsning (i meter)</span></a>
-        <li><a href="#tilgngeligstype"><span class="secno">4.4.20</span> <span class="content">tilgængeligstype</span></a>
-        <li><a href="#format"><span class="secno">4.4.21</span> <span class="content">format</span></a>
-        <li><a href="#licens①"><span class="secno">4.4.22</span> <span class="content">licens</span></a>
-        <li><a href="#titel③"><span class="secno">4.4.23</span> <span class="content">titel</span></a>
-        <li><a href="#beskrivelse④"><span class="secno">4.4.24</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#endpoint-url"><span class="secno">4.4.25</span> <span class="content">endpoint-URL</span></a>
-        <li><a href="#endpointbeskrivelse"><span class="secno">4.4.26</span> <span class="content">endpointbeskrivelse</span></a>
+        <li><a href="#format"><span class="secno">4.4.14</span> <span class="content">format</span></a>
+        <li><a href="#kompressionsformat"><span class="secno">4.4.15</span> <span class="content">kompressionsformat</span></a>
+        <li><a href="#pakkeformat"><span class="secno">4.4.16</span> <span class="content">pakkeformat</span></a>
+        <li><a href="#dokumentation①"><span class="secno">4.4.17</span> <span class="content">dokumentation</span></a>
+        <li><a href="#har-politik"><span class="secno">4.4.18</span> <span class="content">har politik</span></a>
+        <li><a href="#adgangsrettigheder②"><span class="secno">4.4.19</span> <span class="content">adgangsrettigheder</span></a>
+        <li><a href="#licens①"><span class="secno">4.4.20</span> <span class="content">licens</span></a>
+        <li><a href="#tidslig-oplsning①"><span class="secno">4.4.21</span> <span class="content">tidslig opløsning</span></a>
+        <li><a href="#rumlig-oplsning-i-meter①"><span class="secno">4.4.22</span> <span class="content">rumlig opløsning (i meter)</span></a>
+        <li><a href="#endpoint-url"><span class="secno">4.4.23</span> <span class="content">endpoint-URL</span></a>
+        <li><a href="#titel③"><span class="secno">4.4.24</span> <span class="content">titel</span></a>
+        <li><a href="#endpointbeskrivelse"><span class="secno">4.4.25</span> <span class="content">endpointbeskrivelse</span></a>
+        <li><a href="#beskrivelse④"><span class="secno">4.4.26</span> <span class="content">beskrivelse</span></a>
         <li><a href="#leverer-datast"><span class="secno">4.4.27</span> <span class="content">leverer datasæt</span></a>
         <li><a href="#licens②"><span class="secno">4.4.28</span> <span class="content">licens</span></a>
         <li><a href="#adgangsrettigheder③"><span class="secno">4.4.29</span> <span class="content">adgangsrettigheder</span></a>
@@ -1670,10 +1668,10 @@ pre .property::before, pre .property::after {
        <a href="#aktr"><span class="secno">4.5</span> <span class="content">Aktør</span></a>
        <ol class="toc">
         <li><a href="#navn"><span class="secno">4.5.1</span> <span class="content">navn</span></a>
-        <li><a href="#type①"><span class="secno">4.5.2</span> <span class="content">type</span></a>
+        <li><a href="#aktrtype"><span class="secno">4.5.2</span> <span class="content">aktørtype</span></a>
        </ol>
       <li>
-       <a href="#klassifikationssystem"><span class="secno">4.6</span> <span class="content">Klassifikationssystem</span></a>
+       <a href="#emneklassifikation①"><span class="secno">4.6</span> <span class="content">Emneklassifikation</span></a>
        <ol class="toc">
         <li><a href="#titel④"><span class="secno">4.6.1</span> <span class="content">titel</span></a>
        </ol>
@@ -1689,8 +1687,16 @@ pre .property::before, pre .property::after {
         <li><a href="#checksumvrdi"><span class="secno">4.8.2</span> <span class="content">checksumværdi</span></a>
        </ol>
       <li><a href="#katalogressource"><span class="secno">4.9</span> <span class="content">Katalogressource</span></a>
-      <li><a href="#identifikator①"><span class="secno">4.10</span> <span class="content">Identifikator</span></a>
-      <li><a href="#licensdokument"><span class="secno">4.11</span> <span class="content">Licensdokument</span></a>
+      <li>
+       <a href="#identifikator①"><span class="secno">4.10</span> <span class="content">Identifikator</span></a>
+       <ol class="toc">
+        <li><a href="#notation"><span class="secno">4.10.1</span> <span class="content">notation</span></a>
+       </ol>
+      <li>
+       <a href="#licensdokument"><span class="secno">4.11</span> <span class="content">Licensdokument</span></a>
+       <ol class="toc">
+        <li><a href="#licenstype"><span class="secno">4.11.1</span> <span class="content">licenstype</span></a>
+       </ol>
       <li>
        <a href="#lokation"><span class="secno">4.12</span> <span class="content">Lokation</span></a>
        <ol class="toc">
@@ -1707,9 +1713,9 @@ pre .property::before, pre .property::after {
         <li><a href="#har-slut"><span class="secno">4.13.4</span> <span class="content">har slut</span></a>
        </ol>
       <li>
-       <a href="#relation①"><span class="secno">4.14</span> <span class="content">relation</span></a>
+       <a href="#relation"><span class="secno">4.14</span> <span class="content">Relation</span></a>
        <ol class="toc">
-        <li><a href="#relation②"><span class="secno">4.14.1</span> <span class="content">relation</span></a>
+        <li><a href="#relation①"><span class="secno">4.14.1</span> <span class="content">relation</span></a>
         <li><a href="#havde-rolle"><span class="secno">4.14.2</span> <span class="content">havde rolle</span></a>
        </ol>
       <li><a href="#tidsdatatype"><span class="secno">4.15</span> <span class="content">Tidsdatatype</span></a>
@@ -1722,16 +1728,6 @@ pre .property::before, pre .property::after {
       <li><a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
       <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
       <li><a href="#begrebsliste"><span class="secno">7.3</span> <span class="content">Begrebsliste</span></a>
-     </ol>
-    <li><a href="#short-hands"><span class="secno">8</span> <span class="content">Short hands</span></a>
-    <li>
-     <a href="#h1"><span class="secno">9</span> <span class="content">h1</span></a>
-     <ol class="toc">
-      <li>
-       <a href="#h2"><span class="secno">9.1</span> <span class="content">h2</span></a>
-       <ol class="toc">
-        <li><a href="#h3"><span class="secno">9.1.1</span> <span class="content">h3</span></a>
-       </ol>
      </ol>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
@@ -1795,24 +1791,25 @@ Marts 2020</p>
      <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    </ul>
    <h2 class="heading settled" data-level="3" id="modellens-grundlggende-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
-    DCAT beskriver en ramme metadata om datasæt i tre forskellige lag, et kataloglag, på datasætlag og på repræsentationslag. Hvert element i et givet lag kan beskrives med metadata, såsom titel, beskrivelse osv. 
-   <h3 class="heading settled" data-level="3.1" id="kataloglaget"><span class="secno">3.1. </span><span class="content">Kataloglaget</span><a class="self-link" href="#kataloglaget"></a></h3>
-    Kataloglaget er det øverste lag i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
-   <h3 class="heading settled" data-level="3.2" id="datastlaget"><span class="secno">3.2. </span><span class="content">Datasætlaget</span><a class="self-link" href="#datastlaget"></a></h3>
-    Dette lag udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information. Det kan referere til mange forskellige repræsentatationer at netop dette datasæt. 
-   <h3 class="heading settled" data-level="3.3" id="reprsentationslaget"><span class="secno">3.3. </span><span class="content">Repræsentationslaget</span><a class="self-link" href="#reprsentationslaget"></a></h3>
-    Repræsentationslaget er det nederste lag i DCAT-standarden. Her defineres adgangsURL, formatet, størrelse, downloadURL adgangsservice etc.. 
+    DCAT bevæger sig i tre sammenhængende niveauer, et katalogniveau, på datasætniveau og på et distributionsniveau. Hvert element på et givet niveau kan beskrives med metadata, såsom titel, beskrivelse osv. 
+   <h3 class="heading settled" data-level="3.1" id="katalogniveauet"><span class="secno">3.1. </span><span class="content">Katalogniveauet</span><a class="self-link" href="#katalogniveauet"></a></h3>
+    Kataloglaget er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
+   <h3 class="heading settled" data-level="3.2" id="datastnvieauet"><span class="secno">3.2. </span><span class="content">Datasætnvieauet</span><a class="self-link" href="#datastnvieauet"></a></h3>
+    Dette niveau udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information. Det kan referere til mange forskellige repræsentatationer at netop dette datasæt. 
+   <h3 class="heading settled" data-level="3.3" id="distributionsniveauet"><span class="secno">3.3. </span><span class="content">Distributionsniveauet</span><a class="self-link" href="#distributionsniveauet"></a></h3>
+    Distributionsniveauet er det nederste lag i DCAT-standarden. Her beskrives hvordan man opnår adgang den fysiske distribution af datasættet med oplysninger såsom adgangsURL, format, størrelse, downloadURL adgangsservice etc.. 
+   <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <title>KONVERTERING</title>
+   <p class="issue" id="issue-6dd788b4"><a class="self-link" href="#issue-6dd788b4"></a>Herunder er indsat elementerne fra DCAP-AP samt enkelte yderligere egenskaber. Elementbetegnelserne er oversat til dansk (forslag), men anvendelsesnoterne er endnu ikke oversat. Det er også hensigten at de oprindelige definitioner fra kernemodellerne skal hentes ind. Derudover mangler flere egenskaber angivelse af kravniveau</p>
    <h3 class="heading settled" data-level="4.1" id="katalog"><span class="secno">4.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Definition
-    <dd>
+    <dd>A curated collection of metadata about datasets
     <dt>Anvendelsesnote
-    <dd>En organiseret samling af datarelaterede ressourcer i et katalog.
+    <dd>A catalogue or repository that hosts the Datasets being described.
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1823,9 +1820,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>datakatalogets titel
+    <dd>This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1836,9 +1833,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>tekstbaseret beskrivelse af datakatalogets formål og indhold
+    <dd>This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1849,7 +1846,7 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>aktør der har udgivet kataloget
+    <dd>This property refers to an entity (organisation) responsible for making the Catalogue available. 
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
@@ -1862,9 +1859,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>aktør der har skabt kataloget
+    <dd>This property refers to the entity primarily responsible for producing the catalogue
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1875,9 +1872,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>den dato datakataloget først blev udgivet
+    <dd>This property contains the date of formal issuance (e.g., publication) of the Catalogue.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1888,9 +1885,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>den dato hvor indholdet i datakataloget seneste er blevet ændret
+    <dd>This property contains the most recent date on which the Catalogue was changed or modified.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1901,9 +1898,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a geographical area covered by the Catalogue. 
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1914,9 +1911,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1927,9 +1924,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the licence under which the Catalogue can be used or reused.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1940,9 +1937,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a statement that specifies rights associated with the Catalogue.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -1953,9 +1950,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a Catalogue Record that is part of the Catalogue
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1966,9 +1963,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a knowledge organization system used to classify the Catalogue’s Datasets.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1979,9 +1976,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a site or end-point that is listed in the catalog.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1992,9 +1989,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a catalog whose contents are of interest in the context of this catalog
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2005,9 +2002,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property links the Catalogue with a Dataset that is part of the Catalogue.
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -2018,9 +2015,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a web page that acts as the main page for the Catalogue.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -2031,9 +2028,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a related Catalogue that is part of the described Catalogue
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2044,20 +2041,20 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.2" id="katalogpost①"><span class="secno">4.2. </span><span class="content">katalogpost</span><a class="self-link" href="#katalogpost①"></a></h3>
+   <h3 class="heading settled" data-level="4.2" id="katalogpost①"><span class="secno">4.2. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost①"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en dataservice.
+    <dd>A description of a Dataset’s entry in the Catalogue. 
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2068,63 +2065,63 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record.
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.2.2" id="titel①"><span class="secno">4.2.2. </span><span class="content">titel</span><a class="self-link" href="#titel①"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.2.3" id="beskrivelse①"><span class="secno">4.2.3. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.2.4" id="udgivelsesdato①"><span class="secno">4.2.4. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato①"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://purl.org/dc/terms/issued
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.2.5" id="seneste-ndringsdato"><span class="secno">4.2.5. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#seneste-ndringsdato"></a></h4>
+   <h4 class="heading settled" data-level="4.2.2" id="seneste-ndringsdato"><span class="secno">4.2.2. </span><span class="content">seneste ændringsdato</span><a class="self-link" href="#seneste-ndringsdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains the most recent date on which the Catalogue entry was changed or modified.
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
     <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.2.3" id="udgivelsesdato①"><span class="secno">4.2.3. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/issued
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.4" id="titel①"><span class="secno">4.2.4. </span><span class="content">titel</span><a class="self-link" href="#titel①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.
+    <dt>Multiplicitet
+    <dd>0..*
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.2.5" id="beskrivelse①"><span class="secno">4.2.5. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.
+    <dt>Multiplicitet
+    <dd>0..*
+    <dt>Kravniveau
+    <dd>
    </dl>
    <h4 class="heading settled" data-level="4.2.6" id="status"><span class="secno">4.2.6. </span><span class="content">status</span><a class="self-link" href="#status"></a></h4>
    <dl class="def">
@@ -2133,9 +2130,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the type of the latest revision of a Dataset’s entry in the Catalogue. 
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2146,9 +2143,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2159,9 +2156,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the original metadata that was used in creating metadata for the Dataset
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2172,20 +2169,20 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to an Application Profile that the Dataset’s metadata conforms to
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
    <h3 class="heading settled" data-level="4.3" id="datast①"><span class="secno">4.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast①"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
+    <dd>A conceptual entity that represents the information published. 
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2196,9 +2193,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>Global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik
+    <dd>This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -2209,9 +2206,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5].
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2222,9 +2219,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>Datasættets titel. Egenskaben kan gentages for hvert sprog.
+    <dd>This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -2235,9 +2232,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>Tekstbaseret beskrivelse af datasættets formål og indhold.  Egenskaben kan gentages for hvert sprog.
+    <dd>This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -2248,11 +2245,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the entity (organisation) responsible for making the Dataset available.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.6" id="dataansvarlig-organisation"><span class="secno">4.3.6. </span><span class="content">dataansvarlig organisation</span><a class="self-link" href="#dataansvarlig-organisation"></a></h4>
    <dl class="def">
@@ -2261,11 +2258,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>aktør der er ansvarlig for overordnet administration af alle forhold omkring et datasæt 
+    <dd>This property refers to the agent responsible for the general administration of all aspects concerning a dataset
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
-    <dd>ObligatoriskObligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.7" id="skaber①"><span class="secno">4.3.7. </span><span class="content">skaber</span><a class="self-link" href="#skaber①"></a></h4>
    <dl class="def">
@@ -2274,9 +2271,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the entity primarily responsible for producing the dataset
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2287,9 +2284,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the entity responsible for making contributions to the resource.
     <dt>Multiplicitet
-    <dd>..
+    <dd>0..
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2300,9 +2297,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the agent that manages contributions to, and/or publication of a dataset
     <dt>Multiplicitet
-    <dd>..
+    <dd>0..
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2313,11 +2310,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains contact information that can be used for sending comments about the Dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.11" id="distribution"><span class="secno">4.3.11. </span><span class="content">distribution</span><a class="self-link" href="#distribution"></a></h4>
    <dl class="def">
@@ -2326,11 +2323,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property links the Dataset to an available Distribution.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.12" id="prve"><span class="secno">4.3.12. </span><span class="content">prøve</span><a class="self-link" href="#prve"></a></h4>
    <dl class="def">
@@ -2339,9 +2336,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a sample distribution of the dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2352,11 +2349,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.14" id="overenstemmelse①"><span class="secno">4.3.14. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse①"></a></h4>
    <dl class="def">
@@ -2365,11 +2362,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to an implementing rule or other specification.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.15" id="dokumentation"><span class="secno">4.3.15. </span><span class="content">dokumentation</span><a class="self-link" href="#dokumentation"></a></h4>
    <dl class="def">
@@ -2378,11 +2375,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a page or document about this Dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.16" id="emne"><span class="secno">4.3.16. </span><span class="content">emne</span><a class="self-link" href="#emne"></a></h4>
    <dl class="def">
@@ -2391,11 +2388,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.17" id="type"><span class="secno">4.3.17. </span><span class="content">type</span><a class="self-link" href="#type"></a></h4>
    <dl class="def">
@@ -2404,9 +2401,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2417,9 +2414,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a keyword or tag describing the Dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2430,11 +2427,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.20" id="adgangsrettigheder①"><span class="secno">4.3.20. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder①"></a></h4>
    <dl class="def">
@@ -2443,9 +2440,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. 
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2456,9 +2453,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a geographic region that is covered by the Dataset. 
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2471,7 +2468,7 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2482,9 +2479,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a temporal period that the Dataset covers.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2495,9 +2492,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the minimum time period resolvable in the dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2508,11 +2505,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the frequency at which the Dataset is updated.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.26" id="udgivelsesdato②"><span class="secno">4.3.26. </span><span class="content">udgivelsesdato</span><a class="self-link" href="#udgivelsesdato②"></a></h4>
    <dl class="def">
@@ -2521,241 +2518,254 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains the date of formal issuance (e.g., publication) of the Dataset.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.27" id="har-kvalitetsmetadata"><span class="secno">4.3.27. </span><span class="content">har kvalitetsmetadata</span><a class="self-link" href="#har-kvalitetsmetadata"></a></h4>
+   <h4 class="heading settled" data-level="4.3.27" id="opdateringsdato"><span class="secno">4.3.27. </span><span class="content">opdateringsdato</span><a class="self-link" href="#opdateringsdato"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/modified
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property contains the most recent date on which the Dataset was changed or modified.
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h4 class="heading settled" data-level="4.3.28" id="har-kvalitetsmetadata"><span class="secno">4.3.28. </span><span class="content">har kvalitetsmetadata</span><a class="self-link" href="#har-kvalitetsmetadata"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dqv#hasQualityMetadata
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.28" id="har-anvendelse"><span class="secno">4.3.28. </span><span class="content">har anvendelse</span><a class="self-link" href="#har-anvendelse"></a></h4>
+   <h4 class="heading settled" data-level="4.3.29" id="har-anvendelse"><span class="secno">4.3.29. </span><span class="content">har anvendelse</span><a class="self-link" href="#har-anvendelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/duv#usage
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to dataset or distribution usage guidance/instructions.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.29" id="betalingsplagt"><span class="secno">4.3.29. </span><span class="content">betalingspålagt</span><a class="self-link" href="#betalingsplagt"></a></h4>
+   <h4 class="heading settled" data-level="4.3.30" id="betalingsplagt"><span class="secno">4.3.30. </span><span class="content">betalingspålagt</span><a class="self-link" href="#betalingsplagt"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>specification of whether payment is imposed on the dataset or not 
+    <dd>This property specifies whether payment is imposed on the dataset or not
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.30" id="personoplysningskategori"><span class="secno">4.3.30. </span><span class="content">personoplysningskategori</span><a class="self-link" href="#personoplysningskategori"></a></h4>
+   <h4 class="heading settled" data-level="4.3.31" id="personoplysningskategori"><span class="secno">4.3.31. </span><span class="content">personoplysningskategori</span><a class="self-link" href="#personoplysningskategori"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>specification of a relation to specific personal data category
+    <dd>This property specifies a relation to specific personal data category
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.31" id="fortrolighedsgrad"><span class="secno">4.3.31. </span><span class="content">fortrolighedsgrad</span><a class="self-link" href="#fortrolighedsgrad"></a></h4>
+   <h4 class="heading settled" data-level="4.3.32" id="fortrolighedsgrad"><span class="secno">4.3.32. </span><span class="content">fortrolighedsgrad</span><a class="self-link" href="#fortrolighedsgrad"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>https:/data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>the extent by which information contained in a dataset can be disclosed
+    <dd>This property specifies the extent by which information contained in a dataset can be disclosed
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.32" id="hjemmel"><span class="secno">4.3.32. </span><span class="content">hjemmel</span><a class="self-link" href="#hjemmel"></a></h4>
+   <h4 class="heading settled" data-level="4.3.33" id="hjemmel"><span class="secno">4.3.33. </span><span class="content">hjemmel</span><a class="self-link" href="#hjemmel"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/m8g/hasLegalResource
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>legal framework for the dataset
+    <dd>This property specifies the legal framework for the dataset
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.33" id="versionsnummer"><span class="secno">4.3.33. </span><span class="content">versionsnummer</span><a class="self-link" href="#versionsnummer"></a></h4>
+   <h4 class="heading settled" data-level="4.3.34" id="versionsnummer"><span class="secno">4.3.34. </span><span class="content">versionsnummer</span><a class="self-link" href="#versionsnummer"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2002/07/owl#versionInfo
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a version number or other version designation of the Dataset.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.34" id="versionsnoter"><span class="secno">4.3.34. </span><span class="content">versionsnoter</span><a class="self-link" href="#versionsnoter"></a></h4>
+   <h4 class="heading settled" data-level="4.3.35" id="versionsnoter"><span class="secno">4.3.35. </span><span class="content">versionsnoter</span><a class="self-link" href="#versionsnoter"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#versionNotes
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.35" id="har-version"><span class="secno">4.3.35. </span><span class="content">har version</span><a class="self-link" href="#har-version"></a></h4>
+   <h4 class="heading settled" data-level="4.3.36" id="har-version"><span class="secno">4.3.36. </span><span class="content">har version</span><a class="self-link" href="#har-version"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasVersion
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.36" id="er-version-af"><span class="secno">4.3.36. </span><span class="content">er version af</span><a class="self-link" href="#er-version-af"></a></h4>
+   <h4 class="heading settled" data-level="4.3.37" id="er-version-af"><span class="secno">4.3.37. </span><span class="content">er version af</span><a class="self-link" href="#er-version-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isVersionOf
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.37" id="proveniensudsagn"><span class="secno">4.3.37. </span><span class="content">proveniensudsagn</span><a class="self-link" href="#proveniensudsagn"></a></h4>
+   <h4 class="heading settled" data-level="4.3.38" id="proveniensudsagn"><span class="secno">4.3.38. </span><span class="content">proveniensudsagn</span><a class="self-link" href="#proveniensudsagn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/provenance
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a statement about the lineage of a Dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.38" id="relation"><span class="secno">4.3.38. </span><span class="content">relation</span><a class="self-link" href="#relation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.39" id="relateret-ressource"><span class="secno">4.3.39. </span><span class="content">relateret ressource</span><a class="self-link" href="#relateret-ressource"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a related resource.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.39" id="kildedatast"><span class="secno">4.3.39. </span><span class="content">kildedatasæt</span><a class="self-link" href="#kildedatast"></a></h4>
+   <h4 class="heading settled" data-level="4.3.40" id="kildedatast"><span class="secno">4.3.40. </span><span class="content">kildedatasæt</span><a class="self-link" href="#kildedatast"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a related Dataset from which the described Dataset is derived.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.40" id="refereres-af"><span class="secno">4.3.40. </span><span class="content">refereres af</span><a class="self-link" href="#refereres-af"></a></h4>
+   <h4 class="heading settled" data-level="4.3.41" id="refereres-af"><span class="secno">4.3.41. </span><span class="content">refereres af</span><a class="self-link" href="#refereres-af"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/elements/1.1/isReferencedBy
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property provides a link to a description of a relationship with another resource
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.41" id="prciseret-tilskrivning"><span class="secno">4.3.41. </span><span class="content">præciseret tilskrivning</span><a class="self-link" href="#prciseret-tilskrivning"></a></h4>
+   <h4 class="heading settled" data-level="4.3.42" id="prciseret-tilskrivning"><span class="secno">4.3.42. </span><span class="content">præciseret tilskrivning</span><a class="self-link" href="#prciseret-tilskrivning"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#qualifiedAttribution
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a liink to an Agent having some form of responsibility for the resource
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.42" id="prciseret-relation"><span class="secno">4.3.42. </span><span class="content">præciseret relation</span><a class="self-link" href="#prciseret-relation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.43" id="prciseret-relation"><span class="secno">4.3.43. </span><span class="content">præciseret relation</span><a class="self-link" href="#prciseret-relation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#qualifiedRelation
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.43" id="blev-genereret-ved"><span class="secno">4.3.43. </span><span class="content">blev genereret ved</span><a class="self-link" href="#blev-genereret-ved"></a></h4>
+   <h4 class="heading settled" data-level="4.3.44" id="blev-genereret-ved"><span class="secno">4.3.44. </span><span class="content">blev genereret ved</span><a class="self-link" href="#blev-genereret-ved"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#wasGeneratedBy
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to an activity that generated, or provides the business context for, the creation of the dataset.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
    <h3 class="heading settled" data-level="4.4" id="distribution①"><span class="secno">4.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution①"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/dcat#Distribution
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>A physical embodiment of the Dataset in a particular format.
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2766,9 +2776,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset. 
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
@@ -2779,9 +2789,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a URL that is a direct link to a downloadable file in a given format. 
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2792,9 +2802,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a data service that gives access to the distribution of the dataset
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2805,9 +2815,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>titeldistributionens titel
+    <dd>titleThis property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2818,9 +2828,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>tekstbaseret beskrivelse af distributionen
+    <dd>This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2831,9 +2841,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to an established schema to which the described Distribution conforms.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2844,9 +2854,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains the date of formal issuance (e.g., publication) of the Distribution.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2857,9 +2867,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains the most recent date on which the Distribution was changed or modified.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2870,35 +2880,35 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. 
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.9" id="sprog③"><span class="secno">4.4.9. </span><span class="content">sprog</span><a class="self-link" href="#sprog③"></a></h4>
+   <h4 class="heading settled" data-level="4.4.9" id="tilgngeligstype"><span class="secno">4.4.9. </span><span class="content">tilgængeligstype</span><a class="self-link" href="#tilgngeligstype"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://data.europa.eu/r5r/availability
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property indicates how long it is planned to keep the Distribution of the Dataset available. 
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.10" id="sprog③"><span class="secno">4.4.10. </span><span class="content">sprog</span><a class="self-link" href="#sprog③"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.
     <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.10" id="adgangsrettigheder②"><span class="secno">4.4.10. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder②"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://purl.org/dc/terms/rights
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2909,22 +2919,22 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.12" id="bytesize"><span class="secno">4.4.12. </span><span class="content">byteSize</span><a class="self-link" href="#bytesize"></a></h4>
+   <h4 class="heading settled" data-level="4.4.12" id="bytestrrelse"><span class="secno">4.4.12. </span><span class="content">bytestørrelse</span><a class="self-link" href="#bytestrrelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#byteSize
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains the size of a Distribution in bytes.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2935,189 +2945,189 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.14" id="dokumentation①"><span class="secno">4.4.14. </span><span class="content">dokumentation</span><a class="self-link" href="#dokumentation①"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://xmlns.com/foaf/0.1/page
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.15" id="har-politik"><span class="secno">4.4.15. </span><span class="content">har politik</span><a class="self-link" href="#har-politik"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/odrl/2/hasPolicy
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.16" id="kompressionsformat"><span class="secno">4.4.16. </span><span class="content">kompressionsformat</span><a class="self-link" href="#kompressionsformat"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/dcat#compressFormat
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.17" id="pakkeformat"><span class="secno">4.4.17. </span><span class="content">pakkeformat</span><a class="self-link" href="#pakkeformat"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/dcat#packageFormat
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.18" id="tidslig-oplsning①"><span class="secno">4.4.18. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#tidslig-oplsning①"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/dcat#temporalResolution
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.19" id="rumlig-oplsning-i-meter①"><span class="secno">4.4.19. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#rumlig-oplsning-i-meter①"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.20" id="tilgngeligstype"><span class="secno">4.4.20. </span><span class="content">tilgængeligstype</span><a class="self-link" href="#tilgngeligstype"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://data.europa.eu/r5ravailability
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
-    <dt>Multiplicitet
-    <dd>..1
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.21" id="format"><span class="secno">4.4.21. </span><span class="content">format</span><a class="self-link" href="#format"></a></h4>
+   <h4 class="heading settled" data-level="4.4.14" id="format"><span class="secno">4.4.14. </span><span class="content">format</span><a class="self-link" href="#format"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/format
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the file format of the Distribution
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.22" id="licens①"><span class="secno">4.4.22. </span><span class="content">licens</span><a class="self-link" href="#licens①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.15" id="kompressionsformat"><span class="secno">4.4.15. </span><span class="content">kompressionsformat</span><a class="self-link" href="#kompressionsformat"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#compressFormat
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.16" id="pakkeformat"><span class="secno">4.4.16. </span><span class="content">pakkeformat</span><a class="self-link" href="#pakkeformat"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#packageFormat
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.17" id="dokumentation①"><span class="secno">4.4.17. </span><span class="content">dokumentation</span><a class="self-link" href="#dokumentation①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/0.1/page
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to a page or document about this Distribution.
+    <dt>Multiplicitet
+    <dd>0..*
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.18" id="har-politik"><span class="secno">4.4.18. </span><span class="content">har politik</span><a class="self-link" href="#har-politik"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/odrl/2/hasPolicy
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.19" id="adgangsrettigheder②"><span class="secno">4.4.19. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder②"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/rights
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to a statement that specifies rights associated with the Distribution.
+    <dt>Multiplicitet
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.20" id="licens①"><span class="secno">4.4.20. </span><span class="content">licens</span><a class="self-link" href="#licens①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to the licence under which the Distribution is made available.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.21" id="tidslig-oplsning①"><span class="secno">4.4.21. </span><span class="content">tidslig opløsning</span><a class="self-link" href="#tidslig-oplsning①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#temporalResolution
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to the minimum time period resolvable in the dataset distribution.
+    <dt>Multiplicitet
+    <dd>0..*
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h4 class="heading settled" data-level="4.4.22" id="rumlig-oplsning-i-meter①"><span class="secno">4.4.22. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#rumlig-oplsning-i-meter①"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property refers to the  minimum spatial separation resolvable in a dataset distribution, measured in meters.
+    <dt>Multiplicitet
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
     ## 
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/dcat#DataService
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>A collection of operations that provides access to one or more datasets or data processing functions.
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.23" id="titel③"><span class="secno">4.4.23. </span><span class="content">titel</span><a class="self-link" href="#titel③"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>dataservicens titel
-    <dt>Multiplicitet
-    <dd>1
-    <dt>Kravniveau
-    <dd>Obligatorisk
-   </dl>
-   <h4 class="heading settled" data-level="4.4.24" id="beskrivelse④"><span class="secno">4.4.24. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse④"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>tekstbaseret beskrivelse af dataservicen
-    <dt>Multiplicitet
-    <dd>
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h4 class="heading settled" data-level="4.4.25" id="endpoint-url"><span class="secno">4.4.25. </span><span class="content">endpoint-URL</span><a class="self-link" href="#endpoint-url"></a></h4>
+   <h4 class="heading settled" data-level="4.4.23" id="endpoint-url"><span class="secno">4.4.23. </span><span class="content">endpoint-URL</span><a class="self-link" href="#endpoint-url"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointURL
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>The root location or primary endpoint of the service (an IRI).
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.4.26" id="endpointbeskrivelse"><span class="secno">4.4.26. </span><span class="content">endpointbeskrivelse</span><a class="self-link" href="#endpointbeskrivelse"></a></h4>
+   <h4 class="heading settled" data-level="4.4.24" id="titel③"><span class="secno">4.4.24. </span><span class="content">titel</span><a class="self-link" href="#titel③"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/title
+    <dt>Definition
+    <dd>
+    <dt>Anvendelsesnote
+    <dd>This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.
+    <dt>Multiplicitet
+    <dd>1..*
+    <dt>Kravniveau
+    <dd>Obligatorisk
+   </dl>
+   <h4 class="heading settled" data-level="4.4.25" id="endpointbeskrivelse"><span class="secno">4.4.25. </span><span class="content">endpointbeskrivelse</span><a class="self-link" href="#endpointbeskrivelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointDescription
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.
     <dt>Multiplicitet
+    <dd>0..*
+    <dt>Kravniveau
+    <dd>Anbefalet
+   </dl>
+   <h4 class="heading settled" data-level="4.4.26" id="beskrivelse④"><span class="secno">4.4.26. </span><span class="content">beskrivelse</span><a class="self-link" href="#beskrivelse④"></a></h4>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/description
+    <dt>Definition
     <dd>
+    <dt>Anvendelsesnote
+    <dd>This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.
+    <dt>Multiplicitet
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3128,11 +3138,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a collection of data that this data service can distribute
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
-    <dd>
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.4.28" id="licens②"><span class="secno">4.4.28. </span><span class="content">licens</span><a class="self-link" href="#licens②"></a></h4>
    <dl class="def">
@@ -3141,9 +3151,9 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains the licence under which the Data service is made available.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3154,20 +3164,20 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property MAY include information regarding access or restrictions based on privacy, security, or other policies.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
    <h3 class="heading settled" data-level="4.5" id="aktr"><span class="secno">4.5. </span><span class="content">Aktør</span><a class="self-link" href="#aktr"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended. 
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3178,33 +3188,33 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.5.2" id="type①"><span class="secno">4.5.2. </span><span class="content">type</span><a class="self-link" href="#type①"></a></h4>
+   <h4 class="heading settled" data-level="4.5.2" id="aktrtype"><span class="secno">4.5.2. </span><span class="content">aktørtype</span><a class="self-link" href="#aktrtype"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a type of the agent that makes the Catalogue or Dataset available
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.6" id="klassifikationssystem"><span class="secno">4.6. </span><span class="content">Klassifikationssystem</span><a class="self-link" href="#klassifikationssystem"></a></h3>
+   <h3 class="heading settled" data-level="4.6" id="emneklassifikation①"><span class="secno">4.6. </span><span class="content">Emneklassifikation</span><a class="self-link" href="#emneklassifikation①"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>A concept collection (e.g. controlled vocabulary) in which the Category is defined.
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3215,16 +3225,16 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a name of the category scheme. May be repeated for different versions of the name
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h3 class="heading settled" data-level="4.7" id="klassifikationsemne"><span class="secno">4.7. </span><span class="content">Klassifikationsemne</span><a class="self-link" href="#klassifikationsemne"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3239,16 +3249,16 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h3 class="heading settled" data-level="4.8" id="checksum①"><span class="secno">4.8. </span><span class="content">Checksum</span><a class="self-link" href="#checksum①"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://spdx.org/rdf/terms#Checksum
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3263,11 +3273,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h4 class="heading settled" data-level="4.8.2" id="checksumvrdi"><span class="secno">4.8.2. </span><span class="content">checksumværdi</span><a class="self-link" href="#checksumvrdi"></a></h4>
    <dl class="def">
@@ -3276,11 +3286,11 @@ Marts 2020</p>
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h3 class="heading settled" data-level="4.9" id="katalogressource"><span class="secno">4.9. </span><span class="content">Katalogressource</span><a class="self-link" href="#katalogressource"></a></h3>
    <dl class="def">
@@ -3296,7 +3306,7 @@ Marts 2020</p>
    <h3 class="heading settled" data-level="4.10" id="identifikator①"><span class="secno">4.10. </span><span class="content">Identifikator</span><a class="self-link" href="#identifikator①"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/adms#Identifier
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3304,23 +3314,23 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-    ### 
+   <h4 class="heading settled" data-level="4.10.1" id="notation"><span class="secno">4.10.1. </span><span class="content">notation</span><a class="self-link" href="#notation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#notation
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype.
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
    <h3 class="heading settled" data-level="4.11" id="licensdokument"><span class="secno">4.11. </span><span class="content">Licensdokument</span><a class="self-link" href="#licensdokument"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://purl.org/dc/terms/LicenseDocument
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3328,23 +3338,23 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-    ### 
+   <h4 class="heading settled" data-level="4.11.1" id="licenstype"><span class="secno">4.11.1. </span><span class="content">licenstype</span><a class="self-link" href="#licenstype"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
-    <dd>
+    <dd>This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.
     <dt>Multiplicitet
-    <dd>
+    <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
    <h3 class="heading settled" data-level="4.12" id="lokation"><span class="secno">4.12. </span><span class="content">Lokation</span><a class="self-link" href="#lokation"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://purl.org/dc/terms/Location
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3361,7 +3371,7 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3374,7 +3384,7 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3387,14 +3397,14 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
    <h3 class="heading settled" data-level="4.13" id="periode"><span class="secno">4.13. </span><span class="content">Periode</span><a class="self-link" href="#periode"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://purl.org/dc/terms/PeriodOfTime
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3411,7 +3421,7 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3424,7 +3434,7 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3437,7 +3447,7 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>beginning of a temporal entity
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3450,14 +3460,14 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>..1
+    <dd>0..1
     <dt>Kravniveau
     <dd>
    </dl>
-   <h3 class="heading settled" data-level="4.14" id="relation①"><span class="secno">4.14. </span><span class="content">relation</span><a class="self-link" href="#relation①"></a></h3>
+   <h3 class="heading settled" data-level="4.14" id="relation"><span class="secno">4.14. </span><span class="content">Relation</span><a class="self-link" href="#relation"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://www.w3.org/ns/dcat#Relationship
     <dt>Definition
     <dd>
     <dt>Anvendelsesnote
@@ -3465,7 +3475,7 @@ Marts 2020</p>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.14.1" id="relation②"><span class="secno">4.14.1. </span><span class="content">relation</span><a class="self-link" href="#relation②"></a></h4>
+   <h4 class="heading settled" data-level="4.14.1" id="relation①"><span class="secno">4.14.1. </span><span class="content">relation</span><a class="self-link" href="#relation①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
@@ -3474,9 +3484,9 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h4 class="heading settled" data-level="4.14.2" id="havde-rolle"><span class="secno">4.14.2. </span><span class="content">havde rolle</span><a class="self-link" href="#havde-rolle"></a></h4>
    <dl class="def">
@@ -3487,9 +3497,9 @@ Marts 2020</p>
     <dt>Anvendelsesnote
     <dd>
     <dt>Multiplicitet
-    <dd>1
+    <dd>1..*
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h3 class="heading settled" data-level="4.15" id="tidsdatatype"><span class="secno">4.15. </span><span class="content">Tidsdatatype</span><a class="self-link" href="#tidsdatatype"></a></h3>
    <dl class="def">
@@ -3548,40 +3558,6 @@ Marts 2020</p>
    <h3 class="heading settled" data-level="7.3" id="begrebsliste"><span class="secno">7.3. </span><span class="content">Begrebsliste</span><a class="self-link" href="#begrebsliste"></a></h3>
     ================ 
    <p>arkitektur.digst.dk</p>
-   <h2 class="heading settled" data-level="8" id="short-hands"><span class="secno">8. </span><span class="content">Short hands</span><a class="self-link" href="#short-hands"></a></h2>
-   <h2 class="heading settled" data-level="9" id="h1"><span class="secno">9. </span><span class="content">h1</span><a class="self-link" href="#h1"></a></h2>
-   <h3 class="heading settled" data-level="9.1" id="h2"><span class="secno">9.1. </span><span class="content">h2</span><a class="self-link" href="#h2"></a></h3>
-   <h4 class="heading settled" data-level="9.1.1" id="h3"><span class="secno">9.1.1. </span><span class="content">h3</span><a class="self-link" href="#h3"></a></h4>
-   <h5 class="heading settled" data-level="9.1.1.1" id="h4"><span class="secno">9.1.1.1. </span><span class="content">h4</span><a class="self-link" href="#h4"></a></h5>
-   <h6 class="heading settled" data-level="9.1.1.1.1" id="h5"><span class="secno">9.1.1.1.1. </span><span class="content">h5</span><a class="self-link" href="#h5"></a></h6>
-   <p align="center"><a href="img/test.jpg"><img alt="test" src="img/test.jpg" width="800"></a></p>
-   <p>Links: <a href="https://www.example.om">Test</a></p>
-   <p class="note" role="note">Note 1</p>
-   <p class="example" id="example-5f3a8aa0"><a class="self-link" href="#example-5f3a8aa0"></a>Example 2</p>
-   <p class="assertion">assertion 3</p>
-   <p class="advisement">advisement</p>
-   <p class="issue" id="issue-642facf6"><a class="self-link" href="#issue-642facf6"></a>Issue</p>
-   <p>definition list:</p>
-   <dl class="def">
-    <dt>1
-    <dd>
-    a
-    <dt>
-    <dt>2
-    <dd>
-    b
-    <dt>
-   </dl>
-   <ul>
-    <li data-md>
-     <p>bullit 1</p>
-    <li data-md>
-     <p>bullit 2</p>
-    <li data-md>
-     <p>bullit 3</p>
-   </ul>
-   <p><em>kursiv</em></p>
-   <p><strong>fed</strong></p>
   </main>
 <script>
 (function() {
@@ -3714,5 +3690,6 @@ Marts 2020</p>
 </script>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue">Issue<a href="#issue-642facf6"> ↵ </a></div>
+   <div class="issue">Hvordan fungerer denne fortælling om strukturen? <a href="#issue-968f1117"> ↵ </a></div>
+   <div class="issue">Herunder er indsat elementerne fra DCAP-AP samt enkelte yderligere egenskaber. Elementbetegnelserne er oversat til dansk (forslag), men anvendelsesnoterne er endnu ikke oversat. Det er også hensigten at de oprindelige definitioner fra kernemodellerne skal hentes ind. Derudover mangler flere egenskaber angivelse af kravniveau<a href="#issue-6dd788b4"> ↵ </a></div>
   </div>
