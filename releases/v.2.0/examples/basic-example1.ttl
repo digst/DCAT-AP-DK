@@ -1,0 +1,45 @@
+@prefix adms: <https://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <https://dcat.example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix w3cgeo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:dataset-001
+  a dcat:Dataset ;
+  dct:title "Dataset 001"@en ;
+  dct:title "Datasæt 001"@da ;  
+  dct:description "A description of Dataset 001"@en ;
+  dct:description "En beskrivelse af datasættet 001"@da ;  
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/dataset/language/DAN> ;  
+  dct:publisher ex:agent-001 ;
+  dct:creator ex:agent-001 ;
+  dct:issued "2011-12-05"^^xsd:date ;
+  dct:modified "2011-12-15"^^xsd:date ;
+  dcat:distribution ex:dataset-001-csv ;
+.
+ex:dataset-001-csv
+  a dcat:Distribution ;
+  dcat:accessURL <http://www.example.org/files/001.csv> ;
+  dcat:downloadURL <http://www.example.org/files/001.csv> ;
+  dct:title "CSV distribution of dataset 001"@en ;
+  dct:title "CSV-distribution af datsættet 001"@da ;  
+  dcat:byteSize "5120"^^xsd:decimal ;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+  dct:format <http://publications.europa.eu/resource/dataset/file-type/csv> ;
+.
+ex:agent-001
+  a foaf:Agent;
+  a foaf:Organization ;
+  foaf:name "Organisation 001"@da ;  
+  foaf:name "Organization 001"@en .
+
