@@ -174,7 +174,6 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 ## Standardens anvendelse og afgrænsning
 
 
-
 ## Konformans og afvigelser fra DCAT-AP
 
 ### Tilføjelser
@@ -189,6 +188,16 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 ## Diagram
 
+## Emner
+
+* Basisinformation
+* Emneinddeling
+* Aktører
+* Dataindhold
+* Afgrænsning
+* Datakvalitet
+* Jura og regulering
+* Proveniens og historik
 
 
 ## Namespaces
@@ -1943,16 +1952,228 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>
 
-# Emner
+# Klassifikationer
 
-* Basisinformation
-* Emneinddeling
-* Aktører
-* Dataindhold
-* Afgrænsning
-* Datakvalitet
-* Jura og regulering
-* Proveniens og historik
+I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer.
+
+Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)
+
+Bemærk at hvis den pågældende egenskab anvendes så er det et krav at de(n) udpegede klassifikation anvendes (med enkelte undtagelser - se noter).
+
+
+## Datatemaer
+
+Egenskab: dct:theme
+
+KLASSIFIKATION: EU Datatemaer
+
+URI: http://publications.europa.eu/resource/authority/data-theme
+[Se klassifikationens indhold](
+https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/data-theme/?target=Browse&uri=http://publications.europa.eu/resource/authority/data-theme)
+
+
+## Forvaltningsopgaver
+
+Egenskab: dct:theme
+
+KLASSIFIKATION: FORM (FællesOffentligeReferenceModel)
+
+KLASSIFIKATION: KLE (KL Emnesystematik)
+
+[Se FORM](https://www.form-online.dk/soegning)
+
+[Se KLE](http://www.kle-online.dk/soegning)
+
+
+
+## Opdateringsfrekvenser
+
+Egenskab: dct:accrualPeriodicity
+
+KLASSIFIKATION: EU Frekvenser
+
+URI: http://publications.europa.eu/resource/authority/frequency
+
+[Se klassifikationens indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/frequency/?target=Browse&uri=http://publications.europa.eu/resource/authority/frequency)
+
+
+## Medietyper
+Egenskab: dct:mediaType
+
+KLASSIFIKATION: Internet Assigned Numbers Authority (IANA). 
+
+URI: http://www.iana.org/assignments/media-types/
+
+[Se klassifikationens indhold](http://www.iana.org/assignments/media-types/media-types.xhtml)
+
+Eksempler:
+* hhttps://www.iana.org/assignments/media-types/text/html
+* hhttps://www.iana.org/assignments/media-types/text/xml
+* hhttps://www.iana.org/assignments/media-types/text/csv
+* hhttps://www.iana.org/assignments/media-types/text/plain
+* hhttps://www.iana.org/assignments/media-types/application/json
+* hhttps://www.iana.org/assignments/media-types/application/xml
+* hhttps://www.iana.org/assignments/media-types/application/zip
+* hhttps://www.iana.org/assignments/media-types/application/pdf
+* hhttps://www.iana.org/assignments/media-types/application/ld+json
+* hhttps://www.iana.org/assignments/media-types/application/vnd.ms-excel (.xls)
+* hhttps://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)
+
+
+## Filformater
+
+Egenskab: dct:format
+
+KLASSIFIKATION: EU Filtyper
+
+URI: http://publications.europa.eu/resource/authority/file-type
+
+[Se klassifikationens indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/file-type/?target=Browse&uri=http://publications.europa.eu/resource/authority/file-type)
+
+Eksempler:
+* http://publications.europa.eu/resource/authority/file-type/CSV
+* http://publications.europa.eu/resource/authority/file-type/XLS
+* http://publications.europa.eu/resource/authority/file-type/XML
+* http://publications.europa.eu/resource/authority/file-type/GML
+* http://publications.europa.eu/resource/authority/file-type/RDF
+* http://publications.europa.eu/resource/authority/file-type/TXT
+* http://publications.europa.eu/resource/authority/file-type/ZIP
+* http://publications.europa.eu/resource/authority/file-type/JSON
+
+
+## Sprog
+Egenskab: dct:language
+
+KLASSIFIKATION: EU Sprog
+
+URI: http://publications.europa.eu/resource/authority/language
+ 
+[Se klassifikationens indhold](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language)
+
+Eksempler:
+* http://publications.europa.eu/resource/dataset/language/DAN
+* http://publications.europa.eu/resource/dataset/language/ENG
+
+
+## Geografiske områder
+
+Egenskab: dct:spatial
+
+KLASSIFIKATION: kontinenter
+
+URI: http://publications.europa.eu/resource/authority/continent/
+
+[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/?target=Browse&uri=http://publications.europa.eu/resource/authority/continent](http://publications.europa.eu/resource/authority/continent) 
+
+KLASSIFIKATION: lande
+
+URI: http://publications.europa.eu/resource/authority/country
+
+[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/?target=Browse&uri=http://publications.europa.eu/resource/authority/country](http://publications.europa.eu/resource/authority/country)
+
+KLASSIFIKATION: stednavne
+
+URI: http://publications.europa.eu/resource/authority/place/
+
+[Se klassifikations indhold](
+https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/place/?target=Browse&uri=http://publications.europa.eu/resource/authority/place](http://publications.europa.eu/resource/authority/place)
+
+KLASSIFIKATION: Geonames
+
+URI: http://sws.geonames.org/
+
+[Se klassifikations indhold](http://sws.geonames.org/](http://sws.geonames.org/)
+
+
+Note: The EU Vocabularies Name Authority Lists must be used for continents, countries and places that are in those lists; if a particular location is not in one of the mentioned Named Authority Lists, Geonames URIs must be used.
+
+
+## Statusser
+Egenskab: adms:status
+
+KLASSIFIKATION: ADMS Statusser
+
+URI: http://purl.org/adms/status/
+
+[Se klassifikationens indhold](http://purl.org/adms/status/)
+* http://purl.org/adms/status/Completed
+* http://purl.org/adms/status/Deprecated
+* http://purl.org/adms/status/UnderDevelopment
+* http://purl.org/adms/status/Withdrawn
+
+
+## Udgivertyper
+Egenskab: dct:type (på foaf:Agent)
+
+KLASSIFIKATION: ADMS udgivertyper
+
+URI: http://purl.org/adms/publishertype/
+
+
+[Se klassifikationens indhold](http://purl.org/adms/publishertype/)
+* http://purl.org/adms/publishertype/Academia-ScientificOrganisation
+* http://purl.org/adms/publishertype/Company
+* http://purl.org/adms/publishertype/IndustryConsortium
+* http://purl.org/adms/publishertype/LocalAuthority
+* http://purl.org/adms/publishertype/NationalAuthority
+* http://purl.org/adms/publishertype/NonGovernmentalOrganisation
+* http://purl.org/adms/publishertype/NonProfitOrganisation
+* http://purl.org/adms/publishertype/PrivateIndividual(s)
+* http://purl.org/adms/publishertype/RegionalAuthority
+* http://purl.org/adms/publishertype/StandardisationBody
+* http://purl.org/adms/publishertype/SupraNationalAuthority"
+
+
+Note: evt. fremtidig mapning til klassifikationen Offentlige organisationstyper herunder
+
+KLASSIFIKATION: Offentlige organisationstyper 
+
+URI: https://data.gov.dk/concept/profile/public-org-types
+
+[Se klassifikationens indhold](https://digst.github.io/IT-System-AP/SYS-AP/docs/#klassifikation-offentlige-organisationstyper)
+
+
+## Licenstyper
+
+Egenskab: dct:license 
+
+KLASSIFIKATION: ADMS licenstyper
+
+URI: http://purl.org/adms/licencetype/
+
+[Se klassifikationens indhold](http://purl.org/adms/licencetype/)  
+* http://purl.org/adms/licencetype/Attribution
+* http://purl.org/adms/licencetype/PublicDomain
+* http://purl.org/adms/licencetype/ViralEffect-ShareAlike
+* http://purl.org/adms/licencetype/ShareAlike-NotCompatible
+* http://purl.org/adms/licencetype/ShareAlike-Compatible
+* http://purl.org/adms/licencetype/NonCommercialUseOnly
+* http://purl.org/adms/licencetype/NoDerivativeWork
+* http://purl.org/adms/licencetype/RoyaltiesRequired
+* http://purl.org/adms/licencetype/ReservedNames-Endorsement-OfficialStatus
+* http://purl.org/adms/licencetype/NominalCost
+* http://purl.org/adms/licencetype/GrantBack
+* http://purl.org/adms/licencetype/JurisdictionWithinTheEU
+* http://purl.org/adms/licencetype/OtherRestrictiveClauses
+* http://purl.org/adms/licencetype/KnownPatentEncumbrance
+* http://purl.org/adms/licencetype/UnknownIPR
+
+
+## Tilgængelighedstyper
+
+Egenskab: dcat-ap:availability
+
+KLASSIFIKATION: Tilgængeligshedstyper (for distributioner)
+
+URI: http://data.europa.eu/r5r/availability/
+
+[Se klassifikationens indhold](http://data.europa.eu/r5r/availability/)
+* http://data.europa.eu/r5r/availability/temporary
+* http://data.europa.eu/r5r/availability/experimental
+* http://data.europa.eu/r5r/availability/available
+* http://data.europa.eu/r5r/availability/stable
+
+
 
 
 
