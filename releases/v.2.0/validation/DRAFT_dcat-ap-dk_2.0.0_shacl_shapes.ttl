@@ -246,6 +246,7 @@ dcat-ap:CatalogRecord_Shape
     sh:severity sh:Violation
   ] .
 
+
 dcat-ap:Dataset_Shape
   a sh:NodeShape ;
   sh:targetClass dcat:Dataset ;
@@ -388,9 +389,10 @@ dcat-ap:Dataset_Shape
   ], [
     sh:name "language"@en, "sprog"@da ;
     sh:description "This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset."@en, "det sprog der er anvendt i datasættet"@da ;
-    sh:class dc:LinguisticSystem ;
+    sh:pattern "^http://publications.europa.eu/resource/dataset/language/" ;   
+    sh:flags "i" ;  
     sh:path dc:language ;
-    sh:severity sh:Info ;
+    sh:severity sh:Violation;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
     sh:name "access rights"@en, "adgangsrettigheder"@da ;
@@ -431,7 +433,8 @@ dcat-ap:Dataset_Shape
   ], [
     sh:name "frequency"@en, "opdateringsfrekvens"@da ;
     sh:description "This property refers to the frequency at which the Dataset is updated."@en, ""@da ;
-    sh:class dc:Frequency ;
+    sh:pattern "^http://publications.europa.eu/resource/authority/frequency/" ;   
+    sh:flags "i" ; 
     sh:maxCount 1 ;
     sh:path dc:accrualPeriodicity ;
     sh:severity sh:Violation ;
@@ -671,14 +674,16 @@ dcat-ap:Distribution_Shape
   ], [
     sh:name "media type"@en, "medietype"@da ;
     sh:description "This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA."@en, ""@da ;
-    sh:class dc:MediaType ;
+    sh:pattern "^https://www.iana.org/assignments/media-types/" ;   
+    sh:flags "i" ; 
     sh:maxCount 1 ;
     sh:path dcat:mediaType ;
     sh:severity sh:Violation
   ], [
     sh:name "format"@en, "format"@da ;
     sh:description "This property refers to the file format of the Distribution"@en, ""@da ;
-    sh:class dc:MediaTypeOrExtent ;
+    sh:pattern "^http://publications.europa.eu/resource/dataset/file-type/" ;   
+    sh:flags "i" ; 
     sh:maxCount 1 ;
     sh:path dc:format ;
     sh:severity sh:Violation
