@@ -1,9 +1,17 @@
-RDF validator: https://www.w3.org/RDF/Validator/
+Med ovenstående SHACL-filer kan validering af DCAT-metadata afprøves allerede:
 
-DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
+Eksempler på DCAT-metadata findes her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
 
-SHACL Playground: https://shacl.org/playground/
+I SHACL Playground kan indholdet af TTL-filen her indsættes (til venstre) hvorefter DCAT-metadata indsættes (til højre).
 
-RDF converter: http://www.easyrdf.org/converter
+Relevante links:
 
-Markdown-styling af udkast til SHACL shapes fil: https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml
+* SHACL Playground: https://shacl.org/playground/
+
+* RDF validator: https://www.w3.org/RDF/Validator/
+
+* DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
+
+* RDF converter: http://www.easyrdf.org/converter
+
+* Markdown-styling af udkast til SHACL shapes fil: https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml
