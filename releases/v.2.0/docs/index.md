@@ -110,7 +110,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 <pre class="metadata">
 Title: UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)
 Status: LD
-URL: https://github.com/digst/DCAT-AP-DK/releases/v.2.0/
+URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Bidragsyder, Bidragsydere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Editor: [Styrelsen for data og effektivisering]
@@ -131,7 +131,7 @@ Revision: 2.0.0
 Date: 2019-03-27
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
-Repository: digst/DCAT-AP-DK/DCAT-AP-DK/releases/v.2.0
+Repository: digst/DCAT-AP-DK/tree/master/releases/v.2.0
 Inline Github Issues: full
 Logo: digst...
 </pre>
