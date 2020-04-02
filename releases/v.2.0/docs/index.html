@@ -1221,8 +1221,8 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 576ef4f5126e3fb83bf07d9bbe1a64f99aa4944e" name="generator">
-  <link href="https://github.com/digst/DCAT-AP-DK/releases/v.2.0/" rel="canonical">
+  <meta content="Bikeshed version c1dbacab, updated Mon Mar 30 18:56:12 2020 -0700" name="generator">
+  <link href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/" rel="canonical">
 <style>
 @media print {
   html { margin: 0cm 2cm 2cm 0cm; font-size: 80%; }
@@ -1331,91 +1331,6 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
-<style>/* style-md-lists */
-
-/* This is a weird hack for me not yet following the commonmark spec
-   regarding paragraph and lists. */
-[data-md] > :first-child {
-    margin-top: 0;
-}
-[data-md] > :last-child {
-    margin-bottom: 0;
-}</style>
-<style>/* style-counters */
-
-body {
-    counter-reset: example figure issue;
-}
-.issue {
-    counter-increment: issue;
-}
-.issue:not(.no-marker)::before {
-    content: "Issue " counter(issue);
-}
-
-.example {
-    counter-increment: example;
-}
-.example:not(.no-marker)::before {
-    content: "Example " counter(example);
-}
-.invalid.example:not(.no-marker)::before,
-.illegal.example:not(.no-marker)::before {
-    content: "Invalid Example" counter(example);
-}
-
-figcaption {
-    counter-increment: figure;
-}
-figcaption:not(.no-marker)::before {
-    content: "Figure " counter(figure) " ";
-}</style>
-<style>/* style-selflinks */
-
-.heading, .issue, .note, .example, li, dt {
-    position: relative;
-}
-a.self-link {
-    position: absolute;
-    top: 0;
-    left: calc(-1 * (3.5rem - 26px));
-    width: calc(3.5rem - 26px);
-    height: 2em;
-    text-align: center;
-    border: none;
-    transition: opacity .2s;
-    opacity: .5;
-}
-a.self-link:hover {
-    opacity: 1;
-}
-.heading > a.self-link {
-    font-size: 83%;
-}
-li > a.self-link {
-    left: calc(-1 * (3.5rem - 26px) - 2em);
-}
-dfn > a.self-link {
-    top: auto;
-    left: auto;
-    opacity: 0;
-    width: 1.5em;
-    height: 1.5em;
-    background: gray;
-    color: white;
-    font-style: normal;
-    transition: opacity .2s, background-color .2s, color .2s;
-}
-dfn:hover > a.self-link {
-    opacity: 1;
-}
-dfn > a.self-link:hover {
-    color: black;
-}
-
-a.self-link::before            { content: "¶"; }
-.heading > a.self-link::before { content: "§"; }
-dfn > a.self-link::before      { content: "#"; }</style>
 <style>/* style-autolinks */
 
 .css.css, .property.property, .descriptor.descriptor {
@@ -1478,6 +1393,91 @@ pre .property::before, pre .property::after {
 [data-link-type=biblio] {
     white-space: pre;
 }</style>
+<style>/* style-counters */
+
+body {
+    counter-reset: example figure issue;
+}
+.issue {
+    counter-increment: issue;
+}
+.issue:not(.no-marker)::before {
+    content: "Issue " counter(issue);
+}
+
+.example {
+    counter-increment: example;
+}
+.example:not(.no-marker)::before {
+    content: "Example " counter(example);
+}
+.invalid.example:not(.no-marker)::before,
+.illegal.example:not(.no-marker)::before {
+    content: "Invalid Example" counter(example);
+}
+
+figcaption {
+    counter-increment: figure;
+}
+figcaption:not(.no-marker)::before {
+    content: "Figure " counter(figure) " ";
+}</style>
+<style>/* style-md-lists */
+
+/* This is a weird hack for me not yet following the commonmark spec
+   regarding paragraph and lists. */
+[data-md] > :first-child {
+    margin-top: 0;
+}
+[data-md] > :last-child {
+    margin-bottom: 0;
+}</style>
+<style>/* style-selflinks */
+
+.heading, .issue, .note, .example, li, dt {
+    position: relative;
+}
+a.self-link {
+    position: absolute;
+    top: 0;
+    left: calc(-1 * (3.5rem - 26px));
+    width: calc(3.5rem - 26px);
+    height: 2em;
+    text-align: center;
+    border: none;
+    transition: opacity .2s;
+    opacity: .5;
+}
+a.self-link:hover {
+    opacity: 1;
+}
+.heading > a.self-link {
+    font-size: 83%;
+}
+li > a.self-link {
+    left: calc(-1 * (3.5rem - 26px) - 2em);
+}
+dfn > a.self-link {
+    top: auto;
+    left: auto;
+    opacity: 0;
+    width: 1.5em;
+    height: 1.5em;
+    background: gray;
+    color: white;
+    font-style: normal;
+    transition: opacity .2s, background-color .2s, color .2s;
+}
+dfn:hover > a.self-link {
+    opacity: 1;
+}
+dfn > a.self-link:hover {
+    color: black;
+}
+
+a.self-link::before            { content: "¶"; }
+.heading > a.self-link::before { content: "§"; }
+dfn > a.self-link::before      { content: "#"; }</style>
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
@@ -1486,7 +1486,7 @@ pre .property::before, pre .property::after {
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
-     <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/releases/v.2.0/">https://github.com/digst/DCAT-AP-DK/releases/v.2.0/</a>
+     <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/</a>
      <dt>Issue Tracking:
      <dd><a href="#issues-index">Inline In Spec</a>
      <dt>Bidragsydere:
@@ -1598,13 +1598,13 @@ pre .property::before, pre .property::after {
         <li><a href="#vedligeholder"><span class="secno">4.3.9</span> <span class="content">vedligeholder</span></a>
         <li><a href="#kontaktpunkt"><span class="secno">4.3.10</span> <span class="content">kontaktpunkt</span></a>
         <li><a href="#distribution"><span class="secno">4.3.11</span> <span class="content">distribution</span></a>
-        <li><a href="#prve"><span class="secno">4.3.12</span> <span class="content">prøve</span></a>
+        <li><a href="#uddrag"><span class="secno">4.3.12</span> <span class="content">uddrag</span></a>
         <li><a href="#destinationsside"><span class="secno">4.3.13</span> <span class="content">destinationsside</span></a>
         <li><a href="#overenstemmelse①"><span class="secno">4.3.14</span> <span class="content">overenstemmelse</span></a>
         <li><a href="#dokumentation"><span class="secno">4.3.15</span> <span class="content">dokumentation</span></a>
         <li><a href="#emne"><span class="secno">4.3.16</span> <span class="content">emne</span></a>
         <li><a href="#type"><span class="secno">4.3.17</span> <span class="content">type</span></a>
-        <li><a href="#ngleord"><span class="secno">4.3.18</span> <span class="content">nøgleord</span></a>
+        <li><a href="#sgeord"><span class="secno">4.3.18</span> <span class="content">søgeord</span></a>
         <li><a href="#sprog②"><span class="secno">4.3.19</span> <span class="content">sprog</span></a>
         <li><a href="#adgangsrettigheder①"><span class="secno">4.3.20</span> <span class="content">adgangsrettigheder</span></a>
         <li><a href="#geografisk-omrde①"><span class="secno">4.3.21</span> <span class="content">geografisk område</span></a>
@@ -1840,10 +1840,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Catalog
-    <dt>Definition
-    <dd>A curated collection of metadata about datasets
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da) 
+    <dd>En organiseret samling af metadata om datasæt og dataservices i et katalog.
+    <dt>Anvendelsesnote (en)
     <dd>A catalogue or repository that hosts the Datasets being described.
+    <dt>Definition (en)
+    <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1851,10 +1853,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab giver det eller de ord der navngiver kataloget 
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.
+    <dt>Definition (en)
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -1864,10 +1868,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.
+    <dt>Definition (en)
+    <dd>An account of the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -1877,10 +1883,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/publisher
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængligt.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to an entity (organisation) responsible for making the Catalogue available. 
+    <dt>Definition (en)
+    <dd>An entity responsible for making the resource available.
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
@@ -1890,10 +1898,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/creator
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to the entity primarily responsible for producing the catalogue
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den aktør der primært er ansvarlig for katalogets skabelse.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to the entity primarily responsible for producing the catalogue.
+    <dt>Definition (en)
+    <dd>An entity responsible for making the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -1903,10 +1913,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor kataloget først blev formelt udgivet
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the date of formal issuance (e.g., publication) of the Catalogue.
+    <dt>Definition (en)
+    <dd>Date of formal issuance of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -1916,10 +1928,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor kataloget senest er blevet ændret.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the most recent date on which the Catalogue was changed or modified.
+    <dt>Definition (en)
+    <dd>Date on which the resource was changed.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -1929,10 +1943,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et geografisk område som kataloget dækker.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a geographical area covered by the Catalogue. 
+    <dt>Definition (en)
+    <dd>Spatial characteristics of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -1942,10 +1958,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om dataset og dataservices i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. 
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages.
+    <dt>Definition (en)
+    <dd>A language of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -1955,10 +1973,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den licens under hvilken kataloget kan anvendes eller genbruges
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the licence under which the Catalogue can be used or reused.
+    <dt>Definition (en)
+    <dd>A legal document giving official permission to do something with a resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -1968,10 +1988,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/rights
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det dokument der beskriver adgangsrettighederne for kataloget
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a statement that specifies rights associated with the Catalogue.
+    <dt>Definition (en)
+    <dd>Information about rights held in and over the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -1981,10 +2003,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#record
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en registrering af et enkelt datasæt eller en enkelt dataservice som er en del af kataloget
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a Catalogue Record that is part of the Catalogue
+    <dt>Definition (en)
+    <dd>A record describing the registration of a single dataset or data service that is part of the catalog.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -1994,10 +2018,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#themeTaxonomy
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en emneklassifikation der anvendes til kategorisering af datasæt og dataservices i kataloget
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a knowledge organization system used to classify the Catalogue’s Datasets.
+    <dt>Definition (en)
+    <dd>A knowledge organization system (KOS) used to classify catalog’s datasets and services.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2007,10 +2033,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#service
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et websted eller endpoint som er opført i kataloget.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a site or end-point that is listed in the catalog.
+    <dt>Definition (en)
+    <dd>A site or endpoint that is listed in the catalog.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2020,10 +2048,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#catalog
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to a catalog whose contents are of interest in the context of this catalog
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et katalog hvis indhold er relevant i forhold til det aktuelle katalog.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to a catalog whose contents are of interest in the context of this catalog.
+    <dt>Definition (en)
+    <dd>A catalog whose contents are of interest in the context of this catalog.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2033,10 +2063,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#dataset
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et datasæt som er opført i kataloget
+    <dt>Anvendelsesnote (en)
     <dd>This property links the Catalogue with a Dataset that is part of the Catalogue.
+    <dt>Definition (en)
+    <dd>A collection of data that is listed in the catalog.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -2046,10 +2078,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/homepage
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en webside som fungerer som katalogets hjemmeside.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a web page that acts as the main page for the Catalogue.
+    <dt>Definition (en)
+    <dd>A homepage for some thing.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2059,10 +2093,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasPart
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to a related Catalogue that is part of the described Catalogue
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et relateret katalog som er en del af det aktuelle katalog.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to a related Catalogue that is part of the described Catalogue.
+    <dt>Definition (en)
+    <dd>A related resource that is included either physically or logically in the described resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2072,10 +2108,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isPartOf
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a related Catalogue in which the described Catalogue is physically or logically included.
+    <dt>Definition (en)
+    <dd>A related resource in which the described resource is physically or logically included.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2085,10 +2123,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#CatalogRecord
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da) 
+    <dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en enkelt dataservice.
+    <dt>Anvendelsesnote (en)
     <dd>A description of a Dataset’s entry in the Catalogue. 
+    <dt>Definition (en)
+    <dd>A record in a data catalog, describing the registration of a single dataset or data service.
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2096,10 +2136,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/primaryTopic
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det datasæt, den dataservice eller det katalog som er genstand for registreringen.
+    <dt>Anvendelsesnote (en)
     <dd>This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record.
+    <dt>Definition (en)
+    <dd>A document that this thing is the primary topic of.
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
@@ -2109,10 +2151,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor katalogposten senest er blevet ændret.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the most recent date on which the Catalogue entry was changed or modified.
+    <dt>Definition (en)
+    <dd>Date on which the resource was changed.
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
@@ -2122,10 +2166,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller dataservicen blev registreret i kataloget.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.
+    <dt>Definition (en)
+    <dd>Date of formal issuance of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2135,10 +2181,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan gentages for hver sprogvariant.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.
+    <dt>Definition (en)
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2148,10 +2196,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.
+    <dt>Definition (en)
+    <dd>An account of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2161,10 +2211,13 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) 
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the type of the latest revision of a Dataset’s entry in the Catalogue. 
+    <dt>Definition (en)
+    <dd>Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. 
+									Since Status is defined using a skos:Concept, that is the defined range for this property.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2174,10 +2227,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om dataset og dataservices i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. 
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.
+    <dt>Definition (en)
+    <dd>A language of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2187,10 +2242,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to the original metadata that was used in creating metadata for the Dataset
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om det aktuelle datasæt eller den aktuelle dataservice.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to the original metadata that was used in creating metadata for the Dataset.
+    <dt>Definition (en)
+    <dd>A related resource from which the described resource is derived.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2200,10 +2257,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overenstemmmelse med.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to an Application Profile that the Dataset’s metadata conforms to
+    <dt>Definition (en)
+    <dd>An established standard to which the described resource conforms.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2213,10 +2272,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Dataset
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da) 
+    <dd>En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
+    <dt>Anvendelsesnote (en)
     <dd>A conceptual entity that represents the information published. 
+    <dt>Definition (en)
+    <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2224,10 +2285,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/identifier
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.
+    <dt>Definition (en)
+    <dd>An unambiguous reference to the resource within a given context.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2237,10 +2300,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#identifier
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver lokal identifikator for datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5].
+    <dt>Definition (en)
+    <dd>adms:identifier is used to link any resource to an instance of adms:Identifier which is its range
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2250,10 +2315,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.
+    <dt>Definition (en)
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -2263,10 +2330,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.
+    <dt>Definition (en)
+    <dd>An account of the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -2276,10 +2345,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/publisher
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the entity (organisation) responsible for making the Dataset available.
+    <dt>Definition (en)
+    <dd>An entity responsible for making the resource available.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2289,10 +2360,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/dataresponsibleorganisation
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt 
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the agent responsible for the general administration of all aspects concerning a dataset
+    <dt>Definition (en)
+    <dd>aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasætagent responsible for the general administration of all aspects concerning a dataset
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2302,10 +2375,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/creator
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den aktør der er primært ansvarlig datasættets skabelse.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the entity primarily responsible for producing the dataset
+    <dt>Definition (en)
+    <dd>An entity responsible for making the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2315,10 +2390,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/contributor
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the entity responsible for making contributions to the resource.
+    <dt>Definition (en)
+    <dd>n entity responsible for making contributions to the resource.
     <dt>Multiplicitet
     <dd>0..
     <dt>Kravniveau
@@ -2328,10 +2405,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/maintainer
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to the agent that manages contributions to, and/or publication of a dataset
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to the agent that manages contributions to, and/or publication of a dataset.
+    <dt>Definition (en)
+    <dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.
     <dt>Multiplicitet
     <dd>0..
     <dt>Kravniveau
@@ -2341,10 +2420,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#contactPoint
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver kontaktoplysninger som kan anvendes til at indsende spørgsmål eller kommentarer om datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains contact information that can be used for sending comments about the Dataset.
+    <dt>Definition (en)
+    <dd>Relevant contact information for the catalogued resource. Use of vCard is recommended.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2354,23 +2435,27 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#distribution
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en tilgænglig distribution af datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property links the Dataset to an available Distribution.
+    <dt>Definition (en)
+    <dd>An available distribution of the dataset.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.12" id="prve"><span class="secno">4.3.12. </span><span class="content">prøve</span><a class="self-link" href="#prve"></a></h4>
+   <h4 class="heading settled" data-level="4.3.12" id="uddrag"><span class="secno">4.3.12. </span><span class="content">uddrag</span><a class="self-link" href="#uddrag"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#sample
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et uddrag af en distribution af datasættet
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a sample distribution of the dataset.
+    <dt>Definition (en)
+    <dd>Links to a sample of an Asset (which is itself an Asset)
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2380,10 +2465,14 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#landingPage
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en webside som giver adgang til datasættet, dets distributioner og/eller yderliger information. 
+		Egenskaben bør pege på en webside hos den oprindelige dataudstiller - ikke en side eller et websted hos tredjepart, såsom en aggregator.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. 
+		It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.
+    <dt>Definition (en)
+    <dd>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2393,10 +2482,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en specifikation som datasættet er i overenstemmmelse med.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to an implementing rule or other specification.
+    <dt>Definition (en)
+    <dd>An established standard to which the described resource conforms.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2406,10 +2497,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/page
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en webside eller et dokument som beskriver datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a page or document about this Dataset.
+    <dt>Definition (en)
+    <dd>A page or document about this thing.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2419,10 +2512,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#theme
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan have flere centrale emner.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
+    <dt>Definition (en)
+    <dd>A main category of the resource. A resource can have multiple themes.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2432,23 +2527,27 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.
+    <dt>Definition (en)
+    <dd>The nature or genre of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.18" id="ngleord"><span class="secno">4.3.18. </span><span class="content">nøgleord</span><a class="self-link" href="#ngleord"></a></h4>
+   <h4 class="heading settled" data-level="4.3.18" id="sgeord"><span class="secno">4.3.18. </span><span class="content">søgeord</span><a class="self-link" href="#sgeord"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#keyword
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et ord eller tag der kan bruges som grundlag for en søgning
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a keyword or tag describing the Dataset.
+    <dt>Definition (en)
+    <dd>A keyword or tag describing the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2458,10 +2557,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.
+    <dt>Definition (en)
+    <dd>A language of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2471,10 +2572,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan det angives hvorvidt datasættet er åbent, har adgangsbegrænsninger eller om det ikke er tilgængeligt. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC)
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. 
+    <dt>Definition (en)
+    <dd>Information about who access the resource or an indication of its security status.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2484,10 +2587,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et geografisk område som datasættet dækker.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a geographic region that is covered by the Dataset. 
+    <dt>Definition (en)
+    <dd>Spatial characteristics of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2497,10 +2602,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angivermindste rumlige afstand som kan resolveres i et datasæt, målt i meter.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.
+    <dt>Definition (en)
+    <dd>minimum spatial separation resolvable in a dataset, measured in metres.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2510,10 +2617,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/temporal
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den periode datasættet dækker
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a temporal period that the Dataset covers.
+    <dt>Definition (en)
+    <dd>Temporal characteristics of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2523,10 +2632,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the minimum time period resolvable in the dataset.
+    <dt>Definition (en)
+    <dd>minimum time period resolvable in a dataset.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2536,10 +2647,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accrualPeriodicity
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the frequency at which the Dataset is updated.
+    <dt>Definition (en)
+    <dd>A rate at which something recurs.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2549,10 +2662,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the date of formal issuance (e.g., publication) of the Dataset.
+    <dt>Definition (en)
+    <dd>Date of formal issuance of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2562,10 +2677,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the most recent date on which the Dataset was changed or modified.
+    <dt>Definition (en)
+    <dd>Date on which the resource was changed.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2575,10 +2692,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dqv#hasQualityMetadata
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf 
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph.
+    <dt>Definition (en)
+    <dd>Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2588,10 +2707,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/duv#usage
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to dataset or distribution usage guidance/instructions.
+    <dt>Definition (en)
+    <dd>Dataset or distribution usage guidance/instructions.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2601,10 +2722,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej
+    <dt>Anvendelsesnote (en)
     <dd>This property specifies whether payment is imposed on the dataset or not
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2614,10 +2737,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori.
+    <dt>Anvendelsesnote (en)
     <dd>This property specifies a relation to specific personal data category
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2627,10 +2752,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives.
+    <dt>Anvendelsesnote (en)
+    <dd>This property specifies the extent by which information contained in a dataset can be disclosed.
+    <dt>Definition (en)
     <dd>
-    <dt>Anvendelsesnote
-    <dd>This property specifies the extent by which information contained in a dataset can be disclosed
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2640,10 +2767,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/m8g/hasLegalResource
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.
+    <dt>Anvendelsesnote (en)
+    <dd>This property specifies the legal framework for the dataset.
+    <dt>Definition (en)
     <dd>
-    <dt>Anvendelsesnote
-    <dd>This property specifies the legal framework for the dataset
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2653,10 +2782,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2002/07/owl#versionInfo
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en versionsnummer eller anden versionsangivelse af datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a version number or other version designation of the Dataset.
+    <dt>Definition (en)
+    <dd>The annotation property that provides version information for an ontology or another OWL construct.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2666,10 +2797,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#versionNotes
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan genrages for hver sprogvariant af versionsnoterne.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.
+    <dt>Definition (en)
+    <dd>A description of changes between this version and the previous version of the Asset
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2679,10 +2812,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasVersion
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et relateret datasæt som er en version, udgave eller bearbejdelse af et aktuelle datasæt.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset.
+    <dt>Definition (en)
+    <dd>A related resource that is a version, edition, or adaptation of the described resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2692,10 +2827,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isVersionOf
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et relateret datasæt som det aktuelle datasæt er en version, udgave eller bearbejdelse af.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
+    <dt>Definition (en)
+    <dd>A related resource of which the described resource is a version, edition, or adaptation.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2705,10 +2842,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/provenance
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver udsagn omkring datasættets proveniens i form af udsagn eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af datasættet.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a statement about the lineage of a Dataset.
+    <dt>Definition (en)
+    <dd>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2718,10 +2857,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en relateret ressource
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a related resource.
+    <dt>Definition (en)
+    <dd>A related resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2731,10 +2872,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver et relateret datasæt hvoraf de aktuelle datasæt er afledt.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a related Dataset from which the described Dataset is derived.
+    <dt>Definition (en)
+    <dd>A related resource from which the described resource is derived.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2744,10 +2887,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/elements/1.1/isReferencedBy
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property provides a link to a description of a relationship with another resource
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en reference til en beskrivelse af en relation til en anden ressource.
+    <dt>Anvendelsesnote (en)
+    <dd>This property provides a link to a description of a relationship with another resource.
+    <dt>Definition (en)
+    <dd>A related resource that references, cites, or otherwise points to the described resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2757,10 +2902,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#qualifiedAttribution
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
-    <dd>This property refers to a liink to an Agent having some form of responsibility for the resource
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab tilskriver en aktør et bestemt ansvar i forbindelse med datasættet.
+    <dt>Anvendelsesnote (en)
+    <dd>This property refers to a link to an Agent having some form of responsibility for the resource
+    <dt>Definition (en)
+    <dd>Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2770,10 +2917,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#qualifiedRelation
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en nærmere klassificeret relation til en anden ressource såsom en publikation der referer, citerer eller på anden på peger på datasættet. Anvendes til at referere til en anden ressource hvor relationens betydning er kendt men ikke matcher en af de standardiserede egenskaber fra Dublin Core.
+    <dt>Anvendelsesnote (en)
     <dd>This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.
+    <dt>Definition (en)
+    <dd>Link to a description of a relationship with another resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2783,10 +2932,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#wasGeneratedBy
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den aktivitet der genererede eller leverede forretningskonteksten for datasættets skabelse.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to an activity that generated, or provides the business context for, the creation of the dataset.
+    <dt>Definition (en)
+    <dd>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2796,10 +2947,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Distribution
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da) 
+    <dd>En fysisk repræsentation af datasættet.  Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående) 
+    <dt>Anvendelsesnote (en)
     <dd>A physical embodiment of the Dataset in a particular format.
+    <dt>Definition (en)
+    <dd>A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify 
     <dt>Kravniveau
     <dd>
    </dl>
@@ -2807,10 +2960,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessURL
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. 
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset. 
+    <dt>Definition (en)
+    <dd>A URL of a resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -2820,10 +2975,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#downloadURL
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a URL that is a direct link to a downloadable file in a given format. 
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2833,23 +2990,27 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessService
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a data service that gives access to the distribution of the dataset
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
-    ### 
+   <p>###</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>titelDenne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant.
+    <dt>Anvendelsesnote (en)
     <dd>titleThis property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.
+    <dt>Definition (en)
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2859,10 +3020,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>tekstbaseret beskrivelse af distributionen
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2872,10 +3035,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver en specifikation (schema) som distributionen er i overenstemmmelse med.
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to an established schema to which the described Distribution conforms.
+    <dt>Definition (en)
+    <dd>An established standard to which the described resource conforms.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2885,10 +3050,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor distributionen først blev formelt udgivet
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the date of formal issuance (e.g., publication) of the Distribution.
+    <dt>Definition (en)
+    <dd>Date of formal issuance of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2898,10 +3065,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver den dato hvor distributionen senest er blevet ændret.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the most recent date on which the Distribution was changed or modified.
+    <dt>Definition (en)
+    <dd>Date on which the resource was changed.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2911,10 +3080,13 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) 
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. 
+    <dt>Definition (en)
+    <dd>Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. 
+									Since Status is defined using a skos:Concept, that is the defined range for this property.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2924,10 +3096,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/r5r/availability
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property indicates how long it is planned to keep the Distribution of the Dataset available. 
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2937,10 +3111,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2950,10 +3126,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksum
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2963,10 +3141,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#byteSize
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the size of a Distribution in bytes.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2976,10 +3156,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#mediaType
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2989,10 +3171,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/format
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the file format of the Distribution
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3002,10 +3186,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#compressFormat
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3015,10 +3201,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#packageFormat
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3028,10 +3216,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/page
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a page or document about this Distribution.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3041,10 +3231,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/odrl/2/hasPolicy
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3054,10 +3246,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/rights
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a statement that specifies rights associated with the Distribution.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3067,10 +3261,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the licence under which the Distribution is made available.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3080,10 +3276,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the minimum time period resolvable in the dataset distribution.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3093,23 +3291,27 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to the  minimum spatial separation resolvable in a dataset distribution, measured in meters.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>
    </dl>
-    ## 
+   <p>##</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#DataService
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>A collection of operations that provides access to one or more datasets or data processing functions.
+    <dt>Definition (en)
+    <dd>
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3117,10 +3319,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointURL
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>The root location or primary endpoint of the service (an IRI).
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3130,10 +3334,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det eller de ord som navngiver dataservicen. Egenskaben kan gentages for hver sprogvariant.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.
+    <dt>Definition (en)
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3143,10 +3349,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointDescription
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3156,10 +3364,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>tekstbaseret beskrivelse af dataservicen
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3169,10 +3379,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#servesDataset
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a collection of data that this data service can distribute
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3182,10 +3394,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/licence
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains the licence under which the Data service is made available.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3195,10 +3409,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property MAY include information regarding access or restrictions based on privacy, security, or other policies.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3208,10 +3424,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/Agent
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended. 
+    <dt>Definition (en)
+    <dd>
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3219,10 +3437,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/name
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3232,10 +3452,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a type of the agent that makes the Catalogue or Dataset available
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3245,10 +3467,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>A concept collection (e.g. controlled vocabulary) in which the Category is defined.
+    <dt>Definition (en)
+    <dd>
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3256,10 +3480,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
-    <dt>Definition
-    <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da)
+    <dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a name of the category scheme. May be repeated for different versions of the name
+    <dt>Definition (en)
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3269,9 +3495,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#Concept
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3280,10 +3508,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#prefLabel
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3293,9 +3523,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#Checksum
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3304,10 +3536,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#algorithm
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
@@ -3317,10 +3551,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksumValue
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property provides a lower case hexadecimal encoded digest value produced using a specific algorithm
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>1..1
     <dt>Kravniveau
@@ -3330,10 +3566,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>
-    <dt>Definition
-    <dd>the union of Catalog, Dataset and DataService
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da) 
     <dd>
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
+    <dd>the union of Catalog, Dataset and DataService
     <dt>Kravniveau
     <dd>
    </dl>
@@ -3341,9 +3579,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#Identifier
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3352,10 +3592,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#notation
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3365,9 +3607,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/LicenseDocument
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3376,10 +3620,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’.
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3389,9 +3635,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/Location
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3400,9 +3648,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#bbox
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>0..1
@@ -3413,9 +3663,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#centroid
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>0..1
@@ -3426,9 +3678,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/locn#geometry
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>0..1
@@ -3439,9 +3693,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/PeriodOfTime
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3450,9 +3706,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#startDate
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>0..1
@@ -3463,9 +3721,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endDate
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>0..1
@@ -3476,10 +3736,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2006/time#hasBeginning
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
     <dd>beginning of a temporal entity
+    <dt>Definition (en)
+    <dd>
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3489,9 +3751,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2006/time#hasEnd
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>0..1
@@ -3502,9 +3766,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Relationship
-    <dt>Definition
+    <dt>Anvendelsesnote (da) 
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Kravniveau
     <dd>
@@ -3513,9 +3779,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>1..*
@@ -3526,9 +3794,11 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#hadRole
-    <dt>Definition
+    <dt>Anvendelsesnote (da)
     <dd>
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
     <dd>
     <dt>Multiplicitet
     <dd>1..*
@@ -3539,10 +3809,12 @@ Marts 2020</p>
    <dl class="def">
     <dt>URI
     <dd>
-    <dt>Definition
-    <dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal
-    <dt>Anvendelsesnote
+    <dt>Anvendelsesnote (da) 
     <dd>
+    <dt>Anvendelsesnote (en)
+    <dd>
+    <dt>Definition (en)
+    <dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal
     <dt>Kravniveau
     <dd>
    </dl>
