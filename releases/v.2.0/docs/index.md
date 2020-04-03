@@ -128,7 +128,7 @@ Abstract: Dette dokument 'Standard for beskrivelse af datasæt (DCAT-AP-DK)' udg
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0
-Date: 2019-03-27
+Date: 2019-04-03
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK/tree/master/releases/v.2.0
@@ -140,7 +140,7 @@ Logo: digst...
 <h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
 
 UDKAST til DCAT-AP-DK 2.0
-Marts 2020
+April 2020
    
 
 
@@ -238,7 +238,7 @@ Distributionsniveauet er det nederste lag i DCAT-standarden. Her beskrives hvord
 # Elementer i DCAT-AP-DK 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
-<p class="issue">Herunder er indsat elementerne fra DCAP-AP samt enkelte yderligere egenskaber. Elementbetegnelserne er oversat til dansk (forslag), men anvendelsesnoterne er endnu ikke oversat. Det er også hensigten at de oprindelige definitioner fra kernemodellerne skal hentes ind. Derudover mangler flere egenskaber angivelse af kravniveau</p>
+<p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne er oversat til dansk (forslag), men anvendelsesnoterne er endnu kun delvist oversat. Det er også hensigten at alle de oprindelige definitioner fra kernemodellerne skal hentes ind. Derudover mangler flere egenskaber angivelse af kravniveau</p>
 
 
 ## Katalog
