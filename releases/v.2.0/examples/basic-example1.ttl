@@ -35,8 +35,8 @@ ex:dataset-001-csv
   dct:title "CSV-distribution af datsættet 001"@da ;  
   dcat:byteSize "5120"^^xsd:decimal ;
   dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
-  dct:format <http://publications.europa.eu/resource/dataset/file-type/csv> ;
-
+  dct:format <http://publications.europa.eu/resource/authority/file-type/csv> ;
+.
 ex:dataset-001-xml
   a dcat:Distribution ;
   dcat:accessURL <http://www.example.org/files/001.xml> ;
@@ -45,11 +45,10 @@ ex:dataset-001-xml
   dct:title "XML-distribution af datsættet 001"@da ;  
   dcat:byteSize "6120"^^xsd:decimal ;
   dcat:mediaType <https://www.iana.org/assignments/media-types/text/xml> ;
-  dct:format <http://publications.europa.eu/resource/dataset/file-type/xml> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/xml> ;
 .
 ex:agent-001
   a foaf:Agent;
   a foaf:Organization ;
   foaf:name "Organisation 001"@da ;  
   foaf:name "Organization 001"@en .
-
