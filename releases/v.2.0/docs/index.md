@@ -239,7 +239,7 @@ Distributionsniveauet er det nederste lag i DCAT-standarden. Her beskrives hvord
 # Elementer i DCAT-AP-DK 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
-<p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne er oversat til dansk (forslag), men anvendelsesnoterne er endnu kun delvist oversat. Det er også hensigten at alle de oprindelige definitioner fra kernemodellerne skal hentes ind. Derudover mangler flere egenskaber angivelse af kravniveau</p>
+<p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler</p>
 
 
 
