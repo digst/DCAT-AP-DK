@@ -26,6 +26,7 @@ ex:dataset-001
   dct:issued "2011-12-05"^^xsd:date ;
   dct:modified "2011-12-15"^^xsd:date ;
   dcat:distribution ex:dataset-001-csv ;
+  dcat:distribution ex:dataset-001-xml ;
 .
 ex:dataset-001-csv
   a dcat:Distribution ;
