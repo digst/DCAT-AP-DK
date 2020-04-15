@@ -182,16 +182,18 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 
 ## Konformans og afvigelser fra DCAT-AP
-DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
+DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. 
+
+Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 
 ### Ændringer af kravniveau
 
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf).
 
-* Obligatorisk (Mandatory): informationen SKAL angives
-* Anbefalet (Recommended): informationen BØR bør angives hvis den er tilgængelig
-* Valgfri (Optional): informationen KAN bør angives  
+* **Obligatorisk** (Mandatory): informationen SKAL angives
+* **Anbefalet** (Recommended): informationen BØR bør angives hvis den er tilgængelig
+* **Valgfri** (Optional): informationen KAN bør angives  
 
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
