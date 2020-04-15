@@ -270,7 +270,11 @@ Anvendelseprofilen DCAT-AP visualiseret med UML-diagram
 
 
 # Modellens grundlæggende struktur
-DCAT bevæger sig i tre sammenhængende niveauer, et katalogniveau, på datasætniveau og på et distributionsniveau. Hvert element på et givet niveau kan beskrives med metadata, såsom titel, beskrivelse osv. 
+DCAT bevæger sig i tre sammenhængende niveauer, et katalogniveau, på datasætniveau og på et distributionsniveau. 
+
+Hvert element på et givet niveau kan beskrives med metadata, såsom titel, beskrivelse, identifikator osv. 
+
+<p align="center"><a href="img/Figur-DCAT-niveauerne.PNG"><img src="Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="800"/></a></p>
 
 ## Katalogniveauet
 Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
