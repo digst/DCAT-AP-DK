@@ -1481,7 +1481,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
-   <h1>DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
+   <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
    <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-04-15">15 April 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
@@ -1590,7 +1590,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <ol class="toc">
       <li><a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
       <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
-      <li><a href="#begrebsliste"><span class="secno">7.3</span> <span class="content">Begrebsliste</span></a>
+      <li><a href="#validering"><span class="secno">7.3</span> <span class="content">Validering</span></a>
+      <li><a href="#begrebsliste"><span class="secno">7.4</span> <span class="content">Begrebsliste</span></a>
      </ol>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
@@ -1651,7 +1652,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <p>Datasæt: har anvendelse (duv:hasUsage)</p>
    </ul>
    <h4 class="heading settled" data-level="1.5.3" id="udeladelser"><span class="secno">1.5.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h4>
-    Der er ikke blevet uddeladt elementer fra DCAT-AP i DCAT-AP-DK. 
+    Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK. 
    <h2 class="heading settled" data-level="2" id="oversigt-over-anvendelsesprofilen"><span class="secno">2. </span><span class="content">Oversigt over anvendelsesprofilen</span><a class="self-link" href="#oversigt-over-anvendelsesprofilen"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="diagram"><span class="secno">2.1. </span><span class="content">Diagram</span><a class="self-link" href="#diagram"></a></h3>
     Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer) 
@@ -1711,6 +1712,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <p>voaf: http://purl.org/vocommons/voaf#</p>
     <li data-md>
      <p>vcard: http://www.w3.org/2006/vcard/ns#</p>
+    <li data-md>
+     <p>dqv: https://www.w3.org/ns/dqv</p>
+    <li data-md>
+     <p>duv: https://www.w3.org/ns/duv</p>
+    <li data-md>
+     <p>dcat-dk: https://data.gov.dk/model/core/dcat-dk/</p>
     <li data-md>
      <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    </ul>
@@ -4264,30 +4271,50 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <ul>
     <li data-md>
-     <p>DCAT 2.0: https://www.w3.org/TR/vocab-dcat-2/</p>
+     <p><a href="(https://www.w3.org/TR/vocab-dcat-2/">DCAT 2.0</a></p>
     <li data-md>
-     <p>DCAT-AP 2.0: https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200</p>
+     <p><a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200">DCAT-AP 2.0</a></p>
     <li data-md>
-     <p>DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload</p>
+     <p><a href="https://www.itb.ec.europa.eu/shacl/dcat-ap/upload">DCAT-AP validator</a></p>
     <li data-md>
-     <p>DCAT-AP-OP (1.1): http://data.europa.eu/euodp/en/developerscorner</p>
+     <p><a href="http://data.europa.eu/euodp/en/developerscorner">DCAT-AP-OP (1.1)</a></p>
     <li data-md>
-     <p>Overblik over nationale DCAT-APer: https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf</p>
+     <p><a href="https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf">Overblik over nationale DCAT-APer</a></p>
     <li data-md>
-     <p>EDP Goldbook: https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf</p>
+     <p><a href="https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf">EDP Goldbook</a></p>
     <li data-md>
-     <p>W3C Data Quality Vocabulary: https://www.w3.org/TR/vocab-dqv/</p>
+     <p><a href="https://www.w3.org/TR/vocab-dqv/">W3C Data Quality Vocabulary</a></p>
     <li data-md>
-     <p>Fælles sprog for datakvalitet: https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx</p>
+     <p><a href="https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx">Fælles sprog for datakvalitet</a></p>
     <li data-md>
-     <p>W3C Data on the Web Best practices: https://www.w3.org/TR/dwbp/</p>
+     <p><a href="https://www.w3.org/TR/dwbp/">W3C Data on the Web Best practices</a></p>
    </ul>
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
    <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
-   <h3 class="heading settled" data-level="7.3" id="begrebsliste"><span class="secno">7.3. </span><span class="content">Begrebsliste</span><a class="self-link" href="#begrebsliste"></a></h3>
+   <p>Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
+Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)</p>
+   <p>Find eksemplerne her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a></p>
+   <h3 class="heading settled" data-level="7.3" id="validering"><span class="secno">7.3. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h3>
+   <p>Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som muliggør validering af DCAT-AP-DK-metadata.</p>
+   <p>SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).</p>
+   <p>Find SHACL-filen her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a></p>
+   <p>I SHACL Playground kan indholdet af TTL-filen her indsættes hvorefter DCAT-AP-DK-metadata indsættes.
+DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som anvender denne.</p>
+   <p>Relevante links:</p>
+   <ul>
+    <li data-md>
+     <p>SHACL Playground: <a href="https://shacl.org/playground/">https://shacl.org/playground/</a></p>
+    <li data-md>
+     <p>RDF validator: <a href="https://www.w3.org/RDF/Validator/">https://www.w3.org/RDF/Validator/</a></p>
+    <li data-md>
+     <p>DCAT-AP validator: <a href="https://www.itb.ec.europa.eu/shacl/dcat-ap/upload">https://www.itb.ec.europa.eu/shacl/dcat-ap/upload</a></p>
+    <li data-md>
+     <p>RDF converter: <a href="http://www.easyrdf.org/converter">http://www.easyrdf.org/converter</a></p>
+   </ul>
+   <h3 class="heading settled" data-level="7.4" id="begrebsliste"><span class="secno">7.4. </span><span class="content">Begrebsliste</span><a class="self-link" href="#begrebsliste"></a></h3>
     ================ 
-   <p>arkitektur.digst.dk</p>
+   <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
 <script>
 (function() {
