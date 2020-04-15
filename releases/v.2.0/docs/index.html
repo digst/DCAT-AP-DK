@@ -1,8 +1,7 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)</title>
+  <title>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1482,8 +1481,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
-   <h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-04-14">14 April 2019</time></span></h2>
+   <h1>DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-04-15">15 April 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1525,13 +1524,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#baggrund"><span class="secno">1.2</span> <span class="content">Baggrund</span></a>
       <li><a href="#metode"><span class="secno">1.3</span> <span class="content">Metode</span></a>
       <li><a href="#standardens-anvendelse-og-afgrnsning"><span class="secno">1.4</span> <span class="content">Standardens anvendelse og afgrænsning</span></a>
-      <li>
-       <a href="#konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.5</span> <span class="content">Konformans og afvigelser fra DCAT-AP</span></a>
-       <ol class="toc">
-        <li><a href="#tilfjelser"><span class="secno">1.5.1</span> <span class="content">Tilføjelser</span></a>
-        <li><a href="#udeladelser"><span class="secno">1.5.2</span> <span class="content">Udeladelser</span></a>
-        <li><a href="#ndringer-af-kravniveau"><span class="secno">1.5.3</span> <span class="content">Ændringer af kravniveau</span></a>
-       </ol>
+      <li><a href="#konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.5</span> <span class="content">Konformans og afvigelser fra DCAT-AP</span></a>
      </ol>
     <li>
      <a href="#oversigt-over-anvendelsesprofilen"><span class="secno">2</span> <span class="content">Oversigt over anvendelsesprofilen</span></a>
@@ -1550,182 +1543,31 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li>
      <a href="#elementer-i-dcat-ap-dk"><span class="secno">4</span> <span class="content">Elementer i DCAT-AP-DK</span></a>
      <ol class="toc">
-      <li>
-       <a href="#katalog"><span class="secno">4.1</span> <span class="content">Katalog</span></a>
-       <ol class="toc">
-        <li><a href="#titel"><span class="secno">4.1.1</span> <span class="content">titel</span></a>
-        <li><a href="#beskrivelse"><span class="secno">4.1.2</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#datast"><span class="secno">4.1.3</span> <span class="content">datasæt</span></a>
-        <li><a href="#dataservice"><span class="secno">4.1.4</span> <span class="content">dataservice</span></a>
-        <li><a href="#udgiver"><span class="secno">4.1.5</span> <span class="content">udgiver</span></a>
-        <li><a href="#skaber"><span class="secno">4.1.6</span> <span class="content">skaber</span></a>
-        <li><a href="#websted"><span class="secno">4.1.7</span> <span class="content">websted</span></a>
-        <li><a href="#udgivelsesdato"><span class="secno">4.1.8</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#seneste-opdateringsdato"><span class="secno">4.1.9</span> <span class="content">seneste opdateringsdato</span></a>
-        <li><a href="#emneklassifikation"><span class="secno">4.1.10</span> <span class="content">emneklassifikation</span></a>
-        <li><a href="#geografisk-omrde"><span class="secno">4.1.11</span> <span class="content">geografisk område</span></a>
-        <li><a href="#sprog"><span class="secno">4.1.12</span> <span class="content">sprog</span></a>
-        <li><a href="#licens"><span class="secno">4.1.13</span> <span class="content">licens</span></a>
-        <li><a href="#adgangsrettigheder"><span class="secno">4.1.14</span> <span class="content">adgangsrettigheder</span></a>
-        <li><a href="#katalogpost"><span class="secno">4.1.15</span> <span class="content">katalogpost</span></a>
-        <li><a href="#katalog①"><span class="secno">4.1.16</span> <span class="content">katalog</span></a>
-        <li><a href="#delkatalog"><span class="secno">4.1.17</span> <span class="content">delkatalog</span></a>
-        <li><a href="#del-af-katalog"><span class="secno">4.1.18</span> <span class="content">del af katalog</span></a>
-       </ol>
-      <li>
-       <a href="#katalogpost①"><span class="secno">4.2</span> <span class="content">Katalogpost</span></a>
-       <ol class="toc">
-        <li><a href="#genstand-for-registrering"><span class="secno">4.2.1</span> <span class="content">genstand for registrering</span></a>
-        <li><a href="#udgivelsesdato①"><span class="secno">4.2.2</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#seneste-ndringsdato"><span class="secno">4.2.3</span> <span class="content">seneste ændringsdato</span></a>
-        <li><a href="#status"><span class="secno">4.2.4</span> <span class="content">status</span></a>
-        <li><a href="#titel①"><span class="secno">4.2.5</span> <span class="content">titel</span></a>
-        <li><a href="#beskrivelse①"><span class="secno">4.2.6</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#overenstemmelse"><span class="secno">4.2.7</span> <span class="content">overenstemmelse</span></a>
-        <li><a href="#sprog①"><span class="secno">4.2.8</span> <span class="content">sprog</span></a>
-        <li><a href="#kilde"><span class="secno">4.2.9</span> <span class="content">kilde</span></a>
-       </ol>
-      <li>
-       <a href="#datast①"><span class="secno">4.3</span> <span class="content">Datasæt</span></a>
-       <ol class="toc">
-        <li><a href="#identifikator"><span class="secno">4.3.1</span> <span class="content">identifikator</span></a>
-        <li><a href="#anden-identifikator"><span class="secno">4.3.2</span> <span class="content">anden identifikator</span></a>
-        <li><a href="#titel②"><span class="secno">4.3.3</span> <span class="content">titel</span></a>
-        <li><a href="#beskrivelse②"><span class="secno">4.3.4</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#udgiver①"><span class="secno">4.3.5</span> <span class="content">udgiver</span></a>
-        <li><a href="#dataansvarlig-organisation"><span class="secno">4.3.6</span> <span class="content">dataansvarlig organisation</span></a>
-        <li><a href="#skaber①"><span class="secno">4.3.7</span> <span class="content">skaber</span></a>
-        <li><a href="#bidragsyder"><span class="secno">4.3.8</span> <span class="content">bidragsyder</span></a>
-        <li><a href="#vedligeholder"><span class="secno">4.3.9</span> <span class="content">vedligeholder</span></a>
-        <li><a href="#kontaktpunkt"><span class="secno">4.3.10</span> <span class="content">kontaktpunkt</span></a>
-        <li><a href="#distribution"><span class="secno">4.3.11</span> <span class="content">distribution</span></a>
-        <li><a href="#uddrag"><span class="secno">4.3.12</span> <span class="content">uddrag</span></a>
-        <li><a href="#destinationsside"><span class="secno">4.3.13</span> <span class="content">destinationsside</span></a>
-        <li><a href="#overenstemmelse①"><span class="secno">4.3.14</span> <span class="content">overenstemmelse</span></a>
-        <li><a href="#dokumentation"><span class="secno">4.3.15</span> <span class="content">dokumentation</span></a>
-        <li><a href="#emne"><span class="secno">4.3.16</span> <span class="content">emne</span></a>
-        <li><a href="#type"><span class="secno">4.3.17</span> <span class="content">type</span></a>
-        <li><a href="#sgeord"><span class="secno">4.3.18</span> <span class="content">søgeord</span></a>
-        <li><a href="#sprog②"><span class="secno">4.3.19</span> <span class="content">sprog</span></a>
-        <li><a href="#adgangsrettigheder①"><span class="secno">4.3.20</span> <span class="content">adgangsrettigheder</span></a>
-        <li><a href="#geografisk-omrde①"><span class="secno">4.3.21</span> <span class="content">geografisk område</span></a>
-        <li><a href="#rumlig-oplsning-i-meter"><span class="secno">4.3.22</span> <span class="content">rumlig opløsning (i meter)</span></a>
-        <li><a href="#dkningsperiode"><span class="secno">4.3.23</span> <span class="content">dækningsperiode</span></a>
-        <li><a href="#tidslig-oplsning"><span class="secno">4.3.24</span> <span class="content">tidslig opløsning</span></a>
-        <li><a href="#opdateringsfrekvens"><span class="secno">4.3.25</span> <span class="content">opdateringsfrekvens</span></a>
-        <li><a href="#udgivelsesdato②"><span class="secno">4.3.26</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#opdateringsdato"><span class="secno">4.3.27</span> <span class="content">opdateringsdato</span></a>
-        <li><a href="#har-kvalitetsmetadata"><span class="secno">4.3.28</span> <span class="content">har kvalitetsmetadata</span></a>
-        <li><a href="#har-anvendelse"><span class="secno">4.3.29</span> <span class="content">har anvendelse</span></a>
-        <li><a href="#betalingsplagt"><span class="secno">4.3.30</span> <span class="content">betalingspålagt</span></a>
-        <li><a href="#personoplysningskategori"><span class="secno">4.3.31</span> <span class="content">personoplysningskategori</span></a>
-        <li><a href="#fortrolighedsgrad"><span class="secno">4.3.32</span> <span class="content">fortrolighedsgrad</span></a>
-        <li><a href="#hjemmel"><span class="secno">4.3.33</span> <span class="content">hjemmel</span></a>
-        <li><a href="#versionsnummer"><span class="secno">4.3.34</span> <span class="content">versionsnummer</span></a>
-        <li><a href="#versionsnoter"><span class="secno">4.3.35</span> <span class="content">versionsnoter</span></a>
-        <li><a href="#har-version"><span class="secno">4.3.36</span> <span class="content">har version</span></a>
-        <li><a href="#er-version-af"><span class="secno">4.3.37</span> <span class="content">er version af</span></a>
-        <li><a href="#proveniensudsagn"><span class="secno">4.3.38</span> <span class="content">proveniensudsagn</span></a>
-        <li><a href="#relateret-ressource"><span class="secno">4.3.39</span> <span class="content">relateret ressource</span></a>
-        <li><a href="#kildedatast"><span class="secno">4.3.40</span> <span class="content">kildedatasæt</span></a>
-        <li><a href="#refereres-af"><span class="secno">4.3.41</span> <span class="content">refereres af</span></a>
-        <li><a href="#prciseret-tilskrivning"><span class="secno">4.3.42</span> <span class="content">præciseret tilskrivning</span></a>
-        <li><a href="#prciseret-relation"><span class="secno">4.3.43</span> <span class="content">præciseret relation</span></a>
-        <li><a href="#blev-genereret-ved"><span class="secno">4.3.44</span> <span class="content">blev genereret ved</span></a>
-       </ol>
-      <li>
-       <a href="#distribution①"><span class="secno">4.4</span> <span class="content">Distribution</span></a>
-       <ol class="toc">
-        <li><a href="#adgangs-url"><span class="secno">4.4.1</span> <span class="content">adgangs-URL</span></a>
-        <li><a href="#download-url"><span class="secno">4.4.2</span> <span class="content">download-URL</span></a>
-        <li><a href="#adgangsservice"><span class="secno">4.4.3</span> <span class="content">adgangsservice</span></a>
-        <li><a href="#titel③"><span class="secno">4.4.4</span> <span class="content">titel</span></a>
-        <li><a href="#beskrivelse③"><span class="secno">4.4.5</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#overenstemmelse②"><span class="secno">4.4.6</span> <span class="content">overenstemmelse</span></a>
-        <li><a href="#udgivelsesdato③"><span class="secno">4.4.7</span> <span class="content">udgivelsesdato</span></a>
-        <li><a href="#seneste-ndringsdato①"><span class="secno">4.4.8</span> <span class="content">seneste ændringsdato</span></a>
-        <li><a href="#status①"><span class="secno">4.4.9</span> <span class="content">status</span></a>
-        <li><a href="#tilgngeligstype"><span class="secno">4.4.10</span> <span class="content">tilgængeligstype</span></a>
-        <li><a href="#sprog③"><span class="secno">4.4.11</span> <span class="content">sprog</span></a>
-        <li><a href="#checksum"><span class="secno">4.4.12</span> <span class="content">checksum</span></a>
-        <li><a href="#bytestrrelse"><span class="secno">4.4.13</span> <span class="content">bytestørrelse</span></a>
-        <li><a href="#medietype"><span class="secno">4.4.14</span> <span class="content">medietype</span></a>
-        <li><a href="#format"><span class="secno">4.4.15</span> <span class="content">format</span></a>
-        <li><a href="#kompressionsformat"><span class="secno">4.4.16</span> <span class="content">kompressionsformat</span></a>
-        <li><a href="#pakkeformat"><span class="secno">4.4.17</span> <span class="content">pakkeformat</span></a>
-        <li><a href="#dokumentation①"><span class="secno">4.4.18</span> <span class="content">dokumentation</span></a>
-        <li><a href="#har-politik"><span class="secno">4.4.19</span> <span class="content">har politik</span></a>
-        <li><a href="#licens①"><span class="secno">4.4.20</span> <span class="content">licens</span></a>
-        <li><a href="#adgangsrettigheder②"><span class="secno">4.4.21</span> <span class="content">adgangsrettigheder</span></a>
-        <li><a href="#tidslig-oplsning①"><span class="secno">4.4.22</span> <span class="content">tidslig opløsning</span></a>
-        <li><a href="#rumlig-oplsning-i-meter①"><span class="secno">4.4.23</span> <span class="content">rumlig opløsning (i meter)</span></a>
-       </ol>
-      <li>
-       <a href="#dataservice①"><span class="secno">4.5</span> <span class="content">Dataservice</span></a>
-       <ol class="toc">
-        <li><a href="#endpoint-url"><span class="secno">4.5.1</span> <span class="content">endpoint-URL</span></a>
-        <li><a href="#titel④"><span class="secno">4.5.2</span> <span class="content">titel</span></a>
-        <li><a href="#endpointbeskrivelse"><span class="secno">4.5.3</span> <span class="content">endpointbeskrivelse</span></a>
-        <li><a href="#beskrivelse④"><span class="secno">4.5.4</span> <span class="content">beskrivelse</span></a>
-        <li><a href="#leverer-datast"><span class="secno">4.5.5</span> <span class="content">leverer datasæt</span></a>
-        <li><a href="#licens②"><span class="secno">4.5.6</span> <span class="content">licens</span></a>
-        <li><a href="#adgangsrettigheder③"><span class="secno">4.5.7</span> <span class="content">adgangsrettigheder</span></a>
-       </ol>
-      <li>
-       <a href="#aktr"><span class="secno">4.6</span> <span class="content">Aktør</span></a>
-       <ol class="toc">
-        <li><a href="#navn"><span class="secno">4.6.1</span> <span class="content">navn</span></a>
-        <li><a href="#aktrtype"><span class="secno">4.6.2</span> <span class="content">aktørtype</span></a>
-       </ol>
-      <li>
-       <a href="#emneklassifikation①"><span class="secno">4.7</span> <span class="content">Emneklassifikation</span></a>
-       <ol class="toc">
-        <li><a href="#titel⑤"><span class="secno">4.7.1</span> <span class="content">titel</span></a>
-       </ol>
-      <li>
-       <a href="#klassifikationsemne"><span class="secno">4.8</span> <span class="content">Klassifikationsemne</span></a>
-       <ol class="toc">
-        <li><a href="#foretrukken-betegnelse"><span class="secno">4.8.1</span> <span class="content">foretrukken betegnelse</span></a>
-       </ol>
-      <li>
-       <a href="#checksum①"><span class="secno">4.9</span> <span class="content">Checksum</span></a>
-       <ol class="toc">
-        <li><a href="#algoritme"><span class="secno">4.9.1</span> <span class="content">algoritme</span></a>
-        <li><a href="#checksumvrdi"><span class="secno">4.9.2</span> <span class="content">checksumværdi</span></a>
-       </ol>
-      <li><a href="#katalogressource"><span class="secno">4.10</span> <span class="content">Katalogressource</span></a>
-      <li>
-       <a href="#identifikator①"><span class="secno">4.11</span> <span class="content">Identifikator</span></a>
-       <ol class="toc">
-        <li><a href="#notation"><span class="secno">4.11.1</span> <span class="content">notation</span></a>
-       </ol>
-      <li>
-       <a href="#licensdokument"><span class="secno">4.12</span> <span class="content">Licensdokument</span></a>
-       <ol class="toc">
-        <li><a href="#licenstype"><span class="secno">4.12.1</span> <span class="content">licenstype</span></a>
-       </ol>
-      <li>
-       <a href="#lokation"><span class="secno">4.13</span> <span class="content">Lokation</span></a>
-       <ol class="toc">
-        <li><a href="#bounding-box"><span class="secno">4.13.1</span> <span class="content">bounding box</span></a>
-        <li><a href="#geografisk-tyngdepunkt"><span class="secno">4.13.2</span> <span class="content">geografisk tyngdepunkt</span></a>
-        <li><a href="#geometri"><span class="secno">4.13.3</span> <span class="content">geometri</span></a>
-       </ol>
-      <li>
-       <a href="#periode"><span class="secno">4.14</span> <span class="content">Periode</span></a>
-       <ol class="toc">
-        <li><a href="#startdato"><span class="secno">4.14.1</span> <span class="content">startdato</span></a>
-        <li><a href="#slutdato"><span class="secno">4.14.2</span> <span class="content">slutdato</span></a>
-        <li><a href="#har-begyndelse"><span class="secno">4.14.3</span> <span class="content">har begyndelse</span></a>
-        <li><a href="#har-slutning"><span class="secno">4.14.4</span> <span class="content">har slutning</span></a>
-       </ol>
-      <li>
-       <a href="#relation"><span class="secno">4.15</span> <span class="content">Relation</span></a>
-       <ol class="toc">
-        <li><a href="#relation①"><span class="secno">4.15.1</span> <span class="content">relation</span></a>
-        <li><a href="#havde-rolle"><span class="secno">4.15.2</span> <span class="content">havde rolle</span></a>
-       </ol>
-      <li><a href="#tidsdatatype"><span class="secno">4.16</span> <span class="content">Tidsdatatype</span></a>
+      <li><a href="#katalog"><span class="secno">4.1</span> <span class="content">Katalog</span></a>
+      <li><a href="#katalogpost①"><span class="secno">4.2</span> <span class="content">Katalogpost</span></a>
+      <li><a href="#datast①"><span class="secno">4.3</span> <span class="content">Datasæt</span></a>
+      <li><a href="#distribution①"><span class="secno">4.4</span> <span class="content">Distribution</span></a>
+      <li><a href="#dataservice①"><span class="secno">4.5</span> <span class="content">Dataservice</span></a>
+      <li><a href="#aktr"><span class="secno">4.6</span> <span class="content">Aktør</span></a>
+      <li><a href="#begrebssystem"><span class="secno">4.7</span> <span class="content">Begrebssystem</span></a>
+      <li><a href="#begreb"><span class="secno">4.8</span> <span class="content">Begreb</span></a>
+      <li><a href="#checksum①"><span class="secno">4.9</span> <span class="content">Checksum</span></a>
+      <li><a href="#identifikator①"><span class="secno">4.10</span> <span class="content">Identifikator</span></a>
+      <li><a href="#licensdokument"><span class="secno">4.11</span> <span class="content">Licensdokument</span></a>
+      <li><a href="#lokation"><span class="secno">4.12</span> <span class="content">Lokation</span></a>
+      <li><a href="#periode"><span class="secno">4.13</span> <span class="content">Periode</span></a>
+      <li><a href="#relation"><span class="secno">4.14</span> <span class="content">Relation</span></a>
+      <li><a href="#frekvens"><span class="secno">4.15</span> <span class="content">Frekvens</span></a>
+      <li><a href="#lingvistisk-system"><span class="secno">4.16</span> <span class="content">Lingvistisk system</span></a>
+      <li><a href="#medietype①"><span class="secno">4.17</span> <span class="content">Medietype</span></a>
+      <li><a href="#udgivertype"><span class="secno">4.18</span> <span class="content">Udgivertype</span></a>
+      <li><a href="#status②"><span class="secno">4.19</span> <span class="content">Status</span></a>
+      <li><a href="#rolle"><span class="secno">4.20</span> <span class="content">Rolle</span></a>
+      <li><a href="#proveniensudsagn①"><span class="secno">4.21</span> <span class="content">Proveniensudsagn</span></a>
+      <li><a href="#dokument"><span class="secno">4.22</span> <span class="content">Dokument</span></a>
+      <li><a href="#rettighedsudsagn"><span class="secno">4.23</span> <span class="content">Rettighedsudsagn</span></a>
+      <li><a href="#specifikation"><span class="secno">4.24</span> <span class="content">Specifikation</span></a>
+      <li><a href="#virtuelt-visitkort"><span class="secno">4.25</span> <span class="content">Virtuelt visitkort</span></a>
      </ol>
     <li>
      <a href="#klassifikationer"><span class="secno">5</span> <span class="content">Klassifikationer</span></a>
@@ -1769,11 +1611,53 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p>Selve udviklingsarbejdet er foretaget i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og standarden udgøres af en basisprofil, der sammensætter flere eksisterende nationale og internationale modeller.</p>
    <h3 class="heading settled" data-level="1.4" id="standardens-anvendelse-og-afgrnsning"><span class="secno">1.4. </span><span class="content">Standardens anvendelse og afgrænsning</span><a class="self-link" href="#standardens-anvendelse-og-afgrnsning"></a></h3>
    <h3 class="heading settled" data-level="1.5" id="konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.5. </span><span class="content">Konformans og afvigelser fra DCAT-AP</span><a class="self-link" href="#konformans-og-afvigelser-fra-dcat-ap"></a></h3>
-   <h4 class="heading settled" data-level="1.5.1" id="tilfjelser"><span class="secno">1.5.1. </span><span class="content">Tilføjelser</span><a class="self-link" href="#tilfjelser"></a></h4>
-   <h4 class="heading settled" data-level="1.5.2" id="udeladelser"><span class="secno">1.5.2. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h4>
-   <h4 class="heading settled" data-level="1.5.3" id="ndringer-af-kravniveau"><span class="secno">1.5.3. </span><span class="content">Ændringer af kravniveau</span><a class="self-link" href="#ndringer-af-kravniveau"></a></h4>
+    DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt. 
+   <h4 class="heading settled" data-level="1.5.1" id="ndringer-af-kravniveau"><span class="secno">1.5.1. </span><span class="content">Ændringer af kravniveau</span><a class="self-link" href="#ndringer-af-kravniveau"></a></h4>
+    Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP: 
+   <ul>
+    <li data-md>
+     <p>Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet</p>
+    <li data-md>
+     <p>Datasæt: søgeord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri</p>
+    <li data-md>
+     <p>Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet ></p>
+    <li data-md>
+     <p>Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet</p>
+    <li data-md>
+     <p>Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet</p>
+   </ul>
+   <h4 class="heading settled" data-level="1.5.2" id="tilfjelser"><span class="secno">1.5.2. </span><span class="content">Tilføjelser</span><a class="self-link" href="#tilfjelser"></a></h4>
+    Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP: 
+   <ul>
+    <li data-md>
+     <p>Datasæt: forvaltningsopgave (dcat-dk:publicAdministrativeTaskType - subproperty of dcat:theme) FORMversionNumber</p>
+    <li data-md>
+     <p>Datasæt: dataansvarlig organisation (frbr:responsibleEntity)</p>
+    <li data-md>
+     <p>Datasæt: bidragsyder (dct:contributor</p>
+    <li data-md>
+     <p>Datasæt: vedligeholder (schema:maintainer)</p>
+    <li data-md>
+     <p>Datasæt: hjemmel (cv:hasLegalResource)</p>
+    <li data-md>
+     <p>Datasæt: betalingspålagt (dcat-dk:paymentImposed)</p>
+    <li data-md>
+     <p>Datasæt: personoplysningskategori (dcat-dk:personalDataCategory)</p>
+    <li data-md>
+     <p>Datasæt: fortrolighedsgrad (dcat-dk:confidentialityType)</p>
+    <li data-md>
+     <p>Datasæt: har kvalitetsmetadata (dqv:hasQualityMetadata)</p>
+    <li data-md>
+     <p>Datasæt: har anvendelse (duv:hasUsage)</p>
+   </ul>
+   <h4 class="heading settled" data-level="1.5.3" id="udeladelser"><span class="secno">1.5.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h4>
+    Der er ikke blevet uddeladt elementer fra DCAT-AP i DCAT-AP-DK. 
    <h2 class="heading settled" data-level="2" id="oversigt-over-anvendelsesprofilen"><span class="secno">2. </span><span class="content">Oversigt over anvendelsesprofilen</span><a class="self-link" href="#oversigt-over-anvendelsesprofilen"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="diagram"><span class="secno">2.1. </span><span class="content">Diagram</span><a class="self-link" href="#diagram"></a></h3>
+    Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer) 
+   <p>!<a href="https://github.com/digst/DCAT-AP-DK/edit/master/releases/v.2.0/docs/img/DCAT-AP-DKv2.png" title="DCAT-AP-DK v2 UML Diagram">DCAT-AP-DK UML-diagram</a></p>
+   <p>Anvendelseprofilen DCAT-AP visualiseret med UML-diagram</p>
+   <p>!<a href="https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/b6864a7d-4b8b-4fbe-8f03-5e0c3df002af/DCAT_AP_2.0.0.png" title="DCAT-AP 2 UML Diagram">DCAT-AP UML-diagram</a></p>
    <h3 class="heading settled" data-level="2.2" id="emner"><span class="secno">2.2. </span><span class="content">Emner</span><a class="self-link" href="#emner"></a></h3>
    <ul>
     <li data-md>
@@ -1841,7 +1725,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <p class="issue" id="issue-510b117a"><a class="self-link" href="#issue-510b117a"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler pt.</p>
+   <p class="issue" id="issue-e84322d9"><a class="self-link" href="#issue-e84322d9"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler</p>
    <h3 class="heading settled" data-level="4.1" id="katalog"><span class="secno">4.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
    <dl class="def">
     <dt>URI
@@ -1853,14 +1737,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h4 class="heading settled" data-level="4.1.1" id="titel"><span class="secno">4.1.1. </span><span class="content">titel</span><a class="self-link" href="#titel"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver det eller de ord der navngiver kataloget 
+    <dd>Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. 
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.
     <dt>Definition (en)
@@ -1874,6 +1760,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen
     <dt>Anvendelsesnote (en)
@@ -1889,6 +1777,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#dataset
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et datasæt som er opført i kataloget
     <dt>Anvendelsesnote (en)
@@ -1904,6 +1794,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#service
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#DataService
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et websted eller endpoint som er opført i kataloget.
     <dt>Anvendelsesnote (en)
@@ -1919,6 +1811,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/publisher
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængligt.
     <dt>Anvendelsesnote (en)
@@ -1934,6 +1828,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/creator
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktør der primært er ansvarlig for katalogets skabelse.
     <dt>Anvendelsesnote (en)
@@ -1949,6 +1845,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/homepage
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Document
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en webside som fungerer som katalogets hjemmeside.
     <dt>Anvendelsesnote (en)
@@ -1964,6 +1862,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#date el. http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor kataloget først blev formelt udgivet
     <dt>Anvendelsesnote (en)
@@ -1979,6 +1879,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#date el. http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor kataloget senest er blevet ændret.
     <dt>Anvendelsesnote (en)
@@ -1994,6 +1896,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#themeTaxonomy
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/data-theme/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en emneklassifikation der anvendes til kategorisering af datasæt og dataservices i kataloget. Til angivelse af datatema skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme
     <dt>Anvendelsesnote (en)
@@ -2009,6 +1913,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/Location
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.
     <dt>Anvendelsesnote (en)
@@ -2024,6 +1930,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om dataset og dataservices i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language
     <dt>Anvendelsesnote (en)
@@ -2039,6 +1947,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/LicenseDocument
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under.
     <dt>Anvendelsesnote (en)
@@ -2050,10 +1960,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.1.14" id="adgangsrettigheder"><span class="secno">4.1.14. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder"></a></h4>
+   <h4 class="heading settled" data-level="4.1.14" id="rettigheder"><span class="secno">4.1.14. </span><span class="content">rettigheder</span><a class="self-link" href="#rettigheder"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/rights
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/RightsStatement
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget
     <dt>Anvendelsesnote (en)
@@ -2069,6 +1981,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#record
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en registrering af et enkelt datasæt eller en enkelt dataservice som er en del af kataloget
     <dt>Anvendelsesnote (en)
@@ -2084,6 +1998,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#catalog
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et katalog hvis indhold er relevant i forhold til det aktuelle katalog.
     <dt>Anvendelsesnote (en)
@@ -2095,10 +2011,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.1.17" id="delkatalog"><span class="secno">4.1.17. </span><span class="content">delkatalog</span><a class="self-link" href="#delkatalog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.17" id="har-delkatalog"><span class="secno">4.1.17. </span><span class="content">har delkatalog</span><a class="self-link" href="#har-delkatalog"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasPart
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et relateret katalog som er en del af det aktuelle katalog.
     <dt>Anvendelsesnote (en)
@@ -2110,10 +2028,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.1.18" id="del-af-katalog"><span class="secno">4.1.18. </span><span class="content">del af katalog</span><a class="self-link" href="#del-af-katalog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.18" id="er-del-af-katalog"><span class="secno">4.1.18. </span><span class="content">er del af katalog</span><a class="self-link" href="#er-del-af-katalog"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isPartOf
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af.
     <dt>Anvendelsesnote (en)
@@ -2142,6 +2062,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/primaryTopic
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det datasæt, den dataservice eller det katalog som er genstand for registreringen.
     <dt>Anvendelsesnote (en)
@@ -2157,6 +2079,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#date el. http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller dataservicen blev registreret i kataloget.
     <dt>Anvendelsesnote (en)
@@ -2172,6 +2096,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor katalogposten senest er blevet ændret.
     <dt>Anvendelsesnote (en)
@@ -2187,6 +2113,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) 
     <dt>Anvendelsesnote (en)
@@ -2203,6 +2131,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
@@ -2218,6 +2148,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen
     <dt>Anvendelsesnote (en)
@@ -2233,6 +2165,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/Standard
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overenstemmmelse med.
     <dt>Anvendelsesnote (en)
@@ -2248,6 +2182,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om dataset og dataservices i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
@@ -2263,6 +2199,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om det aktuelle datasæt eller den aktuelle dataservice.
     <dt>Anvendelsesnote (en)
@@ -2285,12 +2223,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h4 class="heading settled" data-level="4.3.1" id="identifikator"><span class="secno">4.3.1. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/identifier
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik
     <dt>Anvendelsesnote (en)
@@ -2306,6 +2246,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#identifier
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/adms#Identifier
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver lokal identifikator for datasættet.
     <dt>Anvendelsesnote (en)
@@ -2321,6 +2263,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
@@ -2336,6 +2280,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.
     <dt>Anvendelsesnote (en)
@@ -2351,6 +2297,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/publisher
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.
     <dt>Anvendelsesnote (en)
@@ -2366,6 +2314,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/dataresponsibleorganisation
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt 
     <dt>Anvendelsesnote (en)
@@ -2381,6 +2331,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/creator
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktør der er primært ansvarlig datasættets skabelse.
     <dt>Anvendelsesnote (en)
@@ -2396,6 +2348,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/contributor
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse.
     <dt>Anvendelsesnote (en)
@@ -2411,6 +2365,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://schema.org/maintainer
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt.
     <dt>Anvendelsesnote (en)
@@ -2426,6 +2382,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#contactPoint
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2006/vcard/ns#Kind
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver kontaktoplysninger som kan anvendes til at indsende spørgsmål eller kommentarer om datasættet.
     <dt>Anvendelsesnote (en)
@@ -2441,6 +2399,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#distribution
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Distribution
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en tilgænglig distribution af datasættet.
     <dt>Anvendelsesnote (en)
@@ -2456,6 +2416,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#sample
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Distribution
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et uddrag af en distribution af datasættet
     <dt>Anvendelsesnote (en)
@@ -2471,6 +2433,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#landingPage
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Document
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en webside som giver adgang til datasættet, dets distributioner og/eller yderliger information. 
 		Egenskaben bør pege på en webside hos den oprindelige dataudstiller - ikke en side eller et websted hos tredjepart, såsom en aggregator.
@@ -2488,6 +2452,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/Standard
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en specifikation som datasættet er i overenstemmmelse med.
     <dt>Anvendelsesnote (en)
@@ -2503,6 +2469,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/page
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Document
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en webside eller et dokument som beskriver datasættet.
     <dt>Anvendelsesnote (en)
@@ -2518,6 +2486,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#theme
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/data-theme/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan have flere centrale emner. Til angivelse af emne skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme
     <dt>Anvendelsesnote (en)
@@ -2533,6 +2503,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)
     <dt>Anvendelsesnote (en)
@@ -2548,6 +2520,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#keyword
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et ord eller tag der kan bruges som grundlag for en søgning
     <dt>Anvendelsesnote (en)
@@ -2563,6 +2537,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
@@ -2574,10 +2550,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.20" id="adgangsrettigheder①"><span class="secno">4.3.20. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.20" id="adgangsrettigheder"><span class="secno">4.3.20. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/RightsStatement
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan det angives hvorvidt datasættet er åbent, har adgangsbegrænsninger eller om det ikke er tilgængeligt. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC)
     <dt>Anvendelsesnote (en)
@@ -2593,6 +2571,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/Location
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et geografisk område som datasættet dækker. Afgræsningen kan enten udtrykkes ved geografiske koordinater eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.
     <dt>Anvendelsesnote (en)
@@ -2608,6 +2588,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angivermindste rumlige afstand som kan resolveres i et datasæt, målt i meter.
     <dt>Anvendelsesnote (en)
@@ -2623,6 +2605,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/temporal
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/PeriodOfTime
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den periode datasættet dækker
     <dt>Anvendelsesnote (en)
@@ -2638,6 +2622,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i datasættet.
     <dt>Anvendelsesnote (en)
@@ -2653,6 +2639,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accrualPeriodicity
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/frequency/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency 
     <dt>Anvendelsesnote (en)
@@ -2668,6 +2656,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet
     <dt>Anvendelsesnote (en)
@@ -2683,6 +2673,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.
     <dt>Anvendelsesnote (en)
@@ -2698,6 +2690,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dqv#hasQualityMetadata
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf 
     <dt>Anvendelsesnote (en)
@@ -2713,6 +2707,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/duv#usage
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.
     <dt>Anvendelsesnote (en)
@@ -2728,6 +2724,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej.
     <dt>Anvendelsesnote (en)
@@ -2743,6 +2741,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori.
     <dt>Anvendelsesnote (en)
@@ -2758,6 +2758,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives.
     <dt>Anvendelsesnote (en)
@@ -2773,6 +2775,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/m8g/hasLegalResource
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.
     <dt>Anvendelsesnote (en)
@@ -2788,6 +2792,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2002/07/owl#versionInfo
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en versionsnummer eller anden versionsangivelse af datasættet.
     <dt>Anvendelsesnote (en)
@@ -2803,6 +2809,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#versionNotes
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan genrages for hver sprogvariant af versionsnoterne.
     <dt>Anvendelsesnote (en)
@@ -2818,6 +2826,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasVersion
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et relateret datasæt som er en version, udgave eller bearbejdelse af et aktuelle datasæt.
     <dt>Anvendelsesnote (en)
@@ -2833,6 +2843,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isVersionOf
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et relateret datasæt som det aktuelle datasæt er en version, udgave eller bearbejdelse af.
     <dt>Anvendelsesnote (en)
@@ -2848,6 +2860,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/provenance
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/ProvenanceStatement
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver udsagn omkring datasættets proveniens i form af udsagn eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af datasættet.
     <dt>Anvendelsesnote (en)
@@ -2863,6 +2877,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en relateret ressource
     <dt>Anvendelsesnote (en)
@@ -2878,6 +2894,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et relateret datasæt hvoraf de aktuelle datasæt er afledt.
     <dt>Anvendelsesnote (en)
@@ -2893,6 +2911,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/elements/1.1/isReferencedBy
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en reference til en beskrivelse af en relation til en anden ressource.
     <dt>Anvendelsesnote (en)
@@ -2908,6 +2928,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#qualifiedAttribution
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/prov#Attribution
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab tilskriver en aktør et bestemt ansvar i forbindelse med datasættet.
     <dt>Anvendelsesnote (en)
@@ -2923,6 +2945,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#qualifiedRelation
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Relationship
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en nærmere klassificeret relation til en anden ressource såsom en publikation der referer, citerer eller på anden på peger på datasættet. Anvendes til at referere til en anden ressource hvor relationens betydning er kendt men ikke matcher en af de standardiserede egenskaber fra Dublin Core.
     <dt>Anvendelsesnote (en)
@@ -2938,6 +2962,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#wasGeneratedBy
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/prov#Activity
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktivitet der genererede eller leverede forretningskonteksten for datasættets skabelse.
     <dt>Anvendelsesnote (en)
@@ -2966,6 +2992,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessURL
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. 
     <dt>Anvendelsesnote (en)
@@ -2981,6 +3009,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#downloadURL
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en URL der er et direkte link til en fil der kan downloades i et bestemt format.
     <dt>Anvendelsesnote (en)
@@ -2996,6 +3026,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessService
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#DataService
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en dataservice som giver adgang til en distribution af datasættet.
     <dt>Anvendelsesnote (en)
@@ -3011,6 +3043,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
@@ -3026,6 +3060,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver en tekstbaseret beskrivelse af distributionen
     <dt>Anvendelsesnote (en)
@@ -3041,6 +3077,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/Standard
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en specifikation (schema) som distributionen er i overenstemmmelse med.
     <dt>Anvendelsesnote (en)
@@ -3056,6 +3094,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#date el. http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor distributionen først blev formelt udgivet
     <dt>Anvendelsesnote (en)
@@ -3071,6 +3111,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#date el. http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den dato hvor distributionen senest er blevet ændret.
     <dt>Anvendelsesnote (en)
@@ -3086,6 +3128,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)
     <dt>Anvendelsesnote (en)
@@ -3102,6 +3146,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/r5r/availability
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://data.europa.eu/r5r/availability/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængeligt. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/
     <dt>Anvendelsesnote (en)
@@ -3117,6 +3163,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language
     <dt>Anvendelsesnote (en)
@@ -3132,6 +3180,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksum
+    <dt>Rækkevidde
+    <dd>http://spdx.org/rdf/terms#Checksum
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en værdi som gør det muligt at verificere at indholdet af en distribution ikke er blevet ændret. Checksum-værdien er relateret til download-url.
     <dt>Anvendelsesnote (en)
@@ -3147,6 +3197,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#byteSize
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>
     <dt>Anvendelsesnote (en)
@@ -3162,6 +3214,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#mediaType
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver medietypen for distributionen som den er defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) 
     <dt>Anvendelsesnote (en)
@@ -3177,6 +3231,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/format
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/file-type/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)
     <dt>Anvendelsesnote (en)
@@ -3192,6 +3248,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#compressFormat
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver filformatet for den distribution hvori data er indholdt i et komprimeret format, fx. med det formål at reducere størrelsen af downloadfilen. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) 
     <dt>Anvendelsesnote (en)
@@ -3207,6 +3265,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#packageFormat
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver filformatet for den distribution som grupperer en eller flere datafiler, fx. med det formål at gøre det muligt at download et antal relaterede filer på én gang. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml)
     <dt>Anvendelsesnote (en)
@@ -3222,6 +3282,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/page
+    <dt>Rækkevidde
+    <dd>http://xmlns.com/foaf/0.1/Document
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en webside eller et dokument som beskriver distibutionen.
     <dt>Anvendelsesnote (en)
@@ -3237,6 +3299,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/odrl/2/hasPolicy
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/odrl/2/Policy
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver de rettigheder der er forbundet med distributionen hvis W3Cs Open Digital Rights Language (ODRL) anvendes.
     <dt>Anvendelsesnote (en)
@@ -3252,6 +3316,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/license
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/LicenseDocument
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den licens distributionen er gjort tilgængelig under.
     <dt>Anvendelsesnote (en)
@@ -3263,12 +3329,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.4.21" id="adgangsrettigheder②"><span class="secno">4.4.21. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder②"></a></h4>
+   <h4 class="heading settled" data-level="4.4.21" id="rettigheder①"><span class="secno">4.4.21. </span><span class="content">rettigheder</span><a class="self-link" href="#rettigheder①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/rights
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/RightsStatement
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med distributionen
+    <dd>Denne egenskab giver reference til et dokument der beskriver rettighederne forbundet med distributionen
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a statement that specifies rights associated with the Distribution.
     <dt>Definition (en)
@@ -3282,6 +3350,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i distributionen.
     <dt>Anvendelsesnote (en)
@@ -3297,6 +3367,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angivermindste rumlige afstand som kan resolveres i en distribution, målt i meter.
     <dt>Anvendelsesnote (en)
@@ -3325,6 +3397,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointURL
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver
     <dt>Anvendelsesnote (en)
@@ -3340,6 +3414,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det eller de ord som navngiver dataservicen. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
@@ -3355,6 +3431,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endpointDescription
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver en beskrivelse af det pågældende serviceendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint implementerer.
     <dt>Anvendelsesnote (en)
@@ -3370,6 +3448,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/description
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver en tekstbaseret beskrivelse af dataservicen
     <dt>Anvendelsesnote (en)
@@ -3385,6 +3465,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#servesDataset
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab refererer til en samling af data som denne dataservice kan levere.
     <dt>Anvendelsesnote (en)
@@ -3400,6 +3482,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/licence
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/LicenseDocument
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den licens dataservices er gjort tilgængelig under.
     <dt>Anvendelsesnote (en)
@@ -3411,10 +3495,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.5.7" id="adgangsrettigheder③"><span class="secno">4.5.7. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder③"></a></h4>
+   <h4 class="heading settled" data-level="4.5.7" id="adgangsrettigheder①"><span class="secno">4.5.7. </span><span class="content">adgangsrettigheder</span><a class="self-link" href="#adgangsrettigheder①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
+    <dt>Rækkevidde
+    <dd>http://purl.org/dc/terms/RightsStatement
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med dataservicen
     <dt>Anvendelsesnote (en)
@@ -3437,12 +3523,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>An agent (eg. person, group, software or physical artifact).En aktør (fx. person, gruppe, software eller fysisk artefakt).
     <dt>Kravniveau
-    <dd>Obligatorisk
+    <dd>
    </dl>
    <h4 class="heading settled" data-level="4.6.1" id="navn"><span class="secno">4.6.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/name
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.
     <dt>Anvendelsesnote (en)
@@ -3458,6 +3546,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://purl.org/adms/publishertype/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/
     <dt>Anvendelsesnote (en)
@@ -3469,12 +3559,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.7" id="emneklassifikation①"><span class="secno">4.7. </span><span class="content">Emneklassifikation</span><a class="self-link" href="#emneklassifikation①"></a></h3>
+   <h3 class="heading settled" data-level="4.7" id="begrebssystem"><span class="secno">4.7. </span><span class="content">Begrebssystem</span><a class="self-link" href="#begrebssystem"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme
     <dt>Anvendelsesnote (da) 
-    <dd>En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet klassifikationsemne indgår.
+    <dd>En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet begreb indgår.
     <dt>Anvendelsesnote (en)
     <dd>A concept collection (e.g. controlled vocabulary) in which the Category is defined.
     <dt>Definition (en)
@@ -3486,6 +3576,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
@@ -3497,7 +3589,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.8" id="klassifikationsemne"><span class="secno">4.8. </span><span class="content">Klassifikationsemne</span><a class="self-link" href="#klassifikationsemne"></a></h3>
+   <h3 class="heading settled" data-level="4.8" id="begreb"><span class="secno">4.8. </span><span class="content">Begreb</span><a class="self-link" href="#begreb"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#Concept
@@ -3514,8 +3606,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#prefLabel
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver klassifikationsemnets foretruknke betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.
+    <dd>Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.
     <dt>Definition (en)
@@ -3542,6 +3636,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#algorithm
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den algoritme der er blevet anvendet til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt.
     <dt>Anvendelsesnote (en)
@@ -3557,6 +3653,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksumValue
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en digest-værdi beregnet med en specifik algoritme og udtrykt osm en lower case hexidecimal
     <dt>Anvendelsesnote (en)
@@ -3568,20 +3666,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.10" id="katalogressource"><span class="secno">4.10. </span><span class="content">Katalogressource</span><a class="self-link" href="#katalogressource"></a></h3>
-   <dl class="def">
-    <dt>URI
-    <dd>
-    <dt>Anvendelsesnote (da) 
-    <dd>Et katalog, et dataset eller en dataservice
-    <dt>Anvendelsesnote (en)
-    <dd>A Catalog, Dataset and DataService
-    <dt>Definition (en)
-    <dd>the union of Catalog, Dataset and DataServiceResource published or curated by a single agent.Ressource udgivet eller organiseret af en enkelt aktør.
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h3 class="heading settled" data-level="4.11" id="identifikator①"><span class="secno">4.11. </span><span class="content">Identifikator</span><a class="self-link" href="#identifikator①"></a></h3>
+   <h3 class="heading settled" data-level="4.10" id="identifikator①"><span class="secno">4.10. </span><span class="content">Identifikator</span><a class="self-link" href="#identifikator①"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#Identifier
@@ -3594,10 +3679,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.11.1" id="notation"><span class="secno">4.11.1. </span><span class="content">notation</span><a class="self-link" href="#notation"></a></h4>
+   <h4 class="heading settled" data-level="4.10.1" id="notation"><span class="secno">4.10.1. </span><span class="content">notation</span><a class="self-link" href="#notation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#notation
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne engenskab indeholder en streng som fungerer som en identifikator i kontekst af det identifikatorschema datatypen refererer til.
     <dt>Anvendelsesnote (en)
@@ -3609,7 +3696,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.12" id="licensdokument"><span class="secno">4.12. </span><span class="content">Licensdokument</span><a class="self-link" href="#licensdokument"></a></h3>
+   <h3 class="heading settled" data-level="4.11" id="licensdokument"><span class="secno">4.11. </span><span class="content">Licensdokument</span><a class="self-link" href="#licensdokument"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/LicenseDocument
@@ -3622,10 +3709,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.12.1" id="licenstype"><span class="secno">4.12.1. </span><span class="content">licenstype</span><a class="self-link" href="#licenstype"></a></h4>
+   <h4 class="heading settled" data-level="4.11.1" id="licenstype"><span class="secno">4.11.1. </span><span class="content">licenstype</span><a class="self-link" href="#licenstype"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
+    <dt>Rækkevidde
+    <dd>Anvend følgende klassifikation: ^http://purl.org/adms/licencetype/
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) 
     <dt>Anvendelsesnote (en)
@@ -3637,7 +3726,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h3 class="heading settled" data-level="4.13" id="lokation"><span class="secno">4.13. </span><span class="content">Lokation</span><a class="self-link" href="#lokation"></a></h3>
+   <h3 class="heading settled" data-level="4.12" id="lokation"><span class="secno">4.12. </span><span class="content">Lokation</span><a class="self-link" href="#lokation"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/Location
@@ -3650,10 +3739,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.13.1" id="bounding-box"><span class="secno">4.13.1. </span><span class="content">bounding box</span><a class="self-link" href="#bounding-box"></a></h4>
+   <h4 class="heading settled" data-level="4.12.1" id="bounding-box"><span class="secno">4.12.1. </span><span class="content">bounding box</span><a class="self-link" href="#bounding-box"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#bbox
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den geografiske afgrænsning af en ressource.
     <dt>Anvendelsesnote (en)
@@ -3665,10 +3756,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.13.2" id="geografisk-tyngdepunkt"><span class="secno">4.13.2. </span><span class="content">geografisk tyngdepunkt</span><a class="self-link" href="#geografisk-tyngdepunkt"></a></h4>
+   <h4 class="heading settled" data-level="4.12.2" id="geografisk-tyngdepunkt"><span class="secno">4.12.2. </span><span class="content">geografisk tyngdepunkt</span><a class="self-link" href="#geografisk-tyngdepunkt"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#centroid
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en ressource geometriske tyngdepunkt (centroid).
     <dt>Anvendelsesnote (en)
@@ -3680,10 +3773,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.13.3" id="geometri"><span class="secno">4.13.3. </span><span class="content">geometri</span><a class="self-link" href="#geometri"></a></h4>
+   <h4 class="heading settled" data-level="4.12.3" id="geometri"><span class="secno">4.12.3. </span><span class="content">geometri</span><a class="self-link" href="#geometri"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/locn#geometry
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab knytter en ressource til en geometri
     <dt>Anvendelsesnote (en)
@@ -3695,7 +3790,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.14" id="periode"><span class="secno">4.14. </span><span class="content">Periode</span><a class="self-link" href="#periode"></a></h3>
+   <h3 class="heading settled" data-level="4.13" id="periode"><span class="secno">4.13. </span><span class="content">Periode</span><a class="self-link" href="#periode"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/PeriodOfTime
@@ -3708,10 +3803,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.14.1" id="startdato"><span class="secno">4.14.1. </span><span class="content">startdato</span><a class="self-link" href="#startdato"></a></h4>
+   <h4 class="heading settled" data-level="4.13.1" id="startdato"><span class="secno">4.13.1. </span><span class="content">startdato</span><a class="self-link" href="#startdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#startDate
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver periodens startdato.
     <dt>Anvendelsesnote (en)
@@ -3723,10 +3820,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.14.2" id="slutdato"><span class="secno">4.14.2. </span><span class="content">slutdato</span><a class="self-link" href="#slutdato"></a></h4>
+   <h4 class="heading settled" data-level="4.13.2" id="slutdato"><span class="secno">4.13.2. </span><span class="content">slutdato</span><a class="self-link" href="#slutdato"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endDate
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver periodens slutdato.
     <dt>Anvendelsesnote (en)
@@ -3738,10 +3837,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.14.3" id="har-begyndelse"><span class="secno">4.14.3. </span><span class="content">har begyndelse</span><a class="self-link" href="#har-begyndelse"></a></h4>
+   <h4 class="heading settled" data-level="4.13.3" id="har-begyndelse"><span class="secno">4.13.3. </span><span class="content">har begyndelse</span><a class="self-link" href="#har-begyndelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2006/time#hasBeginning
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2006/time#Instant
     <dt>Anvendelsesnote (da)
     <dd>
     <dt>Anvendelsesnote (en)
@@ -3753,10 +3854,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.14.4" id="har-slutning"><span class="secno">4.14.4. </span><span class="content">har slutning</span><a class="self-link" href="#har-slutning"></a></h4>
+   <h4 class="heading settled" data-level="4.13.4" id="har-slutning"><span class="secno">4.13.4. </span><span class="content">har slutning</span><a class="self-link" href="#har-slutning"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2006/time#hasEnd
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/2006/time#Instant
     <dt>Anvendelsesnote (da)
     <dd>
     <dt>Anvendelsesnote (en)
@@ -3768,7 +3871,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.15" id="relation"><span class="secno">4.15. </span><span class="content">Relation</span><a class="self-link" href="#relation"></a></h3>
+   <h3 class="heading settled" data-level="4.14" id="relation"><span class="secno">4.14. </span><span class="content">Relation</span><a class="self-link" href="#relation"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Relationship
@@ -3781,10 +3884,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.15.1" id="relation①"><span class="secno">4.15.1. </span><span class="content">relation</span><a class="self-link" href="#relation①"></a></h4>
+   <h4 class="heading settled" data-level="4.14.1" id="relation①"><span class="secno">4.14.1. </span><span class="content">relation</span><a class="self-link" href="#relation①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
+    <dt>Rækkevidde
+    <dd>http://www.w3.org/ns/dcat#Role
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en ressource som er relateret til den aktuelle ressource.
     <dt>Anvendelsesnote (en)
@@ -3796,10 +3901,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.15.2" id="havde-rolle"><span class="secno">4.15.2. </span><span class="content">havde rolle</span><a class="self-link" href="#havde-rolle"></a></h4>
+   <h4 class="heading settled" data-level="4.14.2" id="havde-rolle"><span class="secno">4.14.2. </span><span class="content">havde rolle</span><a class="self-link" href="#havde-rolle"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#hadRole
+    <dt>Rækkevidde
+    <dd>
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den rolle som en entitet eller aktør spiller i forhold til en anden entitet eller ressource.
     <dt>Anvendelsesnote (en)
@@ -3811,16 +3918,146 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.16" id="tidsdatatype"><span class="secno">4.16. </span><span class="content">Tidsdatatype</span><a class="self-link" href="#tidsdatatype"></a></h3>
+   <h3 class="heading settled" data-level="4.15" id="frekvens"><span class="secno">4.15. </span><span class="content">Frekvens</span><a class="self-link" href="#frekvens"></a></h3>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>http://purl.org/dc/terms/Frequency
     <dt>Anvendelsesnote (da) 
-    <dd>
+    <dd>Den hyppighed med hvilken noget gentages, fx. opdateringen af et datasæt
     <dt>Anvendelsesnote (en)
-    <dd>
+    <dd>A rate at which something recurs, e.g. the publication of a Dataset. 
     <dt>Definition (en)
-    <dd>Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal
+    <dd>A rate at which something recurs.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.16" id="lingvistisk-system"><span class="secno">4.16. </span><span class="content">Lingvistisk system</span><a class="self-link" href="#lingvistisk-system"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/LinguisticSystem
+    <dt>Anvendelsesnote (da) 
+    <dd>Et system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation, fx. et sprog.
+    <dt>Anvendelsesnote (en)
+    <dd>A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language
+    <dt>Definition (en)
+    <dd>A system of signs, symbols, sounds, gestures, or rules used in communication.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.17" id="medietype①"><span class="secno">4.17. </span><span class="content">Medietype</span><a class="self-link" href="#medietype①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/MediaType
+    <dt>Anvendelsesnote (da) 
+    <dd>Formatet for lagringen af indhold i en computerfil.
+    <dt>Anvendelsesnote (en)
+    <dd>A media type, e.g. the format of a computer file 
+    <dt>Definition (en)
+    <dd>A file format or physical medium.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.18" id="udgivertype"><span class="secno">4.18. </span><span class="content">Udgivertype</span><a class="self-link" href="#udgivertype"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
+    <dt>Anvendelsesnote (da) 
+    <dd>Typen af organisationen der har rollen som udgiver
+    <dt>Anvendelsesnote (en)
+    <dd>A type of organisation that acts as a publisher
+    <dt>Definition (en)
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.19" id="status②"><span class="secno">4.19. </span><span class="content">Status</span><a class="self-link" href="#status②"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
+    <dt>Anvendelsesnote (da) 
+    <dd>Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning.
+    <dt>Anvendelsesnote (en)
+    <dd>An indication of the maturity of a Distribution or the type of change of a Catalogue Record.
+    <dt>Definition (en)
+    <dd>
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.20" id="rolle"><span class="secno">4.20. </span><span class="content">Rolle</span><a class="self-link" href="#rolle"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/dcat#Role
+    <dt>Anvendelsesnote (da) 
+    <dd>En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcetilskrivning eller ressourcerelationer.
+    <dt>Anvendelsesnote (en)
+    <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships. Note it is a subclass of skos:Concept.
+    <dt>Definition (en)
+    <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.21" id="proveniensudsagn①"><span class="secno">4.21. </span><span class="content">Proveniensudsagn</span><a class="self-link" href="#proveniensudsagn①"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/ProvenanceStatement
+    <dt>Anvendelsesnote (da) 
+    <dd>Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning.
+    <dt>Anvendelsesnote (en)
+    <dd>A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation 
+    <dt>Definition (en)
+    <dd>Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.22" id="dokument"><span class="secno">4.22. </span><span class="content">Dokument</span><a class="self-link" href="#dokument"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/spec/#term_Document
+    <dt>Anvendelsesnote (da) 
+    <dd>En tekstbaseret ressourcer som indeholder information målrettet mennesker, fx. en webside som beskriver et datasæt
+    <dt>Anvendelsesnote (en)
+    <dd>A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset.
+    <dt>Definition (en)
+    <dd>A document.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.23" id="rettighedsudsagn"><span class="secno">4.23. </span><span class="content">Rettighedsudsagn</span><a class="self-link" href="#rettighedsudsagn"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/RightsStatement
+    <dt>Anvendelsesnote (da) 
+    <dd>En beskrivelse af de intellektuelle ejendomsrettigheder forbundet med en ressource, et juridisk dokument der angiver officielle tilladelser vedrørende en ressource eller en beskrivelse af adgangsrettigheder.
+    <dt>Anvendelsesnote (en)
+    <dd>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.
+    <dt>Definition (en)
+    <dd>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.24" id="specifikation"><span class="secno">4.24. </span><span class="content">Specifikation</span><a class="self-link" href="#specifikation"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://purl.org/dc/terms/Standard
+    <dt>Anvendelsesnote (da) 
+    <dd>En specifikation som et kataloget, et datasæt, en dataservice eller en distribution er i overenstemmelse med.
+    <dt>Anvendelsesnote (en)
+    <dd>A standard or other specification to which a Dataset or Distribution conforms
+    <dt>Definition (en)
+    <dd>A reference point against which other things can be evaluated or compared.
+    <dt>Kravniveau
+    <dd>
+   </dl>
+   <h3 class="heading settled" data-level="4.25" id="virtuelt-visitkort"><span class="secno">4.25. </span><span class="content">Virtuelt visitkort</span><a class="self-link" href="#virtuelt-visitkort"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/2006/vcard/ns#Kind
+    <dt>Anvendelsesnote (da) 
+    <dd>Et virtuelt visitkort beskrevet i overensstemmelse med vCard specifikationen. Anvendes eksempelvis til angivelse af telefonnummer og emailadrese for et kontaktpunkt. Bemærk at denne klasse er overklassen for de fire eksplicitte vCard-typer (Individ, Organisation, Lokation og Gruppe)
+    <dt>Anvendelsesnote (en)
+    <dd>A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group)
+    <dt>Definition (en)
+    <dd>The parent class for all objects
     <dt>Kravniveau
     <dd>
    </dl>
@@ -4184,5 +4421,5 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
    <div class="issue">Hvordan fungerer denne fortælling om strukturen? <a href="#issue-968f1117"> ↵ </a></div>
-   <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne er oversat til dansk (forslag), men anvendelsesnoterne er endnu kun delvist oversat. Det er også hensigten at alle de oprindelige definitioner fra kernemodellerne skal hentes ind. Derudover mangler flere egenskaber angivelse af kravniveau<a href="#issue-510b117a"> ↵ </a></div>
+   <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler<a href="#issue-e84322d9"> ↵ </a></div>
   </div>
