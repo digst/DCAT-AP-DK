@@ -372,7 +372,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">listing date</sh:name>
-		<sh:name xml:lang="da">udgivelsesdato</sh:name>
+		<sh:name xml:lang="da">tilføjelsesdato</sh:name>
 		<sh:description xml:lang="en">This property contains the date on which the description of the Dataset was included in the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller dataservicen blev registreret i kataloget.</sh:description>
 		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>			
@@ -982,7 +982,7 @@
 	    <sh:name xml:lang="da">fortrolighedsgrad </sh:name>	
 		<sh:description xml:lang="en">This property specifies the extent by which information contained in a dataset can be disclosed.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. </sh:description>		
-		<rdfs:comment xml:lang="en">specificaiton of the extent by which information contained in the resource can be disclosed.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">specification of the extent by which information contained in the resource can be disclosed.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/confidentialityType"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
