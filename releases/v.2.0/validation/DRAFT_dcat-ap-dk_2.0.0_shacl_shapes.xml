@@ -925,7 +925,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dqv#hasQualityMetadata"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-        <sh:shape rdf:resource="http://www.w3.org/ns/dqv#QualityMetadata"/>		
+        <sh:class rdf:resource="http://www.w3.org/ns/dqv#QualityMetadata"/>		
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
     </sh:property>
@@ -940,7 +940,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/duv#hasUsage"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-        <sh:shape rdf:resource="http://www.w3.org/ns/duv#Usage"/>	
+        <sh:class rdf:resource="http://www.w3.org/ns/duv#Usage"/>	
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
     </sh:property>
@@ -955,7 +955,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-        <sh:shape rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>	
+        <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>		
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
     </sh:property>
@@ -965,26 +965,30 @@
 	    <sh:name xml:lang="en">personal data category</sh:name>	 	  
 	    <sh:name xml:lang="da">personoplysningskategori</sh:name>	
 		<sh:description xml:lang="en">This property specifies a relation to specific personal data category</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en relation til en bestemt personoplysningskategori.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:</sh:description>	
 		<rdfs:comment xml:lang="en">specification of a relation to specific personal data category</rdfs:comment>			
-        <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents"/>
+        <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-        <sh:shape rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	
+  <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
+        <sh:pattern>^https://data.gov.dk/concept/core/personalDataCategory/</sh:pattern>
+        <sh:flags>i</sh:flags> <!-- ignore case -->
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
     </sh:property>
 
    <sh:property>
       <rdf:Description>
-	    <sh:name xml:lang="en">confidentiality type</sh:name>	 	  
-	    <sh:name xml:lang="da">fortrolighedsgrad</sh:name>	
+	    <sh:name xml:lang="en">confidentiality type </sh:name>	 	  
+	    <sh:name xml:lang="da">fortrolighedsgrad </sh:name>	
 		<sh:description xml:lang="en">This property specifies the extent by which information contained in a dataset can be disclosed.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives.</sh:description>		
+		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. Til angivelse af frekvens skal følgende klassifikation anvendes: https://data.gov.dk/concept/profile/personal-data-categories </sh:description>		
 		<rdfs:comment xml:lang="en">specificaiton of the extent by which information contained in the resource can be disclosed.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
-        <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents"/>
+        <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/confidentialityType"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-        <sh:shape rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	
+  <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
+        <sh:pattern>^https://data.gov.dk/concept/core/confidentialityType/</sh:pattern>
+        <sh:flags>i</sh:flags> <!-- ignore case -->
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
     </sh:property>
@@ -998,8 +1002,8 @@
 		<rdfs:comment xml:lang="en">It indicates the Legal Resource (e.g. legislation) to which the Public Service (red:resource) relates, operates or has its legal basis</rdfs:comment>		
 		<rdfs:comment xml:lang="da">reference til retskilde som danner grundlag for ressourcen</rdfs:comment>		
         <sh:path rdf:resource="http://data.europa.eu/m8g/hasLegalResource"/>
+        <sh:class rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>		
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-        <sh:shape rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>	
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
     </sh:property>
