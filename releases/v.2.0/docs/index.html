@@ -1615,23 +1615,24 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h4 class="heading settled" data-level="1.4.2" id="use-case-2"><span class="secno">1.4.2. </span><span class="content">Use case 2:</span><a class="self-link" href="#use-case-2"></a></h4>
    <h4 class="heading settled" data-level="1.4.3" id="use-case-3"><span class="secno">1.4.3. </span><span class="content">Use case 3:</span><a class="self-link" href="#use-case-3"></a></h4>
    <h3 class="heading settled" data-level="1.5" id="konformans-og-afvigelser-fra-dcat-ap"><span class="secno">1.5. </span><span class="content">Konformans og afvigelser fra DCAT-AP</span><a class="self-link" href="#konformans-og-afvigelser-fra-dcat-ap"></a></h3>
-    DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt. 
+    DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. 
+   <p>Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.</p>
    <h4 class="heading settled" data-level="1.5.1" id="ndringer-af-kravniveau"><span class="secno">1.5.1. </span><span class="content">Ændringer af kravniveau</span><a class="self-link" href="#ndringer-af-kravniveau"></a></h4>
    <p>I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf">DCAT-AP 2.0</a>.</p>
    <ul>
     <li data-md>
-     <p>Obligatorisk (Mandatory): informationen SKAL angives</p>
+     <p><strong>Obligatorisk</strong> (Mandatory): informationen SKAL angives</p>
     <li data-md>
-     <p>Anbefalet (Recommended): informationen BØR bør angives hvis den er tilgængelig</p>
+     <p><strong>Anbefalet</strong> (Recommended): informationen BØR bør angives hvis den er tilgængelig</p>
     <li data-md>
-     <p>Valgfri (Optional): informationen KAN bør angives</p>
+     <p><strong>Valgfri</strong> (Optional): informationen KAN angives</p>
    </ul>
    <p>Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:</p>
    <ul>
     <li data-md>
      <p>Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet</p>
     <li data-md>
-     <p>Datasæt: søgeord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri</p>
+     <p>Datasæt: emneord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri</p>
     <li data-md>
      <p>Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet ></p>
     <li data-md>
@@ -2535,7 +2536,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.18" id="sgeord"><span class="secno">4.3.18. </span><span class="content">søgeord</span><a class="self-link" href="#sgeord"></a></h4>
+   <h4 class="heading settled" data-level="4.3.18" id="emneord"><span class="secno">4.3.18. </span><span class="content">emneord</span><a class="self-link" href="#emneord"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#keyword
@@ -2710,7 +2711,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dqv#hasQualityMetadata
     <dt>Rækkevidde
-    <dd>
+    <dd>http://www.w3.org/ns/dqv#QualityMetadata
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf 
     <dt>Anvendelsesnote (en)
@@ -2725,9 +2726,9 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h4 class="heading settled" data-level="4.3.29" id="har-anvendelse"><span class="secno">4.3.29. </span><span class="content">har anvendelse</span><a class="self-link" href="#har-anvendelse"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>http://www.w3.org/ns/duv#usage
+    <dd>http://www.w3.org/ns/duv#hasUsage
     <dt>Rækkevidde
-    <dd>
+    <dd>http://www.w3.org/ns/duv#Usage
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.
     <dt>Anvendelsesnote (en)
@@ -2759,11 +2760,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h4 class="heading settled" data-level="4.3.31" id="personoplysningskategori"><span class="secno">4.3.31. </span><span class="content">personoplysningskategori</span><a class="self-link" href="#personoplysningskategori"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory
     <dt>Rækkevidde
-    <dd>
+    <dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personalDataCategory/
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori.
+    <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:
     <dt>Anvendelsesnote (en)
     <dd>This property specifies a relation to specific personal data category
     <dt>Definition (en)
@@ -2776,11 +2777,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h4 class="heading settled" data-level="4.3.32" id="fortrolighedsgrad"><span class="secno">4.3.32. </span><span class="content">fortrolighedsgrad</span><a class="self-link" href="#fortrolighedsgrad"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
+    <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType
     <dt>Rækkevidde
-    <dd>
+    <dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentialityType/
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives.
+    <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. Til angivelse af frekvens skal følgende klassifikation anvendes: https://data.gov.dk/concept/profile/personal-data-categories 
     <dt>Anvendelsesnote (en)
     <dd>This property specifies the extent by which information contained in a dataset can be disclosed.
     <dt>Definition (en)
@@ -2795,7 +2796,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://data.europa.eu/m8g/hasLegalResource
     <dt>Rækkevidde
-    <dd>
+    <dd>http://data.europa.eu/eli/ontology#LegalResource
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.
     <dt>Anvendelsesnote (en)
