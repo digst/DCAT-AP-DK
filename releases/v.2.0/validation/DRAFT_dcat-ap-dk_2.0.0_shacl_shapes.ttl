@@ -548,7 +548,7 @@
     sh:description "This property refers to dataset or distribution usage guidance/instructions."@en, "Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet."@da ;
     rdfs:comment "Dataset or distribution usage guidance/instructions."@en ;
     sh:maxCount 1 ;
-    sh:path <http://www.w3.org/ns/duv#usage> ;
+    sh:path <http://www.w3.org/ns/duv#hasUsage> ;
     sh:severity sh:Violation ;
     sh:shape <http://www.w3.org/ns/duv#Usage> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
