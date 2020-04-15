@@ -131,7 +131,7 @@ Revision: 2.0.0 (udkast)
 Date: 2019-04-15
 Max ToC Depth: 2
 Markup Shorthands: markdown yes
-Repository: digst/DCAT-AP-DK/tree/master/releases/v.2.0
+Repository: digst/DCAT-AP-DK
 Inline Github Issues: full
 Logo: digst...
 </pre>
