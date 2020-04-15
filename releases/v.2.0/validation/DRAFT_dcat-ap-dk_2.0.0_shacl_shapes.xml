@@ -938,7 +938,7 @@
 		<sh:description xml:lang="da">Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.</sh:description>	
 		<rdfs:comment xml:lang="en">Dataset or distribution usage guidance/instructions.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
-        <sh:path rdf:resource="http://www.w3.org/ns/duv#usage"/>
+        <sh:path rdf:resource="http://www.w3.org/ns/duv#hasUsage"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
         <sh:shape rdf:resource="http://www.w3.org/ns/duv#Usage"/>	
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
