@@ -176,7 +176,8 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 
 ## Konformans og afvigelser fra DCAT-AP
-Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer
+DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
+
 
 ### Ændringer af kravniveau
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
