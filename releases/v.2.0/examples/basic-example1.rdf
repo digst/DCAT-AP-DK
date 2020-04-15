@@ -1,1 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
+  <dcat:Dataset rdf:about="https://dcat.example.org/dataset-001">
+    <dc:title xml:lang="en">Dataset 001</dc:title>
+    <dc:title xml:lang="da">Datasæt 001</dc:title>
+    <dc:description xml:lang="en">A description of Dataset 001</dc:description>
+    <dc:description xml:lang="da">En beskrivelse af datasættet 001</dc:description>
+    <dc:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/ANNUAL"/>
+    <dc:language rdf:resource="http://publications.europa.eu/resource/dataset/language/DAN"/>
+    <dc:publisher rdf:resource="https://dcat.example.org/agent-001"/>
+    <dc:creator rdf:resource="https://dcat.example.org/agent-001"/>
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-05</dc:issued>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-12-15</dc:modified>
+    
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://dcat.example.org/dataset-001-csv">
+        <dcat:accessURL rdf:resource="http://www.example.org/files/001.csv"/>
+        <dcat:downloadURL rdf:resource="http://www.example.org/files/001.csv"/>
+        <dc:title xml:lang="en">CSV distribution of dataset 001</dc:title>
+        <dc:title xml:lang="da">CSV-distribution af datsættet 001</dc:title>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5120.0</dcat:byteSize>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+        <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://dcat.example.org/dataset-001-xml">
+        <dcat:accessURL rdf:resource="http://www.example.org/files/001.xml"/>
+        <dcat:downloadURL rdf:resource="http://www.example.org/files/001.xml"/>
+        <dc:title xml:lang="en">XML distribution of dataset 001</dc:title>
+        <dc:title xml:lang="da">XML-distribution af datsættet 001</dc:title>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6120.0</dcat:byteSize>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/xml"/>
+        <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/xml"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+
+  </dcat:Dataset>
+
+  <foaf:Agent rdf:about="https://dcat.example.org/agent-001">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <foaf:name xml:lang="da">Organisation 001</foaf:name>
+    <foaf:name xml:lang="en">Organization 001</foaf:name>
+  </foaf:Agent>
+
+</rdf:RDF>
