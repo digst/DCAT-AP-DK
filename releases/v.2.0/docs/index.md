@@ -261,20 +261,20 @@ Basisinformation, Emneinddeling, Aktører,  Dataindhold, Afgrænsning, Datakvali
 
 
 # Modellens grundlæggende struktur
-DCAT bevæger sig i tre sammenhængende niveauer, et katalogniveau, på datasætniveau og på et distributionsniveau. 
+DCAT bevæger sig på tre sammenhængende niveauer - et katalogniveau, et datasætniveau og et distributionsniveau. 
 
-Hvert element på et givet niveau kan beskrives med metadata, såsom titel, beskrivelse, identifikator osv. 
+Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. 
 
 <p align="center"><a href="img/Figur-DCAT-niveauerne.PNG"><img src="img/Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="600"/></a></p>
 
 ## Katalogniveauet
-Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
+Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde dataservices og andre datakataloger.
 
 ## Datasætniveauet
 Dette niveau udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt.
 
 ## Distributionsniveauet
-Distributionsniveauet er det nederste lag i DCAT-standarden, og udtrykker at et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, fx i forhold til format. Her beskrives også hvordan man opnår adgang til denne fysiske distribution af datasættet med oplysninger såsom adgangsURL, format, størrelse, downloadURL, adgangsservice etc..
+Distributionsniveauet er det nederste lag i DCAT-standarden, og udtrykker at et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellig vis, fx i forhold til format. På dette niveau beskrives det også hvordan man opnår adgang til denne fysiske distribution af datasættet med oplysninger såsom adgangs-URL, format, størrelse, downloadURL, adgangsservice etc..
 
 <p class="issue">Hvordan fungerer denne fortælling om strukturen? </p>
 
@@ -3055,6 +3055,9 @@ Relevante links:
 ================
 
 [arkitektur.digst.dk](arkitektur.digst.dk)
+
+
+
 
 
 
