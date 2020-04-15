@@ -12,14 +12,14 @@
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 
-<http://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
-  dcat:accessURL <http://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
-  dcat:downloadURL <http://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml> ;
+<https://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
+  dcat:accessURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
+  dcat:downloadURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml> ;
   dcat-ap:availability dcat-ap:experimental ;
   dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dc:conformsTo <https://www.w3.org/TR/shacl> ;
   dc:license <https://creativecommons.org/licenses/by/4.0> ;
-  dc:modified "2019-03-19"^^xsd:date ;
+  dc:modified "2019-04-15"^^xsd:date ;
   dc:publisher <http://digst.dk> ;
   dc:relation <https://arkitektur.digst.dk/rammearkitektur/datastandarder> ;
   dc:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-DK in SHACL" ;
@@ -48,7 +48,7 @@
   sh:targetClass dcat:Catalog ;
   sh:property [
     sh:name "title"@en, "titel"@da ;
-    sh:description "This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name."@en, "Denne egenskab giver det eller de ord der navngiver kataloget "@da ;
+    sh:description "This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name."@en, "Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. "@da ;
     rdfs:comment "A name given to the resource."@en ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
@@ -79,7 +79,7 @@
     rdfs:comment "A site or endpoint that is listed in the catalog."@en ;
     sh:class dcat:DataService ;
     sh:path dcat:service ;
-    sh:severity sh:Violation;
+    sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "publisher"@en, "udgiver"@da ;
@@ -163,7 +163,7 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "rights"@en, "adgangsrettigheder"@da ;
+    sh:name "rights"@en, "rettigheder"@da ;
     sh:description "This property refers to a statement that specifies rights associated with the Catalogue."@en, "Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget"@da ;
     rdfs:comment "Information about rights held in and over the resource."@en ;
     sh:class dc:RightsStatement ;
@@ -188,7 +188,7 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "has part"@en, "delkatalog"@da ;
+    sh:name "has part"@en, "har delkatalog"@da ;
     sh:description "This property refers to a related Catalogue that is part of the described Catalogue."@en, "Denne egenskab angiver et relateret katalog som er en del af det aktuelle katalog."@da ;
     rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
     sh:class dcat:Catalog ;
@@ -196,7 +196,7 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "is part of"@en, "del af katalog"@da ;
+    sh:name "is part of"@en, "er del af katalog"@da ;
     sh:description "This property refers to a related Catalogue in which the described Catalogue is physically or logically included."@en, "Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af."@da ;
     rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
     sh:class dcat:Catalog ;
@@ -710,7 +710,8 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:description "title"@en, "titel"@da, "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."@en, "Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant."@da ;
+    sh:name "title"@en, "titel"@da ;
+    sh:description "This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description."@en, "Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant."@da ;
     rdfs:comment "A name given to the resource."@en ;
     sh:nodeKind sh:Literal ;
     sh:path dc:title ;
@@ -865,8 +866,8 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
-    sh:name "rights"@en, "adgangsrettigheder"@da ;
-    sh:description "This property refers to a statement that specifies rights associated with the Distribution."@en, "Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med distributionen"@da ;
+    sh:name "rights"@en, "rettigheder"@da ;
+    sh:description "This property refers to a statement that specifies rights associated with the Distribution."@en, "Denne egenskab giver reference til et dokument der beskriver rettighederne forbundet med distributionen"@da ;
     rdfs:comment "Information about rights held in and over the resource."@en ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
@@ -894,7 +895,7 @@
 <http://data.europa.eu/r5r#DataService_Shape>
   a sh:NodeShape ;
   sh:targetClass dcat:DataService ;
-  sh:name "Data Service"@en, "Dataservice"@en ;
+  sh:name "Data Service"@en, "Dataservice"@da ;
   sh:description "A collection of operations that provides access to one or more datasets or data processing functions."@en, "Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da ;
   sh:property [
     sh:name "endpoint URL "@en, "endpoint-URL"@da ;
@@ -988,8 +989,8 @@
 <http://data.europa.eu/r5r#CategoryScheme_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:ConceptScheme ;
-  sh:name "Category Scheme"@en, "Emneklassifikation"@da ;
-  sh:description "A concept collection (e.g. controlled vocabulary) in which the Category is defined."@en, "En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet klassifikationsemne indgår."@da ;
+  sh:name "Category Scheme"@en, "Begrebssystem"@da ;
+  sh:description "A concept collection (e.g. controlled vocabulary) in which the Category is defined."@en, "En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet begreb indgår."@da ;
   sh:property [
     sh:name "title"@en, "titel"@da ;
     sh:description "This property contains a name of the category scheme. May be repeated for different versions of the name"@en, "Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant."@da ;
@@ -1004,10 +1005,10 @@
 <http://data.europa.eu/r5r#Category_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:Concept ;
-  sh:name "Category"@en, "Klassifikationsemne"@da ;
+  sh:name "Category"@en, "Begreb"@da ;
   sh:property [
     sh:name "preferred label"@en, "foretrukken betegnelse"@da ;
-    sh:description "This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label."@en, "Denne egenskab angiver klassifikationsemnets foretruknke betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen."@da ;
+    sh:description "This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label."@en, "Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen."@da ;
     rdfs:comment "The preferred lexical label for a resource, in a given language."@en, "Det foretrukne leksikalske udtryk for en ressource på et givet sprog."@da ;
     sh:minCount 1 ;
     sh:nodeKind sh:Literal ;
@@ -1042,19 +1043,6 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ] .
-
-<http://data.europa.eu/r5r#DcatResource_Shape>
-  a sh:NodeShape ;
-  sh:name "Catalogued resource"@en, "Katalogressource"@da ;
-  sh:description "A Catalog, Dataset and DataService"@en, "Et katalog, et dataset eller en dataservice"@da ;
-  rdfs:comment "the union of Catalog, Dataset and DataService", "Resource published or curated by a single agent."@en, "Ressource udgivet eller organiseret af en enkelt aktør."@da ;
-  rdfs:label "dcat:Resource" ;
-  sh:message "The node is either a Catalog, Dataset or a DataService" ;
-  sh:or (
-   _:genid109
-   _:genid111
-   _:genid113
- ) .
 
 <http://data.europa.eu/r5r#Identifier_Shape>
   a sh:NodeShape ;
@@ -1194,6 +1182,94 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
   ] .
 
+<https://data.gov.dk/model/profile/dcat-ap-dk#Frequency_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dc:Frequency ;
+  sh:name "Frequency"@en, "Frekvens"@da ;
+  sh:description "A rate at which something recurs, e.g. the publication of a Dataset. "@en, "Den hyppighed med hvilken noget gentages, fx. opdateringen af et datasæt"@da ;
+  rdfs:comment "A rate at which something recurs."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#LinguisticSystem_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dc:LinguisticSystem ;
+  sh:name "Linguistic system"@en, "Lingvistisk system"@da ;
+  sh:description "A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language"@en, "Et system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation, fx. et sprog."@da ;
+  rdfs:comment "A system of signs, symbols, sounds, gestures, or rules used in communication."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#MediaType_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dc:MediaType ;
+  sh:name "Media Type"@en, "Medietype"@da ;
+  sh:description "A media type, e.g. the format of a computer file "@en, "Formatet for lagringen af indhold i en computerfil."@da ;
+  rdfs:comment "A file format or physical medium."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#PublisherType_Shape>
+  a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+  sh:name "Publisher Type"@en, "Udgivertype"@da ;
+  sh:description "A type of organisation that acts as a publisher"@en, "Typen af organisationen der har rollen som udgiver"@da .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#Status_Shape>
+  a sh:NodeShape ;
+  sh:targetClass skos:Concept ;
+  sh:name "Status"@en, "Status"@da ;
+  sh:description "An indication of the maturity of a Distribution or the type of change of a Catalogue Record."@en, "Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning."@da .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#Role_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dcat:Role ;
+  sh:name "Role"@en, "Rolle"@da ;
+  sh:description "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships. Note it is a subclass of skos:Concept."@en, "En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcetilskrivning eller ressourcerelationer."@da ;
+  rdfs:comment "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#ProvenanceStatement_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dc:ProvenanceStatement ;
+  sh:name "Provenance Statement"@en, "Proveniensudsagn"@da ;
+  sh:description "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation "@en, "Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning."@da ;
+  rdfs:comment "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#Document_Shape>
+  a sh:NodeShape ;
+  sh:targetClass <http://xmlns.com/foaf/spec/#term_Document> ;
+  sh:name "Document"@en, "Dokument"@da ;
+  sh:description "A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset."@en, "En tekstbaseret ressourcer som indeholder information målrettet mennesker, fx. en webside som beskriver et datasæt"@da ;
+  rdfs:comment "A document."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#RightsStatement_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dc:RightsStatement ;
+  sh:name "Rights Statement"@en, "Rettighedsudsagn"@da ;
+  sh:description "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en, "En beskrivelse af de intellektuelle ejendomsrettigheder forbundet med en ressource, et juridisk dokument der angiver officielle tilladelser vedrørende en ressource eller en beskrivelse af adgangsrettigheder."@da ;
+  rdfs:comment "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#Standard_Shape>
+  a sh:NodeShape ;
+  sh:targetClass dc:Standard ;
+  sh:name "Standard"@en, "Specifikation"@da ;
+  sh:description "A standard or other specification to which a Dataset or Distribution conforms"@en, "En specifikation som et kataloget, et datasæt, en dataservice eller en distribution er i overenstemmelse med."@da ;
+  rdfs:comment "A reference point against which other things can be evaluated or compared."@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk#Kind_Shape>
+  a sh:NodeShape ;
+  sh:targetClass vcard:Kind ;
+  sh:name "Kind"@en, "Virtuelt visitkort"@da ;
+  sh:description "A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group)"@en, "Et virtuelt visitkort beskrevet i overensstemmelse med vCard specifikationen. Anvendes eksempelvis til angivelse af telefonnummer og emailadrese for et kontaktpunkt. Bemærk at denne klasse er overklassen for de fire eksplicitte vCard-typer (Individ, Organisation, Lokation og Gruppe)"@da ;
+  rdfs:comment "The parent class for all objects"@en .
+
+<http://data.europa.eu/r5r#DcatResource_Shape>
+  a sh:NodeShape ;
+  sh:name "Catalogued resource"@en, "Katalogressource"@da ;
+  sh:description "A Catalog, Dataset and DataService"@en, "Et katalog, et dataset eller en dataservice"@da ;
+  rdfs:comment "the union of Catalog, Dataset and DataService", "Resource published or curated by a single agent."@en, "Ressource udgivet eller organiseret af en enkelt aktør."@da ;
+  rdfs:label "dcat:Resource" ;
+  sh:message "The node is either a Catalog, Dataset or a DataService" ;
+  sh:or (
+   _:genid120
+   _:genid122
+   _:genid124
+ ) .
+
 <http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape>
   a sh:NodeShape ;
   sh:name "DateOrDateTimeDataType"@en, "Tidsdatatype"@da ;
@@ -1205,8 +1281,8 @@
    _:genid128
  ) .
 
-_:genid109 sh:class dcat:Catalog .
-_:genid111 sh:class dcat:Dataset .
-_:genid113 sh:class dcat:DataService .
+_:genid120 sh:class dcat:Catalog .
+_:genid122 sh:class dcat:Dataset .
+_:genid124 sh:class dcat:DataService .
 _:genid126 sh:datatype xsd:date .
 _:genid128 sh:datatype xsd:dateTime .
