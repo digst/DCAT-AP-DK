@@ -4,19 +4,21 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcat-ap="http://data.europa.eu/r5r/"
+		 xmlns:dcat-ap-dk="https://data.gov.dk/model/profile/dcat-ap-dk"
+		 xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk"
          xmlns:dc="http://purl.org/dc/terms/"
          xmlns:cc="http://creativecommons.org/ns#"
          xmlns:sh="http://www.w3.org/ns/shacl#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-  <rdf:Description rdf:about="http://data.gov.dk/model/profile/dcat-ap-dk_2.0.0">
-    <dcat:accessURL rdf:resource="http://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes"/>
-    <dcat:downloadURL rdf:resource="http://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml"/>
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.0">
+    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes"/>
+    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml"/>
     <dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>
     <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
     <dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
     <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
-    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-03-19</dc:modified>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-15</dc:modified>
     <dc:publisher rdf:resource="http://digst.dk"/>
     <dc:relation rdf:resource="https://arkitektur.digst.dk/rammearkitektur/datastandarder"/> 
     <dc:description>This document specifies the constraints on properties and classes expressed by DCAT-AP-DK in SHACL</dc:description> 
@@ -66,7 +68,7 @@
 		<sh:name xml:lang="en">title</sh:name>
 		<sh:name xml:lang="da">titel</sh:name>		 		
 		<sh:description xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver det eller de ord der navngiver kataloget </sh:description>		
+		<sh:description xml:lang="da">Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. </sh:description>		
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
@@ -265,7 +267,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">rights</sh:name>
-		<sh:name xml:lang="da">adgangsrettigheder</sh:name>	
+		<sh:name xml:lang="da">rettigheder</sh:name>	
 		<sh:description xml:lang="en">This property refers to a statement that specifies rights associated with the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget</sh:description>	
 		<rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>		
@@ -310,7 +312,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">has part</sh:name>
-		<sh:name xml:lang="da">delkatalog</sh:name>	
+		<sh:name xml:lang="da">har delkatalog</sh:name>	
 		<sh:description xml:lang="en">This property refers to a related Catalogue that is part of the described Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et relateret katalog som er en del af det aktuelle katalog.</sh:description>	
 		<rdfs:comment xml:lang="en">A related resource that is included either physically or logically in the described resource.</rdfs:comment>			
@@ -324,7 +326,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">is part of</sh:name>
-		<sh:name xml:lang="da">del af katalog</sh:name>		
+		<sh:name xml:lang="da">er del af katalog</sh:name>		
 		<sh:description xml:lang="en">This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af.</sh:description>	
 		<rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>			
@@ -1493,9 +1495,9 @@
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">rights</sh:name>		  
-	    <sh:name xml:lang="da">adgangsrettigheder</sh:name>	
+	    <sh:name xml:lang="da">rettigheder</sh:name>	
 		<sh:description xml:lang="en">This property refers to a statement that specifies rights associated with the Distribution.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med distributionen</sh:description>		
+		<sh:description xml:lang="da">Denne egenskab giver reference til et dokument der beskriver rettighederne forbundet med distributionen</sh:description>		
 		<rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>			
         <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
@@ -1707,16 +1709,16 @@
   </rdf:Description>
 
 <!-- ====================================== --> 
-<!--          Klassifikationsystem          -->
+<!--          Begrebssystem                 -->
 <!-- ====================================== --> 
 
   <rdf:Description rdf:about="http://data.europa.eu/r5r#CategoryScheme_Shape">
   <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
   <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>  
     <sh:name xml:lang="en">Category Scheme</sh:name>
-    <sh:name xml:lang="da">Emneklassifikation</sh:name>	
+    <sh:name xml:lang="da">Begrebssystem</sh:name>	
 	<sh:description xml:lang="en">A concept collection (e.g. controlled vocabulary) in which the Category is defined.</sh:description>
-	<sh:description xml:lang="da">En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet klassifikationsemne indgår.</sh:description>		
+	<sh:description xml:lang="da">En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet begreb indgår.</sh:description>		
 
     <sh:property>
       <rdf:Description>
@@ -1740,14 +1742,14 @@
   <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
   <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
   <sh:name xml:lang="en">Category</sh:name>
-  <sh:name xml:lang="da">Klassifikationsemne</sh:name>		
+  <sh:name xml:lang="da">Begreb</sh:name>		
 	
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">preferred label</sh:name>		  
 	    <sh:name xml:lang="da">foretrukken betegnelse</sh:name>			  
 		<sh:description xml:lang="en">This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver klassifikationsemnets foretruknke betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.</sh:description>		  
+		<sh:description xml:lang="da">Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.</sh:description>		  
 		<rdfs:comment xml:lang="en">The preferred lexical label for a resource, in a given language.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">Det foretrukne leksikalske udtryk for en ressource på et givet sprog.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -1807,50 +1809,6 @@
 
   </rdf:Description>
   
-<!-- ====================================== --> 
-<!--                Katalogressource        -->
-<!-- ====================================== --> 
-
-  <rdf:Description rdf:about="http://data.europa.eu/r5r#DcatResource_Shape">
-  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
-	<sh:name xml:lang="en">Catalogued resource</sh:name>	
-	<sh:name xml:lang="da">Katalogressource</sh:name>			  
-	<sh:description xml:lang="en">A Catalog, Dataset and DataService</sh:description>
-	<sh:description xml:lang="da">Et katalog, et dataset eller en dataservice</sh:description>	  
-    <rdfs:comment>the union of Catalog, Dataset and DataService</rdfs:comment>	
-    <rdfs:comment xml:lang="en">Resource published or curated by a single agent.</rdfs:comment> <!-- DCAT -->
-	<rdfs:comment xml:lang="da">Ressource udgivet eller organiseret af en enkelt aktør.</rdfs:comment>		
-	<rdfs:label>dcat:Resource</rdfs:label>
-    <sh:message>The node is either a Catalog, Dataset or a DataService</sh:message>
-    <sh:or>
-      <rdf:Description>
-        <rdf:first>
-          <rdf:Description>
-            <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
-          </rdf:Description>
-        </rdf:first>
-        <rdf:rest>
-          <rdf:Description>
-            <rdf:first>
-              <rdf:Description>
-                <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-              </rdf:Description>
-            </rdf:first>
-            <rdf:rest>
-              <rdf:Description>
-                <rdf:first>
-                  <rdf:Description>
-                    <sh:class rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
-                  </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-              </rdf:Description>
-            </rdf:rest>
-          </rdf:Description>
-        </rdf:rest>
-      </rdf:Description>
-    </sh:or>
-  </rdf:Description>
 
 
 <!-- ====================================== --> 
@@ -2099,6 +2057,209 @@
     </sh:property>
 
   </rdf:Description>
+
+
+
+
+<!-- ====================================== --> 
+<!--                Frekvens                -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Frequency_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/Frequency"/>  
+	  <sh:name xml:lang="en">Frequency</sh:name>
+	  <sh:name xml:lang="da">Frekvens</sh:name>	
+	  <sh:description xml:lang="en">A rate at which something recurs, e.g. the publication of a Dataset. </sh:description>
+	  <sh:description xml:lang="da">Den hyppighed med hvilken noget gentages, fx. opdateringen af et datasæt</sh:description>	
+	  <rdfs:comment xml:lang="en">A rate at which something recurs.</rdfs:comment>	  
+  </rdf:Description>
+
+<!-- ====================================== --> 
+<!--                Sprog                   -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#LinguisticSystem_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>  
+	  <sh:name xml:lang="en">Linguistic system</sh:name>
+	  <sh:name xml:lang="da">Lingvistisk system</sh:name>	
+	  <sh:description xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language</sh:description>
+	  <sh:description xml:lang="da">Et system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation, fx. et sprog.</sh:description>		  
+	  <rdfs:comment xml:lang="en">A system of signs, symbols, sounds, gestures, or rules used in communication.</rdfs:comment>	  
+  </rdf:Description>
+  
+<!-- ====================================== --> 
+<!--                Medietype               -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#MediaType_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/MediaType"/>  
+	  <sh:name xml:lang="en">Media Type</sh:name>
+	  <sh:name xml:lang="da">Medietype</sh:name>	
+	  <sh:description xml:lang="en">A media type, e.g. the format of a computer file </sh:description>
+	  <sh:description xml:lang="da">Formatet for lagringen af indhold i en computerfil.</sh:description>	
+	  <rdfs:comment xml:lang="en">A file format or physical medium.</rdfs:comment>		  
+  </rdf:Description>
+  
+<!-- ====================================== --> 
+<!--                Udgivertype             -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#PublisherType_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
+	  <sh:name xml:lang="en">Publisher Type</sh:name>
+	  <sh:name xml:lang="da">Udgivertype</sh:name>	
+	  <sh:description xml:lang="en">A type of organisation that acts as a publisher</sh:description>
+	  <sh:description xml:lang="da">Typen af organisationen der har rollen som udgiver</sh:description>		  
+  </rdf:Description>
+  
+<!-- ====================================== --> 
+<!--                Status                  -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Status_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
+	  <sh:name xml:lang="en">Status</sh:name>
+	  <sh:name xml:lang="da">Status</sh:name>	
+	  <sh:description xml:lang="en">An indication of the maturity of a Distribution or the type of change of a Catalogue Record.</sh:description>
+	  <sh:description xml:lang="da">Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning.</sh:description>		  
+  </rdf:Description>
+  
+<!-- ====================================== --> 
+<!--                Rolle                   -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Role_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/ns/dcat#Role"/>  
+	  <sh:name xml:lang="en">Role</sh:name>
+	  <sh:name xml:lang="da">Rolle</sh:name>	
+	  <sh:description xml:lang="en">A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships. Note it is a subclass of skos:Concept.</sh:description>
+	  <sh:description xml:lang="da">En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcetilskrivning eller ressourcerelationer.</sh:description>
+	  <rdfs:comment xml:lang="en">A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</rdfs:comment>		  
+  </rdf:Description>  
+  
+<!-- ====================================== --> 
+<!--                Proveniensudsag         -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#ProvenanceStatement_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>  
+	  <sh:name xml:lang="en">Provenance Statement</sh:name>
+	  <sh:name xml:lang="da">Proveniensudsagn</sh:name>	
+	  <sh:description xml:lang="en">A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation </sh:description>
+	  <sh:description xml:lang="da">Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning.</sh:description>	
+	  <rdfs:comment xml:lang="en">Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>		  
+  </rdf:Description> 
+  
+<!-- ====================================== --> 
+<!--                Dokument                -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Document_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://xmlns.com/foaf/spec/#term_Document"/>  
+	  <sh:name xml:lang="en">Document</sh:name>
+	  <sh:name xml:lang="da">Dokument</sh:name>	
+	  <sh:description xml:lang="en">A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset.</sh:description>
+	  <sh:description xml:lang="da">En tekstbaseret ressourcer som indeholder information målrettet mennesker, fx. en webside som beskriver et datasæt</sh:description>	
+	  <rdfs:comment xml:lang="en">A document.</rdfs:comment>		  
+  </rdf:Description> 
+    
+<!-- ====================================== --> 
+<!--                Rettighedsudsagn        -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#RightsStatement_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/RightsStatement"/>  
+	  <sh:name xml:lang="en">Rights Statement</sh:name>
+	  <sh:name xml:lang="da">Rettighedsudsagn</sh:name>	
+	  <sh:description xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</sh:description>
+	  <sh:description xml:lang="da">En beskrivelse af de intellektuelle ejendomsrettigheder forbundet med en ressource, et juridisk dokument der angiver officielle tilladelser vedrørende en ressource eller en beskrivelse af adgangsrettigheder.</sh:description>
+	  <rdfs:comment xml:lang="en">A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</rdfs:comment>		  
+  </rdf:Description> 
+
+<!-- ====================================== --> 
+<!--                Standard                -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Standard_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/Standard"/>  
+	  <sh:name xml:lang="en">Standard</sh:name>
+	  <sh:name xml:lang="da">Specifikation</sh:name>	
+	  <sh:description xml:lang="en">A standard or other specification to which a Dataset or Distribution conforms</sh:description>
+	  <sh:description xml:lang="da">En specifikation som et kataloget, et datasæt, en dataservice eller en distribution er i overenstemmelse med.</sh:description>	
+	  <rdfs:comment xml:lang="en">A reference point against which other things can be evaluated or compared.</rdfs:comment>		  
+  </rdf:Description> 
+  
+<!-- ====================================== --> 
+<!--                Kind                    -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Kind_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>  
+	  <sh:name xml:lang="en">Kind</sh:name>
+	  <sh:name xml:lang="da">Virtuelt visitkort</sh:name>	
+	  <sh:description xml:lang="en">A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group)</sh:description>
+	  <sh:description xml:lang="da">Et virtuelt visitkort beskrevet i overensstemmelse med vCard specifikationen. Anvendes eksempelvis til angivelse af telefonnummer og emailadrese for et kontaktpunkt. Bemærk at denne klasse er overklassen for de fire eksplicitte vCard-typer (Individ, Organisation, Lokation og Gruppe)</sh:description>	
+	  <rdfs:comment xml:lang="en">The parent class for all objects</rdfs:comment>		  
+  </rdf:Description>  
+  
+<!-- ====================================== --> 
+<!--                Katalogressource        -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="http://data.europa.eu/r5r#DcatResource_Shape">
+  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	<sh:name xml:lang="en">Catalogued resource</sh:name>	
+	<sh:name xml:lang="da">Katalogressource</sh:name>			  
+	<sh:description xml:lang="en">A Catalog, Dataset and DataService</sh:description>
+	<sh:description xml:lang="da">Et katalog, et dataset eller en dataservice</sh:description>	  
+    <rdfs:comment>the union of Catalog, Dataset and DataService</rdfs:comment>	
+    <rdfs:comment xml:lang="en">Resource published or curated by a single agent.</rdfs:comment> <!-- DCAT -->
+	<rdfs:comment xml:lang="da">Ressource udgivet eller organiseret af en enkelt aktør.</rdfs:comment>		
+	<rdfs:label>dcat:Resource</rdfs:label>
+    <sh:message>The node is either a Catalog, Dataset or a DataService</sh:message>
+    <sh:or>
+      <rdf:Description>
+        <rdf:first>
+          <rdf:Description>
+            <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
+          </rdf:Description>
+        </rdf:first>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>
+              <rdf:Description>
+                <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+              </rdf:Description>
+            </rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <rdf:Description>
+                    <sh:class rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
+                  </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </rdf:rest>
+      </rdf:Description>
+    </sh:or>
+  </rdf:Description>
+
+  
+  
 
 <!-- ====================================== --> 
 <!--                Tidsdatatype            -->
