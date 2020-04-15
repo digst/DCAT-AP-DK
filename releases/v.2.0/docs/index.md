@@ -108,7 +108,7 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 </style>
 
 <pre class="metadata">
-Title: UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK)
+Title: UDKAST: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0)
 Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Bidragsyder, Bidragsydere 
@@ -124,10 +124,10 @@ Editor: [KOMBIT]
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
-Abstract: Dette dokument 'Standard for beskrivelse af datasæt (DCAT-AP-DK)' udgør en fællesoffentlig standard for beskrivelse af offentlige myndigheders datasæt.
+Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK)' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
-Revision: 2.0.0
+Revision: 2.0.0 (udkast)
 Date: 2019-04-14
 Max ToC Depth: 2
 Markup Shorthands: markdown yes
@@ -137,7 +137,7 @@ Logo: digst...
 </pre>
 
 
-<h1>UDKAST: Standard for beskrivelse af datasæt (DCAT-AP-DK 2.0)</h1>
+<h1>UDKAST: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0)</h1>
 
 UDKAST til DCAT-AP-DK 2.0
 
@@ -176,18 +176,34 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 
 ## Konformans og afvigelser fra DCAT-AP
-
-### Tilføjelser
-Følgende egenskaber er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP
-
-### Udeladelser
-Der er ikke blevet uddeladt egenskaber fra DCAT-AP i DCAT-AP-DK.
+Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer
 
 ### Ændringer af kravniveau
-Kravniveauet for følgende egenskaber er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
+Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
 * Datasæt: søgeord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
+* Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > 
+* Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
+* Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
+
+### Tilføjelser
+Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
+
+* Datasæt: forvaltningsopgave (dcat-dk:publicAdministrativeTaskType - subproperty of dcat:theme) FORMversionNumber
+* Datasæt: dataansvarlig organisation (frbr:responsibleEntity) 
+* Datasæt: bidragsyder (dct:contributor
+* Datasæt: vedligeholder (schema:maintainer)
+* Datasæt: hjemmel (cv:hasLegalResource)
+* Datasæt: betalingspålagt (dcat-dk:paymentImposed)
+* Datasæt: personoplysningskategori (dcat-dk:personalDataCategory) 
+* Datasæt: fortrolighedsgrad (dcat-dk:confidentialityType)
+* Datasæt: har kvalitetsmetadata (dqv:hasQualityMetadata)
+* Datasæt: har anvendelse (duv:hasUsage)
+
+### Udeladelser
+Der er ikke blevet uddeladt elementer fra DCAT-AP i DCAT-AP-DK.
+
 
 
 # Oversigt over anvendelsesprofilen
