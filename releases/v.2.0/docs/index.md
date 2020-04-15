@@ -2997,7 +2997,31 @@ URI: http://data.europa.eu/r5r/availability/
 
 ## UML-diagrammer
 
+
+
 ## Eksempler 
+
+Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
+Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)
+
+Find eksemplerne her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
+
+## Validering 
+
+Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som muliggør validering af DCAT-AP-DK-metadata. 
+
+SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).
+
+Find SHACL-filen her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation
+
+I SHACL Playground kan indholdet af TTL-filen her indsættes hvorefter DCAT-AP-DK-metadata indsættes.
+DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som anvender denne.
+
+Relevante links:
+* SHACL Playground: https://shacl.org/playground/
+* RDF validator: https://www.w3.org/RDF/Validator/
+* DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
+* RDF converter: http://www.easyrdf.org/converter
 
 ## Begrebsliste
 
