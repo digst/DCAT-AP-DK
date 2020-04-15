@@ -217,6 +217,8 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 * Datasæt: har kvalitetsmetadata (dqv:hasQualityMetadata)
 * Datasæt: har anvendelse (duv:hasUsage)
 
+<p class="issue">Disse tilføjelser skal drøftes yderligere </p>
+
 ### Udeladelser
 Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 
@@ -227,11 +229,7 @@ Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 ## Diagram 
 Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
 
-![DCAT-AP-DK UML-diagram](https://github.com/digst/DCAT-AP-DK/edit/master/releases/v.2.0/docs/img/DCAT-AP-DKv2.png "DCAT-AP-DK v2 UML Diagram")
-
-Anvendelseprofilen DCAT-AP visualiseret med UML-diagram
-
-![DCAT-AP UML-diagram](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/b6864a7d-4b8b-4fbe-8f03-5e0c3df002af/DCAT_AP_2.0.0.png "DCAT-AP 2 UML Diagram")
+<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
 
 ## Emner
 
@@ -273,10 +271,10 @@ Hvert element på et givet niveau kan beskrives med metadata, såsom titel, besk
 Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
 
 ## Datasætniveauet
-Dette niveau udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information. Det kan referere til mange forskellige repræsentatationer at netop dette datasæt. 
+Dette niveau udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt.
 
 ## Distributionsniveauet
-Distributionsniveauet er det nederste lag i DCAT-standarden. Her beskrives hvordan man opnår adgang den fysiske distribution af datasættet med oplysninger såsom adgangsURL, format, størrelse, downloadURL adgangsservice etc..
+Distributionsniveauet er det nederste lag i DCAT-standarden, og udtrykker at et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, fx i forhold til format. Her beskrives også hvordan man opnår adgang til denne fysiske distribution af datasættet med oplysninger såsom adgangsURL, format, størrelse, downloadURL, adgangsservice etc..
 
 <p class="issue">Hvordan fungerer denne fortælling om strukturen? </p>
 
@@ -3008,6 +3006,11 @@ URI: http://data.europa.eu/r5r/availability/
 
 ## UML-diagrammer
 
+### UML-diagram: DCAT-AP-DK
+<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
+
+### UML-diagram: DCAT-DK
+<p align="center"><a href="img/Figur-DCAT-DK-v2-UML.PNG"><img src="img/Figur-DCAT-DK-v2-UML.PNG" alt="Figur-DCAT-DK-v2-UML" width="800"/></a></p>
 
 
 ## Eksempler 
@@ -3023,7 +3026,7 @@ highlight: ttl
 </pre>
 
 <pre class=include-code>
-path: ../examples/basic-example1.ttl
+path: /../examples/basic-example1.ttl
 highlight: turtle
 </pre>
 
