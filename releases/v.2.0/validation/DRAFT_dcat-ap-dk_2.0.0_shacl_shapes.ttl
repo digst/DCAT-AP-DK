@@ -7,10 +7,10 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <http://schema.org/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
   dcat:accessURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
@@ -541,7 +541,7 @@
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/dqv#hasQualityMetadata> ;
     sh:severity sh:Violation ;
-    sh:shape <http://www.w3.org/ns/dqv#QualityMetadata> ;
+    sh:class <http://www.w3.org/ns/dqv#QualityMetadata> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "has usage"@en, "har anvendelse"@da ;
@@ -550,7 +550,7 @@
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/duv#hasUsage> ;
     sh:severity sh:Violation ;
-    sh:shape <http://www.w3.org/ns/duv#Usage> ;
+    sh:class <http://www.w3.org/ns/duv#Usage> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "payment imposed"@en, "betalingspålagt"@da ;
@@ -559,32 +559,34 @@
     sh:maxCount 1 ;
     sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
     sh:severity sh:Violation ;
-    sh:shape xsd:boolean ;
+    sh:datatype xsd:boolean ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "personal data category"@en, "personoplysningskategori"@da ;
-    sh:description "This property specifies a relation to specific personal data category"@en, "Denne egenskab angiver en relation til en bestemt personoplysningskategori."@da ;
+    sh:description "This property specifies a relation to specific personal data category"@en, "Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:"@da ;
     rdfs:comment "specification of a relation to specific personal data category"@en ;
-    sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
+    sh:path <https://data.gov.dk/model/core/dcat-dk/personalDataCategory> ;
     sh:severity sh:Violation ;
-    sh:shape skos:Concept ;
+    sh:pattern "^https://data.gov.dk/concept/core/personalDataCategory/" ;
+    sh:flags "i" ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "confidentiality type"@en, "fortrolighedsgrad"@da ;
-    sh:description "This property specifies the extent by which information contained in a dataset can be disclosed."@en, "Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives."@da ;
+    sh:name "confidentiality type "@en, "fortrolighedsgrad "@da ;
+    sh:description "This property specifies the extent by which information contained in a dataset can be disclosed."@en, "Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. Til angivelse af frekvens skal følgende klassifikation anvendes: https://data.gov.dk/concept/profile/personal-data-categories "@da ;
     rdfs:comment "specificaiton of the extent by which information contained in the resource can be disclosed."@en ;
     sh:maxCount 1 ;
-    sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
+    sh:path <https://data.gov.dk/model/core/dcat-dk/confidentialityType> ;
     sh:severity sh:Violation ;
-    sh:shape skos:Concept ;
+    sh:pattern "^https://data.gov.dk/concept/core/confidentialityType/" ;
+    sh:flags "i" ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "has legal resource"@en, "hjemmel"@da ;
     sh:description "This property specifies the legal framework for the dataset."@en, "Denne egenskab angiver med hvilken hjemmel datasættet blev skabt."@da ;
     rdfs:comment "It indicates the Legal Resource (e.g. legislation) to which the Public Service (red:resource) relates, operates or has its legal basis"@en, "reference til retskilde som danner grundlag for ressourcen"@da ;
     sh:path <http://data.europa.eu/m8g/hasLegalResource> ;
+    sh:class <http://data.europa.eu/eli/ontology#LegalResource> ;
     sh:severity sh:Violation ;
-    sh:shape <http://data.europa.eu/eli/ontology#LegalResource> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "version"@en, "versionsnummer"@da ;
