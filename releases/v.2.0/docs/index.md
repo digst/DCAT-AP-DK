@@ -203,7 +203,7 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 * Datasæt: har anvendelse (duv:hasUsage)
 
 ### Udeladelser
-Der er ikke blevet uddeladt elementer fra DCAT-AP i DCAT-AP-DK.
+Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 
 
 
@@ -248,6 +248,9 @@ Anvendelseprofilen DCAT-AP visualiseret med UML-diagram
 * vann: http://purl.org/vocab/vann/
 * voaf: http://purl.org/vocommons/voaf#
 * vcard: http://www.w3.org/2006/vcard/ns#
+* dqv: https://www.w3.org/ns/dqv
+* duv: https://www.w3.org/ns/duv
+* dcat-dk: https://data.gov.dk/model/core/dcat-dk/
 * dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/
 
 
