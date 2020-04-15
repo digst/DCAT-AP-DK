@@ -129,7 +129,7 @@ Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0
 Date: 2019-04-14
-Max ToC Depth: 3
+Max ToC Depth: 2
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK/tree/master/releases/v.2.0
 Inline Github Issues: full
@@ -178,16 +178,26 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 ## Konformans og afvigelser fra DCAT-AP
 
 ### Tilføjelser
+Følgende egenskaber er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP
 
 ### Udeladelser
+Der er ikke blevet uddeladt egenskaber fra DCAT-AP i DCAT-AP-DK.
 
 ### Ændringer af kravniveau
+Kravniveauet for følgende egenskaber er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
+* Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
+* Datasæt: søgeord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
 
 
 # Oversigt over anvendelsesprofilen
 
-## Diagram
+## Diagram 
+Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
+![DCAT-AP-DK UML-diagram](https://github.com/digst/DCAT-AP-DK/edit/master/releases/v.2.0/docs/img/DCAT-AP-DKv2.png "DCAT-AP-DK v2 UML Diagram")
+
+## Anvendelseprofilen DCAT-AP visualiseret med UML-diagram
+![DCAT-AP UML-diagram](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/b6864a7d-4b8b-4fbe-8f03-5e0c3df002af/DCAT_AP_2.0.0.png "DCAT-AP 2 UML Diagram")
 
 ## Emner
 
