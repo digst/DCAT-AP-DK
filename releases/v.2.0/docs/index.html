@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -1719,15 +1718,15 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    </ul>
    <h2 class="heading settled" data-level="3" id="modellens-grundlggende-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
-    DCAT bevæger sig i tre sammenhængende niveauer, et katalogniveau, på datasætniveau og på et distributionsniveau. 
-   <p>Hvert element på et givet niveau kan beskrives med metadata, såsom titel, beskrivelse, identifikator osv.</p>
+    DCAT bevæger sig på tre sammenhængende niveauer - et katalogniveau, et datasætniveau og et distributionsniveau. 
+   <p>Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>.</p>
    <p align="center"><a href="img/Figur-DCAT-niveauerne.PNG"><img alt="Figur DCAT-niveauerne" src="img/Figur-DCAT-niveauerne.PNG" width="600"></a></p>
    <h3 class="heading settled" data-level="3.1" id="katalogniveauet"><span class="secno">3.1. </span><span class="content">Katalogniveauet</span><a class="self-link" href="#katalogniveauet"></a></h3>
-    Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
+    Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde dataservices og andre datakataloger. 
    <h3 class="heading settled" data-level="3.2" id="datastniveauet"><span class="secno">3.2. </span><span class="content">Datasætniveauet</span><a class="self-link" href="#datastniveauet"></a></h3>
     Dette niveau udgøres af de individuelle datassæt. Et datasæt er et logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt. 
    <h3 class="heading settled" data-level="3.3" id="distributionsniveauet"><span class="secno">3.3. </span><span class="content">Distributionsniveauet</span><a class="self-link" href="#distributionsniveauet"></a></h3>
-    Distributionsniveauet er det nederste lag i DCAT-standarden, og udtrykker at et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, fx i forhold til format. Her beskrives også hvordan man opnår adgang til denne fysiske distribution af datasættet med oplysninger såsom adgangsURL, format, størrelse, downloadURL, adgangsservice etc.. 
+    Distributionsniveauet er det nederste lag i DCAT-standarden, og udtrykker at et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellig vis, fx i forhold til format. På dette niveau beskrives det også hvordan man opnår adgang til denne fysiske distribution af datasættet med oplysninger såsom adgangs-URL, format, størrelse, downloadURL, adgangsservice etc.. 
    <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
