@@ -2982,15 +2982,15 @@ URI: http://data.europa.eu/r5r/availability/
 
 # Referencer
 
-* DCAT 2.0: https://www.w3.org/TR/vocab-dcat-2/
-* DCAT-AP 2.0: https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200
-* DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
-* DCAT-AP-OP (1.1): http://data.europa.eu/euodp/en/developerscorner
-* Overblik over nationale DCAT-APer: https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf
-* EDP Goldbook: https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf
-* W3C Data Quality Vocabulary: https://www.w3.org/TR/vocab-dqv/
-* Fælles sprog for datakvalitet: https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx
-* W3C Data on the Web Best practices: https://www.w3.org/TR/dwbp/
+* [DCAT 2.0]((https://www.w3.org/TR/vocab-dcat-2/)
+* [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200)
+* [DCAT-AP validator](https://www.itb.ec.europa.eu/shacl/dcat-ap/upload)
+* [DCAT-AP-OP (1.1)](http://data.europa.eu/euodp/en/developerscorner)
+* [Overblik over nationale DCAT-APer](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf)
+* [EDP Goldbook](https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf)
+* [W3C Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/)
+* [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx)
+* [W3C Data on the Web Best practices](https://www.w3.org/TR/dwbp/)
 
 
 # Bilag
@@ -3004,7 +3004,7 @@ URI: http://data.europa.eu/r5r/availability/
 Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
 Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)
 
-Find eksemplerne her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
+Find eksemplerne her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
 
 ## Validering 
 
@@ -3012,16 +3012,16 @@ Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som 
 
 SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).
 
-Find SHACL-filen her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation
+Find SHACL-filen her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
 
 I SHACL Playground kan indholdet af TTL-filen her indsættes hvorefter DCAT-AP-DK-metadata indsættes.
 DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som anvender denne.
 
 Relevante links:
-* SHACL Playground: https://shacl.org/playground/
-* RDF validator: https://www.w3.org/RDF/Validator/
-* DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
-* RDF converter: http://www.easyrdf.org/converter
+* SHACL Playground: [https://shacl.org/playground/](https://shacl.org/playground/)
+* RDF validator: [https://www.w3.org/RDF/Validator/](https://www.w3.org/RDF/Validator/)
+* DCAT-AP validator: [https://www.itb.ec.europa.eu/shacl/dcat-ap/upload](https://www.itb.ec.europa.eu/shacl/dcat-ap/upload)
+* RDF converter: [http://www.easyrdf.org/converter](http://www.easyrdf.org/converter)
 
 ## Begrebsliste
 
@@ -3029,7 +3029,7 @@ Relevante links:
 
 ================
 
-arkitektur.digst.dk
+[arkitektur.digst.dk](arkitektur.digst.dk)
 
 
 
