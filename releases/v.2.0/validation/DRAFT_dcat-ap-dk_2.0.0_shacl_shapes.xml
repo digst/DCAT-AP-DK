@@ -965,7 +965,7 @@
 	    <sh:name xml:lang="en">personal data category</sh:name>	 	  
 	    <sh:name xml:lang="da">personoplysningskategori</sh:name>	
 		<sh:description xml:lang="en">This property specifies a relation to specific personal data category</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:https://data.gov.dk/concept/profile/personal-data-categories </sh:description>	
 		<rdfs:comment xml:lang="en">specification of a relation to specific personal data category</rdfs:comment>			
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -981,7 +981,7 @@
 	    <sh:name xml:lang="en">confidentiality type </sh:name>	 	  
 	    <sh:name xml:lang="da">fortrolighedsgrad </sh:name>	
 		<sh:description xml:lang="en">This property specifies the extent by which information contained in a dataset can be disclosed.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. Til angivelse af frekvens skal følgende klassifikation anvendes: https://data.gov.dk/concept/profile/personal-data-categories </sh:description>		
+		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. </sh:description>		
 		<rdfs:comment xml:lang="en">specificaiton of the extent by which information contained in the resource can be disclosed.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/confidentialityType"/>
