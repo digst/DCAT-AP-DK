@@ -274,7 +274,7 @@ DCAT bevæger sig i tre sammenhængende niveauer, et katalogniveau, på datasæt
 
 Hvert element på et givet niveau kan beskrives med metadata, såsom titel, beskrivelse, identifikator osv. 
 
-<p align="center"><a href="images/Figur-DCAT-niveauerne.PNG"><images src="Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="800"/></a></p>
+<p align="center"><a href="img/Figur-DCAT-niveauerne.PNG"><img src="img/Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="800"/></a></p>
 
 ## Katalogniveauet
 Katalogniveauet er det øverste niveau i DCAT-standarden. Det indeholder metadata om selve kataloget samt reference til de datasæt som indgår i det pågældende datakatalog. 
