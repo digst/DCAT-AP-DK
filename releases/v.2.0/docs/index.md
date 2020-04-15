@@ -198,8 +198,8 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
-* Datasæt: søgeord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
-* Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > 
+* Datasæt: emneord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
+* Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > ?
 * Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
 * Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
 
@@ -287,7 +287,6 @@ Distributionsniveauet er det nederste lag i DCAT-standarden. Her beskrives hvord
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 <p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler</p>
-
 
 
 ## Katalog
@@ -1127,7 +1126,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### søgeord
+### emneord
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#keyword</dd>
@@ -1312,7 +1311,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dqv#hasQualityMetadata</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1328,9 +1327,9 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 ### har anvendelse
 <dl class="def">
 <dt>URI</dt>
-<dd>http://www.w3.org/ns/duv#usage</dd>
+<dd>http://www.w3.org/ns/duv#hasUsage</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>http://www.w3.org/ns/duv#Usage</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1364,11 +1363,11 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 ### personoplysningskategori
 <dl class="def">
 <dt>URI</dt>
-<dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd>
+<dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personalDataCategory/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori.</dd>
+<dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies a relation to specific personal data category</dd>
 <dt>Definition (en)</dt>
@@ -1379,14 +1378,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### fortrolighedsgrad
+### fortrolighedsgrad 
 <dl class="def">
 <dt>URI</dt>
-<dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd>
+<dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentialityType/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives.</dd>
+<dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. Til angivelse af frekvens skal følgende klassifikation anvendes: https://data.gov.dk/concept/profile/personal-data-categories </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies the extent by which information contained in a dataset can be disclosed.</dd>
 <dt>Definition (en)</dt>
@@ -1402,7 +1401,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://data.europa.eu/m8g/hasLegalResource</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.</dd>
 <dt>Anvendelsesnote (en)</dt>
