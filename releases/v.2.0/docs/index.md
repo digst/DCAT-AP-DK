@@ -193,7 +193,7 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 
 * **Obligatorisk** (Mandatory): informationen SKAL angives
 * **Anbefalet** (Recommended): informationen BØR bør angives hvis den er tilgængelig
-* **Valgfri** (Optional): informationen KAN bør angives  
+* **Valgfri** (Optional): informationen KAN angives  
 
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
