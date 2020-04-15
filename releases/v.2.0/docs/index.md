@@ -124,7 +124,7 @@ Editor: [KOMBIT]
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
-Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK)' .
+Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0)' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
@@ -174,12 +174,25 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 ## Standardens anvendelse og afgrænsning
 
+### Use case 1: 
+
+### Use case 2: 
+
+### Use case 3: 
+
 
 ## Konformans og afvigelser fra DCAT-AP
 DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 
 ### Ændringer af kravniveau
+
+I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf).
+
+* Obligatorisk (Mandatory): informationen SKAL angives
+* Anbefalet (Recommended): informationen BØR bør angives hvis den er tilgængelig
+* Valgfri (Optional): informationen KAN bør angives  
+
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
@@ -3009,6 +3022,11 @@ Find eksemplerne her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/
 <pre class=include-code>
 path: https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/examples/basic-example1.ttl
 highlight: ttl
+</pre>
+
+<pre class=include-code>
+path: ../examples/basic-example1.ttl
+highlight: turtle
 </pre>
 
 
