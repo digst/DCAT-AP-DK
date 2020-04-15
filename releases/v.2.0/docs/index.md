@@ -3006,6 +3006,12 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
 
 Find eksemplerne her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
 
+<pre class=include-code>
+path: https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/examples/basic-example1.ttl
+highlight: ttl
+</pre>
+
+
 ## Validering 
 
 Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som muliggør validering af DCAT-AP-DK-metadata. 
