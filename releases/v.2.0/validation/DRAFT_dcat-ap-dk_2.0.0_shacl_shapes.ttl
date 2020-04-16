@@ -1,21 +1,21 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcat-ap: <http://data.europa.eu/r5r/> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
   dcat:accessURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
   dcat:downloadURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml> ;
-  dcat-ap:availability dcat-ap:experimental ;
+  dcatap:availability dcatap:experimental ;
   dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dc:conformsTo <https://www.w3.org/TR/shacl> ;
   dc:license <https://creativecommons.org/licenses/by/4.0> ;
@@ -129,10 +129,9 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
     sh:name "themes"@en, "emneklassifikation"@da ;
-    sh:description "This property refers to a knowledge organization system used to classify the Catalogue's Datasets."@en, "Denne egenskab angiver en emneklassifikation der anvendes til kategorisering af datasæt og dataservices i kataloget. Til angivelse af datatema skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme"@da ;
+    sh:description "This property refers to a knowledge organization system used to classify the Catalogue's Datasets."@en, "Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og dataservices i kataloget."@da ;
     rdfs:comment "A knowledge organization system (KOS) used to classify catalog's datasets and services."@en ;
-    sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/" ;
-    sh:flags "i" ;
+    sh:class skos:ConceptScheme ;
     sh:path dcat:themeTaxonomy ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
@@ -771,7 +770,7 @@
     sh:pattern "^http://data.europa.eu/r5r/availability/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
-    sh:path dcat-ap:availability ;
+    sh:path dcatap:availability ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
@@ -1208,13 +1207,13 @@
 <https://data.gov.dk/model/profile/dcat-ap-dk#PublisherType_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:Concept ;
-  sh:name "Publisher Type"@en, "Udgivertype"@da ;
+  sh:name "Publisher Type"@en, "Udgivertype (Udkast - endnu ikke implementeret)"@da ;
   sh:description "A type of organisation that acts as a publisher"@en, "Typen af organisationen der har rollen som udgiver"@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Status_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:Concept ;
-  sh:name "Status"@en, "Status"@da ;
+  sh:name "Status"@en, "Status (Udkast - endnu ikke implementeret)"@da ;
   sh:description "An indication of the maturity of a Distribution or the type of change of a Catalogue Record."@en, "Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning."@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Role_Shape>
