@@ -127,7 +127,7 @@
 		<sh:name xml:lang="en">publisher</sh:name>
 		<sh:name xml:lang="da">udgiver</sh:name>	
 		<sh:description xml:lang="en">This property refers to an entity (organisation) responsible for making the Catalogue available. </sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængligt.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.</sh:description>	
 		<rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>			
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
@@ -661,7 +661,7 @@
 	    <sh:name xml:lang="en">dataset distribution</sh:name>	 	  
 	    <sh:name xml:lang="da">distribution</sh:name>	
 		<sh:description xml:lang="en">This property links the Dataset to an available Distribution.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en tilgænglig distribution af datasættet.</sh:description>		
+		<sh:description xml:lang="da">Denne egenskab angiver en tilgængelig distribution af datasættet.</sh:description>		
 		<rdfs:comment xml:lang="en">An available distribution of the dataset.</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
@@ -2024,7 +2024,7 @@
     <sh:name xml:lang="en">Relationship</sh:name>
 	<sh:name xml:lang="da">Relation</sh:name>			  
 	<sh:description xml:lang="en">An association class for attaching additional information to a relationship between DCAT Resources</sh:description>
-	<sh:description xml:lang="da">En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.</sh:description>		
+	<sh:description xml:lang="da">En associationsklasse hvormed en relation mellem to DCAT-ressourcer kan forsynes med yderligere information.</sh:description>		
 	<rdfs:comment xml:lang="en">An association class for attaching additional information to a relationship between DCAT Resources.</rdfs:comment>		  
 	<rdfs:comment xml:lang="da">En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.</rdfs:comment>	
 		
