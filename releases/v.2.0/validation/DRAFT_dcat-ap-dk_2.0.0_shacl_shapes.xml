@@ -2115,7 +2115,7 @@
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
 	  <sh:name xml:lang="en">Publisher Type</sh:name>
-	  <sh:name xml:lang="da">Udgivertype</sh:name>	
+	  <sh:name xml:lang="da">Udgivertype (Udkast - endnu ikke implementeret)</sh:name>	
 	  <sh:description xml:lang="en">A type of organisation that acts as a publisher</sh:description>
 	  <sh:description xml:lang="da">Typen af organisationen der har rollen som udgiver</sh:description>		  
   </rdf:Description>
@@ -2128,7 +2128,7 @@
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
 	  <sh:name xml:lang="en">Status</sh:name>
-	  <sh:name xml:lang="da">Status</sh:name>	
+	  <sh:name xml:lang="da">Status  (Udkast - endnu ikke implementeret)</sh:name>	
 	  <sh:description xml:lang="en">An indication of the maturity of a Distribution or the type of change of a Catalogue Record.</sh:description>
 	  <sh:description xml:lang="da">Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning.</sh:description>		  
   </rdf:Description>
