@@ -15,7 +15,7 @@
     <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes"/>
     <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml"/>
     <dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>
-    <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+    <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
     <dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
     <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
     <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-15</dc:modified>
