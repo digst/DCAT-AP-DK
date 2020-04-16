@@ -15,7 +15,7 @@
     <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes"/>
     <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml"/>
     <dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>
-    <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+    <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
     <dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
     <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
     <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-15</dc:modified>
@@ -207,11 +207,9 @@
 		<sh:name xml:lang="en">themes</sh:name>
 		<sh:name xml:lang="da">emneklassifikation</sh:name>	 		
 		<sh:description xml:lang="en">This property refers to a knowledge organization system used to classify the Catalogue's Datasets.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en emneklassifikation der anvendes til kategorisering af datasæt og dataservices i kataloget. Til angivelse af datatema skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og dataservices i kataloget.</sh:description>	
 		<rdfs:comment xml:lang="en">A knowledge organization system (KOS) used to classify catalog's datasets and services.</rdfs:comment>				
-<!--    <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> -->
-        <sh:pattern>^http://publications.europa.eu/resource/authority/data-theme/</sh:pattern>
-        <sh:flags>i</sh:flags> <!-- ignore case -->			
+       <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> 			
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#themeTaxonomy"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
@@ -2128,9 +2126,10 @@
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
 	  <sh:name xml:lang="en">Status</sh:name>
-	  <sh:name xml:lang="da">Status  (Udkast - endnu ikke implementeret)</sh:name>	
+	  <sh:name xml:lang="da">Status (Udkast - endnu ikke implementeret)</sh:name>	
 	  <sh:description xml:lang="en">An indication of the maturity of a Distribution or the type of change of a Catalogue Record.</sh:description>
 	  <sh:description xml:lang="da">Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning.</sh:description>		  
+	  
   </rdf:Description>
   
 <!-- ====================================== --> 
