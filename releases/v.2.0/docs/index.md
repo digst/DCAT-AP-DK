@@ -181,6 +181,11 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 ### Use case 3: 
 
 
+### Relevante emner
+
+Basisinformation, Emneinddeling, Aktører,  Dataindhold, Afgrænsning, Datakvalitet, Jura og regulering,  Proveniens og historik
+
+
 ## Konformans og afvigelser fra DCAT-AP
 DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. 
 
@@ -230,10 +235,6 @@ Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
 
 <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
-
-## Emner
-
-Basisinformation, Emneinddeling, Aktører,  Dataindhold, Afgrænsning, Datakvalitet, Jura og regulering,  Proveniens og historik
 
 
 ## Namespaces
