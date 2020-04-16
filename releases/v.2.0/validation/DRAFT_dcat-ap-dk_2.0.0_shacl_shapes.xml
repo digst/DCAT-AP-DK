@@ -970,7 +970,7 @@
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
   <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
-        <sh:pattern>^https://data.gov.dk/concept/core/personalDataCategory/</sh:pattern>
+        <sh:pattern>^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
@@ -987,7 +987,7 @@
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/confidentialityType"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
   <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
-        <sh:pattern>^https://data.gov.dk/concept/core/confidentialityType/</sh:pattern>
+        <sh:pattern>^https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
