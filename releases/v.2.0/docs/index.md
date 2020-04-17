@@ -102,7 +102,24 @@ h2.heading.settled > a.self-link, h3.heading.settled > a.self-link, h4.heading.s
 			padding-left: 25em;
 		}
 }
-	
+
+
+dl.def dt,dl.def dd {
+    box-sizing: border-box;
+}
+dl.def dt {
+    float: left;
+    width: 25%;
+    padding-bottom: 0;
+}
+dl.def dd {
+    margin-left: 25%!important;
+}
+dl.def dd:after {
+    content: "";
+    display: block;
+    clear: both;
+} 
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
