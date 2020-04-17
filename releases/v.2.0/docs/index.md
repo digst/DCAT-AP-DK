@@ -306,7 +306,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler</p>
 
 
-## Katalog
+## Klasse: Katalog
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Catalog</dd>
@@ -399,7 +399,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Rækkevidde</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængligt.</dd>
+<dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an entity (organisation) responsible for making the Catalogue available. </dd>
 <dt>Definition (en)</dt>
@@ -487,9 +487,9 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#themeTaxonomy</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/data-theme/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#ConceptScheme</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en emneklassifikation der anvendes til kategorisering af datasæt og dataservices i kataloget. Til angivelse af datatema skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme</dd>
+<dd>Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og dataservices i kataloget.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a knowledge organization system used to classify the Catalogue's Datasets.</dd>
 <dt>Definition (en)</dt>
@@ -644,7 +644,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Katalogpost
+## Klasse: Katalogpost
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#CatalogRecord</dd>
@@ -676,7 +676,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### udgivelsesdato
+### tilføjelsesdato
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/issued</dd>
@@ -821,7 +821,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Datasæt
+## Klasse: Datasæt
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
@@ -1022,7 +1022,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en tilgænglig distribution af datasættet.</dd>
+<dd>Denne egenskab angiver en tilgængelig distribution af datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property links the Dataset to an available Distribution.</dd>
 <dt>Definition (en)</dt>
@@ -1382,9 +1382,9 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personalDataCategory/</dd>
+<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:</dd>
+<dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:https://data.gov.dk/concept/profile/personal-data-categories </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies a relation to specific personal data category</dd>
 <dt>Definition (en)</dt>
@@ -1400,13 +1400,13 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentialityType/</dd>
+<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. Til angivelse af frekvens skal følgende klassifikation anvendes: https://data.gov.dk/concept/profile/personal-data-categories </dd>
+<dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies the extent by which information contained in a dataset can be disclosed.</dd>
 <dt>Definition (en)</dt>
-<dd>specificaiton of the extent by which information contained in the resource can be disclosed.</dd>
+<dd>specification of the extent by which information contained in the resource can be disclosed.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -1611,14 +1611,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### blev genereret ved
+### blev dannet ved
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/prov#wasGeneratedBy</dd>
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/prov#Activity</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den aktivitet der genererede eller leverede forretningskonteksten for datasættets skabelse.</dd>
+<dd>Denne egenskab angiver den aktivitet der dannede eller leverede forretningskonteksten for datasættets skabelse.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an activity that generated, or provides the business context for, the creation of the dataset.</dd>
 <dt>Definition (en)</dt>
@@ -1629,7 +1629,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Distribution
+## Klasse: Distribution
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
@@ -2059,7 +2059,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Dataservice
+## Klasse: Dataservice
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#DataService</dd>
@@ -2199,7 +2199,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Aktør
+## Klasse: Aktør
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
@@ -2249,7 +2249,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Begrebssystem
+## Klasse: Begrebssystem
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme</dd>
@@ -2281,7 +2281,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>	
 			
-## Begreb
+## Klasse: Begreb
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
@@ -2313,7 +2313,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>	
 			
-## Checksum
+## Klasse: Checksum
 <dl class="def">
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#Checksum</dd>
@@ -2363,7 +2363,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>	
 			
-## Identifikator
+## Klasse: Identifikator
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#Identifier</dd>
@@ -2395,7 +2395,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Licensdokument
+## Klasse: Licensdokument
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/LicenseDocument</dd>
@@ -2427,7 +2427,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>	
 			
-## Lokation
+## Klasse: Lokation
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/Location</dd>
@@ -2495,7 +2495,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Periode
+## Klasse: Periode
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/PeriodOfTime</dd>
@@ -2581,12 +2581,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>	
 			
-## Relation
+## Klasse: Relation
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Relationship</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.</dd>
+<dd>En associationsklasse hvormed en relation mellem to DCAT-ressourcer kan forsynes med yderligere information.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>An association class for attaching additional information to a relationship between DCAT Resources</dd>
 <dt>Definition (en)</dt>
@@ -2631,7 +2631,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>	
 			
-## Frekvens
+## Klasse: Frekvens
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/Frequency</dd>
@@ -2645,7 +2645,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Lingvistisk system
+## Klasse: Lingvistisk system
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/LinguisticSystem</dd>
@@ -2659,7 +2659,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Medietype
+## Klasse: Medietype
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/MediaType</dd>
@@ -2673,7 +2673,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Udgivertype
+## Klasse: Udgivertype (Udkast - endnu ikke implementeret)
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
@@ -2687,7 +2687,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Status
+## Klasse: Status (Udkast - endnu ikke implementeret)
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
@@ -2701,7 +2701,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Rolle
+## Klasse: Rolle
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Role</dd>
@@ -2715,7 +2715,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Proveniensudsagn
+## Klasse: Proveniensudsagn
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/ProvenanceStatement</dd>
@@ -2729,7 +2729,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Dokument
+## Klasse: Dokument
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/spec/#term_Document</dd>
@@ -2743,7 +2743,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Rettighedsudsagn
+## Klasse: Rettighedsudsagn
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/RightsStatement</dd>
@@ -2757,7 +2757,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Specifikation
+## Klasse: Specifikation
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/Standard</dd>
@@ -2771,7 +2771,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd></dd>
 </dl>	
 			
-## Virtuelt visitkort
+## Klasse: Virtuelt visitkort
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2006/vcard/ns#Kind</dd>
@@ -2783,8 +2783,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>The parent class for all objects</dd>
 <dt>Kravniveau</dt>
 <dd></dd>
-</dl>
-
+</dl>	
 
 # Klassifikationer
 
