@@ -191,7 +191,7 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 ## Standardens anvendelse og afgrænsning
 
-### Use case 1: En nationalt dataportal
+### Use case 1: En national dataportal
 
 ### Use case 2: En domænespecifik dataportal
 
