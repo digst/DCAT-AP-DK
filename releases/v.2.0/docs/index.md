@@ -174,25 +174,28 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 ## Standardens anvendelse og afgrænsning
 
-### Use case 1: 
+### Use case 1: En nationalt dataportal
 
-### Use case 2: 
+### Use case 2: En domænespecifik dataportal
 
-### Use case 3: 
+### Use case 3: En myndighedsspecifik dataportal
 
+### Use case 4: En myndigheds interne dataoverblik
+
+
+Issue: Disse udkast til use cases skal drøftes yderligere. 
+
+Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3 ) 
 
 ### Relevante emner
 
 Basisinformation, Emneinddeling, Aktører,  Dataindhold, Afgrænsning, Datakvalitet, Jura og regulering,  Proveniens og historik
 
 
-## Konformans og afvigelser fra DCAT-AP
-DCAT-AP-DK er konform med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der er i overensstemmelse med DCAT-AP-DK er også i overensstemmelse med DCAT-AP. 
+## Overenstemmelse og afvigelser ift. DCAT-AP
+DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også med DCAT-AP. 
 
 Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
-
-
-### Ændringer af kravniveau
 
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf).
 
@@ -200,6 +203,7 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 * **Anbefalet** (Recommended): informationen BØR bør angives hvis den er tilgængelig
 * **Valgfri** (Optional): informationen KAN angives  
 
+### Ændringer af kravniveau
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
@@ -3009,6 +3013,31 @@ URI: http://data.europa.eu/r5r/availability/
 
 ### UML-diagram: DCAT-AP-DK
 <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
+
+#### Deldiagrammer: 
+<img src="img/Datasæt.png" alt="Figur-DCAT-AP-DK-deldiagram" width="800"/>
+<img src="img/Aktør.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Begreb.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Begrebssystem.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Checksum.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Dataservice.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Distribution.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Dokument.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Frekvens.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Identifikator.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Katalog.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Katalogpost.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Licensdokument.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Lingvistisk system.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Lokation.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Medietype.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Periode.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Proveniensudsagn.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Relation.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Rettighedsudsagn.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Rolle.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Specifikation.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
+<img src="img/Virtuelt visitkort.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
 
 ### UML-diagram: DCAT-DK
 <p align="center"><a href="img/Figur-DCAT-DK-v2-UML.PNG"><img src="img/Figur-DCAT-DK-v2-UML.PNG" alt="Figur-DCAT-DK-v2-UML" width="800"/></a></p>
