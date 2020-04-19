@@ -145,7 +145,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
-Date: 2019-04-17
+Date: 2019-04-19
 Max ToC Depth: 2
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -3096,58 +3096,73 @@ Relevante links:
 
 ## Begrebsliste
 
+**Begrebmodel for beskrivelse af datasæt**
 
+
+- Namespace: https://data.gov.dk/concept/core/dataset/
+- Modelnavn (label): Begrebsmodel for datasæt
+- Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
+- Versionnummer (versionInfo): 0.2.0
+- Seneste opdateringsdato (dateModified): 19-14-2020
+- Modelstatus (modelStatus): development
+- Godkendelsesstatus (approvalStatus): afventer godkendelse
+- Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
+- Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger
+
+<p align="center"><a href="img/Figur-Begrebsmodel for datasæt.png"><img src="img/Figur-Begrebsmodel for datasæt.png" alt="test" width="800"/></a></p>
+
+<table class="term-table">
+    <thead>
+        <tr>
+            <th>
+                Foretrukken dansk term
+            </th>
+            <th>
+                Definition
+            </th>
+            <th>
+                Juridisk kilde
+            </th>
+            <th>
+                Kilde
+            </th>
+            <th>
+                Tilh&oslash;rer emneomr&aring;de
+            </th>
+            <th>
+                Foretrukken engelsk term
+            </th>
+        </tr>
+    </thead>
+    <tbody>	
+ <tr><td>aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>agent </td></tr>
+ <tr><td>bytestørrelse</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>bytesize </td></tr>
+ <tr><td>katalog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>catalog </td></tr>
+ <tr><td>katalogpost</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>catalog record </td></tr>
+ <tr><td>katalogiseret ressource</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>catalogued resource </td></tr>
+ <tr><td>begreb</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>concept </td></tr>
+ <tr><td>begrebssystem</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>concept scheme </td></tr>
+ <tr><td>skaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>creator </td></tr>
+ <tr><td>datakatalog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>data catalog </td></tr>
+ <tr><td>dataansvarlig</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>data responsible organisation </td></tr>
+ <tr><td>dataskaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>dataset creator </td></tr>
+ <tr><td>distribution</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>distribution </td></tr>
+ <tr><td>download-url</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>download url </td></tr>
+ <tr><td>format</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>format </td></tr>
+ <tr><td>hjemmeside</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>homepage </td></tr>
+ <tr><td>sprog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>language </td></tr>
+ <tr><td>udgiver</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>publisher </td></tr>
+ <tr><td>ansvarlig aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>responsible entity </td></tr>
+ <tr><td>serialisering</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>serialization </td></tr>
+ <tr><td>dataservice</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>data service </td></tr>
+ <tr><td>datasæt</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>dataset </td></tr>	
+    </tbody>    
+</table>	    
 
 ================
 
 [arkitektur.digst.dk](arkitektur.digst.dk)
 
 
-
-
-
-
-
-# Short hands
-
-   
-# h1
-
-## h2
-
-### h3 
-
-#### h4
-
-##### h5
-
-<p align="center"><a href="img/test.jpg"><img src="img/test.jpg" alt="test" width="800"/></a></p>
-
-Links: [Test](https://www.example.om)
-
-
-<p class="note">Note 1</p>
-
-<p class="example">Example 2</p>
-
-<p class="assertion">assertion 3</p>
-
-<p class="advisement">advisement</p>
-
-<p class="issue">Issue</p>
-
-definition list:
-<dl class="def"> 
-<dt>1</dt><dd></dd>a<dt>
-<dt>2</dt><dd></dd>b<dt>
-</dl>
-	
-* bullit 1	
-* bullit 2
-* bullit 3
-
-*kursiv*
-
-**fed**
 
 
