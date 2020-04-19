@@ -3135,27 +3135,27 @@ Relevante links:
         </tr>
     </thead>
     <tbody>	
- <tr><td>aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>agent </td></tr>
- <tr><td>bytestørrelse</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>bytesize </td></tr>
- <tr><td>katalog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>catalog </td></tr>
- <tr><td>katalogpost</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>catalog record </td></tr>
- <tr><td>katalogiseret ressource</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>catalogued resource </td></tr>
- <tr><td>begreb</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>concept </td></tr>
- <tr><td>begrebssystem</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>concept scheme </td></tr>
- <tr><td>skaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>creator </td></tr>
- <tr><td>datakatalog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>data catalog </td></tr>
- <tr><td>dataansvarlig</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>data responsible organisation </td></tr>
- <tr><td>dataskaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>dataset creator </td></tr>
- <tr><td>distribution</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>distribution </td></tr>
- <tr><td>download-url</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>download url </td></tr>
- <tr><td>format</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>format </td></tr>
- <tr><td>hjemmeside</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>homepage </td></tr>
- <tr><td>sprog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>language </td></tr>
- <tr><td>udgiver</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>publisher </td></tr>
- <tr><td>ansvarlig aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>responsible entity </td></tr>
- <tr><td>serialisering</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>serialization </td></tr>
- <tr><td>dataservice</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>data service </td></tr>
- <tr><td>datasæt</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>dataset </td></tr>	
+ <tr><td>aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>agent </td></tr>
+ <tr><td>bytestørrelse</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>bytesize </td></tr>
+ <tr><td>katalog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>catalog </td></tr>
+ <tr><td>katalogpost</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp</td><td>&nbsp;ja</td><td>catalog record </td></tr>
+ <tr><td>katalogiseret ressource</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>catalogued resource </td></tr>
+ <tr><td>begreb</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>concept </td></tr>
+ <tr><td>begrebssystem</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>concept scheme </td></tr>
+ <tr><td>skaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>creator </td></tr>
+ <tr><td>datakatalog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data catalog </td></tr>
+ <tr><td>dataansvarlig</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data responsible organisation </td></tr>
+ <tr><td>dataskaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset creator </td></tr>
+ <tr><td>distribution</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>distribution </td></tr>
+ <tr><td>download-url</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>download url </td></tr>
+ <tr><td>format</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp</td><td>&nbsp;nej</td><td>format </td></tr>
+ <tr><td>hjemmeside</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>homepage </td></tr>
+ <tr><td>sprog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>language </td></tr>
+ <tr><td>udgiver</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>publisher </td></tr>
+ <tr><td>ansvarlig aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>responsible entity </td></tr>
+ <tr><td>serialisering</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>serialization </td></tr>
+ <tr><td>dataservice</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data service </td></tr>
+ <tr><td>datasæt</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset </td></tr>	
     </tbody>    
 </table>	    
 
