@@ -285,49 +285,29 @@ Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
  <tr><td>dcat-ap-dk</td><td>https://data.gov.dk/model/profile/dcat-ap-dk/</td><td>DCAT-AP-DK</td></tr>
 </tbody></table>
 
-<!--
-* adms: http://www.w3.org/ns/adms#
-* dcat: http://www.w3.org/ns/dcat#
-* dcatap: http://data.europa.eu/r5r/
-* dct: http://purl.org/dc/terms/
-* foaf: http://xmlns.com/foaf/0.1/
-* locn: http://www.w3.org/ns/locn#
-* owl: http://www.w3.org/2002/07/owl#
-* odrl: http://www.w3.org/ns/odrl/2/
-* rdfs: http://www.w3.org/2000/01/rdf-schema#
-* schema: http://schema.org/
-* skos: http://www.w3.org/2004/02/skos/core#
-* spdx: http://spdx.org/rdf/terms#
-* xsd: http://www.w3.org/2001/XMLSchema#
-* vann: http://purl.org/vocab/vann/
-* voaf: http://purl.org/vocommons/voaf#
-* vcard: http://www.w3.org/2006/vcard/ns#
-* dqv: https://www.w3.org/ns/dqv
-* duv: https://www.w3.org/ns/duv
-* dcat-dk: https://data.gov.dk/model/core/dcat-dk/
-* dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/
--->
 
 # Modellens grundlæggende struktur
 DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Se også [begrebslisten](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste) med yderligere information.
 
 ## Katalog
-Et katalog (dcat:Catalog) er en samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og dataservices som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde dataservices og andre datakataloger.
+Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.
+
+Issue: Er "kurateret" ok her som oversættelse af "curated"?
 
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller organiseret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, dataservice og katalog. 
 
 ## Datasæt
-Et datasæt (dcat:Dataset) er en samling af data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt.
+Et datasæt (dcat:Dataset) er en samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer.. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt.
 
 ## Distribution
-En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangsservice m.fl.
+En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangstjeneste m.fl.
 
-## Dataservice
-En dataservice (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En dataservice kan være bundet til en eller flere specifikke datasæt.
+## Datatjeneste
+En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt.
 
 ## Katalogpost 
-En katalogpost (dcat:CatalogRecord) er en optegnelse i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller dataservicen og metadata om selve optegnelsen af datasættet eller dataservicen i kataloget.
+En katalogpost (dcat:CatalogRecord) er en optegnelse i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller dataservicen og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
 
 
 **Illustration**
@@ -3138,7 +3118,7 @@ Relevante links:
 
 
 - Namespace: https://data.gov.dk/concept/core/dataset/
-- Modelnavn (label): Begrebsmodel for datasæt
+- Modelnavn (label): Begrebsmodel for datasæt og datakataloger
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 0.2.0
 - Seneste opdateringsdato (dateModified): 2020-04-20
@@ -3185,14 +3165,14 @@ Relevante links:
  <tr><td>dataansvarlig</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data responsible organisation </td></tr>
  <tr><td>dataskaber</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset creator </td></tr>
  <tr><td>distribution</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>distribution </td></tr>
- <tr><td>download-url</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>download url </td></tr>
+ <tr><td>download-URL</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>download URL </td></tr>
  <tr><td>format</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp</td><td>&nbsp;nej</td><td>format </td></tr>
  <tr><td>hjemmeside</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>homepage </td></tr>
  <tr><td>sprog</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>language </td></tr>
  <tr><td>udgiver</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>publisher </td></tr>
  <tr><td>ansvarlig aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>responsible entity </td></tr>
  <tr><td>serialisering</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>serialization </td></tr>
- <tr><td>dataservice</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data service </td></tr>
+ <tr><td>datatjeneste</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data service </td></tr>
  <tr><td>datasæt</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset </td></tr>	
     </tbody>    
 </table>	    
