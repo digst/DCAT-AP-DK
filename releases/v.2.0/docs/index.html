@@ -1552,7 +1552,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#namespaces"><span class="secno">2.2</span> <span class="content">Namespaces</span></a>
      </ol>
     <li>
-     <a href="#modellens-grundlggende-begreber-og-struktur"><span class="secno">3</span> <span class="content">Modellens grundlæggende begreber og struktur</span></a>
+     <a href="#modellens-grundlggende-struktur"><span class="secno">3</span> <span class="content">Modellens grundlæggende struktur</span></a>
      <ol class="toc">
       <li><a href="#katalog"><span class="secno">3.1</span> <span class="content">Katalog</span></a>
       <li><a href="#katalogiseret-ressource"><span class="secno">3.2</span> <span class="content">Katalogiseret ressource</span></a>
@@ -1740,9 +1740,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li data-md>
      <p>dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    </ul>
-   <h2 class="heading settled" data-level="3" id="modellens-grundlggende-begreber-og-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende begreber og struktur</span><a class="self-link" href="#modellens-grundlggende-begreber-og-struktur"></a></h2>
-    DCAT har seks grundlæggende elementer, som beskrives herunder i kontekst af et datakatalog. Se også begrebslisten i bilag med yderligere information.
-Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. 
+   <h2 class="heading settled" data-level="3" id="modellens-grundlggende-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
+    DCAT har seks grundlæggende elementer hvis indbyrdes relationer udgør modellens struktur, som beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Se også <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste">begrebslisten</a> med yderligere information. 
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
     Et katalog (dcat:Catalog) er en samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og dataservices som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde dataservices og andre datakataloger. 
    <h3 class="heading settled" data-level="3.2" id="katalogiseret-ressource"><span class="secno">3.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
@@ -1750,12 +1749,12 @@ Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</e
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
     Et datasæt (dcat:Dataset) er en samling af data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt. 
    <h3 class="heading settled" data-level="3.4" id="distribution"><span class="secno">3.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
-    En distribution er (dcat:Distribution) er n specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangsservice m.fl. 
+    En distribution er (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangsservice m.fl. 
    <h3 class="heading settled" data-level="3.5" id="dataservice"><span class="secno">3.5. </span><span class="content">Dataservice</span><a class="self-link" href="#dataservice"></a></h3>
     En dataservice (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En dataservice kan være bundet til en eller flere specifikke datasæt. 
    <h3 class="heading settled" data-level="3.6" id="katalogpost"><span class="secno">3.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en optegnelse i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller dataservicen og metadata om selve optegnelsen af datasættet eller dataservicen i kataloget. 
-   <p>Herunder kan ses en illustration af eksempler på elementerne katalog, datasæt og distribution:</p>
+   <p><strong>Illustration</strong> Herunder kan ses en illustration af eksempler på elementerne "katalog", "datasæt" og "distribution":</p>
    <p align="center"><a href="img/Figur-DCAT-niveauerne.PNG"><img alt="Figur DCAT-niveauerne" src="img/Figur-DCAT-niveauerne.PNG" width="600"></a></p>
    <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
@@ -4527,6 +4526,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td> ja
       <td>dataset 
    </table>
+    ================ 
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
 <script>
