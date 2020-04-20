@@ -3140,7 +3140,7 @@ Relevante links:
 - Modelnavn (label): Begrebsmodel for datasæt
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 0.2.0
-- Seneste opdateringsdato (dateModified): 19-14-2020
+- Seneste opdateringsdato (dateModified): 2020-04-20
 - Modelstatus (modelStatus): development
 - Godkendelsesstatus (approvalStatus): afventer godkendelse
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
