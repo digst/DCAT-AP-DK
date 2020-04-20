@@ -153,12 +153,12 @@ Inline Github Issues: full
 Logo: digst...
 </pre>
 
+Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: XMI, RDF og [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) 
+
 
 <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
 
-UDKAST til DCAT-AP-DK 2.0
-
-April 2020
+UDKAST til DCAT-AP-DK 2.0 - April 2020
    
 
 
