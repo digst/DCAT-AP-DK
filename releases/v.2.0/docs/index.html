@@ -1,3 +1,4 @@
+
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -1557,7 +1558,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#katalogiseret-ressource"><span class="secno">3.2</span> <span class="content">Katalogiseret ressource</span></a>
       <li><a href="#datast"><span class="secno">3.3</span> <span class="content">Datasæt</span></a>
       <li><a href="#distribution"><span class="secno">3.4</span> <span class="content">Distribution</span></a>
-      <li><a href="#dataservice"><span class="secno">3.5</span> <span class="content">Dataservice</span></a>
+      <li><a href="#datatjeneste"><span class="secno">3.5</span> <span class="content">Datatjeneste</span></a>
       <li><a href="#katalogpost"><span class="secno">3.6</span> <span class="content">Katalogpost</span></a>
      </ol>
     <li>
@@ -1567,7 +1568,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#klasse-katalogpost"><span class="secno">4.2</span> <span class="content">Klasse: Katalogpost</span></a>
       <li><a href="#klasse-datast"><span class="secno">4.3</span> <span class="content">Klasse: Datasæt</span></a>
       <li><a href="#klasse-distribution"><span class="secno">4.4</span> <span class="content">Klasse: Distribution</span></a>
-      <li><a href="#klasse-dataservice"><span class="secno">4.5</span> <span class="content">Klasse: Dataservice</span></a>
+      <li><a href="#klasse-datatjeneste"><span class="secno">4.5</span> <span class="content">Klasse: Datatjeneste</span></a>
       <li><a href="#klasse-aktr"><span class="secno">4.6</span> <span class="content">Klasse: Aktør</span></a>
       <li><a href="#klasse-begrebssystem"><span class="secno">4.7</span> <span class="content">Klasse: Begrebssystem</span></a>
       <li><a href="#klasse-begreb"><span class="secno">4.8</span> <span class="content">Klasse: Begreb</span></a>
@@ -1792,17 +1793,18 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h2 class="heading settled" data-level="3" id="modellens-grundlggende-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
     DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Se også <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste">begrebslisten</a> med yderligere information. 
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
-    Et katalog (dcat:Catalog) er en samling af metadata om ressourcer (fx. datasæt og dataservices i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og dataservices som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde dataservices og andre datakataloger. 
+    Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde datatjenester og andre datakataloger. 
+   <p class="issue" id="issue-15a88c4e"><a class="self-link" href="#issue-15a88c4e"></a> Er "kurateret" ok her som oversættelse af "curated"?</p>
    <h3 class="heading settled" data-level="3.2" id="katalogiseret-ressource"><span class="secno">3.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
     En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller organiseret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, dataservice og katalog. 
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
-    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt. 
+    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt. 
    <h3 class="heading settled" data-level="3.4" id="distribution"><span class="secno">3.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
-    En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangsservice m.fl. 
-   <h3 class="heading settled" data-level="3.5" id="dataservice"><span class="secno">3.5. </span><span class="content">Dataservice</span><a class="self-link" href="#dataservice"></a></h3>
-    En dataservice (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En dataservice kan være bundet til en eller flere specifikke datasæt. 
+    En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangstjeneste m.fl. 
+   <h3 class="heading settled" data-level="3.5" id="datatjeneste"><span class="secno">3.5. </span><span class="content">Datatjeneste</span><a class="self-link" href="#datatjeneste"></a></h3>
+    En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. 
    <h3 class="heading settled" data-level="3.6" id="katalogpost"><span class="secno">3.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
-    En katalogpost (dcat:CatalogRecord) er en optegnelse i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller dataservicen og metadata om selve optegnelsen af datasættet eller dataservicen i kataloget. 
+    En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. 
    <p><strong>Illustration</strong> Herunder kan ses en illustration af eksempler på elementerne "katalog", "datasæt" og "distribution":</p>
    <p align="left"><a href="img/Figur-DCAT-niveauerne.PNG"><img alt="Figur DCAT-niveauerne" src="img/Figur-DCAT-niveauerne.PNG" width="600"></a></p>
    <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
@@ -1814,11 +1816,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Anvendelsesnote (da) 
-    <dd>En organiseret samling af metadata om datasæt og dataservices i et katalog.
+    <dd>En kurateret samling af metadata om datasæt og datatjenester i et katalog.
     <dt>Anvendelsesnote (en)
     <dd>A catalogue or repository that hosts the Datasets being described.
     <dt>Definition (en)
-    <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).
+    <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).
     <dt>Kravniveau
     <dd>
    </dl>
@@ -1873,7 +1875,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.4" id="dataservice①"><span class="secno">4.1.4. </span><span class="content">dataservice</span><a class="self-link" href="#dataservice①"></a></h4>
+   <h4 class="heading settled" data-level="4.1.4" id="datatjeneste①"><span class="secno">4.1.4. </span><span class="content">datatjeneste</span><a class="self-link" href="#datatjeneste①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#service
@@ -1982,7 +1984,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og dataservices i kataloget.
+    <dd>Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og datatjenester i kataloget.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a knowledge organization system used to classify the Catalogue’s Datasets.
     <dt>Definition (en)
@@ -2016,7 +2018,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om dataset og dataservices i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language
+    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages. 
     <dt>Definition (en)
@@ -2060,14 +2062,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.1.15" id="katalogpost①"><span class="secno">4.1.15. </span><span class="content">katalogpost</span><a class="self-link" href="#katalogpost①"></a></h4>
+   <h4 class="heading settled" data-level="4.1.15" id="har-katalogpost"><span class="secno">4.1.15. </span><span class="content">har katalogpost</span><a class="self-link" href="#har-katalogpost"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#record
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en registrering af et enkelt datasæt eller en enkelt dataservice som er en del af kataloget
+    <dd>Denne egenskab angiver en registrering af et enkelt datasæt eller en enkelt datatjeneste som er en del af kataloget
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a Catalogue Record that is part of the Catalogue
     <dt>Definition (en)
@@ -2077,14 +2079,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.1.16" id="katalog①"><span class="secno">4.1.16. </span><span class="content">katalog</span><a class="self-link" href="#katalog①"></a></h4>
+   <h4 class="heading settled" data-level="4.1.16" id="har-delkatalog"><span class="secno">4.1.16. </span><span class="content">har delkatalog</span><a class="self-link" href="#har-delkatalog"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#catalog
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et katalog hvis indhold er relevant i forhold til det aktuelle katalog.
+    <dd>Denne egenskab angiver et katalog som udgør en del af det aktuelle katalog.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a catalog whose contents are of interest in the context of this catalog.
     <dt>Definition (en)
@@ -2094,14 +2096,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.1.17" id="har-delkatalog"><span class="secno">4.1.17. </span><span class="content">har delkatalog</span><a class="self-link" href="#har-delkatalog"></a></h4>
+   <h4 class="heading settled" data-level="4.1.17" id="har-del"><span class="secno">4.1.17. </span><span class="content">har del</span><a class="self-link" href="#har-del"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasPart
     <dt>Rækkevidde
-    <dd>http://www.w3.org/ns/dcat#Catalog
+    <dd>http://www.w3.org/ns/dcat#Resource
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et relateret katalog som er en del af det aktuelle katalog.
+    <dd>Denne egenskab angiver en katalogiseret ressource som er en del af det aktuelle katalog.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a related Catalogue that is part of the described Catalogue.
     <dt>Definition (en)
@@ -2133,7 +2135,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Anvendelsesnote (da) 
-    <dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en enkelt dataservice.
+    <dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en enkelt datatjeneste.
     <dt>Anvendelsesnote (en)
     <dd>A description of a Dataset’s entry in the Catalogue. 
     <dt>Definition (en)
@@ -2148,7 +2150,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det datasæt, den dataservice eller det katalog som er genstand for registreringen.
+    <dd>Denne egenskab angiver det datasæt, den datatjeneste eller det katalog som er genstand for registreringen.
     <dt>Anvendelsesnote (en)
     <dd>This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record.
     <dt>Definition (en)
@@ -2165,7 +2167,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2001/XMLSchema#date el. http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller dataservicen blev registreret i kataloget.
+    <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller datatjenesten blev registreret i kataloget.
     <dt>Anvendelsesnote (en)
     <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.
     <dt>Definition (en)
@@ -2268,7 +2270,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om dataset og dataservices i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
+    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.
     <dt>Definition (en)
@@ -2285,7 +2287,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om det aktuelle datasæt eller den aktuelle dataservice.
+    <dd>Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om det aktuelle datasæt eller den aktuelle datatjeneste.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the original metadata that was used in creating metadata for the Dataset.
     <dt>Definition (en)
@@ -2300,7 +2302,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da) 
-    <dd>En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
+    <dd>En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
     <dt>Anvendelsesnote (en)
     <dd>A conceptual entity that represents the information published. 
     <dt>Definition (en)
@@ -2478,7 +2480,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.11" id="distribution①"><span class="secno">4.3.11. </span><span class="content">distribution</span><a class="self-link" href="#distribution①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.11" id="har-distribution"><span class="secno">4.3.11. </span><span class="content">har distribution</span><a class="self-link" href="#har-distribution"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#distribution
@@ -2519,13 +2521,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://xmlns.com/foaf/0.1/Document
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en webside som giver adgang til datasættet, dets distributioner og/eller yderliger information. 
+    <dd>Denne egenskab angiver en webside som giver adgang til datasættet, dets distributioner og/eller yderligere information. 
 		Egenskaben bør pege på en webside hos den oprindelige dataudstiller - ikke en side eller et websted hos tredjepart, såsom en aggregator.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. 
 		It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.
     <dt>Definition (en)
-    <dd>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.
+    <dd>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2599,14 +2601,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.18" id="emneord"><span class="secno">4.3.18. </span><span class="content">emneord</span><a class="self-link" href="#emneord"></a></h4>
+   <h4 class="heading settled" data-level="4.3.18" id="ngleord"><span class="secno">4.3.18. </span><span class="content">nøgleord</span><a class="self-link" href="#ngleord"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#keyword
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et ord eller tag der kan bruges som grundlag for en søgning
+    <dd>Denne egenskab angiver et nøgleord eller tag der beskriver datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a keyword or tag describing the Dataset.
     <dt>Definition (en)
@@ -2667,16 +2669,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.22" id="rumlig-oplsning-i-meter"><span class="secno">4.3.22. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#rumlig-oplsning-i-meter"></a></h4>
+   <h4 class="heading settled" data-level="4.3.22" id="geografisk-oplsning-i-meter"><span class="secno">4.3.22. </span><span class="content">geografisk opløsning (i meter)</span><a class="self-link" href="#geografisk-oplsning-i-meter"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
     <dt>Rækkevidde
     <dd>
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angivermindste rumlige afstand som kan resolveres i et datasæt, målt i meter.
+    <dd>Denne egenskab angivermindste geografiske afstand som kan resolveres i et datasæt, målt i meter. Muligheden for at registrere detaljer i et rasterbillede eller grid kaldes geografisk opløsning. Den geografiske opløsning er angivet i meter. Jo flere pixels der er inkluderet i et rasterbillede af et bestemt område, jo højere er den geografiske opløsning, hvilket betyder, jo flere detaljer kan observeres. 
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to the minimum spatial separation resolvable in a dataset, measured in meters.
+    <dd>This property refers to the minimum spatial separation resolvable in a dataset, measured in meters. The ability of to detect details in an raster image or grid is referred to as spatial resolution. The spatial resolution is stated in metres. The more pixels are included in a raster image of a certain area, the higher the spatial resolution meaning the more details can be observed. 
     <dt>Definition (en)
     <dd>minimum spatial separation resolvable in a dataset, measured in metres.
     <dt>Multiplicitet
@@ -2708,7 +2710,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i datasættet.
+    <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i datasættet.  Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner. Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the minimum time period resolvable in the dataset.
     <dt>Definition (en)
@@ -3007,7 +3009,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.42" id="prciseret-tilskrivning"><span class="secno">4.3.42. </span><span class="content">præciseret tilskrivning</span><a class="self-link" href="#prciseret-tilskrivning"></a></h4>
+   <h4 class="heading settled" data-level="4.3.42" id="kvalificeret-kreditering"><span class="secno">4.3.42. </span><span class="content">kvalificeret kreditering</span><a class="self-link" href="#kvalificeret-kreditering"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#qualifiedAttribution
@@ -3024,18 +3026,18 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.43" id="prciseret-relation"><span class="secno">4.3.43. </span><span class="content">præciseret relation</span><a class="self-link" href="#prciseret-relation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.43" id="kvalificeret-relation"><span class="secno">4.3.43. </span><span class="content">kvalificeret relation</span><a class="self-link" href="#kvalificeret-relation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#qualifiedRelation
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#Relationship
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en nærmere klassificeret relation til en anden ressource såsom en publikation der referer, citerer eller på anden på peger på datasættet. Anvendes til at referere til en anden ressource hvor relationens betydning er kendt men ikke matcher en af de standardiserede egenskaber fra Dublin Core.
+    <dd>Denne egenskab angiver en nærmere klassificeret relation til en anden ressource såsom en publikation der referer, citerer eller på anden på peger på datasættet. Anvendes til at referere til en anden ressource hvor relationens betydning er kendt men ikke matcher en af de standardiserede egenskaber fra Dublin Core eller PROV-O.
     <dt>Anvendelsesnote (en)
     <dd>This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.
     <dt>Definition (en)
-    <dd>Link to a description of a relationship with another resource.
+    <dd>Link to a description of a relationship with another resource.Reference til en beskrivelse af en relation til en anden ressource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3063,7 +3065,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Distribution
     <dt>Anvendelsesnote (da) 
-    <dd>En fysisk repræsentation af datasættet.  Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående) 
+    <dd>En fysisk repræsentation af datasættet.  Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående) 
     <dt>Anvendelsesnote (en)
     <dd>A physical embodiment of the Dataset in a particular format.
     <dt>Definition (en)
@@ -3071,7 +3073,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>
    </dl>
-   <h4 class="heading settled" data-level="4.4.1" id="adgangs-url"><span class="secno">4.4.1. </span><span class="content">adgangs-URL</span><a class="self-link" href="#adgangs-url"></a></h4>
+   <h4 class="heading settled" data-level="4.4.1" id="adgangsadresse"><span class="secno">4.4.1. </span><span class="content">adgangsadresse</span><a class="self-link" href="#adgangsadresse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessURL
@@ -3105,14 +3107,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.4.3" id="adgangsservice"><span class="secno">4.4.3. </span><span class="content">adgangsservice</span><a class="self-link" href="#adgangsservice"></a></h4>
+   <h4 class="heading settled" data-level="4.4.3" id="adgangstjeneste"><span class="secno">4.4.3. </span><span class="content">adgangstjeneste</span><a class="self-link" href="#adgangstjeneste"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#accessService
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#DataService
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en dataservice som giver adgang til en distribution af datasættet.
+    <dd>Denne egenskab angiver en datatjeneste som giver adgang til en distribution af datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a data service that gives access to the distribution of the dataset
     <dt>Definition (en)
@@ -3355,7 +3357,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
     <dt>Definition (en)
-    <dd>The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.Pakkeformatet for en distribution som grupperer en eller flere datafiler, fx. med det formål at gøre det muligt at download et antal relaterede filer på én gang.
+    <dd>The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3446,14 +3448,14 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.4.23" id="rumlig-oplsning-i-meter①"><span class="secno">4.4.23. </span><span class="content">rumlig opløsning (i meter)</span><a class="self-link" href="#rumlig-oplsning-i-meter①"></a></h4>
+   <h4 class="heading settled" data-level="4.4.23" id="geografisk-oplsning-i-meter①"><span class="secno">4.4.23. </span><span class="content">geografisk opløsning (i meter)</span><a class="self-link" href="#geografisk-oplsning-i-meter①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
     <dt>Rækkevidde
     <dd>
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angivermindste rumlige afstand som kan resolveres i en distribution, målt i meter.
+    <dd>Denne egenskab angivermindste geografiske afstand som kan resolveres i en distribution, målt i meter.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the  minimum spatial separation resolvable in a dataset distribution, measured in meters.
     <dt>Definition (en)
@@ -3463,7 +3465,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.5" id="klasse-dataservice"><span class="secno">4.5. </span><span class="content">Klasse: Dataservice</span><a class="self-link" href="#klasse-dataservice"></a></h3>
+   <h3 class="heading settled" data-level="4.5" id="klasse-datatjeneste"><span class="secno">4.5. </span><span class="content">Klasse: Datatjeneste</span><a class="self-link" href="#klasse-datatjeneste"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#DataService
@@ -3487,7 +3489,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>The root location or primary endpoint of the service (an IRI).
     <dt>Definition (en)
-    <dd>The root location or primary endpoint of the service (a web-resolvable IRI).Rodplaceringen eller det primære endpoint for en service (en web-resolverbar IR
+    <dd>The root location or primary endpoint of the service (a web-resolvable IRI).Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IR
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3500,7 +3502,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det eller de ord som navngiver dataservicen. Egenskaben kan gentages for hver sprogvariant.
+    <dd>Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.
     <dt>Definition (en)
@@ -3521,7 +3523,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.
     <dt>Definition (en)
-    <dd>A description of the service end-point, including its operations, parameters etc.En beskrivelse af det pågældende serviceendpoint, inklusiv dets operationer, parametre etc.
+    <dd>A description of the service end-point, including its operations, parameters etc.En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3534,7 +3536,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en tekstbaseret beskrivelse af dataservicen
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datatjenesten
     <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.
     <dt>Definition (en)
@@ -3544,18 +3546,18 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.5.5" id="leverer-datast"><span class="secno">4.5.5. </span><span class="content">leverer datasæt</span><a class="self-link" href="#leverer-datast"></a></h4>
+   <h4 class="heading settled" data-level="4.5.5" id="distribuerer-datast"><span class="secno">4.5.5. </span><span class="content">distribuerer datasæt</span><a class="self-link" href="#distribuerer-datast"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#servesDataset
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab refererer til en samling af data som denne dataservice kan levere.
+    <dd>Denne egenskab refererer til en samling af data som denne datatjeneste kan levere.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a collection of data that this data service can distribute
     <dt>Definition (en)
-    <dd>A collection of data that this DataService can distribute.En samling af data som denne dataservice kan levere.
+    <dd>A collection of data that this DataService can distribute.En samling af data som denne datatjeneste kan levere.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3568,7 +3570,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://purl.org/dc/terms/LicenseDocument
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den licens dataservices er gjort tilgængelig under.
+    <dd>Denne egenskab angiver den licens datatjenesten er gjort tilgængelig under.
     <dt>Anvendelsesnote (en)
     <dd>This property contains the licence under which the Data service is made available.
     <dt>Definition (en)
@@ -3585,7 +3587,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://purl.org/dc/terms/RightsStatement
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med dataservicen
+    <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med datatjenesten
     <dt>Anvendelsesnote (en)
     <dd>This property MAY include information regarding access or restrictions based on privacy, security, or other policies.
     <dt>Definition (en)
@@ -3600,7 +3602,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da) 
-    <dd>En entitet som er tilknyttet kataloget, datasættet eller dataservicen. Hvis aktøren er en organisation, så anbefales det at denne opmærkes med W3Cs The Organization Ontology (https://www.w3.org/TR/vocab-org/)
+    <dd>En entitet som er tilknyttet kataloget, datasættet eller datatjenesten. Hvis aktøren er en organisation, så anbefales det at denne opmærkes med W3Cs The Organization Ontology (https://www.w3.org/TR/vocab-org/)
     <dt>Anvendelsesnote (en)
     <dd>An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended. 
     <dt>Definition (en)
@@ -3707,7 +3709,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://spdx.org/rdf/terms#Checksum
     <dt>Anvendelsesnote (da) 
-    <dd>En checksum en en værdi som gør det muligt at verificere indholdet af en fil. Selv mindre ændringer i indholdet af en fil vil ændre dets checksum. Denne klasse gør det muligt at repræsentere resultaterne af forskellige checksum- og krypografiske Message-Digest-algoritmer.
+    <dd>En checksum en en værdi som gør det muligt at verificere indholdet af en fil. Selv mindre ændringer i indholdet af en fil vil ændre dets checksum. Denne klasse gør det muligt at repræsentere resultaterne af forskellige checksum- og kryptografiske Message-Digest-algoritmer.
     <dt>Anvendelsesnote (en)
     <dd>A Checksum is value that allows the contents of a file to be authenticated. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.
     <dt>Definition (en)
@@ -3829,11 +3831,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den geografiske afgrænsning af en ressource.
+    <dd>Denne egenskab angiver den geografiske omskrevne firkant af en ressource
     <dt>Anvendelsesnote (en)
     <dd>This property refers to he geographic bounding box of a resource.
     <dt>Definition (en)
-    <dd>The geographic bounding box of a resource.Den geografiske afgrænsning af en ressource.
+    <dd>The geographic bounding box of a resource.Den geografiske omskrevne firkant af en ressource
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3910,11 +3912,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver periodens slutdato.
+    <dd>Denne egenskab angiver slutningen på perioden.
     <dt>Anvendelsesnote (en)
-    <dd>This property contains the end of the period
+    <dd>This property contains the end of the period.
     <dt>Definition (en)
-    <dd>The end of the period.Periodens slutdato.
+    <dd>The end of the period.Slutningen på perioden
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -4071,7 +4073,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Role
     <dt>Anvendelsesnote (da) 
-    <dd>En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcetilskrivning eller ressourcerelationer.
+    <dd>En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcekreditering eller ressourcerelationer.
     <dt>Anvendelsesnote (en)
     <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships. Note it is a subclass of skos:Concept.
     <dt>Definition (en)
@@ -4123,7 +4125,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://purl.org/dc/terms/Standard
     <dt>Anvendelsesnote (da) 
-    <dd>En specifikation som et kataloget, et datasæt, en dataservice eller en distribution er i overenstemmelse med.
+    <dd>En specifikation som et kataloget, et datasæt, en datatjeneste eller en distribution er i overenstemmelse med.
     <dt>Anvendelsesnote (en)
     <dd>A standard or other specification to which a Dataset or Distribution conforms
     <dt>Definition (en)
@@ -4400,7 +4402,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
     <li data-md>
      <p>Namespace: https://data.gov.dk/concept/core/dataset/</p>
     <li data-md>
-     <p>Modelnavn (label): Begrebsmodel for datasæt</p>
+     <p>Modelnavn (label): Begrebsmodel for datasæt og datakataloger</p>
     <li data-md>
      <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
     <li data-md>
@@ -4428,20 +4430,6 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <th> Foretrukken engelsk term 
     <tbody>
      <tr>
-      <td>aktør
-      <td>
-      <td>
-      <td>
-      <td> nej
-      <td>agent 
-     <tr>
-      <td>bytestørrelse
-      <td>
-      <td>
-      <td>
-      <td> nej
-      <td>bytesize 
-     <tr>
       <td>katalog
       <td>
       <td>
@@ -4463,6 +4451,48 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td> ja
       <td>catalogued resource 
      <tr>
+      <td>datakatalog
+      <td>
+      <td>
+      <td>
+      <td> ja
+      <td>data catalog 
+     <tr>
+      <td>datatjeneste
+      <td>
+      <td>
+      <td>
+      <td> ja
+      <td>data service 
+     <tr>
+      <td>distribution
+      <td>
+      <td>
+      <td>
+      <td> ja
+      <td>distribution 
+     <tr>
+      <td>serialisering
+      <td>
+      <td>
+      <td>
+      <td> nej
+      <td>serialization 
+     <tr>
+      <td>download-URL
+      <td>
+      <td>
+      <td>
+      <td> ja
+      <td>download URL 
+     <tr>
+      <td>datasæt
+      <td>
+      <td>
+      <td>
+      <td> ja
+      <td>dataset 
+     <tr>
       <td>begreb
       <td>
       <td>
@@ -4477,19 +4507,19 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td> nej
       <td>concept scheme 
      <tr>
-      <td>skaber
+      <td>bytestørrelse
       <td>
       <td>
       <td>
       <td> nej
-      <td>creator 
+      <td>bytesize 
      <tr>
-      <td>datakatalog
+      <td>sprog
       <td>
       <td>
       <td>
-      <td> ja
-      <td>data catalog 
+      <td> nej
+      <td>language 
      <tr>
       <td>dataansvarlig
       <td>
@@ -4505,19 +4535,33 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td> ja
       <td>dataset creator 
      <tr>
-      <td>distribution
+      <td>skaber
       <td>
       <td>
       <td>
-      <td> ja
-      <td>distribution 
+      <td> nej
+      <td>creator 
      <tr>
-      <td>download-url
+      <td>ansvarlig aktør
       <td>
       <td>
       <td>
-      <td> ja
-      <td>download url 
+      <td> nej
+      <td>responsible entity 
+     <tr>
+      <td>udgiver
+      <td>
+      <td>
+      <td>
+      <td> nej
+      <td>publisher 
+     <tr>
+      <td>aktør
+      <td>
+      <td>
+      <td>
+      <td> nej
+      <td>agent 
      <tr>
       <td>format
       <td>
@@ -4532,48 +4576,6 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td>
       <td> nej
       <td>homepage 
-     <tr>
-      <td>sprog
-      <td>
-      <td>
-      <td>
-      <td> nej
-      <td>language 
-     <tr>
-      <td>udgiver
-      <td>
-      <td>
-      <td>
-      <td> nej
-      <td>publisher 
-     <tr>
-      <td>ansvarlig aktør
-      <td>
-      <td>
-      <td>
-      <td> nej
-      <td>responsible entity 
-     <tr>
-      <td>serialisering
-      <td>
-      <td>
-      <td>
-      <td> nej
-      <td>serialization 
-     <tr>
-      <td>dataservice
-      <td>
-      <td>
-      <td>
-      <td> ja
-      <td>data service 
-     <tr>
-      <td>datasæt
-      <td>
-      <td>
-      <td>
-      <td> ja
-      <td>dataset 
    </table>
     ================ 
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
@@ -4711,6 +4713,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
   <div style="counter-reset:issue">
    <div class="issue"> Disse udkast til use cases skal drøftes yderligere.<a href="#issue-078099fc"> ↵ </a></div>
    <div class="issue">Disse tilføjelser skal drøftes yderligere <a href="#issue-6434e0be"> ↵ </a></div>
+   <div class="issue"> Er "kurateret" ok her som oversættelse af "curated"?<a href="#issue-15a88c4e"> ↵ </a></div>
    <div class="issue">Hvordan fungerer denne fortælling om strukturen? <a href="#issue-968f1117"> ↵ </a></div>
    <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler<a href="#issue-e84322d9"> ↵ </a></div>
   </div>
