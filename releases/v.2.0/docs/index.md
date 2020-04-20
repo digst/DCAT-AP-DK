@@ -282,8 +282,8 @@ Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
 * dcat-ap-dk: https://data.gov.dk/model/profile/dcat-ap-dk/
 
 
-# Modellens grundlæggende elementer
-DCAT har seks grundlæggende elementer, som beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Se også [begrebslisten](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste) med yderligere information.
+# Modellens grundlæggende struktur
+DCAT har seks grundlæggende elementer hvis indbyrdes relationer udgør modellens struktur, som beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Se også [begrebslisten](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste) med yderligere information.
 
 
 ## Katalog
