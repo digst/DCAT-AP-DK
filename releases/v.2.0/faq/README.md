@@ -25,7 +25,7 @@ Note: info om arkiverede data.
 ## Hvordan beskriver man tidsserier?
 Læs mere her: https://joinup.ec.europa.eu/release/dcat-ap-how-model-dataset-series
 
-## Hvorfor skal man operette en identifikator og hvordan man jeg det?
+## Hvorfor skal man operette en identifikator og hvordan man det?
 Læs mere her: https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier (Revsion på vej)
 
 ## Hvordan angiver sikrer man god datakvalitet i de udgivne datasæt
