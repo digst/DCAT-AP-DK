@@ -3,9 +3,9 @@
 
 I FAQ'en finder du svar på spørgsmål vedrørende beskrivelse af datasæt og datakataloger i henhold til DCAT-vokabularet og den europæiske og danske anvendelsesprofil. I første omgang guider svarene primært videre til uddybende indhold om disse modeller og relaterede eksterne dokumenter, men denne faq kan udbygges efter behov.
 
-
+<!-- 
 ## Hvordan finder nye anvendere frem til et udgivet datasæt
-Anvendelse af DCAT og bagvedliggende metamodel 
+Anvendelse af DCAT og bagvedliggende metamodel -->
 
 ## Hvordan giver man datasæt gode titler?
 https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#1-bra-namn-ska-vara-korta-och-beskrivande
