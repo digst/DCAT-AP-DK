@@ -1658,7 +1658,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li data-md>
      <p>Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet</p>
     <li data-md>
-     <p>Datasæt: emneord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri</p>
+     <p>Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri</p>
     <li data-md>
      <p>Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > ?</p>
     <li data-md>
@@ -1796,11 +1796,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde datatjenester og andre datakataloger. 
    <p class="issue" id="issue-15a88c4e"><a class="self-link" href="#issue-15a88c4e"></a> Er "kurateret" ok her som oversættelse af "curated"?</p>
    <h3 class="heading settled" data-level="3.2" id="katalogiseret-ressource"><span class="secno">3.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
-    En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller organiseret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, dataservice og katalog. 
+    En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
     Et datasæt (dcat:Dataset) er en samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt. 
    <h3 class="heading settled" data-level="3.4" id="distribution"><span class="secno">3.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
-    En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og rumlig opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangs-URL, format, bytestørrelse, downloadURL, adgangstjeneste m.fl. 
+    En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. 
    <h3 class="heading settled" data-level="3.5" id="datatjeneste"><span class="secno">3.5. </span><span class="content">Datatjeneste</span><a class="self-link" href="#datatjeneste"></a></h3>
     En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. 
    <h3 class="heading settled" data-level="3.6" id="katalogpost"><span class="secno">3.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
@@ -1810,7 +1810,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <p class="issue" id="issue-e84322d9"><a class="self-link" href="#issue-e84322d9"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler</p>
+   <p class="issue" id="issue-e84322d9"><a class="self-link" href="#issue-e84322d9"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
    <h3 class="heading settled" data-level="4.1" id="klasse-katalog"><span class="secno">4.1. </span><span class="content">Klasse: Katalog</span><a class="self-link" href="#klasse-katalog"></a></h3>
    <dl class="def">
     <dt>URI
