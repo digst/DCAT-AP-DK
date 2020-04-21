@@ -1,10 +1,10 @@
 # Eksempler på anvendelse af DCAT
 
 ## Eksempler på anvendelse af DCAT-AP-DK 2.0
-Se ovenstående eksempelfiler i forskellige serialiseringer
+Se ovenstående basiseksempler i forskellige serialiseringer. 
 
 ## Eksempler på anvendelse af DCAT-AP - generelt
-Se fx
+Se fx:
 
 * Den Europæiske Dataportal (skriv .rdf når du har valgt et datasæt - fx
 https://www.europeandataportal.eu/data/datasets/primary-school-preferences-and-allocations-by-school.rdf)
