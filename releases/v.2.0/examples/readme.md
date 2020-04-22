@@ -14,4 +14,5 @@ fx https://www.geodata-info.dk/srv/dan/catalog.search#/metadata/557a92cb-8d5a-99
 
 * Vejdirektoratet's NAP Datakatalog (DCAT-AP v.1.1) https://nap.vd.dk/rdf - se også: https://prod-nap2.dannap.dk/api/v1/nap/dcatap
 
+## Eksempler på anvendelse af DCAT - generelt
 * DCAT-eksempler fra W3C: https://github.com/w3c/dxwg/tree/gh-pages/dcat/examples
