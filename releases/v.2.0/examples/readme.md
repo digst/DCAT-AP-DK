@@ -13,3 +13,5 @@ https://www.europeandataportal.eu/data/datasets/primary-school-preferences-and-a
 fx https://www.geodata-info.dk/srv/dan/catalog.search#/metadata/557a92cb-8d5a-9957-d480-2cb994184529 og klik videre...)
 
 * Vejdirektoratet's NAP Datakatalog (DCAT-AP v.1.1) https://nap.vd.dk/rdf - se også: https://prod-nap2.dannap.dk/api/v1/nap/dcatap
+
+* DCAT-eksempler fra W3C: https://github.com/w3c/dxwg/tree/gh-pages/dcat/examples
