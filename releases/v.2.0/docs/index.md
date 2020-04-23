@@ -323,7 +323,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 <p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
 
-
+			
 ## Klasse: Katalog
 <dl class="def">
 <dt>URI</dt>
@@ -332,11 +332,20 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>En kurateret samling af metadata om datasæt og datatjenester i et katalog.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A catalogue or repository that hosts the Datasets being described.</dd>
+<dt>Definition (da)</dt>
+<dd>En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).</dd>
 <dt>Definition (en)</dt>
-<dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).</dd>
+<dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Obligatorisk</dd>
 </dl>
+**UML-visualisering af klassen Katalog:**	
+
+<img src="img/Katalog.png" alt="Katalog">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### titel
 <dl class="def">
@@ -673,8 +682,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A record in a data catalog, describing the registration of a single dataset or data service.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Katalogpost:**	
+
+<img src="img/Katalogpost.png" alt="Katalogpost">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### genstand for registrering
 <dl class="def">
@@ -785,7 +801,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### overenstemmelse
+### overensstemmelse
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/conformsTo</dd>
@@ -850,8 +866,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Obligatorisk</dd>
 </dl>
+**UML-visualisering af klassen Datasæt:**	
+
+<img src="img/Datas%C3%A6t.png" alt="Datasæt">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### identifikator
 <dl class="def">
@@ -1659,8 +1682,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify </dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Anbefalet</dd>
 </dl>
+**UML-visualisering af klassen Distribution:**	
+
+<img src="img/Distribution.png" alt="Distribution">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### adgangsadresse
 <dl class="def">
@@ -2088,8 +2118,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Datatjeneste:**	
+
+<img src="img/Datatjeneste.png" alt="Datatjeneste">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### endpoint-URL
 <dl class="def">
@@ -2225,11 +2262,20 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>En entitet som er tilknyttet kataloget, datasættet eller datatjenesten. Hvis aktøren er en organisation, så anbefales det at denne opmærkes med W3Cs The Organization Ontology (https://www.w3.org/TR/vocab-org/)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended. </dd>
+<dt>Definition (da)</dt>
+<dd>En aktør (fx. person, gruppe, software eller fysisk artefakt).</dd>
 <dt>Definition (en)</dt>
-<dd>An agent (eg. person, group, software or physical artifact).En aktør (fx. person, gruppe, software eller fysisk artefakt).</dd>
+<dd>An agent (eg. person, group, software or physical artifact).</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Obligatorisk</dd>
 </dl>
+**UML-visualisering af klassen Aktør:**	
+
+<img src="img/Akt%C3%B8r.png" alt="Aktør">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### navn
 <dl class="def">
@@ -2278,8 +2324,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Anbefalet</dd>
 </dl>
+**UML-visualisering af klassen Begrebssystem:**	
+
+<img src="img/Begrebssystem.png" alt="Begrebssystem">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### titel
 <dl class="def">
@@ -2310,8 +2363,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Anbefalet</dd>
 </dl>
+**UML-visualisering af klassen Begreb:**	
+
+<img src="img/Begreb.png" alt="Begreb">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### foretrukken betegnelse
 <dl class="def">
@@ -2342,8 +2402,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Checksum:**	
+
+<img src="img/Checksum.png" alt="Checksum">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### algoritme
 <dl class="def">
@@ -2389,11 +2456,20 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>En identifikator i en bestemt kontekst bestående af en streng der udgør selve idenfikatoren; en valgfri identifikator af identifikatorschemaet; en valgfri identifikator for versionen af identifikatorschemaet; en valgfri identifikator at den autoritet der administrerer identifikatorschemaet</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>An identifier in a particular context, consisting of the string that is the identifier; an optional identifier for the identifier scheme; an optional identifier for the version of the identifier scheme; an optional identifier for the agency that manages the identifier scheme</dd>
+<dt>Definition (da)</dt>
+<dd></dd>
 <dt>Definition (en)</dt>
 <dd>This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of Core Components Data Type Catalogue Version 3.1 (http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf) In RDF this is expressed using the following properties: - the content string should be provided using skos:notation, datatyped with the identifier scheme (inclduing the version number if appropriate); - use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal. Although not part of the ADMS conceptual model, it may be useful to provide further properties to the Identifier class such as dcterms:created to provide the date on which the identifier was issued.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Identifikator:**	
+
+<img src="img/Identifikator.png" alt="Identifikator">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### notation
 <dl class="def">
@@ -2424,8 +2500,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A legal document giving official permission to do something with a resource.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Anbefalet</dd>
 </dl>
+**UML-visualisering af klassen Licensdokument:**	
+
+<img src="img/Licensdokument.png" alt="Licensdokument">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### licenstype
 <dl class="def">
@@ -2456,8 +2539,15 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Lokation:**	
+
+<img src="img/Lokation.png" alt="Lokation">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### bounding box
 <dl class="def">
@@ -2521,11 +2611,20 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Et tidsinterval der er navngivet eller fastlagt ved start- og slutdato.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>An interval of time that is named or defined by its start and end dates.</dd>
+<dt>Definition (da)</dt>
+<dd></dd>
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Periode:**	
+
+<img src="img/Periode.png" alt="Periode">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### startdato
 <dl class="def">
@@ -2607,11 +2706,20 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>En associationsklasse hvormed en relation mellem to DCAT-ressourcer kan forsynes med yderligere information.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>An association class for attaching additional information to a relationship between DCAT Resources</dd>
+<dt>Definition (da)</dt>
+<dd>En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.</dd>
 <dt>Definition (en)</dt>
-<dd>An association class for attaching additional information to a relationship between DCAT Resources.En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.</dd>
+<dd>An association class for attaching additional information to a relationship between DCAT Resources.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
+<dd>Valgfri</dd>
 </dl>
+**UML-visualisering af klassen Relation:**	
+
+<img src="img/Relation.png" alt="Relation">
+	 
+**Klassens egenskaber:**	
+
+
 				
 ### relation
 <dl class="def">
@@ -2660,8 +2768,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A rate at which something recurs.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Frekvens:**	
+
+<img src="img/Frekvens.png" alt="Frekvens">
+	
 			
 ## Klasse: Lingvistisk system
 <dl class="def">
@@ -2674,8 +2786,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A system of signs, symbols, sounds, gestures, or rules used in communication.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Lingvistisk system:**	
+
+<img src="img/Lingvistisk%20system.png" alt="Lingvistisk system">
+	
 			
 ## Klasse: Medietype
 <dl class="def">
@@ -2688,8 +2804,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A file format or physical medium.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Medietype:**	
+
+<img src="img/Medietype.png" alt="Medietype">
+	
 			
 ## Klasse: Udgivertype (Udkast - endnu ikke implementeret)
 <dl class="def">
@@ -2702,8 +2822,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Udgivertype (Udkast - endnu ikke implementeret):**	
+
+<img src="img/Udgivertype%20(Udkast%20-%20endnu%20ikke%20implementeret).png" alt="Udgivertype (Udkast - endnu ikke implementeret)">
+	
 			
 ## Klasse: Status (Udkast - endnu ikke implementeret)
 <dl class="def">
@@ -2716,8 +2840,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd></dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Status (Udkast - endnu ikke implementeret):**	
+
+<img src="img/Status%20(Udkast%20-%20endnu%20ikke%20implementeret).png" alt="Status (Udkast - endnu ikke implementeret)">
+	
 			
 ## Klasse: Rolle
 <dl class="def">
@@ -2730,8 +2858,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Rolle:**	
+
+<img src="img/Rolle.png" alt="Rolle">
+	
 			
 ## Klasse: Proveniensudsagn
 <dl class="def">
@@ -2744,8 +2876,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Proveniensudsagn:**	
+
+<img src="img/Proveniensudsagn.png" alt="Proveniensudsagn">
+	
 			
 ## Klasse: Dokument
 <dl class="def">
@@ -2758,8 +2894,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A document.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Dokument:**	
+
+<img src="img/Dokument.png" alt="Dokument">
+	
 			
 ## Klasse: Rettighedsudsagn
 <dl class="def">
@@ -2772,8 +2912,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Rettighedsudsagn:**	
+
+<img src="img/Rettighedsudsagn.png" alt="Rettighedsudsagn">
+	
 			
 ## Klasse: Specifikation
 <dl class="def">
@@ -2786,8 +2930,12 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>A reference point against which other things can be evaluated or compared.</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Specifikation:**	
+
+<img src="img/Specifikation.png" alt="Specifikation">
+	
 			
 ## Klasse: Virtuelt visitkort
 <dl class="def">
@@ -2800,9 +2948,13 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Definition (en)</dt>
 <dd>The parent class for all objects</dd>
 <dt>Kravniveau</dt>
-<dd></dd>
-</dl>	
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Virtuelt visitkort:**	
+
+<img src="img/Virtuelt%20visitkort.png" alt="Virtuelt visitkort">
 	
+		
 	
 
 # Klassifikationer
