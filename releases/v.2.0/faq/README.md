@@ -25,10 +25,10 @@ Note: info om arkiverede data.
 ## Hvordan beskriver man tidsserier?
 Læs mere her: https://joinup.ec.europa.eu/release/dcat-ap-how-model-dataset-series
 
-## Hvorfor skal man operette en identifikator og hvordan oprettes de?
+## Hvorfor skal man oprette en identifikator og hvordan oprettes de?
 Læs mere her: https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier (Revision på vej) ; https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
 
-## Hvordan angiver sikrer man god datakvalitet i de udgivne datasæt
+## Hvordan sikrer man god datakvalitet i de udgivne datasæt
 Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) (Vejledning til deklaration af datasæt med kernedimensioner vers. 1.0.0) anvender også DQV.
 
 Læs mere her: https://www.w3.org/TR/vocab-dcat-2/#quality-information; https://www.w3.org/TR/vocab-dqv/; https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet;  https://github.com/w3c/dxwg/wiki/Quality-documentation
