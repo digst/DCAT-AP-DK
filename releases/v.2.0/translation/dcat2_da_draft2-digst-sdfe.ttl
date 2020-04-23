@@ -288,7 +288,7 @@ dcat:DataService
 dcat:Dataset
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:comment "En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;    
+  rdfs:comment "En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer."@da ;    
   rdfs:comment "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja ;
   rdfs:comment "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en ;
   rdfs:comment "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs ;
@@ -337,7 +337,7 @@ dcat:Dataset
 dcat:Distribution
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:comment "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)"@da ;   
+  rdfs:comment "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da ;   
   rdfs:comment "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en ;
   rdfs:comment "Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly)."@cs ;
   rdfs:comment "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it ;
@@ -442,7 +442,7 @@ dcat:Resource
 .
 dcat:Role
   a owl:Class ;
-  rdfs:comment "En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcekreditering eller relationer mellem ressourcer."@da ;     
+  rdfs:comment "En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcekreditering eller ressourcerelationer."@da ;     
   rdfs:comment "A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships."@en ;
   rdfs:comment "Role je funkce zdroje či agenta ve vztahu k jinému zdroji, v kontextu přiřazení zdrojů či vztahů mezi zdroji."@cs ;
   rdfs:comment "Un rol es la función de un recurso o agente con respecto a otro recuros, en el contexto de atribución del recurso o de las relaciones entre recursos."@es ;
@@ -918,7 +918,7 @@ dcat:endpointDescription
 .
 dcat:endpointURL
   a owl:ObjectProperty ;
-  rdfs:comment "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)"@da ;     
+  rdfs:comment "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da ;     
   rdfs:comment "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs ;
   rdfs:comment "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it ;
   rdfs:comment "La posición raíz o end-point principal del servicio (una IRI web)."@es ;
@@ -989,7 +989,7 @@ dcat:hadRole
 dcat:keyword
   a rdf:Property ;
   a owl:DatatypeProperty ;
-  rdfs:comment "Et nøgleord eller tag til beskrivelse af en ressource"@da ;     
+  rdfs:comment "Et nøgleord eller tag til beskrivelse af en ressource."@da ;     
   rdfs:comment "A keyword or tag describing a resource."@en ;
   rdfs:comment "Klíčové slovo nebo značka popisující zdroj."@cs ;
   rdfs:comment "Un mot-clé ou étiquette décrivant une ressource."@fr ;
@@ -1065,7 +1065,7 @@ dcat:landingPage
 dcat:mediaType
   a rdf:Property ;
   a owl:ObjectProperty ;
-  rdfs:comment "Medietypen for distributionen som den er defineret af IANA"@da ;     
+  rdfs:comment "Medietypen for distributionen som den er defineret af IANA."@da ;     
   rdfs:comment "Cette propriété doit être utilisée quand c'est définit le type de média de la distribution en IANA, sinon dct:format DOIT être utilisé avec différentes valeurs."@fr ;
   rdfs:comment "Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución en IANA, de otra manera dct:format puede ser utilizado con diferentes valores"@es ;
   rdfs:comment "Il tipo di media della distribuzione come definito da IANA"@it ;
@@ -1213,7 +1213,7 @@ dcat:record
 .
 dcat:servesDataset
   a owl:ObjectProperty ;
-  rdfs:comment "En samling af data som denne datatjeneste kan levere."@da ;     
+  rdfs:comment "En samling af data som denne datatjeneste kan distribuere."@da ;     
   rdfs:comment "A collection of data that this DataService can distribute."@en ;
   rdfs:comment "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs ;
   rdfs:comment "Una colección de datos que este Servicio de Datos puede distribuir."@es ;
@@ -1265,7 +1265,7 @@ dcat:service
 .
 dcat:spatialResolutionInMeters
   a owl:DatatypeProperty ;
-  rdfs:comment "mindste geografiske afstand som kan resolveres i et datasæt, målt i meter."@da ;     
+  rdfs:comment "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da ;     
   rdfs:comment "minimum spatial separation resolvable in a dataset, measured in meters."@en-US ;
   rdfs:comment "minimum spatial separation resolvable in a dataset, measured in metres."@en-GB ;
   rdfs:comment "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs ;
@@ -1317,7 +1317,7 @@ dcat:startDate
   skos:changeNote "Nuova proprietà aggiunta in DCAT 2.0."@it ;
   skos:changeNote "Nová vlastnost přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva propiedad agregada en DCAT 2.0."@es ;
-  skos:definition "Start på perioden"@da ;  
+  skos:definition "Start på perioden."@da ;  
   skos:definition "El comienzo del período"@es ;
   skos:definition "The start of the period"@en ;
   skos:definition "L'inizio del periodo"@it ;
