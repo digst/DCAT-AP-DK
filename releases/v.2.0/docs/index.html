@@ -1,4 +1,3 @@
-
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -1222,7 +1221,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version d4d56a96, updated Fri Apr 10 11:10:34 2020 -0700" name="generator">
+  <meta content="Bikeshed version 5359f34a, updated Wed Apr 22 15:42:50 2020 -0700" name="generator">
   <link href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/" rel="canonical">
 <style>
 @media print {
@@ -1500,7 +1499,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-04-20">20 April 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-04-23">23 April 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1585,8 +1584,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#klasse-status-udkast---endnu-ikke-implementeret"><span class="secno">4.19</span> <span class="content">Klasse: Status (Udkast - endnu ikke implementeret)</span></a>
       <li><a href="#klasse-rolle"><span class="secno">4.20</span> <span class="content">Klasse: Rolle</span></a>
       <li><a href="#klasse-proveniensudsagn"><span class="secno">4.21</span> <span class="content">Klasse: Proveniensudsagn</span></a>
-      <li><a href="#klasse-dokument"><span class="secno">4.22</span> <span class="content">Klasse: Dokument</span></a>
-      <li><a href="#klasse-rettighedsudsagn"><span class="secno">4.23</span> <span class="content">Klasse: Rettighedsudsagn</span></a>
+      <li><a href="#klasse-rettighedsudsagn"><span class="secno">4.22</span> <span class="content">Klasse: Rettighedsudsagn</span></a>
+      <li><a href="#klasse-dokument"><span class="secno">4.23</span> <span class="content">Klasse: Dokument</span></a>
       <li><a href="#klasse-specifikation"><span class="secno">4.24</span> <span class="content">Klasse: Specifikation</span></a>
       <li><a href="#klasse-virtuelt-visitkort"><span class="secno">4.25</span> <span class="content">Klasse: Virtuelt visitkort</span></a>
      </ol>
@@ -1802,7 +1801,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h3 class="heading settled" data-level="3.4" id="distribution"><span class="secno">3.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
     En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. 
    <h3 class="heading settled" data-level="3.5" id="datatjeneste"><span class="secno">3.5. </span><span class="content">Datatjeneste</span><a class="self-link" href="#datatjeneste"></a></h3>
-    En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller en samling af operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. 
+    En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. 
    <h3 class="heading settled" data-level="3.6" id="katalogpost"><span class="secno">3.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. 
    <p><strong>Illustration</strong> Herunder kan ses en illustration af eksempler på elementerne "katalog", "datasæt" og "distribution":</p>
@@ -1810,7 +1809,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <p class="issue" id="issue-e84322d9"><a class="self-link" href="#issue-e84322d9"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
+   <p class="issue" id="issue-a8551f5e"><a class="self-link" href="#issue-a8551f5e"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
    <h3 class="heading settled" data-level="4.1" id="klasse-katalog"><span class="secno">4.1. </span><span class="content">Klasse: Katalog</span><a class="self-link" href="#klasse-katalog"></a></h3>
    <dl class="def">
     <dt>URI
@@ -1819,11 +1818,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>En kurateret samling af metadata om datasæt og datatjenester i et katalog.
     <dt>Anvendelsesnote (en)
     <dd>A catalogue or repository that hosts the Datasets being described.
+    <dt>Definition (da)
+    <dd>En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).
     <dt>Definition (en)
-    <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).
+    <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
+    <strong>UML-visualisering af klassen Katalog:</strong> 
+   <p><img alt="Katalog" src="img/Katalog.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.1.1" id="titel"><span class="secno">4.1.1. </span><span class="content">titel</span><a class="self-link" href="#titel"></a></h4>
    <dl class="def">
     <dt>URI
@@ -1868,6 +1872,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver et datasæt som er opført i kataloget
     <dt>Anvendelsesnote (en)
     <dd>This property links the Catalogue with a Dataset that is part of the Catalogue.
+    <dt>Definition (da)
+    <dd>En samling af data som er opført i kataloget.
     <dt>Definition (en)
     <dd>A collection of data that is listed in the catalog.
     <dt>Multiplicitet
@@ -1885,6 +1891,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver et websted eller endpoint som er opført i kataloget.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a site or end-point that is listed in the catalog.
+    <dt>Definition (da)
+    <dd>Et websted eller et endpoint som er opført i kataloget
     <dt>Definition (en)
     <dd>A site or endpoint that is listed in the catalog.
     <dt>Multiplicitet
@@ -1987,6 +1995,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og datatjenester i kataloget.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a knowledge organization system used to classify the Catalogue’s Datasets.
+    <dt>Definition (da)
+    <dd>Vidensorganiseringssystem (KOS) som anvendes til at klassificere datasæt i kataloget.
     <dt>Definition (en)
     <dd>A knowledge organization system (KOS) used to classify catalog’s datasets and services.
     <dt>Multiplicitet
@@ -2072,6 +2082,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en registrering af et enkelt datasæt eller en enkelt datatjeneste som er en del af kataloget
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a Catalogue Record that is part of the Catalogue
+    <dt>Definition (da)
+    <dd>En post der beskriver registreringen af et enkelt datasæt eller en datatjeneste som er opført i kataloget.
     <dt>Definition (en)
     <dd>A record describing the registration of a single dataset or data service that is part of the catalog.
     <dt>Multiplicitet
@@ -2089,6 +2101,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver et katalog som udgør en del af det aktuelle katalog.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a catalog whose contents are of interest in the context of this catalog.
+    <dt>Definition (da)
+    <dd>Et katalog hvis indhold er relevant i forhold til det aktuelle katalog.
     <dt>Definition (en)
     <dd>A catalog whose contents are of interest in the context of this catalog.
     <dt>Multiplicitet
@@ -2138,11 +2152,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en enkelt datatjeneste.
     <dt>Anvendelsesnote (en)
     <dd>A description of a Dataset’s entry in the Catalogue. 
+    <dt>Definition (da)
+    <dd>En post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste.
     <dt>Definition (en)
     <dd>A record in a data catalog, describing the registration of a single dataset or data service.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Katalogpost:</strong> 
+   <p><img alt="Katalogpost" src="img/Katalogpost.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.2.1" id="genstand-for-registrering"><span class="secno">4.2.1. </span><span class="content">genstand for registrering</span><a class="self-link" href="#genstand-for-registrering"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2246,7 +2265,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.2.7" id="overenstemmelse"><span class="secno">4.2.7. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse"></a></h4>
+   <h4 class="heading settled" data-level="4.2.7" id="overensstemmelse"><span class="secno">4.2.7. </span><span class="content">overensstemmelse</span><a class="self-link" href="#overensstemmelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2305,11 +2324,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
     <dt>Anvendelsesnote (en)
     <dd>A conceptual entity that represents the information published. 
+    <dt>Definition (da)
+    <dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer.
     <dt>Definition (en)
     <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
+    <strong>UML-visualisering af klassen Datasæt:</strong> 
+   <p><img alt="Datasæt" src="img/Datas%C3%A6t.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.3.1" id="identifikator"><span class="secno">4.3.1. </span><span class="content">identifikator</span><a class="self-link" href="#identifikator"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2405,8 +2429,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the agent responsible for the general administration of all aspects concerning a dataset
+    <dt>Definition (da)
+    <dd>aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt
     <dt>Definition (en)
-    <dd>aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasætagent responsible for the general administration of all aspects concerning a dataset
+    <dd>agent responsible for the general administration of all aspects concerning a dataset
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2473,6 +2499,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver kontaktoplysninger som kan anvendes til at indsende spørgsmål eller kommentarer om datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property contains contact information that can be used for sending comments about the Dataset.
+    <dt>Definition (da)
+    <dd>Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales.
     <dt>Definition (en)
     <dd>Relevant contact information for the catalogued resource. Use of vCard is recommended.
     <dt>Multiplicitet
@@ -2490,6 +2518,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en tilgængelig distribution af datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property links the Dataset to an available Distribution.
+    <dt>Definition (da)
+    <dd>En tilgængelig repræsentation af datasættet.
     <dt>Definition (en)
     <dd>An available distribution of the dataset.
     <dt>Multiplicitet
@@ -2526,14 +2556,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a web page that provides access to the Dataset, its Distributions and/or additional information. 
 		It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.
+    <dt>Definition (da)
+    <dd>En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information
     <dt>Definition (en)
-    <dd>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information
+    <dd>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.14" id="overenstemmelse①"><span class="secno">4.3.14. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.14" id="overenstemmelse"><span class="secno">4.3.14. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2577,6 +2609,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan have flere centrale emner. Til angivelse af emne skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
+    <dt>Definition (da)
+    <dd>Et centralt emne for ressourcen. En ressource kan have flere centrale emner.
     <dt>Definition (en)
     <dd>A main category of the resource. A resource can have multiple themes.
     <dt>Multiplicitet
@@ -2611,6 +2645,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver et nøgleord eller tag der beskriver datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a keyword or tag describing the Dataset.
+    <dt>Definition (da)
+    <dd>Et nøgleord eller tag til beskrivelse af en ressource.
     <dt>Definition (en)
     <dd>A keyword or tag describing the resource.
     <dt>Multiplicitet
@@ -2679,6 +2715,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angivermindste geografiske afstand som kan resolveres i et datasæt, målt i meter. Muligheden for at registrere detaljer i et rasterbillede eller grid kaldes geografisk opløsning. Den geografiske opløsning er angivet i meter. Jo flere pixels der er inkluderet i et rasterbillede af et bestemt område, jo højere er den geografiske opløsning, hvilket betyder, jo flere detaljer kan observeres. 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the minimum spatial separation resolvable in a dataset, measured in meters. The ability of to detect details in an raster image or grid is referred to as spatial resolution. The spatial resolution is stated in metres. The more pixels are included in a raster image of a certain area, the higher the spatial resolution meaning the more details can be observed. 
+    <dt>Definition (da)
+    <dd>mindste geografiske afstand som kan erkendes i et datasæt, målt i meter.
     <dt>Definition (en)
     <dd>minimum spatial separation resolvable in a dataset, measured in metres.
     <dt>Multiplicitet
@@ -2713,6 +2751,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i datasættet.  Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner. Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the minimum time period resolvable in the dataset.
+    <dt>Definition (da)
+    <dd>mindste tidsperiode der kan resolveres i datasættet.
     <dt>Definition (en)
     <dd>minimum time period resolvable in a dataset.
     <dt>Multiplicitet
@@ -2866,8 +2906,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.
     <dt>Anvendelsesnote (en)
     <dd>This property specifies the legal framework for the dataset.
+    <dt>Definition (da)
+    <dd>reference til retskilde som danner grundlag for ressourcen
     <dt>Definition (en)
-    <dd>It indicates the Legal Resource (e.g. legislation) to which the Public Service (red:resource) relates, operates or has its legal basisreference til retskilde som danner grundlag for ressourcen
+    <dd>It indicates the Legal Resource (e.g. legislation) to which the Public Service (red:resource) relates, operates or has its legal basis
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3036,8 +3078,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en nærmere klassificeret relation til en anden ressource såsom en publikation der referer, citerer eller på anden på peger på datasættet. Anvendes til at referere til en anden ressource hvor relationens betydning er kendt men ikke matcher en af de standardiserede egenskaber fra Dublin Core eller PROV-O.
     <dt>Anvendelsesnote (en)
     <dd>This property is about a related resource, such as a publication, that references, cites, or otherwise points to the dataset.
+    <dt>Definition (da)
+    <dd>Reference til en beskrivelse af en relation til en anden ressource.
     <dt>Definition (en)
-    <dd>Link to a description of a relationship with another resource.Reference til en beskrivelse af en relation til en anden ressource.
+    <dd>Link to a description of a relationship with another resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3065,14 +3109,19 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Distribution
     <dt>Anvendelsesnote (da) 
-    <dd>En fysisk repræsentation af datasættet.  Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående) 
+    <dd>En fysisk repræsentation af datasættet. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående) 
     <dt>Anvendelsesnote (en)
     <dd>A physical embodiment of the Dataset in a particular format.
+    <dt>Definition (da)
+    <dd>En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).
     <dt>Definition (en)
     <dd>A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify 
     <dt>Kravniveau
-    <dd>
+    <dd>Anbefalet
    </dl>
+    <strong>UML-visualisering af klassen Distribution:</strong> 
+   <p><img alt="Distribution" src="img/Distribution.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.4.1" id="adgangsadresse"><span class="secno">4.4.1. </span><span class="content">adgangsadresse</span><a class="self-link" href="#adgangsadresse"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3083,6 +3132,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. 
     <dt>Anvendelsesnote (en)
     <dd>This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset. 
+    <dt>Definition (da)
+    <dd>En URL for en ressource som giver adgang til en distribution af datasættet. Fx, destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben download-URL foretrækkes.
     <dt>Definition (en)
     <dd>A URL of a resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred.
     <dt>Multiplicitet
@@ -3100,8 +3151,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en URL der er et direkte link til en fil der kan downloades i et bestemt format.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a URL that is a direct link to a downloadable file in a given format. 
+    <dt>Definition (da)
+    <dd>URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.
     <dt>Definition (en)
-    <dd>The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution’s dct:format and/or dcat:mediaType.URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.
+    <dd>The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution’s dct:format and/or dcat:mediaType.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3117,8 +3170,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en datatjeneste som giver adgang til en distribution af datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a data service that gives access to the distribution of the dataset
+    <dt>Definition (da)
+    <dd>Et websted eller endpoint der giver adgang til en distribution af datasættet
     <dt>Definition (en)
-    <dd>A site or end-point that gives access to the distribution of the dataset.Et websted eller endpoint der giver adgang til en distribution af datasættet
+    <dd>A site or end-point that gives access to the distribution of the dataset.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3158,7 +3213,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.4.6" id="overenstemmelse②"><span class="secno">4.4.6. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse②"></a></h4>
+   <h4 class="heading settled" data-level="4.4.6" id="overenstemmelse①"><span class="secno">4.4.6. </span><span class="content">overenstemmelse</span><a class="self-link" href="#overenstemmelse①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -3305,8 +3360,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver medietypen for distributionen som den er defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the media type of the Distribution as defined in the official register of media types managed by IANA.
+    <dt>Definition (da)
+    <dd>Medietypen for distributionen som den er defineret af IANA.
     <dt>Definition (en)
-    <dd>The media type of the distribution as defined by IANA.Medietypen for distributionen som den er defineret af IANA 
+    <dd>The media type of the distribution as defined by IANA.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3339,8 +3396,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver filformatet for den distribution hvori data er indholdt i et komprimeret format, fx. med det formål at reducere størrelsen af downloadfilen. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
+    <dt>Definition (da)
+    <dd>Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx. for at reducere størrelsen af downloadfilen,
     <dt>Definition (en)
-    <dd>The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx. for at reducere størrelsen af downloadfilen,
+    <dd>The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3356,8 +3415,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver filformatet for den distribution som grupperer en eller flere datafiler, fx. med det formål at gøre det muligt at download et antal relaterede filer på én gang. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml)
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.
+    <dt>Definition (da)
+    <dd>Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution
     <dt>Definition (en)
-    <dd>The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.Format til pakning af data med henblik på distribution af en eller flere relaterede datafiler der samles til en enhed med henblik på samlet distribution
+    <dd>The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3441,6 +3502,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i distributionen.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the minimum time period resolvable in the dataset distribution.
+    <dt>Definition (da)
+    <dd>mindste tidsperiode der kan resolveres i datasættet.
     <dt>Definition (en)
     <dd>minimum time period resolvable in a dataset.
     <dt>Multiplicitet
@@ -3458,6 +3521,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angivermindste geografiske afstand som kan resolveres i en distribution, målt i meter.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the  minimum spatial separation resolvable in a dataset distribution, measured in meters.
+    <dt>Definition (da)
+    <dd>mindste geografiske afstand som kan erkendes i et datasæt, målt i meter.
     <dt>Definition (en)
     <dd>minimum spatial separation resolvable in a dataset, measured in metres.
     <dt>Multiplicitet
@@ -3473,11 +3538,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.
     <dt>Anvendelsesnote (en)
     <dd>A collection of operations that provides access to one or more datasets or data processing functions.
+    <dt>Definition (da)
+    <dd>Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.
     <dt>Definition (en)
-    <dd>
+    <dd>A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Datatjeneste:</strong> 
+   <p><img alt="Datatjeneste" src="img/Datatjeneste.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.5.1" id="endpoint-url"><span class="secno">4.5.1. </span><span class="content">endpoint-URL</span><a class="self-link" href="#endpoint-url"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3485,11 +3555,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver
+    <dd>Denne egenskab giver rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI).
     <dt>Anvendelsesnote (en)
     <dd>The root location or primary endpoint of the service (an IRI).
+    <dt>Definition (da)
+    <dd>Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI).
     <dt>Definition (en)
-    <dd>The root location or primary endpoint of the service (a web-resolvable IRI).Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IR
+    <dd>The root location or primary endpoint of the service (a web-resolvable IRI).
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3505,6 +3577,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.
+    <dt>Definition (da)
+    <dd>Et navn givet til ressourcen.
     <dt>Definition (en)
     <dd>A name given to the resource.
     <dt>Multiplicitet
@@ -3519,11 +3593,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en beskrivelse af det pågældende serviceendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint implementerer.
+    <dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.
+    <dt>Definition (da)
+    <dd>En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.
     <dt>Definition (en)
-    <dd>A description of the service end-point, including its operations, parameters etc.En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.
+    <dd>A description of the service end-point, including its operations, parameters etc.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3553,11 +3629,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab refererer til en samling af data som denne datatjeneste kan levere.
+    <dd>Denne egenskab refererer til en samling af data som denne datatjeneste kan distribuere.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a collection of data that this data service can distribute
+    <dt>Definition (da)
+    <dd>En samling af data som denne datatjeneste kan distribuere.
     <dt>Definition (en)
-    <dd>A collection of data that this DataService can distribute.En samling af data som denne datatjeneste kan levere.
+    <dd>A collection of data that this DataService can distribute.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3605,11 +3683,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>En entitet som er tilknyttet kataloget, datasættet eller datatjenesten. Hvis aktøren er en organisation, så anbefales det at denne opmærkes med W3Cs The Organization Ontology (https://www.w3.org/TR/vocab-org/)
     <dt>Anvendelsesnote (en)
     <dd>An entity that is associated with Catalogues and/or Datasets. If the Agent is an organisation, the use of the Organization Ontology  is recommended. 
+    <dt>Definition (da)
+    <dd>En aktør (fx. person, gruppe, software eller fysisk artefakt).
     <dt>Definition (en)
-    <dd>An agent (eg. person, group, software or physical artifact).En aktør (fx. person, gruppe, software eller fysisk artefakt).
+    <dd>An agent (eg. person, group, software or physical artifact).
     <dt>Kravniveau
-    <dd>
+    <dd>Obligatorisk
    </dl>
+    <strong>UML-visualisering af klassen Aktør:</strong> 
+   <p><img alt="Aktør" src="img/Akt%C3%B8r.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.6.1" id="navn"><span class="secno">4.6.1. </span><span class="content">navn</span><a class="self-link" href="#navn"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3620,8 +3703,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)
+    <dt>Definition (da)
+    <dd>Et navn for noget
     <dt>Definition (en)
-    <dd>A name for some thing.Et navn for noget
+    <dd>A name for some thing.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3652,11 +3737,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>En samling af begreber (fx. et kontrolleret udfaldsrum) hvori et givet begreb indgår.
     <dt>Anvendelsesnote (en)
     <dd>A concept collection (e.g. controlled vocabulary) in which the Category is defined.
+    <dt>Definition (da)
+    <dd>En samling af ét eller flere begreber, samt eventuelt også udsagn om de indbyrdes semantiske relationer mellem disse begreber.
     <dt>Definition (en)
-    <dd>
+    <dd>A set of concepts, optionally including statements about semantic relationships between those concepts.
     <dt>Kravniveau
-    <dd>
+    <dd>Anbefalet
    </dl>
+    <strong>UML-visualisering af klassen Begrebssystem:</strong> 
+   <p><img alt="Begrebssystem" src="img/Begrebssystem.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.7.1" id="titel⑤"><span class="secno">4.7.1. </span><span class="content">titel</span><a class="self-link" href="#titel⑤"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3667,8 +3757,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name of the category scheme. May be repeated for different versions of the name
+    <dt>Definition (da)
+    <dd>Et navn givet til ressourcen.
     <dt>Definition (en)
-    <dd>A name given to the resource.Et navn givet til ressourcen.
+    <dd>A name given to the resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3679,14 +3771,19 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da) 
-    <dd>
+    <dd>En emne som klassificerer datasættet. 
     <dt>Anvendelsesnote (en)
-    <dd>
+    <dd>A subject of a Dataset.
+    <dt>Definition (da)
+    <dd>En idé eller en forestilling; en tankeenhed
     <dt>Definition (en)
-    <dd>
+    <dd>An idea or notion; a unit of thought.
     <dt>Kravniveau
-    <dd>
+    <dd>Anbefalet
    </dl>
+    <strong>UML-visualisering af klassen Begreb:</strong> 
+   <p><img alt="Begreb" src="img/Begreb.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.8.1" id="foretrukken-betegnelse"><span class="secno">4.8.1. </span><span class="content">foretrukken betegnelse</span><a class="self-link" href="#foretrukken-betegnelse"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3697,8 +3794,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.
+    <dt>Definition (da)
+    <dd>Det foretrukne leksikalske udtryk for en ressource på et givet sprog.
     <dt>Definition (en)
-    <dd>The preferred lexical label for a resource, in a given language.Det foretrukne leksikalske udtryk for en ressource på et givet sprog.
+    <dd>The preferred lexical label for a resource, in a given language.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3715,8 +3814,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Checksum:</strong> 
+   <p><img alt="Checksum" src="img/Checksum.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.9.1" id="algoritme"><span class="secno">4.9.1. </span><span class="content">algoritme</span><a class="self-link" href="#algoritme"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3759,11 +3861,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>En identifikator i en bestemt kontekst bestående af en streng der udgør selve idenfikatoren; en valgfri identifikator af identifikatorschemaet; en valgfri identifikator for versionen af identifikatorschemaet; en valgfri identifikator at den autoritet der administrerer identifikatorschemaet
     <dt>Anvendelsesnote (en)
     <dd>An identifier in a particular context, consisting of the string that is the identifier; an optional identifier for the identifier scheme; an optional identifier for the version of the identifier scheme; an optional identifier for the agency that manages the identifier scheme
+    <dt>Definition (da)
+    <dd>Denne klasse er baseret på UN/CEFACT Identifier.
     <dt>Definition (en)
     <dd>This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of Core Components Data Type Catalogue Version 3.1 (http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf) In RDF this is expressed using the following properties: - the content string should be provided using skos:notation, datatyped with the identifier scheme (inclduing the version number if appropriate); - use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal. Although not part of the ADMS conceptual model, it may be useful to provide further properties to the Identifier class such as dcterms:created to provide the date on which the identifier was issued.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Identifikator:</strong> 
+   <p><img alt="Identifikator" src="img/Identifikator.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.10.1" id="notation"><span class="secno">4.10.1. </span><span class="content">notation</span><a class="self-link" href="#notation"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3792,8 +3899,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>A legal document giving official permission to do something with a resource.
     <dt>Kravniveau
-    <dd>
+    <dd>Anbefalet
    </dl>
+    <strong>UML-visualisering af klassen Licensdokument:</strong> 
+   <p><img alt="Licensdokument" src="img/Licensdokument.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.11.1" id="licenstype"><span class="secno">4.11.1. </span><span class="content">licenstype</span><a class="self-link" href="#licenstype"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3822,8 +3932,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Lokation:</strong> 
+   <p><img alt="Lokation" src="img/Lokation.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.12.1" id="bounding-box"><span class="secno">4.12.1. </span><span class="content">bounding box</span><a class="self-link" href="#bounding-box"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3834,14 +3947,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver den geografiske omskrevne firkant af en ressource
     <dt>Anvendelsesnote (en)
     <dd>This property refers to he geographic bounding box of a resource.
+    <dt>Definition (da)
+    <dd>Den geografiske omskrevne firkant af en ressource
     <dt>Definition (en)
-    <dd>The geographic bounding box of a resource.Den geografiske omskrevne firkant af en ressource
+    <dd>The geographic bounding box of a resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.12.2" id="geografisk-tyngdepunkt"><span class="secno">4.12.2. </span><span class="content">geografisk tyngdepunkt</span><a class="self-link" href="#geografisk-tyngdepunkt"></a></h4>
+   <h4 class="heading settled" data-level="4.12.2" id="geometrisk-tyngdepunkt"><span class="secno">4.12.2. </span><span class="content">geometrisk tyngdepunkt</span><a class="self-link" href="#geometrisk-tyngdepunkt"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#centroid
@@ -3852,7 +3967,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the geographic center (centroid) of a resource.
     <dt>Definition (en)
-    <dd>The geographic center (centroid) of a resource.
+    <dd>The geographic center (centroid) of a resource.Det geometrisk tyngdepunkt (centroid) for en ressource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3886,8 +4001,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Periode:</strong> 
+   <p><img alt="Periode" src="img/Periode.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.13.1" id="startdato"><span class="secno">4.13.1. </span><span class="content">startdato</span><a class="self-link" href="#startdato"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3898,8 +4016,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver periodens startdato.
     <dt>Anvendelsesnote (en)
     <dd>This property contains the start of the period
+    <dt>Definition (da)
+    <dd>Start på perioden.
     <dt>Definition (en)
-    <dd>The start of the period.Periodens startdato.
+    <dd>The start of the period.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3915,8 +4035,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver slutningen på perioden.
     <dt>Anvendelsesnote (en)
     <dd>This property contains the end of the period.
+    <dt>Definition (da)
+    <dd>Slutningen på perioden.
     <dt>Definition (en)
-    <dd>The end of the period.Slutningen på perioden
+    <dd>The end of the period.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3932,8 +4054,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>
     <dt>Anvendelsesnote (en)
     <dd>beginning of a temporal entity
+    <dt>Definition (da)
+    <dd>Denne egenskab angiver begyndelsen på perioden eller tidsintervallet.
     <dt>Definition (en)
-    <dd>This property contains the beginning of a period or interval.Denne egenskab angiver begyndelsen af perioden eller tidsintervallet.Beginning of a temporal entity.
+    <dd>This property contains the beginning of a period or interval.Beginning of a temporal entity.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3949,8 +4073,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>
     <dt>Anvendelsesnote (en)
     <dd>This property contains the end of a period or interval
+    <dt>Definition (da)
+    <dd>Denne egenskab angiver slutningen på perioden eller tidsintervallet.
     <dt>Definition (en)
-    <dd>Denne egenskab angiver slutningen af perioden eller tidsintervallet.End of a temporal entity.
+    <dd>End of a temporal entity.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3964,11 +4090,16 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>En associationsklasse hvormed en relation mellem to DCAT-ressourcer kan forsynes med yderligere information.
     <dt>Anvendelsesnote (en)
     <dd>An association class for attaching additional information to a relationship between DCAT Resources
+    <dt>Definition (da)
+    <dd>En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.
     <dt>Definition (en)
-    <dd>An association class for attaching additional information to a relationship between DCAT Resources.En associationsklasse hvormed en relation mellem two DCAT-ressourcer kan forsynes med yderligere information.
+    <dd>An association class for attaching additional information to a relationship between DCAT Resources.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Relation:</strong> 
+   <p><img alt="Relation" src="img/Relation.png"></p>
+   <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.14.1" id="relation"><span class="secno">4.14.1. </span><span class="content">relation</span><a class="self-link" href="#relation"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3979,8 +4110,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver en ressource som er relateret til den aktuelle ressource.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the resource related to the source resource.
+    <dt>Definition (da)
+    <dd>En relateret ressource.
     <dt>Definition (en)
-    <dd>A related resource.En relateret ressource.
+    <dd>A related resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -3996,8 +4129,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Denne egenskab angiver den rolle som en entitet eller aktør spiller i forhold til en anden entitet eller ressource.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the function of an entity or agent with respect to another entity or resource.
+    <dt>Definition (da)
+    <dd>Den funktion en entitet eller aktør har i forhold til en anden ressource.
     <dt>Definition (en)
-    <dd>The function of an entity or agent with respect to another entity or resource.Den funktion en entitet eller aktør har i forhold til en anden ressource
+    <dd>The function of an entity or agent with respect to another entity or resource.
     <dt>Multiplicitet
     <dd>1..*
     <dt>Kravniveau
@@ -4012,10 +4147,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>A rate at which something recurs, e.g. the publication of a Dataset. 
     <dt>Definition (en)
-    <dd>A rate at which something recurs.
+    <dd>A rate at which something recurs.Hyppighed med hvilken noget gentages.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Frekvens:</strong> 
+   <p><img alt="Frekvens" src="img/Frekvens.png"></p>
    <h3 class="heading settled" data-level="4.16" id="klasse-lingvistisk-system"><span class="secno">4.16. </span><span class="content">Klasse: Lingvistisk system</span><a class="self-link" href="#klasse-lingvistisk-system"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4024,11 +4161,15 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dd>Et system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation, fx. et sprog.
     <dt>Anvendelsesnote (en)
     <dd>A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language
+    <dt>Definition (da)
+    <dd>Et system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation.
     <dt>Definition (en)
     <dd>A system of signs, symbols, sounds, gestures, or rules used in communication.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Lingvistisk system:</strong> 
+   <p><img alt="Lingvistisk system" src="img/Lingvistisk%20system.png"></p>
    <h3 class="heading settled" data-level="4.17" id="klasse-medietype"><span class="secno">4.17. </span><span class="content">Klasse: Medietype</span><a class="self-link" href="#klasse-medietype"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4038,10 +4179,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Anvendelsesnote (en)
     <dd>A media type, e.g. the format of a computer file 
     <dt>Definition (en)
-    <dd>A file format or physical medium.
+    <dd>A file format or physical medium.Et filformat eller fysisk medie.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Medietype:</strong> 
+   <p><img alt="Medietype" src="img/Medietype.png"></p>
    <h3 class="heading settled" data-level="4.18" id="klasse-udgivertype-udkast---endnu-ikke-implementeret"><span class="secno">4.18. </span><span class="content">Klasse: Udgivertype (Udkast - endnu ikke implementeret)</span><a class="self-link" href="#klasse-udgivertype-udkast---endnu-ikke-implementeret"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4053,8 +4196,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Udgivertype (Udkast - endnu ikke implementeret):</strong> 
+   <p><img alt="Udgivertype (Udkast - endnu ikke implementeret)" src="img/Udgivertype%20(Udkast%20-%20endnu%20ikke%20implementeret).png"></p>
    <h3 class="heading settled" data-level="4.19" id="klasse-status-udkast---endnu-ikke-implementeret"><span class="secno">4.19. </span><span class="content">Klasse: Status (Udkast - endnu ikke implementeret)</span><a class="self-link" href="#klasse-status-udkast---endnu-ikke-implementeret"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4066,8 +4211,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Status (Udkast - endnu ikke implementeret):</strong> 
+   <p><img alt="Status (Udkast - endnu ikke implementeret)" src="img/Status%20(Udkast%20-%20endnu%20ikke%20implementeret).png"></p>
    <h3 class="heading settled" data-level="4.20" id="klasse-rolle"><span class="secno">4.20. </span><span class="content">Klasse: Rolle</span><a class="self-link" href="#klasse-rolle"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4079,8 +4226,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Rolle:</strong> 
+   <p><img alt="Rolle" src="img/Rolle.png"></p>
    <h3 class="heading settled" data-level="4.21" id="klasse-proveniensudsagn"><span class="secno">4.21. </span><span class="content">Klasse: Proveniensudsagn</span><a class="self-link" href="#klasse-proveniensudsagn"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4092,22 +4241,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.22" id="klasse-dokument"><span class="secno">4.22. </span><span class="content">Klasse: Dokument</span><a class="self-link" href="#klasse-dokument"></a></h3>
-   <dl class="def">
-    <dt>URI
-    <dd>http://xmlns.com/foaf/spec/#term_Document
-    <dt>Anvendelsesnote (da) 
-    <dd>En tekstbaseret ressourcer som indeholder information målrettet mennesker, fx. en webside som beskriver et datasæt
-    <dt>Anvendelsesnote (en)
-    <dd>A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset.
-    <dt>Definition (en)
-    <dd>A document.
-    <dt>Kravniveau
-    <dd>
-   </dl>
-   <h3 class="heading settled" data-level="4.23" id="klasse-rettighedsudsagn"><span class="secno">4.23. </span><span class="content">Klasse: Rettighedsudsagn</span><a class="self-link" href="#klasse-rettighedsudsagn"></a></h3>
+    <strong>UML-visualisering af klassen Proveniensudsagn:</strong> 
+   <p><img alt="Proveniensudsagn" src="img/Proveniensudsagn.png"></p>
+   <h3 class="heading settled" data-level="4.22" id="klasse-rettighedsudsagn"><span class="secno">4.22. </span><span class="content">Klasse: Rettighedsudsagn</span><a class="self-link" href="#klasse-rettighedsudsagn"></a></h3>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/RightsStatement
@@ -4118,8 +4256,25 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Rettighedsudsagn:</strong> 
+   <p><img alt="Rettighedsudsagn" src="img/Rettighedsudsagn.png"></p>
+   <h3 class="heading settled" data-level="4.23" id="klasse-dokument"><span class="secno">4.23. </span><span class="content">Klasse: Dokument</span><a class="self-link" href="#klasse-dokument"></a></h3>
+   <dl class="def">
+    <dt>URI
+    <dd>http://xmlns.com/foaf/spec/#term_Document
+    <dt>Anvendelsesnote (da) 
+    <dd>En tekstbaseret ressourcer som indeholder information målrettet mennesker, fx. en webside som beskriver et datasæt
+    <dt>Anvendelsesnote (en)
+    <dd>A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset.
+    <dt>Definition (en)
+    <dd>A document.
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+    <strong>UML-visualisering af klassen Dokument:</strong> 
+   <p><img alt="Dokument" src="img/Dokument.png"></p>
    <h3 class="heading settled" data-level="4.24" id="klasse-specifikation"><span class="secno">4.24. </span><span class="content">Klasse: Specifikation</span><a class="self-link" href="#klasse-specifikation"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4131,8 +4286,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>A reference point against which other things can be evaluated or compared.
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Specifikation:</strong> 
+   <p><img alt="Specifikation" src="img/Specifikation.png"></p>
    <h3 class="heading settled" data-level="4.25" id="klasse-virtuelt-visitkort"><span class="secno">4.25. </span><span class="content">Klasse: Virtuelt visitkort</span><a class="self-link" href="#klasse-virtuelt-visitkort"></a></h3>
    <dl class="def">
     <dt>URI
@@ -4144,8 +4301,10 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Definition (en)
     <dd>The parent class for all objects
     <dt>Kravniveau
-    <dd>
+    <dd>Valgfri
    </dl>
+    <strong>UML-visualisering af klassen Virtuelt visitkort:</strong> 
+   <p><img alt="Virtuelt visitkort" src="img/Virtuelt%20visitkort.png"></p>
    <h2 class="heading settled" data-level="5" id="klassifikationer"><span class="secno">5. </span><span class="content">Klassifikationer</span><a class="self-link" href="#klassifikationer"></a></h2>
    <p>I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer.</p>
    <p>Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)</p>
@@ -4173,27 +4332,27 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p>Eksempler:</p>
    <ul>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/text/html</p>
+     <p>https://www.iana.org/assignments/media-types/text/html</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/text/xml</p>
+     <p>https://www.iana.org/assignments/media-types/text/xml</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/text/csv</p>
+     <p>https://www.iana.org/assignments/media-types/text/csv</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/text/plain</p>
+     <p>https://www.iana.org/assignments/media-types/text/plain</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/json</p>
+     <p>https://www.iana.org/assignments/media-types/application/json</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/xml</p>
+     <p>https://www.iana.org/assignments/media-types/application/xml</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/zip</p>
+     <p>https://www.iana.org/assignments/media-types/application/zip</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/pdf</p>
+     <p>https://www.iana.org/assignments/media-types/application/pdf</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/ld+json</p>
+     <p>https://www.iana.org/assignments/media-types/application/ld+json</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/vnd.ms-excel (.xls)</p>
+     <p>https://www.iana.org/assignments/media-types/application/vnd.ms-excel (.xls)</p>
     <li data-md>
-     <p>hhttps://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)</p>
+     <p>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)</p>
    </ul>
    <h3 class="heading settled" data-level="5.5" id="filformater"><span class="secno">5.5. </span><span class="content">Filformater</span><a class="self-link" href="#filformater"></a></h3>
    <p>Egenskab: dct:format</p>
@@ -4715,5 +4874,5 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
    <div class="issue">Disse tilføjelser skal drøftes yderligere <a href="#issue-6434e0be"> ↵ </a></div>
    <div class="issue"> Er "kurateret" ok her som oversættelse af "curated"?<a href="#issue-15a88c4e"> ↵ </a></div>
    <div class="issue">Hvordan fungerer denne fortælling om strukturen? <a href="#issue-968f1117"> ↵ </a></div>
-   <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk (forslag). De oprindelige definitioner fra kernemodellerne er også indsat. Angivelse af kravniveau for klasser mangler<a href="#issue-e84322d9"> ↵ </a></div>
+   <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler<a href="#issue-a8551f5e"> ↵ </a></div>
   </div>
