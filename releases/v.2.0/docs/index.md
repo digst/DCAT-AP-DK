@@ -2860,17 +2860,17 @@ URI: http://www.iana.org/assignments/media-types/
 [Se klassifikationens indhold](http://www.iana.org/assignments/media-types/media-types.xhtml)
 
 Eksempler:
-* hhttps://www.iana.org/assignments/media-types/text/html
-* hhttps://www.iana.org/assignments/media-types/text/xml
-* hhttps://www.iana.org/assignments/media-types/text/csv
-* hhttps://www.iana.org/assignments/media-types/text/plain
-* hhttps://www.iana.org/assignments/media-types/application/json
-* hhttps://www.iana.org/assignments/media-types/application/xml
-* hhttps://www.iana.org/assignments/media-types/application/zip
-* hhttps://www.iana.org/assignments/media-types/application/pdf
-* hhttps://www.iana.org/assignments/media-types/application/ld+json
-* hhttps://www.iana.org/assignments/media-types/application/vnd.ms-excel (.xls)
-* hhttps://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)
+* https://www.iana.org/assignments/media-types/text/html
+* https://www.iana.org/assignments/media-types/text/xml
+* https://www.iana.org/assignments/media-types/text/csv
+* https://www.iana.org/assignments/media-types/text/plain
+* https://www.iana.org/assignments/media-types/application/json
+* https://www.iana.org/assignments/media-types/application/xml
+* https://www.iana.org/assignments/media-types/application/zip
+* https://www.iana.org/assignments/media-types/application/pdf
+* https://www.iana.org/assignments/media-types/application/ld+json
+* https://www.iana.org/assignments/media-types/application/vnd.ms-excel (.xls)
+* https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)
 
 
 ## Filformater
