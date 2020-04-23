@@ -12,7 +12,7 @@ https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#1-bra-namn-ska
 
 ## Hvordan skriver man en god tekstbaseret beskrivelse af et datasæt?
 
-## Hvornår skelner man mellem mulighederne for angivelse af hvordan man får adgang til datasættet?
+## Hvordan skelner man mellem mulighederne for angivelse af hvordan man får adgang til datasættet?
 Destinationsside, adgangs-URL, download-URL etc.
 
 ## Hvordan skelner man mellem de forskellige aktørroller?
