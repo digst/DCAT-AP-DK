@@ -190,7 +190,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">update/modification date</sh:name>
-		<sh:name xml:lang="da">seneste opdateringsdato</sh:name>	
+		<sh:name xml:lang="da">seneste ændringsdato</sh:name>	
 		<sh:description xml:lang="en">This property contains the most recent date on which the Catalogue was changed or modified.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor kataloget senest er blevet ændret.</sh:description>		
 		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>			
@@ -903,7 +903,7 @@
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">update/ modification date</sh:name>	 	  
-	    <sh:name xml:lang="da">opdateringsdato</sh:name>	
+	    <sh:name xml:lang="da">seneste ændringsdato</sh:name>	
 		<sh:description xml:lang="en">This property contains the most recent date on which the Dataset was changed or modified.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.</sh:description>		
 		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>			
