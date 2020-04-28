@@ -498,7 +498,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### seneste opdateringsdato (update/modification date) 
+### seneste ændrinsdato (update/modification date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/modified</dd>
@@ -1379,7 +1379,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### opdateringsdato (update/ modification date) 
+### seneste ændringsdato (update/ modification date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/modified</dd>
