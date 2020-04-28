@@ -406,7 +406,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### datatjeneste (service) 
+### tjeneste (service) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#service</dd>
@@ -1771,7 +1771,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### adgangstjeneste (access service ) 
+### dataadgangstjeneste (access service ) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#accessService</dd>
