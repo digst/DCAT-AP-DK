@@ -1,5 +1,5 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dcat-ap: <http://data.europa.eu/r5r/> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -15,7 +15,7 @@
 <https://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
   dcat:accessURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
   dcat:downloadURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml> ;
-  dcat-ap:availability dcat-ap:experimental ;
+  dcatap:availability dcatap:experimental ;
   dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dc:conformsTo <https://www.w3.org/TR/shacl> ;
   dc:license <https://creativecommons.org/licenses/by/4.0> ;
@@ -79,7 +79,7 @@
   ], [
     sh:name "creator"@en, "skaber"@da ;
     sh:description "This property refers to the entity primarily responsible for producing the catalogue."@en, "Denne egenskab angiver den aktør der primært er ansvarlig for katalogets skabelse."@da ;
-    rdfs:comment "An entity responsible for making the resource."@en ;
+    rdfs:comment "An entity responsible for making the resource."@en, "En entitet der er ansvarlig for ressourcens skabelse."@en ;
     sh:class foaf:Agent ;
     sh:maxCount 1 ;
     sh:path dc:creator ;
@@ -88,7 +88,7 @@
   ], [
     sh:name "homepage"@en, "websted"@da ;
     sh:description "This property refers to a web page that acts as the main page for the Catalogue."@en, "Denne egenskab angiver en webside som fungerer som katalogets hjemmeside."@da ;
-    rdfs:comment "A homepage for some thing."@en ;
+    rdfs:comment "A homepage for some thing."@en, "Et websted for noget."@en ;
     sh:class foaf:Document ;
     sh:maxCount 1 ;
     sh:path foaf:homepage ;
@@ -123,7 +123,7 @@
   ], [
     sh:name "spatial/geographic"@en, "geografisk område"@da ;
     sh:description "This property refers to a geographical area covered by the Catalogue. "@en, "Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists."@da ;
-    rdfs:comment "Spatial characteristics of the resource."@en ;
+    rdfs:comment "Spatial characteristics of the resource."@en, "Ressourcens geografiske karakteristika."@en ;
     sh:class dc:Location ;
     sh:path dc:spatial ;
     sh:severity sh:Violation ;
@@ -139,7 +139,7 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
     sh:name "license"@en, "licens"@da ;
-    sh:description "This property refers to the licence under which the Catalogue can be used or reused."@en, "Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under."@da ;
+    sh:description "This property refers to the licence under which the Catalogue can be used or reused."@en, "Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under."@da, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
     rdfs:comment "A legal document giving official permission to do something with a resource."@en ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
@@ -149,7 +149,7 @@
   ], [
     sh:name "rights"@en, "rettigheder"@da ;
     sh:description "This property refers to a statement that specifies rights associated with the Catalogue."@en, "Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget"@da ;
-    rdfs:comment "Information about rights held in and over the resource."@en ;
+    rdfs:comment "Information about rights held in and over the resource."@en, "Information om rettigheder forbundet med ressourcen."@en ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
     sh:path dc:rights ;
@@ -174,7 +174,7 @@
   ], [
     sh:name "has part"@en, "har del"@da ;
     sh:description "This property refers to a related Catalogue that is part of the described Catalogue."@en, "Denne egenskab angiver en katalogiseret ressource som er en del af det aktuelle katalog."@da ;
-    rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
+    rdfs:comment "A related resource that is included either physically or logically in the described resource."@en, "En relateret ressource der enten fysisk eller logisk er inkluderet i den beskrevne ressource."@da ;
     sh:class dcat:Resource ;
     sh:path dc:hasPart ;
     sh:severity sh:Violation ;
@@ -182,7 +182,7 @@
   ], [
     sh:name "is part of"@en, "er del af katalog"@da ;
     sh:description "This property refers to a related Catalogue in which the described Catalogue is physically or logically included."@en, "Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af."@da ;
-    rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
+    rdfs:comment "A related resource in which the described resource is physically or logically included."@en, "En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i."@en ;
     sh:class dcat:Catalog ;
     sh:maxCount 1 ;
     sh:path dc:isPartOf ;
@@ -199,7 +199,7 @@
   sh:property [
     sh:name "primary topic"@en, "genstand for registrering"@da ;
     sh:description "This property links the Catalogue Record to the Dataset, Data service or Catalog described in the record."@en, "Denne egenskab angiver det datasæt, den datatjeneste eller det katalog som er genstand for registreringen."@da ;
-    rdfs:comment "A document that this thing is the primary topic of."@en ;
+    rdfs:comment "A document that this thing is the primary topic of."@en, "Et dokument som har denne genstand som dets primære emne."@da ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
     sh:node <http://data.europa.eu/r5r#DcatResource_Shape> ;
@@ -228,8 +228,7 @@
   ], [
     sh:name "change type"@en, "status"@da ;
     sh:description "This property refers to the type of the latest revision of a Dataset's entry in the Catalogue. "@en, "Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) "@da ;
-    rdfs:comment """Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. 
-									Since Status is defined using a skos:Concept, that is the defined range for this property."""@en ;
+    rdfs:comment "Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property."@en, "Link til status for aktivets eller dets distribution set i forhold til et bestemt workflow."@da ;
     sh:pattern "^http://purl.org/adms/status/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
@@ -273,7 +272,7 @@
   ], [
     sh:name "source metadata"@en, "kilde"@da ;
     sh:description "This property refers to the original metadata that was used in creating metadata for the Dataset."@en, "Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om det aktuelle datasæt eller den aktuelle datatjeneste."@da ;
-    rdfs:comment "A related resource from which the described resource is derived."@en ;
+    rdfs:comment "A related resource from which the described resource is derived."@en, "En relateret ressource som den beskrevne ressource er afledt af."@da ;
     sh:class dcat:CatalogRecord ;
     sh:maxCount 1 ;
     sh:path dc:source ;
@@ -349,7 +348,7 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "contributor"@en, "bidragsyder "@da ;
+    sh:name "contributor"@en, "bidragsyder DK"@da ;
     sh:description "This property refers to the entity responsible for making contributions to the resource."@en, "Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)"@da ;
     rdfs:comment "An entity responsible for making contributions to the resource."@en, "En entitet der er ansvarlig for bidrage til skabelsen af ressourcen."@en ;
     sh:class foaf:Agent ;
@@ -358,7 +357,7 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "maintainer"@en, "vedligeholder"@da ;
+    sh:name "maintainer"@en, "vedligeholder DK"@da ;
     sh:description "This property refers to the agent that manages contributions to, and/or publication of a dataset."@en, "Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt. (dansk tilføjelse)"@da ;
     rdfs:comment "A maintainer of a Dataset, software package (SoftwareApplication), or other Project."@en, "En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt ."@en ;
     sh:class foaf:Agent ;
@@ -411,7 +410,7 @@
   ], [
     sh:name "documentation"@en, "dokumentation"@da ;
     sh:description "This property refers to a page or document about this Dataset."@en, "Denne egenskab angiver en webside eller et dokument som beskriver datasættet."@da ;
-    rdfs:comment "A page or document about this thing."@en, "En side eller dokument vedrørende denne entitet."@en ;
+    rdfs:comment "A page or document about this thing."@en, "En side eller et dokument vedrørende denne entitet."@en ;
     sh:class foaf:Document ;
     sh:path foaf:page ;
     sh:severity sh:Violation ;
@@ -428,13 +427,16 @@
   ], [
     sh:name "public administrative task type"@en, "forvaltningsopgave"@da ;
     sh:description "This property refers to an administrative task type that formed the basis of the data collection. A dataset may be associated with multiple task types."@en, "Denne egenskab angiver en eller flere forvaltningsopgaver som har dannet grundlag for dataindsamlingen. Til angivelse af forvaltningsopgave skal klassifikationen FORM (https://www.form-online.dk/soegning) eller KLE (http://www.kle-online.dk/soegning) anvendes"@da ;
-    rdfs:comment ""@en, ""@da ;
+    rdfs:comment "angivelse af type af opgave, der udføres af offentlige organisationer"@en, "specification of task type perfomed by the public administration"@da ;
+    sh:class <https://data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType> ;
+	sh:path <https://data.gov.dk/concept/core/tasktype/tasktype> ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "type"@en, "type"@da ;
     sh:description "This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established."@en, "Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)"@da ;
     rdfs:comment "The nature or genre of the resource."@en, "Type set i forhold til ressourcens genre eller iboende karakter."@da ;
+    sh:class skos:Concept ;
     sh:path dc:type ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
@@ -483,7 +485,7 @@
   ], [
     sh:name "temporal coverage"@en, "dækningsperiode"@da ;
     sh:description "This property refers to a temporal period that the Dataset covers."@en, "Denne egenskab angiver den periode datasættet dækker"@da ;
-    rdfs:comment "Temporal characteristics of the resource."@en ;
+    rdfs:comment "Temporal characteristics of the resource."@en, "Ressourcens tidslige karakteristika."@en ;
     sh:class dc:PeriodOfTime ;
     sh:path dc:temporal ;
     sh:severity sh:Violation ;
@@ -499,7 +501,7 @@
   ], [
     sh:name "frequency"@en, "opdateringsfrekvens"@da ;
     sh:description "This property refers to the frequency at which the Dataset is updated."@en, "Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency "@da ;
-    rdfs:comment "A rate at which something recurs."@en ;
+    rdfs:comment "A rate at which something recurs."@en, "Hyppighed med hvilken noget gentages."@da ;
     sh:pattern "^http://publications.europa.eu/resource/authority/frequency/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
@@ -525,45 +527,46 @@
     sh:shape <http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "has quality metadata"@en, "har kvalitetsmetadata"@da ;
-    sh:description "This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph."@en, "Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf (dansk tilføjelse)"@da ;
-    rdfs:comment "Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."@en ;
+    sh:name "has quality metadata"@en, "har kvalitetsmetadata DK"@da ;
+    sh:description "This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph."@en, "Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf (dansk tilføjelse). Se Fælles sprog for datakvalitet: https://arkitektur.digst.dk/node/625"@da ;
+    rdfs:comment "Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution."@en, """Refererer til en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf. Kvalitetsinformation repræsenteret i en sådan gruppering kan vedrøre enhver ressourcetype (fx. et datasæt, en linksamling, en graf, et mængde af tripler). I kontekst af DQV forventes denne egenskab dog at blive anvendt i udsagn hvor subjektet er instanser af dcat:Dataste eller dcat:Distribution.		
+		"""@da ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/dqv#hasQualityMetadata> ;
     sh:severity sh:Violation ;
     sh:class <http://www.w3.org/ns/dqv#QualityMetadata> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "has usage"@en, "har anvendelse"@da ;
+    sh:name "has usage"@en, "har anvendelse DK"@da ;
     sh:description "This property refers to dataset or distribution usage guidance/instructions."@en, "Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet. (dansk tilføjelse)"@da ;
-    rdfs:comment "Dataset or distribution usage guidance/instructions."@en ;
+    rdfs:comment "Dataset or distribution usage guidance/instructions."@en, "Instruktioner eller vejledning til anvendelse af datasættet."@en ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/duv#hasUsage> ;
     sh:severity sh:Violation ;
     sh:class <http://www.w3.org/ns/duv#Usage> ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "payment imposed"@en, "betalingspålagt"@da ;
+    sh:name "payment imposed"@en, "betalingspålagt DK"@da ;
     sh:description "This property specifies whether payment is imposed on the dataset or not."@en, "Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej. (dansk tilføjelse)"@da ;
-    rdfs:comment "This property specifies whether payment is imposed on the catalogued resource or not."@en ;
+    rdfs:comment "specification of whether payment is imposed on the catalogued resource or not."@en, "angivelse af hvorvidt datasættet er betalingspålagt eller ej. "@en ;
     sh:maxCount 1 ;
     sh:path <https://data.gov.dk/model/core/dcat-dk/paymentImposedContents> ;
     sh:severity sh:Violation ;
     sh:datatype xsd:boolean ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "personal data category"@en, "personoplysningskategori"@da ;
+    sh:name "personal data category"@en, "personoplysningskategori DK"@da ;
     sh:description "This property specifies a relation to specific personal data category"@en, "Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)"@da ;
-    rdfs:comment "specification of a relation to specific personal data category"@en ;
+    rdfs:comment "specification of a relation to specific personal data category"@en, "angivelse af en relation til en bestemt personoplysningskategori"@da ;
     sh:path <https://data.gov.dk/model/core/dcat-dk/personalDataCategory> ;
     sh:severity sh:Violation ;
     sh:pattern "^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/" ;
     sh:flags "i" ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "confidentiality type "@en, "fortrolighedsgrad "@da ;
+    sh:name "confidentiality type "@en, "fortrolighedsgrad DK"@da ;
     sh:description "This property specifies the extent by which information contained in a dataset can be disclosed."@en, "Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. (dansk tilføjelse) "@da ;
-    rdfs:comment "specification of the extent by which information contained in the resource can be disclosed."@en ;
+    rdfs:comment "specification of the extent by which information contained in the resource can be disclosed."@en, "angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives. "@da ;
     sh:maxCount 1 ;
     sh:path <https://data.gov.dk/model/core/dcat-dk/confidentialityType> ;
     sh:severity sh:Violation ;
@@ -581,7 +584,7 @@
   ], [
     sh:name "version"@en, "versionsnummer"@da ;
     sh:description "This property contains a version number or other version designation of the Dataset."@en, "Denne egenskab angiver en versionsnummer eller anden versionsangivelse af datasættet."@da ;
-    rdfs:comment "The annotation property that provides version information for an ontology or another OWL construct."@en ;
+    rdfs:comment "The annotation property that provides version information for an ontology or another OWL construct."@en, "Annotationsegenskab som angiver versioninformation for en ontologi eller et andet OWL-element."@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path owl:versionInfo ;
@@ -590,7 +593,7 @@
   ], [
     sh:name "version notes"@en, "versionsnoter"@da ;
     sh:description "This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."@en, "Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan genrages for hver sprogvariant af versionsnoterne."@da ;
-    rdfs:comment "A description of changes between this version and the previous version of the Asset"@en ;
+    rdfs:comment "A description of changes between this version and the previous version of the Asset"@en, "En beskrivelse af ændringer indført mellem denne version og forrige version af aktivet"@da ;
     sh:nodeKind sh:Literal ;
     sh:path <http://www.w3.org/ns/adms#versionNotes> ;
     sh:severity sh:Violation ;
@@ -598,7 +601,7 @@
   ], [
     sh:name "has version"@en, "har version"@da ;
     sh:description "This property refers to a related Dataset that is a version, edition, or adaptation of the described Dataset."@en, "Denne egenskab angiver et relateret datasæt som er en version, udgave eller bearbejdelse af et aktuelle datasæt."@da ;
-    rdfs:comment "A related resource that is a version, edition, or adaptation of the described resource."@en ;
+    rdfs:comment "A related resource that is a version, edition, or adaptation of the described resource."@en, "En relateret ressource som er en version, udgave eller tilpasning af den beskrevne ressource."@da ;
     sh:class dcat:Dataset ;
     sh:path dc:hasVersion ;
     sh:severity sh:Violation ;
@@ -606,15 +609,15 @@
   ], [
     sh:name "is version of"@en, "er version af"@da ;
     sh:description "This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation."@en, "Denne egenskab angiver et relateret datasæt som det aktuelle datasæt er en version, udgave eller bearbejdelse af."@da ;
-    rdfs:comment "A related resource of which the described resource is a version, edition, or adaptation."@en ;
+    rdfs:comment "A related resource of which the described resource is a version, edition, or adaptation."@en, "En relateret ressource som den beskrevne ressource er en version, udgave eller tilpasning af."@da ;
     sh:class dcat:Dataset ;
     sh:path dc:isVersionOf ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "provenance"@en, "proveniensudsagn"@da ;
-    sh:description "This property contains a statement about the lineage of a Dataset."@en, "Denne egenskab angiver udsagn omkring datasættets proveniens i form af udsagn eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af datasættet."@da ;
-    rdfs:comment "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."@en ;
+    sh:description "This property contains a statement about the lineage of a Dataset."@en, "Denne egenskab angiver udsagn omkring datasættets proveniens i form af udsagn om eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af datasættet."@da ;
+    rdfs:comment "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation."@en, "Udsagn omkring datasættets proveniens i form af udsagn om eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af ressourcen."@da ;
     sh:class dc:ProvenanceStatement ;
     sh:path dc:provenance ;
     sh:severity sh:Violation ;
@@ -622,7 +625,7 @@
   ], [
     sh:name "related resource"@en, "relateret ressource"@da ;
     sh:description "This property refers to a related resource."@en, "Denne egenskab angiver en relateret ressource"@da ;
-    rdfs:comment "A related resource."@en ;
+    rdfs:comment "A related resource."@en, "En relateret ressource."@en ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dc:relation ;
     sh:severity sh:Violation ;
@@ -630,7 +633,7 @@
   ], [
     sh:name "source dataset"@en, "kildedatasæt"@da ;
     sh:description "This property refers to a related Dataset from which the described Dataset is derived."@en, "Denne egenskab angiver et relateret datasæt hvoraf de aktuelle datasæt er afledt."@da ;
-    rdfs:comment "A related resource from which the described resource is derived."@en ;
+    rdfs:comment "A related resource from which the described resource is derived."@en, "En relateret ressource som den beskrevne ressource er afledt af."@en ;
     sh:class dcat:Dataset ;
     sh:path dc:source ;
     sh:severity sh:Violation ;
@@ -638,7 +641,7 @@
   ], [
     sh:name "is referenced by"@en, "refereres af"@da ;
     sh:description "This property provides a link to a description of a relationship with another resource."@en, "Denne egenskab angiver en reference til en beskrivelse af en relation til en anden ressource."@da ;
-    rdfs:comment "A related resource that references, cites, or otherwise points to the described resource."@en ;
+    rdfs:comment "A related resource that references, cites, or otherwise points to the described resource."@en, "En relateret ressource som refererer, citerer eller på anden måde peger på den beskrevne ressource."@en ;
     sh:nodeKind sh:BlankNodeOrIRI ;
     sh:path dc11:isReferencedBy ;
     sh:severity sh:Violation ;
@@ -646,7 +649,7 @@
   ], [
     sh:name "qualified attribution"@en, "kvalificeret kreditering"@da ;
     sh:description "This property refers to a link to an Agent having some form of responsibility for the resource"@en, "Denne egenskab tilskriver en aktør et bestemt ansvar i forbindelse med datasættet."@da ;
-    rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant."@en ;
+    rdfs:comment "Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant."@en, "Kreditering er handlingen hvormed en en aktør anerkendes et ansvar for en entitet. "@da ;
     sh:class prov:Attribution ;
     sh:path prov:qualifiedAttribution ;
     sh:severity sh:Violation ;
@@ -662,7 +665,8 @@
   ], [
     sh:name "was generated by"@en, "blev dannet ved"@da ;
     sh:description "This property refers to an activity that generated, or provides the business context for, the creation of the dataset."@en, "Denne egenskab angiver den aktivitet der dannede eller leverede forretningskonteksten for datasættets skabelse."@da ;
-    rdfs:comment "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."@en ;
+    rdfs:comment "Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."@en, """Generering er det at færdiggøre produktionen af en ny entitet gennem en aktivitet. 
+		Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation."""@en ;
     sh:class prov:Activity ;
     sh:path prov:wasGeneratedBy ;
     sh:severity sh:Violation ;
@@ -746,8 +750,7 @@
   ], [
     sh:name "status"@en, "status"@da ;
     sh:description "This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. "@en, "Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)"@da ;
-    rdfs:comment """Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. 
-									Since Status is defined using a skos:Concept, that is the defined range for this property."""@en ;
+    rdfs:comment "Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property."@en ;
     sh:pattern "^http://purl.org/adms/status/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
@@ -756,12 +759,12 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "availability"@en, "tilgængeligstype"@da ;
-    sh:description "This property indicates how long it is planned to keep the Distribution of the Dataset available. "@en, "Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængeligt. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/"@da ;
-    rdfs:comment "This property indicates how long it is planned to keep the Distribution of the Dataset available. "@en ;
+    sh:description "This property indicates how long it is planned to keep the Distribution of the Dataset available. "@en, "Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/"@da ;
+    rdfs:comment "This property indicates how long it is planned to keep the Distribution of the Dataset available. "@en, """Angivelse af hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig.	"""@da ;
     sh:pattern "^http://data.europa.eu/r5r/availability/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
-    sh:path dcat-ap:availability ;
+    sh:path dcatap:availability ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
@@ -776,7 +779,7 @@
   ], [
     sh:name "checksum"@en, "checksum"@da ;
     sh:description "This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL"@en, "Denne egenskab angiver en værdi som gør det muligt at verificere at indholdet af en distribution ikke er blevet ændret. Checksum-værdien er relateret til download-url."@da ;
-    rdfs:comment "The checksum property provides a mechanism that can be used to verify that the contents of a File or Package have not changed."@en ;
+    rdfs:comment "The checksum property provides a mechanism that can be used to verify that the contents of a File or Package have not changed."@en, "Checksum-egenskaben gør det muligt at verificere at indholdet af en fil eller pakke ikke er blevet ændret.."@da ;
     sh:class <http://spdx.org/rdf/terms#Checksum> ;
     sh:maxCount 1 ;
     sh:path <http://spdx.org/rdf/terms#checksum> ;
@@ -804,7 +807,7 @@
   ], [
     sh:name "format"@en, "format"@da ;
     sh:description "This property refers to the file format of the Distribution"@en, "Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)"@da ;
-    rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
+    rdfs:comment "The file format, physical medium, or dimensions of the resource."@en, "Ressourcens filformat, fysiske medium eller dimensioner."@da ;
     sh:pattern "^http://publications.europa.eu/resource/authority/file-type/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
@@ -834,7 +837,7 @@
   ], [
     sh:name "documentation"@en, "dokumentation"@da ;
     sh:description "This property refers to a page or document about this Distribution."@en, "Denne egenskab angiver en webside eller et dokument som beskriver distibutionen."@da ;
-    rdfs:comment "A page or document about this thing."@en ;
+    rdfs:comment "A page or document about this thing."@en, "En side eller et dokument vedrørende denne entitet."@da ;
     sh:class foaf:Document ;
     sh:path foaf:page ;
     sh:severity sh:Violation ;
@@ -842,7 +845,7 @@
   ], [
     sh:name "has policy"@en, "har politik"@da ;
     sh:description "This property refers to the policy expressing the rights associated with the distribution if using the ODRL vocabulary"@en, "Denne egenskab angiver de rettigheder der er forbundet med distributionen hvis W3Cs Open Digital Rights Language (ODRL) anvendes."@da ;
-    rdfs:comment "Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules."@en ;
+    rdfs:comment "Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules."@en, "Identificerer en ODRL Politik hvis regler gælder det identificerede aktiv."@da ;
     sh:class <http://www.w3.org/ns/odrl/2/Policy> ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/ns/odrl/2/hasPolicy> ;
@@ -851,7 +854,7 @@
   ], [
     sh:name "license"@en, "licens"@da ;
     sh:description "This property refers to the licence under which the Distribution is made available."@en, "Denne egenskab angiver den licens distributionen er gjort tilgængelig under."@da ;
-    rdfs:comment "A legal document giving official permission to do something with a resource."@en ;
+    rdfs:comment "A legal document giving official permission to do something with a resource."@en, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
     sh:path dc:license ;
@@ -860,7 +863,7 @@
   ], [
     sh:name "rights"@en, "rettigheder"@da ;
     sh:description "This property refers to a statement that specifies rights associated with the Distribution."@en, "Denne egenskab giver reference til et dokument der beskriver rettighederne forbundet med distributionen"@da ;
-    rdfs:comment "Information about rights held in and over the resource."@en ;
+    rdfs:comment "Information about rights held in and over the resource."@en, "Information om rettigheder forbundet med ressourcen."@da ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
     sh:path dc:rights ;
@@ -935,7 +938,7 @@
   ], [
     sh:name "licence"@en, "licens"@da ;
     sh:description "This property contains the licence under which the Data service is made available."@en, "Denne egenskab angiver den licens datatjenesten er gjort tilgængelig under."@da ;
-    rdfs:comment "A legal document giving official permission to do something with a resource."@en ;
+    rdfs:comment "A legal document giving official permission to do something with a resource."@en, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
     sh:path dc:licence ;
@@ -944,7 +947,7 @@
   ], [
     sh:name "access rights"@en, "adgangsrettigheder"@da ;
     sh:description "This property MAY include information regarding access or restrictions based on privacy, security, or other policies."@en, "Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med datatjenesten"@da ;
-    rdfs:comment "Information about rights held in and over the resource."@en ;
+    rdfs:comment "Information about rights held in and over the resource."@en, "Information om rettigheder forbundet med ressourcen."@da ;
     sh:class dc:RightsStatement ;
     sh:maxCount 1 ;
     sh:path dc:accessRights ;
@@ -970,7 +973,7 @@
   ], [
     sh:name "type"@en, "aktørtype"@da ;
     sh:description "This property refers to a type of the agent that makes the Catalogue or Dataset available"@en, "Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/"@da ;
-    rdfs:comment "The nature or genre of the resource."@en ;
+    rdfs:comment "The nature or genre of the resource."@en, "Type set i forhold til ressourcens genre eller iboende karakter."@da ;
     sh:pattern "^http://purl.org/adms/publishertype/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
@@ -1061,11 +1064,11 @@
   sh:targetClass dc:LicenseDocument ;
   sh:name "Licence Document"@en, "Licensdokument"@da ;
   sh:description "A legal document giving official permission to do something with a resource."@en, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
-  rdfs:comment "A legal document giving official permission to do something with a resource."@en ;
+  rdfs:comment "A legal document giving official permission to do something with a resource."@en, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
   sh:property [
     sh:name "licence type"@en, "licenstype"@da ;
     sh:description "This property refers to a type of licence, e.g. indicating ‘public domain’ or ‘royalties required’."@en, "Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) "@da ;
-    rdfs:comment "The nature or genre of the resource."@en ;
+    rdfs:comment "The nature or genre of the resource."@en, "Type set i forhold til ressourcens genre eller iboende karakter."@da ;
     sh:pattern "^http://purl.org/adms/licencetype/" ;
     sh:flags "i" ;
     sh:path dc:type ;
@@ -1076,8 +1079,8 @@
 <http://data.europa.eu/r5r#Location_Shape>
   a sh:NodeShape ;
   sh:name "Location"@en, "Lokation"@da ;
-  sh:description "A spatial region or named place. It can be represented using a controlled vocabulary or with geographic coordinates. In the latter case, the use of the Core Location Vocabulary  is recommended, following the approach described in the GeoDCAT-AP specification."@en, "En spatialt område eller navngivet sted. Det kan repræsenteres ved en kontrollereret udfaldsrum eller geografiske koordinater. Til sidstnævnte, anbefales det at vokabularet Core Location anvendes iht.  den metode der beskrives i GeoDCAT-AP-specifikationen."@da ;
-  rdfs:comment ""@en ;
+  sh:description "A spatial region or named place. It can be represented using a controlled vocabulary or with geographic coordinates. In the latter case, the use of the Core Location Vocabulary  is recommended, following the approach described in the GeoDCAT-AP specification."@en, "Et geografisk område eller navngivet sted. Det kan repræsenteres ved en kontrollereret udfaldsrum eller geografiske koordinater. Til sidstnævnte, anbefales det at vokabularet Core Location anvendes iht.  den metode der beskrives i GeoDCAT-AP-specifikationen."@da ;
+  rdfs:comment "A spatial region or named place."@en, "Et geografisk område eller navngivet sted."@da ;
   sh:targetClass dc:Location ;
   sh:property [
     sh:name "bounding box"@en, "bounding box"@da ;
@@ -1091,7 +1094,7 @@
   ], [
     sh:name "centroid"@en, "geometrisk tyngdepunkt"@da ;
     sh:description "This property refers to the geographic center (centroid) of a resource."@en, "Denne egenskab angiver en ressource geometriske tyngdepunkt (centroid)."@da ;
-    rdfs:comment "The geographic center (centroid) of a resource."@en, "Det geometrisk tyngdepunkt (centroid) for en ressource."@en ;
+    rdfs:comment "The geographic center (centroid) of a resource."@en, "Det geometriske tyngdepunkt (centroid) for en ressource."@en ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path dcat:centroid ;
@@ -1099,8 +1102,8 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
     sh:name "geometry"@en, "geometri"@da ;
-    sh:description "This property associates any resource with the corresponding geometry."@en, "Denne egenskab knytter en ressource til en geometri"@da ;
-    rdfs:comment "Associates any resource with the corresponding geometry."@en ;
+    sh:description "This property associates any resource with the corresponding geometry."@en, "Denne egenskab knytter en ressource til dens tilsvarende geometri."@da ;
+    rdfs:comment "Associates any resource with the corresponding geometry."@en, "Knytter en ressource til dens tilsvarende geometri."@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
     sh:path <http://www.w3.org/ns/locn#geometry> ;
@@ -1182,7 +1185,7 @@
   sh:targetClass dc:Frequency ;
   sh:name "Frequency"@en, "Frekvens"@da ;
   sh:description "A rate at which something recurs, e.g. the publication of a Dataset. "@en, "Den hyppighed med hvilken noget gentages, fx. opdateringen af et datasæt"@da ;
-  rdfs:comment "A rate at which something recurs."@en, "Hyppighed med hvilken noget gentages."@en .
+  rdfs:comment "A rate at which something recurs."@en, "Hyppighed med hvilken noget gentages."@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#LinguisticSystem_Shape>
   a sh:NodeShape ;
@@ -1201,14 +1204,14 @@
 <https://data.gov.dk/model/profile/dcat-ap-dk#PublisherType_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:Concept ;
-  sh:name "Publisher Type"@en, "Udgivertype (Udkast - endnu ikke implementeret)"@da ;
-  sh:description "A type of organisation that acts as a publisher"@en, "Typen af organisationen der har rollen som udgiver"@da .
+  sh:name "Publisher Type"@en, "Udgivertype (Udkast)"@da ;
+  sh:description "A type of organisation that acts as a publisher"@en, "Typen af organisationen der har rollen som udgiver (Udkast - endnu ikke implementeret)"@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Status_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:Concept ;
-  sh:name "Status"@en, "Status (Udkast - endnu ikke implementeret)"@da ;
-  sh:description "An indication of the maturity of a Distribution or the type of change of a Catalogue Record."@en, "Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning."@da .
+  sh:name "Status"@en, "Status (Udkast)"@da ;
+  sh:description "An indication of the maturity of a Distribution or the type of change of a Catalogue Record."@en, "Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning. (Udkast - endnu ikke implementeret)"@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Role_Shape>
   a sh:NodeShape ;
@@ -1222,49 +1225,49 @@
   sh:targetClass dc:ProvenanceStatement ;
   sh:name "Provenance Statement"@en, "Proveniensudsagn"@da ;
   sh:description "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation "@en, "Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning."@da ;
-  rdfs:comment "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en .
+  rdfs:comment "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en, "Enhver ændring i en ressources ejerskabs- eller kustodeforhold siden ressourcen blev skabt som er centrale for autencitet, integritet og fortolkning. "@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#RightsStatement_Shape>
   a sh:NodeShape ;
   sh:targetClass dc:RightsStatement ;
   sh:name "Rights Statement"@en, "Rettighedsudsagn"@da ;
   sh:description "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en, "En beskrivelse af de intellektuelle ejendomsrettigheder forbundet med en ressource, et juridisk dokument der angiver officielle tilladelser vedrørende en ressource eller en beskrivelse af adgangsrettigheder."@da ;
-  rdfs:comment "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en .
+  rdfs:comment "A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights."@en, "Udsagn om de intellektuelle ejendomsrettigheder forbundet med en ressource, et juridisk dokument der angiver officielle tilladelser vedrørende en ressource eller en beskrivelse af adgangsrettigheder."@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Document_Shape>
   a sh:NodeShape ;
   sh:targetClass <http://xmlns.com/foaf/spec/#term_Document> ;
   sh:name "Document"@en, "Dokument"@da ;
   sh:description "A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset."@en, "En tekstbaseret ressourcer som indeholder information målrettet mennesker, fx. en webside som beskriver et datasæt"@da ;
-  rdfs:comment "A document."@en .
+  rdfs:comment "A document."@en, "Et dokument."@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Standard_Shape>
   a sh:NodeShape ;
   sh:targetClass dc:Standard ;
   sh:name "Standard"@en, "Specifikation"@da ;
   sh:description "A standard or other specification to which a Dataset or Distribution conforms"@en, "En specifikation som et kataloget, et datasæt, en datatjeneste eller en distribution er i overenstemmelse med."@da ;
-  rdfs:comment "A reference point against which other things can be evaluated or compared."@en .
+  rdfs:comment "A reference point against which other things can be evaluated or compared."@en, "Et referencepunkt som man kan evaluere eller sammenligne andre ressourcer op i mod."@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Kind_Shape>
   a sh:NodeShape ;
   sh:targetClass vcard:Kind ;
   sh:name "Kind"@en, "Virtuelt visitkort"@da ;
   sh:description "A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group)"@en, "Et virtuelt visitkort beskrevet i overensstemmelse med vCard specifikationen. Anvendes eksempelvis til angivelse af telefonnummer og emailadrese for et kontaktpunkt. Bemærk at denne klasse er overklassen for de fire eksplicitte vCard-typer (Individ, Organisation, Lokation og Gruppe)"@da ;
-  rdfs:comment "The parent class for all objects"@en .
+  rdfs:comment "The parent class for all objects"@en, "Moderklassen for alle objekter"@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#Usage_Shape>
   a sh:NodeShape ;
   sh:targetClass <http://www.w3.org/ns/duv#Usage> ;
-  sh:name "Usage"@en, "Anvendelse"@da ;
+  sh:name "Usage"@en, "Anvendelse DK"@da ;
   sh:description "A helpful description of actions that can be performed on a given dataset or distribution"@en, "En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution (dansk tilføjelse)"@da ;
   rdfs:comment "A helpful description of actions that can be performed on a given dataset or distribution"@en, "En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution"@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk#QualityMetadata_Shape>
   a sh:NodeShape ;
   sh:targetClass <http://www.w3.org/ns/dqv#QualityMetadata> ;
-  sh:name "Quality Metadata"@en, "Kvalitetsmetadata "@da ;
+  sh:name "Quality Metadata"@en, "Kvalitetsmetadata DK"@da ;
   sh:description "Represents quality metadata"@en, "Repræsenterer kvalitetsmetadata (dansk tilføjelse)"@da ;
-  rdfs:comment "Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf"@en, "Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph"@da .
+  rdfs:comment "Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf"@da, "Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph"@en .
 
 <http://data.europa.eu/r5r#DcatResource_Shape>
   a sh:NodeShape ;
