@@ -145,8 +145,8 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
-Date: 2019-04-24
-Max ToC Depth: 2
+Date: 2019-04-29
+Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
 Inline Github Issues: full
@@ -200,9 +200,7 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 ### Use case 4: En myndigheds interne dataoverblik
 
 
-Issue: Disse udkast til use cases skal drøftes yderligere. 
-
-Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3 ) 
+Issue: Disse udkast til use cases skal drøftes yderligere. Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3 ) 
 
 ### Relevante emner
 
@@ -225,7 +223,7 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
 * Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
-* Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > ?
+* Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > Valgfri?
 * Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
 * Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
 
@@ -242,6 +240,8 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 * Datasæt: fortrolighedsgrad (dcat-dk:confidentialityType)
 * Datasæt: har kvalitetsmetadata (dqv:hasQualityMetadata)
 * Datasæt: har anvendelse (duv:hasUsage)
+* Klassen duv:Usage
+* Klassen dqv:QualityMetadata
 
 <p class="issue">Disse tilføjelser skal drøftes yderligere </p>
 
@@ -325,7 +325,6 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 
-
 			
 ## Klasse: Katalog (Catalog) 
 <dl class="def">
@@ -350,7 +349,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: titel (title) 
+### Egenskab: titel (title) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
@@ -360,6 +359,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</dd>
+<dt>Definition (da)</dt>
+<dd>Et navn givet til ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>A name given to the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -368,7 +369,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: beskrivelse (description) 
+### Egenskab: beskrivelse (description) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
@@ -378,6 +379,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>En forklaring af ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>An account of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -386,7 +389,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: datasæt (dataset) 
+### Egenskab: datasæt (dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#dataset</dd>
@@ -406,7 +409,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: tjeneste (service) 
+### Egenskab: datatjeneste (service) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#service</dd>
@@ -426,7 +429,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: udgiver (publisher) 
+### Egenskab: udgiver (publisher) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/publisher</dd>
@@ -436,6 +439,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an entity (organisation) responsible for making the Catalogue available. </dd>
+<dt>Definition (da)</dt>
+<dd>En entitet som er ansvarlig for at gøre ressourcen tilgængelig.</dd>
 <dt>Definition (en)</dt>
 <dd>An entity responsible for making the resource available.</dd>
 <dt>Multiplicitet</dt>
@@ -444,7 +449,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: skaber (creator) 
+### Egenskab: skaber (creator) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/creator</dd>
@@ -462,7 +467,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: websted (homepage) 
+### Egenskab: websted (homepage) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/homepage</dd>
@@ -480,7 +485,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: udgivelsesdato (release date) 
+### Egenskab: udgivelsesdato (release date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/issued</dd>
@@ -491,14 +496,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date of formal issuance (e.g., publication) of the Catalogue.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.</dd>
+<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: seneste ændrinsdato (update/modification date) 
+### Egenskab: seneste ændringsdato (update/modification date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/modified</dd>
@@ -508,6 +513,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den dato hvor kataloget senest er blevet ændret.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the most recent date on which the Catalogue was changed or modified.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen blev ændret.</dd>
 <dt>Definition (en)</dt>
 <dd>Date on which the resource was changed.</dd>
 <dt>Multiplicitet</dt>
@@ -516,7 +523,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: emneklassifikation (themes) 
+### Egenskab: emneklassifikation (themes) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#themeTaxonomy</dd>
@@ -536,7 +543,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: geografisk område (spatial/geographic) 
+### Egenskab: geografisk område (spatial/geographic) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/spatial</dd>
@@ -554,7 +561,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: sprog (language) 
+### Egenskab: sprog (language) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
@@ -564,6 +571,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages. </dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
 <dd>A language of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -572,7 +581,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: licens (license) 
+### Egenskab: licens (license) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/license</dd>
@@ -590,7 +599,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: rettigheder (rights) 
+### Egenskab: rettigheder (rights) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/rights</dd>
@@ -608,7 +617,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har katalogpost (catalog record) 
+### Egenskab: har katalogpost (catalog record) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#record</dd>
@@ -628,7 +637,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har delkatalog (catalog) 
+### Egenskab: har delkatalog (catalog) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#catalog</dd>
@@ -648,7 +657,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har del (has part) 
+### Egenskab: har del (has part) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/hasPart</dd>
@@ -666,7 +675,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: er del af katalog (is part of) 
+### Egenskab: er del af katalog (is part of) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/isPartOf</dd>
@@ -707,7 +716,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: genstand for registrering (primary topic) 
+### Egenskab: genstand for registrering (primary topic) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/primaryTopic</dd>
@@ -725,7 +734,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: tilføjelsesdato (listing date) 
+### Egenskab: tilføjelsesdato (listing date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/issued</dd>
@@ -736,14 +745,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.</dd>
+<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: seneste ændringsdato (update/ modification date) 
+### Egenskab: seneste ændringsdato (update/ modification date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/modified</dd>
@@ -753,6 +762,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den dato hvor katalogposten senest er blevet ændret.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the most recent date on which the Catalogue entry was changed or modified.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen blev ændret.</dd>
 <dt>Definition (en)</dt>
 <dd>Date on which the resource was changed.</dd>
 <dt>Multiplicitet</dt>
@@ -761,7 +772,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: status (change type) 
+### Egenskab: status (change type) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
@@ -780,7 +791,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: titel (title) 
+### Egenskab: titel (title) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
@@ -790,6 +801,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan gentages for hver sprogvariant.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.</dd>
+<dt>Definition (da)</dt>
+<dd>Et navn givet til ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>A name given to the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -798,7 +811,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: beskrivelse (description) 
+### Egenskab: beskrivelse (description) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
@@ -808,6 +821,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>En forklaring af ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>An account of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -816,16 +831,18 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: overensstemmelse (application profile) 
+### Egenskab: overensstemmelse (application profile) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/conformsTo</dd>
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/Standard</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overenstemmmelse med.</dd>
+<dd>Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overensstemmmelse med.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an Application Profile that the Dataset’s metadata conforms to</dd>
+<dt>Definition (da)</dt>
+<dd>En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Definition (en)</dt>
 <dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicitet</dt>
@@ -834,7 +851,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: sprog (language) 
+### Egenskab: sprog (language) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
@@ -844,6 +861,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
 <dd>A language of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -852,7 +871,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: kilde (source metadata) 
+### Egenskab: kilde (source metadata) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/source</dd>
@@ -893,7 +912,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: identifikator (identifier) 
+### Egenskab: identifikator (identifier) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/identifier</dd>
@@ -903,6 +922,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</dd>
+<dt>Definition (da)</dt>
+<dd>En entydig reference til ressourcen i en givet kontekst.</dd>
 <dt>Definition (en)</dt>
 <dd>An unambiguous reference to the resource within a given context.</dd>
 <dt>Multiplicitet</dt>
@@ -911,7 +932,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: anden identifikator (other identifier) 
+### Egenskab: anden identifikator (other identifier) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#identifier</dd>
@@ -922,14 +943,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5].</dd>
 <dt>Definition (en)</dt>
-<dd>adms:identifier is used to link any resource to an instance of adms:Identifier which is its range</dd>
+<dd>adms:identifier is used to link any resource to an instance of adms:Identifier which is its rangeadms:identifier anvendes til at forbinde enhver ressource til en instans af adms:Identifier, som udgør dens rækkevidde</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: titel (title) 
+### Egenskab: titel (title) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
@@ -939,6 +960,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</dd>
+<dt>Definition (da)</dt>
+<dd>Et navn givet til ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>A name given to the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -947,7 +970,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: beskrivelse (description) 
+### Egenskab: beskrivelse (description) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
@@ -957,6 +980,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>En forklaring af ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>An account of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -965,7 +990,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: udgiver (publisher) 
+### Egenskab: udgiver (publisher) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/publisher</dd>
@@ -975,6 +1000,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the entity (organisation) responsible for making the Dataset available.</dd>
+<dt>Definition (da)</dt>
+<dd>En entitet som er ansvarlig for at gøre ressourcen tilgængelig.</dd>
 <dt>Definition (en)</dt>
 <dd>An entity responsible for making the resource available.</dd>
 <dt>Multiplicitet</dt>
@@ -983,7 +1010,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: dataansvarlig organisation (dataresponsible organisation) - dansk tilføjelse
+### Egenskab: dataansvarlig organisation (dataresponsible organisation) 
 <dl class="def">
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/dataresponsibleorganisation</dd>
@@ -1003,7 +1030,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: skaber (creator) 
+### Egenskab: skaber (creator) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/creator</dd>
@@ -1013,6 +1040,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den aktør der er primært ansvarlig datasættets skabelse.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the entity primarily responsible for producing the dataset</dd>
+<dt>Definition (da)</dt>
+<dd>En entitet som er ansvarlig for ressourcens skabelse.</dd>
 <dt>Definition (en)</dt>
 <dd>An entity responsible for making the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1021,43 +1050,43 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: bidragsyder (contributor) - dansk tilføjelse
+### Egenskab: bidragsyder  (contributor) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/contributor</dd>
 <dt>Rækkevidde</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse.</dd>
+<dd>Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the entity responsible for making contributions to the resource.</dd>
 <dt>Definition (en)</dt>
-<dd>n entity responsible for making contributions to the resource.</dd>
+<dd>An entity responsible for making contributions to the resource.En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: vedligeholder (maintainer) - dansk tilføjelse
+### Egenskab: vedligeholder (maintainer) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://schema.org/maintainer</dd>
 <dt>Rækkevidde</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt.</dd>
+<dd>Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the agent that manages contributions to, and/or publication of a dataset.</dd>
 <dt>Definition (en)</dt>
-<dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.</dd>
+<dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt .</dd>
 <dt>Multiplicitet</dt>
 <dd>0..</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: kontaktpunkt (contact point) 
+### Egenskab: kontaktpunkt (contact point) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#contactPoint</dd>
@@ -1077,7 +1106,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: har distribution (dataset distribution) 
+### Egenskab: har distribution (dataset distribution) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#distribution</dd>
@@ -1097,7 +1126,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: uddrag (sample) 
+### Egenskab: uddrag (sample) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#sample</dd>
@@ -1108,14 +1137,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a sample distribution of the dataset.</dd>
 <dt>Definition (en)</dt>
-<dd>Links to a sample of an Asset (which is itself an Asset)</dd>
+<dd>Links to a sample of an Asset (which is itself an Asset)Link til et uddrag af aktivet (som også selv udgør et aktiv)</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: destinationsside (landing page) 
+### Egenskab: destinationsside (landing page) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#landingPage</dd>
@@ -1137,16 +1166,18 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: overenstemmelse (conforms to) 
+### Egenskab: overenstemmelse (conforms to) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/conformsTo</dd>
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/Standard</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en specifikation som datasættet er i overenstemmmelse med.</dd>
+<dd>Denne egenskab angiver en specifikation som datasættet er i overensstemmmelse med.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an implementing rule or other specification.</dd>
+<dt>Definition (da)</dt>
+<dd>En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Definition (en)</dt>
 <dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicitet</dt>
@@ -1155,7 +1186,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: dokumentation (documentation) 
+### Egenskab: dokumentation (documentation) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/page</dd>
@@ -1166,14 +1197,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a page or document about this Dataset.</dd>
 <dt>Definition (en)</dt>
-<dd>A page or document about this thing.</dd>
+<dd>A page or document about this thing.En side eller dokument vedrørende denne entitet.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: emne (theme/ category) 
+### Egenskab: emne (theme/ category) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#theme</dd>
@@ -1193,7 +1224,27 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: type (type) 
+### Egenskab: forvaltningsopgave (public administrative task type) 
+<dl class="def">
+<dt>URI</dt>
+<dd></dd>
+<dt>Rækkevidde</dt>
+<dd></dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver en eller flere forvaltningsopgaver som har dannet grundlag for dataindsamlingen. Til angivelse af forvaltningsopgave skal klassifikationen FORM (https://www.form-online.dk/soegning) eller KLE (http://www.kle-online.dk/soegning) anvendes</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to an administrative task type that formed the basis of the data collection. A dataset may be associated with multiple task types.</dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+				
+### Egenskab: type (type) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
@@ -1203,6 +1254,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</dd>
+<dt>Definition (da)</dt>
+<dd>Type set i forhold til ressourcens genre eller iboende karakter.</dd>
 <dt>Definition (en)</dt>
 <dd>The nature or genre of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1211,7 +1264,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: nøgleord (keyword/ tag) 
+### Egenskab: nøgleord (keyword/ tag) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#keyword</dd>
@@ -1231,7 +1284,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: sprog (language) 
+### Egenskab: sprog (language) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
@@ -1241,6 +1294,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
 <dd>A language of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1249,7 +1304,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: adgangsrettigheder (access rights) 
+### Egenskab: adgangsrettigheder (access rights) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accessRights</dd>
@@ -1259,6 +1314,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan det angives hvorvidt datasættet er åbent, har adgangsbegrænsninger eller om det ikke er tilgængeligt. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. </dd>
+<dt>Definition (da)</dt>
+<dd>Information om hvem kan tilgå ressourcen eller en indikations af ressourcens sikkerhedsstatus.</dd>
 <dt>Definition (en)</dt>
 <dd>Information about who access the resource or an indication of its security status.</dd>
 <dt>Multiplicitet</dt>
@@ -1267,7 +1324,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: geografisk område (spatial/ geographical coverage) 
+### Egenskab: geografisk område (spatial/ geographical coverage) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/spatial</dd>
@@ -1277,6 +1334,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver et geografisk område som datasættet dækker. Afgræsningen kan enten udtrykkes ved geografiske koordinater eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a geographic region that is covered by the Dataset. </dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens geografiske karaktetistika.</dd>
 <dt>Definition (en)</dt>
 <dd>Spatial characteristics of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1285,7 +1344,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: geografisk opløsning (i meter) (spatial resolution in meters) 
+### Egenskab: geografisk opløsning (i meter) (spatial resolution in meters) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters</dd>
@@ -1305,7 +1364,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: dækningsperiode (temporal coverage) 
+### Egenskab: dækningsperiode (temporal coverage) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/temporal</dd>
@@ -1323,7 +1382,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: tidslig opløsning (temporal resolution) 
+### Egenskab: tidslig opløsning (temporal resolution) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#temporalResolution</dd>
@@ -1343,7 +1402,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: opdateringsfrekvens (frequency) 
+### Egenskab: opdateringsfrekvens (frequency) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
@@ -1361,7 +1420,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: udgivelsesdato (release date) 
+### Egenskab: udgivelsesdato (release date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/issued</dd>
@@ -1372,14 +1431,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date of formal issuance (e.g., publication) of the Dataset.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.</dd>
+<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: seneste ændringsdato (update/ modification date) 
+### Egenskab: seneste ændringsdato (update/ modification date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/modified</dd>
@@ -1389,6 +1448,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the most recent date on which the Dataset was changed or modified.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen blev ændret.</dd>
 <dt>Definition (en)</dt>
 <dd>Date on which the resource was changed.</dd>
 <dt>Multiplicitet</dt>
@@ -1397,14 +1458,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har kvalitetsmetadata (has quality metadata) - dansk tilføjelse
+### Egenskab: har kvalitetsmetadata (has quality metadata) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dqv#hasQualityMetadata</dd>
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf </dd>
+<dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph.</dd>
 <dt>Definition (en)</dt>
@@ -1415,14 +1476,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har anvendelse (has usage) - dansk tilføjelse
+### Egenskab: har anvendelse  (has usage) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/duv#hasUsage</dd>
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/duv#Usage</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.</dd>
+<dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to dataset or distribution usage guidance/instructions.</dd>
 <dt>Definition (en)</dt>
@@ -1433,14 +1494,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: betalingspålagt (payment imposed) - dansk tilføjelse
+### Egenskab: betalingspålagt (payment imposed) 
 <dl class="def">
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd>
 <dt>Rækkevidde</dt>
 <dd></dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej.</dd>
+<dd>Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies whether payment is imposed on the dataset or not.</dd>
 <dt>Definition (en)</dt>
@@ -1451,14 +1512,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: personoplysningskategori (personal data category) - dansk tilføjelse
+### Egenskab: personoplysningskategori (personal data category) 
 <dl class="def">
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory</dd>
 <dt>Rækkevidde</dt>
 <dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:https://data.gov.dk/concept/profile/personal-data-categories </dd>
+<dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies a relation to specific personal data category</dd>
 <dt>Definition (en)</dt>
@@ -1469,14 +1530,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: fortrolighedsgrad  (confidentiality type ) - dansk tilføjelse
+### Egenskab: fortrolighedsgrad  (confidentiality type ) 
 <dl class="def">
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType</dd>
 <dt>Rækkevidde</dt>
 <dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. </dd>
+<dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. (dansk tilføjelse) </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies the extent by which information contained in a dataset can be disclosed.</dd>
 <dt>Definition (en)</dt>
@@ -1487,14 +1548,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: hjemmel (has legal resource) - dansk tilføjelse
+### Egenskab: hjemmel (has legal resource) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://data.europa.eu/m8g/hasLegalResource</dd>
 <dt>Rækkevidde</dt>
 <dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.</dd>
+<dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies the legal framework for the dataset.</dd>
 <dt>Definition (da)</dt>
@@ -1507,7 +1568,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: versionsnummer (version) 
+### Egenskab: versionsnummer (version) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2002/07/owl#versionInfo</dd>
@@ -1525,7 +1586,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: versionsnoter (version notes) 
+### Egenskab: versionsnoter (version notes) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#versionNotes</dd>
@@ -1543,7 +1604,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har version (has version) 
+### Egenskab: har version (has version) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/hasVersion</dd>
@@ -1561,7 +1622,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: er version af (is version of) 
+### Egenskab: er version af (is version of) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/isVersionOf</dd>
@@ -1579,7 +1640,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: proveniensudsagn (provenance) 
+### Egenskab: proveniensudsagn (provenance) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/provenance</dd>
@@ -1597,7 +1658,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: relateret ressource (related resource) 
+### Egenskab: relateret ressource (related resource) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/relation</dd>
@@ -1615,7 +1676,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: kildedatasæt (source dataset) 
+### Egenskab: kildedatasæt (source dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/source</dd>
@@ -1633,7 +1694,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: refereres af (is referenced by) 
+### Egenskab: refereres af (is referenced by) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/elements/1.1/isReferencedBy</dd>
@@ -1651,7 +1712,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: kvalificeret kreditering (qualified attribution) 
+### Egenskab: kvalificeret kreditering (qualified attribution) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/prov#qualifiedAttribution</dd>
@@ -1669,7 +1730,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: kvalificeret relation (qualified relation) 
+### Egenskab: kvalificeret relation (qualified relation) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#qualifiedRelation</dd>
@@ -1689,7 +1750,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: blev dannet ved (was generated by) 
+### Egenskab: blev dannet ved (was generated by) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/prov#wasGeneratedBy</dd>
@@ -1731,7 +1792,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: adgangsadresse (access address) 
+### Egenskab: adgangsadresse (access address) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#accessURL</dd>
@@ -1751,7 +1812,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: download-URL (download URL) 
+### Egenskab: download-URL (download URL) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#downloadURL</dd>
@@ -1771,7 +1832,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: dataadgangstjeneste (access service ) 
+### Egenskab: adgangstjeneste (access service ) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#accessService</dd>
@@ -1791,7 +1852,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: titel (title) 
+### Egenskab: titel (title) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
@@ -1801,6 +1862,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>Et navn givet til ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>A name given to the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1809,7 +1872,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: beskrivelse (description) 
+### Egenskab: beskrivelse (description) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
@@ -1819,6 +1882,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af distributionen</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>En forklaring af ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>An account of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1827,25 +1892,25 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: overenstemmelse (linked schemas) 
+### Egenskab: overenstemmelse (linked schemas) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/conformsTo</dd>
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/Standard</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en specifikation (schema) som distributionen er i overenstemmmelse med.</dd>
+<dd>Denne egenskab angiver en specifikation (schema) som distributionen er i overensstemmmelse med.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an established schema to which the described Distribution conforms.</dd>
 <dt>Definition (en)</dt>
-<dd>An established standard to which the described resource conforms.</dd>
+<dd>An established standard to which the described resource conforms.En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: udgivelsesdato (release date) 
+### Egenskab: udgivelsesdato (release date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/issued</dd>
@@ -1856,14 +1921,14 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date of formal issuance (e.g., publication) of the Distribution.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.</dd>
+<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: seneste ændringsdato (update/ modification date) 
+### Egenskab: seneste ændringsdato (update/ modification date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/modified</dd>
@@ -1873,6 +1938,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver den dato hvor distributionen senest er blevet ændret.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the most recent date on which the Distribution was changed or modified.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen blev ændret.</dd>
 <dt>Definition (en)</dt>
 <dd>Date on which the resource was changed.</dd>
 <dt>Multiplicitet</dt>
@@ -1881,7 +1948,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: status (status) 
+### Egenskab: status (status) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
@@ -1900,7 +1967,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: tilgængeligstype (availability) 
+### Egenskab: tilgængeligstype (availability) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://data.europa.eu/r5r/availability</dd>
@@ -1918,7 +1985,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: sprog (language) 
+### Egenskab: sprog (language) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
@@ -1928,6 +1995,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.</dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
 <dd>A language of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -1936,7 +2005,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: checksum (checksum) 
+### Egenskab: checksum (checksum) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#checksum</dd>
@@ -1954,7 +2023,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: bytestørrelse (byte size) 
+### Egenskab: bytestørrelse (byte size) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#byteSize</dd>
@@ -1972,7 +2041,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: medietype (media type) 
+### Egenskab: medietype (media type) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#mediaType</dd>
@@ -1992,7 +2061,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: format (format) 
+### Egenskab: format (format) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/format</dd>
@@ -2010,7 +2079,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: kompressionsformat (compression format) 
+### Egenskab: kompressionsformat (compression format) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#compressFormat</dd>
@@ -2030,7 +2099,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: pakkeformat (packaging format) 
+### Egenskab: pakkeformat (packaging format) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#packageFormat</dd>
@@ -2050,7 +2119,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: dokumentation (documentation) 
+### Egenskab: dokumentation (documentation) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/page</dd>
@@ -2068,7 +2137,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har politik (has policy) 
+### Egenskab: har politik (has policy) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/odrl/2/hasPolicy</dd>
@@ -2086,7 +2155,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: licens (license) 
+### Egenskab: licens (license) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/license</dd>
@@ -2104,7 +2173,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: rettigheder (rights) 
+### Egenskab: rettigheder (rights) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/rights</dd>
@@ -2122,7 +2191,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: tidslig opløsning (temporal resolution) 
+### Egenskab: tidslig opløsning (temporal resolution) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#temporalResolution</dd>
@@ -2142,7 +2211,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: geografisk opløsning (i meter) (spatial resolution) 
+### Egenskab: geografisk opløsning (i meter) (spatial resolution) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters</dd>
@@ -2185,7 +2254,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: endpoint-URL (endpoint URL ) 
+### Egenskab: endpoint-URL (endpoint URL ) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endpointURL</dd>
@@ -2205,7 +2274,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: titel (title) 
+### Egenskab: titel (title) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
@@ -2225,7 +2294,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: endpointbeskrivelse (endpoint description ) 
+### Egenskab: endpointbeskrivelse (endpoint description ) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endpointDescription</dd>
@@ -2245,7 +2314,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: beskrivelse (description) 
+### Egenskab: beskrivelse (description) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
@@ -2255,6 +2324,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af datatjenesten</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>En forklaring af ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>An account of the resource.</dd>
 <dt>Multiplicitet</dt>
@@ -2263,7 +2334,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: distribuerer datasæt (serves dataset) 
+### Egenskab: distribuerer datasæt (serves dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#servesDataset</dd>
@@ -2283,7 +2354,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: licens (licence) 
+### Egenskab: licens (licence) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/licence</dd>
@@ -2301,7 +2372,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: adgangsrettigheder (access rights) 
+### Egenskab: adgangsrettigheder (access rights) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accessRights</dd>
@@ -2342,7 +2413,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: navn (name) 
+### Egenskab: navn (name) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/name</dd>
@@ -2362,7 +2433,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: aktørtype (type) 
+### Egenskab: aktørtype (type) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
@@ -2403,7 +2474,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: titel (title) 
+### Egenskab: titel (title) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
@@ -2446,7 +2517,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: foretrukken betegnelse (preferred label) 
+### Egenskab: foretrukken betegnelse (preferred label) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
@@ -2487,7 +2558,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: algoritme (algorithm) 
+### Egenskab: algoritme (algorithm) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#algorithm</dd>
@@ -2505,7 +2576,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: checksumværdi (checksum value) 
+### Egenskab: checksumværdi (checksum value) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#checksumValue</dd>
@@ -2546,7 +2617,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: notation (notation) 
+### Egenskab: notation (notation) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#notation</dd>
@@ -2585,7 +2656,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: licenstype (licence type) 
+### Egenskab: licenstype (licence type) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
@@ -2624,7 +2695,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: bounding box (bounding box) 
+### Egenskab: bounding box (bounding box) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#bbox</dd>
@@ -2644,7 +2715,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: geometrisk tyngdepunkt (centroid) 
+### Egenskab: geometrisk tyngdepunkt (centroid) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#centroid</dd>
@@ -2662,7 +2733,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: geometri (geometry) 
+### Egenskab: geometri (geometry) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/locn#geometry</dd>
@@ -2701,7 +2772,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: startdato (start date) 
+### Egenskab: startdato (start date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#startDate</dd>
@@ -2721,7 +2792,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: slutdato (end date) 
+### Egenskab: slutdato (end date) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endDate</dd>
@@ -2741,7 +2812,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Anbefalet</dd>
 </dl>
 				
-### egenskab: har begyndelse (beginning) 
+### Egenskab: har begyndelse (beginning) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2006/time#hasBeginning</dd>
@@ -2761,7 +2832,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### egenskab: har slutning (end) 
+### Egenskab: har slutning (end) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2006/time#hasEnd</dd>
@@ -2804,7 +2875,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 
 				
-### egenskab: relation (relation) 
+### Egenskab: relation (relation) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/relation</dd>
@@ -2824,7 +2895,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### egenskab: havde rolle (had role) 
+### Egenskab: havde rolle (had role) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#hadRole</dd>
@@ -3043,7 +3114,45 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 <img src="img/Virtuelt%20visitkort.png" alt="Virtuelt visitkort">
 	
+			
+## Klasse: Anvendelse (Usage) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/duv#Usage</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution (dansk tilføjelse)</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>A helpful description of actions that can be performed on a given dataset or distribution</dd>
+<dt>Definition (da)</dt>
+<dd>En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution</dd>
+<dt>Definition (en)</dt>
+<dd>A helpful description of actions that can be performed on a given dataset or distribution</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Anvendelse:**	
+
+<img src="img/Anvendelse.png" alt="Anvendelse">
 	
+			
+## Klasse: Kvalitetsmetadata  (Quality Metadata) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>Repræsenterer kvalitetsmetadata (dansk tilføjelse)</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>Represents quality metadata</dd>
+<dt>Definition (da)</dt>
+<dd>Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</dd>
+<dt>Definition (en)</dt>
+<dd>Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+**UML-visualisering af klassen Kvalitetsmetadata :**	
+
+<img src="img/Kvalitetsmetadata%20.png" alt="Kvalitetsmetadata ">
 	
 
 # Klassifikationer
