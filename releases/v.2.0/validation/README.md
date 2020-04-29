@@ -1,4 +1,4 @@
-OBS: RDF/XML-serialiseringen er MASTER
+VIGTIGT: RDF/XML-serialiseringen er MASTER
 
 Med ovenstående SHACL-filer kan validering af DCAT-metadata afprøves allerede:
 
