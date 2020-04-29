@@ -1,3 +1,5 @@
+OBS: RDF/XML-serialiseringen er MASTER
+
 Med ovenstående SHACL-filer kan validering af DCAT-metadata afprøves allerede:
 
 Eksempler på DCAT-metadata findes her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
