@@ -77,7 +77,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">dataset</sh:name>
-		<sh:name xml:lang="da">datasæt</sh:name>	
+		<sh:name xml:lang="da">har datasæt</sh:name>	
 		<sh:description xml:lang="en">This property links the Catalogue with a Dataset that is part of the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et datasæt som er opført i kataloget</sh:description>		
 		<rdfs:comment xml:lang="en">A collection of data that is listed in the catalog.</rdfs:comment>	
@@ -93,7 +93,7 @@
     <sh:property>
       <rdf:Description>
 		<sh:name xml:lang="en">service</sh:name>
-		<sh:name xml:lang="da">datatjeneste</sh:name>	
+		<sh:name xml:lang="da">har datatjeneste</sh:name>	
 		<sh:description xml:lang="en">This property refers to a site or end-point that is listed in the catalog.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et websted eller endpoint som er opført i kataloget.</sh:description>	
 		<rdfs:comment xml:lang="en">A site or endpoint that is listed in the catalog.</rdfs:comment>	
@@ -1707,7 +1707,7 @@
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">serves dataset</sh:name>		  
-	    <sh:name xml:lang="da">distribuerer datasæt</sh:name>			  
+	    <sh:name xml:lang="da">servicerer datasæt</sh:name>			  
 		<sh:description xml:lang="en">This property refers to a collection of data that this data service can distribute</sh:description>
 		<sh:description xml:lang="da">Denne egenskab refererer til en samling af data som denne datatjeneste kan distribuere.</sh:description>		
 		<rdfs:comment xml:lang="en">A collection of data that this DataService can distribute.</rdfs:comment>		
