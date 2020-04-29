@@ -18,7 +18,7 @@
     <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
     <dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
     <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
-    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-15</dc:modified>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</dc:modified>
     <dc:publisher rdf:resource="http://digst.dk"/>
     <dc:relation rdf:resource="https://arkitektur.digst.dk/rammearkitektur/datastandarder"/> 
     <dc:description>This document specifies the constraints on properties and classes expressed by DCAT-AP-DK in SHACL</dc:description> 
@@ -28,7 +28,6 @@
 
 
 
-  
 <!-- ====================================== --> 
 <!--                Katalog                 -->
 <!-- ====================================== --> 
@@ -49,7 +48,8 @@
 		<sh:name xml:lang="da">titel</sh:name>		 		
 		<sh:description xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. </sh:description>		
-		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
@@ -64,7 +64,8 @@
 		<sh:name xml:lang="da">beskrivelse</sh:name>	
 		<sh:description xml:lang="en">This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen</sh:description> 	
-		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
@@ -111,6 +112,7 @@
 		<sh:description xml:lang="en">This property refers to an entity (organisation) responsible for making the Catalogue available. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.</sh:description>	
 		<rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>			
+		<rdfs:comment xml:lang="da">En entitet som er ansvarlig for at gøre ressourcen tilgængelig.</rdfs:comment>			
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -160,6 +162,7 @@
 		<sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor kataloget først blev formelt udgivet</sh:description>
 		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="en">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>				
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:node rdf:resource="http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
@@ -175,6 +178,7 @@
 		<sh:description xml:lang="en">This property contains the most recent date on which the Catalogue was changed or modified.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor kataloget senest er blevet ændret.</sh:description>		
 		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>			
+		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen blev ændret.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:node rdf:resource="http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
@@ -198,7 +202,7 @@
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
       </rdf:Description>
     </sh:property>
-
+	
 	
     <sh:property>
       <rdf:Description>
@@ -220,7 +224,8 @@
 		<sh:name xml:lang="da">sprog</sh:name>	
 		<sh:description xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</sh:description>		
-		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
 <!--    <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>  -->
         <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->	
@@ -360,6 +365,7 @@
 		<sh:description xml:lang="en">This property contains the date on which the description of the Dataset was included in the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller datatjenesten blev registreret i kataloget.</sh:description>
 		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>				
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:node rdf:resource="http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
@@ -375,6 +381,7 @@
 		<sh:description xml:lang="en">This property contains the most recent date on which the Catalogue entry was changed or modified.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor katalogposten senest er blevet ændret.</sh:description>	
 		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen blev ændret.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
@@ -408,7 +415,8 @@
 		<sh:name xml:lang="da">titel</sh:name>
 		<sh:description xml:lang="en">This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
-		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -422,7 +430,8 @@
 		<sh:name xml:lang="da">beskrivelse</sh:name>
 		<sh:description xml:lang="en">This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen</sh:description> 	
-		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	  
+		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	 
+		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -435,8 +444,9 @@
 		<sh:name xml:lang="en">application profile</sh:name>
 		<sh:name xml:lang="da">overensstemmelse</sh:name>
 		<sh:description xml:lang="en">This property refers to an Application Profile that the Dataset’s metadata conforms to</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overenstemmmelse med.</sh:description>	
-		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>		
+		<sh:description xml:lang="da">Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overensstemmmelse med.</sh:description>	
+		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">En estableret standard som den beskrevne ressource er i overensstemelse med.</rdfs:comment>			
         <sh:class rdf:resource="http://purl.org/dc/terms/Standard"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
@@ -451,7 +461,8 @@
 		<sh:name xml:lang="da">sprog</sh:name>
 		<sh:description xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </sh:description>		
-		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>			  
+		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
 <!--    <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/> -->
         <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
@@ -499,6 +510,7 @@
 		<sh:description xml:lang="en">This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik</sh:description>	
 		<rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">En entydig reference til ressourcen i en givet kontekst.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/identifier"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -512,7 +524,8 @@
 		<sh:name xml:lang="en">other identifier</sh:name>				
 		<sh:description xml:lang="en">This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5].</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver lokal identifikator for datasættet.</sh:description>		
-		<rdfs:comment xml:lang="en">adms:identifier is used to link any resource to an instance of adms:Identifier which is its range</rdfs:comment>			
+		<rdfs:comment xml:lang="en">adms:identifier is used to link any resource to an instance of adms:Identifier which is its range</rdfs:comment>	
+		<rdfs:comment xml:lang="en">adms:identifier anvendes til at forbinde enhver ressource til en instans af adms:Identifier, som udgør dens rækkevidde</rdfs:comment>		
         <sh:class rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#identifier"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -526,7 +539,8 @@
 	    <sh:name xml:lang="da">titel</sh:name>	 
 		<sh:description xml:lang="en">This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
-		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
@@ -541,7 +555,8 @@
 	    <sh:name xml:lang="da">beskrivelse</sh:name>
 		<sh:description xml:lang="en">This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.</sh:description>		
-		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>		
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
@@ -556,7 +571,8 @@
 	    <sh:name xml:lang="da">udgiver</sh:name>	
 		<sh:description xml:lang="en">This property refers to the entity (organisation) responsible for making the Dataset available.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.</sh:description>		
-		<rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">En entitet som er ansvarlig for at gøre ressourcen tilgængelig.</rdfs:comment>			
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/publisher"/>
@@ -587,7 +603,8 @@
 	    <sh:name xml:lang="da">skaber</sh:name>	
 		<sh:description xml:lang="en">This property refers to the entity primarily responsible for producing the dataset</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den aktør der er primært ansvarlig datasættets skabelse.</sh:description>		 
-		<rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">En entitet som er ansvarlig for ressourcens skabelse.</rdfs:comment>		
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/creator"/>
@@ -599,10 +616,11 @@
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">contributor</sh:name>	 	  
-	    <sh:name xml:lang="da">bidragsyder</sh:name>	
+	    <sh:name xml:lang="da">bidragsyder </sh:name>	
 		<sh:description xml:lang="en">This property refers to the entity responsible for making contributions to the resource.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse.</sh:description>		 
-		<rdfs:comment xml:lang="en">n entity responsible for making contributions to the resource.</rdfs:comment>			
+		<sh:description xml:lang="da">Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)</sh:description>		 
+		<rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</rdfs:comment>		
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/contributor"/>
@@ -616,8 +634,9 @@
 	    <sh:name xml:lang="en">maintainer</sh:name>	 	  
 	    <sh:name xml:lang="da">vedligeholder</sh:name>	
 		<sh:description xml:lang="en">This property refers to the agent that manages contributions to, and/or publication of a dataset.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt. (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">A maintainer of a Dataset, software package (SoftwareApplication), or other Project.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt .</rdfs:comment>				
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></sh:maxCount>
         <sh:path rdf:resource="http://schema.org/maintainer"/>
@@ -664,6 +683,7 @@
 		<sh:description xml:lang="en">This property refers to a sample distribution of the dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et uddrag af en distribution af datasættet</sh:description>		
 		<rdfs:comment xml:lang="en">Links to a sample of an Asset (which is itself an Asset)</rdfs:comment>		<!-- WHY ADMS? -->	
+		<rdfs:comment xml:lang="en">Link til et uddrag af aktivet (som også selv udgør et aktiv)</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#sample"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -694,8 +714,9 @@
 	    <sh:name xml:lang="en">conforms to</sh:name>	 	  
 	    <sh:name xml:lang="da">overenstemmelse</sh:name>	
 		<sh:description xml:lang="en">This property refers to an implementing rule or other specification.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en specifikation som datasættet er i overenstemmmelse med.</sh:description>	
-		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>			
+		<sh:description xml:lang="da">Denne egenskab angiver en specifikation som datasættet er i overensstemmmelse med.</sh:description>	
+		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">En estableret standard som den beskrevne ressource er i overensstemelse med.</rdfs:comment>			
         <sh:class rdf:resource="http://purl.org/dc/terms/Standard"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -710,6 +731,7 @@
 		<sh:description xml:lang="en">This property refers to a page or document about this Dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en webside eller et dokument som beskriver datasættet.</sh:description>	
 		<rdfs:comment xml:lang="en">A page or document about this thing.</rdfs:comment>	
+		<rdfs:comment xml:lang="en">En side eller dokument vedrørende denne entitet.</rdfs:comment>			
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/page"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -734,6 +756,25 @@
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
       </rdf:Description>
     </sh:property>
+	
+	
+    <sh:property>
+      <rdf:Description>
+	    <sh:name xml:lang="en">public administrative task type</sh:name>	 	  
+	    <sh:name xml:lang="da">forvaltningsopgave</sh:name>	
+		<sh:description xml:lang="en">This property refers to an administrative task type that formed the basis of the data collection. A dataset may be associated with multiple task types.</sh:description>
+		<sh:description xml:lang="da">Denne egenskab angiver en eller flere forvaltningsopgaver som har dannet grundlag for dataindsamlingen. Til angivelse af forvaltningsopgave skal klassifikationen FORM (https://www.form-online.dk/soegning) eller KLE (http://www.kle-online.dk/soegning) anvendes</sh:description>	
+		<rdfs:comment xml:lang="en"></rdfs:comment>	
+		<rdfs:comment xml:lang="da"></rdfs:comment>		
+<!--    <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> 
+        <sh:pattern></sh:pattern>
+        <sh:flags>i</sh:flags> 
+        <sh:path rdf:resource=""/> -->
+        <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+      </rdf:Description>
+    </sh:property>
+	
 
     <sh:property>
       <rdf:Description>
@@ -741,7 +782,8 @@
 	    <sh:name xml:lang="da">type</sh:name>	
 		<sh:description xml:lang="en">This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</sh:description>	
-		<rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Type set i forhold til ressourcens genre eller iboende karakter.</rdfs:comment>			
 <!--    <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> -->
         <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
 <!--    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>  Incorrect cardinality in spec (but not in SHACL implementation) -->		
@@ -772,6 +814,7 @@
 		<sh:description xml:lang="en">This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </sh:description>		
 		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
 <!--   <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/> -->
         <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
@@ -788,7 +831,8 @@
 	    <sh:name xml:lang="da">adgangsrettigheder</sh:name>	
 		<sh:description xml:lang="en">This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan det angives hvorvidt datasættet er åbent, har adgangsbegrænsninger eller om det ikke er tilgængeligt. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC)</sh:description>		  
-		<rdfs:comment xml:lang="en">Information about who access the resource or an indication of its security status.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">Information about who access the resource or an indication of its security status.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Information om hvem kan tilgå ressourcen eller en indikations af ressourcens sikkerhedsstatus.</rdfs:comment>				
         <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/accessRights"/>
@@ -804,7 +848,8 @@
 	    <sh:name xml:lang="da">geografisk område</sh:name>	 
 		<sh:description xml:lang="en">This property refers to a geographic region that is covered by the Dataset. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et geografisk område som datasættet dækker. Afgræsningen kan enten udtrykkes ved geografiske koordinater eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</sh:description>	
-		<rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Ressourcens geografiske karaktetistika.</rdfs:comment>			
 		<!--
         <sh:pattern>^http://publications.europa.eu/resource/authority/continent/|^http://publications.europa.eu/resource/authority/country|^http://publications.europa.eu/resource/authority/place/|^http://sws.geonames.org/</sh:pattern>		
         <sh:flags>i</sh:flags> -->	
@@ -883,7 +928,8 @@
 	    <sh:name xml:lang="da">udgivelsesdato</sh:name>	
 		<sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet</sh:description>
-		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -898,7 +944,8 @@
 	    <sh:name xml:lang="da">seneste ændringsdato</sh:name>	
 		<sh:description xml:lang="en">This property contains the most recent date on which the Dataset was changed or modified.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.</sh:description>		
-		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen blev ændret.</rdfs:comment>				
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -912,7 +959,7 @@
 	    <sh:name xml:lang="en">has quality metadata</sh:name>	 	  
 	    <sh:name xml:lang="da">har kvalitetsmetadata</sh:name>	
 		<sh:description xml:lang="en">This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf </sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dqv#hasQualityMetadata"/>
@@ -925,9 +972,9 @@
    <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">has usage</sh:name>	 	  
-	    <sh:name xml:lang="da">har anvendelse</sh:name>	
+	    <sh:name xml:lang="da">har anvendelse </sh:name>	
 		<sh:description xml:lang="en">This property refers to dataset or distribution usage guidance/instructions.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet. (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">Dataset or distribution usage guidance/instructions.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/duv#hasUsage"/>
@@ -942,7 +989,7 @@
 	    <sh:name xml:lang="en">payment imposed</sh:name>	 	  
 	    <sh:name xml:lang="da">betalingspålagt</sh:name>	
 		<sh:description xml:lang="en">This property specifies whether payment is imposed on the dataset or not.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej. (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">This property specifies whether payment is imposed on the catalogued resource or not.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents"/>
@@ -957,7 +1004,7 @@
 	    <sh:name xml:lang="en">personal data category</sh:name>	 	  
 	    <sh:name xml:lang="da">personoplysningskategori</sh:name>	
 		<sh:description xml:lang="en">This property specifies a relation to specific personal data category</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en relation til en bestemt personoplysningskategori. Til angivelse af frekvens skal følgende klassifikation anvendes:https://data.gov.dk/concept/profile/personal-data-categories </sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">specification of a relation to specific personal data category</rdfs:comment>			
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -973,7 +1020,7 @@
 	    <sh:name xml:lang="en">confidentiality type </sh:name>	 	  
 	    <sh:name xml:lang="da">fortrolighedsgrad </sh:name>	
 		<sh:description xml:lang="en">This property specifies the extent by which information contained in a dataset can be disclosed.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. </sh:description>		
+		<sh:description xml:lang="da">Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. (dansk tilføjelse) </sh:description>		
 		<rdfs:comment xml:lang="en">specification of the extent by which information contained in the resource can be disclosed.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/confidentialityType"/>
@@ -990,7 +1037,7 @@
 	    <sh:name xml:lang="en">has legal resource</sh:name>	 	  
 	    <sh:name xml:lang="da">hjemmel</sh:name>	
 		<sh:description xml:lang="en">This property specifies the legal framework for the dataset.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver med hvilken hjemmel datasættet blev skabt.</sh:description>		
+		<sh:description xml:lang="da">Denne egenskab angiver med hvilken hjemmel datasættet blev skabt. (dansk tilføjelse)</sh:description>		
 		<rdfs:comment xml:lang="en">It indicates the Legal Resource (e.g. legislation) to which the Public Service (red:resource) relates, operates or has its legal basis</rdfs:comment>		
 		<rdfs:comment xml:lang="da">reference til retskilde som danner grundlag for ressourcen</rdfs:comment>		
         <sh:path rdf:resource="http://data.europa.eu/m8g/hasLegalResource"/>
@@ -1228,7 +1275,8 @@
 		<sh:name xml:lang="da">titel</sh:name>	  
 		<sh:description xml:lang="en">This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
-		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>				  
+		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -1243,7 +1291,8 @@
 	    <sh:name xml:lang="da">beskrivelse</sh:name>	
 		<sh:description xml:lang="en">This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af distributionen</sh:description>	
-		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>				
+		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	
+		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -1256,8 +1305,9 @@
 	    <sh:name xml:lang="en">linked schemas</sh:name>		  
 	    <sh:name xml:lang="da">overenstemmelse</sh:name>	
 		<sh:description xml:lang="en">This property refers to an established schema to which the described Distribution conforms.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en specifikation (schema) som distributionen er i overenstemmmelse med.</sh:description>	
-		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>	  
+		<sh:description xml:lang="da">Denne egenskab angiver en specifikation (schema) som distributionen er i overensstemmmelse med.</sh:description>	
+		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>	
+		<rdfs:comment xml:lang="en">En estableret standard som den beskrevne ressource er i overensstemelse med.</rdfs:comment>		
         <sh:class rdf:resource="http://purl.org/dc/terms/Standard"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -1271,7 +1321,8 @@
 	    <sh:name xml:lang="da">udgivelsesdato</sh:name>	
 		<sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Distribution.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor distributionen først blev formelt udgivet</sh:description>
-		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>		  
+		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>				
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:node rdf:resource="http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
@@ -1286,7 +1337,8 @@
 	    <sh:name xml:lang="da">seneste ændringsdato</sh:name>	
 		<sh:description xml:lang="en">This property contains the most recent date on which the Distribution was changed or modified.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor distributionen senest er blevet ændret.</sh:description>		
-		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>		  
+		<rdfs:comment xml:lang="en">Date on which the resource was changed.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen blev ændret.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:node rdf:resource="http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
@@ -1336,7 +1388,8 @@
 	    <sh:name xml:lang="da">sprog</sh:name>	
 		<sh:description xml:lang="en">This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</sh:description>		
-		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
  <!--   <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/> -->
         <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->	
@@ -1607,7 +1660,8 @@
 	    <sh:name xml:lang="da">beskrivelse</sh:name>			  	  
 		<sh:description xml:lang="en">This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.</sh:description>	
 		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datatjenesten</sh:description>	
-		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>			
+		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -2229,6 +2283,41 @@
 	  <rdfs:comment xml:lang="en">The parent class for all objects</rdfs:comment>		  
   </rdf:Description>  
   
+
+<!-- ====================================== --> 
+<!--       Anvendelse (dansk tilføjelse)    -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Usage_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/ns/duv#Usage"/>  
+	  <sh:name xml:lang="en">Usage</sh:name>
+	  <sh:name xml:lang="da">Anvendelse</sh:name>	
+	  <sh:description xml:lang="en">A helpful description of actions that can be performed on a given dataset or distribution</sh:description>
+	  <sh:description xml:lang="da">En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution (dansk tilføjelse)</sh:description>	
+	  <rdfs:comment xml:lang="en">A helpful description of actions that can be performed on a given dataset or distribution</rdfs:comment>		  
+	  <rdfs:comment xml:lang="da">En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution</rdfs:comment>		  
+  </rdf:Description>  
+  
+  
+<!-- ====================================== --> 
+<!--   Kvalitetsmetadata (dansk tilføjelse)    -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#QualityMetadata_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/ns/dqv#QualityMetadata"/>  
+	  <sh:name xml:lang="en">Quality Metadata</sh:name>
+	  <sh:name xml:lang="da">Kvalitetsmetadata </sh:name>	
+	  <sh:description xml:lang="en">Represents quality metadata</sh:description>
+	  <sh:description xml:lang="da">Repræsenterer kvalitetsmetadata (dansk tilføjelse)</sh:description>	
+	  <rdfs:comment xml:lang="en">Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf</rdfs:comment>		  
+	  <rdfs:comment xml:lang="da">Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</rdfs:comment>		  
+  </rdf:Description>  
+  
+  
+  
+  
 <!-- ====================================== --> 
 <!--                Katalogiseret ressource        -->
 <!-- ====================================== --> 
@@ -2310,11 +2399,12 @@
   </rdf:Description>
   
 
+
+
 <!-- ====================================== --> 
 <!--                Kravniveauer            -->
 <!-- ====================================== --> 
-
-	
+  
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory">
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Obligatorisk</rdfs:label>
@@ -2336,6 +2426,8 @@
     <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</dc:description> 	
   </rdf:Description>
   
-  	
-	
+  
+    
+  
+
 </rdf:RDF>
