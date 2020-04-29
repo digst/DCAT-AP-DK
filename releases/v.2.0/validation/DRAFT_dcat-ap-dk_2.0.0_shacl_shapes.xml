@@ -27,28 +27,7 @@
   </rdf:Description>
 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory">
-    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
-    <rdfs:label xml:lang="da">Obligatorisk</rdfs:label>
-    <rdfs:label xml:lang="en">Mandatory</rdfs:label>
-    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</dc:description> 	
-	
-  </rdf:Description>
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended">
-    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
-    <rdfs:label xml:lang="da">Anbefalet</rdfs:label>
-    <rdfs:label xml:lang="en">Recommended</rdfs:label>	
-    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender SHOULD provide the information for that property if it is available.</dc:description> 
-	
-  </rdf:Description>
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Optional">
-    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
-    <rdfs:label xml:lang="da">Valgfri</rdfs:label>
-    <rdfs:label xml:lang="en">Optional</rdfs:label>		
-    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</dc:description> 	
-  </rdf:Description>
-  
-  
+
   
 <!-- ====================================== --> 
 <!--                Katalog                 -->
@@ -2331,4 +2310,32 @@
   </rdf:Description>
   
 
+<!-- ====================================== --> 
+<!--                Kravniveauer            -->
+<!-- ====================================== --> 
+
+	
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
+    <rdfs:label xml:lang="da">Obligatorisk</rdfs:label>
+    <rdfs:label xml:lang="en">Mandatory</rdfs:label>
+    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</dc:description> 	
+	
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
+    <rdfs:label xml:lang="da">Anbefalet</rdfs:label>
+    <rdfs:label xml:lang="en">Recommended</rdfs:label>	
+    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender SHOULD provide the information for that property if it is available.</dc:description> 
+	
+  </rdf:Description>
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Optional">
+    <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
+    <rdfs:label xml:lang="da">Valgfri</rdfs:label>
+    <rdfs:label xml:lang="en">Optional</rdfs:label>		
+    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</dc:description> 	
+  </rdf:Description>
+  
+  	
+	
 </rdf:RDF>
