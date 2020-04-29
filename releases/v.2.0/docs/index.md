@@ -3598,7 +3598,7 @@ Relevante links:
  <tr><td>udgiver</td><td>entitet som er ansvarlig for at gøre ressourcen tilgængelig</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>publisher </td></tr> 
  <tr><td>aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>agent </td></tr>  
  <tr><td>format</td><td>en ressources filformat, fysiske medium eller dimensioner</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>format </td></tr>
- <tr><td>hjemmeside</td><td>websted som fungerer som udgør en ressources første webside af en række indbyrdes forbundne sider</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>homepage </td></tr>
+ <tr><td>hjemmeside</td><td>websted for en ressource som udgøres af en primær webside samt en række indbyrdes forbundne websider</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>homepage </td></tr>
 
 
     </tbody>    
