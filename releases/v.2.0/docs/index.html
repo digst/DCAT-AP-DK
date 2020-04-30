@@ -1583,8 +1583,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
        <ol class="toc">
         <li><a href="#egenskab-titel-title"><span class="secno">4.1.1</span> <span class="content">Egenskab: titel (title)</span></a>
         <li><a href="#egenskab-beskrivelse-description"><span class="secno">4.1.2</span> <span class="content">Egenskab: beskrivelse (description)</span></a>
-        <li><a href="#egenskab-datast-dataset"><span class="secno">4.1.3</span> <span class="content">Egenskab: datasæt (dataset)</span></a>
-        <li><a href="#egenskab-datatjeneste-service"><span class="secno">4.1.4</span> <span class="content">Egenskab: datatjeneste (service)</span></a>
+        <li><a href="#egenskab-har-datast-dataset"><span class="secno">4.1.3</span> <span class="content">Egenskab: har datasæt (dataset)</span></a>
+        <li><a href="#egenskab-har-datatjeneste-service"><span class="secno">4.1.4</span> <span class="content">Egenskab: har datatjeneste (service)</span></a>
         <li><a href="#egenskab-udgiver-publisher"><span class="secno">4.1.5</span> <span class="content">Egenskab: udgiver (publisher)</span></a>
         <li><a href="#egenskab-skaber-creator"><span class="secno">4.1.6</span> <span class="content">Egenskab: skaber (creator)</span></a>
         <li><a href="#egenskab-websted-homepage"><span class="secno">4.1.7</span> <span class="content">Egenskab: websted (homepage)</span></a>
@@ -1696,7 +1696,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#egenskab-titel-title④"><span class="secno">4.5.2</span> <span class="content">Egenskab: titel (title)</span></a>
         <li><a href="#egenskab-endpointbeskrivelse-endpoint-description"><span class="secno">4.5.3</span> <span class="content">Egenskab: endpointbeskrivelse (endpoint description )</span></a>
         <li><a href="#egenskab-beskrivelse-description④"><span class="secno">4.5.4</span> <span class="content">Egenskab: beskrivelse (description)</span></a>
-        <li><a href="#egenskab-distribuerer-datast-serves-dataset"><span class="secno">4.5.5</span> <span class="content">Egenskab: distribuerer datasæt (serves dataset)</span></a>
+        <li><a href="#egenskab-service-for-datast-serves-dataset"><span class="secno">4.5.5</span> <span class="content">Egenskab: service for datasæt (serves dataset)</span></a>
         <li><a href="#egenskab-licens-licence"><span class="secno">4.5.6</span> <span class="content">Egenskab: licens (licence)</span></a>
         <li><a href="#egenskab-adgangsrettigheder-access-rights①"><span class="secno">4.5.7</span> <span class="content">Egenskab: adgangsrettigheder (access rights)</span></a>
        </ol>
@@ -1980,7 +1980,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Se også <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste">begrebslisten</a> med yderligere information. 
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
     Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde datatjenester og andre datakataloger. 
-   <p class="issue" id="issue-15a88c4e"><a class="self-link" href="#issue-15a88c4e"></a> Er "kurateret" ok her som oversættelse af "curated"?</p>
+   <p class="issue" id="issue-c85e32be"><a class="self-link" href="#issue-c85e32be"></a> Er "kurateret" ok her (og ved katalogiseret ressource og datasæt) som oversættelse af "curated"?</p>
    <h3 class="heading settled" data-level="3.2" id="katalogiseret-ressource"><span class="secno">3.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
     En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
@@ -2054,7 +2054,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.3" id="egenskab-datast-dataset"><span class="secno">4.1.3. </span><span class="content">Egenskab: datasæt (dataset)</span><a class="self-link" href="#egenskab-datast-dataset"></a></h4>
+   <h4 class="heading settled" data-level="4.1.3" id="egenskab-har-datast-dataset"><span class="secno">4.1.3. </span><span class="content">Egenskab: har datasæt (dataset)</span><a class="self-link" href="#egenskab-har-datast-dataset"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#dataset
@@ -2073,7 +2073,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.1.4" id="egenskab-datatjeneste-service"><span class="secno">4.1.4. </span><span class="content">Egenskab: datatjeneste (service)</span><a class="self-link" href="#egenskab-datatjeneste-service"></a></h4>
+   <h4 class="heading settled" data-level="4.1.4" id="egenskab-har-datatjeneste-service"><span class="secno">4.1.4. </span><span class="content">Egenskab: har datatjeneste (service)</span><a class="self-link" href="#egenskab-har-datatjeneste-service"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#service
@@ -2649,7 +2649,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Rækkevidde
     <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt (dansk tilføjelse)
+    <dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt. (dansk tilføjelse) 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the agent responsible for the general administration of all aspects concerning a dataset
     <dt>Definition (da)
@@ -2848,7 +2848,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <h4 class="heading settled" data-level="4.3.17" id="egenskab-forvaltningsopgave-public-administrative-task-type"><span class="secno">4.3.17. </span><span class="content">Egenskab: forvaltningsopgave (public administrative task type)</span><a class="self-link" href="#egenskab-forvaltningsopgave-public-administrative-task-type"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>
+    <dd>https://data.gov.dk/concept/core/tasktype/tasktype
     <dt>Rækkevidde
     <dd>https://data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType
     <dt>Anvendelsesnote (da)
@@ -3924,7 +3924,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.5.5" id="egenskab-distribuerer-datast-serves-dataset"><span class="secno">4.5.5. </span><span class="content">Egenskab: distribuerer datasæt (serves dataset)</span><a class="self-link" href="#egenskab-distribuerer-datast-serves-dataset"></a></h4>
+   <h4 class="heading settled" data-level="4.5.5" id="egenskab-service-for-datast-serves-dataset"><span class="secno">4.5.5. </span><span class="content">Egenskab: service for datasæt (serves dataset)</span><a class="self-link" href="#egenskab-service-for-datast-serves-dataset"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#servesDataset
@@ -5227,7 +5227,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
   <div style="counter-reset:issue">
    <div class="issue"> Disse udkast til use cases skal drøftes yderligere. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a><a href="#issue-dc858a9b"> ↵ </a></div>
    <div class="issue">Disse tilføjelser skal drøftes yderligere <a href="#issue-6434e0be"> ↵ </a></div>
-   <div class="issue"> Er "kurateret" ok her som oversættelse af "curated"?<a href="#issue-15a88c4e"> ↵ </a></div>
+   <div class="issue"> Er "kurateret" ok her (og ved katalogiseret ressource og datasæt) som oversættelse af "curated"?<a href="#issue-c85e32be"> ↵ </a></div>
    <div class="issue">Hvordan fungerer denne fortælling om strukturen? <a href="#issue-968f1117"> ↵ </a></div>
    <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler<a href="#issue-a8551f5e"> ↵ </a></div>
   </div>
