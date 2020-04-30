@@ -1,4 +1,4 @@
-**VIGTIGT: RDF/XML-serialiseringen er MASTER-filen**
+
 
 Med ovenstående SHACL-filer kan validering af DCAT-metadata afprøves allerede:
 
@@ -9,11 +9,8 @@ I SHACL Playground kan indholdet af TTL-filen her indsættes (til venstre) hvore
 Relevante links:
 
 * SHACL Playground: https://shacl.org/playground/
-
 * RDF validator: https://www.w3.org/RDF/Validator/
-
 * DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
-
 * RDF converter: http://www.easyrdf.org/converter
-
 * Markdown-styling af udkast til SHACL shapes fil: https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml
+**VIGTIGT: RDF/XML-serialiseringen er MASTER-filen**
