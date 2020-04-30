@@ -294,7 +294,7 @@ DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grun
 ## Katalog
 Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.
 
-Issue: Er "kurateret" ok her som oversættelse af "curated"?
+Issue: Er "kurateret" ok her (og ved katalogiseret ressource og datasæt) som oversættelse af "curated"?
 
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
@@ -324,7 +324,6 @@ Her ses en illustration af tre af de ovenstående elementerne, hhv. "katalog", "
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 
 <p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
-
 
 
 			
@@ -391,7 +390,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### Egenskab: datasæt (dataset) 
+### Egenskab: har datasæt (dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#dataset</dd>
@@ -411,7 +410,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Obligatorisk</dd>
 </dl>
 				
-### Egenskab: datatjeneste (service) 
+### Egenskab: har datatjeneste (service) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#service</dd>
@@ -1026,7 +1025,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Rækkevidde</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt (dansk tilføjelse)</dd>
+<dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt. (dansk tilføjelse) </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the agent responsible for the general administration of all aspects concerning a dataset</dd>
 <dt>Definition (da)</dt>
@@ -1236,7 +1235,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 ### Egenskab: forvaltningsopgave (public administrative task type) 
 <dl class="def">
 <dt>URI</dt>
-<dd></dd>
+<dd>https://data.gov.dk/concept/core/tasktype/tasktype</dd>
 <dt>Rækkevidde</dt>
 <dd>https://data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType</dd>
 <dt>Anvendelsesnote (da)</dt>
@@ -2380,7 +2379,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: distribuerer datasæt (serves dataset) 
+### Egenskab: service for datasæt (serves dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#servesDataset</dd>
