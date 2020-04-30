@@ -1707,7 +1707,7 @@
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">serves dataset</sh:name>		  
-	    <sh:name xml:lang="da">servicerer datasæt</sh:name>			  
+	    <sh:name xml:lang="da">service for datasæt</sh:name>			  
 		<sh:description xml:lang="en">This property refers to a collection of data that this data service can distribute</sh:description>
 		<sh:description xml:lang="da">Denne egenskab refererer til en samling af data som denne datatjeneste kan distribuere.</sh:description>		
 		<rdfs:comment xml:lang="en">A collection of data that this DataService can distribute.</rdfs:comment>		
