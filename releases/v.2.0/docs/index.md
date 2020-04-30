@@ -257,7 +257,7 @@ Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 ## Diagram 
 Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
 
-<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
+<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img src="img/Figur-DCAT-AP-DK-v2-UML.png" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
 
 
 ## Namespaces
