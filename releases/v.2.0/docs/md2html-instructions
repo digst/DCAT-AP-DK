@@ -1,0 +1,8 @@
+1) Kopier md-teksten fra GitBub ind i Bikeshed's webformular: https://api.csswg.org/bikeshed/
+Vælg Output = Generated HTML og vælg Force HTML. og klik 'Proces'
+
+2) Hvis alt ser ok ud (selvom billederne vil mangle), så ’Vis kilde’ og kopier HTML-indholdet
+
+3) Åbn html-filen på GitHub og sæt dit opdaterede HTML-ind istedet og gem
+
+4) Vent 3-5 minutter på at GitHub pages opdaterer visningen her: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/
