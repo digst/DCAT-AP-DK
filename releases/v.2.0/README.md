@@ -5,7 +5,7 @@ DCAT-AP-DK v.2.0 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 2
 Link til udkast til v.2.0: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/
 
 ## Anvendelseprofilen DCAT-AP-DK visualiseret med UML-diagram (UDKAST)
-![DCAT-AP-DK UML-diagram](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/docs/img/Figur-DCAT-AP-DK-v2-UML.PNG "UDKAST DCAT-AP-DK UML Diagram")
+![DCAT-AP-DK UML-diagram](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/docs/img/Figur-DCAT-AP-DK-v2-UML.png "UDKAST DCAT-AP-DK UML Diagram")
 
 
 ## Anvendelseprofilen DCAT-AP visualiseret med UML-diagram
