@@ -1,1 +1,1 @@
-# Visning: obligatoriske og anbefalede klasser og egenskaber
+# DCAT-AP-DK-visning: obligatoriske og anbefalede elementer
