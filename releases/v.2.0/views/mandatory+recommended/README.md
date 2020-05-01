@@ -2,6 +2,7 @@
 samt obligatoriske/anbefalede egenskaber for disse klasser
 
 			
+			
 ## Klasse: Katalog (Catalog) 
 <dl class="def">
 <dt>URI</dt>
@@ -16,10 +17,10 @@ samt obligatoriske/anbefalede egenskaber for disse klasser
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. )| 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen)| 1..*|	 Obligatorisk|
-|har datasæt (dataset)|http://www.w3.org/ns/dcat#dataset	(http://www.w3.org/ns/dcat#Dataset|Denne egenskab angiver et datasæt som er opført i kataloget)| 1..*|	 Obligatorisk|
-|udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent|Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.)| 1..1|	 Obligatorisk|	
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. | 1..*)|	 Obligatorisk|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen| 1..*)|	 Obligatorisk|
+|har datasæt (dataset)|http://www.w3.org/ns/dcat#dataset	(http://www.w3.org/ns/dcat#Dataset|Denne egenskab angiver et datasæt som er opført i kataloget| 1..*)|	 Obligatorisk|
+|udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent|Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.| 1..1)|	 Obligatorisk|	
 			
 ## Klasse: Datasæt (Dataset) 
 <dl class="def">
@@ -35,9 +36,9 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|identifikator (identifier)|http://purl.org/dc/terms/identifier	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik)| 0..*|	 Obligatorisk|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.)| 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.)| 1..*|	 Obligatorisk|	
+|identifikator (identifier)|http://purl.org/dc/terms/identifier	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik| 0..*)|	 Obligatorisk|
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.| 1..*)|	 Obligatorisk|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.| 1..*)|	 Obligatorisk|	
 			
 ## Klasse: Distribution (Distribution) 
 <dl class="def">
@@ -54,7 +55,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|adgangsadresse (access address)|http://www.w3.org/ns/dcat#accessURL	(http://www.w3.org/2001/XMLSchema#anyURI|Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. )| 1..*|	 Obligatorisk|	
+|adgangsadresse (access address)|http://www.w3.org/ns/dcat#accessURL	(http://www.w3.org/2001/XMLSchema#anyURI|Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. | 1..*)|	 Obligatorisk|	
 			
 ## Klasse: Aktør (Agent) 
 <dl class="def">
@@ -70,7 +71,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.)| 1..*|	 Obligatorisk|	
+|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.| 1..*)|	 Obligatorisk|	
 			
 ## Klasse: Begrebssystem (Category Scheme) 
 <dl class="def">
@@ -86,7 +87,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.)| 1..*|	 Obligatorisk|	
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.| 1..*)|	 Obligatorisk|	
 			
 ## Klasse: Begreb (Category) 
 <dl class="def">
@@ -102,7 +103,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|foretrukken betegnelse (preferred label)|http://www.w3.org/2004/02/skos/core#prefLabel	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.)| 1..*|	 Obligatorisk|	
+|foretrukken betegnelse (preferred label)|http://www.w3.org/2004/02/skos/core#prefLabel	(http://www.w3.org/2000/01/rdf-schema#Literal|Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.| 1..*)|	 Obligatorisk|	
 			
 ## Klasse: Licensdokument (Licence Document) 
 <dl class="def">
