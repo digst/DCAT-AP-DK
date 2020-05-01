@@ -1,1 +1,1 @@
-# Visning der fremhæver obligatoriske og anbefalede klasser og egenskaber
+# Visning: obligatoriske og anbefalede klasser og egenskaber
