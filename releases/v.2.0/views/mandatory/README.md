@@ -11,7 +11,7 @@ samt obligatoriske egenskaber for disse klasser
 <dd>Obligatorisk</dd>
 </dl>
 	 
-### Klassens obligatoriske/anbefalede egenskaber:
+### Klassens obligatoriske egenskaber:
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
@@ -30,7 +30,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 <dd>Obligatorisk</dd>
 </dl>
 	 
-### Klassens obligatoriske/anbefalede egenskaber:
+### Klassens obligatoriske egenskaber:
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
@@ -48,7 +48,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 <dd>Obligatorisk</dd>
 </dl>
 	 
-### Klassens obligatoriske/anbefalede egenskaber:
+### Klassens obligatoriske egenskaber:
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
