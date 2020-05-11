@@ -288,7 +288,7 @@ dcat:DataService
 dcat:Dataset
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:comment "En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer."@da ;    
+  rdfs:comment "En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;    
   rdfs:comment "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja ;
   rdfs:comment "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en ;
   rdfs:comment "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs ;
