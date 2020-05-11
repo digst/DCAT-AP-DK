@@ -284,8 +284,8 @@
   a sh:NodeShape ;
   sh:targetClass dcat:Dataset ;
   sh:name "Dataset"@en, "Datasæt"@da ;
-  sh:description "A conceptual entity that represents the information published. "@en, "En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;
-  rdfs:comment "A collection of data, published or curated by a single agent, and available for access or download in one or more representations."@en, "En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer."@da ;
+  sh:description "A conceptual entity that represents the information published. "@en, "En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;
+  rdfs:comment "A collection of data, published or curated by a single agent, and available for access or download in one or more representations."@en, "En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;
   sh:property [
     sh:name "identifikator"@da, "identifier"@en ;
     sh:description "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en, "Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik"@da ;
