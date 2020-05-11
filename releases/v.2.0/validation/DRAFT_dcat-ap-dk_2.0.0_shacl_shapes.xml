@@ -508,9 +508,9 @@
     <sh:name xml:lang="en">Dataset</sh:name>
     <sh:name xml:lang="da">Datasæt</sh:name>	
 	<sh:description xml:lang="en">A conceptual entity that represents the information published. </sh:description>
-	<sh:description xml:lang="da">En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</sh:description>		
+	<sh:description xml:lang="da">En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</sh:description>		
 	<rdfs:comment xml:lang="en">A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</rdfs:comment>	
-	<rdfs:comment xml:lang="da">En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer.</rdfs:comment>	
+	<rdfs:comment xml:lang="da">En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</rdfs:comment>	
 	
     <sh:property>
       <rdf:Description>
