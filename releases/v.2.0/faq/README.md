@@ -50,5 +50,11 @@ Der er et pågående arbejde i regi af W3C vedrørende mapping mellem DCAT-AP og
 
 Læs mere her: https://schema.org/Dataset; https://schema.org/docs/data-and-datasets.html; https://ec-jrc.github.io/dcat-ap-to-schema-org/
 
+## Kan jeg opmærke min eksisterende html-side med DCAT?
+Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
+RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter, https://en.wikipedia.org/wiki/RDFa
 
+Se fx vejledning her: https://theodi.org/article/marking-up-your-dataset-with-dcat/
+
+## Hvilke applikationer understøtter DCAT?
 
