@@ -592,7 +592,7 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
     sh:name "version notes"@en, "versionsnoter"@da ;
-    sh:description "This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."@en, "Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan genrages for hver sprogvariant af versionsnoterne."@da ;
+    sh:description "This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes."@en, "Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan gentages for hver sprogvariant af versionsnoterne."@da ;
     rdfs:comment "A description of changes between this version and the previous version of the Asset"@en, "En beskrivelse af ændringer indført mellem denne version og forrige version af aktivet"@da ;
     sh:nodeKind sh:Literal ;
     sh:path <http://www.w3.org/ns/adms#versionNotes> ;
