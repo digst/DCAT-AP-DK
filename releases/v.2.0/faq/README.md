@@ -52,7 +52,7 @@ https://github.com/w3c/dxwg/issues/868
 ### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
 Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
 
-### Hvis der andre generelle specfifikationer til beskrivelse af datasæt?
+### Hvis der andre generelle specifikationer til beskrivelse af datasæt?
 Ja, udover W3Cs DCAT specificerer Schema.org også [datasæt](https://schema.org/Dataset)
 
 Schema.org er et samarbejde imellem de største søgemaskiner i et forsøg på at levere rigere og bedre søgeresultater på nettet. Opmærker man derfor med Schema.org vil datasættet derfor typisk opnås en bedre formidling og placering søgemaskinernes resultatliste. 
