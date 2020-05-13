@@ -23,7 +23,8 @@ Læs mere her: https://github.com/w3c/dxwg/wiki/Dataset-(and-other-DCAT)-version
 Note: info om arkiverede data.
 
 ## Hvordan beskriver man tidsserier?
-Læs mere her: https://joinup.ec.europa.eu/release/dcat-ap-how-model-dataset-series
+Læs mere her: https://joinup.ec.europa.eu/release/dcat-ap-how-model-dataset-series og
+https://github.com/w3c/dxwg/issues/868
 
 ## Hvorfor skal man oprette en identifikator og hvordan oprettes de?
 Læs mere her: https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier (Revision på vej) ; https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
