@@ -1085,7 +1085,7 @@
 	    <sh:name xml:lang="en">version notes</sh:name>	 	  
 	    <sh:name xml:lang="da">versionsnoter</sh:name>	
 		<sh:description xml:lang="en">This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan genrages for hver sprogvariant af versionsnoterne.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan gentages for hver sprogvariant af versionsnoterne.</sh:description>	
 		<rdfs:comment xml:lang="en">A description of changes between this version and the previous version of the Asset</rdfs:comment>		
 		<rdfs:comment xml:lang="da">En beskrivelse af ændringer indført mellem denne version og forrige version af aktivet</rdfs:comment>		
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
