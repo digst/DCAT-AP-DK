@@ -145,7 +145,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
-Date: 2019-04-30
+Date: 2019-05-27
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -158,7 +158,7 @@ Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: X
 
 <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
 
-UDKAST til DCAT-AP-DK 2.0 - April 2020
+UDKAST til DCAT-AP-DK 2.0 - Maj 2020
    
 
 
@@ -190,35 +190,60 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 
 ## Standardens anvendelse og afgrænsning
+Herunder beskrives fem primære forventede anvendelser af DCAT-AP-DK samt yderligere ressourcer ifm. praktisk anvendelse.
 
-### Use case 1: En national dataportal
+### Scenarie 1: En national dataportal
 
-### Use case 2: En domænespecifik dataportal
+### Scenarie 2: En domænespecifik dataportal
 
-### Use case 3: En myndighedsspecifik dataportal
+### Scenarie 3: En myndighedsspecifik dataportal
 
-### Use case 4: En myndigheds interne dataoverblik
+### Scenarie 4: En myndigheds interne dataoverblik
 
+### Scenarie 5: At gøre data mere søgbare på tværs af grænser og sektorer
 
-Issue: Disse udkast til use cases skal drøftes yderligere. Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3 ) 
+Issue: Standarden skal angive primære use cases. Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3) 
+
+### Yderligere information vedrørende anvendelse af DCAT-AP-DK
+
+#### Eksempler 
+Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
+#### Validering
+Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
+#### Ofte stillede spørgsmål (FAQ)
+Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
+#### Kommentarer til DCAT-AP-DK (Issuetracker)
+Se [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
 ### Relevante emner
 
-Basisinformation, Emneinddeling, Aktører,  Dataindhold, Afgrænsning, Datakvalitet, Jura og regulering,  Proveniens og historik
+DCAT-AP-DK medtager modelementer fra flere forskellige emnerområder relevant i dansk fællesoffentlig og administrativ kontekst, her under basisinformation, emneinddeling, aktører, dataindhold, afgrænsning, datakvalitet, jura og regulering samt proveniens og historik
 
+## Gældende krav og overensstemmelse
+DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
 
-## Overenstemmelse og afvigelser ift. DCAT-AP
-DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også med DCAT-AP. 
-
-Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
-
+### Kravniveauer
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf).
 
 * **Obligatorisk** (Mandatory): informationen SKAL angives
 * **Anbefalet** (Recommended): informationen BØR bør angives hvis den er tilgængelig
 * **Valgfri** (Optional): informationen KAN angives  
 
-### Ændringer af kravniveau
+### Forskellige visninger af DCAT-AP-DK (minimumsmodel)
+
+Der er pt. udarbejdet følgnende udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og som skjuler de valgfrie elementer)
+
+- [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
+viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)
+- [DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
+viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser
+
+Issue: Behov for formidling af minimumsmodel. Se [https://github.com/digst/DCAT-AP-DK/issues/20](https://github.com/digst/DCAT-AP-DK/issues/20)
+
+### Afvigelser ift. DCAT-AP
+Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
+
+#### Ændringer af kravniveau
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
@@ -227,7 +252,7 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP
 * Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
 * Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
 
-### Tilføjelser
+#### Tilføjelser
 Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: forvaltningsopgave (dcat-dk:publicAdministrativeTaskType)
@@ -245,12 +270,10 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 
 I indholdsfortegnelsen har disse mærket 'DK'.
 
-<p class="issue">Disse tilføjelser skal drøftes yderligere </p>
+Issue: Ændringer af kravniveau samt tilføjelser af nye elementer i DCAT-AP-DK ift. DCAT-AP. Se [https://github.com/digst/DCAT-AP-DK/issues/11](https://github.com/digst/DCAT-AP-DK/issues/11)
 
-### Udeladelser
+#### Udeladelser
 Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
-
-
 
 # Oversigt over anvendelsesprofilen
 
@@ -294,8 +317,6 @@ DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grun
 ## Katalog
 Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.
 
-Issue: Er "kurateret" ok her (og ved katalogiseret ressource og datasæt) som oversættelse af "curated"?
-
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
 
@@ -311,21 +332,16 @@ En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller op
 ## Katalogpost 
 En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
 
+Issue: Oversættelse af DCAT - og termen 'kurateret' - drøftes her [https://github.com/digst/DCAT-AP-DK/issues/9](https://github.com/digst/DCAT-AP-DK/issues/9)
+
 
 ## Illustration
 Her ses en illustration af tre af de ovenstående elementerne, hhv. "katalog", "datasæt" og "distribution":
 
 <p align="left"><a href="img/Figur-DCAT-niveauerne.PNG"><img src="img/Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="600"/></a></p>
 
-
-<p class="issue">Hvordan fungerer denne fortælling om strukturen? </p>
-
 # Elementer i DCAT-AP-DK 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
-
-<p class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
-
-
 			
 ## Klasse: Katalog (Catalog) 
 <dl class="def">
@@ -912,6 +928,9 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
+
+Issue: Vedr. dansk anvendelsesnote: se [https://github.com/digst/DCAT-AP-DK/issues/19](https://github.com/digst/DCAT-AP-DK/issues/19)
+
 **UML-visualisering af klassen Datasæt:**	
 
 <img src="img/Datas%C3%A6t.png" alt="Datasæt">
@@ -1017,6 +1036,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
+
+Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digst/DCAT-AP-DK/issues/5)
 				
 ### Egenskab: datasætansvarlig organisation DK (dataset responsible organisation) 
 <dl class="def">
@@ -1037,6 +1058,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
+
+Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digst/DCAT-AP-DK/issues/5)
 				
 ### Egenskab: skaber (creator) 
 <dl class="def">
@@ -2291,6 +2314,9 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
+
+Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/digst/DCAT-AP-DK/issues/23](https://github.com/digst/DCAT-AP-DK/issues/23)
+
 **UML-visualisering af klassen Datatjeneste:**	
 
 <img src="img/Datatjeneste.png" alt="Datatjeneste">
@@ -3235,6 +3261,8 @@ Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige 
 
 Bemærk at hvis den pågældende egenskab anvendes så er det et krav at de(n) udpegede klassifikation anvendes (med enkelte undtagelser - se noter).
 
+Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/8](https://github.com/digst/DCAT-AP-DK/issues/8)
+
 
 ## Datatemaer
 
@@ -3294,6 +3322,7 @@ Eksempler:
 * https://www.iana.org/assignments/media-types/application/vnd.ms-excel (.xls)
 * https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)
 
+Issue: se [https://github.com/digst/DCAT-AP-DK/issues/12](https://github.com/digst/DCAT-AP-DK/issues/12)
 
 ## Filformater
 
