@@ -193,6 +193,7 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære funktioner:
 * Interne overblik over egne data i organisationer.
 * Eksternt rettet information om data der deles mellem organisationer.
+
 De metadata der er nyttige og anvendelige for disse to funktioner er i væsentligt omfang de samme. Der har derfor ved udformningen af den danske anvendelsesprofil været hensigten at lade profilen være både en profil til brug for datadelingsinformationer og en profil for internt organisatoriske datakataloger.
 Profilens informationer kan grupperes som:
 * **Basisinformation** Ud over et navn for datasættet gives en informativ beskrivelse af datasættet og dets indhold, samt eventuelt lokalt anvendte identifikatorer.
