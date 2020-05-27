@@ -189,20 +189,61 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 
 
-## Standardens anvendelse og afgrænsning
-Herunder beskrives fem primære forventede anvendelser af DCAT-AP-DK samt yderligere ressourcer ifm. praktisk anvendelse.
+## Profilens anvendelse
+Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære funktioner:
+* Interne overblik over egne data i organisationer.
+* Eksternt rettet information om data der deles mellem organisationer.
+De metadata der er nyttige og anvendelige for disse to funktioner er i væsentligt omfang de samme. Der har derfor ved udformningen af den danske anvendelsesprofil været hensigten at lade profilen være både en profil til brug for datadelingsinformationer og en profil for internt organisatoriske datakataloger.
+Profilens informationer kan grupperes som:
+* **Basisinformation** Ud over et navn for datasættet gives en informativ beskrivelse af datasættet og dets indhold, samt eventuelt lokalt anvendte identifikatorer.
+* **Datamodel og -indhold** En reference til en eller flere modeller, skemaer eller profiler der formelt beskriver datasættets struktur og indhold.
+* Services / APIer** En eller flere services eller APIer der kan anvendes til at hente og eventuelt opdatere data fra et relateret datasæt. 
+* **Kategorisering** Datasæt kan relateres til en eller flere klassifikationer og dermed give brugere et overblik over potentielt anvendelige datasæt. Yderligere kan der gives information om datas afgrænsning i henholdsvis tid og geografi.
+* **Aktører** Identifikation af organisationer og personer der har en eller flere roller i relation til datasættet. Hvor det er relevant kan kontaktinformationer også tilføjes.
+* **Datakvalitet, proveniens og historik** Til vurdering af datasættets anvendelighed til brugerens formål, kan informationer om datasættets vurderede kvalitet samt skabelses- og udviklingshistorie beskrives.
+* **Jura og regulering** Forhold vedrørende licensrettigheder, betalingskrav, følsomhed af data samt lovgivningsbaggrund.
+De to primære funktioner udfoldes i det følgende i disse anvendelsesscenarier:
+* Organisationers interne datasætkatalog
+* Organisationers eksternt rettede datasætkatalog
+* Fællesorganisatorisk datasætkatalog
+** Domænespecifikt datasætkatalog
+** Nationalt datasætkatalog
+** Internationalt datasætkatalog
 
-### Scenarie 1: En national dataportal
+### Anvendelsesscenarie 1: Organisationers interne datasætkatalog
+I takt med at en organisations portefølje af datasæt stiger, øges behovet for en formel og kontrolleret håndtering af alle anvendelsesaspekter for de pågældende datasæt.
+Med en samlet og koordineret registrering af organisationens datasæt kan organisationen eksempelvis få styr på hvilke data der er hvor i organisationen, hvad de anvendes til, hvilke services der benyttes, hvilke datasæt der er forbundne og til kontrakter og kontakter.
+Et organisatorisk datasætkatalog hjælper på tværs af organisationen systemansvarlige, beslutningstagere og brugere, både ved opståede probler, nye behov, videreudvikling og vedligehold.
+Uden et vedligeholdt overblik over organisationens datasæt vil søgning efter eksempelvis data i anden del af organisationen end brugeren selv, dataansvarlige eller dokumentation være både tidskrævende og med usikkert resultat.
 
-### Scenarie 2: En domænespecifik dataportal
+### Anvendelsesscenarie 2: Organisationers eksternt rettede datasætkatalog
+Mange data deles allerede i dag mellem organisationer, både private og offentlige. Uanset om de data der stilles til rådighed for andre er fuldt og åbent tilgængelige for alle eller om de er beskyttet af adgangs- eller betalingskrav, så er behovet for troværdige og lettilgængelige informationer om de delte data mindst lige så stort som internt i en organisation.
+Særligt gælder det at information om en organisations tilgængelige datasæt kan bidrage til mere effektiv deling af data og reducere opbygning af redundante datasæt i egen organisation.
+Overblik over eksisterende datasæt kan også sikre at en organisation ikke unødigt gentager et indsamlings og/eller udviklingsarbejde der allerede er tilgængeligt i anden organisation.
 
-### Scenarie 3: En myndighedsspecifik dataportal
+### Anvendelsesscenarie 3: Fællesorganisatorisk datasætkatalog
+Nytteværdien af et katalog over datasæt af den type der beskrives i anvendelsesscenarie 2, kan øges væsentligt ved at indgå i et informationsfællesskab om datasæt. Ved at oprette et fællesorganisatorisk katalog kan brugerne tilbydes et sted at søge informationer.
+Hvor det i anvendelsesscenarie 2 var klart for brugeren hvilken organisation der havde de beskrevne datasæt kræves der i de fællesorganisatoriske lidt flere organisatoriske oplysninger. 
+Et fællesorganisatorisk katalog samler udvalgte informationer om organisationers datasæt. Enten gennem etablerede dataportalers webservices, via indsamling fra organisationers metadataopmærkede websider eller ved direkte input fra datasæt ansvarlige.
+Noter at en platform for et fællesorganisatorisk datasætkatalog samtidigt kan fungere som de enkelte organisationers oversigt over egne data, inklusive datasæt der ikke ønskes delt informationer om.
+Fællesorganisatoriske datasætkataloger har tre specialiseringer:
+* Det domænespecifikke katalog
+* Det nationale katalog
+* Det internationale katalog.
+Disse beskrives her:
+#### Anvendelsesscenarie 3.1: Domænespecifikt datasætkatalog
+Et domænespecifikt katalog er et katalog hvor de organisationer hvis datasæt er registreret i kataloget, indgår i et interessefællesskab. Dette kunne eksempelvis være et kommunalt fællesskab eller et fællesskab omkring sundhedsinformationer.
+Domænespecifikke datasætkataloger kan forventes at have registreringsbehov der knytter sig til deres domæne. Disse behov vil formentligt ligge uden for det der dækkes af anvendelsesprofilen, men domænespecifikke kataloger vil stadig kunne benytte profilen dels som udgangspunkt for et arbejde med en udvidet profil, dels til at lade de domænespecifikke informationer indgå i et støre nationalt katalog.
 
-### Scenarie 4: En myndigheds interne dataoverblik
-
-### Scenarie 5: At gøre data mere søgbare på tværs af grænser og sektorer
+#### Anvendelsesscenarie 3.2:Nationalt datasætkatalog
+Et nationalt katalog kræver særlige løsninger for at kunne rumme den bredde af datasæt der må forventes at blive indholdet. 
+Blandt andet kræves det at der anvendes en tværgående taksonomi 
+#### Anvendelsesscenarie 3.3: Internationalt datasætkatalog
+Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har derfor som udgangspunkt til hensigt at gøre data mere søgbare på tværs af grænser og sektorer. Det er også hensigten at danske metadata skal kunne gøres tilgængelige i den europæisk dataportal. For at øge søgbarheden af danske data bør tekstuelle beskrivelser forsøges oversat til engelsk i videst muligt omfang.
 
 Issue: Standarden skal angive primære use cases. Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3) 
+
+### Afgrænsning
 
 ### Yderligere information vedrørende anvendelse af DCAT-AP-DK
 
