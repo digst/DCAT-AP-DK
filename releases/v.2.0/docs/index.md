@@ -203,6 +203,7 @@ Profilens informationer kan grupperes som:
 * **Aktører** Identifikation af organisationer og personer der har en eller flere roller i relation til datasættet. Hvor det er relevant kan kontaktinformationer også tilføjes.
 * **Datakvalitet, proveniens og historik** Til vurdering af datasættets anvendelighed til brugerens formål, kan informationer om datasættets vurderede kvalitet samt skabelses- og udviklingshistorie beskrives.
 * **Jura og regulering** Forhold vedrørende licensrettigheder, betalingskrav, følsomhed af data samt lovgivningsbaggrund.
+
 De to primære funktioner udfoldes i det følgende i disse anvendelsesscenarier:
 * Organisationers interne datasætkatalog
 * Organisationers eksternt rettede datasætkatalog
@@ -232,6 +233,7 @@ Fællesorganisatoriske datasætkataloger har tre specialiseringer:
 * Det nationale katalog
 * Det internationale katalog.
 Disse beskrives her:
+
 #### Anvendelsesscenarie 3.1: Domænespecifikt datasætkatalog
 Et domænespecifikt katalog er et katalog hvor de organisationer hvis datasæt er registreret i kataloget, indgår i et interessefællesskab. Dette kunne eksempelvis være et kommunalt fællesskab eller et fællesskab omkring sundhedsinformationer.
 Domænespecifikke datasætkataloger kan forventes at have registreringsbehov der knytter sig til deres domæne. Disse behov vil formentligt ligge uden for det der dækkes af anvendelsesprofilen, men domænespecifikke kataloger vil stadig kunne benytte profilen dels som udgangspunkt for et arbejde med en udvidet profil, dels til at lade de domænespecifikke informationer indgå i et støre nationalt katalog.
