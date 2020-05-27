@@ -1221,7 +1221,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version e3f9ab1a, updated Fri Apr 24 17:43:54 2020 -0700" name="generator">
+  <meta content="Bikeshed version 78f8c09c, updated Tue May 19 10:51:23 2020 -0700" name="generator">
   <link href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/" rel="canonical">
 <style>
 @media print {
@@ -1499,7 +1499,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-04-30">30 April 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-05-27">27 May 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1544,18 +1544,20 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li>
        <a href="#standardens-anvendelse-og-afgrnsning"><span class="secno">1.4</span> <span class="content">Standardens anvendelse og afgrænsning</span></a>
        <ol class="toc">
-        <li><a href="#use-case-1-en-national-dataportal"><span class="secno">1.4.1</span> <span class="content">Use case 1: En national dataportal</span></a>
-        <li><a href="#use-case-2-en-domnespecifik-dataportal"><span class="secno">1.4.2</span> <span class="content">Use case 2: En domænespecifik dataportal</span></a>
-        <li><a href="#use-case-3-en-myndighedsspecifik-dataportal"><span class="secno">1.4.3</span> <span class="content">Use case 3: En myndighedsspecifik dataportal</span></a>
-        <li><a href="#use-case-4-en-myndigheds-interne-dataoverblik"><span class="secno">1.4.4</span> <span class="content">Use case 4: En myndigheds interne dataoverblik</span></a>
-        <li><a href="#relevante-emner"><span class="secno">1.4.5</span> <span class="content">Relevante emner</span></a>
+        <li><a href="#scenarie-1-en-national-dataportal"><span class="secno">1.4.1</span> <span class="content">Scenarie 1: En national dataportal</span></a>
+        <li><a href="#scenarie-2-en-domnespecifik-dataportal"><span class="secno">1.4.2</span> <span class="content">Scenarie 2: En domænespecifik dataportal</span></a>
+        <li><a href="#scenarie-3-en-myndighedsspecifik-dataportal"><span class="secno">1.4.3</span> <span class="content">Scenarie 3: En myndighedsspecifik dataportal</span></a>
+        <li><a href="#scenarie-4-en-myndigheds-interne-dataoverblik"><span class="secno">1.4.4</span> <span class="content">Scenarie 4: En myndigheds interne dataoverblik</span></a>
+        <li><a href="#scenarie-5-at-gre-data-mere-sgbare-p-tvrs-af-grnser-og-sektorer"><span class="secno">1.4.5</span> <span class="content">Scenarie 5: At gøre data mere søgbare på tværs af grænser og sektorer</span></a>
+        <li><a href="#yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"><span class="secno">1.4.6</span> <span class="content">Yderligere information vedrørende anvendelse af DCAT-AP-DK</span></a>
+        <li><a href="#relevante-emner"><span class="secno">1.4.7</span> <span class="content">Relevante emner</span></a>
        </ol>
       <li>
-       <a href="#overenstemmelse-og-afvigelser-ift-dcat-ap"><span class="secno">1.5</span> <span class="content">Overenstemmelse og afvigelser ift. DCAT-AP</span></a>
+       <a href="#gldende-krav-og-overensstemmelse"><span class="secno">1.5</span> <span class="content">Gældende krav og overensstemmelse</span></a>
        <ol class="toc">
-        <li><a href="#ndringer-af-kravniveau"><span class="secno">1.5.1</span> <span class="content">Ændringer af kravniveau</span></a>
-        <li><a href="#tilfjelser"><span class="secno">1.5.2</span> <span class="content">Tilføjelser</span></a>
-        <li><a href="#udeladelser"><span class="secno">1.5.3</span> <span class="content">Udeladelser</span></a>
+        <li><a href="#kravniveauer"><span class="secno">1.5.1</span> <span class="content">Kravniveauer</span></a>
+        <li><a href="#forskellige-visninger-af-dcat-ap-dk-minimumsmodel"><span class="secno">1.5.2</span> <span class="content">Forskellige visninger af DCAT-AP-DK (minimumsmodel)</span></a>
+        <li><a href="#afvigelser-ift-dcat-ap"><span class="secno">1.5.3</span> <span class="content">Afvigelser ift. DCAT-AP</span></a>
        </ol>
      </ol>
     <li>
@@ -1792,8 +1794,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#uml-diagram-dcat-ap-dk"><span class="secno">7.1.1</span> <span class="content">UML-diagram: DCAT-AP-DK</span></a>
         <li><a href="#uml-diagram-dcat-dk"><span class="secno">7.1.2</span> <span class="content">UML-diagram: DCAT-DK</span></a>
        </ol>
-      <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
-      <li><a href="#validering"><span class="secno">7.3</span> <span class="content">Validering</span></a>
+      <li><a href="#eksempler①"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
+      <li><a href="#validering①"><span class="secno">7.3</span> <span class="content">Validering</span></a>
       <li><a href="#begrebsliste"><span class="secno">7.4</span> <span class="content">Begrebsliste</span></a>
      </ol>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
@@ -1801,7 +1803,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   </nav>
   <main>
    <p>Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: XMI, RDF og <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">SHACL</a></p>
-   <p>UDKAST til DCAT-AP-DK 2.0 - April 2020</p>
+   <p>UDKAST til DCAT-AP-DK 2.0 - Maj 2020</p>
    <h2 class="heading settled" data-level="1" id="introduktion"><span class="secno">1. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
    <p>DCAT-AP-DK 2.0 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer.</p>
    <h3 class="heading settled" data-level="1.1" id="forml"><span class="secno">1.1. </span><span class="content">Formål</span><a class="self-link" href="#forml"></a></h3>
@@ -1814,17 +1816,28 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p>Denne specifikation udgøres af en dansk basisprofil for datsæt og datakataloger (DCAT-AP-DK), som indeholder de basisoplysninger om datasæt og datakataloger.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.</p>
    <p>Selve udviklingsarbejdet er foretaget i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og specifikationen sammensætter flere eksisterende nationale og internationale modeller.</p>
    <h3 class="heading settled" data-level="1.4" id="standardens-anvendelse-og-afgrnsning"><span class="secno">1.4. </span><span class="content">Standardens anvendelse og afgrænsning</span><a class="self-link" href="#standardens-anvendelse-og-afgrnsning"></a></h3>
-   <h4 class="heading settled" data-level="1.4.1" id="use-case-1-en-national-dataportal"><span class="secno">1.4.1. </span><span class="content">Use case 1: En national dataportal</span><a class="self-link" href="#use-case-1-en-national-dataportal"></a></h4>
-   <h4 class="heading settled" data-level="1.4.2" id="use-case-2-en-domnespecifik-dataportal"><span class="secno">1.4.2. </span><span class="content">Use case 2: En domænespecifik dataportal</span><a class="self-link" href="#use-case-2-en-domnespecifik-dataportal"></a></h4>
-   <h4 class="heading settled" data-level="1.4.3" id="use-case-3-en-myndighedsspecifik-dataportal"><span class="secno">1.4.3. </span><span class="content">Use case 3: En myndighedsspecifik dataportal</span><a class="self-link" href="#use-case-3-en-myndighedsspecifik-dataportal"></a></h4>
-   <h4 class="heading settled" data-level="1.4.4" id="use-case-4-en-myndigheds-interne-dataoverblik"><span class="secno">1.4.4. </span><span class="content">Use case 4: En myndigheds interne dataoverblik</span><a class="self-link" href="#use-case-4-en-myndigheds-interne-dataoverblik"></a></h4>
-   <p class="issue" id="issue-dc858a9b"><a class="self-link" href="#issue-dc858a9b"></a> Disse udkast til use cases skal drøftes yderligere. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a></p>
-   <h4 class="heading settled" data-level="1.4.5" id="relevante-emner"><span class="secno">1.4.5. </span><span class="content">Relevante emner</span><a class="self-link" href="#relevante-emner"></a></h4>
-   <p>Basisinformation, Emneinddeling, Aktører,  Dataindhold, Afgrænsning, Datakvalitet, Jura og regulering,  Proveniens og historik</p>
-   <h3 class="heading settled" data-level="1.5" id="overenstemmelse-og-afvigelser-ift-dcat-ap"><span class="secno">1.5. </span><span class="content">Overenstemmelse og afvigelser ift. DCAT-AP</span><a class="self-link" href="#overenstemmelse-og-afvigelser-ift-dcat-ap"></a></h3>
-    DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også med DCAT-AP. 
-   <p>Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.</p>
-   <p>I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf">DCAT-AP 2.0</a>.</p>
+    Herunder beskrives fem primære forventede anvendelser af DCAT-AP-DK samt yderligere ressourcer ifm. praktisk anvendelse. 
+   <h4 class="heading settled" data-level="1.4.1" id="scenarie-1-en-national-dataportal"><span class="secno">1.4.1. </span><span class="content">Scenarie 1: En national dataportal</span><a class="self-link" href="#scenarie-1-en-national-dataportal"></a></h4>
+   <h4 class="heading settled" data-level="1.4.2" id="scenarie-2-en-domnespecifik-dataportal"><span class="secno">1.4.2. </span><span class="content">Scenarie 2: En domænespecifik dataportal</span><a class="self-link" href="#scenarie-2-en-domnespecifik-dataportal"></a></h4>
+   <h4 class="heading settled" data-level="1.4.3" id="scenarie-3-en-myndighedsspecifik-dataportal"><span class="secno">1.4.3. </span><span class="content">Scenarie 3: En myndighedsspecifik dataportal</span><a class="self-link" href="#scenarie-3-en-myndighedsspecifik-dataportal"></a></h4>
+   <h4 class="heading settled" data-level="1.4.4" id="scenarie-4-en-myndigheds-interne-dataoverblik"><span class="secno">1.4.4. </span><span class="content">Scenarie 4: En myndigheds interne dataoverblik</span><a class="self-link" href="#scenarie-4-en-myndigheds-interne-dataoverblik"></a></h4>
+   <h4 class="heading settled" data-level="1.4.5" id="scenarie-5-at-gre-data-mere-sgbare-p-tvrs-af-grnser-og-sektorer"><span class="secno">1.4.5. </span><span class="content">Scenarie 5: At gøre data mere søgbare på tværs af grænser og sektorer</span><a class="self-link" href="#scenarie-5-at-gre-data-mere-sgbare-p-tvrs-af-grnser-og-sektorer"></a></h4>
+   <p class="issue" id="issue-64af58eb"><a class="self-link" href="#issue-64af58eb"></a> Standarden skal angive primære use cases. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a></p>
+   <h4 class="heading settled" data-level="1.4.6" id="yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"><span class="secno">1.4.6. </span><span class="content">Yderligere information vedrørende anvendelse af DCAT-AP-DK</span><a class="self-link" href="#yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"></a></h4>
+   <h5 class="heading settled" data-level="1.4.6.1" id="eksempler"><span class="secno">1.4.6.1. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h5>
+    Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a> 
+   <h5 class="heading settled" data-level="1.4.6.2" id="validering"><span class="secno">1.4.6.2. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h5>
+    Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a> 
+   <h5 class="heading settled" data-level="1.4.6.3" id="ofte-stillede-sprgsml-faq"><span class="secno">1.4.6.3. </span><span class="content">Ofte stillede spørgsmål (FAQ)</span><a class="self-link" href="#ofte-stillede-sprgsml-faq"></a></h5>
+    Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq</a> 
+   <h5 class="heading settled" data-level="1.4.6.4" id="kommentarer-til-dcat-ap-dk-issuetracker"><span class="secno">1.4.6.4. </span><span class="content">Kommentarer til DCAT-AP-DK (Issuetracker)</span><a class="self-link" href="#kommentarer-til-dcat-ap-dk-issuetracker"></a></h5>
+    Se <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digst/DCAT-AP-DK/issues</a> 
+   <h4 class="heading settled" data-level="1.4.7" id="relevante-emner"><span class="secno">1.4.7. </span><span class="content">Relevante emner</span><a class="self-link" href="#relevante-emner"></a></h4>
+   <p>DCAT-AP-DK medtager modelementer fra flere forskellige emnerområder relevant i dansk fællesoffentlig og administrativ kontekst, her under basisinformation, emneinddeling, aktører, dataindhold, afgrænsning, datakvalitet, jura og regulering samt proveniens og historik</p>
+   <h3 class="heading settled" data-level="1.5" id="gldende-krav-og-overensstemmelse"><span class="secno">1.5. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h3>
+    DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
+   <h4 class="heading settled" data-level="1.5.1" id="kravniveauer"><span class="secno">1.5.1. </span><span class="content">Kravniveauer</span><a class="self-link" href="#kravniveauer"></a></h4>
+    I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf">DCAT-AP 2.0</a>. 
    <ul>
     <li data-md>
      <p><strong>Obligatorisk</strong> (Mandatory): informationen SKAL angives</p>
@@ -1833,7 +1846,18 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li data-md>
      <p><strong>Valgfri</strong> (Optional): informationen KAN angives</p>
    </ul>
-   <h4 class="heading settled" data-level="1.5.1" id="ndringer-af-kravniveau"><span class="secno">1.5.1. </span><span class="content">Ændringer af kravniveau</span><a class="self-link" href="#ndringer-af-kravniveau"></a></h4>
+   <h4 class="heading settled" data-level="1.5.2" id="forskellige-visninger-af-dcat-ap-dk-minimumsmodel"><span class="secno">1.5.2. </span><span class="content">Forskellige visninger af DCAT-AP-DK (minimumsmodel)</span><a class="self-link" href="#forskellige-visninger-af-dcat-ap-dk-minimumsmodel"></a></h4>
+   <p>Der er pt. udarbejdet følgnende udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og som skjuler de valgfrie elementer)</p>
+   <ul>
+    <li data-md>
+     <p><a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory">DCAT-AP-DK-visning 1</a> viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)</p>
+    <li data-md>
+     <p><a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended">DCAT-AP-DK-visning 2</a> viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser</p>
+   </ul>
+   <p class="issue" id="issue-96e80575"><a class="self-link" href="#issue-96e80575"></a> Behov for formidling af minimumsmodel. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/20">https://github.com/digst/DCAT-AP-DK/issues/20</a></p>
+   <h4 class="heading settled" data-level="1.5.3" id="afvigelser-ift-dcat-ap"><span class="secno">1.5.3. </span><span class="content">Afvigelser ift. DCAT-AP</span><a class="self-link" href="#afvigelser-ift-dcat-ap"></a></h4>
+    Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt. 
+   <h5 class="heading settled" data-level="1.5.3.1" id="ndringer-af-kravniveau"><span class="secno">1.5.3.1. </span><span class="content">Ændringer af kravniveau</span><a class="self-link" href="#ndringer-af-kravniveau"></a></h5>
     Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP: 
    <ul>
     <li data-md>
@@ -1847,7 +1871,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li data-md>
      <p>Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet</p>
    </ul>
-   <h4 class="heading settled" data-level="1.5.2" id="tilfjelser"><span class="secno">1.5.2. </span><span class="content">Tilføjelser</span><a class="self-link" href="#tilfjelser"></a></h4>
+   <h5 class="heading settled" data-level="1.5.3.2" id="tilfjelser"><span class="secno">1.5.3.2. </span><span class="content">Tilføjelser</span><a class="self-link" href="#tilfjelser"></a></h5>
     Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP: 
    <ul>
     <li data-md>
@@ -1876,8 +1900,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <p>Klassen dqv:QualityMetadata</p>
    </ul>
    <p>I indholdsfortegnelsen har disse mærket <a class="property" data-link-type="propdesc">DK</a>.</p>
-   <p class="issue" id="issue-6434e0be"><a class="self-link" href="#issue-6434e0be"></a>Disse tilføjelser skal drøftes yderligere </p>
-   <h4 class="heading settled" data-level="1.5.3" id="udeladelser"><span class="secno">1.5.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h4>
+   <p class="issue" id="issue-f4fbdae7"><a class="self-link" href="#issue-f4fbdae7"></a> Ændringer af kravniveau samt tilføjelser af nye elementer i DCAT-AP-DK ift. DCAT-AP. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/11">https://github.com/digst/DCAT-AP-DK/issues/11</a></p>
+   <h5 class="heading settled" data-level="1.5.3.3" id="udeladelser"><span class="secno">1.5.3.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h5>
     Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK. 
    <h2 class="heading settled" data-level="2" id="oversigt-over-anvendelsesprofilen"><span class="secno">2. </span><span class="content">Oversigt over anvendelsesprofilen</span><a class="self-link" href="#oversigt-over-anvendelsesprofilen"></a></h2>
    <h3 class="heading settled" data-level="2.1" id="diagram"><span class="secno">2.1. </span><span class="content">Diagram</span><a class="self-link" href="#diagram"></a></h3>
@@ -1980,7 +2004,6 @@ dfn > a.self-link::before      { content: "#"; }</style>
     DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Se også <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste">begrebslisten</a> med yderligere information. 
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
     Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde datatjenester og andre datakataloger. 
-   <p class="issue" id="issue-c85e32be"><a class="self-link" href="#issue-c85e32be"></a> Er "kurateret" ok her (og ved katalogiseret ressource og datasæt) som oversættelse af "curated"?</p>
    <h3 class="heading settled" data-level="3.2" id="katalogiseret-ressource"><span class="secno">3.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
     En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
@@ -1991,13 +2014,12 @@ dfn > a.self-link::before      { content: "#"; }</style>
     En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. 
    <h3 class="heading settled" data-level="3.6" id="katalogpost"><span class="secno">3.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. 
+   <p class="issue" id="issue-0e769877"><a class="self-link" href="#issue-0e769877"></a> Oversættelse af DCAT - og termen <a class="property" data-link-type="propdesc">kurateret</a> - drøftes her <a href="https://github.com/digst/DCAT-AP-DK/issues/9">https://github.com/digst/DCAT-AP-DK/issues/9</a></p>
    <h3 class="heading settled" data-level="3.7" id="illustration"><span class="secno">3.7. </span><span class="content">Illustration</span><a class="self-link" href="#illustration"></a></h3>
     Her ses en illustration af tre af de ovenstående elementerne, hhv. "katalog", "datasæt" og "distribution": 
    <p align="left"><a href="img/Figur-DCAT-niveauerne.PNG"><img alt="Figur DCAT-niveauerne" src="img/Figur-DCAT-niveauerne.PNG" width="600"></a></p>
-   <p class="issue" id="issue-968f1117"><a class="self-link" href="#issue-968f1117"></a>Hvordan fungerer denne fortælling om strukturen? </p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
-   <p class="issue" id="issue-a8551f5e"><a class="self-link" href="#issue-a8551f5e"></a>Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler</p>
    <h3 class="heading settled" data-level="4.1" id="klasse-katalog-catalog"><span class="secno">4.1. </span><span class="content">Klasse: Katalog (Catalog)</span><a class="self-link" href="#klasse-katalog-catalog"></a></h3>
    <dl class="def">
     <dt>URI
@@ -2536,7 +2558,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da) 
-    <dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer.
+    <dd>En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.
     <dt>Anvendelsesnote (en)
     <dd>A conceptual entity that represents the information published. 
     <dt>Definition (da)
@@ -2546,7 +2568,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-    <strong>UML-visualisering af klassen Datasæt:</strong> 
+   <p class="issue" id="issue-7bb40b33"><a class="self-link" href="#issue-7bb40b33"></a> Vedr. dansk anvendelsesnote: se <a href="https://github.com/digst/DCAT-AP-DK/issues/19">https://github.com/digst/DCAT-AP-DK/issues/19</a></p>
+   <p><strong>UML-visualisering af klassen Datasæt:</strong></p>
    <p><img alt="Datasæt" src="img/Datas%C3%A6t.png"></p>
    <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.3.1" id="egenskab-identifikator-identifier"><span class="secno">4.3.1. </span><span class="content">Egenskab: identifikator (identifier)</span><a class="self-link" href="#egenskab-identifikator-identifier"></a></h4>
@@ -2642,6 +2665,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
+   <p class="issue" id="issue-62cc812b"><a class="self-link" href="#issue-62cc812b"></a> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a></p>
    <h4 class="heading settled" data-level="4.3.6" id="egenskab-datastansvarlig-organisation-dk-dataset-responsible-organisation"><span class="secno">4.3.6. </span><span class="content">Egenskab: datasætansvarlig organisation DK (dataset responsible organisation)</span><a class="self-link" href="#egenskab-datastansvarlig-organisation-dk-dataset-responsible-organisation"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2661,6 +2685,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
+   <p class="issue" id="issue-62cc812b①"><a class="self-link" href="#issue-62cc812b①"></a> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a></p>
    <h4 class="heading settled" data-level="4.3.7" id="egenskab-skaber-creator①"><span class="secno">4.3.7. </span><span class="content">Egenskab: skaber (creator)</span><a class="self-link" href="#egenskab-skaber-creator①"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3845,7 +3870,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-    <strong>UML-visualisering af klassen Datatjeneste:</strong> 
+   <p class="issue" id="issue-01e11ca7"><a class="self-link" href="#issue-01e11ca7"></a> Behov for udvidet beskrivelse af datatjenester? Se <a href="https://github.com/digst/DCAT-AP-DK/issues/23">https://github.com/digst/DCAT-AP-DK/issues/23</a></p>
+   <p><strong>UML-visualisering af klassen Datatjeneste:</strong></p>
    <p><img alt="Datatjeneste" src="img/Datatjeneste.png"></p>
    <p><strong>Klassens egenskaber:</strong></p>
    <h4 class="heading settled" data-level="4.5.1" id="egenskab-endpoint-url-endpoint-url"><span class="secno">4.5.1. </span><span class="content">Egenskab: endpoint-URL (endpoint URL )</span><a class="self-link" href="#egenskab-endpoint-url-endpoint-url"></a></h4>
@@ -4671,6 +4697,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p>I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer.</p>
    <p>Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)</p>
    <p>Bemærk at hvis den pågældende egenskab anvendes så er det et krav at de(n) udpegede klassifikation anvendes (med enkelte undtagelser - se noter).</p>
+   <p class="issue" id="issue-1df4d388"><a class="self-link" href="#issue-1df4d388"></a> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/8">https://github.com/digst/DCAT-AP-DK/issues/8</a></p>
    <h3 class="heading settled" data-level="5.1" id="datatemaer"><span class="secno">5.1. </span><span class="content">Datatemaer</span><a class="self-link" href="#datatemaer"></a></h3>
    <p>Egenskab: dct:theme</p>
    <p>KLASSIFIKATION: EU Datatemaer</p>
@@ -4716,6 +4743,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li data-md>
      <p>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)</p>
    </ul>
+   <p class="issue" id="issue-3422df90"><a class="self-link" href="#issue-3422df90"></a> se <a href="https://github.com/digst/DCAT-AP-DK/issues/12">https://github.com/digst/DCAT-AP-DK/issues/12</a></p>
    <h3 class="heading settled" data-level="5.5" id="filformater"><span class="secno">5.5. </span><span class="content">Filformater</span><a class="self-link" href="#filformater"></a></h3>
    <p>Egenskab: dct:format</p>
    <p>KLASSIFIKATION: EU Filtyper</p>
@@ -4896,11 +4924,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Datasæt.png" width="800"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Aktør.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Begreb.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Begrebssystem.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Checksum.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Dataservice.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Distribution.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Dokument.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Frekvens.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Identifikator.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Katalog.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Katalogpost.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Licensdokument.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Lingvistisk system.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Lokation.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Medietype.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Periode.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Proveniensudsagn.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Relation.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Rettighedsudsagn.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Rolle.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Specifikation.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Virtuelt visitkort.png"> 
    <h4 class="heading settled" data-level="7.1.2" id="uml-diagram-dcat-dk"><span class="secno">7.1.2. </span><span class="content">UML-diagram: DCAT-DK</span><a class="self-link" href="#uml-diagram-dcat-dk"></a></h4>
    <p align="center"><a href="img/Figur-DCAT-DK-v2-UML.PNG"><img alt="Figur-DCAT-DK-v2-UML" src="img/Figur-DCAT-DK-v2-UML.PNG" width="800"></a></p>
-   <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
+   <h3 class="heading settled" data-level="7.2" id="eksempler①"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler①"></a></h3>
    <p>Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
 Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)</p>
    <p>Find eksemplerne her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a></p>
-   <h3 class="heading settled" data-level="7.3" id="validering"><span class="secno">7.3. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h3>
+   <h3 class="heading settled" data-level="7.3" id="validering①"><span class="secno">7.3. </span><span class="content">Validering</span><a class="self-link" href="#validering①"></a></h3>
    <p>Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som muliggør validering af DCAT-AP-DK-metadata.</p>
    <p>SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).</p>
    <p>Find SHACL-filen her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a></p>
@@ -5225,9 +5253,14 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
 </script>
   <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
   <div style="counter-reset:issue">
-   <div class="issue"> Disse udkast til use cases skal drøftes yderligere. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a><a href="#issue-dc858a9b"> ↵ </a></div>
-   <div class="issue">Disse tilføjelser skal drøftes yderligere <a href="#issue-6434e0be"> ↵ </a></div>
-   <div class="issue"> Er "kurateret" ok her (og ved katalogiseret ressource og datasæt) som oversættelse af "curated"?<a href="#issue-c85e32be"> ↵ </a></div>
-   <div class="issue">Hvordan fungerer denne fortælling om strukturen? <a href="#issue-968f1117"> ↵ </a></div>
-   <div class="issue">Herunder er indsat elementerne fra DCAT-AP samt enkelte yderligere egenskaber. Elementbetegnelserne og anvendelsesnoterne er oversat til dansk. De oprindelige definitioner fra kernemodellerne er også indsat, og oversættelser af disse kan følge. Angivelse af kravniveau for klasser mangler<a href="#issue-a8551f5e"> ↵ </a></div>
+   <div class="issue"> Standarden skal angive primære use cases. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a><a href="#issue-64af58eb"> ↵ </a></div>
+   <div class="issue"> Behov for formidling af minimumsmodel. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/20">https://github.com/digst/DCAT-AP-DK/issues/20</a><a href="#issue-96e80575"> ↵ </a></div>
+   <div class="issue"> Ændringer af kravniveau samt tilføjelser af nye elementer i DCAT-AP-DK ift. DCAT-AP. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/11">https://github.com/digst/DCAT-AP-DK/issues/11</a><a href="#issue-f4fbdae7"> ↵ </a></div>
+   <div class="issue"> Oversættelse af DCAT - og termen <a class="property" data-link-type="propdesc">kurateret</a> - drøftes her <a href="https://github.com/digst/DCAT-AP-DK/issues/9">https://github.com/digst/DCAT-AP-DK/issues/9</a><a href="#issue-0e769877"> ↵ </a></div>
+   <div class="issue"> Vedr. dansk anvendelsesnote: se <a href="https://github.com/digst/DCAT-AP-DK/issues/19">https://github.com/digst/DCAT-AP-DK/issues/19</a><a href="#issue-7bb40b33"> ↵ </a></div>
+   <div class="issue"> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a><a href="#issue-62cc812b"> ↵ </a></div>
+   <div class="issue"> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a><a href="#issue-62cc812b①"> ↵ </a></div>
+   <div class="issue"> Behov for udvidet beskrivelse af datatjenester? Se <a href="https://github.com/digst/DCAT-AP-DK/issues/23">https://github.com/digst/DCAT-AP-DK/issues/23</a><a href="#issue-01e11ca7"> ↵ </a></div>
+   <div class="issue"> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/8">https://github.com/digst/DCAT-AP-DK/issues/8</a><a href="#issue-1df4d388"> ↵ </a></div>
+   <div class="issue"> se <a href="https://github.com/digst/DCAT-AP-DK/issues/12">https://github.com/digst/DCAT-AP-DK/issues/12</a><a href="#issue-3422df90"> ↵ </a></div>
   </div>
