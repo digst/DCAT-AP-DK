@@ -3,6 +3,9 @@
               rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
               dcat: http://www.w3.org/ns/dcat#
               foaf: http://xmlns.com/foaf/0.1/">
+    <head>
+        <title>basic-example1 in RDFa</title>
+    </head>	      
 <body>
 <h1>Indlejring af eksisterende DCAT-metadata med RDFa</h1>
 
