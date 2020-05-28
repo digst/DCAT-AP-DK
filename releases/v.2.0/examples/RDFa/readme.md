@@ -6,11 +6,8 @@
     <head>
         <title>basic-example1 in RDFa</title>
     </head>
- <body>
- 
- 
-<!-- A DATASET --> 
-<article about="https://dcat.example.org/dataset-001" typeof="dcat:Dataset">
+<body>
+<article about="https://dcat.example.org/dataset-001" typeof="dcat:Dataset"> <!-- A DATASET --> 
     <dl>
       <dt>Title:</dt><dd property="dc:title">Dataset 001</dd>
       <dt>Description:</dt> <dd property="dc:description">A description of Dataset 001</dd>
@@ -19,8 +16,7 @@
       <dt>Identifier:</dt> <dd property="dc:identifier" resource="https://dcat.example.org/dataset-001">https://dcat.example.org/dataset-001</dd>
       <dt>Publisher:</dt> <dd property="dc:publisher" resource="https://dcat.example.org/agent-001">Agent-001</dd>	  
       <dt class="field-label">Distributioner:</dt>
-		<!-- DATASET DISTRIBUTIONS --> 	  
-		<table class="table">
+		<table class="table"> <!-- DATASET DISTRIBUTIONS --> 	  
 			<thead>
 				<tr>
 					<th>Title</th>
@@ -45,11 +41,9 @@
 					<a property="dcat:accessURL" class="btn btn-primary" href="https://dcat.example.org/dataset-001.xml">Download</a>
 				</td>
 			</tr>
-	
 		</table>
     </dl>
   </article>
   
-  
-  </body>
+ </body>
 </html>
