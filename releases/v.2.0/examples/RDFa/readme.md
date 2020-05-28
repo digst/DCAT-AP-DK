@@ -8,3 +8,6 @@ Læs mere om RFDa i disse vejledninger:
 
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://developers.google.com/search/docs/data-types/dataset
+
+Med fx W3Cs RDF distiller kan  DCAT-metadata udtrækkes fra ovenstående eksempel-html-filer
+https://www.w3.org/2012/pyRdfa/Overview.html
