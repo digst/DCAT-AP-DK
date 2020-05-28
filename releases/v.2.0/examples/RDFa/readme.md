@@ -11,8 +11,12 @@
 <p>RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter, https://en.wikipedia.org/wiki/RDFa</p>
 <p>
 Læs mere om RFDa i disse vejledninger :
-- https://theodi.org/article/marking-up-your-dataset-with-dcat/
-- https://developers.google.com/search/docs/data-types/dataset</p>
+<ol><li>https://theodi.org/article/marking-up-your-dataset-with-dcat/</li>
+<li>https://developers.google.com/search/docs/data-types/dataset</li>
+</ol>
+
+
+</p>
 
 <p>Og se et lille eksempel her:</p>
 <!-- A DATASET --> 
