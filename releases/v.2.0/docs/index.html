@@ -1,4 +1,4 @@
-<!doctype html><html lang="en">
+<!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</title>
@@ -1499,7 +1499,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-05-27">27 May 2019</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-05-28">28 May 2019</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1793,8 +1793,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#uml-diagram-dcat-ap-dk"><span class="secno">7.1.1</span> <span class="content">UML-diagram: DCAT-AP-DK</span></a>
         <li><a href="#uml-diagram-dcat-dk"><span class="secno">7.1.2</span> <span class="content">UML-diagram: DCAT-DK</span></a>
        </ol>
-      <li><a href="#eksempler①"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
-      <li><a href="#validering①"><span class="secno">7.3</span> <span class="content">Validering</span></a>
+      <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
+      <li><a href="#validering"><span class="secno">7.3</span> <span class="content">Validering</span></a>
       <li><a href="#begrebsliste"><span class="secno">7.4</span> <span class="content">Begrebsliste</span></a>
      </ol>
     <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
@@ -1828,9 +1828,9 @@ Profilens informationer kan grupperes som:</p>
     <li data-md>
      <p><strong>Basisinformation</strong> Ud over et navn for datasættet gives en informativ beskrivelse af datasættet og dets indhold, samt eventuelt lokalt anvendte identifikatorer.</p>
     <li data-md>
-     <p><strong>Datamodel og -indhold</strong> En reference til en eller flere modeller, skemaer eller profiler der formelt beskriver datasættets struktur og indhold.</p>
+     <p><strong>Adgang til data</strong> Informationer om hvordan man får adgang til datasættet og dets distributioner - fx via fildownload eller en eller flere datatjenester/APIer.</p>
     <li data-md>
-     <p>Services / APIer** En eller flere services eller APIer der kan anvendes til at hente og eventuelt opdatere data fra et relateret datasæt.</p>
+     <p><strong>Datamodel og -indhold</strong> En reference til en eller flere modeller, skemaer eller profiler der formelt beskriver datasættets struktur og indhold.</p>
     <li data-md>
      <p><strong>Kategorisering</strong> Datasæt kan relateres til en eller flere klassifikationer og dermed give brugere et overblik over potentielt anvendelige datasæt. Yderligere kan der gives information om datas afgrænsning i henholdsvis tid og geografi.</p>
     <li data-md>
@@ -1847,10 +1847,13 @@ Profilens informationer kan grupperes som:</p>
     <li data-md>
      <p>Organisationers eksternt rettede datasætkatalog</p>
     <li data-md>
-     <p>Fællesorganisatorisk datasætkatalog
-** Domænespecifikt datasætkatalog
-** Nationalt datasætkatalog
-** Internationalt datasætkatalog</p>
+     <p>Fællesorganisatorisk datasætkatalog</p>
+    <li data-md>
+     <p>Domænespecifikt datasætkatalog</p>
+    <li data-md>
+     <p>Nationalt datasætkatalog</p>
+    <li data-md>
+     <p>Internationalt datasætkatalog</p>
    </ul>
    <h4 class="heading settled" data-level="1.4.1" id="anvendelsesscenarie-1-organisationers-interne-datastkatalog"><span class="secno">1.4.1. </span><span class="content">Anvendelsesscenarie 1: Organisationers interne datasætkatalog</span><a class="self-link" href="#anvendelsesscenarie-1-organisationers-interne-datastkatalog"></a></h4>
     I takt med at en organisations portefølje af datasæt stiger, øges behovet for en formel og kontrolleret håndtering af alle anvendelsesaspekter for de pågældende datasæt.
@@ -1865,17 +1868,17 @@ Overblik over eksisterende datasæt kan også sikre at en organisation ikke unø
     Nytteværdien af et katalog over datasæt af den type der beskrives i anvendelsesscenarie 2, kan øges væsentligt ved at indgå i et informationsfællesskab om datasæt. Ved at oprette et fællesorganisatorisk katalog kan brugerne tilbydes et sted at søge informationer.
 Hvor det i anvendelsesscenarie 2 var klart for brugeren hvilken organisation der havde de beskrevne datasæt kræves der i de fællesorganisatoriske lidt flere organisatoriske oplysninger. 
 Et fællesorganisatorisk katalog samler udvalgte informationer om organisationers datasæt. Enten gennem etablerede dataportalers webservices, via indsamling fra organisationers metadataopmærkede websider eller ved direkte input fra datasæt ansvarlige.
-Noter at en platform for et fællesorganisatorisk datasætkatalog samtidigt kan fungere som de enkelte organisationers oversigt over egne data, inklusive datasæt der ikke ønskes delt informationer om.
-Fællesorganisatoriske datasætkataloger har tre specialiseringer: 
+Noter at en platform for et fællesorganisatorisk datasætkatalog samtidigt kan fungere som de enkelte organisationers oversigt over egne data, inklusive datasæt der ikke ønskes delt informationer om. 
+   <p>Fællesorganisatoriske datasætkataloger har tre specialiseringer:</p>
    <ul>
     <li data-md>
      <p>Det domænespecifikke katalog</p>
     <li data-md>
      <p>Det nationale katalog</p>
     <li data-md>
-     <p>Det internationale katalog.
-Disse beskrives her:</p>
+     <p>Det internationale katalog.</p>
    </ul>
+   <p>Disse beskrives her:</p>
    <h5 class="heading settled" data-level="1.4.3.1" id="anvendelsesscenarie-31-domnespecifikt-datastkatalog"><span class="secno">1.4.3.1. </span><span class="content">Anvendelsesscenarie 3.1: Domænespecifikt datasætkatalog</span><a class="self-link" href="#anvendelsesscenarie-31-domnespecifikt-datastkatalog"></a></h5>
     Et domænespecifikt katalog er et katalog hvor de organisationer hvis datasæt er registreret i kataloget, indgår i et interessefællesskab. Dette kunne eksempelvis være et kommunalt fællesskab eller et fællesskab omkring sundhedsinformationer.
 Domænespecifikke datasætkataloger kan forventes at have registreringsbehov der knytter sig til deres domæne. Disse behov vil formentligt ligge uden for det der dækkes af anvendelsesprofilen, men domænespecifikke kataloger vil stadig kunne benytte profilen dels som udgangspunkt for et arbejde med en udvidet profil, dels til at lade de domænespecifikke informationer indgå i et støre nationalt katalog. 
@@ -1887,14 +1890,20 @@ Blandt andet kræves det at der anvendes en tværgående taksonomi
    <p class="issue" id="issue-64af58eb"><a class="self-link" href="#issue-64af58eb"></a> Standarden skal angive primære use cases. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a></p>
    <h4 class="heading settled" data-level="1.4.4" id="afgrnsning"><span class="secno">1.4.4. </span><span class="content">Afgrænsning</span><a class="self-link" href="#afgrnsning"></a></h4>
    <h4 class="heading settled" data-level="1.4.5" id="yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"><span class="secno">1.4.5. </span><span class="content">Yderligere information vedrørende anvendelse af DCAT-AP-DK</span><a class="self-link" href="#yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"></a></h4>
-   <h5 class="heading settled" data-level="1.4.5.1" id="eksempler"><span class="secno">1.4.5.1. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h5>
-    Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a> 
-   <h5 class="heading settled" data-level="1.4.5.2" id="validering"><span class="secno">1.4.5.2. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h5>
-    Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a> 
-   <h5 class="heading settled" data-level="1.4.5.3" id="ofte-stillede-sprgsml-faq"><span class="secno">1.4.5.3. </span><span class="content">Ofte stillede spørgsmål (FAQ)</span><a class="self-link" href="#ofte-stillede-sprgsml-faq"></a></h5>
-    Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq</a> 
-   <h5 class="heading settled" data-level="1.4.5.4" id="kommentarer-til-dcat-ap-dk-issuetracker"><span class="secno">1.4.5.4. </span><span class="content">Kommentarer til DCAT-AP-DK (Issuetracker)</span><a class="self-link" href="#kommentarer-til-dcat-ap-dk-issuetracker"></a></h5>
-    Se <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digst/DCAT-AP-DK/issues</a> 
+   <ul>
+    <li data-md>
+     <p>Eksempler:
+Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a></p>
+    <li data-md>
+     <p>Validering:
+Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a></p>
+    <li data-md>
+     <p>Ofte stillede spørgsmål (FAQ):
+Se udkast <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq</a></p>
+    <li data-md>
+     <p>Kommentarer til DCAT-AP-DK (Issuetracker):
+Se <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digst/DCAT-AP-DK/issues</a></p>
+   </ul>
    <h4 class="heading settled" data-level="1.4.6" id="relevante-emner"><span class="secno">1.4.6. </span><span class="content">Relevante emner</span><a class="self-link" href="#relevante-emner"></a></h4>
    <p>DCAT-AP-DK medtager modelementer fra flere forskellige emnerområder relevant i dansk fællesoffentlig og administrativ kontekst, her under basisinformation, emneinddeling, aktører, dataindhold, afgrænsning, datakvalitet, jura og regulering samt proveniens og historik</p>
    <h3 class="heading settled" data-level="1.5" id="gldende-krav-og-overensstemmelse"><span class="secno">1.5. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h3>
@@ -4987,11 +4996,11 @@ Blandt andet kræves det at der anvendes en tværgående taksonomi
     <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Datasæt.png" width="800"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Aktør.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Begreb.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Begrebssystem.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Checksum.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Dataservice.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Distribution.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Dokument.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Frekvens.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Identifikator.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Katalog.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Katalogpost.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Licensdokument.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Lingvistisk system.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Lokation.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Medietype.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Periode.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Proveniensudsagn.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Relation.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Rettighedsudsagn.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Rolle.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Specifikation.png"> <img alt="Figur-DCAT-AP-DK-deldiagram" src="img/Virtuelt visitkort.png"> 
    <h4 class="heading settled" data-level="7.1.2" id="uml-diagram-dcat-dk"><span class="secno">7.1.2. </span><span class="content">UML-diagram: DCAT-DK</span><a class="self-link" href="#uml-diagram-dcat-dk"></a></h4>
    <p align="center"><a href="img/Figur-DCAT-DK-v2-UML.PNG"><img alt="Figur-DCAT-DK-v2-UML" src="img/Figur-DCAT-DK-v2-UML.PNG" width="800"></a></p>
-   <h3 class="heading settled" data-level="7.2" id="eksempler①"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler①"></a></h3>
+   <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
    <p>Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
 Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)</p>
    <p>Find eksemplerne her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a></p>
-   <h3 class="heading settled" data-level="7.3" id="validering①"><span class="secno">7.3. </span><span class="content">Validering</span><a class="self-link" href="#validering①"></a></h3>
+   <h3 class="heading settled" data-level="7.3" id="validering"><span class="secno">7.3. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h3>
    <p>Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som muliggør validering af DCAT-AP-DK-metadata.</p>
    <p>SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).</p>
    <p>Find SHACL-filen her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a></p>
