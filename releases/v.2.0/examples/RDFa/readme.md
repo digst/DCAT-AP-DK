@@ -29,7 +29,6 @@
 					<th>Download</th>
 				</tr>
 			</thead>
-
 			<tr property="dcat:distribution" typeof="dcat:Distribution" resource="https://dcat.example.org/dataset-001.csv">
 				<td property="dct:title">dataset-001.csv</td>
 				<td property="dcat:format" resource="http://publications.europa.eu/resource/authority/file-type/csv">CSV</td>
@@ -38,8 +37,6 @@
 					<a property="dcat:accessURL" class="btn btn-primary" href="https://dcat.example.org/dataset-001.csv">Download</a>
 				</td>
 			</tr>
- 
-
 			<tr property="dcat:distribution" typeof="dcat:Distribution" resource="https://dcat.example.org/dataset-001.xml">
 				<td property="dct:title">dataset-001.xml</td>
 				<td property="dcat:format" resource="http://publications.europa.eu/resource/authority/file-type/xml">XML</td>
