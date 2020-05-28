@@ -145,7 +145,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
-Date: 2019-05-27
+Date: 2019-05-28
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -197,8 +197,8 @@ Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære f
 De metadata der er nyttige og anvendelige for disse to funktioner er i væsentligt omfang de samme. Der har derfor ved udformningen af den danske anvendelsesprofil været hensigten at lade profilen være både en profil til brug for datadelingsinformationer og en profil for internt organisatoriske datakataloger.
 Profilens informationer kan grupperes som:
 * **Basisinformation** Ud over et navn for datasættet gives en informativ beskrivelse af datasættet og dets indhold, samt eventuelt lokalt anvendte identifikatorer.
+* **Adgang til data** Informationer om hvordan man får adgang til datasættet og dets distributioner - fx via fildownload eller en eller flere datatjenester/APIer. 
 * **Datamodel og -indhold** En reference til en eller flere modeller, skemaer eller profiler der formelt beskriver datasættets struktur og indhold.
-* Services / APIer** En eller flere services eller APIer der kan anvendes til at hente og eventuelt opdatere data fra et relateret datasæt. 
 * **Kategorisering** Datasæt kan relateres til en eller flere klassifikationer og dermed give brugere et overblik over potentielt anvendelige datasæt. Yderligere kan der gives information om datas afgrænsning i henholdsvis tid og geografi.
 * **Aktører** Identifikation af organisationer og personer der har en eller flere roller i relation til datasættet. Hvor det er relevant kan kontaktinformationer også tilføjes.
 * **Datakvalitet, proveniens og historik** Til vurdering af datasættets anvendelighed til brugerens formål, kan informationer om datasættets vurderede kvalitet samt skabelses- og udviklingshistorie beskrives.
@@ -208,9 +208,9 @@ De to primære funktioner udfoldes i det følgende i disse anvendelsesscenarier:
 * Organisationers interne datasætkatalog
 * Organisationers eksternt rettede datasætkatalog
 * Fællesorganisatorisk datasætkatalog
-** Domænespecifikt datasætkatalog
-** Nationalt datasætkatalog
-** Internationalt datasætkatalog
+  * Domænespecifikt datasætkatalog
+  * Nationalt datasætkatalog
+  * Internationalt datasætkatalog
 
 ### Anvendelsesscenarie 1: Organisationers interne datasætkatalog
 I takt med at en organisations portefølje af datasæt stiger, øges behovet for en formel og kontrolleret håndtering af alle anvendelsesaspekter for de pågældende datasæt.
@@ -228,10 +228,12 @@ Nytteværdien af et katalog over datasæt af den type der beskrives i anvendelse
 Hvor det i anvendelsesscenarie 2 var klart for brugeren hvilken organisation der havde de beskrevne datasæt kræves der i de fællesorganisatoriske lidt flere organisatoriske oplysninger. 
 Et fællesorganisatorisk katalog samler udvalgte informationer om organisationers datasæt. Enten gennem etablerede dataportalers webservices, via indsamling fra organisationers metadataopmærkede websider eller ved direkte input fra datasæt ansvarlige.
 Noter at en platform for et fællesorganisatorisk datasætkatalog samtidigt kan fungere som de enkelte organisationers oversigt over egne data, inklusive datasæt der ikke ønskes delt informationer om.
+
 Fællesorganisatoriske datasætkataloger har tre specialiseringer:
 * Det domænespecifikke katalog
 * Det nationale katalog
 * Det internationale katalog.
+
 Disse beskrives her:
 
 #### Anvendelsesscenarie 3.1: Domænespecifikt datasætkatalog
@@ -250,13 +252,16 @@ Issue: Standarden skal angive primære use cases. Se [https://github.com/digst/D
 
 ### Yderligere information vedrørende anvendelse af DCAT-AP-DK
 
-#### Eksempler 
+* Eksempler:  
 Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
-#### Validering
+
+* Validering:
 Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
-#### Ofte stillede spørgsmål (FAQ)
+
+* Ofte stillede spørgsmål (FAQ):
 Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
-#### Kommentarer til DCAT-AP-DK (Issuetracker)
+
+* Kommentarer til DCAT-AP-DK (Issuetracker):
 Se [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
 ### Relevante emner
