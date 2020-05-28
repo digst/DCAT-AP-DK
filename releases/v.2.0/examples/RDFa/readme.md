@@ -1,4 +1,4 @@
-#Indlejring af eksisterende DCAT-metadata med RDFa
+# Indlejring af eksisterende DCAT-metadata med RDFa
 
 DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa. 
 
