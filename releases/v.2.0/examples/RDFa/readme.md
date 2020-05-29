@@ -13,11 +13,9 @@ RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTM
   - https://developers.google.com/search/docs/data-types/dataset
 
 ## Eksempler
-Se ovenstående html-filer
-
 Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) eller [HTML Structured Data Extractor to RDF](https://www.w3.org/2012/sde/) kan DCAT-metadata udtrækkes fra eksempel-html-filer i denne mappe:
 - [RDFa1_basic-example1.html](https://htmlpreview.github.io/?https://raw.githubusercontent.com/digst/DCAT-AP-DK/master/releases/v.2.0/examples/RDFa/RDFa1_basic-example1.html)
-- [RDFa2_basic-example1.html(]https://htmlpreview.github.io/?https://raw.githubusercontent.com/digst/DCAT-AP-DK/master/releases/v.2.0/examples/RDFa/RDFa2_basic-example1.html)
+- [RDFa2_basic-example1.html](https://htmlpreview.github.io/?https://raw.githubusercontent.com/digst/DCAT-AP-DK/master/releases/v.2.0/examples/RDFa/RDFa2_basic-example1.html)
 
 https://www.w3.org/2012/sde/extract?uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdigst%2FDCAT-AP-DK%2Fmaster%2Freleases%2Fv.2.0%2Fexamples%2FRDFa%2FRDFa1_basic-example1.html&source=rdfa&source=microdata&source=hturtle&format=xml&vocab_expansion=false
 
