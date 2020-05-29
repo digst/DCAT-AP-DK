@@ -12,19 +12,14 @@ RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTM
   - https://theodi.org/article/marking-up-your-dataset-with-dcat/
   - https://developers.google.com/search/docs/data-types/dataset
 
-## Og se et par eksempler her:
-- RDFa example 1 uri= https://data.gov.dk/test/rdfa/RDFa1_basic-example1.html
-- RDFa example 2 uri= https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
+## Eksempler
+Se ovenstående html-filer
 
-Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) kan  DCAT-metadata udtrækkes fra ovenstående eksempel-html-filer:
+Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) eller [HTML Structured Data Extractor to RDF](https://www.w3.org/2012/sde/) kan DCAT-metadata udtrækkes fra eksempel-html-filer i denne mappe:
+- [RDFa1_basic-example1.html](https://htmlpreview.github.io/?https://raw.githubusercontent.com/digst/DCAT-AP-DK/master/releases/v.2.0/examples/RDFa/RDFa1_basic-example1.html)
+- [RDFa2_basic-example1.html(]https://htmlpreview.github.io/?https://raw.githubusercontent.com/digst/DCAT-AP-DK/master/releases/v.2.0/examples/RDFa/RDFa2_basic-example1.html)
 
-Mini-guide (på engelsk) til direkte brug af RDF distiller:
-- Extract the RDF with whitespace preservation and without warnings, serialized in Turtle:
-http://www.w3.org/2012/pyRdfa/extract?uri=https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
-- Extract the RDF with whitespace preservation and without warnings, serialized in RDF/XML:
-http://www.w3.org/2012/pyRdfa/extract?format=xml&uri=https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
-- Extract the RDF from  with whitespace preservation and including warnings, serialized in Turtle:
-http://www.w3.org/2012/pyRdfa/extract?graph=default,processor&uri=https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
-- Use a fixed, pseudo URI to extract the RDF from the current page without specifying its URI (with default options); this can be used, say, as a link for a button on the page: http://www.w3.org/2012/pyRdfa/extract?uri=referer
+https://www.w3.org/2012/sde/extract?uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdigst%2FDCAT-AP-DK%2Fmaster%2Freleases%2Fv.2.0%2Fexamples%2FRDFa%2FRDFa1_basic-example1.html&source=rdfa&source=microdata&source=hturtle&format=xml&vocab_expansion=false
 
+https://www.w3.org/2012/sde/extract?uri=https%3A%2F%2Fraw.githubusercontent.com%2Fdigst%2FDCAT-AP-DK%2Fmaster%2Freleases%2Fv.2.0%2Fexamples%2FRDFa%2FRDFa2_basic-example1.html&source=rdfa&source=microdata&source=hturtle&format=xml&vocab_expansion=false
 
