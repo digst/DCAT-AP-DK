@@ -9,14 +9,13 @@ Læs mere om RFDa i disse vejledninger:
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://developers.google.com/search/docs/data-types/dataset
 
-Og se et eksempel her:
-https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
-
-Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) kan  DCAT-metadata udtrækkes fra denne eksempel-html-fil:
+Og se et par eksempler her:
 - RDFa example 1 uri= https://data.gov.dk/test/rdfa/RDFa1_basic-example1.html
 - RDFa example 2 uri= https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
 
-Mini-guide på engelsk til direkte brug af RDF distiller:
+Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) kan  DCAT-metadata udtrækkes fra ovenstående eksempel-html-filer:
+
+Mini-guide (på engelsk) til direkte brug af RDF distiller:
 - Extract the RDF with whitespace preservation and without warnings, serialized in Turtle:
 http://www.w3.org/2012/pyRdfa/extract?uri=https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
 - Extract the RDF with whitespace preservation and without warnings, serialized in RDF/XML:
