@@ -5,8 +5,9 @@ DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
 RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter.
 
 ## Læs mere om RDFa:
-- W3C RDFa 1.1 Primer: https://www.w3.org/TR/rdfa-primer/ 
-- W3C RFDa Core 1.1 specifikationen:  https://www.w3.org/TR/rdfa-core/ 
+- W3C RDFa 1.1 Primer (Intro til RDFa): https://www.w3.org/TR/rdfa-primer/ 
+- W3C RDFa Lite (Forenklet RDFa-specifikation): https://www.w3.org/TR/rdfa-lite/
+- W3C RFDa Core 1.1 (Fuld RDFa-specifikation): https://www.w3.org/TR/rdfa-core/ 
 - Linked Data in HTML: http://rdfa.info/
 - Wikipedia om RDFa: https://en.wikipedia.org/wiki/RDFa
 - Praktiske vejledninger til DCAT-opmærkning med RDFa på følgende websider: 
