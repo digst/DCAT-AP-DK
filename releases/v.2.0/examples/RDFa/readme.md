@@ -13,7 +13,8 @@ Og se et eksempel her:
 https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
 
 Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) kan  DCAT-metadata udtrækkes fra denne eksempel-html-fil:
-- uri= https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
+- RDFa example 1 uri= https://data.gov.dk/test/rdfa/RDFa1_basic-example1.html
+- RDFa example 2 uri= https://data.gov.dk/test/rdfa/RDFa2_basic-example1.html
 
 Mini-guide på engelsk til direkte brug af RDF distiller:
 - Extract the RDF with whitespace preservation and without warnings, serialized in Turtle:
