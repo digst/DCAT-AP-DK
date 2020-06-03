@@ -19,7 +19,7 @@
   dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dc:conformsTo <https://www.w3.org/TR/shacl> ;
   dc:license <https://creativecommons.org/licenses/by/4.0> ;
-  dc:modified "2019-04-29"^^xsd:date ;
+  dc:modified "2019-06-03"^^xsd:date ;
   dc:publisher <http://digst.dk> ;
   dc:relation <https://arkitektur.digst.dk/rammearkitektur/datastandarder> ;
   dc:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-DK in SHACL" ;
