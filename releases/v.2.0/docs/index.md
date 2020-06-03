@@ -327,7 +327,7 @@ DCAT anvendes allerede i danske specifikationer - fx i [Fælles sprog for datakv
 DCAT-AP er integreret i en lang række internationale specifikationer såsom Europa-Kommissionens Single Digital Gateway - [SDG-metamodel](https://github.com/catalogue-of-services-isa/SDG-model), Core Public Service Vocabulary Application Profile ([CPSV-AP](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile)) og
 Asset Description Metadata Schema ([ADMS](https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms ))
 
-Der er også udviklet en lang række nationale profiler af DCAT-AP af andre EU-medlemslande samt sektorspecifikke profiler, fx geoDCAT-AP til geodata og statDCAT-AP til statistiske datasæt. Se oversigt på (dette link](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf). 
+Der er også udviklet en lang række nationale profiler af DCAT-AP af andre EU-medlemslande samt sektorspecifikke profiler, fx geoDCAT-AP til geodata og statDCAT-AP til statistiske datasæt. Se oversigt på [dette link](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf). 
 
 Find også øvrige [referencer her](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#referencer). 
 
