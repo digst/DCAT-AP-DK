@@ -18,7 +18,7 @@
     <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
     <dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
     <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
-    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-29</dc:modified>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-03</dc:modified>
     <dc:publisher rdf:resource="http://digst.dk"/>
     <dc:relation rdf:resource="https://arkitektur.digst.dk/rammearkitektur/datastandarder"/> 
     <dc:description>This document specifies the constraints on properties and classes expressed by DCAT-AP-DK in SHACL</dc:description> 
