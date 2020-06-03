@@ -1219,7 +1219,7 @@ dcat:servesDataset
   rdfs:comment "Una colección de datos que este Servicio de Datos puede distribuir."@es ;
   rdfs:comment "Una raccolta di dati che questo DataService può distribuire."@it ;
   rdfs:domain dcat:DataService ;
-  rdfs:label "service for datasæt"@da ;  
+  rdfs:label "datatjeneste for datasæt"@da ;  
   rdfs:label "poskytuje datovou sadu"@cs ;
   rdfs:label "provee conjunto de datos"@es ;
   rdfs:label "serve set di dati"@it ;
