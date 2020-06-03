@@ -927,7 +927,7 @@
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
   ], [
-    sh:name "serves dataset"@en, "service for datasæt"@da ;
+    sh:name "serves dataset"@en, "datatjeneste for datasæt"@da ;
     sh:description "This property refers to a collection of data that this data service can distribute"@en, "Denne egenskab refererer til en samling af data som denne datatjeneste kan distribuere."@da ;
     rdfs:comment "A collection of data that this DataService can distribute."@en, "En samling af data som denne datatjeneste kan distribuere."@da ;
     sh:class dcat:Dataset ;
