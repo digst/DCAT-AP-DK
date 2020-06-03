@@ -246,25 +246,21 @@ Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har der
 
 Issue: Standarden skal angive primære use cases. Se [https://github.com/digst/DCAT-AP-DK/issues/3](https://github.com/digst/DCAT-AP-DK/issues/3) 
 
-### Afgrænsning
 
 ### Yderligere information vedrørende anvendelse af DCAT-AP-DK
 
 * Eksempler:  
-Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
+Se: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
 
 * Validering:
-Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
+Se: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
 
 * Ofte stillede spørgsmål (FAQ):
-Se udkast [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
+Se: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
 
 * Kommentarer til DCAT-AP-DK (Issuetracker):
-Se [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
+Se: [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
-### Relevante emner
-
-DCAT-AP-DK medtager modelementer fra flere forskellige emnerområder relevant i dansk fællesoffentlig og administrativ kontekst, her under basisinformation, emneinddeling, aktører, dataindhold, afgrænsning, datakvalitet, jura og regulering samt proveniens og historik
 
 ## Gældende krav og overensstemmelse
 DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
@@ -278,7 +274,7 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 
 ### Forskellige visninger af DCAT-AP-DK (minimumsmodel)
 
-Der er pt. udarbejdet følgnende udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og som skjuler de valgfrie elementer)
+Der er pt. udarbejdet følgende udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og som skjuler de valgfrie elementer)
 
 - [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
 viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)
@@ -323,6 +319,18 @@ Issue: Ændringer af kravniveau samt tilføjelser af nye elementer i DCAT-AP-DK 
 
 #### Udeladelser
 Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
+
+### Centrale modeller som anvender DCAT
+
+DCAT anvendes allerede i danske specifikationer - fx i [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) og Standard for beskrivelse af it-systemer [SYS-AP](https://digst.github.io/IT-System-AP/SYS-AP/docs/) og [archvSYS-AP](https://digst.github.io/IT-System-AP/archvSYS-AP/docs/). .
+
+DCAT-AP er integreret i en lang række internationale specifikationer såsom Europa-Kommissionens Single Digital Gateway - [SDG-metamodel](https://github.com/catalogue-of-services-isa/SDG-model), Core Public Service Vocabulary Application Profile ([CPSV-AP](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile)) og
+Asset Description Metadata Schema ([ADMS](https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms ))
+
+Der er også udviklet en lang række nationale profiler af DCAT-AP af andre EU-medlemslande samt sektorspecifikke profiler, fx geoDCAT-AP til geodata og statDCAT-AP til statistiske datasæt. Se oversigt på (dette link](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf). 
+
+Find også øvrige [referencer her](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#referencer). 
+
 
 # Oversigt over anvendelsesprofilen
 
@@ -514,6 +522,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
+
+
 				
 ### Egenskab: skaber (creator) 
 <dl class="def">
@@ -632,7 +642,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -847,7 +857,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -927,7 +937,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -967,11 +977,11 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A conceptual entity that represents the information published. </dd>
 <dt>Definition (da)</dt>
-<dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
 <dt>Definition (en)</dt>
 <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</dd>
 <dt>Kravniveau</dt>
@@ -979,6 +989,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 </dl>
 
 Issue: Vedr. dansk anvendelsesnote: se [https://github.com/digst/DCAT-AP-DK/issues/19](https://github.com/digst/DCAT-AP-DK/issues/19)
+
 
 **UML-visualisering af klassen Datasæt:**	
 
@@ -1005,7 +1016,7 @@ Issue: Vedr. dansk anvendelsesnote: se [https://github.com/digst/DCAT-AP-DK/issu
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
+<dd>Anbefalet</dd>
 </dl>
 				
 ### Egenskab: anden identifikator (other identifier) 
@@ -1085,9 +1096,9 @@ Issue: Vedr. dansk anvendelsesnote: se [https://github.com/digst/DCAT-AP-DK/issu
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
-
-Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digst/DCAT-AP-DK/issues/5)
-				
+		
+Issue: Vedr. aktørrelationer: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digst/DCAT-AP-DK/issues/5)
+		
 ### Egenskab: datasætansvarlig organisation DK (dataset responsible organisation) 
 <dl class="def">
 <dt>URI</dt>
@@ -1108,7 +1119,8 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dd>Anbefalet</dd>
 </dl>
 
-Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digst/DCAT-AP-DK/issues/5)
+Issue: Vedr. aktørrelationer: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digst/DCAT-AP-DK/issues/5)
+
 				
 ### Egenskab: skaber (creator) 
 <dl class="def">
@@ -1143,7 +1155,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>Definition (en)</dt>
 <dd>An entity responsible for making contributions to the resource.En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</dd>
 <dt>Multiplicitet</dt>
-<dd>0..</dd>
+<dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -1161,7 +1173,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>Definition (en)</dt>
 <dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt .</dd>
 <dt>Multiplicitet</dt>
-<dd>0..</dd>
+<dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -1289,7 +1301,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#theme</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/data-theme/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/data-theme/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan have flere centrale emner. Til angivelse af emne skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1369,9 +1381,9 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
+<dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language. For datasæt og datatjenester refererer 'sprog' ifølge DCAT til det sprog der er anvendt i metadata (fx. titler, beskriveler etc), hvorimod 'sprog' for distributioner refererer til sproget anvendt i de tekstværdierne i distributionen. (A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution). Læs mere her: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_language </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</dd>
 <dt>Definition (da)</dt>
@@ -1383,6 +1395,8 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
+
+
 				
 ### Egenskab: adgangsrettigheder (access rights) 
 <dl class="def">
@@ -1487,7 +1501,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/frequency/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/frequency/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1684,7 +1698,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan genrages for hver sprogvariant af versionsnoterne.</dd>
+<dd>Denne egenskab angiver en beskrivelse af forskellene mellem den aktuelle version og forrige version af datasættet. Denne egenskab kan gentages for hver sprogvariant af versionsnoterne.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes.</dd>
 <dt>Definition (da)</dt>
@@ -1933,6 +1947,8 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
+
+Issue: Vedr. medietyper se: https://github.com/digst/DCAT-AP-DK/issues/12
 				
 ### Egenskab: adgangstjeneste (access service ) 
 <dl class="def">
@@ -2055,7 +2071,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2073,7 +2089,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://data.europa.eu/r5r/availability</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://data.europa.eu/r5r/availability/</dd>
+<dd>Anvend følgende klassifikation: http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2093,9 +2109,9 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
+<dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language. For datasæt og datatjenester refererer 'sprog' ifølge DCAT til det sprog der er anvendt i metadata (fx. titler, beskriveler etc), hvorimod 'sprog' for distributioner refererer til sproget anvendt i de tekstværdierne i distributionen. (A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution). Læs mere her: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_language</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.</dd>
 <dt>Definition (da)</dt>
@@ -2107,6 +2123,8 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
+
+
 				
 ### Egenskab: checksum (checksum) 
 <dl class="def">
@@ -2173,7 +2191,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/format</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/file-type/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/file-type/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2366,6 +2384,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/5](https://github.com/digs
 
 Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/digst/DCAT-AP-DK/issues/23](https://github.com/digst/DCAT-AP-DK/issues/23)
 
+
 **UML-visualisering af klassen Datatjeneste:**	
 
 <img src="img/Datatjeneste.png" alt="Datatjeneste">
@@ -2454,7 +2473,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: service for datasæt (serves dataset) 
+### Egenskab: datatjeneste for datasæt (serves dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#servesDataset</dd>
@@ -2562,7 +2581,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/publishertype/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2671,8 +2690,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dd>En checksum en en værdi som gør det muligt at verificere indholdet af en fil. Selv mindre ændringer i indholdet af en fil vil ændre dets checksum. Denne klasse gør det muligt at repræsentere resultaterne af forskellige checksum- og kryptografiske Message-Digest-algoritmer.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A Checksum is value that allows the contents of a file to be authenticated. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.</dd>
+<dt>Definition (da)</dt>
+<dd>En checksum en en værdi som gør det muligt at verificere indholdet af en fil. Selv mindre ændringer i indholdet af en fil vil ændre dets checksum. Denne klasse gør det muligt at repræsentere resultaterne af forskellige checksum- og kryptografiske Message-Digest-algoritmer.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>A Checksum is value that allows the contents of a file to be authenticated. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -2691,9 +2712,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Rækkevidde</dt>
 <dd></dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den algoritme der er blevet anvendet til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt.</dd>
+<dd>Denne egenskab angiver den algoritme der er blevet anvendt til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.</dd>
+<dt>Definition (da)</dt>
+<dd>Angiver den algoritme der er blevet anvendt til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt.</dd>
 <dt>Definition (en)</dt>
 <dd>Identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time. </dd>
 <dt>Multiplicitet</dt>
@@ -2789,7 +2812,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/licencetype/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/licencetype/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2834,7 +2857,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den geografiske omskrevne firkant af en ressource</dd>
+<dd>Denne egenskab angiver den geografiske omskrevne firkant af en ressource. Koordinater i den omskrevne firkant skal være angivet i geografiske koordinater.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to he geographic bounding box of a resource.</dd>
 <dt>Definition (da)</dt>
@@ -2893,8 +2916,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dd>Et tidsinterval der er navngivet eller fastlagt ved start- og slutdato.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>An interval of time that is named or defined by its start and end dates.</dd>
+<dt>Definition (da)</dt>
+<dd>Et tidsinterval der er navngivet eller fastlagt ved start- og slutdato.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>An interval of time that is named or defined by its start and end dates.</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -2955,11 +2980,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Anvendelsesnote (da)</dt>
 <dd></dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>beginning of a temporal entity</dd>
+<dd>This property contains the beginning of a period or interval.</dd>
 <dt>Definition (da)</dt>
-<dd>Denne egenskab angiver begyndelsen på perioden eller tidsintervallet.</dd>
+<dd>Denne egenskab angiver begyndelsen på en periode eller tidsinterval.Begyndelsen på en periode eller tidsinterval.</dd>
 <dt>Definition (en)</dt>
-<dd>This property contains the beginning of a period or interval.Beginning of a temporal entity.</dd>
+<dd>Beginning of a temporal entity.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -2977,7 +3002,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the end of a period or interval</dd>
 <dt>Definition (da)</dt>
-<dd>Denne egenskab angiver slutningen på perioden eller tidsintervallet.</dd>
+<dd>Denne egenskab angiver slutningen på en periode eller tidsinterval.Slutningen på en periode eller tidsinterval.</dd>
 <dt>Definition (en)</dt>
 <dd>End of a temporal entity.</dd>
 <dt>Multiplicitet</dt>
@@ -3300,7 +3325,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 
 <img src="img/Kvalitetsmetadata%20DK.png" alt="Kvalitetsmetadata DK">
 	
-	
+
 
 # Klassifikationer
 
