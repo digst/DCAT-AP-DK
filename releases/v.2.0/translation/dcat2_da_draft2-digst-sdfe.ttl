@@ -574,7 +574,7 @@ dcat:bbox
   skos:definition "Il riquadro di delimitazione geografica di una risorsa."@it ;
   skos:scopeNote "El rango de esta propiedad es intencionalmente genérico con el propósito de permitir distintas codificaciones geométricas. Por ejemplo, la geometría puede ser codificada como WKT (geosparql:asWKT [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@es ;
   skos:scopeNote "Obor hodnot této vlastnosti je úmyslně obecný, aby umožnil různé kódování geometrií. Geometrie by kupříkladu mohla být kódována jako WKT (geosparql:asWKT [GeoSPARQL]) či [GML] (geosparql:asGML [GeoSPARQL])."@cs ;
-  skos:scopeNote "Rækkevidden for denne egenskab er bevidst generisk definere med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."@da ;  
+  skos:scopeNote "Rækkevidden for denne egenskab er bevidst generisk defineret med det formål at tillade forskellige kodninger af geometrier. Geometrien kan eksempelvis repræsenteres som WKT (geosparql:asWKT [GeoSPARQL]) eller [GML] (geosparql:asGML [GeoSPARQL])."@da ;  
   skos:scopeNote "The range of this property is intentionally generic, with the purpose of allowing different geometry encodings. E.g., the geometry could be encoded with as WKT (geosparql:asWKT [GeoSPARQL]) or [GML] (geosparql:asGML [GeoSPARQL])."@en ;
   skos:scopeNote "Il range di questa proprietà è volutamente generica, con lo scopo di consentire diverse codifiche geometriche. Ad esempio, la geometria potrebbe essere codificata con WKT (geosparql:asWKT [GeoSPARQL]) o [GML] (geosparql:asGML [GeoSPARQL])."@it ;
 .
@@ -1133,7 +1133,7 @@ dcat:packageFormat
   skos:definition "El formato del archivo en que se agrupan uno o más archivos de datos, e.g. para permitir que un conjunto de archivos relacionados se bajen juntos."@es ;
   skos:definition "Il formato di impacchettamento della distribuzione in cui uno o più file di dati sono raggruppati insieme, ad es. per abilitare un insieme di file correlati da scaricare insieme."@it ;
   skos:definition "The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together."@en ;
-  skos:scopeNote "Denne egenskab kan anvendes hvis filerne i en distribution er pakket, fx. i en TAR-fil, en Frictionless Data Package eller en Bagit-fil. Formatet BØR udtrykkes ved en medietype som defineret i 'IANA media types registry', hvis der optræder en relevant medietype dér: https://www.iana.org/assignments/media-types/."@da ;   
+  skos:scopeNote "Denne egenskab kan anvendes hvis filerne i en distribution er pakket, fx i en TAR-fil, en Frictionless Data Package eller en Bagit-fil. Formatet BØR udtrykkes ved en medietype som defineret i 'IANA media types registry', hvis der optræder en relevant medietype dér: https://www.iana.org/assignments/media-types/."@da ;   
   skos:scopeNote "Esta propiedad se debe usar cuando los archivos de la distribución están empaquetados, por ejemplo en un archivo TAR, Frictionless Data Package o Bagit. El formato DEBERÍA expresarse usando un 'media type', tales como los definidos en el registro IANA de 'media types' https://www.iana.org/assignments/media-types/, si está disponibles."@es ;
   skos:scopeNote "Questa proprietà deve essere utilizzata quando i file nella distribuzione sono impacchettati, ad esempio in un file TAR, Frictionless Data Package o Bagit. Il formato DOVREBBE essere espresso utilizzando un tipo di supporto come definito dal registro dei tipi di media IANA https://www.iana.org/assignments/media-types/, se disponibili."@it ;
   skos:scopeNote "Tato vlastnost se použije, když jsou soubory v distribuci zabaleny, např. v souboru TAR, v balíčku Frictionless Data Package nebo v souboru Bagit. Formát BY MĚL být vyjádřen pomocí typu média definovaného v registru IANA https://www.iana.org/assignments/media-types/, pokud existuje."@cs ;
@@ -1244,7 +1244,7 @@ dcat:service
   rdfs:comment "Un sitio o 'endpoint' que está listado en el catálogo."@es ;
   rdfs:comment "Un sito o endpoint elencato nel catalogo."@it ;
   rdfs:domain dcat:Catalog ;
-  rdfs:label "tjeneste"@da ;  
+  rdfs:label "har datatjeneste"@da ;  
   rdfs:label "service"@en ;
   rdfs:label "servicio"@es ;
   rdfs:label "servizio"@it ;
@@ -1399,7 +1399,7 @@ dcat:theme
   skos:definition "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar ;
   skos:definition "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja ;
   skos:editorialNote "Status: English Definition text modified by DCAT revision team, all except for Italian, Czech and Danish translations are pending."@en ;
-  skos:scopeNote "Samlingen af begreber (skos:Concept) der anvendes til at emneklassificere ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget"@da ;  
+  skos:scopeNote "Samlingen af begreber (skos:Concept) der anvendes til at emneinddele ressourcer organiseres i et begrebssystem (skos:ConceptScheme) som beskriver alle emnerne og deres relationer i kataloget"@da ;  
   skos:scopeNote "El conjunto de skos:Concepts utilizados para categorizar los recursos están organizados en un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo."@es ;
   skos:scopeNote "Il set di concetti skos usati per categorizzare le risorse sono organizzati in skos:ConceptScheme che descrive tutte le categorie e le loro relazioni nel catalogo."@it ;
   skos:scopeNote "Sada instancí třídy skos:Concept použitá pro kategorizaci zdrojů je organizována do schématu konceptů skos:ConceptScheme, které popisuje všechny kategorie v katalogu a jejich vztahy."@cs ;
