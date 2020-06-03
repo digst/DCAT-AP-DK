@@ -5,7 +5,7 @@ Med ovenstående SHACL-filer kan validering af DCAT-AP-DK-metadata afprøves all
 Eksempler på DCAT-metadata findes her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
 
 I SHACL Playground kan indholdet af TTL-filen her indsættes (til venstre) hvorefter DCAT-metadata indsættes (til højre).
-![Example_validation_of_DCAT-metadata_using_SHACL](https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/validation/Example_validation_of_DCAT-metadata_using_SHACL.PNG")
+![Example_validation_of_DCAT-metadata_using_SHACL](https://github.com/digst/DCAT-AP-DK/raw/master/releases/v.2.0/validation/Example_validation_of_DCAT-metadata_using_SHACL.PNG")
 
 Relevante links:
 
