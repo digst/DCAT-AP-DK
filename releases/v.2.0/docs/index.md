@@ -145,7 +145,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
-Date: 2019-05-28
+Date: 2019-06-03
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -153,12 +153,12 @@ Inline Github Issues: full
 Logo: digst...
 </pre>
 
-Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: XMI, RDF og [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) 
+Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) og RDF (kommer).
 
 
 <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
 
-UDKAST til DCAT-AP-DK 2.0 - Maj 2020
+UDKAST til DCAT-AP-DK 2.0 - Juni 2020
    
 
 
@@ -173,13 +173,11 @@ Specifikationen skal være med til sørge for at begreber til beskrivelse af dat
 
 ## Baggrund
 
-De grundlæggende strukturer og elementer hentes fra EU-Kommissionens specifikation DCAT-AP 2.0 der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. EU-Kommissionens specifikation tager ligeledes afsæt i W3C specifikationen DCAT (Data Catalog Vocabulary). EU-Kommissionens specifikation angiver ikke blot hvilke felter der er *obligatoriske*, men angiver også *anbefalede* og *valgfrie* egenskaber og giver mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation DCAT-AP 2.0 der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen DCAT (Data Catalog Vocabulary). Europa-Kommissionens specifikation angiver felter der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.
 
-Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder.
+Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
 
-For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
-
-
+Specifikationen har også snitflader til implementeringen af EU's åbne data og [PSI-direktiv](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data.
 
 ## Metode
 
@@ -240,7 +238,7 @@ Disse beskrives her:
 Et domænespecifikt katalog er et katalog hvor de organisationer hvis datasæt er registreret i kataloget, indgår i et interessefællesskab. Dette kunne eksempelvis være et kommunalt fællesskab eller et fællesskab omkring sundhedsinformationer.
 Domænespecifikke datasætkataloger kan forventes at have registreringsbehov der knytter sig til deres domæne. Disse behov vil formentligt ligge uden for det der dækkes af anvendelsesprofilen, men domænespecifikke kataloger vil stadig kunne benytte profilen dels som udgangspunkt for et arbejde med en udvidet profil, dels til at lade de domænespecifikke informationer indgå i et støre nationalt katalog.
 
-#### Anvendelsesscenarie 3.2:Nationalt datasætkatalog
+#### Anvendelsesscenarie 3.2: Nationalt datasætkatalog
 Et nationalt katalog kræver særlige løsninger for at kunne rumme den bredde af datasæt der må forventes at blive indholdet. 
 Blandt andet kræves det at der anvendes en tværgående taksonomi 
 #### Anvendelsesscenarie 3.3: Internationalt datasætkatalog
@@ -297,9 +295,11 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
 * Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
-* Datasæt: dækningsperiode (dct:temporal ) - Kravniveau:   Anbefalet > Valgfri?
+* Datasæt: dækningsperiode (dct:temporal) - Kravniveau:   Anbefalet > Valgfri
 * Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
 * Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
+
+Issue: Er der behov for at slække på kraviveauet for dct:temporal fra 'Anbefalet' til 'Valgfri'?
 
 #### Tilføjelser
 Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
@@ -327,7 +327,7 @@ Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 # Oversigt over anvendelsesprofilen
 
 ## Diagram 
-Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram (kommer)
+Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram 
 
 <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img src="img/Figur-DCAT-AP-DK-v2-UML.png" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
 
@@ -373,10 +373,10 @@ En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurater
 Et datasæt (dcat:Dataset) er en samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer. Et datasæt kan betragtes som logisk element der repræsenterer den udgivne information, og der kan eksistere mange forskellige distributioner af det samme datasæt.
 
 ## Distribution
-En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl.
+En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Denne klasse er valgfri.
 
 ## Datatjeneste
-En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt.
+En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
 
 ## Katalogpost 
 En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
@@ -385,7 +385,7 @@ Issue: Oversættelse af DCAT - og termen 'kurateret' - drøftes her [https://git
 
 
 ## Illustration
-Her ses en illustration af tre af de ovenstående elementerne, hhv. "katalog", "datasæt" og "distribution":
+Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri):
 
 <p align="left"><a href="img/Figur-DCAT-niveauerne.PNG"><img src="img/Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="600"/></a></p>
 
@@ -3317,7 +3317,7 @@ Issue: Se [https://github.com/digst/DCAT-AP-DK/issues/8](https://github.com/digs
 
 Egenskab: dct:theme
 
-KLASSIFIKATION: EU Datatemaer
+**KLASSIFIKATION: EU Datatemaer**
 
 URI: http://publications.europa.eu/resource/authority/data-theme
 [Se klassifikationens indhold](
@@ -3328,9 +3328,9 @@ https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authori
 
 Egenskab: dct:theme
 
-KLASSIFIKATION: FORM (FællesOffentligeReferenceModel)
+**KLASSIFIKATION: FORM (FællesOffentligeReferenceModel)**
 
-KLASSIFIKATION: KLE (KL Emnesystematik)
+**KLASSIFIKATION: KLE (KL Emnesystematik)**
 
 [Se FORM](https://www.form-online.dk/soegning)
 
@@ -3342,7 +3342,7 @@ KLASSIFIKATION: KLE (KL Emnesystematik)
 
 Egenskab: dct:accrualPeriodicity
 
-KLASSIFIKATION: EU Frekvenser
+**KLASSIFIKATION: EU Frekvenser**
 
 URI: http://publications.europa.eu/resource/authority/frequency
 
@@ -3352,7 +3352,7 @@ URI: http://publications.europa.eu/resource/authority/frequency
 ## Medietyper
 Egenskab: dct:mediaType
 
-KLASSIFIKATION: Internet Assigned Numbers Authority (IANA). 
+**KLASSIFIKATION: Internet Assigned Numbers Authority (IANA).** 
 
 URI: http://www.iana.org/assignments/media-types/
 
@@ -3377,7 +3377,7 @@ Issue: se [https://github.com/digst/DCAT-AP-DK/issues/12](https://github.com/dig
 
 Egenskab: dct:format
 
-KLASSIFIKATION: EU Filtyper
+**KLASSIFIKATION: EU Filtyper**
 
 URI: http://publications.europa.eu/resource/authority/file-type
 
@@ -3397,7 +3397,7 @@ Eksempler:
 ## Sprog
 Egenskab: dct:language
 
-KLASSIFIKATION: EU Sprog
+**KLASSIFIKATION: EU Sprog**
 
 URI: http://publications.europa.eu/resource/authority/language
  
@@ -3412,30 +3412,30 @@ Eksempler:
 
 Egenskab: dct:spatial
 
-KLASSIFIKATION: kontinenter
+**KLASSIFIKATION: kontinenter**
 
 URI: http://publications.europa.eu/resource/authority/continent/
 
-[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/?target=Browse&uri=http://publications.europa.eu/resource/authority/continent](http://publications.europa.eu/resource/authority/continent) 
+[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/) 
 
-KLASSIFIKATION: lande
+**KLASSIFIKATION: lande**
 
 URI: http://publications.europa.eu/resource/authority/country
 
-[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/?target=Browse&uri=http://publications.europa.eu/resource/authority/country](http://publications.europa.eu/resource/authority/country)
+[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/)
 
-KLASSIFIKATION: stednavne
+**KLASSIFIKATION: stednavne**
 
 URI: http://publications.europa.eu/resource/authority/place/
 
 [Se klassifikations indhold](
-https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/place/?target=Browse&uri=http://publications.europa.eu/resource/authority/place](http://publications.europa.eu/resource/authority/place)
+https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/place/)
 
-KLASSIFIKATION: Geonames
+**KLASSIFIKATION: Geonames**
 
 URI: http://sws.geonames.org/
 
-[Se klassifikations indhold](http://sws.geonames.org/](http://sws.geonames.org/)
+[Se klassifikations indhold](http://sws.geonames.org/)
 
 
 Note: The EU Vocabularies Name Authority Lists must be used for continents, countries and places that are in those lists; if a particular location is not in one of the mentioned Named Authority Lists, Geonames URIs must be used.
@@ -3444,7 +3444,7 @@ Note: The EU Vocabularies Name Authority Lists must be used for continents, coun
 ## Statusser
 Egenskab: adms:status
 
-KLASSIFIKATION: ADMS Statusser
+**KLASSIFIKATION: ADMS Statusser**
 
 URI: http://purl.org/adms/status/
 
@@ -3455,10 +3455,13 @@ URI: http://purl.org/adms/status/
 * http://purl.org/adms/status/Withdrawn
 
 
+Issue: I EUs Open Data Portal anvendes også følgende klassifikation til at angive status for datasæt: [http://publications.europa.eu/resource/authority/dataset-status](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status)
+
+
 ## Udgivertyper
 Egenskab: dct:type (på foaf:Agent)
 
-KLASSIFIKATION: ADMS udgivertyper
+**KLASSIFIKATION: ADMS udgivertyper**
 
 URI: http://purl.org/adms/publishertype/
 
@@ -3490,7 +3493,7 @@ URI: https://data.gov.dk/concept/profile/public-org-types
 
 Egenskab: dct:license 
 
-KLASSIFIKATION: ADMS licenstyper
+**KLASSIFIKATION: ADMS licenstyper**
 
 URI: http://purl.org/adms/licencetype/
 
@@ -3516,7 +3519,7 @@ URI: http://purl.org/adms/licencetype/
 
 Egenskab: dcat-ap:availability
 
-KLASSIFIKATION: Tilgængeligshedstyper (for distributioner)
+**KLASSIFIKATION: Tilgængeligshedstyper (for distributioner)**
 
 URI: http://data.europa.eu/r5r/availability/
 
@@ -3550,34 +3553,10 @@ URI: http://data.europa.eu/r5r/availability/
 ### UML-diagram: DCAT-AP-DK
 <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
 
-#### Deldiagrammer: 
-<img src="img/Datasæt.png" alt="Figur-DCAT-AP-DK-deldiagram" width="800"/>
-<img src="img/Aktør.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Begreb.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Begrebssystem.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Checksum.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Dataservice.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Distribution.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Dokument.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Frekvens.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Identifikator.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Katalog.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Katalogpost.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Licensdokument.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Lingvistisk system.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Lokation.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Medietype.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Periode.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Proveniensudsagn.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Relation.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Rettighedsudsagn.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Rolle.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Specifikation.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-<img src="img/Virtuelt visitkort.png" alt="Figur-DCAT-AP-DK-deldiagram"/>
-
+<!--
 ### UML-diagram: DCAT-DK
 <p align="center"><a href="img/Figur-DCAT-DK-v2-UML.PNG"><img src="img/Figur-DCAT-DK-v2-UML.PNG" alt="Figur-DCAT-DK-v2-UML" width="800"/></a></p>
-
+-->
 
 ## Eksempler 
 
@@ -3684,7 +3663,6 @@ Relevante links:
 ================
 
 [arkitektur.digst.dk](arkitektur.digst.dk)
-
 
 
 
