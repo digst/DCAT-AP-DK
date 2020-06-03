@@ -15,7 +15,7 @@
 <https://data.gov.dk/model/profile/dcat-ap-dk_2.0.0>
   dcat:accessURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes> ;
   dcat:downloadURL <https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.0_shacl_shapes.xml> ;
-  dcapap:availability dcapap:experimental ;
+  dcatap:availability dcatap:experimental ;
   dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
   dc:conformsTo <https://www.w3.org/TR/shacl> ;
   dc:license <https://creativecommons.org/licenses/by/4.0> ;
@@ -293,7 +293,7 @@
     sh:nodeKind sh:Literal ;
     sh:path dc:identifier ;
     sh:severity sh:Violation ;
-    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory>
+    sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
     sh:name "anden identifikator"@da, "other identifier"@en ;
     sh:description "This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5]."@en, "Denne egenskab angiver lokal identifikator for datasættet."@da ;
@@ -352,7 +352,6 @@
     sh:description "This property refers to the entity responsible for making contributions to the resource."@en, "Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)"@da ;
     rdfs:comment "An entity responsible for making contributions to the resource."@en, "En entitet der er ansvarlig for bidrage til skabelsen af ressourcen."@en ;
     sh:class foaf:Agent ;
-    sh:maxCount 0 ;
     sh:path dc:contributor ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
@@ -361,7 +360,7 @@
     sh:description "This property refers to the agent that manages contributions to, and/or publication of a dataset."@en, "Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt. (dansk tilføjelse)"@da ;
     rdfs:comment "A maintainer of a Dataset, software package (SoftwareApplication), or other Project."@en, "En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt ."@en ;
     sh:class foaf:Agent ;
-    sh:maxCount 0 ;
+    sh:maxCount 1 ;
     sh:path schema:maintainer ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Optional>
@@ -764,7 +763,7 @@
     sh:pattern "^http://data.europa.eu/r5r/availability/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
-    sh:path dcapap:availability ;
+    sh:path dcatap:availability ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk#Recommended>
   ], [
@@ -1021,10 +1020,11 @@
   sh:targetClass <http://spdx.org/rdf/terms#Checksum> ;
   sh:name "Checksum"@en, "Checksum"@da ;
   sh:description "A Checksum is value that allows the contents of a file to be authenticated. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented."@en, "En checksum en en værdi som gør det muligt at verificere indholdet af en fil. Selv mindre ændringer i indholdet af en fil vil ændre dets checksum. Denne klasse gør det muligt at repræsentere resultaterne af forskellige checksum- og kryptografiske Message-Digest-algoritmer."@da ;
+  rdfs:comment "A Checksum is value that allows the contents of a file to be authenticated. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented"@en, "En checksum en en værdi som gør det muligt at verificere indholdet af en fil. Selv mindre ændringer i indholdet af en fil vil ændre dets checksum. Denne klasse gør det muligt at repræsentere resultaterne af forskellige checksum- og kryptografiske Message-Digest-algoritmer."@da ;
   sh:property [
     sh:name "algorithm"@en, "algoritme"@da ;
-    sh:description "This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time."@en, "Denne egenskab angiver den algoritme der er blevet anvendet til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt."@da ;
-    rdfs:comment "Identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time. "@en ;
+    sh:description "This property identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time."@en, "Denne egenskab angiver den algoritme der er blevet anvendt til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt."@da ;
+    rdfs:comment "Identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time. "@en, "Angiver den algoritme der er blevet anvendt til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt."@da ;
     sh:hasValue <http://spdx.org/rdf/terms#checksumAlgorithm_sha1> ;
     sh:maxCount 1 ;
     sh:minCount 1 ;
@@ -1084,7 +1084,7 @@
   sh:targetClass dc:Location ;
   sh:property [
     sh:name "bounding box"@en, "bounding box"@da ;
-    sh:description "This property refers to he geographic bounding box of a resource."@en, "Denne egenskab angiver den geografiske omskrevne firkant af en ressource"@da ;
+    sh:description "This property refers to he geographic bounding box of a resource."@en, "Denne egenskab angiver den geografiske omskrevne firkant af en ressource. Koordinater i den omskrevne firkant skal være angivet i geografiske koordinater."@da ;
     rdfs:comment "The geographic bounding box of a resource."@en, "Den geografiske omskrevne firkant af en ressource"@da ;
     sh:maxCount 1 ;
     sh:nodeKind sh:Literal ;
@@ -1116,6 +1116,7 @@
   sh:targetClass dc:PeriodOfTime ;
   sh:name "PeriodOfTime"@en, "Periode"@da ;
   sh:description "An interval of time that is named or defined by its start and end dates."@en, "Et tidsinterval der er navngivet eller fastlagt ved start- og slutdato."@da ;
+  rdfs:comment "An interval of time that is named or defined by its start and end dates."@en, "Et tidsinterval der er navngivet eller fastlagt ved start- og slutdato."@da ;
   sh:property [
     sh:name "start date"@en, "startdato"@da ;
     sh:description "This property contains the start of the period"@en, "Denne egenskab angiver periodens startdato."@da ;
@@ -1136,8 +1137,8 @@
     sh:shape <http://data.europa.eu/r5r#DateOrDateTimeDataType_Shape>
   ], [
     sh:name "beginning"@en, "har begyndelse"@da ;
-    sh:description "beginning of a temporal entity"@en ;
-    rdfs:comment "This property contains the beginning of a period or interval."@en, "Denne egenskab angiver begyndelsen på perioden eller tidsintervallet."@da, "Beginning of a temporal entity."@en ;
+    sh:description "This property contains the beginning of a period or interval."@en ;
+    rdfs:comment "Denne egenskab angiver begyndelsen på en periode eller tidsinterval."@da, "Beginning of a temporal entity."@en, "Begyndelsen på en periode eller tidsinterval."@da ;
     sh:class <http://www.w3.org/2006/time#Instant> ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/2006/time#hasBeginning> ;
@@ -1146,7 +1147,7 @@
   ], [
     sh:name "end"@en, "har slutning"@da ;
     sh:description "This property contains the end of a period or interval"@en ;
-    rdfs:comment "Denne egenskab angiver slutningen på perioden eller tidsintervallet."@da, "End of a temporal entity."@en ;
+    rdfs:comment "Denne egenskab angiver slutningen på en periode eller tidsinterval."@da, "End of a temporal entity."@en, "Slutningen på en periode eller tidsinterval."@da ;
     sh:class <http://www.w3.org/2006/time#Instant> ;
     sh:maxCount 1 ;
     sh:path <http://www.w3.org/2006/time#hasEnd> ;
