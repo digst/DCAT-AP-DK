@@ -42,7 +42,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|identifikator (identifier)|http://purl.org/dc/terms/identifier	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik| 0..*|	 Obligatorisk|
+|identifikator (identifier)|http://purl.org/dc/terms/identifier	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik| 0..*|	 Anbefalet|
 |titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.| 1..*|	 Obligatorisk|
 |beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.| 1..*|	 Obligatorisk|
 |udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent)|Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.| 0..1|	 Anbefalet|
