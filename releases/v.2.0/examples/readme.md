@@ -1,7 +1,7 @@
 # Eksempler på anvendelse af DCAT
 
 ## Eksempler på anvendelse af DCAT-AP-DK 2.0
-Se ovenstående basiseksempler i forskellige serialiseringer. 
+Se ovenstående.
 
 ## Eksempler på anvendelse af DCAT-AP - generelt
 Se fx:
