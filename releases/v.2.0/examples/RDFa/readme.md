@@ -1,4 +1,4 @@
-# Indlejring af DCAT-metadata i eksisterende html-sider med RDFa
+# Indlejring af DCAT-metadata i html-sider med RDFa
 
 DCAT-metadata kan indlejres i eksisterende html-sider vha. JSON-LD eller RFDa. 
 
