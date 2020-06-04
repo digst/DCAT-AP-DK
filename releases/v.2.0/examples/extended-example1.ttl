@@ -1,0 +1,117 @@
+# baseURI: https://dcat.example.org/extended-example1.ttl
+
+@prefix adms: <https://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ex: <https://dcat.example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix w3cgeo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcatdk: <https://data.gov.dk/model/core/dcat-dk#> .
+
+# Note that background knowledge is not included in this example, eg. that <http://example.org/page1> is a foaf:Document etc 
+# A strict validation will require this knowledge to present in the graph  
+
+ex:extended-example
+  a owl:Ontology ;
+.
+ex:catalog
+  a dcat:Catalog ;
+  dct:language <http://publications.europa.eu/resource/dataset/language/DAN> ;  
+  dct:publisher ex:agent-001 ;
+  dct:title "Katalog 001"@da ;
+  dct:description "En beskrivelse af Katalog 001";
+  foaf:homepage <http://example.org/homepage>;
+  dct:issued "2011-12-05"^^xsd:date ;
+  dct:modified "2011-12-15"^^xsd:date ;  
+  dcat:record ex:cataloguerecord-001;
+  dcat:dataset ex:dataset-001 ;
+  dcat:themeTaxonomy <http://publications.europa.eu/resource/dataset/data-theme>;
+  dct:spatial <http://publications.europa.eu/resource/authority/country/DNK>;
+  dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+  foaf:homepage <http://example.org/catalog> ;
+.
+ex:cataloguerecord-001
+  a dcat:CatalogueRecord ;
+  dct:title "Katalogpost 001"@da ;  
+  dct:description "En beskrivelse af katalogpost 001"@da ;  
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/dataset/language/DAN> ;  
+  dct:publisher ex:agent-001 ;
+  dct:creator ex:agent-001 ;
+  dct:issued "2011-12-05"^^xsd:date ;
+  dct:modified "2011-12-15"^^xsd:date ;
+  foaf:primaryTopic ex:dataset-001 ;
+.
+ex:dataset-001
+  a dcat:Dataset ;
+  dct:title "Datasæt 001"@da ;  
+  dct:description "En beskrivelse af datasættet 001"@da ;  
+  dct:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/ANNUAL> ;
+  dct:language <http://publications.europa.eu/resource/dataset/language/DAN> ;  
+  dct:publisher ex:agent-001 ;
+  dct:creator ex:agent-001 ;
+  dct:contributor ex:agent-002 ;
+  dcatdk:datasetresponsibleorganisation	ex:agent-001 ;
+  dct:creator ex:agent-001 ;
+  dct:issued "2011-12-05"^^xsd:date ;
+  dct:modified "2011-12-15"^^xsd:date ;
+  dct:spatial <http://publications.europa.eu/resource/authority/country/DNK>;
+  dcat:keyword "eksempel" ;
+  dct:conformsTo <http://example.org/standard>;	
+  foaf:page <http://example.org/page1>, <http://example.org/page2> ;  
+  dct:theme <http://publications.europa.eu/resource/dataset/data-theme/GOVE>;  
+  dcat:contactPoint [
+    a vcard:Kind ;
+    vcard:fn "Kontaktpunktnavn" ;
+    vcard:hasEmail <mailto:kontakt@digst.dk> ;
+  ] ;  
+  dct:accessRights [
+    a dct:RightsStatement ;
+    rdfs:label "PUBLIC" ;
+    dct:type <http://publications.europa.eu/resource/authority/access-right/PUBLIC>
+  ] ;  
+  dcat:landingPage <http://example.org/landingpage> ;  
+  dcat:distribution ex:dataset-001-csv ;
+  dcat:distribution ex:dataset-001-xml ;  
+.
+
+ex:dataset-001-csv
+  a dcat:Distribution ;
+  dcat:accessURL <http://www.example.org/files/001.csv> ;
+  dcat:downloadURL <http://www.example.org/files/001.csv> ;
+  dct:title "CSV-distribution af datsættet 001"@da ;  
+  dcat:byteSize "5120"^^xsd:decimal ;
+  dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;    
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/csv> ;
+  
+.
+ex:dataset-001-xml
+  a dcat:Distribution ;
+  dcat:accessURL <http://www.example.org/files/001.xml> ;
+  dcat:downloadURL <http://www.example.org/files/001.xml> ;
+  dct:title "XML-distribution af datsættet 001"@da ;  
+  dcat:byteSize "6120"^^xsd:decimal ;
+  dct:license <https://creativecommons.org/publicdomain/zero/1.0/>;    
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/xml> ;
+  dct:format <http://publications.europa.eu/resource/authority/file-type/xml> ;
+.
+ex:agent-001
+  a foaf:Agent;
+  a foaf:Organization ;
+  foaf:name "Organisation 001"@da ;
+.
+ex:agent-002
+  a foaf:Agent;
+  a foaf:Organization ;
+  foaf:name "Organisation 002"@da ;
+.
