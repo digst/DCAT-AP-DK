@@ -3575,7 +3575,7 @@ URI: http://data.europa.eu/r5r/availability/
 ## UML-diagrammer
 
 ### UML-diagram: DCAT-AP-DK
-<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.PNG"><img src="img/Figur-DCAT-AP-DK-v2-UML.PNG" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
+<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img src="img/Figur-DCAT-AP-DK-v2-UML.png" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
 
 <!--
 ### UML-diagram: DCAT-DK
