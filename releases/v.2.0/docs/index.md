@@ -253,13 +253,13 @@ Issue: Standarden skal angive primære use cases. Se [https://github.com/digst/D
 Se: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
 
 * Validering:
-Se: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
+Se:  [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
 
 * Ofte stillede spørgsmål (FAQ):
-Se: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
+Se:  [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
 
 * Kommentarer til DCAT-AP-DK (Issuetracker):
-Se: [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
+Se:  [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
 
 ## Gældende krav og overensstemmelse
@@ -324,13 +324,12 @@ Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 
 DCAT anvendes allerede i danske specifikationer - fx i [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) og Standard for beskrivelse af it-systemer [SYS-AP](https://digst.github.io/IT-System-AP/SYS-AP/docs/) og [archvSYS-AP](https://digst.github.io/IT-System-AP/archvSYS-AP/docs/). .
 
-DCAT-AP er integreret i en lang række internationale specifikationer såsom Europa-Kommissionens Single Digital Gateway - [SDG-metamodel](https://github.com/catalogue-of-services-isa/SDG-model), Core Public Service Vocabulary Application Profile ([CPSV-AP](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile)) og
+DCAT anvendes desuden i en  række internationale specifikationer såsom Europa-Kommissionens Single Digital Gateway - [SDG-metamodel](https://github.com/catalogue-of-services-isa/SDG-model), Core Public Service Vocabulary Application Profile ([CPSV-AP](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile)) og
 Asset Description Metadata Schema ([ADMS](https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms ))
 
-Der er også udviklet en lang række nationale profiler af DCAT-AP af andre EU-medlemslande samt sektorspecifikke profiler, fx geoDCAT-AP til geodata og statDCAT-AP til statistiske datasæt. Se oversigt på [dette link](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf). 
+Der er også udviklet flere nationale profiler af DCAT-AP af andre EU-medlemslande samt domænespecifikke profiler, fx [geoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) til geodata, [BregDCAP-AP](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) til grunddata og [statDCAT-AP](https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe) til statistiske datasæt. 
 
-Find også øvrige [referencer her](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#referencer). 
-
+Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i afsnittet [Referencer](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#referencer). 
 
 # Oversigt over anvendelsesprofilen
 
