@@ -3304,7 +3304,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>
 **UML-visualisering af klassen Anvendelse DK:**	
 
-<img src="img/Anvendelse%20DK.png" alt="Anvendelse DK">
+<img src="img/Usage.png" alt="Anvendelse DK">
 	
 			
 ## Klasse: Kvalitetsmetadata DK (Quality Metadata) 
@@ -3324,7 +3324,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>
 **UML-visualisering af klassen Kvalitetsmetadata DK:**	
 
-<img src="img/Kvalitetsmetadata%20DK.png" alt="Kvalitetsmetadata DK">
+<img src="img/QualityMetadata.png" alt="Kvalitetsmetadata DK">
 	
 
 
