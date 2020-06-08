@@ -130,13 +130,13 @@ Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Bidragsyder, Bidragsydere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
-Editor: [Styrelsen for data og effektivisering]
-Editor: [Styrelsen for arbejdsmarked og rekruttering]
+Editor: [Styrelsen for Dataforsyning og Effektivisering]
+Editor: [Styrelsen for Arbejdsmarked og Rekruttering]
 Editor: [Geodatastyrelsen]
-Editor: [Erhvervstyrelsen]
+Editor: [Erhvervsstyrelsen]
 Editor: [Danmarks Miljøportal]
 Editor: [Danmarks Statistik]
-Editor: [Kommunernes Landsforening]
+Editor: [KL]
 Editor: [KOMBIT]
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
@@ -165,23 +165,23 @@ UDKAST til DCAT-AP-DK 2.0 - Juni 2020
 
 # Introduktion
 
-DCAT-AP-DK 2.0 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer.
+DCAT-AP-DK 2.0 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
 
 ## Formål
-Specifikationen skal være med til sørge for at begreber til beskrivelse af datasæt og datakataloger anvendes mere ens, og dermed skal den understøtte højere grad af interoperablitet og kvalitet i oplysningerne. 
+Specifikationen skal være med til sørge for at begreber til beskrivelse af datasæt og datakataloger anvendes mere ens, og dermed skal den understøtte højere grad af interoperabilitet og kvalitet i oplysningerne. 
 
 
 ## Baggrund
 
-De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation DCAT-AP 2.0 der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen DCAT (Data Catalog Vocabulary). Europa-Kommissionens specifikation angiver felter der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra, og vil være i overensstemmelse med, DCAT-AP 2.0. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst. 
 
 Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
 
-Specifikationen har også snitflader til implementeringen af EU's åbne data og [PSI-direktiv](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data.
+Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s åbne data og [PSI-direktiv](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data
 
 ## Metode
 
-Denne specifikation udgøres af en dansk basisprofil for datsæt og datakataloger (DCAT-AP-DK), som indeholder de basisoplysninger om datasæt og datakataloger.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
+Denne specifikation udgøres af en dansk basisprofil for datasæt og datakataloger (DCAT-AP-DK), som indeholder basisoplysninger om datasæt og datakataloger.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger, i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
 
 Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for begrebs- og datamodellering](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering), og specifikationen sammensætter flere eksisterende nationale og internationale modeller.
 
@@ -192,7 +192,7 @@ Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære f
 * Interne overblik over egne data i organisationer.
 * Eksternt rettet information om data der deles mellem organisationer.
 
-De metadata der er nyttige og anvendelige for disse to funktioner er i væsentligt omfang de samme. Der har derfor ved udformningen af den danske anvendelsesprofil været hensigten at lade profilen være både en profil til brug for datadelingsinformationer og en profil for internt organisatoriske datakataloger.
+De metadata der er nyttige og anvendelige for disse to funktioner er i væsentligt omfang de samme. Det har derfor ved udformningen af den danske anvendelsesprofil været hensigten at lade profilen være både en profil til brug for datadelingsinformationer og en profil for internt organisatoriske datakataloger.
 Profilens informationer kan grupperes som:
 * **Basisinformation** Ud over et navn for datasættet gives en informativ beskrivelse af datasættet og dets indhold, samt eventuelt lokalt anvendte identifikatorer.
 * **Adgang til data** Informationer om hvordan man får adgang til datasættet og dets distributioner - fx via fildownload eller en eller flere datatjenester/APIer. 
@@ -212,14 +212,14 @@ De to primære funktioner udfoldes i det følgende i disse anvendelsesscenarier:
 
 ### Anvendelsesscenarie 1: Organisationers interne datasætkatalog
 I takt med at en organisations portefølje af datasæt stiger, øges behovet for en formel og kontrolleret håndtering af alle anvendelsesaspekter for de pågældende datasæt.
-Med en samlet og koordineret registrering af organisationens datasæt kan organisationen eksempelvis få styr på hvilke data der er hvor i organisationen, hvad de anvendes til, hvilke services der benyttes, hvilke datasæt der er forbundne og til kontrakter og kontakter.
-Et organisatorisk datasætkatalog hjælper på tværs af organisationen systemansvarlige, beslutningstagere og brugere, både ved opståede probler, nye behov, videreudvikling og vedligehold.
+Med en samlet og koordineret registrering af organisationens datasæt kan organisationen eksempelvis få styr på hvilke data der er i organisationen, hvad de anvendes til, hvilke services der benyttes, hvilke datasæt der er forbundne og til kontrakter og kontakter.
+Et organisatorisk datasætkatalog hjælper på tværs af organisationens systemansvarlige, beslutningstagere og brugere, både ved opståede problemer, nye behov, videreudvikling og vedligehold.
 Uden et vedligeholdt overblik over organisationens datasæt vil søgning efter eksempelvis data i anden del af organisationen end brugeren selv, dataansvarlige eller dokumentation være både tidskrævende og med usikkert resultat.
 
 ### Anvendelsesscenarie 2: Organisationers eksternt rettede datasætkatalog
 Mange data deles allerede i dag mellem organisationer, både private og offentlige. Uanset om de data der stilles til rådighed for andre er fuldt og åbent tilgængelige for alle eller om de er beskyttet af adgangs- eller betalingskrav, så er behovet for troværdige og lettilgængelige informationer om de delte data mindst lige så stort som internt i en organisation.
 Særligt gælder det at information om en organisations tilgængelige datasæt kan bidrage til mere effektiv deling af data og reducere opbygning af redundante datasæt i egen organisation.
-Overblik over eksisterende datasæt kan også sikre at en organisation ikke unødigt gentager et indsamlings og/eller udviklingsarbejde der allerede er tilgængeligt i anden organisation.
+Overblik over eksisterende datasæt kan også sikre at en organisation ikke unødigt gentager et indsamlings og/eller udviklingsarbejde der allerede er tilgængeligt i en anden organisation.
 
 ### Anvendelsesscenarie 3: Fællesorganisatorisk datasætkatalog
 Nytteværdien af et katalog over datasæt af den type der beskrives i anvendelsesscenarie 2, kan øges væsentligt ved at indgå i et informationsfællesskab om datasæt. Ved at oprette et fællesorganisatorisk katalog kan brugerne tilbydes et sted at søge informationer.
@@ -240,7 +240,7 @@ Domænespecifikke datasætkataloger kan forventes at have registreringsbehov der
 
 #### Anvendelsesscenarie 3.2: Nationalt datasætkatalog
 Et nationalt katalog kræver særlige løsninger for at kunne rumme den bredde af datasæt der må forventes at blive indholdet. 
-Blandt andet kræves det at der anvendes en tværgående taksonomi 
+Blandt andet kræves det at der anvendes en tværgående taksonomi. 
 #### Anvendelsesscenarie 3.3: Internationalt datasætkatalog
 Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har derfor som udgangspunkt til hensigt at gøre data mere søgbare på tværs af grænser og sektorer. Det er også hensigten at danske metadata skal kunne gøres tilgængelige i den europæisk dataportal. For at øge søgbarheden af danske data bør tekstuelle beskrivelser forsøges oversat til engelsk i videst muligt omfang.
 
@@ -269,7 +269,7 @@ DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt o
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf).
 
 * **Obligatorisk** (Mandatory): informationen SKAL angives
-* **Anbefalet** (Recommended): informationen BØR bør angives hvis den er tilgængelig
+* **Anbefalet** (Recommended): informationen BØR angives hvis den er tilgængelig
 * **Valgfri** (Optional): informationen KAN angives  
 
 ### Forskellige visninger af DCAT-AP-DK (minimumsmodel)
@@ -284,7 +284,7 @@ viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber 
 Issue: Behov for formidling af minimumsmodel. Se [https://github.com/digst/DCAT-AP-DK/issues/20](https://github.com/digst/DCAT-AP-DK/issues/20)
 
 ### Afvigelser ift. DCAT-AP
-Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses herunder afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
+Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 #### Ændringer af kravniveau
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
@@ -295,14 +295,14 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP
 * Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
 * Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
 
-Issue: Er der behov for at slække på kraviveauet for dct:temporal fra 'Anbefalet' til 'Valgfri'?
+Issue: Er der behov for at slække på kravniveauet for dct:temporal fra 'Anbefalet' til 'Valgfri'?
 
 #### Tilføjelser
 Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: forvaltningsopgave (dcat-dk:publicAdministrativeTaskType)
 * Datasæt: dataansvarlig organisation (frbr:responsibleEntity) 
-* Datasæt: bidragsyder (dct:contributor
+* Datasæt: bidragsyder (dct:contributor)
 * Datasæt: vedligeholder (schema:maintainer)
 * Datasæt: hjemmel (cv:hasLegalResource)
 * Datasæt: betalingspålagt (dcat-dk:paymentImposed)
@@ -334,7 +334,7 @@ Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i 
 # Oversigt over anvendelsesprofilen
 
 ## Diagram 
-Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram 
+Anvendelsesprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram 
 
 <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img src="img/Figur-DCAT-AP-DK-v2-UML.png" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
 
@@ -371,7 +371,7 @@ Anvendelseprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram
 DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Se også [begrebslisten](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste) med yderligere information.
 
 ## Katalog
-Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.
+Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.
 
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
@@ -388,7 +388,7 @@ En distribution (dcat:Distribution) er en specifik repræsentation af et datasæ
 En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
 
 ## Katalogpost 
-En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har opført ressourcen til kataloget og hvornår ressourcen blev opført. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
+En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
 
 Issue: Oversættelse af DCAT - og termen 'kurateret' - drøftes her [https://github.com/digst/DCAT-AP-DK/issues/9](https://github.com/digst/DCAT-AP-DK/issues/9)
 
