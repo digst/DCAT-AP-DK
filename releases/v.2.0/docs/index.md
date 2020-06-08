@@ -145,7 +145,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.0 (udkast)
-Date: 2019-06-03
+Date: 2019-06-08
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -402,6 +402,7 @@ Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 			
 ## Klasse: Katalog (Catalog) 
+<img src="img/Katalog.png" alt="Katalog">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Catalog</dd>
@@ -416,9 +417,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
-**UML-visualisering af klassen Katalog:**	
 
-<img src="img/Katalog.png" alt="Katalog">
+
 	 
 **Klassens egenskaber:**	
 
@@ -773,6 +773,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 </dl>	
 			
 ## Klasse: Katalogpost (Catalog Record) 
+<img src="img/Katalogpost.png" alt="Katalogpost">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#CatalogRecord</dd>
@@ -787,9 +788,8 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Katalogpost:**	
 
-<img src="img/Katalogpost.png" alt="Katalogpost">
+
 	 
 **Klassens egenskaber:**	
 
@@ -974,6 +974,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 </dl>	
 			
 ## Klasse: Datasæt (Dataset) 
+<img src="img/Datas%C3%A6t.png" alt="Datasæt">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
@@ -992,9 +993,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 Issue: Vedr. dansk anvendelsesnote: se [https://github.com/digst/DCAT-AP-DK/issues/19](https://github.com/digst/DCAT-AP-DK/issues/19)
 
 
-**UML-visualisering af klassen Datasæt:**	
 
-<img src="img/Datas%C3%A6t.png" alt="Datasæt">
 	 
 **Klassens egenskaber:**	
 
@@ -1886,6 +1885,7 @@ Issue: Vedr. aktørrelationer: Se [https://github.com/digst/DCAT-AP-DK/issues/5]
 </dl>	
 			
 ## Klasse: Distribution (Distribution) 
+<img src="img/Distribution.png" alt="Distribution">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
@@ -1901,9 +1901,8 @@ Issue: Vedr. aktørrelationer: Se [https://github.com/digst/DCAT-AP-DK/issues/5]
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
-**UML-visualisering af klassen Distribution:**	
 
-<img src="img/Distribution.png" alt="Distribution">
+
 	 
 **Klassens egenskaber:**	
 
@@ -2368,6 +2367,7 @@ Issue: Vedr. medietyper se: https://github.com/digst/DCAT-AP-DK/issues/12
 </dl>	
 			
 ## Klasse: Datatjeneste (Data Service) 
+<img src="img/Datatjeneste.png" alt="Datatjeneste">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#DataService</dd>
@@ -2385,10 +2385,6 @@ Issue: Vedr. medietyper se: https://github.com/digst/DCAT-AP-DK/issues/12
 
 Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/digst/DCAT-AP-DK/issues/23](https://github.com/digst/DCAT-AP-DK/issues/23)
 
-
-**UML-visualisering af klassen Datatjeneste:**	
-
-<img src="img/Datatjeneste.png" alt="Datatjeneste">
 	 
 **Klassens egenskaber:**	
 
@@ -2535,6 +2531,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Aktør (Agent) 
+<img src="img/Akt%C3%B8r.png" alt="Aktør">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
@@ -2549,9 +2546,8 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
-**UML-visualisering af klassen Aktør:**	
 
-<img src="img/Akt%C3%B8r.png" alt="Aktør">
+
 	 
 **Klassens egenskaber:**	
 
@@ -2598,6 +2594,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Begrebssystem (Category Scheme) 
+<img src="img/Begrebssystem.png" alt="Begrebssystem">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme</dd>
@@ -2612,9 +2609,8 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
-**UML-visualisering af klassen Begrebssystem:**	
 
-<img src="img/Begrebssystem.png" alt="Begrebssystem">
+
 	 
 **Klassens egenskaber:**	
 
@@ -2641,6 +2637,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Begreb (Category) 
+<img src="img/Begreb.png" alt="Begreb">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
@@ -2655,9 +2652,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
-**UML-visualisering af klassen Begreb:**	
 
-<img src="img/Begreb.png" alt="Begreb">
 	 
 **Klassens egenskaber:**	
 
@@ -2684,6 +2679,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Checksum (Checksum) 
+<img src="img/Checksum.png" alt="Checksum">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#Checksum</dd>
@@ -2698,9 +2694,8 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Checksum:**	
 
-<img src="img/Checksum.png" alt="Checksum">
+
 	 
 **Klassens egenskaber:**	
 
@@ -2745,6 +2740,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Identifikator (Identifier) 
+<img src="img/Identifikator.png" alt="Identifikator">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#Identifier</dd>
@@ -2759,9 +2755,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Identifikator:**	
 
-<img src="img/Identifikator.png" alt="Identifikator">
 	 
 **Klassens egenskaber:**	
 
@@ -2786,6 +2780,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Licensdokument (Licence Document) 
+<img src="img/Licensdokument.png" alt="Licensdokument">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/LicenseDocument</dd>
@@ -2800,9 +2795,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
-**UML-visualisering af klassen Licensdokument:**	
 
-<img src="img/Licensdokument.png" alt="Licensdokument">
 	 
 **Klassens egenskaber:**	
 
@@ -2829,6 +2822,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Lokation (Location) 
+<img src="img/Lokation.png" alt="Lokation">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/Location</dd>
@@ -2843,9 +2837,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Lokation:**	
 
-<img src="img/Lokation.png" alt="Lokation">
 	 
 **Klassens egenskaber:**	
 
@@ -2910,6 +2902,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Periode (PeriodOfTime) 
+<img src="img/Periode.png" alt="Periode">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/PeriodOfTime</dd>
@@ -2924,9 +2917,8 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Periode:**	
 
-<img src="img/Periode.png" alt="Periode">
+
 	 
 **Klassens egenskaber:**	
 
@@ -3013,6 +3005,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Relation (Relationship) 
+<img src="img/Relation.png" alt="Relation">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Relationship</dd>
@@ -3027,9 +3020,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Relation:**	
 
-<img src="img/Relation.png" alt="Relation">
 	 
 **Klassens egenskaber:**	
 
@@ -3076,6 +3067,7 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 </dl>	
 			
 ## Klasse: Frekvens (Frequency) 
+<img src="img/Frekvens.png" alt="Frekvens">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/Frequency</dd>
@@ -3090,12 +3082,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Frekvens:**	
 
-<img src="img/Frekvens.png" alt="Frekvens">
 	
 			
 ## Klasse: Lingvistisk system (Linguistic system) 
+<img src="img/Lingvistisk%20system.png" alt="Lingvistisk system">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/LinguisticSystem</dd>
@@ -3110,12 +3101,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Lingvistisk system:**	
-
-<img src="img/Lingvistisk%20system.png" alt="Lingvistisk system">
 	
 			
 ## Klasse: Medietype (Media Type) 
+<img src="img/Medietype.png" alt="Medietype">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/MediaType</dd>
@@ -3128,12 +3117,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Medietype:**	
-
-<img src="img/Medietype.png" alt="Medietype">
 	
 			
 ## Klasse: Udgivertype (Udkast) (Publisher Type) 
+<img src="img/Udgivertype%20(Udkast).png" alt="Udgivertype (Udkast)">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
@@ -3146,12 +3133,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Udgivertype (Udkast):**	
-
-<img src="img/Udgivertype%20(Udkast).png" alt="Udgivertype (Udkast)">
 	
 			
 ## Klasse: Status (Udkast) (Status) 
+<img src="img/Status%20(Udkast).png" alt="Status (Udkast)">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
@@ -3164,12 +3149,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Status (Udkast):**	
 
-<img src="img/Status%20(Udkast).png" alt="Status (Udkast)">
 	
 			
 ## Klasse: Rolle (Role) 
+<img src="img/Rolle.png" alt="Rolle">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Role</dd>
@@ -3182,12 +3166,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Rolle:**	
 
-<img src="img/Rolle.png" alt="Rolle">
 	
 			
 ## Klasse: Proveniensudsagn (Provenance Statement) 
+<img src="img/Proveniensudsagn.png" alt="Proveniensudsagn">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/ProvenanceStatement</dd>
@@ -3202,12 +3185,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Proveniensudsagn:**	
 
-<img src="img/Proveniensudsagn.png" alt="Proveniensudsagn">
 	
 			
 ## Klasse: Rettighedsudsagn (Rights Statement) 
+<img src="img/Rettighedsudsagn.png" alt="Rettighedsudsagn">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/RightsStatement</dd>
@@ -3222,12 +3204,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Rettighedsudsagn:**	
-
-<img src="img/Rettighedsudsagn.png" alt="Rettighedsudsagn">
 	
 			
 ## Klasse: Dokument (Document) 
+<img src="img/Dokument.png" alt="Dokument">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/spec/#term_Document</dd>
@@ -3242,12 +3222,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Dokument:**	
-
-<img src="img/Dokument.png" alt="Dokument">
 	
 			
 ## Klasse: Specifikation (Standard) 
+<img src="img/Specifikation.png" alt="Specifikation">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/Standard</dd>
@@ -3262,12 +3240,11 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Specifikation:**	
 
-<img src="img/Specifikation.png" alt="Specifikation">
 	
 			
 ## Klasse: Virtuelt visitkort (Kind) 
+<img src="img/Virtuelt%20visitkort.png" alt="Virtuelt visitkort">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2006/vcard/ns#Kind</dd>
@@ -3282,12 +3259,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Virtuelt visitkort:**	
-
-<img src="img/Virtuelt%20visitkort.png" alt="Virtuelt visitkort">
 	
 			
 ## Klasse: Anvendelse DK (Usage) 
+<img src="img/Usage.png" alt="Anvendelse DK">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/duv#Usage</dd>
@@ -3302,12 +3277,10 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Anvendelse DK:**	
 
-<img src="img/Usage.png" alt="Anvendelse DK">
-	
 			
 ## Klasse: Kvalitetsmetadata DK (Quality Metadata) 
+<img src="img/QualityMetadata.png" alt="Kvalitetsmetadata DK">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
@@ -3322,10 +3295,6 @@ Issue: Behov for udvidet beskrivelse af datatjenester? Se [https://github.com/di
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-**UML-visualisering af klassen Kvalitetsmetadata DK:**	
-
-<img src="img/QualityMetadata.png" alt="Kvalitetsmetadata DK">
-	
 
 
 # Klassifikationer
