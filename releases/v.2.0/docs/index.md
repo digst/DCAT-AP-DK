@@ -214,7 +214,7 @@ De to primære funktioner udfoldes i det følgende i disse anvendelsesscenarier:
 I takt med at en organisations portefølje af datasæt stiger, øges behovet for en formel og kontrolleret håndtering af alle anvendelsesaspekter for de pågældende datasæt.
 Med en samlet og koordineret registrering af organisationens datasæt kan organisationen eksempelvis få styr på hvilke data der er i organisationen, hvad de anvendes til, hvilke services der benyttes, hvilke datasæt der er forbundne og til kontrakter og kontakter.
 Et organisatorisk datasætkatalog hjælper på tværs af organisationens systemansvarlige, beslutningstagere og brugere, både ved opståede problemer, nye behov, videreudvikling og vedligehold.
-Uden et vedligeholdt overblik over organisationens datasæt vil søgning efter eksempelvis data i anden del af organisationen end brugeren selv, dataansvarlige eller dokumentation være både tidskrævende og med usikkert resultat.
+Søgninger efter organisationens datasæt, dataansvarlige eller dokumentation, bliver både tidskrævende og usikker, hvis der ikke eksisterer et vedligeholdt overblik.
 
 ### Anvendelsesscenarie 2: Organisationers eksternt rettede datasætkatalog
 Mange data deles allerede i dag mellem organisationer, både private og offentlige. Uanset om de data der stilles til rådighed for andre er fuldt og åbent tilgængelige for alle eller om de er beskyttet af adgangs- eller betalingskrav, så er behovet for troværdige og lettilgængelige informationer om de delte data mindst lige så stort som internt i en organisation.
@@ -225,7 +225,7 @@ Overblik over eksisterende datasæt kan også sikre at en organisation ikke unø
 Nytteværdien af et katalog over datasæt af den type der beskrives i anvendelsesscenarie 2, kan øges væsentligt ved at indgå i et informationsfællesskab om datasæt. Ved at oprette et fællesorganisatorisk katalog kan brugerne tilbydes et sted at søge informationer.
 Hvor det i anvendelsesscenarie 2 var klart for brugeren hvilken organisation der havde de beskrevne datasæt kræves der i de fællesorganisatoriske lidt flere organisatoriske oplysninger. 
 Et fællesorganisatorisk katalog samler udvalgte informationer om organisationers datasæt. Enten gennem etablerede dataportalers webservices, via indsamling fra organisationers metadataopmærkede websider eller ved direkte input fra datasæt ansvarlige.
-Noter at en platform for et fællesorganisatorisk datasætkatalog samtidigt kan fungere som de enkelte organisationers oversigt over egne data, inklusive datasæt der ikke ønskes delt informationer om.
+Bemærk at en platform for et fællesorganisatorisk datasætkatalog også kan anvendes som den enkelte organisations overblik over egne data – også de data, der ikke ønskes delt med andre.
 
 Fællesorganisatoriske datasætkataloger har tre specialiseringer:
 * Det domænespecifikke katalog
