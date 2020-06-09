@@ -130,14 +130,17 @@ Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Bidragsyder, Bidragsydere 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
-Editor: [Styrelsen for Dataforsyning og Effektivisering]
-Editor: [Styrelsen for Arbejdsmarked og Rekruttering]
 Editor: [Geodatastyrelsen]
 Editor: [Erhvervsstyrelsen]
 Editor: [Danmarks Miljøportal]
 Editor: [Danmarks Statistik]
 Editor: [KL]
 Editor: [KOMBIT]
+Editor: [Københavns Kommune]
+Editor: [Miljøstyrelsen]
+Editor: [Region Midtjylland]
+Editor: [Styrelsen for Arbejdsmarked og Rekruttering]
+Editor: [Styrelsen for Dataforsyning og Effektivisering]
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
