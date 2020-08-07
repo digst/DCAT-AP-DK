@@ -29,7 +29,6 @@ ex:catalog
   dct:publisher ex:agent-001 ;
   dct:title "Katalog 001"@da ;
   dct:description "En beskrivelse af Katalog 001";
-  foaf:homepage <http://example.org/homepage>;
   dct:issued "2011-12-05"^^xsd:date ;
   dct:modified "2011-12-15"^^xsd:date ;  
   dcat:record ex:cataloguerecord-001;
