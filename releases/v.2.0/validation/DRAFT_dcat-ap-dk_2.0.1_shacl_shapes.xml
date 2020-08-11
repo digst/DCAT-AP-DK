@@ -521,7 +521,7 @@
 	    <sh:name xml:lang="da">identifikator</sh:name>	
 		<sh:name xml:lang="en">identifier</sh:name>		
 		<sh:description xml:lang="en">This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator i kontekst af kataloget</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver den primære identifikator for datasættet, for eksempel en URI eller anden identifikator i kontekst af kataloget.</sh:description>	
 		<rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">En entydig reference til ressourcen i en givet kontekst.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
