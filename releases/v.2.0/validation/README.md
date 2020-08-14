@@ -9,7 +9,7 @@ I SHACL Playground kan indholdet af TTL-filen her indsættes (til venstre) hvore
 
 Relevante links:
 
-* SHACL Playground: https://shacl.org/playground/
+* SHACL Playground: https://shacl.org/playground/ (se evt. også [TopQuadrants  SHACL Play!](http://shacl-play.sparna.fr/))
 * RDF validator: https://www.w3.org/RDF/Validator/
 * DCAT-AP validator: https://www.itb.ec.europa.eu/shacl/dcat-ap/upload
 * RDF converter: http://www.easyrdf.org/converter
