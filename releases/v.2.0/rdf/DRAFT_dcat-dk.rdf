@@ -3,13 +3,13 @@
 <!-- DRAFT_dcat-dk.rdf -->
 
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dcat="http://www.w3.org/ns/dcat#"
-     xmlns:dcat-ap="http://data.europa.eu/r5r/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dcat-ap="http://data.europa.eu/r5r/"
 		 xmlns:dcat-ap-dk="https://data.gov.dk/model/profile/dcat-ap-dk"
 		 xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk"
 		 xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:dc="http://purl.org/dc/terms/"
+		 xmlns:dc="http://purl.org/dc/terms/"
 		 xmlns:owl="http://www.w3.org/2002/07/owl#" 
 		 xmlns:cv="http://data.europa.eu/m8g/"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -26,7 +26,7 @@
 		<rdfs:comment xml:lang="en">Egenskaber til DCAT-AP-DK til anvendelse i dansk fællesoffentlig regi</rdfs:comment>			
 		<rdfs:comment xml:lang="en">Properties for DCAT-AP-DK for application in the Danish Public Sector</rdfs:comment>
 		<dc:publisher>Digitaliseringsstyrelsen</dc:publisher>
-		<adms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+		<adms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment,"/>
 		<voag:hasApprovalStatus rdf:resource="https://data.gov.dk/concept/core/ApprovalStatus/AwaitingApproval"/>
 		<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-18</dc:modified>
 		<dc:theme>https://form-online.dk/opgavenoegle/16/#16.05.07</dc:theme>	
@@ -34,8 +34,7 @@
 		<cv:hasLegalResource rdf:resource="http://data.europa.eu/eli/reg/2016/679/oj"/>
 	</owl:Ontology>
 
-	<rdf:Property rdf:about="https://data.gov.dk/model/core/dcat-dk/datasetresponsibleorganisation">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty" />
+	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/datasetresponsibleorganisation">
 		<skos:prefLabel xml:lang="da">datasætansvarlig organisation</skos:prefLabel>
 		<skos:prefLabel xml:lang="da">dataset responsible organisation</skos:prefLabel>
 		<skos:altLabel xml:lang="da">dataejer</skos:altLabel>	
@@ -46,21 +45,19 @@
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/> 			<!-- OBS: Organisation som range ellers andet navn/uri til egenskab? -->		
 		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk"/>
-	</rdf:Property>
+	</owl:ObjectProperty>
 
-	<rdf:Property rdf:about="https://data.gov.dk/concept/core/tasktype/tasktype">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-	    <skos:prefLabel xml:lang="en">public administrative task type</skos:prefLabel>	 	  
-	    <skos:prefLabel xml:lang="da">forvaltningsopgave</skos:prefLabel>	
+	<owl:ObjectProperty rdf:about="https://data.gov.dk/concept/core/tasktype/tasktype">
+	    	<skos:prefLabel xml:lang="en">public administrative task type</skos:prefLabel>	 	  
+	    	<skos:prefLabel xml:lang="da">forvaltningsopgave</skos:prefLabel>	
 		<rdfs:comment xml:lang="en">angivelse af type af opgave, der udføres af offentlige organisationer</rdfs:comment>	
 		<rdfs:comment xml:lang="da">specification of task type perfomed by the public administration</rdfs:comment>					
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset" />
 		<rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>			
 		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk"/>
-	</rdf:Property>
+	</owl:ObjectProperty>
 
-	<rdf:Property rdf:about="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>	
+	<owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents">
 		<skos:prefLabel xml:lang="da">betalingspålagt</skos:prefLabel>
 		<skos:prefLabel xml:lang="en">payment imposed</skos:prefLabel>	
 		<rdfs:comment xml:lang="en">specification of whether payment is imposed on the catalogued resource or not</rdfs:comment>
@@ -68,26 +65,24 @@
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>		
 		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk"/>
-	</rdf:Property>
+	</owl:DatatypeProperty>
 	
-	<rdf:Property rdf:about="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"> <!-- OBS: Tjek Special ontologien -->
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>	
-	    <skos:prefLabel xml:lang="en">personal data category</skos:prefLabel>	 	  
-	    <skos:prefLabel xml:lang="da">personoplysningskategori</skos:prefLabel>	
+	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"> <!-- har Special Ontologien ikke etableret en stabil egenskab nu -->
+	    	<skos:prefLabel xml:lang="en">personal data category</skos:prefLabel>	 	  
+	    	<skos:prefLabel xml:lang="da">personoplysningskategori</skos:prefLabel>	
 		<rdfs:comment xml:lang="en">specification of a relation to specific personal data category</rdfs:comment>	
 		<rdfs:comment xml:lang="da">angivelse af en relation til en bestemt personoplysningskategori</rdfs:comment>		
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>		
-	</rdf:Property>
+	</owl:ObjectProperty>
 
-	<rdf:Property rdf:about="https://data.gov.dk/model/core/dcat-dk/confidentialityType">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>	
-	  <skos:prefLabel xml:lang="en">confidentiality type </skos:prefLabel>	 	  
-	  <skos:prefLabel xml:lang="da">fortrolighedsgrad </skos:prefLabel>		
+	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/confidentialityType">
+	    	<skos:prefLabel xml:lang="en">confidentiality type </skos:prefLabel>	 	  
+	    	<skos:prefLabel xml:lang="da">fortrolighedsgrad </skos:prefLabel>		
 		<rdfs:comment xml:lang="en">specification of the extent by which information contained in the resource can be disclosed.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives. </rdfs:comment>	
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
 		<rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>		
-	</rdf:Property>
+	</owl:ObjectProperty>
 	  
 </rdf:RDF> 
