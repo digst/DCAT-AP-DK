@@ -153,7 +153,7 @@
 dcat:Catalog
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:comment "En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). "@da ;   
+  rdfs:comment "En udvalgt og arrangeret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog). "@da ;   
   rdfs:comment "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en ;
   rdfs:comment "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es ;
   rdfs:comment "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it ;
@@ -178,7 +178,7 @@ dcat:Catalog
       owl:allValuesFrom dcat:Resource ;
       owl:onProperty dct:hasPart ;
     ] ;
-  skos:definition "En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog)."@da ;       
+  skos:definition "En samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog)."@da ;       
   skos:definition "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en ;
   skos:definition "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es ;
   skos:definition "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it ;
@@ -253,6 +253,7 @@ dcat:DataService
   rdfs:comment "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es ;
   rdfs:comment "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it ;
   rdfs:label "Datatjeneste"@da ;  
+  skos:altLabel "Dataservice"@da ;    
   rdfs:label "Data service"@en ;
   rdfs:label "Servizio di dati"@it ;
   rdfs:label "Servicio de datos"@es ;
@@ -288,7 +289,7 @@ dcat:DataService
 dcat:Dataset
   a rdfs:Class ;
   a owl:Class ;
-  rdfs:comment "En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;    
+  rdfs:comment "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;    
   rdfs:comment "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja ;
   rdfs:comment "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en ;
   rdfs:comment "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs ;
@@ -299,6 +300,7 @@ dcat:Dataset
   rdfs:comment "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
   rdfs:label "Datasæt"@da ;  
+  skos:altLabel "Datasamling"@da ;    
   rdfs:label "Conjunto de datos"@es ;
   rdfs:label "Dataset"@en ;
   rdfs:label "Dataset"@it ;
@@ -314,7 +316,7 @@ dcat:Dataset
   skos:changeNote "2018-02 - subclass of dctype:Dataset removed because scope of dcat:Dataset includes several other types from the dctype vocabulary."@en ;
   skos:changeNote "2018-02 - sottoclasse di dctype:Dataset rimosso perché l'ambito di dcat:Dataset include diversi altri tipi dal vocabolario dctype."@it ;
   skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja ;
-  skos:definition "En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;    
+  skos:definition "En samling a data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;    
   skos:definition "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en ;
   skos:definition "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs ;
   skos:definition "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it ;
@@ -348,6 +350,9 @@ dcat:Distribution
   rdfs:comment "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
   rdfs:label "Distribution"@da ;  
+  skos:altLabel "Datarepræsentation"@da ;  
+  skos:altLabel "Datamanifestation"@da ;    
+  skos:altLabel "Dataudstilling"@da ;    
   rdfs:label "Distribuce"@cs ;
   rdfs:label "Distribución"@es ;
   rdfs:label "Distribution"@en ;
@@ -409,7 +414,7 @@ dcat:Relationship
 .
 dcat:Resource
   a owl:Class ;
-  rdfs:comment "Ressource udgivet eller kurateret af en enkelt aktør."@da ;     
+  rdfs:comment "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør."@da ;     
   rdfs:comment "Recurso publicado o curado por un agente único."@es ;
   rdfs:comment "Resource published or curated by a single agent."@en ;
   rdfs:comment "Risorsa pubblicata o curata da un singolo agente."@it ;
@@ -424,7 +429,7 @@ dcat:Resource
   skos:changeNote "Nová třída přidaná ve verzi DCAT 2.0."@cs ;
   skos:changeNote "Nueva clase agregada en DCAT 2.0."@es ;
   skos:changeNote "Nuova classe aggiunta in DCAT 2.0."@it ;
-  skos:definition "Ressource udgivet eller kurateret af en enkelt aktør."@da ;    
+  skos:definition "Ressource udgivet eller udvalgt og arrangeret af en enkelt aktør."@da ;    
   skos:definition "Recurso publicado o curado por un agente único."@es ;
   skos:definition "Resource published or curated by a single agent."@en ;
   skos:definition "Risorsa pubblicata o curata da un singolo agente."@it ;
@@ -652,6 +657,7 @@ dcat:centroid
   a owl:DatatypeProperty ;
   rdfs:domain dct:Location ;
   rdfs:label "geometrisk tyngdepunkt"@da ;  
+  skos:altLabel "centroide"@da ;   
   rdfs:label "centroid"@cs ;
   rdfs:label "centroid"@en ;
   rdfs:label "centroide"@it ;
@@ -754,7 +760,8 @@ dcat:dataset
   rdfs:comment "カタログの一部であるデータセット。"@ja ;
   rdfs:domain dcat:Catalog ;
   rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
-  rdfs:label "datasæt"@da ;  
+  rdfs:label "datasæt"@da ; 
+  skos:altLabel "datasamling"@da ;     
   rdfs:label "conjunto de datos"@es ;
   rdfs:label "dataset"@en ;
   rdfs:label "dataset"@it ;
