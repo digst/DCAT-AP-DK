@@ -44,17 +44,7 @@
 		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk/"/>
 	</owl:ObjectProperty>
 
-	<owl:ObjectProperty rdf:about="https://data.gov.dk/concept/core/tasktype/taskType"> 		<!-- Peter tjekker - evt. subProperty af dct:theme -->
-	    	<skos:prefLabel xml:lang="en">public administrative task type</skos:prefLabel>	 	  
-	    	<skos:prefLabel xml:lang="da">forvaltningsopgave</skos:prefLabel>	
-		<rdfs:comment xml:lang="en">angivelse af type af opgave, der udføres af offentlige organisationer</rdfs:comment>	
-		<rdfs:comment xml:lang="da">specification of task type perfomed by the public administration</rdfs:comment>					
-		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-		<rdfs:range rdf:resource="https://data.gov.dk/concept/core/tasktype/TaskType"/>			
-		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk/"/>	
-	</owl:ObjectProperty>
-
-	<owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/paymentImposedContent">	<!-- Peter tjekker -->
+	<owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/paymentImposedContent">	
 		<skos:prefLabel xml:lang="da">betalingspålagt</skos:prefLabel>
 		<skos:prefLabel xml:lang="en">payment imposed</skos:prefLabel>	
 		<rdfs:comment xml:lang="en">specification of whether payment is imposed on the catalogued resource or not</rdfs:comment>
@@ -65,23 +55,23 @@
 	</owl:DatatypeProperty>
 	
 					
-	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"> <!-- har Special Ontologien ikke etableret en stabil egenskab nu --><!-- Peter tjekker -->
+	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"> <!-- anvend på sigt https://dpvcg.github.io/dpv/#dpv:hasPersonalDataCategory (dog pt. stadig under udvikling)  -->
 	    	<skos:prefLabel xml:lang="en">personal data category</skos:prefLabel>	 	  
 	    	<skos:prefLabel xml:lang="da">personoplysningskategori</skos:prefLabel>	
 		<rdfs:comment xml:lang="en">specification of a relation to specific personal data category</rdfs:comment>	
 		<rdfs:comment xml:lang="da">angivelse af en relation til en bestemt personoplysningskategori</rdfs:comment>		
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-		<rdfs:range rdf:resource="https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory"/>		<!-- Peter tjekker -->
+		<rdfs:range rdf:resource="https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory"/>		
 		<rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk/"/>		
 	</owl:ObjectProperty>
 
-	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/confidentialityType"> <!-- Peter tjekker -->
+	<owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/confidentialityType"> 
 	    	<skos:prefLabel xml:lang="en">confidentiality type </skos:prefLabel>	 	  
 	    	<skos:prefLabel xml:lang="da">fortrolighedsgrad </skos:prefLabel>		
-		<rdfs:comment xml:lang="en">specification of the extent by which information contained in the resource can be disclosed.</rdfs:comment>		
+		<rdfs:comment xml:lang="en">specification of the extent by which information contained in the dataset can be disclosed.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives. </rdfs:comment>	
 		<rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-		<rdfs:range rdf:resource="https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType"/>		<!-- Peter tjekker -->
+		<rdfs:range rdf:resource="https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType"/>		
 	</owl:ObjectProperty>
 	  
 </rdf:RDF> 
