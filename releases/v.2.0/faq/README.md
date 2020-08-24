@@ -9,13 +9,14 @@ I FAQ'en finder du svar på spørgsmål vedrørende beskrivelse af datasæt og d
 ## Hvordan finder nye anvendere frem til et udgivet datasæt
 Anvendelse af DCAT og bagvedliggende metamodel -->
 
-### Hvordan giver man datasæt gode titler?
+### Hvordan giver man datasæt gode titler og beskrivelser?
 https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#1-bra-namn-ska-vara-korta-och-beskrivande
-
-### Hvordan skriver man en god tekstbaseret beskrivelse af et datasæt?
+https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#2-%C3%B6vers%C3%A4tt-fritextf%C3%A4lt-till-andra-spr%C3%A5k
 
 ## Hvorfor skal man oprette en identifikator og hvordan oprettes de?
-Læs mere her: https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier (Revision på vej) ; https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
+Læs mere her: https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier (Revision på vej) ; 
+https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
+https://joinup.ec.europa.eu/release/dcat-ap-how-use-identifiers-datasets-and-distributions
 
 ### Hvordan skelner man mellem mulighederne for angivelse af hvordan man får adgang til datasættet?
 Destinationsside, adgangs-URL, download-URL etc.
