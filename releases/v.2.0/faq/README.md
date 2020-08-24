@@ -22,7 +22,7 @@ https://joinup.ec.europa.eu/release/dcat-ap-how-use-identifiers-datasets-and-dis
 Destinationsside, adgangs-URL, download-URL etc.
 
 ### Hvordan skelner man mellem de forskellige aktørroller?
-Dataansvarlig organisation, udgiver, skaber, bidragsyder, vedligeholder
+Datasætansvarlig organisation, udgiver, skaber, bidragsyder, vedligeholder
 
 ## Hvordan sikrer man god datakvalitet i de udgivne datasæt
 Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) (Vejledning til deklaration af datasæt med kernedimensioner vers. 1.0.0) anvender også DQV.
