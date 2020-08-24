@@ -31,7 +31,6 @@
     <foaf:page rdf:resource="https://github.com/digst/DCAT-AP-DK"/>
     <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.1_shacl_shapes"/>
     <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>		
-
   </rdf:Description>
 
 
@@ -54,7 +53,7 @@
 		<sh:name xml:lang="en">title</sh:name>
 		<sh:name xml:lang="da">titel</sh:name>		 		
 		<sh:description xml:lang="en">This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. </sh:description>		
+		<sh:description xml:lang="da">Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan optræde én gang for hver sprogvariant af titlen. </sh:description>		
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -70,7 +69,7 @@
 		<sh:name xml:lang="en">description</sh:name>
 		<sh:name xml:lang="da">beskrivelse</sh:name>	
 		<sh:description xml:lang="en">This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen</sh:description> 	
+		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</sh:description> 	
 		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -429,7 +428,7 @@
 		<sh:name xml:lang="en">title</sh:name>
 		<sh:name xml:lang="da">titel</sh:name>
 		<sh:description xml:lang="en">This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
+		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</sh:description>	 
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
 		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
@@ -444,7 +443,7 @@
 		<sh:name xml:lang="en">description</sh:name>
 		<sh:name xml:lang="da">beskrivelse</sh:name>
 		<sh:description xml:lang="en">This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen</sh:description> 	
+		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</sh:description> 	
 		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	 
 		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
@@ -554,7 +553,7 @@
 	    <sh:name xml:lang="en">title</sh:name>		  
 	    <sh:name xml:lang="da">titel</sh:name>	 
 		<sh:description xml:lang="en">This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
+		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</sh:description>	 
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -570,7 +569,7 @@
 	    <sh:name xml:lang="en">description</sh:name>	  
 	    <sh:name xml:lang="da">beskrivelse</sh:name>
 		<sh:description xml:lang="en">This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.</sh:description>		
+		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</sh:description>		
 		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>		
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -697,8 +696,8 @@
 	    <sh:name xml:lang="da">uddrag</sh:name>	
 		<sh:description xml:lang="en">This property refers to a sample distribution of the dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et uddrag af en distribution af datasættet</sh:description>		
-		<rdfs:comment xml:lang="en">Links to a sample of an Asset (which is itself an Asset)</rdfs:comment>		<!-- WHY ADMS? -->	
-		<rdfs:comment xml:lang="da">Link til et uddrag af aktivet (som også selv udgør et aktiv)</rdfs:comment>			<!-- Rettelse i v. 2.0.1 -->
+		<rdfs:comment xml:lang="en">Links to a sample of an Asset (which is itself an Asset)</rdfs:comment>		<!-- https://github.com/SEMICeu/DCAT-AP/issues/156 -->
+		<rdfs:comment xml:lang="da">Link til et uddrag af aktivet (som også selv udgør et aktiv)</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#sample"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -746,7 +745,7 @@
 		<sh:description xml:lang="en">This property refers to a page or document about this Dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en webside eller et dokument som beskriver datasættet.</sh:description>	
 		<rdfs:comment xml:lang="en">A page or document about this thing.</rdfs:comment>	
-		<rdfs:comment xml:lang="da">En side eller et dokument vedrørende denne entitet.</rdfs:comment>			<!-- Rettelse i v. 2.0.1 -->	
+		<rdfs:comment xml:lang="da">En side eller et dokument vedrørende denne entitet.</rdfs:comment>			
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/page"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -760,34 +759,18 @@
 	    <sh:name xml:lang="en">theme/ category</sh:name>	 	  
 	    <sh:name xml:lang="da">emne</sh:name>	
 		<sh:description xml:lang="en">This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan have flere centrale emner. Til angivelse af emne skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan opmærkes med flere forskellige centrale emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</sh:description>	
 		<rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>		
-<!--    <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> -->
-        <sh:pattern>^http://publications.europa.eu/resource/authority/data-theme/</sh:pattern>
-        <sh:flags>i</sh:flags> <!-- ignore case -->	
+       <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> 
+ <!--   <sh:pattern>^http://publications.europa.eu/resource/authority/data-theme/</sh:pattern>
+        <sh:flags>i</sh:flags> -->	
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#theme"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+	<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
       </rdf:Description>
     </sh:property>
-	
-	
-    <sh:property>
-      <rdf:Description>
-	    <sh:name xml:lang="en">public administrative task type</sh:name>	 	  
-	    <sh:name xml:lang="da">forvaltningsopgave</sh:name>	
-		<sh:description xml:lang="en">This property refers to an administrative task type that formed the basis of the data collection. A dataset may be associated with multiple task types.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver en eller flere forvaltningsopgaver som har dannet grundlag for dataindsamlingen. Til angivelse af forvaltningsopgave skal klassifikationen FORM (https://www.form-online.dk/soegning) eller KLE (http://www.kle-online.dk/soegning) anvendes</sh:description>	
-		<rdfs:comment xml:lang="en">angivelse af type af opgave, der udføres af offentlige organisationer</rdfs:comment>	
-		<rdfs:comment xml:lang="da">specification of task type perfomed by the public administration</rdfs:comment>		
-		<sh:class rdf:resource="https://data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType"/> 
-        <sh:path rdf:resource="http://www.w3.org/ns/dcat#theme"/>
-        <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
-      </rdf:Description>
-    </sh:property>
-	
+		
 
     <sh:property>
       <rdf:Description>
@@ -799,7 +782,7 @@
 		<rdfs:comment xml:lang="da">Type set i forhold til ressourcens genre eller iboende karakter.</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> 
         <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
-<!--    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>  Incorrect cardinality in spec (but not in SHACL implementation) -->		
+<!--    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>    Se https://github.com/SEMICeu/DCAT-AP/issues/153-->		
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
       </rdf:Description>
@@ -1306,7 +1289,7 @@
 		<sh:name xml:lang="en">title</sh:name>
 		<sh:name xml:lang="da">titel</sh:name>	  
 		<sh:description xml:lang="en">This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
+		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</sh:description>	 
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
@@ -1322,7 +1305,7 @@
 	    <sh:name xml:lang="en">description</sh:name>		  
 	    <sh:name xml:lang="da">beskrivelse</sh:name>	
 		<sh:description xml:lang="en">This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af distributionen</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab giver en tekstbaseret beskrivelse af distributionen. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</sh:description>	
 		<rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">En forklaring af ressourcen.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
@@ -1667,7 +1650,7 @@
 	    <sh:name xml:lang="en">title</sh:name>		  
 	    <sh:name xml:lang="da">titel</sh:name>			  
 		<sh:description xml:lang="en">This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
+		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</sh:description>	 
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>		  
 		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>			  
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -1682,8 +1665,8 @@
       <rdf:Description>
 	    <sh:name xml:lang="en">endpoint description </sh:name>		  
 	    <sh:name xml:lang="da">endpointbeskrivelse</sh:name>			  
-		<sh:description xml:lang="en">This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med.</sh:description>	
+		<sh:description xml:lang="en">This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.</sh:description>
+		<sh:description xml:lang="da">Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. </sh:description>	
 		<rdfs:comment xml:lang="en">A description of the service end-point, including its operations, parameters etc.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
@@ -1778,7 +1761,7 @@
 	    <sh:name xml:lang="en">name</sh:name>		  
 	    <sh:name xml:lang="da">navn</sh:name>			  
 		<sh:description xml:lang="en">This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.</sh:description>	
 		<rdfs:comment xml:lang="en">A name for some thing.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">Et navn for noget</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -1828,7 +1811,7 @@
 	    <sh:name xml:lang="en">title</sh:name>		
 	    <sh:name xml:lang="da">titel</sh:name>	
 		<sh:description xml:lang="en">This property contains a name of the category scheme. May be repeated for different versions of the name</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.</sh:description>	 
+		<sh:description xml:lang="da">Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</sh:description>	 
 		<rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>		  
 		<rdfs:comment xml:lang="da">Et navn givet til ressourcen.</rdfs:comment>		
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
@@ -1856,7 +1839,7 @@
 	    <sh:name xml:lang="en">preferred label</sh:name>		  
 	    <sh:name xml:lang="da">foretrukken betegnelse</sh:name>			  
 		<sh:description xml:lang="en">This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.</sh:description>	  
+		<sh:description xml:lang="da">Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan optræde én gang for hver sprogvariant af betegnelsen.</sh:description>	  
 		<rdfs:comment xml:lang="en">The preferred lexical label for a resource, in a given language.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">Det foretrukne leksikalske udtryk for en ressource på et givet sprog.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
