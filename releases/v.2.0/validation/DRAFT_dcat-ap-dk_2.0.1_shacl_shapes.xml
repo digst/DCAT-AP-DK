@@ -21,7 +21,7 @@
     <dc:title>DCAT-AP-DK v.2.0.1 RDF/XML</dc:title>
     <owl:versionInfo>2.0.1</owl:versionInfo>
     <dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>
-    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-21</dc:modified>
+    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</dc:modified>
     <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>	
     <dc:publisher rdf:resource="http://digst.dk"/>
     <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>	
