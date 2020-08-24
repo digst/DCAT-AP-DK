@@ -1,7 +1,7 @@
 <!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-  <title>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</title>
+  <title>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</title>
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 <style data-fill-with="stylesheet">/******************************************************************************
  *                   Style sheet for the W3C specifications                   *
@@ -1221,7 +1221,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 19c1873c, updated Thu Jun 4 14:44:17 2020 -0700" name="generator">
+  <meta content="Bikeshed version 5f7b0e20, updated Tue Aug 18 15:46:28 2020 -0700" name="generator">
   <link href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/" rel="canonical">
 <style>
 @media print {
@@ -1498,16 +1498,15 @@ dfn > a.self-link::before      { content: "#"; }</style>
  <body class="h-entry">
   <div class="head">
    <p data-fill-with="logo"></p>
-   <h1>DCAT-AP-DK 2.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2019-06-08">8 June 2019</time></span></h2>
+   <h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2020-08-24">24 August 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
      <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/DCAT-AP-DK/issues/">GitHub</a>
-     <dd><a href="#issues-index">Inline In Spec</a>
-     <dt>Bidragsydere:
+     <dt>Følgegruppemedlemmer:
      <dd>
       <dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:arkitektur@digst.dk">Digitaliseringsstyrelsen</a>
      <dd>
@@ -1528,6 +1527,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <dd class="editor p-author h-card vcard"><span class="p-name fn">[Miljøstyrelsen]</span>
      <dd>
       <dd class="editor p-author h-card vcard"><span class="p-name fn">[Region Midtjylland]</span>
+     <dd>
+      <dd class="editor p-author h-card vcard"><span class="p-name fn">[Rigsarkivet]</span>
      <dd>
       <dd class="editor p-author h-card vcard"><span class="p-name fn">[Styrelsen for Arbejdsmarked og Rekruttering]</span>
      <dd>
@@ -1580,6 +1581,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#datatjeneste"><span class="secno">3.5</span> <span class="content">Datatjeneste</span></a>
       <li><a href="#katalogpost"><span class="secno">3.6</span> <span class="content">Katalogpost</span></a>
       <li><a href="#illustration"><span class="secno">3.7</span> <span class="content">Illustration</span></a>
+      <li><a href="#globalt-unikke-og-stabile-identifikatorer"><span class="secno">3.8</span> <span class="content">Globalt unikke og stabile identifikatorer</span></a>
      </ol>
     <li>
      <a href="#elementer-i-dcat-ap-dk"><span class="secno">4</span> <span class="content">Elementer i DCAT-AP-DK</span></a>
@@ -1615,7 +1617,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#egenskab-status-change-type"><span class="secno">4.2.4</span> <span class="content">Egenskab: status (change type)</span></a>
         <li><a href="#egenskab-titel-title①"><span class="secno">4.2.5</span> <span class="content">Egenskab: titel (title)</span></a>
         <li><a href="#egenskab-beskrivelse-description①"><span class="secno">4.2.6</span> <span class="content">Egenskab: beskrivelse (description)</span></a>
-        <li><a href="#egenskab-overensstemmelse-application-profile"><span class="secno">4.2.7</span> <span class="content">Egenskab: overensstemmelse (application profile)</span></a>
+        <li><a href="#egenskab-overholder-application-profile"><span class="secno">4.2.7</span> <span class="content">Egenskab: overholder (application profile)</span></a>
         <li><a href="#egenskab-sprog-language①"><span class="secno">4.2.8</span> <span class="content">Egenskab: sprog (language)</span></a>
         <li><a href="#egenskab-kilde-source-metadata"><span class="secno">4.2.9</span> <span class="content">Egenskab: kilde (source metadata)</span></a>
        </ol>
@@ -1635,38 +1637,37 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#egenskab-har-distribution-dataset-distribution"><span class="secno">4.3.11</span> <span class="content">Egenskab: har distribution (dataset distribution)</span></a>
         <li><a href="#egenskab-uddrag-sample"><span class="secno">4.3.12</span> <span class="content">Egenskab: uddrag (sample)</span></a>
         <li><a href="#egenskab-destinationsside-landing-page"><span class="secno">4.3.13</span> <span class="content">Egenskab: destinationsside (landing page)</span></a>
-        <li><a href="#egenskab-overenstemmelse-conforms-to"><span class="secno">4.3.14</span> <span class="content">Egenskab: overenstemmelse (conforms to)</span></a>
+        <li><a href="#egenskab-overholder-conforms-to"><span class="secno">4.3.14</span> <span class="content">Egenskab: overholder (conforms to)</span></a>
         <li><a href="#egenskab-dokumentation-documentation"><span class="secno">4.3.15</span> <span class="content">Egenskab: dokumentation (documentation)</span></a>
         <li><a href="#egenskab-emne-theme-category"><span class="secno">4.3.16</span> <span class="content">Egenskab: emne (theme/ category)</span></a>
-        <li><a href="#egenskab-forvaltningsopgave-public-administrative-task-type"><span class="secno">4.3.17</span> <span class="content">Egenskab: forvaltningsopgave (public administrative task type)</span></a>
-        <li><a href="#egenskab-type-type"><span class="secno">4.3.18</span> <span class="content">Egenskab: type (type)</span></a>
-        <li><a href="#egenskab-ngleord-keyword-tag"><span class="secno">4.3.19</span> <span class="content">Egenskab: nøgleord (keyword/ tag)</span></a>
-        <li><a href="#egenskab-sprog-language②"><span class="secno">4.3.20</span> <span class="content">Egenskab: sprog (language)</span></a>
-        <li><a href="#egenskab-adgangsrettigheder-access-rights"><span class="secno">4.3.21</span> <span class="content">Egenskab: adgangsrettigheder (access rights)</span></a>
-        <li><a href="#egenskab-geografisk-omrde-spatial-geographical-coverage"><span class="secno">4.3.22</span> <span class="content">Egenskab: geografisk område (spatial/ geographical coverage)</span></a>
-        <li><a href="#egenskab-geografisk-oplsning-i-meter-spatial-resolution-in-meters"><span class="secno">4.3.23</span> <span class="content">Egenskab: geografisk opløsning (i meter) (spatial resolution in meters)</span></a>
-        <li><a href="#egenskab-dkningsperiode-temporal-coverage"><span class="secno">4.3.24</span> <span class="content">Egenskab: dækningsperiode (temporal coverage)</span></a>
-        <li><a href="#egenskab-tidslig-oplsning-temporal-resolution"><span class="secno">4.3.25</span> <span class="content">Egenskab: tidslig opløsning (temporal resolution)</span></a>
-        <li><a href="#egenskab-opdateringsfrekvens-frequency"><span class="secno">4.3.26</span> <span class="content">Egenskab: opdateringsfrekvens (frequency)</span></a>
-        <li><a href="#egenskab-udgivelsesdato-release-date①"><span class="secno">4.3.27</span> <span class="content">Egenskab: udgivelsesdato (release date)</span></a>
-        <li><a href="#egenskab-seneste-ndringsdato-update-modification-date②"><span class="secno">4.3.28</span> <span class="content">Egenskab: seneste ændringsdato (update/ modification date)</span></a>
-        <li><a href="#egenskab-har-kvalitetsmetadata-dk-has-quality-metadata"><span class="secno">4.3.29</span> <span class="content">Egenskab: har kvalitetsmetadata DK (has quality metadata)</span></a>
-        <li><a href="#egenskab-har-anvendelse-dk-has-usage"><span class="secno">4.3.30</span> <span class="content">Egenskab: har anvendelse DK (has usage)</span></a>
-        <li><a href="#egenskab-betalingsplagt-dk-payment-imposed"><span class="secno">4.3.31</span> <span class="content">Egenskab: betalingspålagt DK (payment imposed)</span></a>
-        <li><a href="#egenskab-personoplysningskategori-dk-personal-data-category"><span class="secno">4.3.32</span> <span class="content">Egenskab: personoplysningskategori DK (personal data category)</span></a>
-        <li><a href="#egenskab-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.3.33</span> <span class="content">Egenskab: fortrolighedsgrad DK (confidentiality type )</span></a>
-        <li><a href="#egenskab-hjemmel-has-legal-resource"><span class="secno">4.3.34</span> <span class="content">Egenskab: hjemmel (has legal resource)</span></a>
-        <li><a href="#egenskab-versionsnummer-version"><span class="secno">4.3.35</span> <span class="content">Egenskab: versionsnummer (version)</span></a>
-        <li><a href="#egenskab-versionsnoter-version-notes"><span class="secno">4.3.36</span> <span class="content">Egenskab: versionsnoter (version notes)</span></a>
-        <li><a href="#egenskab-har-version-has-version"><span class="secno">4.3.37</span> <span class="content">Egenskab: har version (has version)</span></a>
-        <li><a href="#egenskab-er-version-af-is-version-of"><span class="secno">4.3.38</span> <span class="content">Egenskab: er version af (is version of)</span></a>
-        <li><a href="#egenskab-proveniensudsagn-provenance"><span class="secno">4.3.39</span> <span class="content">Egenskab: proveniensudsagn (provenance)</span></a>
-        <li><a href="#egenskab-relateret-ressource-related-resource"><span class="secno">4.3.40</span> <span class="content">Egenskab: relateret ressource (related resource)</span></a>
-        <li><a href="#egenskab-kildedatast-source-dataset"><span class="secno">4.3.41</span> <span class="content">Egenskab: kildedatasæt (source dataset)</span></a>
-        <li><a href="#egenskab-refereres-af-is-referenced-by"><span class="secno">4.3.42</span> <span class="content">Egenskab: refereres af (is referenced by)</span></a>
-        <li><a href="#egenskab-kvalificeret-kreditering-qualified-attribution"><span class="secno">4.3.43</span> <span class="content">Egenskab: kvalificeret kreditering (qualified attribution)</span></a>
-        <li><a href="#egenskab-kvalificeret-relation-qualified-relation"><span class="secno">4.3.44</span> <span class="content">Egenskab: kvalificeret relation (qualified relation)</span></a>
-        <li><a href="#egenskab-blev-dannet-ved-was-generated-by"><span class="secno">4.3.45</span> <span class="content">Egenskab: blev dannet ved (was generated by)</span></a>
+        <li><a href="#egenskab-type-type"><span class="secno">4.3.17</span> <span class="content">Egenskab: type (type)</span></a>
+        <li><a href="#egenskab-ngleord-keyword-tag"><span class="secno">4.3.18</span> <span class="content">Egenskab: nøgleord (keyword/ tag)</span></a>
+        <li><a href="#egenskab-sprog-language②"><span class="secno">4.3.19</span> <span class="content">Egenskab: sprog (language)</span></a>
+        <li><a href="#egenskab-adgangsrettigheder-access-rights"><span class="secno">4.3.20</span> <span class="content">Egenskab: adgangsrettigheder (access rights)</span></a>
+        <li><a href="#egenskab-geografisk-omrde-spatial-geographical-coverage"><span class="secno">4.3.21</span> <span class="content">Egenskab: geografisk område (spatial/ geographical coverage)</span></a>
+        <li><a href="#egenskab-geografisk-oplsning-i-meter-spatial-resolution-in-meters"><span class="secno">4.3.22</span> <span class="content">Egenskab: geografisk opløsning (i meter) (spatial resolution in meters)</span></a>
+        <li><a href="#egenskab-dkningsperiode-temporal-coverage"><span class="secno">4.3.23</span> <span class="content">Egenskab: dækningsperiode (temporal coverage)</span></a>
+        <li><a href="#egenskab-tidslig-oplsning-temporal-resolution"><span class="secno">4.3.24</span> <span class="content">Egenskab: tidslig opløsning (temporal resolution)</span></a>
+        <li><a href="#egenskab-opdateringsfrekvens-frequency"><span class="secno">4.3.25</span> <span class="content">Egenskab: opdateringsfrekvens (frequency)</span></a>
+        <li><a href="#egenskab-udgivelsesdato-release-date①"><span class="secno">4.3.26</span> <span class="content">Egenskab: udgivelsesdato (release date)</span></a>
+        <li><a href="#egenskab-seneste-ndringsdato-update-modification-date②"><span class="secno">4.3.27</span> <span class="content">Egenskab: seneste ændringsdato (update/ modification date)</span></a>
+        <li><a href="#egenskab-har-kvalitetsmetadata-dk-has-quality-metadata"><span class="secno">4.3.28</span> <span class="content">Egenskab: har kvalitetsmetadata DK (has quality metadata)</span></a>
+        <li><a href="#egenskab-har-anvendelse-dk-has-usage"><span class="secno">4.3.29</span> <span class="content">Egenskab: har anvendelse DK (has usage)</span></a>
+        <li><a href="#egenskab-betalingsplagt-dk-payment-imposed"><span class="secno">4.3.30</span> <span class="content">Egenskab: betalingspålagt DK (payment imposed)</span></a>
+        <li><a href="#egenskab-personoplysningskategori-dk-personal-data-category"><span class="secno">4.3.31</span> <span class="content">Egenskab: personoplysningskategori DK (personal data category)</span></a>
+        <li><a href="#egenskab-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.3.32</span> <span class="content">Egenskab: fortrolighedsgrad DK (confidentiality type )</span></a>
+        <li><a href="#egenskab-hjemmel-has-legal-resource"><span class="secno">4.3.33</span> <span class="content">Egenskab: hjemmel (has legal resource)</span></a>
+        <li><a href="#egenskab-versionsnummer-version"><span class="secno">4.3.34</span> <span class="content">Egenskab: versionsnummer (version)</span></a>
+        <li><a href="#egenskab-versionsnoter-version-notes"><span class="secno">4.3.35</span> <span class="content">Egenskab: versionsnoter (version notes)</span></a>
+        <li><a href="#egenskab-har-version-has-version"><span class="secno">4.3.36</span> <span class="content">Egenskab: har version (has version)</span></a>
+        <li><a href="#egenskab-er-version-af-is-version-of"><span class="secno">4.3.37</span> <span class="content">Egenskab: er version af (is version of)</span></a>
+        <li><a href="#egenskab-proveniensudsagn-provenance"><span class="secno">4.3.38</span> <span class="content">Egenskab: proveniensudsagn (provenance)</span></a>
+        <li><a href="#egenskab-relateret-ressource-related-resource"><span class="secno">4.3.39</span> <span class="content">Egenskab: relateret ressource (related resource)</span></a>
+        <li><a href="#egenskab-kildedatast-source-dataset"><span class="secno">4.3.40</span> <span class="content">Egenskab: kildedatasæt (source dataset)</span></a>
+        <li><a href="#egenskab-refereres-af-is-referenced-by"><span class="secno">4.3.41</span> <span class="content">Egenskab: refereres af (is referenced by)</span></a>
+        <li><a href="#egenskab-kvalificeret-kreditering-qualified-attribution"><span class="secno">4.3.42</span> <span class="content">Egenskab: kvalificeret kreditering (qualified attribution)</span></a>
+        <li><a href="#egenskab-kvalificeret-relation-qualified-relation"><span class="secno">4.3.43</span> <span class="content">Egenskab: kvalificeret relation (qualified relation)</span></a>
+        <li><a href="#egenskab-blev-dannet-ved-was-generated-by"><span class="secno">4.3.44</span> <span class="content">Egenskab: blev dannet ved (was generated by)</span></a>
        </ol>
       <li>
        <a href="#klasse-distribution-distribution"><span class="secno">4.4</span> <span class="content">Klasse: Distribution (Distribution)</span></a>
@@ -1676,7 +1677,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#egenskab-adgangstjeneste-access-service"><span class="secno">4.4.3</span> <span class="content">Egenskab: adgangstjeneste (access service )</span></a>
         <li><a href="#egenskab-titel-title③"><span class="secno">4.4.4</span> <span class="content">Egenskab: titel (title)</span></a>
         <li><a href="#egenskab-beskrivelse-description③"><span class="secno">4.4.5</span> <span class="content">Egenskab: beskrivelse (description)</span></a>
-        <li><a href="#egenskab-overenstemmelse-linked-schemas"><span class="secno">4.4.6</span> <span class="content">Egenskab: overenstemmelse (linked schemas)</span></a>
+        <li><a href="#egenskab-overholder-linked-schemas"><span class="secno">4.4.6</span> <span class="content">Egenskab: overholder (linked schemas)</span></a>
         <li><a href="#egenskab-udgivelsesdato-release-date②"><span class="secno">4.4.7</span> <span class="content">Egenskab: udgivelsesdato (release date)</span></a>
         <li><a href="#egenskab-seneste-ndringsdato-update-modification-date③"><span class="secno">4.4.8</span> <span class="content">Egenskab: seneste ændringsdato (update/ modification date)</span></a>
         <li><a href="#egenskab-status-status"><span class="secno">4.4.9</span> <span class="content">Egenskab: status (status)</span></a>
@@ -1776,8 +1777,8 @@ dfn > a.self-link::before      { content: "#"; }</style>
     <li>
      <a href="#klassifikationer"><span class="secno">5</span> <span class="content">Klassifikationer</span></a>
      <ol class="toc">
-      <li><a href="#datatemaer"><span class="secno">5.1</span> <span class="content">Datatemaer</span></a>
-      <li><a href="#forvaltningsopgaver"><span class="secno">5.2</span> <span class="content">Forvaltningsopgaver</span></a>
+      <li><a href="#datatemaer-emner"><span class="secno">5.1</span> <span class="content">Datatemaer (Emner)</span></a>
+      <li><a href="#forvaltningsopgaver-emner"><span class="secno">5.2</span> <span class="content">Forvaltningsopgaver (Emner)</span></a>
       <li><a href="#opdateringsfrekvenser"><span class="secno">5.3</span> <span class="content">Opdateringsfrekvenser</span></a>
       <li><a href="#medietyper"><span class="secno">5.4</span> <span class="content">Medietyper</span></a>
       <li><a href="#filformater"><span class="secno">5.5</span> <span class="content">Filformater</span></a>
@@ -1793,26 +1794,30 @@ dfn > a.self-link::before      { content: "#"; }</style>
      <a href="#bilag"><span class="secno">7</span> <span class="content">Bilag</span></a>
      <ol class="toc">
       <li>
-       <a href="#uml-diagrammer"><span class="secno">7.1</span> <span class="content">UML-diagrammer</span></a>
+       <a href="#eksempler-og-validering"><span class="secno">7.1</span> <span class="content">Eksempler og validering</span></a>
        <ol class="toc">
-        <li><a href="#uml-diagram-dcat-ap-dk"><span class="secno">7.1.1</span> <span class="content">UML-diagram: DCAT-AP-DK</span></a>
+        <li><a href="#eksempler"><span class="secno">7.1.1</span> <span class="content">Eksempler</span></a>
+        <li><a href="#validering"><span class="secno">7.1.2</span> <span class="content">Validering</span></a>
        </ol>
-      <li><a href="#eksempler"><span class="secno">7.2</span> <span class="content">Eksempler</span></a>
-      <li><a href="#validering"><span class="secno">7.3</span> <span class="content">Validering</span></a>
-      <li><a href="#begrebsliste"><span class="secno">7.4</span> <span class="content">Begrebsliste</span></a>
+      <li>
+       <a href="#uml-diagrammer"><span class="secno">7.2</span> <span class="content">UML-diagrammer</span></a>
+       <ol class="toc">
+        <li><a href="#uml-diagram-dcat-ap-dk"><span class="secno">7.2.1</span> <span class="content">UML-diagram: DCAT-AP-DK</span></a>
+        <li><a href="#uml-diagram-dcat-dk"><span class="secno">7.2.2</span> <span class="content">UML-diagram: DCAT-DK</span></a>
+       </ol>
+      <li><a href="#begrebmodel-for-beskrivelse-af-datast"><span class="secno">7.3</span> <span class="content">Begrebmodel for beskrivelse af datasæt</span></a>
      </ol>
-    <li><a href="#issues-index"><span class="secno"></span> <span class="content">Issues Index</span></a>
    </ol>
   </nav>
   <main>
-   <p>Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi">XMI</a>, <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">SHACL</a> og RDF (kommer).</p>
-   <p>UDKAST til DCAT-AP-DK 2.0 - Juni 2020</p>
+   <p>Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi">XMI</a>, <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">SHACL</a> og <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/rdf">RDF</a>.</p>
+   <p><i>DCAT-AP-DK namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</i></p>
    <h2 class="heading settled" data-level="1" id="introduktion"><span class="secno">1. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
-   <p>DCAT-AP-DK 2.0 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer.</p>
+   <p>DCAT-AP-DK 2.0.1 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer.</p>
    <h3 class="heading settled" data-level="1.1" id="forml"><span class="secno">1.1. </span><span class="content">Formål</span><a class="self-link" href="#forml"></a></h3>
     Specifikationen skal være med til sørge for at begreber til beskrivelse af datasæt og datakataloger anvendes mere ens, og dermed skal den understøtte højere grad af interoperabilitet og kvalitet i oplysningerne. 
    <h3 class="heading settled" data-level="1.2" id="baggrund"><span class="secno">1.2. </span><span class="content">Baggrund</span><a class="self-link" href="#baggrund"></a></h3>
-   <p>De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter der er <em>obligatoriske</em> at udfylde samt <em>anbefalede</em> og <em>valgfrie</em> egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0 vil anvende elementer fra, og vil være i overensstemmelse med, DCAT-AP 2.0. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.</p>
+   <p>De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter der er <em>obligatoriske</em> at udfylde samt <em>anbefalede</em> og <em>valgfrie</em> egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0.1 vil anvende elementer fra, og vil være i overensstemmelse med, DCAT-AP 2.0.1 DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst.</p>
    <p>Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0.</p>
    <p>Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s åbne data og <a href="https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&amp;from=EN">PSI-direktiv</a> (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data</p>
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
@@ -1832,7 +1837,7 @@ Profilens informationer kan grupperes som:</p>
     <li data-md>
      <p><strong>Basisinformation</strong> Ud over et navn for datasættet gives en informativ beskrivelse af datasættet og dets indhold, samt eventuelt lokalt anvendte identifikatorer.</p>
     <li data-md>
-     <p><strong>Adgang til data</strong> Informationer om hvordan man får adgang til datasættet og dets distributioner - fx via fildownload eller en eller flere datatjenester/APIer.</p>
+     <p><strong>Adgang til data</strong> Informationer om hvordan man får adgang til datasættet og dets distributioner - fx via fildownload eller en eller flere datatjenester.</p>
     <li data-md>
      <p><strong>Datamodel og -indhold</strong> En reference til en eller flere modeller, skemaer eller profiler der formelt beskriver datasættets struktur og indhold.</p>
     <li data-md>
@@ -1891,7 +1896,6 @@ Domænespecifikke datasætkataloger kan forventes at have registreringsbehov der
 Blandt andet kræves det at der anvendes en tværgående taksonomi. 
    <h5 class="heading settled" data-level="1.4.3.3" id="anvendelsesscenarie-33-internationalt-datastkatalog"><span class="secno">1.4.3.3. </span><span class="content">Anvendelsesscenarie 3.3: Internationalt datasætkatalog</span><a class="self-link" href="#anvendelsesscenarie-33-internationalt-datastkatalog"></a></h5>
     Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har derfor som udgangspunkt til hensigt at gøre data mere søgbare på tværs af grænser og sektorer. Det er også hensigten at danske metadata skal kunne gøres tilgængelige i den europæisk dataportal. For at øge søgbarheden af danske data bør tekstuelle beskrivelser forsøges oversat til engelsk i videst muligt omfang. 
-   <p class="issue" id="issue-64af58eb"><a class="self-link" href="#issue-64af58eb"></a> Standarden skal angive primære use cases. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a></p>
    <h4 class="heading settled" data-level="1.4.4" id="yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"><span class="secno">1.4.4. </span><span class="content">Yderligere information vedrørende anvendelse af DCAT-AP-DK</span><a class="self-link" href="#yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"></a></h4>
    <ul>
     <li data-md>
@@ -1908,9 +1912,9 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq"
 Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digst/DCAT-AP-DK/issues</a></p>
    </ul>
    <h3 class="heading settled" data-level="1.5" id="gldende-krav-og-overensstemmelse"><span class="secno">1.5. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h3>
-    DCAT-AP-DK er i overensstemmelse med DCAT-AP. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
+    DCAT-AP-DK 2.0.1 er i overensstemmelse med DCAT-AP 2.0.1. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
    <h4 class="heading settled" data-level="1.5.1" id="kravniveauer"><span class="secno">1.5.1. </span><span class="content">Kravniveauer</span><a class="self-link" href="#kravniveauer"></a></h4>
-    I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af <a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/distribution/dcat-ap-200-pdf">DCAT-AP 2.0</a>. 
+    I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af <a href="https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf">DCAT-AP 2.0.1</a>. 
    <ul>
     <li data-md>
      <p><strong>Obligatorisk</strong> (Mandatory): informationen SKAL angives</p>
@@ -1923,11 +1927,14 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
    <p>Der er pt. udarbejdet følgende udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og som skjuler de valgfrie elementer)</p>
    <ul>
     <li data-md>
-     <p><a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory">DCAT-AP-DK-visning 1</a> viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)</p>
+     <p><a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory">DCAT-AP-DK-visning 1</a> viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen).</p>
+   </ul>
+   <p><img alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)" src="img/Figur-DCAT-AP-DK-v2-UML-mandatory.png"></p>
+   <ul>
     <li data-md>
      <p><a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended">DCAT-AP-DK-visning 2</a> viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser</p>
    </ul>
-   <p class="issue" id="issue-96e80575"><a class="self-link" href="#issue-96e80575"></a> Behov for formidling af minimumsmodel. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/20">https://github.com/digst/DCAT-AP-DK/issues/20</a></p>
+   <p><img alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber" src="img/Figur-DCAT-AP-DK-v2-UML-recommended.png"></p>
    <h4 class="heading settled" data-level="1.5.3" id="afvigelser-ift-dcat-ap"><span class="secno">1.5.3. </span><span class="content">Afvigelser ift. DCAT-AP</span><a class="self-link" href="#afvigelser-ift-dcat-ap"></a></h4>
     Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt. 
    <h5 class="heading settled" data-level="1.5.3.1" id="ndringer-af-kravniveau"><span class="secno">1.5.3.1. </span><span class="content">Ændringer af kravniveau</span><a class="self-link" href="#ndringer-af-kravniveau"></a></h5>
@@ -1938,20 +1945,19 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
     <li data-md>
      <p>Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri</p>
     <li data-md>
-     <p>Datasæt: dækningsperiode (dct:temporal) - Kravniveau:   Anbefalet > Valgfri</p>
-    <li data-md>
      <p>Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet</p>
     <li data-md>
+     <p>Datasæt: udgivelsesdato (dct:issued) - Kravniveau: Valgfri > Anbefalet</p>
+    <li data-md>
      <p>Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet</p>
+    <li data-md>
+     <p>Datasæt: har distribution (dcat:distribution) - Kravniveau: Valgfri > Anbefalet</p>
    </ul>
-   <p class="issue" id="issue-0ecb7b80"><a class="self-link" href="#issue-0ecb7b80"></a> Er der behov for at slække på kravniveauet for dct:temporal fra <a class="property" data-link-type="propdesc">Anbefalet</a> til <a class="property" data-link-type="propdesc">Valgfri</a>?</p>
    <h5 class="heading settled" data-level="1.5.3.2" id="tilfjelser"><span class="secno">1.5.3.2. </span><span class="content">Tilføjelser</span><a class="self-link" href="#tilfjelser"></a></h5>
     Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP: 
    <ul>
     <li data-md>
-     <p>Datasæt: forvaltningsopgave (dcat-dk:publicAdministrativeTaskType)</p>
-    <li data-md>
-     <p>Datasæt: dataansvarlig organisation (frbr:responsibleEntity)</p>
+     <p>Datasæt: dataansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)</p>
     <li data-md>
      <p>Datasæt: bidragsyder (dct:contributor)</p>
     <li data-md>
@@ -1974,7 +1980,6 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
      <p>Klassen dqv:QualityMetadata</p>
    </ul>
    <p>I indholdsfortegnelsen har disse mærket <a class="property" data-link-type="propdesc">DK</a>.</p>
-   <p class="issue" id="issue-f4fbdae7"><a class="self-link" href="#issue-f4fbdae7"></a> Ændringer af kravniveau samt tilføjelser af nye elementer i DCAT-AP-DK ift. DCAT-AP. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/11">https://github.com/digst/DCAT-AP-DK/issues/11</a></p>
    <h5 class="heading settled" data-level="1.5.3.3" id="udeladelser"><span class="secno">1.5.3.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h5>
     Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK. 
    <h4 class="heading settled" data-level="1.5.4" id="centrale-modeller-som-anvender-dcat"><span class="secno">1.5.4. </span><span class="content">Centrale modeller som anvender DCAT</span><a class="self-link" href="#centrale-modeller-som-anvender-dcat"></a></h4>
@@ -2076,29 +2081,38 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
       <td>https://data.gov.dk/model/core/dcat-dk/
       <td>DCAT-DK
      <tr>
+      <td>pers-cat
+      <td>https://data.gov.dk/concept/core/personaldata-type/
+      <td>Vocabulary for Personal Data Categories
+     <tr>
+      <td>conf
+      <td>https://data.gov.dk/concept/core/confidentiality-type/
+      <td>Vocabulary for Confidentiality
+     <tr>
       <td>dcat-ap-dk
       <td>https://data.gov.dk/model/profile/dcat-ap-dk/
       <td>DCAT-AP-DK
    </table>
    <h2 class="heading settled" data-level="3" id="modellens-grundlggende-struktur"><span class="secno">3. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
-    DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Se også <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebsliste">begrebslisten</a> med yderligere information. 
+    DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Alle elementerne er beskrevet i detaljer i næste kapitel, og se evt. også begrebsmodellens bagest i dokumentet. 
    <h3 class="heading settled" data-level="3.1" id="katalog"><span class="secno">3.1. </span><span class="content">Katalog</span><a class="self-link" href="#katalog"></a></h3>
-    Et katalog (dcat:Catalog) er en kurateret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde datatjenester og andre datakataloger. 
+    Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog <em>skal</em> således indeholde datasæt, men det <em>kan</em> også indeholde datatjenester og andre datakataloger. 
    <h3 class="heading settled" data-level="3.2" id="katalogiseret-ressource"><span class="secno">3.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
     En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
    <h3 class="heading settled" data-level="3.3" id="datast"><span class="secno">3.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
-    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer. Dvs. uafhængige af den måde data er formaliseret på. 
-   <p class="issue" id="issue-42d0ef21"><a class="self-link" href="#issue-42d0ef21"></a> Yderligere information og vejledning vedr. dcat:Dataset kan evt. tilføjes. Se også <a href="https://github.com/digst/DCAT-AP-DK/issues/19">https://github.com/digst/DCAT-AP-DK/issues/19</a></p>
+    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er tilrådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på. 
    <h3 class="heading settled" data-level="3.4" id="distribution"><span class="secno">3.4. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
-    En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Denne klasse er valgfri. 
+    En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri. 
    <h3 class="heading settled" data-level="3.5" id="datatjeneste"><span class="secno">3.5. </span><span class="content">Datatjeneste</span><a class="self-link" href="#datatjeneste"></a></h3>
     En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri. 
    <h3 class="heading settled" data-level="3.6" id="katalogpost"><span class="secno">3.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. 
-   <p class="issue" id="issue-0e769877"><a class="self-link" href="#issue-0e769877"></a> Oversættelse af DCAT - og termen <a class="property" data-link-type="propdesc">kurateret</a> - drøftes her <a href="https://github.com/digst/DCAT-AP-DK/issues/9">https://github.com/digst/DCAT-AP-DK/issues/9</a></p>
    <h3 class="heading settled" data-level="3.7" id="illustration"><span class="secno">3.7. </span><span class="content">Illustration</span><a class="self-link" href="#illustration"></a></h3>
     Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri): 
    <p align="left"><a href="img/Figur-DCAT-niveauerne.PNG"><img alt="Figur DCAT-niveauerne" src="img/Figur-DCAT-niveauerne.PNG" width="600"></a></p>
+   <h3 class="heading settled" data-level="3.8" id="globalt-unikke-og-stabile-identifikatorer"><span class="secno">3.8. </span><span class="content">Globalt unikke og stabile identifikatorer</span><a class="self-link" href="#globalt-unikke-og-stabile-identifikatorer"></a></h3>
+    Data skal have tilknyttet metadata, og data skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til data på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering  af ressourcer som på internettet. 
+Der henvises til <a href="https://www.go-fair.org/fair-principles/">FAIR-principperne</a>, <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris">EU 10 Rules for Persistent URIs</a> samt <a href="https://arkitektur.digst.dk/node/588">Retningslinjer for stablile http-urier</a>.” 
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
     I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse. 
    <h3 class="heading settled" data-level="4.1" id="klasse-katalog-catalog"><span class="secno">4.1. </span><span class="content">Klasse: Katalog (Catalog)</span><a class="self-link" href="#klasse-katalog-catalog"></a></h3>
@@ -2107,17 +2121,17 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Catalog
     <dt>Anvendelsesnote (da) 
-    <dd>En kurateret samling af metadata om datasæt og datatjenester i et katalog.
+    <dd>En udvalgt og arrangeret samling af metadata om datasæt og datatjenester i et katalog.
     <dt>Anvendelsesnote (en)
     <dd>A catalogue or repository that hosts the Datasets being described.
     <dt>Definition (da)
-    <dd>En kurateret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).
+    <dd>En udvalgt og arrangeret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).
     <dt>Definition (en)
     <dd>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.1.1" id="egenskab-titel-title"><span class="secno">4.1.1. </span><span class="content">Egenskab: titel (title)</span><a class="self-link" href="#egenskab-titel-title"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2125,7 +2139,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. 
+    <dd>Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan optræde én gang for hver sprogvariant af titlen. 
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.
     <dt>Definition (da)
@@ -2144,7 +2158,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.
     <dt>Definition (da)
@@ -2462,7 +2476,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.2.1" id="egenskab-genstand-for-registrering-primary-topic"><span class="secno">4.2.1. </span><span class="content">Egenskab: genstand for registrering (primary topic)</span><a class="self-link" href="#egenskab-genstand-for-registrering-primary-topic"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2544,7 +2558,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan gentages for hver sprogvariant.
+    <dd>Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan optræde én gang for hver sprogvariant af titlen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.
     <dt>Definition (da)
@@ -2563,7 +2577,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.
     <dt>Definition (da)
@@ -2575,7 +2589,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.2.7" id="egenskab-overensstemmelse-application-profile"><span class="secno">4.2.7. </span><span class="content">Egenskab: overensstemmelse (application profile)</span><a class="self-link" href="#egenskab-overensstemmelse-application-profile"></a></h4>
+   <h4 class="heading settled" data-level="4.2.7" id="egenskab-overholder-application-profile"><span class="secno">4.2.7. </span><span class="content">Egenskab: overholder (application profile)</span><a class="self-link" href="#egenskab-overholder-application-profile"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2638,18 +2652,17 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da) 
-    <dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
+    <dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
     <dt>Anvendelsesnote (en)
     <dd>A conceptual entity that represents the information published. 
     <dt>Definition (da)
-    <dd>En samling af data, udgivet eller kurateret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
+    <dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
     <dt>Definition (en)
     <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <p class="issue" id="issue-7bb40b33"><a class="self-link" href="#issue-7bb40b33"></a> Vedr. dansk anvendelsesnote: se <a href="https://github.com/digst/DCAT-AP-DK/issues/19">https://github.com/digst/DCAT-AP-DK/issues/19</a></p>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.3.1" id="egenskab-identifikator-identifier"><span class="secno">4.3.1. </span><span class="content">Egenskab: identifikator (identifier)</span><a class="self-link" href="#egenskab-identifikator-identifier"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2657,7 +2670,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en global identifikator for datasættet, for eksempel en URI eller anden identifikator som er stabil og globalt unik
+    <dd>Denne egenskab angiver den primære identifikator for datasættet, for eksempel en URI eller anden identifikator i kontekst af kataloget.
     <dt>Anvendelsesnote (en)
     <dd>This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.
     <dt>Definition (da)
@@ -2679,8 +2692,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver lokal identifikator for datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a secondary identifier of the Dataset, such as MAST/ADS[1], DataCite[2], DOI[3], EZID[4] or W3ID[5].
+    <dt>Definition (da)
+    <dd>adms:identifier anvendes til at forbinde enhver ressource til en instans af adms:Identifier, som udgør dens rækkevidde
     <dt>Definition (en)
-    <dd>adms:identifier is used to link any resource to an instance of adms:Identifier which is its rangeadms:identifier anvendes til at forbinde enhver ressource til en instans af adms:Identifier, som udgør dens rækkevidde
+    <dd>adms:identifier is used to link any resource to an instance of adms:Identifier which is its range
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2693,7 +2708,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.
+    <dd>Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan optræde én gang for hver sprogvariant af titlen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.
     <dt>Definition (da)
@@ -2712,7 +2727,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.
     <dt>Definition (da)
@@ -2731,7 +2746,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.
+    <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the entity (organisation) responsible for making the Dataset available.
     <dt>Definition (da)
@@ -2743,27 +2758,25 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <p class="issue" id="issue-58318461"><a class="self-link" href="#issue-58318461"></a> Vedr. aktørrelationer: Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a></p>
    <h4 class="heading settled" data-level="4.3.6" id="egenskab-datastansvarlig-organisation-dk-dataset-responsible-organisation"><span class="secno">4.3.6. </span><span class="content">Egenskab: datasætansvarlig organisation DK (dataset responsible organisation)</span><a class="self-link" href="#egenskab-datastansvarlig-organisation-dk-dataset-responsible-organisation"></a></h4>
    <dl class="def">
     <dt>URI
-    <dd>https://data.gov.dk/model/core/dcat-dk/datasetresponsibleorganisation
+    <dd>https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation
     <dt>Rækkevidde
-    <dd>http://xmlns.com/foaf/0.1/Agent
+    <dd>https://www.w3.org/ns/org#Organization
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt. (dansk tilføjelse) 
+    <dd>Denne egenskab angiver den organisation der har det juridiske ansvar for datasættet. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) 
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to the agent responsible for the general administration of all aspects concerning a dataset
+    <dd>This property specifies the organization that is legally accountable for the dataset. 
     <dt>Definition (da)
-    <dd>aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt
+    <dd>organisation der har det juridiske ansvar for datasættet
     <dt>Definition (en)
-    <dd>agent responsible for the general administration of all aspects concerning a dataset
+    <dd>organization that is legally accountable for the dataset
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <p class="issue" id="issue-58318461①"><a class="self-link" href="#issue-58318461①"></a> Vedr. aktørrelationer: Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a></p>
    <h4 class="heading settled" data-level="4.3.7" id="egenskab-skaber-creator①"><span class="secno">4.3.7. </span><span class="content">Egenskab: skaber (creator)</span><a class="self-link" href="#egenskab-skaber-creator①"></a></h4>
    <dl class="def">
     <dt>URI
@@ -2773,7 +2786,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver den aktør der er primært ansvarlig for datasættets skabelse.
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to the entity primarily responsible for producing the dataset
+    <dd>This property refers to the entity primarily responsible for producing the dataset.
     <dt>Definition (da)
     <dd>En entitet som er ansvarlig for ressourcens skabelse.
     <dt>Definition (en)
@@ -2781,7 +2794,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
-    <dd>Valgfri
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.8" id="egenskab-bidragsyder-dk-contributor"><span class="secno">4.3.8. </span><span class="content">Egenskab: bidragsyder DK (contributor)</span><a class="self-link" href="#egenskab-bidragsyder-dk-contributor"></a></h4>
    <dl class="def">
@@ -2810,8 +2823,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt. (dansk tilføjelse)
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the agent that manages contributions to, and/or publication of a dataset.
+    <dt>Definition (da)
+    <dd>En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt .
     <dt>Definition (en)
-    <dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt .
+    <dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2865,8 +2880,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver et uddrag af en distribution af datasættet
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a sample distribution of the dataset.
+    <dt>Definition (da)
+    <dd>Link til et uddrag af aktivet (som også selv udgør et aktiv)
     <dt>Definition (en)
-    <dd>Links to a sample of an Asset (which is itself an Asset)Link til et uddrag af aktivet (som også selv udgør et aktiv)
+    <dd>Links to a sample of an Asset (which is itself an Asset)
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2893,7 +2910,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.14" id="egenskab-overenstemmelse-conforms-to"><span class="secno">4.3.14. </span><span class="content">Egenskab: overenstemmelse (conforms to)</span><a class="self-link" href="#egenskab-overenstemmelse-conforms-to"></a></h4>
+   <h4 class="heading settled" data-level="4.3.14" id="egenskab-overholder-conforms-to"><span class="secno">4.3.14. </span><span class="content">Egenskab: overholder (conforms to)</span><a class="self-link" href="#egenskab-overholder-conforms-to"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -2922,8 +2939,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver en webside eller et dokument som beskriver datasættet.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a page or document about this Dataset.
+    <dt>Definition (da)
+    <dd>En side eller et dokument vedrørende denne entitet.
     <dt>Definition (en)
-    <dd>A page or document about this thing.En side eller et dokument vedrørende denne entitet.
+    <dd>A page or document about this thing.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -2934,9 +2953,9 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#theme
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/data-theme/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan have flere centrale emner. Til angivelse af emne skal følgende klassifikation anvendes: EU Dataset Theme Vocabulary:  http://publications.europa.eu/resource/authority/data-theme
+    <dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan opmærkes med flere forskellige centrale emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
     <dt>Definition (da)
@@ -2948,26 +2967,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.17" id="egenskab-forvaltningsopgave-public-administrative-task-type"><span class="secno">4.3.17. </span><span class="content">Egenskab: forvaltningsopgave (public administrative task type)</span><a class="self-link" href="#egenskab-forvaltningsopgave-public-administrative-task-type"></a></h4>
-   <dl class="def">
-    <dt>URI
-    <dd>https://data.gov.dk/concept/core/tasktype/tasktype
-    <dt>Rækkevidde
-    <dd>https://data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType
-    <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en eller flere forvaltningsopgaver som har dannet grundlag for dataindsamlingen. Til angivelse af forvaltningsopgave skal klassifikationen FORM (https://www.form-online.dk/soegning) eller KLE (http://www.kle-online.dk/soegning) anvendes
-    <dt>Anvendelsesnote (en)
-    <dd>This property refers to an administrative task type that formed the basis of the data collection. A dataset may be associated with multiple task types.
-    <dt>Definition (da)
-    <dd>specification of task type perfomed by the public administration
-    <dt>Definition (en)
-    <dd>angivelse af type af opgave, der udføres af offentlige organisationer
-    <dt>Multiplicitet
-    <dd>0..*
-    <dt>Kravniveau
-    <dd>Valgfri
-   </dl>
-   <h4 class="heading settled" data-level="4.3.18" id="egenskab-type-type"><span class="secno">4.3.18. </span><span class="content">Egenskab: type (type)</span><a class="self-link" href="#egenskab-type-type"></a></h4>
+   <h4 class="heading settled" data-level="4.3.17" id="egenskab-type-type"><span class="secno">4.3.17. </span><span class="content">Egenskab: type (type)</span><a class="self-link" href="#egenskab-type-type"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
@@ -2986,7 +2986,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.19" id="egenskab-ngleord-keyword-tag"><span class="secno">4.3.19. </span><span class="content">Egenskab: nøgleord (keyword/ tag)</span><a class="self-link" href="#egenskab-ngleord-keyword-tag"></a></h4>
+   <h4 class="heading settled" data-level="4.3.18" id="egenskab-ngleord-keyword-tag"><span class="secno">4.3.18. </span><span class="content">Egenskab: nøgleord (keyword/ tag)</span><a class="self-link" href="#egenskab-ngleord-keyword-tag"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#keyword
@@ -3005,14 +3005,14 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.20" id="egenskab-sprog-language②"><span class="secno">4.3.20. </span><span class="content">Egenskab: sprog (language)</span><a class="self-link" href="#egenskab-sprog-language②"></a></h4>
+   <h4 class="heading settled" data-level="4.3.19" id="egenskab-sprog-language②"><span class="secno">4.3.19. </span><span class="content">Egenskab: sprog (language)</span><a class="self-link" href="#egenskab-sprog-language②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/language
     <dt>Rækkevidde
     <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language. For datasæt og datatjenester refererer <a class="property" data-link-type="propdesc">sprog</a> ifølge DCAT til det sprog der er anvendt i metadata (fx. titler, beskriveler etc), hvorimod <a class="property" data-link-type="propdesc">sprog</a> for distributioner refererer til sproget anvendt i de tekstværdierne i distributionen. (A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution). Læs mere her: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_language 
+    <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.
     <dt>Definition (da)
@@ -3024,7 +3024,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.21" id="egenskab-adgangsrettigheder-access-rights"><span class="secno">4.3.21. </span><span class="content">Egenskab: adgangsrettigheder (access rights)</span><a class="self-link" href="#egenskab-adgangsrettigheder-access-rights"></a></h4>
+   <h4 class="heading settled" data-level="4.3.20" id="egenskab-adgangsrettigheder-access-rights"><span class="secno">4.3.20. </span><span class="content">Egenskab: adgangsrettigheder (access rights)</span><a class="self-link" href="#egenskab-adgangsrettigheder-access-rights"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accessRights
@@ -3043,7 +3043,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.22" id="egenskab-geografisk-omrde-spatial-geographical-coverage"><span class="secno">4.3.22. </span><span class="content">Egenskab: geografisk område (spatial/ geographical coverage)</span><a class="self-link" href="#egenskab-geografisk-omrde-spatial-geographical-coverage"></a></h4>
+   <h4 class="heading settled" data-level="4.3.21" id="egenskab-geografisk-omrde-spatial-geographical-coverage"><span class="secno">4.3.21. </span><span class="content">Egenskab: geografisk område (spatial/ geographical coverage)</span><a class="self-link" href="#egenskab-geografisk-omrde-spatial-geographical-coverage"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/spatial
@@ -3062,7 +3062,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.23" id="egenskab-geografisk-oplsning-i-meter-spatial-resolution-in-meters"><span class="secno">4.3.23. </span><span class="content">Egenskab: geografisk opløsning (i meter) (spatial resolution in meters)</span><a class="self-link" href="#egenskab-geografisk-oplsning-i-meter-spatial-resolution-in-meters"></a></h4>
+   <h4 class="heading settled" data-level="4.3.22" id="egenskab-geografisk-oplsning-i-meter-spatial-resolution-in-meters"><span class="secno">4.3.22. </span><span class="content">Egenskab: geografisk opløsning (i meter) (spatial resolution in meters)</span><a class="self-link" href="#egenskab-geografisk-oplsning-i-meter-spatial-resolution-in-meters"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#spatialResolutionInMeters
@@ -3081,7 +3081,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.24" id="egenskab-dkningsperiode-temporal-coverage"><span class="secno">4.3.24. </span><span class="content">Egenskab: dækningsperiode (temporal coverage)</span><a class="self-link" href="#egenskab-dkningsperiode-temporal-coverage"></a></h4>
+   <h4 class="heading settled" data-level="4.3.23" id="egenskab-dkningsperiode-temporal-coverage"><span class="secno">4.3.23. </span><span class="content">Egenskab: dækningsperiode (temporal coverage)</span><a class="self-link" href="#egenskab-dkningsperiode-temporal-coverage"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/temporal
@@ -3091,14 +3091,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver den periode datasættet dækker
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a temporal period that the Dataset covers.
+    <dt>Definition (da)
+    <dd>Ressourcens tidslige karakteristika.
     <dt>Definition (en)
-    <dd>Temporal characteristics of the resource.Ressourcens tidslige karakteristika.
+    <dd>Temporal characteristics of the resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.25" id="egenskab-tidslig-oplsning-temporal-resolution"><span class="secno">4.3.25. </span><span class="content">Egenskab: tidslig opløsning (temporal resolution)</span><a class="self-link" href="#egenskab-tidslig-oplsning-temporal-resolution"></a></h4>
+   <h4 class="heading settled" data-level="4.3.24" id="egenskab-tidslig-oplsning-temporal-resolution"><span class="secno">4.3.24. </span><span class="content">Egenskab: tidslig opløsning (temporal resolution)</span><a class="self-link" href="#egenskab-tidslig-oplsning-temporal-resolution"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#temporalResolution
@@ -3117,7 +3119,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.26" id="egenskab-opdateringsfrekvens-frequency"><span class="secno">4.3.26. </span><span class="content">Egenskab: opdateringsfrekvens (frequency)</span><a class="self-link" href="#egenskab-opdateringsfrekvens-frequency"></a></h4>
+   <h4 class="heading settled" data-level="4.3.25" id="egenskab-opdateringsfrekvens-frequency"><span class="secno">4.3.25. </span><span class="content">Egenskab: opdateringsfrekvens (frequency)</span><a class="self-link" href="#egenskab-opdateringsfrekvens-frequency"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/accrualPeriodicity
@@ -3136,7 +3138,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.27" id="egenskab-udgivelsesdato-release-date①"><span class="secno">4.3.27. </span><span class="content">Egenskab: udgivelsesdato (release date)</span><a class="self-link" href="#egenskab-udgivelsesdato-release-date①"></a></h4>
+   <h4 class="heading settled" data-level="4.3.26" id="egenskab-udgivelsesdato-release-date①"><span class="secno">4.3.26. </span><span class="content">Egenskab: udgivelsesdato (release date)</span><a class="self-link" href="#egenskab-udgivelsesdato-release-date①"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/issued
@@ -3146,14 +3148,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet
     <dt>Anvendelsesnote (en)
     <dd>This property contains the date of formal issuance (e.g., publication) of the Dataset.
+    <dt>Definition (da)
+    <dd>Dato for hvornår ressourcen formelt blev udgivet.
     <dt>Definition (en)
-    <dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.
+    <dd>Date of formal issuance of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
-    <dd>Valgfri
+    <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.28" id="egenskab-seneste-ndringsdato-update-modification-date②"><span class="secno">4.3.28. </span><span class="content">Egenskab: seneste ændringsdato (update/ modification date)</span><a class="self-link" href="#egenskab-seneste-ndringsdato-update-modification-date②"></a></h4>
+   <h4 class="heading settled" data-level="4.3.27" id="egenskab-seneste-ndringsdato-update-modification-date②"><span class="secno">4.3.27. </span><span class="content">Egenskab: seneste ændringsdato (update/ modification date)</span><a class="self-link" href="#egenskab-seneste-ndringsdato-update-modification-date②"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/modified
@@ -3170,9 +3174,9 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
-    <dd>Valgfri
+    <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.3.29" id="egenskab-har-kvalitetsmetadata-dk-has-quality-metadata"><span class="secno">4.3.29. </span><span class="content">Egenskab: har kvalitetsmetadata DK (has quality metadata)</span><a class="self-link" href="#egenskab-har-kvalitetsmetadata-dk-has-quality-metadata"></a></h4>
+   <h4 class="heading settled" data-level="4.3.28" id="egenskab-har-kvalitetsmetadata-dk-has-quality-metadata"><span class="secno">4.3.28. </span><span class="content">Egenskab: har kvalitetsmetadata DK (has quality metadata)</span><a class="self-link" href="#egenskab-har-kvalitetsmetadata-dk-has-quality-metadata"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dqv#hasQualityMetadata
@@ -3191,7 +3195,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.30" id="egenskab-har-anvendelse-dk-has-usage"><span class="secno">4.3.30. </span><span class="content">Egenskab: har anvendelse DK (has usage)</span><a class="self-link" href="#egenskab-har-anvendelse-dk-has-usage"></a></h4>
+   <h4 class="heading settled" data-level="4.3.29" id="egenskab-har-anvendelse-dk-has-usage"><span class="secno">4.3.29. </span><span class="content">Egenskab: har anvendelse DK (has usage)</span><a class="self-link" href="#egenskab-har-anvendelse-dk-has-usage"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/duv#hasUsage
@@ -3201,14 +3205,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet. (dansk tilføjelse)
     <dt>Anvendelsesnote (en)
     <dd>This property refers to dataset or distribution usage guidance/instructions.
+    <dt>Definition (da)
+    <dd>Instruktioner eller vejledning til anvendelse af datasættet.
     <dt>Definition (en)
-    <dd>Dataset or distribution usage guidance/instructions.Instruktioner eller vejledning til anvendelse af datasættet.
+    <dd>Dataset or distribution usage guidance/instructions.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.31" id="egenskab-betalingsplagt-dk-payment-imposed"><span class="secno">4.3.31. </span><span class="content">Egenskab: betalingspålagt DK (payment imposed)</span><a class="self-link" href="#egenskab-betalingsplagt-dk-payment-imposed"></a></h4>
+   <h4 class="heading settled" data-level="4.3.30" id="egenskab-betalingsplagt-dk-payment-imposed"><span class="secno">4.3.30. </span><span class="content">Egenskab: betalingspålagt DK (payment imposed)</span><a class="self-link" href="#egenskab-betalingsplagt-dk-payment-imposed"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents
@@ -3218,14 +3224,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej. (dansk tilføjelse)
     <dt>Anvendelsesnote (en)
     <dd>This property specifies whether payment is imposed on the dataset or not.
+    <dt>Definition (da)
+    <dd>angivelse af hvorvidt datasættet er betalingspålagt eller ej. 
     <dt>Definition (en)
-    <dd>specification of whether payment is imposed on the catalogued resource or not.angivelse af hvorvidt datasættet er betalingspålagt eller ej. 
+    <dd>specification of whether payment is imposed on the catalogued resource or not.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.32" id="egenskab-personoplysningskategori-dk-personal-data-category"><span class="secno">4.3.32. </span><span class="content">Egenskab: personoplysningskategori DK (personal data category)</span><a class="self-link" href="#egenskab-personoplysningskategori-dk-personal-data-category"></a></h4>
+   <h4 class="heading settled" data-level="4.3.31" id="egenskab-personoplysningskategori-dk-personal-data-category"><span class="secno">4.3.31. </span><span class="content">Egenskab: personoplysningskategori DK (personal data category)</span><a class="self-link" href="#egenskab-personoplysningskategori-dk-personal-data-category"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory
@@ -3244,7 +3252,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.33" id="egenskab-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.3.33. </span><span class="content">Egenskab: fortrolighedsgrad DK (confidentiality type )</span><a class="self-link" href="#egenskab-fortrolighedsgrad-dk-confidentiality-type"></a></h4>
+   <h4 class="heading settled" data-level="4.3.32" id="egenskab-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.3.32. </span><span class="content">Egenskab: fortrolighedsgrad DK (confidentiality type )</span><a class="self-link" href="#egenskab-fortrolighedsgrad-dk-confidentiality-type"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType
@@ -3263,7 +3271,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.34" id="egenskab-hjemmel-has-legal-resource"><span class="secno">4.3.34. </span><span class="content">Egenskab: hjemmel (has legal resource)</span><a class="self-link" href="#egenskab-hjemmel-has-legal-resource"></a></h4>
+   <h4 class="heading settled" data-level="4.3.33" id="egenskab-hjemmel-has-legal-resource"><span class="secno">4.3.33. </span><span class="content">Egenskab: hjemmel (has legal resource)</span><a class="self-link" href="#egenskab-hjemmel-has-legal-resource"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/m8g/hasLegalResource
@@ -3282,7 +3290,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.35" id="egenskab-versionsnummer-version"><span class="secno">4.3.35. </span><span class="content">Egenskab: versionsnummer (version)</span><a class="self-link" href="#egenskab-versionsnummer-version"></a></h4>
+   <h4 class="heading settled" data-level="4.3.34" id="egenskab-versionsnummer-version"><span class="secno">4.3.34. </span><span class="content">Egenskab: versionsnummer (version)</span><a class="self-link" href="#egenskab-versionsnummer-version"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2002/07/owl#versionInfo
@@ -3301,7 +3309,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.36" id="egenskab-versionsnoter-version-notes"><span class="secno">4.3.36. </span><span class="content">Egenskab: versionsnoter (version notes)</span><a class="self-link" href="#egenskab-versionsnoter-version-notes"></a></h4>
+   <h4 class="heading settled" data-level="4.3.35" id="egenskab-versionsnoter-version-notes"><span class="secno">4.3.35. </span><span class="content">Egenskab: versionsnoter (version notes)</span><a class="self-link" href="#egenskab-versionsnoter-version-notes"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/adms#versionNotes
@@ -3320,7 +3328,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.37" id="egenskab-har-version-has-version"><span class="secno">4.3.37. </span><span class="content">Egenskab: har version (has version)</span><a class="self-link" href="#egenskab-har-version-has-version"></a></h4>
+   <h4 class="heading settled" data-level="4.3.36" id="egenskab-har-version-has-version"><span class="secno">4.3.36. </span><span class="content">Egenskab: har version (has version)</span><a class="self-link" href="#egenskab-har-version-has-version"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/hasVersion
@@ -3339,7 +3347,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.38" id="egenskab-er-version-af-is-version-of"><span class="secno">4.3.38. </span><span class="content">Egenskab: er version af (is version of)</span><a class="self-link" href="#egenskab-er-version-af-is-version-of"></a></h4>
+   <h4 class="heading settled" data-level="4.3.37" id="egenskab-er-version-af-is-version-of"><span class="secno">4.3.37. </span><span class="content">Egenskab: er version af (is version of)</span><a class="self-link" href="#egenskab-er-version-af-is-version-of"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/isVersionOf
@@ -3358,7 +3366,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.39" id="egenskab-proveniensudsagn-provenance"><span class="secno">4.3.39. </span><span class="content">Egenskab: proveniensudsagn (provenance)</span><a class="self-link" href="#egenskab-proveniensudsagn-provenance"></a></h4>
+   <h4 class="heading settled" data-level="4.3.38" id="egenskab-proveniensudsagn-provenance"><span class="secno">4.3.38. </span><span class="content">Egenskab: proveniensudsagn (provenance)</span><a class="self-link" href="#egenskab-proveniensudsagn-provenance"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/provenance
@@ -3377,7 +3385,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.40" id="egenskab-relateret-ressource-related-resource"><span class="secno">4.3.40. </span><span class="content">Egenskab: relateret ressource (related resource)</span><a class="self-link" href="#egenskab-relateret-ressource-related-resource"></a></h4>
+   <h4 class="heading settled" data-level="4.3.39" id="egenskab-relateret-ressource-related-resource"><span class="secno">4.3.39. </span><span class="content">Egenskab: relateret ressource (related resource)</span><a class="self-link" href="#egenskab-relateret-ressource-related-resource"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
@@ -3387,14 +3395,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver en relateret ressource
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a related resource.
+    <dt>Definition (da)
+    <dd>En relateret ressource.
     <dt>Definition (en)
-    <dd>A related resource.En relateret ressource.
+    <dd>A related resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.41" id="egenskab-kildedatast-source-dataset"><span class="secno">4.3.41. </span><span class="content">Egenskab: kildedatasæt (source dataset)</span><a class="self-link" href="#egenskab-kildedatast-source-dataset"></a></h4>
+   <h4 class="heading settled" data-level="4.3.40" id="egenskab-kildedatast-source-dataset"><span class="secno">4.3.40. </span><span class="content">Egenskab: kildedatasæt (source dataset)</span><a class="self-link" href="#egenskab-kildedatast-source-dataset"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/source
@@ -3404,14 +3414,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver et relateret datasæt hvoraf de aktuelle datasæt er afledt.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a related Dataset from which the described Dataset is derived.
+    <dt>Definition (da)
+    <dd>En relateret ressource som den beskrevne ressource er afledt af.
     <dt>Definition (en)
-    <dd>A related resource from which the described resource is derived.En relateret ressource som den beskrevne ressource er afledt af.
+    <dd>A related resource from which the described resource is derived.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.42" id="egenskab-refereres-af-is-referenced-by"><span class="secno">4.3.42. </span><span class="content">Egenskab: refereres af (is referenced by)</span><a class="self-link" href="#egenskab-refereres-af-is-referenced-by"></a></h4>
+   <h4 class="heading settled" data-level="4.3.41" id="egenskab-refereres-af-is-referenced-by"><span class="secno">4.3.41. </span><span class="content">Egenskab: refereres af (is referenced by)</span><a class="self-link" href="#egenskab-refereres-af-is-referenced-by"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/elements/1.1/isReferencedBy
@@ -3421,14 +3433,16 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver en reference til en beskrivelse af en relation til en anden ressource.
     <dt>Anvendelsesnote (en)
     <dd>This property provides a link to a description of a relationship with another resource.
+    <dt>Definition (da)
+    <dd>En relateret ressource som refererer, citerer eller på anden måde peger på den beskrevne ressource.
     <dt>Definition (en)
-    <dd>A related resource that references, cites, or otherwise points to the described resource.En relateret ressource som refererer, citerer eller på anden måde peger på den beskrevne ressource.
+    <dd>A related resource that references, cites, or otherwise points to the described resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.43" id="egenskab-kvalificeret-kreditering-qualified-attribution"><span class="secno">4.3.43. </span><span class="content">Egenskab: kvalificeret kreditering (qualified attribution)</span><a class="self-link" href="#egenskab-kvalificeret-kreditering-qualified-attribution"></a></h4>
+   <h4 class="heading settled" data-level="4.3.42" id="egenskab-kvalificeret-kreditering-qualified-attribution"><span class="secno">4.3.42. </span><span class="content">Egenskab: kvalificeret kreditering (qualified attribution)</span><a class="self-link" href="#egenskab-kvalificeret-kreditering-qualified-attribution"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#qualifiedAttribution
@@ -3447,7 +3461,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.44" id="egenskab-kvalificeret-relation-qualified-relation"><span class="secno">4.3.44. </span><span class="content">Egenskab: kvalificeret relation (qualified relation)</span><a class="self-link" href="#egenskab-kvalificeret-relation-qualified-relation"></a></h4>
+   <h4 class="heading settled" data-level="4.3.43" id="egenskab-kvalificeret-relation-qualified-relation"><span class="secno">4.3.43. </span><span class="content">Egenskab: kvalificeret relation (qualified relation)</span><a class="self-link" href="#egenskab-kvalificeret-relation-qualified-relation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#qualifiedRelation
@@ -3466,7 +3480,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.3.45" id="egenskab-blev-dannet-ved-was-generated-by"><span class="secno">4.3.45. </span><span class="content">Egenskab: blev dannet ved (was generated by)</span><a class="self-link" href="#egenskab-blev-dannet-ved-was-generated-by"></a></h4>
+   <h4 class="heading settled" data-level="4.3.44" id="egenskab-blev-dannet-ved-was-generated-by"><span class="secno">4.3.44. </span><span class="content">Egenskab: blev dannet ved (was generated by)</span><a class="self-link" href="#egenskab-blev-dannet-ved-was-generated-by"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/prov#wasGeneratedBy
@@ -3476,9 +3490,11 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver den aktivitet der dannede eller leverede forretningskonteksten for datasættets skabelse.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to an activity that generated, or provides the business context for, the creation of the dataset.
-    <dt>Definition (en)
-    <dd>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.Generering er det at færdiggøre produktionen af en ny entitet gennem en aktivitet. 
+    <dt>Definition (da)
+    <dd>Generering er det at færdiggøre produktionen af en ny entitet gennem en aktivitet. 
 		Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
+    <dt>Definition (en)
+    <dd>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3500,7 +3516,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.4.1" id="egenskab-adgangsadresse-access-address"><span class="secno">4.4.1. </span><span class="content">Egenskab: adgangsadresse (access address)</span><a class="self-link" href="#egenskab-adgangsadresse-access-address"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3539,7 +3555,6 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p class="issue" id="issue-ccad6d1f"><a class="self-link" href="#issue-ccad6d1f"></a> Vedr. medietyper se: https://github.com/digst/DCAT-AP-DK/issues/12</p>
    <h4 class="heading settled" data-level="4.4.3" id="egenskab-adgangstjeneste-access-service"><span class="secno">4.4.3. </span><span class="content">Egenskab: adgangstjeneste (access service )</span><a class="self-link" href="#egenskab-adgangstjeneste-access-service"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3566,7 +3581,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan gentages for hver sprogvariant.
+    <dd>Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.
     <dt>Definition (da)
@@ -3585,7 +3600,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en tekstbaseret beskrivelse af distributionen
+    <dd>Denne egenskab giver en tekstbaseret beskrivelse af distributionen. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.
     <dt>Definition (da)
@@ -3597,7 +3612,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.4.6" id="egenskab-overenstemmelse-linked-schemas"><span class="secno">4.4.6. </span><span class="content">Egenskab: overenstemmelse (linked schemas)</span><a class="self-link" href="#egenskab-overenstemmelse-linked-schemas"></a></h4>
+   <h4 class="heading settled" data-level="4.4.6" id="egenskab-overholder-linked-schemas"><span class="secno">4.4.6. </span><span class="content">Egenskab: overholder (linked schemas)</span><a class="self-link" href="#egenskab-overholder-linked-schemas"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/conformsTo
@@ -3693,7 +3708,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language. For datasæt og datatjenester refererer <a class="property" data-link-type="propdesc">sprog</a> ifølge DCAT til det sprog der er anvendt i metadata (fx. titler, beskriveler etc), hvorimod <a class="property" data-link-type="propdesc">sprog</a> for distributioner refererer til sproget anvendt i de tekstværdierne i distributionen. (A language of the item. This refers to the natural language used for textual metadata (i.e. titles, descriptions, etc) of a cataloged resource (i.e. dataset or service) or the textual values of a dataset distribution). Læs mere her: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_language
+    <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.
     <dt>Definition (da)
@@ -3949,8 +3964,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p class="issue" id="issue-01e11ca7"><a class="self-link" href="#issue-01e11ca7"></a> Behov for udvidet beskrivelse af datatjenester? Se <a href="https://github.com/digst/DCAT-AP-DK/issues/23">https://github.com/digst/DCAT-AP-DK/issues/23</a></p>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.5.1" id="egenskab-endpoint-url-endpoint-url"><span class="secno">4.5.1. </span><span class="content">Egenskab: endpoint-URL (endpoint URL )</span><a class="self-link" href="#egenskab-endpoint-url-endpoint-url"></a></h4>
    <dl class="def">
     <dt>URI
@@ -3977,7 +3991,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan gentages for hver sprogvariant.
+    <dd>Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan optræde én gang for hver sprogvariant af titlen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.
     <dt>Definition (da)
@@ -3996,9 +4010,9 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2001/XMLSchema#anyURI
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med.
+    <dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. 
     <dt>Anvendelsesnote (en)
-    <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc.The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.
+    <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.
     <dt>Definition (da)
     <dd>En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc.
     <dt>Definition (en)
@@ -4100,7 +4114,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.6.1" id="egenskab-navn-name"><span class="secno">4.6.1. </span><span class="content">Egenskab: navn (name)</span><a class="self-link" href="#egenskab-navn-name"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4108,7 +4122,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.
+    <dd>Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)
     <dt>Definition (da)
@@ -4155,7 +4169,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.7.1" id="egenskab-titel-title⑤"><span class="secno">4.7.1. </span><span class="content">Egenskab: titel (title)</span><a class="self-link" href="#egenskab-titel-title⑤"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4163,7 +4177,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan gentages for hver sprogvariant.
+    <dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a name of the category scheme. May be repeated for different versions of the name
     <dt>Definition (da)
@@ -4191,7 +4205,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.8.1" id="egenskab-foretrukken-betegnelse-preferred-label"><span class="secno">4.8.1. </span><span class="content">Egenskab: foretrukken betegnelse (preferred label)</span><a class="self-link" href="#egenskab-foretrukken-betegnelse-preferred-label"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4199,7 +4213,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2000/01/rdf-schema#Literal
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan gentages for hver sprogvariant af betegnelsen.
+    <dd>Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan optræde én gang for hver sprogvariant af betegnelsen.
     <dt>Anvendelsesnote (en)
     <dd>This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.
     <dt>Definition (da)
@@ -4227,7 +4241,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.9.1" id="egenskab-algoritme-algorithm"><span class="secno">4.9.1. </span><span class="content">Egenskab: algoritme (algorithm)</span><a class="self-link" href="#egenskab-algoritme-algorithm"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4280,7 +4294,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.10.1" id="egenskab-notation-notation"><span class="secno">4.10.1. </span><span class="content">Egenskab: notation (notation)</span><a class="self-link" href="#egenskab-notation-notation"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4314,7 +4328,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.11.1" id="egenskab-licenstype-licence-type"><span class="secno">4.11.1. </span><span class="content">Egenskab: licenstype (licence type)</span><a class="self-link" href="#egenskab-licenstype-licence-type"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4350,7 +4364,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.12.1" id="egenskab-bounding-box-bounding-box"><span class="secno">4.12.1. </span><span class="content">Egenskab: bounding box (bounding box)</span><a class="self-link" href="#egenskab-bounding-box-bounding-box"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4422,7 +4436,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.13.1" id="egenskab-startdato-start-date"><span class="secno">4.13.1. </span><span class="content">Egenskab: startdato (start date)</span><a class="self-link" href="#egenskab-startdato-start-date"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4515,7 +4529,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <p><strong>Klassens egenskaber:</strong></p>
+    Klassens egenskaber: 
    <h4 class="heading settled" data-level="4.14.1" id="egenskab-relation-relation"><span class="secno">4.14.1. </span><span class="content">Egenskab: relation (relation)</span><a class="self-link" href="#egenskab-relation-relation"></a></h4>
    <dl class="def">
     <dt>URI
@@ -4696,7 +4710,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/Standard
     <dt>Anvendelsesnote (da) 
-    <dd>En specifikation som et kataloget, et datasæt, en datatjeneste eller en distribution er i overenstemmelse med.
+    <dd>En standard eller anden specifikation som et katalog, et datasæt, en datatjeneste eller en distribution overholder.
     <dt>Anvendelsesnote (en)
     <dd>A standard or other specification to which a Dataset or Distribution conforms
     <dt>Definition (da)
@@ -4712,7 +4726,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/2006/vcard/ns#Kind
     <dt>Anvendelsesnote (da) 
-    <dd>Et virtuelt visitkort beskrevet i overensstemmelse med vCard specifikationen. Anvendes eksempelvis til angivelse af telefonnummer og emailadrese for et kontaktpunkt. Bemærk at denne klasse er overklassen for de fire eksplicitte vCard-typer (Individ, Organisation, Lokation og Gruppe)
+    <dd>Et virtuelt visitkort som overholder vCard-specifikationen. Anvendes eksempelvis til angivelse af telefonnummer og emailadrese for et kontaktpunkt. Bemærk at denne klasse er overklassen for de fire eksplicitte vCard-typer (Individ, Organisation, Lokation og Gruppe)
     <dt>Anvendelsesnote (en)
     <dd>A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group)
     <dt>Definition (da)
@@ -4723,7 +4737,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
    <h3 class="heading settled" data-level="4.26" id="klasse-anvendelse-dk-usage"><span class="secno">4.26. </span><span class="content">Klasse: Anvendelse DK (Usage)</span><a class="self-link" href="#klasse-anvendelse-dk-usage"></a></h3>
-    <img alt="Anvendelse DK" src="img/Usage.png"> 
+    <img alt="Anvendelse DK" src="img/Anvendelse%20DK.png"> 
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/duv#Usage
@@ -4739,7 +4753,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
    <h3 class="heading settled" data-level="4.27" id="klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.27. </span><span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span><a class="self-link" href="#klasse-kvalitetsmetadata-dk-quality-metadata"></a></h3>
-    <img alt="Kvalitetsmetadata DK" src="img/QualityMetadata.png"> 
+    <img alt="Kvalitetsmetadata DK" src="img/Kvalitetsmetadata%20DK.png"> 
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dqv#QualityMetadata
@@ -4758,16 +4772,15 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <p>I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer.</p>
    <p>Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)</p>
    <p>Bemærk at hvis den pågældende egenskab anvendes så er det et krav at de(n) udpegede klassifikation anvendes (med enkelte undtagelser - se noter).</p>
-   <p class="issue" id="issue-1df4d388"><a class="self-link" href="#issue-1df4d388"></a> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/8">https://github.com/digst/DCAT-AP-DK/issues/8</a></p>
-   <h3 class="heading settled" data-level="5.1" id="datatemaer"><span class="secno">5.1. </span><span class="content">Datatemaer</span><a class="self-link" href="#datatemaer"></a></h3>
-   <p>Egenskab: dct:theme</p>
+   <h3 class="heading settled" data-level="5.1" id="datatemaer-emner"><span class="secno">5.1. </span><span class="content">Datatemaer (Emner)</span><a class="self-link" href="#datatemaer-emner"></a></h3>
+   <p>Egenskab: dcat:theme</p>
    <p><strong>KLASSIFIKATION: EU Datatemaer</strong></p>
    <p>URI: http://publications.europa.eu/resource/authority/data-theme <a href="https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/data-theme/?target=Browse&amp;uri=http://publications.europa.eu/resource/authority/data-theme">Se klassifikationens indhold</a></p>
-   <h3 class="heading settled" data-level="5.2" id="forvaltningsopgaver"><span class="secno">5.2. </span><span class="content">Forvaltningsopgaver</span><a class="self-link" href="#forvaltningsopgaver"></a></h3>
-   <p>Egenskab: dct:theme</p>
+   <h3 class="heading settled" data-level="5.2" id="forvaltningsopgaver-emner"><span class="secno">5.2. </span><span class="content">Forvaltningsopgaver (Emner)</span><a class="self-link" href="#forvaltningsopgaver-emner"></a></h3>
+   <p>Egenskab: dcat:theme</p>
    <p><strong>KLASSIFIKATION: FORM (FællesOffentligeReferenceModel)</strong></p>
-   <p><strong>KLASSIFIKATION: KLE (KL Emnesystematik)</strong></p>
    <p><a href="https://www.form-online.dk/soegning">Se FORM</a></p>
+   <p><strong>KLASSIFIKATION: KLE (KL Emnesystematik)</strong></p>
    <p><a href="http://www.kle-online.dk/soegning">Se KLE</a></p>
    <h3 class="heading settled" data-level="5.3" id="opdateringsfrekvenser"><span class="secno">5.3. </span><span class="content">Opdateringsfrekvenser</span><a class="self-link" href="#opdateringsfrekvenser"></a></h3>
    <p>Egenskab: dct:accrualPeriodicity</p>
@@ -4804,7 +4817,6 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <li data-md>
      <p>https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.xlsx)</p>
    </ul>
-   <p class="issue" id="issue-3422df90"><a class="self-link" href="#issue-3422df90"></a> se <a href="https://github.com/digst/DCAT-AP-DK/issues/12">https://github.com/digst/DCAT-AP-DK/issues/12</a></p>
    <h3 class="heading settled" data-level="5.5" id="filformater"><span class="secno">5.5. </span><span class="content">Filformater</span><a class="self-link" href="#filformater"></a></h3>
    <p>Egenskab: dct:format</p>
    <p><strong>KLASSIFIKATION: EU Filtyper</strong></p>
@@ -4855,7 +4867,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <p><strong>KLASSIFIKATION: Geonames</strong></p>
    <p>URI: http://sws.geonames.org/</p>
    <p><a href="http://sws.geonames.org/">Se klassifikations indhold</a></p>
-   <p class="note" role="note"><span>Note:</span> The EU Vocabularies Name Authority Lists must be used for continents, countries and places that are in those lists; if a particular location is not in one of the mentioned Named Authority Lists, Geonames URIs must be used.</p>
+   <p>Bemærk at EUs geografiske vokabularer SKAL anvendes hvis det pågældende kontinent, land eller sted optræder dér. Hvis et givet sted ikke findes i EUs geografiske vokabularer, så skal der anvendes URIer fra Geonames.</p>
    <h3 class="heading settled" data-level="5.8" id="statusser"><span class="secno">5.8. </span><span class="content">Statusser</span><a class="self-link" href="#statusser"></a></h3>
     Egenskab: adms:status 
    <p><strong>KLASSIFIKATION: ADMS Statusser</strong></p>
@@ -4871,7 +4883,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <li data-md>
      <p>http://purl.org/adms/status/Withdrawn</p>
    </ul>
-   <p class="issue" id="issue-f290b9ae"><a class="self-link" href="#issue-f290b9ae"></a> I EUs Open Data Portal anvendes også følgende klassifikation til at angive status for datasæt: <a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status">http://publications.europa.eu/resource/authority/dataset-status</a></p>
+   <p>Bemærk: I EUs Open Data Portal anvendes også følgende klassifikation til at angive status for datasæt: <a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status">http://publications.europa.eu/resource/authority/dataset-status</a></p>
    <h3 class="heading settled" data-level="5.9" id="udgivertyper"><span class="secno">5.9. </span><span class="content">Udgivertyper</span><a class="self-link" href="#udgivertyper"></a></h3>
     Egenskab: dct:type (på foaf:Agent) 
    <p><strong>KLASSIFIKATION: ADMS udgivertyper</strong></p>
@@ -4901,10 +4913,6 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <li data-md>
      <p>http://purl.org/adms/publishertype/SupraNationalAuthority"</p>
    </ul>
-   <p class="note" role="note"><span>Note:</span> evt. fremtidig mapning til klassifikationen Offentlige organisationstyper herunder</p>
-   <p>KLASSIFIKATION: Offentlige organisationstyper</p>
-   <p>URI: https://data.gov.dk/concept/profile/public-org-types</p>
-   <p><a href="https://digst.github.io/IT-System-AP/SYS-AP/docs/#klassifikation-offentlige-organisationstyper">Se klassifikationens indhold</a></p>
    <h3 class="heading settled" data-level="5.10" id="licenstyper"><span class="secno">5.10. </span><span class="content">Licenstyper</span><a class="self-link" href="#licenstyper"></a></h3>
    <p>Egenskab: dct:license</p>
    <p><strong>KLASSIFIKATION: ADMS licenstyper</strong></p>
@@ -4972,21 +4980,29 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <li data-md>
      <p><a href="https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf">EDP Goldbook</a></p>
     <li data-md>
-     <p><a href="https://www.w3.org/TR/vocab-dqv/">W3C Data Quality Vocabulary</a></p>
+     <p><a href="https://www.go-fair.org/fair-principles/">FAIR-principperne</a></p>
+    <li data-md>
+     <p><a href="https://arkitektur.digst.dk/node/588">Retningslinjer for stabile http-URIer</a></p>
+    <li data-md>
+     <p><a href="https://www.w3.org/RDF/">W3C: Resource Description Framework</a></p>
+    <li data-md>
+     <p><a href="https://www.w3.org/TR/shacl/">W3C: Shapes Constraint Language</a></p>
+    <li data-md>
+     <p><a href="https://www.w3.org/TR/dwbp/">W3C: Data on the Web Best practices</a></p>
+    <li data-md>
+     <p><a href="https://www.w3.org/TR/vocab-dqv/">W3C: Data Quality Vocabulary</a></p>
     <li data-md>
      <p><a href="https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx">Fælles sprog for datakvalitet</a></p>
     <li data-md>
-     <p><a href="https://www.w3.org/TR/dwbp/">W3C Data on the Web Best practices</a></p>
+     <p><a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Regler for begrebs- og datamodellering</a></p>
    </ul>
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
-   <h3 class="heading settled" data-level="7.1" id="uml-diagrammer"><span class="secno">7.1. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
-   <h4 class="heading settled" data-level="7.1.1" id="uml-diagram-dcat-ap-dk"><span class="secno">7.1.1. </span><span class="content">UML-diagram: DCAT-AP-DK</span><a class="self-link" href="#uml-diagram-dcat-ap-dk"></a></h4>
-   <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img alt="Figur-DCAT-AP-DK-v2-UML" src="img/Figur-DCAT-AP-DK-v2-UML.png" width="800"></a></p>
-   <h3 class="heading settled" data-level="7.2" id="eksempler"><span class="secno">7.2. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h3>
-   <p>Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
-Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)</p>
+   <h3 class="heading settled" data-level="7.1" id="eksempler-og-validering"><span class="secno">7.1. </span><span class="content">Eksempler og validering</span><a class="self-link" href="#eksempler-og-validering"></a></h3>
+   <h4 class="heading settled" data-level="7.1.1" id="eksempler"><span class="secno">7.1.1. </span><span class="content">Eksempler</span><a class="self-link" href="#eksempler"></a></h4>
+    Der er oprettet eksempler på DCAT-AP-DK-metadata som er i overensstemmelse med DCAT-AP-DK.
+Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter) 
    <p>Find eksemplerne her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples</a></p>
-   <h3 class="heading settled" data-level="7.3" id="validering"><span class="secno">7.3. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h3>
+   <h4 class="heading settled" data-level="7.1.2" id="validering"><span class="secno">7.1.2. </span><span class="content">Validering</span><a class="self-link" href="#validering"></a></h4>
    <p>Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language) som muliggør validering af DCAT-AP-DK-metadata.</p>
    <p>SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).</p>
    <p>Find SHACL-filen her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a></p>
@@ -5003,21 +5019,65 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
     <li data-md>
      <p>RDF converter: <a href="http://www.easyrdf.org/converter">http://www.easyrdf.org/converter</a></p>
    </ul>
-   <h3 class="heading settled" data-level="7.4" id="begrebsliste"><span class="secno">7.4. </span><span class="content">Begrebsliste</span><a class="self-link" href="#begrebsliste"></a></h3>
-   <p><strong>Begrebmodel for beskrivelse af datasæt</strong></p>
+   <h3 class="heading settled" data-level="7.2" id="uml-diagrammer"><span class="secno">7.2. </span><span class="content">UML-diagrammer</span><a class="self-link" href="#uml-diagrammer"></a></h3>
+   <h4 class="heading settled" data-level="7.2.1" id="uml-diagram-dcat-ap-dk"><span class="secno">7.2.1. </span><span class="content">UML-diagram: DCAT-AP-DK</span><a class="self-link" href="#uml-diagram-dcat-ap-dk"></a></h4>
+   <ul>
+    <li data-md>
+     <p>Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
+    <li data-md>
+     <p>Modelnavn (label): Dansk anvendelsesprofile til beskrivelse af datasæt og datakataloger</p>
+    <li data-md>
+     <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
+    <li data-md>
+     <p>Versionnummer (versionInfo): 2.0.1</p>
+    <li data-md>
+     <p>Seneste opdateringsdato (dateModified): 2020-08-28</p>
+    <li data-md>
+     <p>Modelstatus (modelStatus): completed</p>
+    <li data-md>
+     <p>Godkendelsesstatus (approvalStatus): afventer godkendelse</p>
+    <li data-md>
+     <p>Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10</p>
+    <li data-md>
+     <p>Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP henter de grundlæggende elementer og strukturer fra W3C’s specification Data Catalogue vocabulary (DCAT).</p>
+   </ul>
+   <p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img alt="Figur-DCAT-AP-DK-v2-UML" src="img/Figur-DCAT-AP-DK-v2-UML.png" width="800"></a></p>
+   <h4 class="heading settled" data-level="7.2.2" id="uml-diagram-dcat-dk"><span class="secno">7.2.2. </span><span class="content">UML-diagram: DCAT-DK</span><a class="self-link" href="#uml-diagram-dcat-dk"></a></h4>
+   <ul>
+    <li data-md>
+     <p>Namespace: https://data.gov.dk/model/core/dcat-dk/</p>
+    <li data-md>
+     <p>Modelnavn (label): Vokabular til DCAT-AP-DK</p>
+    <li data-md>
+     <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
+    <li data-md>
+     <p>Versionnummer (versionInfo): 1.0.0</p>
+    <li data-md>
+     <p>Seneste opdateringsdato (dateModified): 2020-08-28</p>
+    <li data-md>
+     <p>Modelstatus (modelStatus): completed</p>
+    <li data-md>
+     <p>Godkendelsesstatus (approvalStatus): afventer godkendelse</p>
+    <li data-md>
+     <p>Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10</p>
+    <li data-md>
+     <p>Kommentar (comment): DCAT-DK er et vokabular der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasetansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad som ikke indgår i DCAT-AP eller DCAT.</p>
+   </ul>
+   <p align="center"><a href="img/Vokabular%20for%20DCAT-AP-DK.png"><img alt="Figur-DCAT-DK-v2-UML" src="img/Vokabular%20for%20DCAT-AP-DK.png" width="800"></a></p>
+   <h3 class="heading settled" data-level="7.3" id="begrebmodel-for-beskrivelse-af-datast"><span class="secno">7.3. </span><span class="content">Begrebmodel for beskrivelse af datasæt</span><a class="self-link" href="#begrebmodel-for-beskrivelse-af-datast"></a></h3>
    <ul>
     <li data-md>
      <p>Namespace: https://data.gov.dk/concept/core/dataset/</p>
     <li data-md>
-     <p>Modelnavn (label): Begrebsmodel for datasæt og datakataloger</p>
+     <p>Modelnavn (label): Begrebsmodel for beskrivelse datasæt og datakataloger</p>
     <li data-md>
      <p>Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen</p>
     <li data-md>
-     <p>Versionnummer (versionInfo): 0.2.0</p>
+     <p>Versionnummer (versionInfo): 1.0.0</p>
     <li data-md>
-     <p>Seneste opdateringsdato (dateModified): 2020-04-20</p>
+     <p>Seneste opdateringsdato (dateModified): 2020-08-28</p>
     <li data-md>
-     <p>Modelstatus (modelStatus): development</p>
+     <p>Modelstatus (modelStatus): completed</p>
     <li data-md>
      <p>Godkendelsesstatus (approvalStatus): afventer godkendelse</p>
     <li data-md>
@@ -5038,7 +5098,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
     <tbody>
      <tr>
       <td>katalog
-      <td>kurateret samling af metadata om datasæt og datatjenester i et katalog
+      <td>udvalgt og arrangeret samling af metadata om datasæt og datatjenester i et katalog
       <td>
       <td>http://www.w3.org/ns/dcat#Catalog
       <td> ja
@@ -5052,7 +5112,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td>catalog record 
      <tr>
       <td>katalogiseret ressource
-      <td>ressource udgivet eller kurateret af en enkelt aktør i et katalog
+      <td>ressource udgivet eller udvalgt og arrangeret af en enkelt aktør i et katalog
       <td>
       <td>http://www.w3.org/ns/dcat#Resource
       <td> ja
@@ -5129,11 +5189,11 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td>language 
      <tr>
       <td>datasætansvarlig
-      <td>aktør der er ansvarlig for den overordnede administration af alle forhold omkring et datasæt
+      <td>organisation der har det juridiske ansvar for datasættet
       <td>
       <td>
       <td> ja
-      <td>data responsible organisation 
+      <td>dataset responsible organisation 
      <tr>
       <td>datasætskaber
       <td>aktør der er primært ansvarlig for datasættets skabelse
@@ -5309,20 +5369,3 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
 
 })();
 </script>
-  <h2 class="no-num no-ref heading settled" id="issues-index"><span class="content">Issues Index</span><a class="self-link" href="#issues-index"></a></h2>
-  <div style="counter-reset:issue">
-   <div class="issue"> Standarden skal angive primære use cases. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/3">https://github.com/digst/DCAT-AP-DK/issues/3</a><a href="#issue-64af58eb"> ↵ </a></div>
-   <div class="issue"> Behov for formidling af minimumsmodel. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/20">https://github.com/digst/DCAT-AP-DK/issues/20</a><a href="#issue-96e80575"> ↵ </a></div>
-   <div class="issue"> Er der behov for at slække på kravniveauet for dct:temporal fra <a class="property" data-link-type="propdesc">Anbefalet</a> til <a class="property" data-link-type="propdesc">Valgfri</a>?<a href="#issue-0ecb7b80"> ↵ </a></div>
-   <div class="issue"> Ændringer af kravniveau samt tilføjelser af nye elementer i DCAT-AP-DK ift. DCAT-AP. Se <a href="https://github.com/digst/DCAT-AP-DK/issues/11">https://github.com/digst/DCAT-AP-DK/issues/11</a><a href="#issue-f4fbdae7"> ↵ </a></div>
-   <div class="issue"> Yderligere information og vejledning vedr. dcat:Dataset kan evt. tilføjes. Se også <a href="https://github.com/digst/DCAT-AP-DK/issues/19">https://github.com/digst/DCAT-AP-DK/issues/19</a><a href="#issue-42d0ef21"> ↵ </a></div>
-   <div class="issue"> Oversættelse af DCAT - og termen <a class="property" data-link-type="propdesc">kurateret</a> - drøftes her <a href="https://github.com/digst/DCAT-AP-DK/issues/9">https://github.com/digst/DCAT-AP-DK/issues/9</a><a href="#issue-0e769877"> ↵ </a></div>
-   <div class="issue"> Vedr. dansk anvendelsesnote: se <a href="https://github.com/digst/DCAT-AP-DK/issues/19">https://github.com/digst/DCAT-AP-DK/issues/19</a><a href="#issue-7bb40b33"> ↵ </a></div>
-   <div class="issue"> Vedr. aktørrelationer: Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a><a href="#issue-58318461"> ↵ </a></div>
-   <div class="issue"> Vedr. aktørrelationer: Se <a href="https://github.com/digst/DCAT-AP-DK/issues/5">https://github.com/digst/DCAT-AP-DK/issues/5</a><a href="#issue-58318461①"> ↵ </a></div>
-   <div class="issue"> Vedr. medietyper se: https://github.com/digst/DCAT-AP-DK/issues/12<a href="#issue-ccad6d1f"> ↵ </a></div>
-   <div class="issue"> Behov for udvidet beskrivelse af datatjenester? Se <a href="https://github.com/digst/DCAT-AP-DK/issues/23">https://github.com/digst/DCAT-AP-DK/issues/23</a><a href="#issue-01e11ca7"> ↵ </a></div>
-   <div class="issue"> Se <a href="https://github.com/digst/DCAT-AP-DK/issues/8">https://github.com/digst/DCAT-AP-DK/issues/8</a><a href="#issue-1df4d388"> ↵ </a></div>
-   <div class="issue"> se <a href="https://github.com/digst/DCAT-AP-DK/issues/12">https://github.com/digst/DCAT-AP-DK/issues/12</a><a href="#issue-3422df90"> ↵ </a></div>
-   <div class="issue"> I EUs Open Data Portal anvendes også følgende klassifikation til at angive status for datasæt: <a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-status">http://publications.europa.eu/resource/authority/dataset-status</a><a href="#issue-f290b9ae"> ↵ </a></div>
-  </div>
