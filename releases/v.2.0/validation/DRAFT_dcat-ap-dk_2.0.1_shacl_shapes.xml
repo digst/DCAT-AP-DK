@@ -17,7 +17,7 @@
 		 xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1/">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
     <dc:title>DCAT-AP-DK v.2.0.1</dc:title>
@@ -2454,9 +2454,6 @@
     <rdfs:label xml:lang="en">Optional</rdfs:label>		
     <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</dc:description> 	
   </rdf:Description>
-  
-  
-    
   
 
 </rdf:RDF>
