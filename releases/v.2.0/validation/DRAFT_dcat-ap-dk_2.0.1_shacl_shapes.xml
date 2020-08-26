@@ -7,30 +7,46 @@
 		 xmlns:adms="http://purl.org/adms"			 
          xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcat-ap="http://data.europa.eu/r5r/"
-		 xmlns:dcat-ap-dk="https://data.gov.dk/model/profile/dcat-ap-dk"
-		 xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk"
+		 xmlns:dcat-ap-dk="https://data.gov.dk/model/profile/dcat-ap-dk/"
+		 xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk/"
          xmlns:dc="http://purl.org/dc/terms/"
          xmlns:cc="http://creativecommons.org/ns#"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:sh="http://www.w3.org/ns/shacl#"
-		 xmlns:voaf="http://purl.org/vocommons/voaf#"		 
+		 xmlns:voaf="http://purl.org/vocommons/voaf#"		
+		 xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1/">
-    <dc:description>This document specifies the constraints on properties and classes expressed in SHACL (RDF/XML) by a Danish DCAT Application Profile </dc:description> 
-    <dc:title>DCAT-AP-DK v.2.0.1 RDF/XML</dc:title>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
+    <dc:title>DCAT-AP-DK v.2.0.1</dc:title>
+	<dc:description>The Danish DCAT Application profile for datasets and data catalogues (DCAT-AP-DK) is a specification based on DCAT and DCAT-AP for describing public sector datasets in Denmark.</dc:description> 	
     <owl:versionInfo>2.0.1</owl:versionInfo>
-    <dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>
-    <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-24</dc:modified>
-    <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>	
+	<voaf:specializes rdf:resource="http://www.w3.org/ns/dcat#"/>	
+    <voaf:specializes rdf:resource="http://data.europa.eu/r5r/"/>		
     <dc:publisher rdf:resource="http://digst.dk"/>
-    <dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>	
-    <dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
-    <voaf:specializes rdf:resource="http://data.europa.eu/r5r/"/>	
     <foaf:page rdf:resource="https://arkitektur.digst.dk/rammearkitektur/datastandarder/dcat-ap-dk"/> 
     <foaf:page rdf:resource="https://github.com/digst/DCAT-AP-DK"/>
-    <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.1_shacl_shapes"/>
-    <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/draft/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>		
+	<dcat:contactPoint>
+		<vcard:Kind>
+		   <vcard:fn>Digitaliseringsstyrelsns arkitektur-postkasse</vcard:fn>
+		   <vcard:hasEmail rdf:resource="mailto:arkitektur@digst.dk"/>		
+		</vcard:Kind>
+	</dcat:contactPoint>
+	<dcat:distribution>	
+		<dcat:Distribution>	
+			<dc:title>DCAT-AP-DK v.2.0.1 SHACL shapes (RDF/XML)</dc:title>		
+			<dc:description>This document specifies the constraints on properties and classes of DCAT-AP-DK expressed in SHACL (RDF/XML) </dc:description> 			
+			<dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>			
+			<dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
+			<dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>	
+			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-26</dc:modified>			
+			<dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>		
+			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>
+			<dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>	
+		</dcat:Distribution>
+	</dcat:distribution>
   </rdf:Description>
 
 
@@ -60,7 +76,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>
       </rdf:Description>
     </sh:property>
 	
@@ -76,7 +92,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -92,7 +108,7 @@
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -107,7 +123,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#service"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>	
 
@@ -124,7 +140,7 @@
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/publisher"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 
@@ -141,7 +157,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/creator"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -158,7 +174,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -175,7 +191,7 @@
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property>
 
@@ -191,7 +207,7 @@
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property> 
 
@@ -207,7 +223,7 @@
         <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/> 			
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#themeTaxonomy"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -223,7 +239,7 @@
         <sh:class rdf:resource="http://purl.org/dc/terms/Location"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/spatial"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -240,7 +256,7 @@
         <sh:flags>i</sh:flags> <!-- ignore case -->	
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -256,7 +272,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/license"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -272,7 +288,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/rights"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -287,7 +303,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#CatalogRecord"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#record"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -303,7 +319,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#catalog"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -319,7 +335,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Resource"/> 	<!-- OBS: Ændret til fra Catalog til Resource-->
         <sh:path rdf:resource="http://purl.org/dc/terms/hasPart"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -335,7 +351,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/isPartOf"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -368,7 +384,7 @@
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape"/>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -384,7 +400,7 @@
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>	
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -401,7 +417,7 @@
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>		
         <sh:shape rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -419,7 +435,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#status"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -434,7 +450,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -449,7 +465,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -465,7 +481,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -482,7 +498,7 @@
         <sh:flags>i</sh:flags> <!-- ignore case -->
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -498,7 +514,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/source"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -529,7 +545,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/identifier"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -544,7 +560,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#identifier"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -560,7 +576,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -576,7 +592,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 
@@ -592,7 +608,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/publisher"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property>
 
@@ -608,7 +624,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -624,7 +640,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/creator"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -639,7 +655,7 @@
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/contributor"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>	
 	
@@ -655,7 +671,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://schema.org/maintainer"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>		
 	
@@ -670,7 +686,7 @@
         <sh:class rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -686,7 +702,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#distribution"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -701,7 +717,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Distribution"/>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#sample"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -719,7 +735,7 @@
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#landingPage"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -734,7 +750,7 @@
         <sh:class rdf:resource="http://purl.org/dc/terms/Standard"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -749,7 +765,7 @@
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/page"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -759,7 +775,7 @@
 	    <sh:name xml:lang="en">theme/ category</sh:name>	 	  
 	    <sh:name xml:lang="da">emne</sh:name>	
 		<sh:description xml:lang="en">This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</sh:description>
-		<sh:description xml:lang="da">Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan opmærkes med flere forskellige centrale emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</sh:description>	
+		<sh:description xml:lang="da">Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</sh:description>	
 		<rdfs:comment xml:lang="en">A main category of the resource. A resource can have multiple themes.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</rdfs:comment>		
        <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> 
@@ -767,7 +783,7 @@
         <sh:flags>i</sh:flags> -->	
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#theme"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-	<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+	<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 		
@@ -784,7 +800,7 @@
         <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
 <!--    <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>    Se https://github.com/SEMICeu/DCAT-AP/issues/153-->		
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -799,7 +815,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -816,7 +832,7 @@
         <sh:flags>i</sh:flags> <!-- ignore case -->
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -833,7 +849,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/accessRights"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -853,7 +869,7 @@
         <sh:class rdf:resource="http://purl.org/dc/terms/Location"/> 
         <sh:path rdf:resource="http://purl.org/dc/terms/spatial"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -868,7 +884,7 @@
         <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#spatialResolutionInMeters"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -879,11 +895,11 @@
 		<sh:description xml:lang="en">This property refers to a temporal period that the Dataset covers.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den periode datasættet dækker</sh:description>
 		<rdfs:comment xml:lang="en">Temporal characteristics of the resource.</rdfs:comment>	
-		<rdfs:comment xml:lang="da">Ressourcens tidslige karakteristika.</rdfs:comment>		<!-- Rettelse i v. 2.0.1 -->
+		<rdfs:comment xml:lang="da">Ressourcens tidslige karakteristika.</rdfs:comment>		
         <sh:class rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/temporal"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -898,7 +914,7 @@
         <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#temporalResolution"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -916,7 +932,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/accrualPeriodicity"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -927,12 +943,12 @@
 		<sh:description xml:lang="en">This property contains the date of formal issuance (e.g., publication) of the Dataset.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet</sh:description>
 		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>		
-		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>		<!-- Rettelse i v. 2.0.1 -->	
+		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
         <sh:shape rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -948,7 +964,7 @@
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
         <sh:shape rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>	
 	
@@ -965,7 +981,7 @@
         <sh:path rdf:resource="http://www.w3.org/ns/dqv#hasQualityMetadata"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
         <sh:class rdf:resource="http://www.w3.org/ns/dqv#QualityMetadata"/>		
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -976,12 +992,12 @@
 		<sh:description xml:lang="en">This property refers to dataset or distribution usage guidance/instructions.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet. (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">Dataset or distribution usage guidance/instructions.</rdfs:comment>			
-		<rdfs:comment xml:lang="da">Instruktioner eller vejledning til anvendelse af datasættet.</rdfs:comment>		<!-- Rettelse i v. 2.0.1 -->		
+		<rdfs:comment xml:lang="da">Instruktioner eller vejledning til anvendelse af datasættet.</rdfs:comment>				
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/duv#hasUsage"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
         <sh:class rdf:resource="http://www.w3.org/ns/duv#Usage"/>	
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -992,12 +1008,12 @@
 		<sh:description xml:lang="en">This property specifies whether payment is imposed on the dataset or not.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej. (dansk tilføjelse)</sh:description>	
 		<rdfs:comment xml:lang="en">specification of whether payment is imposed on the catalogued resource or not.</rdfs:comment>
-		<rdfs:comment xml:lang="da">angivelse af hvorvidt datasættet er betalingspålagt eller ej. </rdfs:comment>		<!-- Rettelse i v. 2.0.1 -->	
+		<rdfs:comment xml:lang="da">angivelse af hvorvidt datasættet er betalingspålagt eller ej. </rdfs:comment>			
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
         <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>		
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1014,7 +1030,7 @@
   <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
         <sh:pattern>^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1032,7 +1048,7 @@
   <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
         <sh:pattern>^https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1047,7 +1063,7 @@
         <sh:path rdf:resource="http://data.europa.eu/m8g/hasLegalResource"/>
         <sh:class rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>		
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1063,7 +1079,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1078,7 +1094,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#versionNotes"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>	
 	
@@ -1093,7 +1109,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/hasVersion"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1108,7 +1124,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/isVersionOf"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -1123,7 +1139,7 @@
         <sh:class rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/provenance"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -1134,11 +1150,11 @@
 		<sh:description xml:lang="en">This property refers to a related resource.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en relateret ressource</sh:description>		  
 		<rdfs:comment xml:lang="en">A related resource.</rdfs:comment>			
-		<rdfs:comment xml:lang="da">En relateret ressource.</rdfs:comment>	<!-- Rettelse i v. 2.0.1 -->		
+		<rdfs:comment xml:lang="da">En relateret ressource.</rdfs:comment>			
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/relation"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -1149,11 +1165,11 @@
 		<sh:description xml:lang="en">This property refers to a related Dataset from which the described Dataset is derived.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et relateret datasæt hvoraf de aktuelle datasæt er afledt.</sh:description>	
 		<rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>			
-		<rdfs:comment xml:lang="da">En relateret ressource som den beskrevne ressource er afledt af.</rdfs:comment>			<!-- Rettelse i v. 2.0.1 -->	
+		<rdfs:comment xml:lang="da">En relateret ressource som den beskrevne ressource er afledt af.</rdfs:comment>				
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/source"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -1164,11 +1180,11 @@
 		<sh:description xml:lang="en">This property provides a link to a description of a relationship with another resource.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en reference til en beskrivelse af en relation til en anden ressource.</sh:description>	
 		<rdfs:comment xml:lang="en">A related resource that references, cites, or otherwise points to the described resource.</rdfs:comment>			
-		<rdfs:comment xml:lang="da">En relateret ressource som refererer, citerer eller på anden måde peger på den beskrevne ressource.</rdfs:comment>			<!-- Rettelse i v. 2.0.1 -->	
+		<rdfs:comment xml:lang="da">En relateret ressource som refererer, citerer eller på anden måde peger på den beskrevne ressource.</rdfs:comment>				
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <sh:path rdf:resource="http://purl.org/dc/elements/1.1/isReferencedBy"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -1183,7 +1199,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/prov#Attribution"/>
         <sh:path rdf:resource="http://www.w3.org/ns/prov#qualifiedAttribution"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 	
@@ -1198,7 +1214,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Relationship"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#qualifiedRelation"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>	
 
@@ -1210,11 +1226,11 @@
 		<sh:description xml:lang="da">Denne egenskab angiver den aktivitet der dannede eller leverede forretningskonteksten for datasættets skabelse.</sh:description>		
 		<rdfs:comment xml:lang="en">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Generering er det at færdiggøre produktionen af en ny entitet gennem en aktivitet. 
-		Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</rdfs:comment><!-- Rettelse i v. 2.0.1 -->			
+		Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <sh:path rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>				
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>				
       </rdf:Description>
     </sh:property>
 
@@ -1248,7 +1264,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#accessURL"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1264,7 +1280,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#downloadURL"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>	
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1279,7 +1295,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#DataService"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#accessService"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1295,7 +1311,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1311,7 +1327,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1326,7 +1342,7 @@
         <sh:class rdf:resource="http://purl.org/dc/terms/Standard"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1342,7 +1358,7 @@
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -1358,7 +1374,7 @@
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/modified"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1375,7 +1391,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/adms#status"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -1393,7 +1409,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://data.europa.eu/r5r/availability"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1410,7 +1426,7 @@
         <sh:flags>i</sh:flags> <!-- ignore case -->	
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1426,7 +1442,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://spdx.org/rdf/terms#checksum"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1442,7 +1458,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#byteSize"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1460,7 +1476,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#mediaType"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -1478,7 +1494,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/format"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1496,7 +1512,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#compressFormat"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1514,7 +1530,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#packageFormat"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1529,7 +1545,7 @@
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/page"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1546,7 +1562,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/odrl/2/hasPolicy"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1562,7 +1578,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/license"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -1578,7 +1594,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/rights"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>
       </rdf:Description>
     </sh:property>
 
@@ -1593,7 +1609,7 @@
         <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#temporalResolution"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1608,7 +1624,7 @@
         <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#spatialResolutionInMeters"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>	
 
@@ -1641,7 +1657,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#endpointURL"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1657,7 +1673,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1672,7 +1688,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#BlankNodeOrIRI"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#endpointDescription"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -1687,7 +1703,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/description"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1702,7 +1718,7 @@
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#servesDataset"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1718,7 +1734,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/licence"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1734,7 +1750,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/accessRights"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1768,7 +1784,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/name"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1786,7 +1802,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1818,7 +1834,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/title"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>		
       </rdf:Description>
     </sh:property>
 
@@ -1846,7 +1862,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -1880,7 +1896,7 @@
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://spdx.org/rdf/terms#algorithm"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1896,7 +1912,7 @@
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://spdx.org/rdf/terms#checksumValue"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -1927,7 +1943,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
   </rdf:Description>
@@ -1960,7 +1976,7 @@
         <sh:flags>i</sh:flags> <!-- ignore case -->
         <sh:path rdf:resource="http://purl.org/dc/terms/type"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
       </rdf:Description>
     </sh:property>
 	
@@ -1992,7 +2008,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#bbox"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -2008,7 +2024,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#centroid"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
       </rdf:Description>
     </sh:property>
 
@@ -2024,7 +2040,7 @@
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/locn#geometry"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
       </rdf:Description>
     </sh:property>
 	
@@ -2055,7 +2071,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#startDate"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>		
         <sh:shape rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>		
       </rdf:Description>
     </sh:property>
@@ -2071,7 +2087,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#endDate"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended"/>			
         <sh:shape rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
       </rdf:Description>
     </sh:property>
@@ -2088,7 +2104,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/2006/time#hasBeginning"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
 
@@ -2104,7 +2120,7 @@
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://www.w3.org/2006/time#hasEnd"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Optional"/>		
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>		
       </rdf:Description>
     </sh:property>
   </rdf:Description>
@@ -2135,7 +2151,7 @@
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/relation"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -2151,7 +2167,7 @@
         <sh:nodeKind rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#hadRole"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory"/>			
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -2164,7 +2180,7 @@
 <!--                Frekvens                -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Frequency_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Frequency_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/Frequency"/>  
 	  <sh:name xml:lang="en">Frequency</sh:name>
@@ -2179,7 +2195,7 @@
 <!--                Sprog                   -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#LinguisticSystem_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/LinguisticSystem_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>  
 	  <sh:name xml:lang="en">Linguistic system</sh:name>
@@ -2194,7 +2210,7 @@
 <!--                Medietype               -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#MediaType_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/MediaType_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/MediaType"/>  
 	  <sh:name xml:lang="en">Media Type</sh:name>
@@ -2205,37 +2221,12 @@
 	  <rdfs:comment xml:lang="en">Et filformat eller fysisk medie.</rdfs:comment>		  
   </rdf:Description>
   
-<!-- ====================================== --> 
-<!--                Udgivertype             -->
-<!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#PublisherType_Shape">
-	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
-	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
-	  <sh:name xml:lang="en">Publisher Type</sh:name>
-	  <sh:name xml:lang="da">Udgivertype (Udkast)</sh:name>	
-	  <sh:description xml:lang="en">A type of organisation that acts as a publisher</sh:description>
-	  <sh:description xml:lang="da">Typen af organisationen der har rollen som udgiver (Udkast - endnu ikke implementeret)</sh:description>		 		  
-  </rdf:Description>
-  
-<!-- ====================================== --> 
-<!--                Status                  -->
-<!-- ====================================== --> 
-
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Status_Shape">
-	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
-	  <sh:targetClass rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>  
-	  <sh:name xml:lang="en">Status</sh:name>
-	  <sh:name xml:lang="da">Status (Udkast)</sh:name>	
-	  <sh:description xml:lang="en">An indication of the maturity of a Distribution or the type of change of a Catalogue Record.</sh:description>
-	  <sh:description xml:lang="da">Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning. (Udkast - endnu ikke implementeret)</sh:description>		  
-  </rdf:Description>
-  
 <!-- ====================================== --> 
 <!--                Rolle                   -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Role_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Role_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/ns/dcat#Role"/>  
 	  <sh:name xml:lang="en">Role</sh:name>
@@ -2246,10 +2237,10 @@
   </rdf:Description>  
   
 <!-- ====================================== --> 
-<!--                Proveniensudsag         -->
+<!--                Proveniensudsagn        -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#ProvenanceStatement_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/ProvenanceStatement_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/ProvenanceStatement"/>  
 	  <sh:name xml:lang="en">Provenance Statement</sh:name>
@@ -2264,7 +2255,7 @@
 <!--                Rettighedsudsagn        -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#RightsStatement_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/RightsStatement_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/RightsStatement"/>  
 	  <sh:name xml:lang="en">Rights Statement</sh:name>
@@ -2280,7 +2271,7 @@
 <!--                Dokument                -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Document_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Document_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://xmlns.com/foaf/spec/#term_Document"/>  
 	  <sh:name xml:lang="en">Document</sh:name>
@@ -2295,7 +2286,7 @@
 <!--                Standard                -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Standard_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Standard_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://purl.org/dc/terms/Standard"/>  
 	  <sh:name xml:lang="en">Standard</sh:name>
@@ -2310,7 +2301,7 @@
 <!--                Kind                    -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Kind_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Kind_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>  
 	  <sh:name xml:lang="en">Kind</sh:name>
@@ -2326,7 +2317,7 @@
 <!--       Anvendelse (dansk tilføjelse)    -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Usage_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Usage_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/ns/duv#Usage"/>  
 	  <sh:name xml:lang="en">Usage</sh:name>
@@ -2342,7 +2333,7 @@
 <!--   Kvalitetsmetadata (dansk tilføjelse)    -->
 <!-- ====================================== --> 
 
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#QualityMetadata_Shape">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/QualityMetadata_Shape">
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="http://www.w3.org/ns/dqv#QualityMetadata"/>  
 	  <sh:name xml:lang="en">Quality Metadata</sh:name>
@@ -2443,21 +2434,21 @@
 <!--                Kravniveauer            -->
 <!-- ====================================== --> 
   
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Mandatory">
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory">
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Obligatorisk</rdfs:label>
     <rdfs:label xml:lang="en">Mandatory</rdfs:label>
     <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</dc:description> 	
-	
   </rdf:Description>
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Recommended">
+  
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended">
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Anbefalet</rdfs:label>
     <rdfs:label xml:lang="en">Recommended</rdfs:label>	
     <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender SHOULD provide the information for that property if it is available.</dc:description> 
-	
   </rdf:Description>
-  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk#Optional">
+  
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Optional">
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Valgfri</rdfs:label>
     <rdfs:label xml:lang="en">Optional</rdfs:label>		
