@@ -85,7 +85,7 @@ ex:dataset-001
 
 ex:dataset-001-csv
   a dcat:Distribution ;
-  dcat:accessURL <http://www.example.org/files/001.csv> ;
+  dcat:accessURL <http://example.org/landingpage> ;
   dcat:downloadURL <http://www.example.org/files/001.csv> ;
   dct:title "CSV-distribution af datsættet 001"@da ;  
   dcat:byteSize "5120"^^xsd:decimal ;
@@ -96,7 +96,7 @@ ex:dataset-001-csv
 .
 ex:dataset-001-xml
   a dcat:Distribution ;
-  dcat:accessURL <http://www.example.org/files/001.xml> ;
+  dcat:accessURL <http://example.org/landingpage> ;
   dcat:downloadURL <http://www.example.org/files/001.xml> ;
   dct:title "XML-distribution af datsættet 001"@da ;  
   dcat:byteSize "6120"^^xsd:decimal ;
