@@ -306,7 +306,7 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 * **Valgfri** (Optional): informationen KAN angives  
 
 ## Forskellige visninger af DCAT-AP-DK 
-På baggrund af de tre ovenstående kravniveauer DCAT-AP-DK 2.0.1 er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.1. 
+På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.1. 
 
 Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces)
 
@@ -615,7 +615,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -827,7 +827,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -907,7 +907,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1327,7 +1327,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1447,7 +1447,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/frequency/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/frequency/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2026,7 +2026,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2044,7 +2044,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://data.europa.eu/r5r/availability</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://data.europa.eu/r5r/availability/</dd>
+<dd>Anvend følgende klassifikation: http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2064,7 +2064,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2144,7 +2144,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/format</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/file-type/</dd>
+<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/file-type/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2524,7 +2524,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/publishertype/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2740,7 +2740,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^http://purl.org/adms/licencetype/</dd>
+<dd>Anvend følgende klassifikation: http://purl.org/adms/licencetype/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) </dd>
 <dt>Anvendelsesnote (en)</dt>
