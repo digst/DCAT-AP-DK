@@ -149,7 +149,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.1 (udkast)
-Date: 2020-08-24
+Date: 2020-08-27
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -275,12 +275,12 @@ Der er pt. udarbejdet følgende udkast til to visninger af DCAT-AP-DK som viser 
 - [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
 viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
 
-<img src="img/Figur-DCAT-AP-DK-v2-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
+<img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 
 - [DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
 viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser
 
-<img src="img/Figur-DCAT-AP-DK-v2-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
+<img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
 
 
 ### Afvigelser ift. DCAT-AP
@@ -333,7 +333,7 @@ Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i 
 ## Diagram 
 Anvendelsesprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram 
 
-<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img src="img/Figur-DCAT-AP-DK-v2-UML.png" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML" width="800"/></a></p>
 
 
 ## Namespaces
@@ -391,7 +391,7 @@ En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver regist
 ## Illustration
 Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri):
 
-<p align="left"><a href="img/Figur-DCAT-niveauerne.PNG"><img src="img/Figur-DCAT-niveauerne.PNG" alt="Figur DCAT-niveauerne" width="600"/></a></p>
+<p align="left"><a href="img/Illustration- DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration- DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne" width="600"/></a></p>
 
 ## Globalt unikke og stabile identifikatorer
 Data skal have tilknyttet metadata, og data skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til data på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering  af ressourcer som på internettet. 
@@ -638,7 +638,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -850,7 +850,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
+<dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -930,7 +930,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1292,7 +1292,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et centralt emne for datasættet. Et datasæt kan opmærkes med flere forskellige centrale emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
+<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. </br></br>Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</dd>
 <dt>Definition (da)</dt>
@@ -1350,7 +1350,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1442,7 +1442,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
+<dd>Anbefalet</dd>
 </dl>
 				
 ### Egenskab: tidslig opløsning (temporal resolution) 
@@ -1470,7 +1470,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/frequency/</dd>
+<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/frequency/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2049,7 +2049,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
+<dd>Anvend følgende klassifikation: ^http://purl.org/adms/status/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2067,7 +2067,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://data.europa.eu/r5r/availability</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://data.europa.eu/r5r/availability/</dd>
+<dd>Anvend følgende klassifikation: ^http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2087,7 +2087,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2167,7 +2167,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/format</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/file-type/</dd>
+<dd>Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/file-type/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2547,7 +2547,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/publishertype/</dd>
+<dd>Anvend følgende klassifikation: ^http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2763,7 +2763,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/licencetype/</dd>
+<dd>Anvend følgende klassifikation: ^http://purl.org/adms/licencetype/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3065,36 +3065,6 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>	
 			
-## Klasse: Udgivertype (Udkast) (Publisher Type) 
-<img src="img/Udgivertype%20(Udkast).png" alt="Udgivertype (Udkast)">
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
-<dt>Anvendelsesnote (da) </dt>
-<dd>Typen af organisationen der har rollen som udgiver (Udkast - endnu ikke implementeret)</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>A type of organisation that acts as a publisher</dd>
-<dt>Definition (en)</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>	
-			
-## Klasse: Status (Udkast) (Status) 
-<img src="img/Status%20(Udkast).png" alt="Status (Udkast)">
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
-<dt>Anvendelsesnote (da) </dt>
-<dd>Angivelse af hvilken tilstand elementet befinder sig ift. udvikling og ibrugtagning. (Udkast - endnu ikke implementeret)</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>An indication of the maturity of a Distribution or the type of change of a Catalogue Record.</dd>
-<dt>Definition (en)</dt>
-<dd></dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>	
-			
 ## Klasse: Rolle (Role) 
 <img src="img/Rolle.png" alt="Rolle">
 <dl class="def">
@@ -3228,8 +3198,7 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
-			
-
+		
 
 # Klassifikationer
 
@@ -3262,8 +3231,6 @@ Egenskab: dcat:theme
 **KLASSIFIKATION: KLE (KL Emnesystematik)**
 
 [Se KLE](http://www.kle-online.dk/soegning)
-
-
 
 
 
@@ -3447,7 +3414,24 @@ URI: http://data.europa.eu/r5r/availability/
 * http://data.europa.eu/r5r/availability/stable
 
 
+## Personoplysningskategori
+**KLASSIFIKATION: Personoplysningskategorier**
 
+Indeholder følgende udfaldsrum:
+* https://data.gov.dk/concept/core/personaldata-type/SensitivePersonalData (følsomme personoplysninger)
+* https://data.gov.dk/concept/core/personaldata-type/GeneralPersonalData (almindelige personoplysninger) https://data.gov.dk/concept/core/personaldata-type/CivilRegistrationNumberData (personnummeroplysninger)
+* https://data.gov.dk/concept/core/personaldata-type/DataAboutCriminalOffences (oplysninger om strafbare forhold)
+* https://data.gov.dk/concept/core/personaldata-type/NonPersonalData (ingen personoplysninger)
+
+https://www.retsinformation.dk/eli/lta/2018/502
+https://eur-lex.europa.eu/eli/reg/2016/679/oj
+https://www.datatilsynet.dk/generelt-om-databeskyttelse/hvad-er-personoplysninger
+
+## Fortrolighedsgrad
+**KLASSIFIKATION: Fortrolighedsgrader**
+
+Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO):
+Se https://www.retsinformation.dk/eli/retsinfo/2014/10338
 
 
 # Referencer
@@ -3499,47 +3483,49 @@ Relevante links:
 ## UML-diagrammer
 
 ### UML-diagram: DCAT-AP-DK
+- URI: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1
 - Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
-- Modelnavn (label): Dansk anvendelsesprofile til beskrivelse af datasæt og datakataloger
+- Modelnavn (label): DCAT-DK: Dansk anvendelsesprofile til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 2.0.1
-- Seneste opdateringsdato (dateModified): 2020-08-28
+- Seneste opdateringsdato (dateModified): 2020-08-27
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): afventer godkendelse
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for datasætkataloger der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP henter de grundlæggende elementer og strukturer fra W3C's specification Data Catalogue vocabulary (DCAT).
 
-<p align="center"><a href="img/Figur-DCAT-AP-DK-v2-UML.png"><img src="img/Figur-DCAT-AP-DK-v2-UML.png" alt="Figur-DCAT-AP-DK-v2-UML" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK 2.0.1 UML" width="800"/></a></p>
 
 
 ### UML-diagram: DCAT-DK
+- URI: https://data.gov.dk/model/core/dcat-dk-1.0.0
 - Namespace: https://data.gov.dk/model/core/dcat-dk/
-- Modelnavn (label): Vokabular til DCAT-AP-DK
+- Modelnavn (label): DCAT-AP-DK
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
-- Seneste opdateringsdato (dateModified): 2020-08-28
+- Seneste opdateringsdato (dateModified): 2020-08-27
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): afventer godkendelse
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-DK er et vokabular der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasetansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad som ikke indgår i DCAT-AP eller DCAT.
 
-<p align="center"><a href="img/Vokabular%20for%20DCAT-AP-DK.png"><img src="img/Vokabular%20for%20DCAT-AP-DK.png" alt="Figur-DCAT-DK-v2-UML" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png.png" alt="Illustration af DCAT-DK 1.0.0 UML" width="800"/></a></p>
 
 
 
 ## Begrebmodel for beskrivelse af datasæt
-
+- URI: https://data.gov.dk/concept/core/dataset-1.0.0
 - Namespace: https://data.gov.dk/concept/core/dataset/
 - Modelnavn (label): Begrebsmodel for beskrivelse datasæt og datakataloger
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
-- Seneste opdateringsdato (dateModified): 2020-08-28
+- Seneste opdateringsdato (dateModified): 2020-08-27
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): afventer godkendelse
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger
 
-<p align="center"><a href="img/Figur-Begrebsmodel for datasæt.png"><img src="img/Figur-Begrebsmodel for datasæt.png" alt="test" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 " width="800"/></a></p>
 
 <table class="term-table">
     <thead>
@@ -3566,10 +3552,10 @@ Relevante links:
     </thead>
     <tbody>	
 
- <tr><td>katalog</td><td>udvalgt og arrangeret samling af metadata om datasæt og datatjenester i et katalog</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Catalog</td><td>&nbsp;ja</td><td>catalog </td></tr>
- <tr><td>katalogpost</td><td>post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#CatalogPost</td><td>&nbsp;ja</td><td>catalog record </td></tr>
+ <tr><td>katalog</td><td>udvalgt og arrangeret samling af metadata om ressourcer</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Catalog</td><td>&nbsp;ja</td><td>catalog </td></tr>
+ <tr><td>katalogpost</td><td>post i et katalog der beskriver registreringen af en enkelt katalogiseret ressource</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#CatalogPost</td><td>&nbsp;ja</td><td>catalog record </td></tr>
  <tr><td>katalogiseret ressource</td><td>ressource udgivet eller udvalgt og arrangeret af en enkelt aktør i et katalog</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Resource</td><td>&nbsp;ja</td><td>catalogued resource </td></tr>
- <tr><td>datakatalog</td><td>katalog som indeholder datarelaterede ressoucer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data catalog </td></tr> 
+ <tr><td>datakatalog</td><td>katalog som indeholder metadata om datarelaterede ressoucer</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>data catalog </td></tr> 
  <tr><td>datatjeneste</td><td>websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#DataService</td><td>&nbsp;ja</td><td>data service </td></tr>
  <tr><td>distribution</td><td>specifik repræsentation af et datasæt</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Distribution</td><td>&nbsp;ja</td><td>distribution </td></tr>
  <tr><td>serialisering</td><td>metode til at konvertere en datastruktur eller et objekt til et format der kan lagres eller sendes i et computermiljø</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>serialization </td></tr> 
@@ -3583,7 +3569,7 @@ Relevante links:
  <tr><td>datasætskaber</td><td>aktør der er primært ansvarlig for datasættets skabelse</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset creator </td></tr>
  <tr><td>skaber</td><td>entitet som er ansvarlig for ressourcens skabelse</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>creator </td></tr>
  <tr><td>udgiver</td><td>entitet som er ansvarlig for at gøre ressourcen tilgængelig</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>publisher </td></tr> 
- <tr><td>aktør</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>agent </td></tr>  
+ <tr><td>aktør</td><td>objekt, der deltager i en aktivitet</td><td>&nbsp;</td><td>https://forvir.iterm.dk/?TermId=36&SrcLang=da&TrgLang=da</td><td>&nbsp;nej</td><td>agent </td></tr>  
  <tr><td>format</td><td>en ressources filformat, fysiske medium eller dimensioner</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>format </td></tr>
  <tr><td>hjemmeside</td><td>websted for en ressource som udgøres af en primær webside samt en række indbyrdes forbundne websider</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>homepage </td></tr>
 
