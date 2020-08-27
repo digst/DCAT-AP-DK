@@ -306,27 +306,31 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 * **Valgfri** (Optional): informationen KAN angives  
 
 ## Forskellige visninger af DCAT-AP-DK 
-På baggrund af de tre ovenstående kravniveauer DCAT-AP-DK 2.0.1 er der udarbejdet forskellige tre forskellige diagrammer over DCAT-AP-DK 2.0.1. 
+På baggrund af de tre ovenstående kravniveauer DCAT-AP-DK 2.0.1 er der udarbejdet forskellige tre forskellige diagrammer over DCAT-AP-DK 2.0.1. Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces)
 
 ### Diagram med obligatoriske elementer (minimumsmodel)
 [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
-viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
+beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
 
 <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 
 ### Diagram med obligatoriske og anbefalede elementer
 [DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
-viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer)
+beskriver obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer)
 
 <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
 
-Diagrammet med alle (obligatoriske, anbefalede og valgfrie elementer) ses i kapitel [2. Oversigt over anvendelsesprofilen](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#oversigt-over-anvendelsesprofilen)
+### Diagram med alle elementer  
+Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.1 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer)
+
+<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML" width="800"/></a></p>
+
 
 ## Afvigelser ift. DCAT-AP
 Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 ### Ændringer af kravniveau
-Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
+Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
 * Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
@@ -337,7 +341,7 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP
 
 
 ### Tilføjelser
-Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
+Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
 
 * Datasæt: dataansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)
 * Datasæt: bidragsyder (dct:contributor)
@@ -354,7 +358,7 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 I indholdsfortegnelsen har disse mærket 'DK'.
 
 ### Udeladelser
-Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
+Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP 2.0.1.
 
 ## Centrale modeller som anvender DCAT
 
@@ -366,45 +370,6 @@ Asset Description Metadata Schema ([ADMS](https://joinup.ec.europa.eu/solution/a
 Der er også udviklet flere nationale profiler af DCAT-AP af andre EU-medlemslande samt domænespecifikke profiler, fx [geoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) til geodata, [BregDCAP-AP](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) til grunddata og [statDCAT-AP](https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe) til statistiske datasæt. 
 
 Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i afsnittet [Referencer](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#referencer). 
-
-# Oversigt over anvendelsesprofilen
-
-## Diagram med alle elementer  
-Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.1 visualiseret med UML-diagram 
-
-<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML" width="800"/></a></p>
-
-
-## Namespaces
-
-<table class="term-table">
-<thead><tr><th>prefix</th><th>namespace</th><th>model</th></tr></thead><tbody>
- <tr><td>rdf</td><td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td><td>The RDF Concepts Vocabulary </td></tr>	
- <tr><td>rdfs</td><td>http://www.w3.org/2000/01/rdf-schema#</td><td>The RDF Schema vocabulary </td></tr>
- <tr><td>dcat</td><td>http://www.w3.org/ns/dcat#</td><td>Data Catalog Vocabulary</td></tr>
- <tr><td>dcatap</td><td>http://data.europa.eu/r5r/</td><td>DCAT Application Profile for data portals in Europe</td></tr>
- <tr><td>adms</td><td>http://www.w3.org/ns/adms#</td><td>Asset Description Metadata Schema</td></tr>	
- <tr><td>dct</td><td>http://purl.org/dc/terms/</td><td>Dublin Core Metadata Terms</td></tr>
- <tr><td>foaf</td><td>http://xmlns.com/foaf/0.1/</td><td>Friend of a Friend</td></tr>	 
- <tr><td>schema</td><td>http://schema.org/</td><td>Schema.org</td></tr>
- <tr><td>skos</td><td>http://www.w3.org/2004/02/skos/core#</td><td>Simple Knowledge Organization System</td></tr>	
- <tr><td>locn</td><td>http://www.w3.org/ns/locn#</td><td>Core Location</td></tr>
- <tr><td>owl</td><td>http://www.w3.org/2002/07/owl#</td><td>Web Ontology Language</td></tr>
- <tr><td>odrl</td><td>http://www.w3.org/ns/odrl/2/</td><td>Open Digital Rights Language</td></tr>
- <tr><td>spdx</td><td>http://spdx.org/rdf/terms#</td><td>Software Package Data Exchange Vocabulary</td></tr>
- <tr><td>xsd</td><td>http://www.w3.org/2001/XMLSchema#</td><td>XML Schema</td></tr>
- <tr><td>vann</td><td>http://purl.org/vocab/vann/</td><td>Vocabulary for annotating vocabulary descriptions</td></tr>
- <tr><td>voaf</td><td>http://purl.org/vocommons/voaf#</td><td>Vocabulary of a Friend (VOAF)</td></tr>
- <tr><td>vcard</td><td>http://www.w3.org/2006/vcard/ns#</td><td>Virtual Contact File Vocabulary</td></tr>
- <tr><td>dqv</td><td>https://www.w3.org/ns/dqv</td><td>Data Quality Vocabulary</td></tr>
- <tr><td>duv</td><td>https://www.w3.org/ns/duv</td><td>Data Usage Vocabulary</td></tr>
- <tr><td>dcat-dk</td><td>https://data.gov.dk/model/core/dcat-dk/</td><td>DCAT-DK</td></tr>
- <tr><td>pers-cat</td><td>https://data.gov.dk/concept/core/personaldata-type/</td><td>Vocabulary for Personal Data Categories</td></tr>
- <tr><td>conf</td><td>https://data.gov.dk/concept/core/confidentiality-type/</td><td>Vocabulary for Confidentiality</td></tr>
- <tr><td>dcat-ap-dk</td><td>https://data.gov.dk/model/profile/dcat-ap-dk/</td><td>DCAT-AP-DK</td></tr>
-</tbody></table>
-
-
 
 
 
@@ -3585,7 +3550,37 @@ Relevante links:
 
 
     </tbody>    
-</table>	    
+</table>	
+
+
+## Namespaces
+
+<table class="term-table">
+<thead><tr><th>prefix</th><th>namespace</th><th>model</th></tr></thead><tbody>
+ <tr><td>rdf</td><td>http://www.w3.org/1999/02/22-rdf-syntax-ns#</td><td>The RDF Concepts Vocabulary </td></tr>	
+ <tr><td>rdfs</td><td>http://www.w3.org/2000/01/rdf-schema#</td><td>The RDF Schema vocabulary </td></tr>
+ <tr><td>dcat</td><td>http://www.w3.org/ns/dcat#</td><td>Data Catalog Vocabulary</td></tr>
+ <tr><td>dcatap</td><td>http://data.europa.eu/r5r/</td><td>DCAT Application Profile for data portals in Europe</td></tr>
+ <tr><td>adms</td><td>http://www.w3.org/ns/adms#</td><td>Asset Description Metadata Schema</td></tr>	
+ <tr><td>dct</td><td>http://purl.org/dc/terms/</td><td>Dublin Core Metadata Terms</td></tr>
+ <tr><td>foaf</td><td>http://xmlns.com/foaf/0.1/</td><td>Friend of a Friend</td></tr>	 
+ <tr><td>schema</td><td>http://schema.org/</td><td>Schema.org</td></tr>
+ <tr><td>skos</td><td>http://www.w3.org/2004/02/skos/core#</td><td>Simple Knowledge Organization System</td></tr>	
+ <tr><td>locn</td><td>http://www.w3.org/ns/locn#</td><td>Core Location</td></tr>
+ <tr><td>owl</td><td>http://www.w3.org/2002/07/owl#</td><td>Web Ontology Language</td></tr>
+ <tr><td>odrl</td><td>http://www.w3.org/ns/odrl/2/</td><td>Open Digital Rights Language</td></tr>
+ <tr><td>spdx</td><td>http://spdx.org/rdf/terms#</td><td>Software Package Data Exchange Vocabulary</td></tr>
+ <tr><td>xsd</td><td>http://www.w3.org/2001/XMLSchema#</td><td>XML Schema</td></tr>
+ <tr><td>vann</td><td>http://purl.org/vocab/vann/</td><td>Vocabulary for annotating vocabulary descriptions</td></tr>
+ <tr><td>voaf</td><td>http://purl.org/vocommons/voaf#</td><td>Vocabulary of a Friend (VOAF)</td></tr>
+ <tr><td>vcard</td><td>http://www.w3.org/2006/vcard/ns#</td><td>Virtual Contact File Vocabulary</td></tr>
+ <tr><td>dqv</td><td>https://www.w3.org/ns/dqv</td><td>Data Quality Vocabulary</td></tr>
+ <tr><td>duv</td><td>https://www.w3.org/ns/duv</td><td>Data Usage Vocabulary</td></tr>
+ <tr><td>dcat-dk</td><td>https://data.gov.dk/model/core/dcat-dk/</td><td>DCAT-DK</td></tr>
+ <tr><td>pers-cat</td><td>https://data.gov.dk/concept/core/personaldata-type/</td><td>Vocabulary for Personal Data Categories</td></tr>
+ <tr><td>conf</td><td>https://data.gov.dk/concept/core/confidentiality-type/</td><td>Vocabulary for Confidentiality</td></tr>
+ <tr><td>dcat-ap-dk</td><td>https://data.gov.dk/model/profile/dcat-ap-dk/</td><td>DCAT-AP-DK</td></tr>
+</tbody></table>
 
 ================
 
