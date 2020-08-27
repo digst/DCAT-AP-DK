@@ -19,10 +19,20 @@ https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic
 https://joinup.ec.europa.eu/release/dcat-ap-how-use-identifiers-datasets-and-distributions
 
 ### Hvordan skelner man mellem mulighederne for angivelse af hvordan man får adgang til datasættet?
-Destinationsside, adgangs-URL, download-URL etc.
+- Destinationsside (på dcat:Resource): Se https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page 
+En destinationsside er en webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information.
 
-### Hvordan skelner man mellem de forskellige aktørroller?
-Datasætansvarlig organisation, udgiver, skaber, bidragsyder, vedligeholder
+- Adgangs-URL (på dcat:Distribution): Se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_url
+En adgangs-URL er en URL for en ressource som giver adgang til en distribution af datasættet. Fx, destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben download-URL foretrækkes.
+
+- Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_download_url
+Download-Url er en URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType. dcat:download-URL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request
+
+OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), så bør destinationssidelinket gentages som adgangsadresse for en distribution 
+
+Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
+
+https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page
 
 ## Hvordan sikrer man god datakvalitet i de udgivne datasæt
 Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) (Vejledning til deklaration af datasæt med kernedimensioner vers. 1.0.0) anvender også DQV.
