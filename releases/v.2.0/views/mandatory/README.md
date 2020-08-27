@@ -8,7 +8,7 @@ obligatoriske klasser samt obligatoriske egenskaber for disse klasser
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Catalog</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En kurateret samling af metadata om datasæt og datatjenester i et katalog.</dd>
+<dd>En udvalgt og arrangeret samling af metadata om datasæt og datatjenester i et katalog.</dd>
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
@@ -17,8 +17,8 @@ obligatoriske klasser samt obligatoriske egenskaber for disse klasser
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan gentages for hver sprogvariant af titlen. | 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan gentages for hvert sprogvariant af beskrivelsen| 1..*|	 Obligatorisk|
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan optræde én gang for hver sprogvariant af titlen. | 1..*|	 Obligatorisk|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 1..*|	 Obligatorisk|
 |har datasæt (dataset)|http://www.w3.org/ns/dcat#dataset	(http://www.w3.org/ns/dcat#Dataset)|Denne egenskab angiver et datasæt som er opført i kataloget| 1..*|	 Obligatorisk|
 |udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent)|Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.| 1..1|	 Obligatorisk|	
 			
@@ -27,7 +27,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En samling a data, udgivet eller kurateret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
@@ -36,8 +36,8 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan gentages for hver sprogvariant.| 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan gentages for hvert sprog.| 1..*|	 Obligatorisk|	
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan optræde én gang for hver sprogvariant af titlen.| 1..*|	 Obligatorisk|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 1..*|	 Obligatorisk|	
 			
 ## Klasse: Aktør (Agent) 
 <dl class="def">
@@ -53,5 +53,4 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver aktørens navn. Egenskaben kan gentages for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|</BODY>
-</HTML>
+|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|
