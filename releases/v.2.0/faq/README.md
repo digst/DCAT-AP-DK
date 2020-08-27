@@ -35,7 +35,6 @@ OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinations
 
 Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
 
-https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page
 
 ## Hvordan sikrer man god datakvalitet i de udgivne datasæt
 Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) (Vejledning til deklaration af datasæt med kernedimensioner vers. 1.0.0) anvender også DQV.
