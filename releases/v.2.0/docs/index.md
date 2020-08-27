@@ -306,7 +306,9 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 * **Valgfri** (Optional): informationen KAN angives  
 
 ## Forskellige visninger af DCAT-AP-DK 
-På baggrund af de tre ovenstående kravniveauer DCAT-AP-DK 2.0.1 er der udarbejdet forskellige tre forskellige diagrammer over DCAT-AP-DK 2.0.1. Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces)
+På baggrund af de tre ovenstående kravniveauer DCAT-AP-DK 2.0.1 er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.1. 
+
+Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces)
 
 ### Diagram med obligatoriske elementer (minimumsmodel)
 [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
