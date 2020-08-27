@@ -18,7 +18,7 @@
     
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://dcat.example.org/dataset-001-csv">
-        <dcat:accessURL rdf:resource="http://www.example.org/files/001.csv"/>
+        <dcat:accessURL rdf:resource="http://www.example.org/files/001"/>
         <dcat:downloadURL rdf:resource="http://www.example.org/files/001.csv"/>
         <dc:title xml:lang="en">CSV distribution of dataset 001</dc:title>
         <dc:title xml:lang="da">CSV-distribution af datsættet 001</dc:title>
@@ -30,7 +30,7 @@
 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://dcat.example.org/dataset-001-xml">
-        <dcat:accessURL rdf:resource="http://www.example.org/files/001.xml"/>
+        <dcat:accessURL rdf:resource="http://www.example.org/files/001"/>
         <dcat:downloadURL rdf:resource="http://www.example.org/files/001.xml"/>
         <dc:title xml:lang="en">XML distribution of dataset 001</dc:title>
         <dc:title xml:lang="da">XML-distribution af datsættet 001</dc:title>
