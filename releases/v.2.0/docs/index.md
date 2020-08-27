@@ -3462,7 +3462,7 @@ Relevante links:
 ### UML-diagram: DCAT-AP-DK
 - URI: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1
 - Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
-- Modelnavn (label): DCAT-DK: Dansk anvendelsesprofile til beskrivelse af datasæt og datakataloger 
+- Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 2.0.1
 - Seneste opdateringsdato (dateModified): 2020-08-27
@@ -3477,7 +3477,7 @@ Relevante links:
 ### UML-diagram: DCAT-DK
 - URI: https://data.gov.dk/model/core/dcat-dk-1.0.0
 - Namespace: https://data.gov.dk/model/core/dcat-dk/
-- Modelnavn (label): DCAT-AP-DK
+- Modelnavn (label): DCAT-DK
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
 - Seneste opdateringsdato (dateModified): 2020-08-27
