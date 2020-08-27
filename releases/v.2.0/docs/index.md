@@ -186,6 +186,10 @@ Denne specifikation udgør en dansk basisprofil for datasæt og datakataloger (D
 
 Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for begrebs- og datamodellering](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering), og specifikationen sammensætter flere eksisterende nationale og internationale modeller.
 
+### Globalt unikke og stabile identifikatorer
+Data skal have tilknyttet metadata, og data skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til data på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering  af ressourcer som på internettet. 
+Der henvises til [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt  [Retningslinjer for stablile http-urier](https://arkitektur.digst.dk/node/588).”
+
 ## Profilens anvendelse
 Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære funktioner:
 * Interne overblik over egne data i organisationer.
@@ -258,35 +262,70 @@ Se:  [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https:
 Se:  [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
 
-## Gældende krav og overensstemmelse
+# Modellens grundlæggende struktur
+DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebmodel-for-beskrivelse-af-datast).
+
+## Katalog
+Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger. (Gå til klassen Katalog)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalog-catalog]
+
+## Katalogiseret ressource 
+En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
+
+## Datasæt
+Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er tilrådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
+(Gå til klassen Datasæt)[https://api.csswg.org/bikeshed/#klasse-datast-dataset]
+
+## Datatjeneste
+En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
+(Gå til klassen Dtatjeneste)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service]
+
+## Distribution
+En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
+(Gå til klassen Distribution)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution]
+
+## Katalogpost 
+En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
+(Gå til klassen Katalogpost)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record]
+
+
+## Illustration
+Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri):
+
+<p align="left"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne" width="600"/></a></p>
+
+
+
+# Gældende krav og overensstemmelse
 DCAT-AP-DK 2.0.1 er i overensstemmelse med DCAT-AP 2.0.1. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
 
-### Kravniveauer
+## Kravniveauer
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).
 
 * **Obligatorisk** (Mandatory): informationen SKAL angives
 * **Anbefalet** (Recommended): informationen BØR angives hvis den er tilgængelig
 * **Valgfri** (Optional): informationen KAN angives  
 
-### Forskellige visninger af DCAT-AP-DK (minimumsmodel)
+## Forskellige visninger af DCAT-AP-DK 
+På baggrund af de tre ovenstående kravniveauer DCAT-AP-DK 2.0.1 er der udarbejdet forskellige tre forskellige diagrammer over DCAT-AP-DK 2.0.1. 
 
-Der er pt. udarbejdet følgende udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og som skjuler de valgfrie elementer)
-
-- [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
+### Diagram med obligatoriske elementer (minimumsmodel)
+[DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
 viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
 
 <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 
-- [DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
-viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser
+### Diagram med obligatoriske og anbefalede elementer
+[DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
+viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer)
 
 <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
 
+Diagrammet med alle (obligatoriske, anbefalede og valgfrie elementer) ses i kapitel [2. Oversigt over anvendelsesprofilen](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#oversigt-over-anvendelsesprofilen)
 
-### Afvigelser ift. DCAT-AP
+## Afvigelser ift. DCAT-AP
 Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
-#### Ændringer af kravniveau
+### Ændringer af kravniveau
 Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
@@ -297,7 +336,7 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK ift. DCAT-AP
 * Datasæt: har distribution (dcat:distribution) - Kravniveau: Valgfri > Anbefalet
 
 
-#### Tilføjelser
+### Tilføjelser
 Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 
 * Datasæt: dataansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)
@@ -314,10 +353,10 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK ift. DCAT-AP:
 
 I indholdsfortegnelsen har disse mærket 'DK'.
 
-#### Udeladelser
+### Udeladelser
 Der er ikke udeladt elementer fra DCAT-AP i DCAT-AP-DK.
 
-### Centrale modeller som anvender DCAT
+## Centrale modeller som anvender DCAT
 
 DCAT anvendes allerede i danske specifikationer - fx i [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) og Standard for beskrivelse af it-systemer [SYS-AP](https://digst.github.io/IT-System-AP/SYS-AP/docs/) og [archvSYS-AP](https://digst.github.io/IT-System-AP/archvSYS-AP/docs/). .
 
@@ -330,8 +369,8 @@ Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i 
 
 # Oversigt over anvendelsesprofilen
 
-## Diagram 
-Anvendelsesprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram 
+## Diagram med alle elementer  
+Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.1 visualiseret med UML-diagram 
 
 <p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML" width="800"/></a></p>
 
@@ -366,36 +405,7 @@ Anvendelsesprofilen DCAT-AP-DK v.2 visualiseret med UML-diagram
 </tbody></table>
 
 
-# Modellens grundlæggende struktur
-DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i næste kapitel, og se evt. også begrebsmodellens bagest i dokumentet.
 
-## Katalog
-Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.
-
-## Katalogiseret ressource 
-En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
-
-## Datasæt
-Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er tilrådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
-
-## Distribution
-En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
-
-## Datatjeneste
-En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
-
-## Katalogpost 
-En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
-
-
-## Illustration
-Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri):
-
-<p align="left"><a href="img/Illustration- DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration- DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne" width="600"/></a></p>
-
-## Globalt unikke og stabile identifikatorer
-Data skal have tilknyttet metadata, og data skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til data på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering  af ressourcer som på internettet. 
-Der henvises til [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt  [Retningslinjer for stablile http-urier](https://arkitektur.digst.dk/node/588).”
 
 
 # Elementer i DCAT-AP-DK 
