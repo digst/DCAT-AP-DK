@@ -26,7 +26,7 @@ En destinationsside er en webside som der kan navigeres til i en webbrowser for 
 En adgangs-URL er en URL for en ressource som giver adgang til en distribution af datasættet. Fx, destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben download-URL foretrækkes.
 
 - Dataadgangstjeneste (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_service
-Et websted eller endpoint der giver adgang til distributionen af datasættet
+Et websted eller endpoint der giver adgang til distributionen af datasættet. dcat:accessService BØR anvendes til at angive et link til en beskrivelse af en dcat:DataService som kan give adgang til distributionen.
 
 - Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_download_url
 Download-Url er en URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType. dcat:download-URL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request
