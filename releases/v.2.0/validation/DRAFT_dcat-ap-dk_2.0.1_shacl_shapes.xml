@@ -13,7 +13,8 @@
          xmlns:cc="http://creativecommons.org/ns#"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:sh="http://www.w3.org/ns/shacl#"
-		 xmlns:voaf="http://purl.org/vocommons/voaf#"		
+		 xmlns:voaf="http://purl.org/vocommons/voaf#"
+		 xmlns:prof="http://www.w3.org/ns/dx/prof/"		 
 		 xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
@@ -23,9 +24,9 @@
     <dc:title>DCAT-AP-DK v.2.0.1</dc:title>
 	<dc:description>The Danish DCAT Application profile for datasets and data catalogues (DCAT-AP-DK) is a specification based on DCAT and DCAT-AP for describing public sector datasets in Denmark.</dc:description> 	
     <owl:versionInfo>2.0.1</owl:versionInfo>
-	<voaf:specializes rdf:resource="http://www.w3.org/ns/dcat#"/>	
-    <voaf:specializes rdf:resource="http://data.europa.eu/r5r/"/>		
-    <dc:publisher rdf:resource="http://digst.dk"/>
+	<prof:isProfileOf rdf:resource="http://www.w3.org/ns/dcat#"/>	
+    <prof:isProfileOf rdf:resource="http://data.europa.eu/r5r/"/>		
+    <dc:publisher rdf:resource="https://digst.dk"/>
     <foaf:page rdf:resource="https://arkitektur.digst.dk/rammearkitektur/datastandarder/dcat-ap-dk"/> 
     <foaf:page rdf:resource="https://github.com/digst/DCAT-AP-DK"/>
 	<dcat:contactPoint>
@@ -43,7 +44,7 @@
 			<dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>	
 			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-26</dc:modified>			
 			<dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>		
-			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>
+			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1"/>
 			<dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>	
 		</dcat:Distribution>
 	</dcat:distribution>
