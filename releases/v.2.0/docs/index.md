@@ -3484,7 +3484,7 @@ Relevante links:
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): afventer godkendelse
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
-- Kommentar (comment): DCAT-DK er et vokabular der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasetansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad som ikke indgår i DCAT-AP eller DCAT.
+- Kommentar (comment): DCAT-DK er et vokabular der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad som ikke indgår i DCAT-AP eller DCAT.
 
 <p align="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png" alt="Illustration af DCAT-DK 1.0.0 UML" width="800"/></a></p>
 
