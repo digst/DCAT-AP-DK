@@ -30,7 +30,7 @@ ex:dataset-001
 .
 ex:dataset-001-csv
   a dcat:Distribution ;
-  dcat:accessURL <http://www.example.org/files/001.csv> ;
+  dcat:accessURL <http://www.example.org/files/001> ;
   dcat:downloadURL <http://www.example.org/files/001.csv> ;
   dct:title "CSV distribution of dataset 001"@en ;
   dct:title "CSV-distribution af datsættet 001"@da ;  
@@ -40,7 +40,7 @@ ex:dataset-001-csv
 .
 ex:dataset-001-xml
   a dcat:Distribution ;
-  dcat:accessURL <http://www.example.org/files/001.xml> ;
+  dcat:accessURL <http://www.example.org/files/001> ;
   dcat:downloadURL <http://www.example.org/files/001.xml> ;
   dct:title "XML distribution of dataset 001"@en ;
   dct:title "XML-distribution af datsættet 001"@da ;  
