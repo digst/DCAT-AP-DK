@@ -170,7 +170,7 @@
 		<sh:description xml:lang="en">This property refers to a web page that acts as the main page for the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en webside som fungerer som katalogets hjemmeside.</sh:description>			
 		<rdfs:comment xml:lang="en">A homepage for some thing.</rdfs:comment>	
-		<rdfs:comment xml:lang="en">Et websted for noget.</rdfs:comment>			
+		<rdfs:comment xml:lang="da">Et websted for noget.</rdfs:comment>			
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://xmlns.com/foaf/0.1/homepage"/>
