@@ -106,7 +106,7 @@
   ], [
     sh:name "homepage"@en, "websted"@da ;
     sh:description "This property refers to a web page that acts as the main page for the Catalogue."@en, "Denne egenskab angiver en webside som fungerer som katalogets hjemmeside."@da ;
-    rdfs:comment "A homepage for some thing."@en, "Et websted for noget."@en ;
+    rdfs:comment "A homepage for some thing."@en, "Et websted for noget."@da ;
     sh:class foaf:Document ;
     sh:maxCount 1 ;
     sh:path foaf:homepage ;
