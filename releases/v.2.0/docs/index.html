@@ -1499,7 +1499,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2020-08-27">27 August 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2020-08-28">28 August 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1722,64 +1722,65 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#egenskab-navn-name"><span class="secno">4.6.1</span> <span class="content">Egenskab: navn (name)</span></a>
         <li><a href="#egenskab-aktrtype-type"><span class="secno">4.6.2</span> <span class="content">Egenskab: aktørtype (type)</span></a>
        </ol>
+      <li><a href="#klasse-organisation-organisation"><span class="secno">4.7</span> <span class="content">Klasse: Organisation (Organisation)</span></a>
       <li>
-       <a href="#klasse-begrebssystem-category-scheme"><span class="secno">4.7</span> <span class="content">Klasse: Begrebssystem (Category Scheme)</span></a>
+       <a href="#klasse-begrebssystem-category-scheme"><span class="secno">4.8</span> <span class="content">Klasse: Begrebssystem (Category Scheme)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-titel-title⑤"><span class="secno">4.7.1</span> <span class="content">Egenskab: titel (title)</span></a>
+        <li><a href="#egenskab-titel-title⑤"><span class="secno">4.8.1</span> <span class="content">Egenskab: titel (title)</span></a>
        </ol>
       <li>
-       <a href="#klasse-begreb-category"><span class="secno">4.8</span> <span class="content">Klasse: Begreb (Category)</span></a>
+       <a href="#klasse-begreb-category"><span class="secno">4.9</span> <span class="content">Klasse: Begreb (Category)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-foretrukken-betegnelse-preferred-label"><span class="secno">4.8.1</span> <span class="content">Egenskab: foretrukken betegnelse (preferred label)</span></a>
+        <li><a href="#egenskab-foretrukken-betegnelse-preferred-label"><span class="secno">4.9.1</span> <span class="content">Egenskab: foretrukken betegnelse (preferred label)</span></a>
        </ol>
       <li>
-       <a href="#klasse-checksum-checksum"><span class="secno">4.9</span> <span class="content">Klasse: Checksum (Checksum)</span></a>
+       <a href="#klasse-checksum-checksum"><span class="secno">4.10</span> <span class="content">Klasse: Checksum (Checksum)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-algoritme-algorithm"><span class="secno">4.9.1</span> <span class="content">Egenskab: algoritme (algorithm)</span></a>
-        <li><a href="#egenskab-checksumvrdi-checksum-value"><span class="secno">4.9.2</span> <span class="content">Egenskab: checksumværdi (checksum value)</span></a>
+        <li><a href="#egenskab-algoritme-algorithm"><span class="secno">4.10.1</span> <span class="content">Egenskab: algoritme (algorithm)</span></a>
+        <li><a href="#egenskab-checksumvrdi-checksum-value"><span class="secno">4.10.2</span> <span class="content">Egenskab: checksumværdi (checksum value)</span></a>
        </ol>
       <li>
-       <a href="#klasse-identifikator-identifier"><span class="secno">4.10</span> <span class="content">Klasse: Identifikator (Identifier)</span></a>
+       <a href="#klasse-identifikator-identifier"><span class="secno">4.11</span> <span class="content">Klasse: Identifikator (Identifier)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-notation-notation"><span class="secno">4.10.1</span> <span class="content">Egenskab: notation (notation)</span></a>
+        <li><a href="#egenskab-notation-notation"><span class="secno">4.11.1</span> <span class="content">Egenskab: notation (notation)</span></a>
        </ol>
       <li>
-       <a href="#klasse-licensdokument-licence-document"><span class="secno">4.11</span> <span class="content">Klasse: Licensdokument (Licence Document)</span></a>
+       <a href="#klasse-licensdokument-licence-document"><span class="secno">4.12</span> <span class="content">Klasse: Licensdokument (Licence Document)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-licenstype-licence-type"><span class="secno">4.11.1</span> <span class="content">Egenskab: licenstype (licence type)</span></a>
+        <li><a href="#egenskab-licenstype-licence-type"><span class="secno">4.12.1</span> <span class="content">Egenskab: licenstype (licence type)</span></a>
        </ol>
       <li>
-       <a href="#klasse-lokation-location"><span class="secno">4.12</span> <span class="content">Klasse: Lokation (Location)</span></a>
+       <a href="#klasse-lokation-location"><span class="secno">4.13</span> <span class="content">Klasse: Lokation (Location)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-bounding-box-bounding-box"><span class="secno">4.12.1</span> <span class="content">Egenskab: bounding box (bounding box)</span></a>
-        <li><a href="#egenskab-geometrisk-tyngdepunkt-centroid"><span class="secno">4.12.2</span> <span class="content">Egenskab: geometrisk tyngdepunkt (centroid)</span></a>
-        <li><a href="#egenskab-geometri-geometry"><span class="secno">4.12.3</span> <span class="content">Egenskab: geometri (geometry)</span></a>
+        <li><a href="#egenskab-bounding-box-bounding-box"><span class="secno">4.13.1</span> <span class="content">Egenskab: bounding box (bounding box)</span></a>
+        <li><a href="#egenskab-geometrisk-tyngdepunkt-centroid"><span class="secno">4.13.2</span> <span class="content">Egenskab: geometrisk tyngdepunkt (centroid)</span></a>
+        <li><a href="#egenskab-geometri-geometry"><span class="secno">4.13.3</span> <span class="content">Egenskab: geometri (geometry)</span></a>
        </ol>
       <li>
-       <a href="#klasse-periode-periodoftime"><span class="secno">4.13</span> <span class="content">Klasse: Periode (PeriodOfTime)</span></a>
+       <a href="#klasse-periode-periodoftime"><span class="secno">4.14</span> <span class="content">Klasse: Periode (PeriodOfTime)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-startdato-start-date"><span class="secno">4.13.1</span> <span class="content">Egenskab: startdato (start date)</span></a>
-        <li><a href="#egenskab-slutdato-end-date"><span class="secno">4.13.2</span> <span class="content">Egenskab: slutdato (end date)</span></a>
-        <li><a href="#egenskab-har-begyndelse-beginning"><span class="secno">4.13.3</span> <span class="content">Egenskab: har begyndelse (beginning)</span></a>
-        <li><a href="#egenskab-har-slutning-end"><span class="secno">4.13.4</span> <span class="content">Egenskab: har slutning (end)</span></a>
+        <li><a href="#egenskab-startdato-start-date"><span class="secno">4.14.1</span> <span class="content">Egenskab: startdato (start date)</span></a>
+        <li><a href="#egenskab-slutdato-end-date"><span class="secno">4.14.2</span> <span class="content">Egenskab: slutdato (end date)</span></a>
+        <li><a href="#egenskab-har-begyndelse-beginning"><span class="secno">4.14.3</span> <span class="content">Egenskab: har begyndelse (beginning)</span></a>
+        <li><a href="#egenskab-har-slutning-end"><span class="secno">4.14.4</span> <span class="content">Egenskab: har slutning (end)</span></a>
        </ol>
       <li>
-       <a href="#klasse-relation-relationship"><span class="secno">4.14</span> <span class="content">Klasse: Relation (Relationship)</span></a>
+       <a href="#klasse-relation-relationship"><span class="secno">4.15</span> <span class="content">Klasse: Relation (Relationship)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-relation-relation"><span class="secno">4.14.1</span> <span class="content">Egenskab: relation (relation)</span></a>
-        <li><a href="#egenskab-havde-rolle-had-role"><span class="secno">4.14.2</span> <span class="content">Egenskab: havde rolle (had role)</span></a>
+        <li><a href="#egenskab-relation-relation"><span class="secno">4.15.1</span> <span class="content">Egenskab: relation (relation)</span></a>
+        <li><a href="#egenskab-havde-rolle-had-role"><span class="secno">4.15.2</span> <span class="content">Egenskab: havde rolle (had role)</span></a>
        </ol>
-      <li><a href="#klasse-frekvens-frequency"><span class="secno">4.15</span> <span class="content">Klasse: Frekvens (Frequency)</span></a>
-      <li><a href="#klasse-lingvistisk-system-linguistic-system"><span class="secno">4.16</span> <span class="content">Klasse: Lingvistisk system (Linguistic system)</span></a>
-      <li><a href="#klasse-medietype-media-type"><span class="secno">4.17</span> <span class="content">Klasse: Medietype (Media Type)</span></a>
-      <li><a href="#klasse-rolle-role"><span class="secno">4.18</span> <span class="content">Klasse: Rolle (Role)</span></a>
-      <li><a href="#klasse-proveniensudsagn-provenance-statement"><span class="secno">4.19</span> <span class="content">Klasse: Proveniensudsagn (Provenance Statement)</span></a>
-      <li><a href="#klasse-rettighedsudsagn-rights-statement"><span class="secno">4.20</span> <span class="content">Klasse: Rettighedsudsagn (Rights Statement)</span></a>
-      <li><a href="#klasse-dokument-document"><span class="secno">4.21</span> <span class="content">Klasse: Dokument (Document)</span></a>
-      <li><a href="#klasse-specifikation-standard"><span class="secno">4.22</span> <span class="content">Klasse: Specifikation (Standard)</span></a>
-      <li><a href="#klasse-virtuelt-visitkort-kind"><span class="secno">4.23</span> <span class="content">Klasse: Virtuelt visitkort (Kind)</span></a>
-      <li><a href="#klasse-anvendelse-dk-usage"><span class="secno">4.24</span> <span class="content">Klasse: Anvendelse DK (Usage)</span></a>
-      <li><a href="#klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.25</span> <span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span></a>
+      <li><a href="#klasse-frekvens-frequency"><span class="secno">4.16</span> <span class="content">Klasse: Frekvens (Frequency)</span></a>
+      <li><a href="#klasse-lingvistisk-system-linguistic-system"><span class="secno">4.17</span> <span class="content">Klasse: Lingvistisk system (Linguistic system)</span></a>
+      <li><a href="#klasse-medietype-media-type"><span class="secno">4.18</span> <span class="content">Klasse: Medietype (Media Type)</span></a>
+      <li><a href="#klasse-rolle-role"><span class="secno">4.19</span> <span class="content">Klasse: Rolle (Role)</span></a>
+      <li><a href="#klasse-proveniensudsagn-provenance-statement"><span class="secno">4.20</span> <span class="content">Klasse: Proveniensudsagn (Provenance Statement)</span></a>
+      <li><a href="#klasse-rettighedsudsagn-rights-statement"><span class="secno">4.21</span> <span class="content">Klasse: Rettighedsudsagn (Rights Statement)</span></a>
+      <li><a href="#klasse-dokument-document"><span class="secno">4.22</span> <span class="content">Klasse: Dokument (Document)</span></a>
+      <li><a href="#klasse-specifikation-standard"><span class="secno">4.23</span> <span class="content">Klasse: Specifikation (Standard)</span></a>
+      <li><a href="#klasse-virtuelt-visitkort-kind"><span class="secno">4.24</span> <span class="content">Klasse: Virtuelt visitkort (Kind)</span></a>
+      <li><a href="#klasse-anvendelse-dk-usage"><span class="secno">4.25</span> <span class="content">Klasse: Anvendelse DK (Usage)</span></a>
+      <li><a href="#klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.26</span> <span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span></a>
      </ol>
     <li>
      <a href="#klassifikationer"><span class="secno">5</span> <span class="content">Klassifikationer</span></a>
@@ -1931,7 +1932,7 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
    <h3 class="heading settled" data-level="2.2" id="katalogiseret-ressource"><span class="secno">2.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
     En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
    <h3 class="heading settled" data-level="2.3" id="datast"><span class="secno">2.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
-    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er tilrådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
+    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
 (Gå til klassen Datasæt)[https://api.csswg.org/bikeshed/#klasse-datast-dataset] 
    <h3 class="heading settled" data-level="2.4" id="datatjeneste"><span class="secno">2.4. </span><span class="content">Datatjeneste</span><a class="self-link" href="#datatjeneste"></a></h3>
     En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
@@ -2247,7 +2248,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/language
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/
+    <dd>http://purl.org/dc/terms/LinguisticSystem
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language
     <dt>Anvendelsesnote (en)
@@ -2446,7 +2447,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://purl.org/adms/status/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) 
     <dt>Anvendelsesnote (en)
@@ -2522,7 +2523,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/language
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/
+    <dd>http://purl.org/dc/terms/LinguisticSystem
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
@@ -2561,11 +2562,11 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#Dataset
     <dt>Anvendelsesnote (da) 
-    <dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
+    <dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.
     <dt>Anvendelsesnote (en)
     <dd>A conceptual entity that represents the information published. 
     <dt>Definition (da)
-    <dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
+    <dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.
     <dt>Definition (en)
     <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.
     <dt>Kravniveau
@@ -2864,7 +2865,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. <br><br>Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.
+    <dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
     <dt>Definition (da)
@@ -2891,7 +2892,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Definition (en)
     <dd>The nature or genre of the resource.
     <dt>Multiplicitet
-    <dd>0..*
+    <dd>0..1
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -2919,7 +2920,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/language
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/
+    <dd>http://purl.org/dc/terms/LinguisticSystem
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
@@ -3033,7 +3034,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/accrualPeriodicity
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/frequency/
+    <dd>http://purl.org/dc/terms/Frequency
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency 
     <dt>Anvendelsesnote (en)
@@ -3147,7 +3148,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)
     <dt>Anvendelsesnote (en)
@@ -3166,7 +3167,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. (dansk tilføjelse) 
     <dt>Anvendelsesnote (en)
@@ -3579,7 +3580,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/adms#status
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://purl.org/adms/status/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)
     <dt>Anvendelsesnote (en)
@@ -3596,7 +3597,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://data.europa.eu/r5r/availability
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://data.europa.eu/r5r/availability/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/
     <dt>Anvendelsesnote (en)
@@ -3615,7 +3616,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/language
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/
+    <dd>http://purl.org/dc/terms/LinguisticSystem
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language
     <dt>Anvendelsesnote (en)
@@ -3672,7 +3673,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#mediaType
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/
+    <dd>http://purl.org/dc/terms/MediaType
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver medietypen for distributionen som den er defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) 
     <dt>Anvendelsesnote (en)
@@ -3691,7 +3692,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/format
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/file-type/
+    <dd>http://purl.org/dc/terms/MediaTypeOrExtent
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)
     <dt>Anvendelsesnote (en)
@@ -3710,7 +3711,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#compressFormat
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/
+    <dd>http://purl.org/dc/terms/MediaType
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver filformatet for den distribution hvori data er indholdt i et komprimeret format, fx. med det formål at reducere størrelsen af downloadfilen. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) 
     <dt>Anvendelsesnote (en)
@@ -3729,7 +3730,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#packageFormat
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/
+    <dd>http://purl.org/dc/terms/MediaType
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver filformatet for den distribution som grupperer en eller flere datafiler, fx. med det formål at gøre det muligt at download et antal relaterede filer på én gang. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml)
     <dt>Anvendelsesnote (en)
@@ -4048,7 +4049,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>http://purl.org/dc/terms/type
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://purl.org/adms/publishertype/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/
     <dt>Anvendelsesnote (en)
@@ -4062,7 +4063,23 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.7" id="klasse-begrebssystem-category-scheme"><span class="secno">4.7. </span><span class="content">Klasse: Begrebssystem (Category Scheme)</span><a class="self-link" href="#klasse-begrebssystem-category-scheme"></a></h3>
+   <h3 class="heading settled" data-level="4.7" id="klasse-organisation-organisation"><span class="secno">4.7. </span><span class="content">Klasse: Organisation (Organisation)</span><a class="self-link" href="#klasse-organisation-organisation"></a></h3>
+    <img alt="Organisation" src="img/Organisation.png"> 
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/org#Organization
+    <dt>Anvendelsesnote (da) 
+    <dd>samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur
+    <dt>Anvendelsesnote (en)
+    <dd>collection of people organized together into a community or other social, commercial or political structure
+    <dt>Definition (da)
+    <dd>Repræsenterer en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur.
+    <dt>Definition (en)
+    <dd>Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular <code>skos:prefLabel</code> for the primary (possibly legally recognized name), <code>skos:altLabel</code> for alternative names (trading names, colloquial names) and <code>skos:notation</code> to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h3 class="heading settled" data-level="4.8" id="klasse-begrebssystem-category-scheme"><span class="secno">4.8. </span><span class="content">Klasse: Begrebssystem (Category Scheme)</span><a class="self-link" href="#klasse-begrebssystem-category-scheme"></a></h3>
     <img alt="Begrebssystem" src="img/Begrebssystem.png"> 
    <dl class="def">
     <dt>URI
@@ -4079,7 +4096,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Anbefalet
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.7.1" id="egenskab-titel-title⑤"><span class="secno">4.7.1. </span><span class="content">Egenskab: titel (title)</span><a class="self-link" href="#egenskab-titel-title⑤"></a></h4>
+   <h4 class="heading settled" data-level="4.8.1" id="egenskab-titel-title⑤"><span class="secno">4.8.1. </span><span class="content">Egenskab: titel (title)</span><a class="self-link" href="#egenskab-titel-title⑤"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/title
@@ -4098,7 +4115,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.8" id="klasse-begreb-category"><span class="secno">4.8. </span><span class="content">Klasse: Begreb (Category)</span><a class="self-link" href="#klasse-begreb-category"></a></h3>
+   <h3 class="heading settled" data-level="4.9" id="klasse-begreb-category"><span class="secno">4.9. </span><span class="content">Klasse: Begreb (Category)</span><a class="self-link" href="#klasse-begreb-category"></a></h3>
     <img alt="Begreb" src="img/Begreb.png"> 
    <dl class="def">
     <dt>URI
@@ -4115,7 +4132,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Anbefalet
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.8.1" id="egenskab-foretrukken-betegnelse-preferred-label"><span class="secno">4.8.1. </span><span class="content">Egenskab: foretrukken betegnelse (preferred label)</span><a class="self-link" href="#egenskab-foretrukken-betegnelse-preferred-label"></a></h4>
+   <h4 class="heading settled" data-level="4.9.1" id="egenskab-foretrukken-betegnelse-preferred-label"><span class="secno">4.9.1. </span><span class="content">Egenskab: foretrukken betegnelse (preferred label)</span><a class="self-link" href="#egenskab-foretrukken-betegnelse-preferred-label"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#prefLabel
@@ -4134,7 +4151,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.9" id="klasse-checksum-checksum"><span class="secno">4.9. </span><span class="content">Klasse: Checksum (Checksum)</span><a class="self-link" href="#klasse-checksum-checksum"></a></h3>
+   <h3 class="heading settled" data-level="4.10" id="klasse-checksum-checksum"><span class="secno">4.10. </span><span class="content">Klasse: Checksum (Checksum)</span><a class="self-link" href="#klasse-checksum-checksum"></a></h3>
     <img alt="Checksum" src="img/Checksum.png"> 
    <dl class="def">
     <dt>URI
@@ -4151,7 +4168,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.9.1" id="egenskab-algoritme-algorithm"><span class="secno">4.9.1. </span><span class="content">Egenskab: algoritme (algorithm)</span><a class="self-link" href="#egenskab-algoritme-algorithm"></a></h4>
+   <h4 class="heading settled" data-level="4.10.1" id="egenskab-algoritme-algorithm"><span class="secno">4.10.1. </span><span class="content">Egenskab: algoritme (algorithm)</span><a class="self-link" href="#egenskab-algoritme-algorithm"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#algorithm
@@ -4170,7 +4187,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.9.2" id="egenskab-checksumvrdi-checksum-value"><span class="secno">4.9.2. </span><span class="content">Egenskab: checksumværdi (checksum value)</span><a class="self-link" href="#egenskab-checksumvrdi-checksum-value"></a></h4>
+   <h4 class="heading settled" data-level="4.10.2" id="egenskab-checksumvrdi-checksum-value"><span class="secno">4.10.2. </span><span class="content">Egenskab: checksumværdi (checksum value)</span><a class="self-link" href="#egenskab-checksumvrdi-checksum-value"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://spdx.org/rdf/terms#checksumValue
@@ -4187,7 +4204,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.10" id="klasse-identifikator-identifier"><span class="secno">4.10. </span><span class="content">Klasse: Identifikator (Identifier)</span><a class="self-link" href="#klasse-identifikator-identifier"></a></h3>
+   <h3 class="heading settled" data-level="4.11" id="klasse-identifikator-identifier"><span class="secno">4.11. </span><span class="content">Klasse: Identifikator (Identifier)</span><a class="self-link" href="#klasse-identifikator-identifier"></a></h3>
     <img alt="Identifikator" src="img/Identifikator.png"> 
    <dl class="def">
     <dt>URI
@@ -4204,7 +4221,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.10.1" id="egenskab-notation-notation"><span class="secno">4.10.1. </span><span class="content">Egenskab: notation (notation)</span><a class="self-link" href="#egenskab-notation-notation"></a></h4>
+   <h4 class="heading settled" data-level="4.11.1" id="egenskab-notation-notation"><span class="secno">4.11.1. </span><span class="content">Egenskab: notation (notation)</span><a class="self-link" href="#egenskab-notation-notation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2004/02/skos/core#notation
@@ -4221,7 +4238,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.11" id="klasse-licensdokument-licence-document"><span class="secno">4.11. </span><span class="content">Klasse: Licensdokument (Licence Document)</span><a class="self-link" href="#klasse-licensdokument-licence-document"></a></h3>
+   <h3 class="heading settled" data-level="4.12" id="klasse-licensdokument-licence-document"><span class="secno">4.12. </span><span class="content">Klasse: Licensdokument (Licence Document)</span><a class="self-link" href="#klasse-licensdokument-licence-document"></a></h3>
     <img alt="Licensdokument" src="img/Licensdokument.png"> 
    <dl class="def">
     <dt>URI
@@ -4238,12 +4255,12 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Anbefalet
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.11.1" id="egenskab-licenstype-licence-type"><span class="secno">4.11.1. </span><span class="content">Egenskab: licenstype (licence type)</span><a class="self-link" href="#egenskab-licenstype-licence-type"></a></h4>
+   <h4 class="heading settled" data-level="4.12.1" id="egenskab-licenstype-licence-type"><span class="secno">4.12.1. </span><span class="content">Egenskab: licenstype (licence type)</span><a class="self-link" href="#egenskab-licenstype-licence-type"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/type
     <dt>Rækkevidde
-    <dd>Anvend følgende klassifikation: http://purl.org/adms/licencetype/
+    <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) 
     <dt>Anvendelsesnote (en)
@@ -4257,7 +4274,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h3 class="heading settled" data-level="4.12" id="klasse-lokation-location"><span class="secno">4.12. </span><span class="content">Klasse: Lokation (Location)</span><a class="self-link" href="#klasse-lokation-location"></a></h3>
+   <h3 class="heading settled" data-level="4.13" id="klasse-lokation-location"><span class="secno">4.13. </span><span class="content">Klasse: Lokation (Location)</span><a class="self-link" href="#klasse-lokation-location"></a></h3>
     <img alt="Lokation" src="img/Lokation.png"> 
    <dl class="def">
     <dt>URI
@@ -4274,7 +4291,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.12.1" id="egenskab-bounding-box-bounding-box"><span class="secno">4.12.1. </span><span class="content">Egenskab: bounding box (bounding box)</span><a class="self-link" href="#egenskab-bounding-box-bounding-box"></a></h4>
+   <h4 class="heading settled" data-level="4.13.1" id="egenskab-bounding-box-bounding-box"><span class="secno">4.13.1. </span><span class="content">Egenskab: bounding box (bounding box)</span><a class="self-link" href="#egenskab-bounding-box-bounding-box"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#bbox
@@ -4293,7 +4310,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.12.2" id="egenskab-geometrisk-tyngdepunkt-centroid"><span class="secno">4.12.2. </span><span class="content">Egenskab: geometrisk tyngdepunkt (centroid)</span><a class="self-link" href="#egenskab-geometrisk-tyngdepunkt-centroid"></a></h4>
+   <h4 class="heading settled" data-level="4.13.2" id="egenskab-geometrisk-tyngdepunkt-centroid"><span class="secno">4.13.2. </span><span class="content">Egenskab: geometrisk tyngdepunkt (centroid)</span><a class="self-link" href="#egenskab-geometrisk-tyngdepunkt-centroid"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#centroid
@@ -4310,7 +4327,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.12.3" id="egenskab-geometri-geometry"><span class="secno">4.12.3. </span><span class="content">Egenskab: geometri (geometry)</span><a class="self-link" href="#egenskab-geometri-geometry"></a></h4>
+   <h4 class="heading settled" data-level="4.13.3" id="egenskab-geometri-geometry"><span class="secno">4.13.3. </span><span class="content">Egenskab: geometri (geometry)</span><a class="self-link" href="#egenskab-geometri-geometry"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/locn#geometry
@@ -4329,7 +4346,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.13" id="klasse-periode-periodoftime"><span class="secno">4.13. </span><span class="content">Klasse: Periode (PeriodOfTime)</span><a class="self-link" href="#klasse-periode-periodoftime"></a></h3>
+   <h3 class="heading settled" data-level="4.14" id="klasse-periode-periodoftime"><span class="secno">4.14. </span><span class="content">Klasse: Periode (PeriodOfTime)</span><a class="self-link" href="#klasse-periode-periodoftime"></a></h3>
     <img alt="Periode" src="img/Periode.png"> 
    <dl class="def">
     <dt>URI
@@ -4346,7 +4363,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.13.1" id="egenskab-startdato-start-date"><span class="secno">4.13.1. </span><span class="content">Egenskab: startdato (start date)</span><a class="self-link" href="#egenskab-startdato-start-date"></a></h4>
+   <h4 class="heading settled" data-level="4.14.1" id="egenskab-startdato-start-date"><span class="secno">4.14.1. </span><span class="content">Egenskab: startdato (start date)</span><a class="self-link" href="#egenskab-startdato-start-date"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#startDate
@@ -4365,7 +4382,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.13.2" id="egenskab-slutdato-end-date"><span class="secno">4.13.2. </span><span class="content">Egenskab: slutdato (end date)</span><a class="self-link" href="#egenskab-slutdato-end-date"></a></h4>
+   <h4 class="heading settled" data-level="4.14.2" id="egenskab-slutdato-end-date"><span class="secno">4.14.2. </span><span class="content">Egenskab: slutdato (end date)</span><a class="self-link" href="#egenskab-slutdato-end-date"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#endDate
@@ -4384,7 +4401,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Anbefalet
    </dl>
-   <h4 class="heading settled" data-level="4.13.3" id="egenskab-har-begyndelse-beginning"><span class="secno">4.13.3. </span><span class="content">Egenskab: har begyndelse (beginning)</span><a class="self-link" href="#egenskab-har-begyndelse-beginning"></a></h4>
+   <h4 class="heading settled" data-level="4.14.3" id="egenskab-har-begyndelse-beginning"><span class="secno">4.14.3. </span><span class="content">Egenskab: har begyndelse (beginning)</span><a class="self-link" href="#egenskab-har-begyndelse-beginning"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2006/time#hasBeginning
@@ -4403,7 +4420,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.13.4" id="egenskab-har-slutning-end"><span class="secno">4.13.4. </span><span class="content">Egenskab: har slutning (end)</span><a class="self-link" href="#egenskab-har-slutning-end"></a></h4>
+   <h4 class="heading settled" data-level="4.14.4" id="egenskab-har-slutning-end"><span class="secno">4.14.4. </span><span class="content">Egenskab: har slutning (end)</span><a class="self-link" href="#egenskab-har-slutning-end"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/2006/time#hasEnd
@@ -4422,7 +4439,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.14" id="klasse-relation-relationship"><span class="secno">4.14. </span><span class="content">Klasse: Relation (Relationship)</span><a class="self-link" href="#klasse-relation-relationship"></a></h3>
+   <h3 class="heading settled" data-level="4.15" id="klasse-relation-relationship"><span class="secno">4.15. </span><span class="content">Klasse: Relation (Relationship)</span><a class="self-link" href="#klasse-relation-relationship"></a></h3>
     <img alt="Relation" src="img/Relation.png"> 
    <dl class="def">
     <dt>URI
@@ -4439,7 +4456,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
     Klassens egenskaber: 
-   <h4 class="heading settled" data-level="4.14.1" id="egenskab-relation-relation"><span class="secno">4.14.1. </span><span class="content">Egenskab: relation (relation)</span><a class="self-link" href="#egenskab-relation-relation"></a></h4>
+   <h4 class="heading settled" data-level="4.15.1" id="egenskab-relation-relation"><span class="secno">4.15.1. </span><span class="content">Egenskab: relation (relation)</span><a class="self-link" href="#egenskab-relation-relation"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/relation
@@ -4458,7 +4475,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h4 class="heading settled" data-level="4.14.2" id="egenskab-havde-rolle-had-role"><span class="secno">4.14.2. </span><span class="content">Egenskab: havde rolle (had role)</span><a class="self-link" href="#egenskab-havde-rolle-had-role"></a></h4>
+   <h4 class="heading settled" data-level="4.15.2" id="egenskab-havde-rolle-had-role"><span class="secno">4.15.2. </span><span class="content">Egenskab: havde rolle (had role)</span><a class="self-link" href="#egenskab-havde-rolle-had-role"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://www.w3.org/ns/dcat#hadRole
@@ -4477,7 +4494,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Obligatorisk
    </dl>
-   <h3 class="heading settled" data-level="4.15" id="klasse-frekvens-frequency"><span class="secno">4.15. </span><span class="content">Klasse: Frekvens (Frequency)</span><a class="self-link" href="#klasse-frekvens-frequency"></a></h3>
+   <h3 class="heading settled" data-level="4.16" id="klasse-frekvens-frequency"><span class="secno">4.16. </span><span class="content">Klasse: Frekvens (Frequency)</span><a class="self-link" href="#klasse-frekvens-frequency"></a></h3>
     <img alt="Frekvens" src="img/Frekvens.png"> 
    <dl class="def">
     <dt>URI
@@ -4493,7 +4510,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.16" id="klasse-lingvistisk-system-linguistic-system"><span class="secno">4.16. </span><span class="content">Klasse: Lingvistisk system (Linguistic system)</span><a class="self-link" href="#klasse-lingvistisk-system-linguistic-system"></a></h3>
+   <h3 class="heading settled" data-level="4.17" id="klasse-lingvistisk-system-linguistic-system"><span class="secno">4.17. </span><span class="content">Klasse: Lingvistisk system (Linguistic system)</span><a class="self-link" href="#klasse-lingvistisk-system-linguistic-system"></a></h3>
     <img alt="Lingvistisk system" src="img/Lingvistisk%20system.png"> 
    <dl class="def">
     <dt>URI
@@ -4509,7 +4526,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.17" id="klasse-medietype-media-type"><span class="secno">4.17. </span><span class="content">Klasse: Medietype (Media Type)</span><a class="self-link" href="#klasse-medietype-media-type"></a></h3>
+   <h3 class="heading settled" data-level="4.18" id="klasse-medietype-media-type"><span class="secno">4.18. </span><span class="content">Klasse: Medietype (Media Type)</span><a class="self-link" href="#klasse-medietype-media-type"></a></h3>
     <img alt="Medietype" src="img/Medietype.png"> 
    <dl class="def">
     <dt>URI
@@ -4523,7 +4540,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.18" id="klasse-rolle-role"><span class="secno">4.18. </span><span class="content">Klasse: Rolle (Role)</span><a class="self-link" href="#klasse-rolle-role"></a></h3>
+   <h3 class="heading settled" data-level="4.19" id="klasse-rolle-role"><span class="secno">4.19. </span><span class="content">Klasse: Rolle (Role)</span><a class="self-link" href="#klasse-rolle-role"></a></h3>
     <img alt="Rolle" src="img/Rolle.png"> 
    <dl class="def">
     <dt>URI
@@ -4537,13 +4554,13 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.19" id="klasse-proveniensudsagn-provenance-statement"><span class="secno">4.19. </span><span class="content">Klasse: Proveniensudsagn (Provenance Statement)</span><a class="self-link" href="#klasse-proveniensudsagn-provenance-statement"></a></h3>
+   <h3 class="heading settled" data-level="4.20" id="klasse-proveniensudsagn-provenance-statement"><span class="secno">4.20. </span><span class="content">Klasse: Proveniensudsagn (Provenance Statement)</span><a class="self-link" href="#klasse-proveniensudsagn-provenance-statement"></a></h3>
     <img alt="Proveniensudsagn" src="img/Proveniensudsagn.png"> 
    <dl class="def">
     <dt>URI
     <dd>http://purl.org/dc/terms/ProvenanceStatement
     <dt>Anvendelsesnote (da) 
-    <dd>Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning.
+    <dd>Denne egenskab angiver udsagn omkring datasættets oprindelse og udvikling. Proveniensudsagn erstatter ikke direkte brug af udsagn om ejerskab og varetagelse af datasættet, men er et supplement.
     <dt>Anvendelsesnote (en)
     <dd>A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation 
     <dt>Definition (da)
@@ -4553,7 +4570,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.20" id="klasse-rettighedsudsagn-rights-statement"><span class="secno">4.20. </span><span class="content">Klasse: Rettighedsudsagn (Rights Statement)</span><a class="self-link" href="#klasse-rettighedsudsagn-rights-statement"></a></h3>
+   <h3 class="heading settled" data-level="4.21" id="klasse-rettighedsudsagn-rights-statement"><span class="secno">4.21. </span><span class="content">Klasse: Rettighedsudsagn (Rights Statement)</span><a class="self-link" href="#klasse-rettighedsudsagn-rights-statement"></a></h3>
     <img alt="Rettighedsudsagn" src="img/Rettighedsudsagn.png"> 
    <dl class="def">
     <dt>URI
@@ -4569,7 +4586,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.21" id="klasse-dokument-document"><span class="secno">4.21. </span><span class="content">Klasse: Dokument (Document)</span><a class="self-link" href="#klasse-dokument-document"></a></h3>
+   <h3 class="heading settled" data-level="4.22" id="klasse-dokument-document"><span class="secno">4.22. </span><span class="content">Klasse: Dokument (Document)</span><a class="self-link" href="#klasse-dokument-document"></a></h3>
     <img alt="Dokument" src="img/Dokument.png"> 
    <dl class="def">
     <dt>URI
@@ -4585,7 +4602,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.22" id="klasse-specifikation-standard"><span class="secno">4.22. </span><span class="content">Klasse: Specifikation (Standard)</span><a class="self-link" href="#klasse-specifikation-standard"></a></h3>
+   <h3 class="heading settled" data-level="4.23" id="klasse-specifikation-standard"><span class="secno">4.23. </span><span class="content">Klasse: Specifikation (Standard)</span><a class="self-link" href="#klasse-specifikation-standard"></a></h3>
     <img alt="Specifikation" src="img/Specifikation.png"> 
    <dl class="def">
     <dt>URI
@@ -4601,7 +4618,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.23" id="klasse-virtuelt-visitkort-kind"><span class="secno">4.23. </span><span class="content">Klasse: Virtuelt visitkort (Kind)</span><a class="self-link" href="#klasse-virtuelt-visitkort-kind"></a></h3>
+   <h3 class="heading settled" data-level="4.24" id="klasse-virtuelt-visitkort-kind"><span class="secno">4.24. </span><span class="content">Klasse: Virtuelt visitkort (Kind)</span><a class="self-link" href="#klasse-virtuelt-visitkort-kind"></a></h3>
     <img alt="Virtuelt visitkort" src="img/Virtuelt%20visitkort.png"> 
    <dl class="def">
     <dt>URI
@@ -4617,7 +4634,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.24" id="klasse-anvendelse-dk-usage"><span class="secno">4.24. </span><span class="content">Klasse: Anvendelse DK (Usage)</span><a class="self-link" href="#klasse-anvendelse-dk-usage"></a></h3>
+   <h3 class="heading settled" data-level="4.25" id="klasse-anvendelse-dk-usage"><span class="secno">4.25. </span><span class="content">Klasse: Anvendelse DK (Usage)</span><a class="self-link" href="#klasse-anvendelse-dk-usage"></a></h3>
     <img alt="Anvendelse DK" src="img/Anvendelse%20DK.png"> 
    <dl class="def">
     <dt>URI
@@ -4633,7 +4650,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.25" id="klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.25. </span><span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span><a class="self-link" href="#klasse-kvalitetsmetadata-dk-quality-metadata"></a></h3>
+   <h3 class="heading settled" data-level="4.26" id="klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.26. </span><span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span><a class="self-link" href="#klasse-kvalitetsmetadata-dk-quality-metadata"></a></h3>
     <img alt="Kvalitetsmetadata DK" src="img/Kvalitetsmetadata%20DK.png"> 
    <dl class="def">
     <dt>URI
@@ -5068,7 +5085,7 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td>download URL 
      <tr>
       <td>datasæt
-      <td>samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer
+      <td>samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download af i en eller flere repræsentationer
       <td>
       <td>http://www.w3.org/ns/dcat#Dataset
       <td> ja
