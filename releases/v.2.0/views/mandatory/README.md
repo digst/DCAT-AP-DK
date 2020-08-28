@@ -27,7 +27,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.</dd>
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
@@ -53,4 +53,4 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|
+|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|</BODY>
