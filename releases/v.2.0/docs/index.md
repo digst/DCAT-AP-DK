@@ -149,7 +149,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.1 (udkast)
-Date: 2020-08-27
+Date: 2020-08-28
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -272,7 +272,7 @@ Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om res
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
 
 ## Datasæt
-Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er tilrådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
+Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
 (Gå til klassen Datasæt)[https://api.csswg.org/bikeshed/#klasse-datast-dataset]
 
 ## Datatjeneste
@@ -377,6 +377,7 @@ Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i 
 
 # Elementer i DCAT-AP-DK 
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
+			
 			
 ## Klasse: Katalog (Catalog) 
 <img src="img/Katalog.png" alt="Katalog">
@@ -615,7 +616,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>http://purl.org/dc/terms/LinguisticSystem</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -827,7 +828,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand katalogposten befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes ADMS Status: http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -907,7 +908,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>http://purl.org/dc/terms/LinguisticSystem</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -948,11 +949,11 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A conceptual entity that represents the information published. </dd>
 <dt>Definition (da)</dt>
-<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.</dd>
 <dt>Definition (en)</dt>
 <dd>A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</dd>
 <dt>Kravniveau</dt>
@@ -1269,7 +1270,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. </br></br>Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
+<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</dd>
 <dt>Definition (da)</dt>
@@ -1297,7 +1298,7 @@ Klassens egenskaber:
 <dt>Definition (en)</dt>
 <dd>The nature or genre of the resource.</dd>
 <dt>Multiplicitet</dt>
-<dd>0..*</dd>
+<dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -1327,7 +1328,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>http://purl.org/dc/terms/LinguisticSystem</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1447,7 +1448,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/frequency/</dd>
+<dd>http://purl.org/dc/terms/Frequency</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1568,7 +1569,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1588,7 +1589,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. (dansk tilføjelse) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2026,7 +2027,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/adms#status</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/status/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2044,7 +2045,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://data.europa.eu/r5r/availability</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://data.europa.eu/r5r/availability/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2064,7 +2065,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/language</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/dataset/language/</dd>
+<dd>http://purl.org/dc/terms/LinguisticSystem</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2124,7 +2125,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#mediaType</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/</dd>
+<dd>http://purl.org/dc/terms/MediaType</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver medietypen for distributionen som den er defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2144,7 +2145,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/format</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/file-type/</dd>
+<dd>http://purl.org/dc/terms/MediaTypeOrExtent</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2164,7 +2165,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#compressFormat</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/</dd>
+<dd>http://purl.org/dc/terms/MediaType</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver filformatet for den distribution hvori data er indholdt i et komprimeret format, fx. med det formål at reducere størrelsen af downloadfilen. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2184,7 +2185,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#packageFormat</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: ^https://www.iana.org/assignments/media-types/</dd>
+<dd>http://purl.org/dc/terms/MediaType</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver filformatet for den distribution som grupperer en eller flere datafiler, fx. med det formål at gøre det muligt at download et antal relaterede filer på én gang. Formatet BØR udtrykkes med en medietype defineret af Internet Assigned Numbers Authority (IANA) (https://www.iana.org/assignments/media-types/media-types.xhtml)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2524,7 +2525,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/publishertype/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver aktørens type i forhold til dennes iboende karakter. Til angivelse af aktørtype skal følgende klassifikation anvendes: ADMS Publisher Type, http://purl.org/adms/publishertype/</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2535,6 +2536,23 @@ Klassens egenskaber:
 <dd>The nature or genre of the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>	
+			
+## Klasse: Organisation (Organisation) 
+<img src="img/Organisation.png" alt="Organisation">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/org#Organization</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>collection of people organized together into a community or other social, commercial or political structure</dd>
+<dt>Definition (da)</dt>
+<dd>Repræsenterer en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur.</dd>
+<dt>Definition (en)</dt>
+<dd>Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
@@ -2740,7 +2758,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/type</dd>
 <dt>Rækkevidde</dt>
-<dd>Anvend følgende klassifikation: http://purl.org/adms/licencetype/</dd>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3063,7 +3081,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/ProvenanceStatement</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning.</dd>
+<dd>Denne egenskab angiver udsagn omkring datasættets oprindelse og udvikling. Proveniensudsagn erstatter ikke direkte brug af udsagn om ejerskab og varetagelse af datasættet, men er et supplement.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation </dd>
 <dt>Definition (da)</dt>
@@ -3174,8 +3192,7 @@ Klassens egenskaber:
 <dd>Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
-</dl>	
-		
+</dl>		
 
 # Klassifikationer
 
@@ -3538,7 +3555,7 @@ Relevante links:
  <tr><td>serialisering</td><td>metode til at konvertere en datastruktur eller et objekt til et format der kan lagres eller sendes i et computermiljø</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>serialization </td></tr> 
  <tr><td>adgangsadresse</td><td>URL for en ressource som giver adgang til en distribution af datasættet</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#accessURL</td><td>&nbsp;ja</td><td>access address</td></tr> 
 <tr><td>download-URL</td><td>URL til fil der kan downloades i et bestemt format</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#downloadURL</td><td>&nbsp;ja</td><td>download URL </td></tr> 
- <tr><td>datasæt</td><td>samling af data, udgivet eller kurateret af en enkelt kilde og som er tilråde for adgang til eller download af i en eller flere repræsentationer</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Dataset</td><td>&nbsp;ja</td><td>dataset </td></tr>
+ <tr><td>datasæt</td><td>samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download af i en eller flere repræsentationer</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Dataset</td><td>&nbsp;ja</td><td>dataset </td></tr>
  <tr><td>begreb</td><td>en idé eller en forestilling; en tankeenhed</td><td>&nbsp;</td><td>http://www.w3.org/2004/02/skos/core# </td><td>&nbsp;nej</td><td>concept </td></tr>
  <tr><td>begrebssystem</td><td>samling af ét eller flere begreber, samt eventuelt også udsagn om de indbyrdes semantiske relationer mellem disse begreber</td><td>&nbsp;</td><td>http://www.w3.org/2004/02/skos/core# </td><td>&nbsp;nej</td><td>concept scheme </td></tr>
  <tr><td>bytestørrelse</td><td>størrelsen af en distribution angivet i bytes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>bytesize </td></tr>  
