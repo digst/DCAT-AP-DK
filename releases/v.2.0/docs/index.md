@@ -356,6 +356,7 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
 * Datasæt: har anvendelse (duv:hasUsage)
 * Klassen duv:Usage
 * Klassen dqv:QualityMetadata
+* Klassen org:Organization
 
 I indholdsfortegnelsen har disse mærket 'DK'.
 
@@ -3597,6 +3598,7 @@ Relevante links:
  <tr><td>vcard</td><td>http://www.w3.org/2006/vcard/ns#</td><td>Virtual Contact File Vocabulary</td></tr>
  <tr><td>dqv</td><td>https://www.w3.org/ns/dqv</td><td>Data Quality Vocabulary</td></tr>
  <tr><td>duv</td><td>https://www.w3.org/ns/duv</td><td>Data Usage Vocabulary</td></tr>
+ <tr><td>org</td><td>http://www.w3.org/ns/org#</td><td>The Organization Ontology</td></tr>	
  <tr><td>dcat-dk</td><td>https://data.gov.dk/model/core/dcat-dk/</td><td>DCAT-DK</td></tr>
  <tr><td>pers-cat</td><td>https://data.gov.dk/concept/core/personaldata-type/</td><td>Vocabulary for Personal Data Categories</td></tr>
  <tr><td>conf</td><td>https://data.gov.dk/concept/core/confidentiality-type/</td><td>Vocabulary for Confidentiality</td></tr>
