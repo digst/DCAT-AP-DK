@@ -1932,7 +1932,7 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
    <h3 class="heading settled" data-level="2.2" id="katalogiseret-ressource"><span class="secno">2.2. </span><span class="content">Katalogiseret ressource</span><a class="self-link" href="#katalogiseret-ressource"></a></h3>
     En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
    <h3 class="heading settled" data-level="2.3" id="datast"><span class="secno">2.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
-    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#lasse-datast-dataset">Gå til klassen Datasæt</a> 
+    Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datast-dataset">Gå til klassen Datasæt</a> 
    <h3 class="heading settled" data-level="2.4" id="datatjeneste"><span class="secno">2.4. </span><span class="content">Datatjeneste</span><a class="self-link" href="#datatjeneste"></a></h3>
     En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service">Gå til klassen Datatjeneste</a> 
    <h3 class="heading settled" data-level="2.5" id="distribution"><span class="secno">2.5. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
@@ -1940,7 +1940,7 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
    <h3 class="heading settled" data-level="2.6" id="katalogpost"><span class="secno">2.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record">Gå til klassen Katalogpost</a> 
    <h3 class="heading settled" data-level="2.7" id="illustration"><span class="secno">2.7. </span><span class="content">Illustration</span><a class="self-link" href="#illustration"></a></h3>
-    Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri): 
+    Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (anbefalet): 
    <p align="left"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img alt="Figur DCAT-niveauerne" src="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" width="600"></a></p>
    <h2 class="heading settled" data-level="3" id="gldende-krav-og-overensstemmelse"><span class="secno">3. </span><span class="content">Gældende krav og overensstemmelse</span><a class="self-link" href="#gldende-krav-og-overensstemmelse"></a></h2>
     DCAT-AP-DK 2.0.1 er i overensstemmelse med DCAT-AP 2.0.1. Metadatabeskrivelser af datasæt og datakataloger der overholder DCAT-AP-DK overholder også DCAT-AP. 
@@ -2009,6 +2009,8 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
      <p>Klassen duv:Usage</p>
     <li data-md>
      <p>Klassen dqv:QualityMetadata</p>
+    <li data-md>
+     <p>Klassen org:Organization</p>
    </ul>
    <p>I indholdsfortegnelsen har disse mærket <a class="property" data-link-type="propdesc">DK</a>.</p>
    <h4 class="heading settled" data-level="3.3.3" id="udeladelser"><span class="secno">3.3.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h4>
@@ -4866,7 +4868,9 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <li data-md>
      <p>https://data.gov.dk/concept/core/personaldata-type/SensitivePersonalData (følsomme personoplysninger)</p>
     <li data-md>
-     <p>https://data.gov.dk/concept/core/personaldata-type/GeneralPersonalData (almindelige personoplysninger) https://data.gov.dk/concept/core/personaldata-type/CivilRegistrationNumberData (personnummeroplysninger)</p>
+     <p>https://data.gov.dk/concept/core/personaldata-type/GeneralPersonalData (almindelige personoplysninger)</p>
+    <li data-md>
+     <p>https://data.gov.dk/concept/core/personaldata-type/CivilRegistrationNumberData (personnummeroplysninger)</p>
     <li data-md>
      <p>https://data.gov.dk/concept/core/personaldata-type/DataAboutCriminalOffences (oplysninger om strafbare forhold)</p>
     <li data-md>
@@ -4882,33 +4886,35 @@ Se https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
    <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <ul>
     <li data-md>
-     <p><a href="(https://www.w3.org/TR/vocab-dcat-2/">DCAT 2.0</a></p>
+     <p>W3C: DCAT 2.0:<a href="https://www.w3.org/TR/vocab-dcat-2/">https://www.w3.org/TR/vocab-dcat-2/</a></p>
     <li data-md>
-     <p><a href="https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200">DCAT-AP 2.0</a></p>
+     <p>EU: DCAT-AP 2.0.1: <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/201-0">https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/201-0</a></p>
     <li data-md>
-     <p><a href="https://www.itb.ec.europa.eu/shacl/dcat-ap/upload">DCAT-AP validator</a></p>
+     <p>EU: DCAT-AP validator: <a href="https://www.itb.ec.europa.eu/shacl/dcat-ap/upload">https://www.itb.ec.europa.eu/shacl/dcat-ap/upload</a></p>
     <li data-md>
-     <p><a href="http://data.europa.eu/euodp/en/developerscorner">DCAT-AP-OP (1.1)</a></p>
+     <p>EU: DCAT-AP-OP (1.1): <a href="http://data.europa.eu/euodp/en/developerscorner">http://data.europa.eu/euodp/en/developerscorner</a></p>
     <li data-md>
-     <p><a href="https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf">Overblik over nationale DCAT-APer</a></p>
+     <p>Overblik over nationale DCAT-APer: <a href="https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf">https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf</a></p>
     <li data-md>
-     <p><a href="https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf">EDP Goldbook</a></p>
+     <p>EU: EDP Goldbook: <a href="https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf">https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf</a></p>
     <li data-md>
-     <p><a href="https://www.go-fair.org/fair-principles/">FAIR-principperne</a></p>
+     <p>FAIR-principperne: <a href="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</a></p>
     <li data-md>
-     <p><a href="https://arkitektur.digst.dk/node/588">Retningslinjer for stabile http-URIer</a></p>
+     <p>EU 10 Rules for Persistent URIs: <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris">https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris</a></p>
     <li data-md>
-     <p><a href="https://www.w3.org/RDF/">W3C: Resource Description Framework</a></p>
+     <p>FDA: Retningslinjer for stabile http-URIer: <a href="https://arkitektur.digst.dk/node/588">https://arkitektur.digst.dk/node/588</a></p>
     <li data-md>
-     <p><a href="https://www.w3.org/TR/shacl/">W3C: Shapes Constraint Language</a></p>
+     <p>W3C: Resource Description Framework: <a href="https://www.w3.org/RDF/">https://www.w3.org/RDF/</a></p>
     <li data-md>
-     <p><a href="https://www.w3.org/TR/dwbp/">W3C: Data on the Web Best practices</a></p>
+     <p>W3C: Shapes Constraint Language: <a href="https://www.w3.org/TR/shacl/">https://www.w3.org/TR/shacl/</a></p>
     <li data-md>
-     <p><a href="https://www.w3.org/TR/vocab-dqv/">W3C: Data Quality Vocabulary</a></p>
+     <p>W3C: Data on the Web Best practices: <a href="https://www.w3.org/TR/dwbp/">https://www.w3.org/TR/dwbp/</a></p>
     <li data-md>
-     <p><a href="https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx">Fælles sprog for datakvalitet</a></p>
+     <p>W3C: Data Quality Vocabulary: <a href="https://www.w3.org/TR/vocab-dqv/">https://www.w3.org/TR/vocab-dqv</a></p>
     <li data-md>
-     <p><a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Regler for begrebs- og datamodellering</a></p>
+     <p>FDA: Fælles sprog for datakvalitet: <a href="https://arkitektur.digst.dk/node/625">https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet</a></p>
+    <li data-md>
+     <p>FDA: Regler for begrebs- og datamodellering: <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering</a></p>
    </ul>
    <h2 class="heading settled" data-level="7" id="bilag"><span class="secno">7. </span><span class="content">Bilag</span><a class="self-link" href="#bilag"></a></h2>
    <h3 class="heading settled" data-level="7.1" id="eksempler-og-validering"><span class="secno">7.1. </span><span class="content">Eksempler og validering</span><a class="self-link" href="#eksempler-og-validering"></a></h3>
@@ -5248,6 +5254,10 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
       <td>duv
       <td>https://www.w3.org/ns/duv
       <td>Data Usage Vocabulary
+     <tr>
+      <td>org
+      <td>http://www.w3.org/ns/org#
+      <td>The Organization Ontology
      <tr>
       <td>dcat-dk
       <td>https://data.gov.dk/model/core/dcat-dk/
