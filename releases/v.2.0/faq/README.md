@@ -87,9 +87,10 @@ Læs mere her: https://schema.org/Dataset; https://schema.org/docs/data-and-data
 Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
 RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter, https://en.wikipedia.org/wiki/RDFa
 
-Se fx vejledninger her: 
+Se fx vejledninger og eksempler her: 
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://developers.google.com/search/docs/data-types/dataset
+- https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
 
 ### Hvilke applikationer understøtter DCAT?
 
