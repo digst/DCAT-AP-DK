@@ -3415,7 +3415,8 @@ URI: http://data.europa.eu/r5r/availability/
 
 Indeholder følgende udfaldsrum:
 * https://data.gov.dk/concept/core/personaldata-type/SensitivePersonalData (følsomme personoplysninger)
-* https://data.gov.dk/concept/core/personaldata-type/GeneralPersonalData (almindelige personoplysninger) https://data.gov.dk/concept/core/personaldata-type/CivilRegistrationNumberData (personnummeroplysninger)
+* https://data.gov.dk/concept/core/personaldata-type/GeneralPersonalData (almindelige personoplysninger) 
+* https://data.gov.dk/concept/core/personaldata-type/CivilRegistrationNumberData (personnummeroplysninger)
 * https://data.gov.dk/concept/core/personaldata-type/DataAboutCriminalOffences (oplysninger om strafbare forhold)
 * https://data.gov.dk/concept/core/personaldata-type/NonPersonalData (ingen personoplysninger)
 
@@ -3432,20 +3433,21 @@ Se https://www.retsinformation.dk/eli/retsinfo/2014/10338
 
 # Referencer
 
-* [DCAT 2.0]((https://www.w3.org/TR/vocab-dcat-2/)
-* [DCAT-AP 2.0](https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe/release/200)
-* [DCAT-AP validator](https://www.itb.ec.europa.eu/shacl/dcat-ap/upload)
-* [DCAT-AP-OP (1.1)](http://data.europa.eu/euodp/en/developerscorner)
-* [Overblik over nationale DCAT-APer](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf)
-* [EDP Goldbook](https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf)
-* [FAIR-principperne](https://www.go-fair.org/fair-principles/)
-* [Retningslinjer for stabile http-URIer](https://arkitektur.digst.dk/node/588)
-* [W3C: Resource Description Framework](https://www.w3.org/RDF/) 
-* [W3C: Shapes Constraint Language](https://www.w3.org/TR/shacl/)
-* [W3C: Data on the Web Best practices](https://www.w3.org/TR/dwbp/)
-* [W3C: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/)
-* [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/sites/default/files/faelles_sprog_for_datakvalitet_-_vejledning_til_deklaration_af_datasaet_med_kernedimensioner_vers_1.0.0.docx)
-* [Regler for begrebs- og datamodellering](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering)
+* W3C: DCAT 2.0:[https://www.w3.org/TR/vocab-dcat-2/](https://www.w3.org/TR/vocab-dcat-2/)
+* EU: DCAT-AP 2.0.1: [https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/201-0](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/201-0)
+* EU: DCAT-AP validator: [https://www.itb.ec.europa.eu/shacl/dcat-ap/upload](https://www.itb.ec.europa.eu/shacl/dcat-ap/upload)
+* EU: DCAT-AP-OP (1.1): [http://data.europa.eu/euodp/en/developerscorner](http://data.europa.eu/euodp/en/developerscorner)
+* Overblik over nationale DCAT-APer: [https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf)
+* EU: EDP Goldbook: [https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf](https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf)
+* FAIR-principperne: [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/)
+* EU 10 Rules for Persistent URIs: [https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris)
+* FDA: Retningslinjer for stabile http-URIer: [https://arkitektur.digst.dk/node/588](https://arkitektur.digst.dk/node/588)
+* W3C: Resource Description Framework: [https://www.w3.org/RDF/](https://www.w3.org/RDF/) 
+* W3C: Shapes Constraint Language: [https://www.w3.org/TR/shacl/](https://www.w3.org/TR/shacl/)
+* W3C: Data on the Web Best practices: [https://www.w3.org/TR/dwbp/](https://www.w3.org/TR/dwbp/)
+* W3C: Data Quality Vocabulary: [https://www.w3.org/TR/vocab-dqv](https://www.w3.org/TR/vocab-dqv/)
+* FDA: Fælles sprog for datakvalitet: [https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet](https://arkitektur.digst.dk/node/625)
+* FDA: Regler for begrebs- og datamodellering: [https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering)
 
 # Bilag
 
