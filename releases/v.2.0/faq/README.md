@@ -35,6 +35,16 @@ OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinations
 
 Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
 
+## Periode - hvad er forskellen mellem 'startdato og 'har begyndelse', samt 'slutdato' og 'har slutning'?
+Klassen Periode har følgende fire egenskaber: Se også: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-periode-periodoftime
+- Egenskab: startdato (start date)
+- Egenskab: slutdato (end date)
+- Egenskab: har begyndelse (beginning)
+- Egenskab: har slutning (end)
+
+DCAT angiver to måder hvorpå man kan angive henholdsvis start og af-slutning af en periode. Det ene sæt benytter to egenskaber fra Time Ontology – en specifikation udformet i et samarbejde mellem OGC og W3C. Det andet sæt benytter to egenskaber der er defineret af DCAT-arbejdsgruppen. DCATs to egenskaber kan benytte følgende typer af tidsenheder til angivelse af helholdsvis startdato og slutdato: xsd:date, xsd:dateTime. xsd:gYear og xsd:gYearMonth. Time Ontologys to egenskaber for henholdsvis begyndelse og slutning har følgende: xsd:date, xsd:dateTimeStamp. xsd:gYear og xsd:gYearMonth. Noter at Time Ontology benytter xsd.dateTimeStamp i stedet for xsd:dateTime. Desuden kan Time Ontology benytte tidsenheder der ikke er relateret til den gregorianske kalender. 
+
+I den danske profilering af DCAT er det valgt i videst muligt omfang at videreføre EU's DCAT-AP der tillader brug af begge egenskabssæt. Derfor er det også valgt at præsentere begge de to mulige sæt af start/slut-angivelse. DCATs egenskaber anbefales da de er de mest enkle at benytte, mens Time Ontology-egenskaberne er valgfri.
 
 ## Hvordan sikrer man god datakvalitet i de udgivne datasæt
 Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) (Vejledning til deklaration af datasæt med kernedimensioner vers. 1.0.0) anvender også DQV.
