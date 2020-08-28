@@ -14,6 +14,7 @@
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix org: <http://www.w3.org/ns/org#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/>
@@ -301,8 +302,8 @@
   a sh:NodeShape ;
   sh:targetClass dcat:Dataset ;
   sh:name "Dataset"@en, "Datasæt"@da ;
-  sh:description "A conceptual entity that represents the information published. "@en, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;
-  rdfs:comment "A collection of data, published or curated by a single agent, and available for access or download in one or more representations."@en, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da ;
+  sh:description "A conceptual entity that represents the information published. "@en, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer."@da ;
+  rdfs:comment "A collection of data, published or curated by a single agent, and available for access or download in one or more representations."@en, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer."@da ;
   sh:property [
     sh:name "identifikator"@da, "identifier"@en ;
     sh:description "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en, "Denne egenskab angiver den primære identifikator for datasættet, for eksempel en URI eller anden identifikator i kontekst af kataloget."@da ;
@@ -989,6 +990,13 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk/Optional>
   ] .
 
+<https://data.gov.dk/model/profile/dcat-ap-dk/Organisation_Shape>
+  a sh:NodeShape ;
+  sh:targetClass org:Organization ;
+  sh:name "Organisation"@en, "Organisation"@da ;
+  sh:description "collection of people organized together into a community or other social, commercial or political structure"@en, "samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur"@da ;
+  rdfs:comment "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"@en, "Repræsenterer en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur."@da .
+
 <https://data.gov.dk/model/profile/dcat-ap-dk/CategoryScheme_Shape>
   a sh:NodeShape ;
   sh:targetClass skos:ConceptScheme ;
@@ -1221,7 +1229,7 @@
   a sh:NodeShape ;
   sh:targetClass dc:ProvenanceStatement ;
   sh:name "Provenance Statement"@en, "Proveniensudsagn"@da ;
-  sh:description "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation "@en, "Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning."@da ;
+  sh:description "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation "@en, "Denne egenskab angiver udsagn omkring datasættets oprindelse og udvikling. Proveniensudsagn erstatter ikke direkte brug af udsagn om ejerskab og varetagelse af datasættet, men er et supplement."@da ;
   rdfs:comment "Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation."@en, "Enhver ændring i en ressources ejerskabs- eller kustodeforhold siden ressourcen blev skabt som er centrale for autencitet, integritet og fortolkning. "@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk/RightsStatement_Shape>
