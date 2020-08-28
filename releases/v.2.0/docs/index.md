@@ -266,26 +266,26 @@ Se:  [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-
 DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebmodel-for-beskrivelse-af-datast).
 
 ## Katalog
-Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger. (Gå til klassen Katalog)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalog-catalog]
+Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger. [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalog-catalog)
 
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
 
 ## Datasæt
 Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
-(Gå til klassen Datasæt)[https://api.csswg.org/bikeshed/#klasse-datast-dataset]
+[Gå til klassen Datasæt](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#lasse-datast-dataset)
 
 ## Datatjeneste
 En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
-(Gå til klassen Dtatjeneste)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service]
+[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service)
 
 ## Distribution
 En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
-(Gå til klassen Distribution)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution]
+[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution)
 
 ## Katalogpost 
 En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
-(Gå til klassen Katalogpost)[https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record]
+[Gå til klassen Katalogpost](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record)
 
 
 ## Illustration
