@@ -289,7 +289,7 @@ En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver regist
 
 
 ## Illustration
-Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (valgfri):
+Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (anbefalet):
 
 <p align="left"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne" width="600"/></a></p>
 
