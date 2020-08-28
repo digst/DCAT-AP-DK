@@ -528,8 +528,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver en webside som fungerer som katalogets hjemmeside.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a web page that acts as the main page for the Catalogue.</dd>
+<dt>Definition (da)</dt>
+<dd>Et websted for noget.</dd>
 <dt>Definition (en)</dt>
-<dd>A homepage for some thing.Et websted for noget.</dd>
+<dd>A homepage for some thing.</dd>	
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
