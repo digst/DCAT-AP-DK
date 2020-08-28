@@ -2149,7 +2149,7 @@
 		<sh:name xml:lang="en">end</sh:name>
 		<sh:name xml:lang="da">har slutning</sh:name>			  
 		<sh:description xml:lang="en">This property contains the end of a period or interval</sh:description>
-		<rdfs:comment xml:lang="da">Denne egenskab angiver slutningen på en periode eller tidsinterval.</rdfs:comment>	 
+		<sh:description xml:lang="da">Denne egenskab angiver slutningen på en periode eller tidsinterval.</sh:description>	 
 		<rdfs:comment xml:lang="en">End of a temporal entity.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Slutningen på en periode eller tidsinterval.</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/2006/time#Instant"/>
