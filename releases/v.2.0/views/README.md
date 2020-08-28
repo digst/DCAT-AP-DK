@@ -1,6 +1,6 @@
 # Forskellige visninger af DCAT-AP-DK
 
-Her udkast til to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og skjuler de valgfrie)
+Her to visninger af DCAT-AP-DK som viser hhv. de obligatoriske og anbefalede elementer (og skjuler de valgfrie)
 
 ## Diagram med obligatoriske elementer (minimumsmodel)
 [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
