@@ -27,7 +27,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 |seneste ændringsdato (update/modification date)|http://purl.org/dc/terms/modified	(http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime)|Denne egenskab angiver den dato hvor kataloget senest er blevet ændret.| 0..1|	 Anbefalet|
 |emneklassifikation (themes)|http://www.w3.org/ns/dcat#themeTaxonomy	(http://www.w3.org/2004/02/skos/core#ConceptScheme)|Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og datatjenester i kataloget.| 0..*|	 Anbefalet|
 |geografisk område (spatial/geographic)|http://purl.org/dc/terms/spatial	(http://purl.org/dc/terms/Location)|Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.| 0..*|	 Anbefalet|
-|sprog (language)|http://purl.org/dc/terms/language	(Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/)|Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language| 0..*|	 Anbefalet|
+|sprog (language)|http://purl.org/dc/terms/language	(http://purl.org/dc/terms/LinguisticSystem)|Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language| 0..*|	 Anbefalet|
 |licens (license)|http://purl.org/dc/terms/license	(http://purl.org/dc/terms/LicenseDocument)|Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under.Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource.| 0..1|	 Anbefalet|	
 			
 ## Klasse: Datasæt (Dataset) 
@@ -35,7 +35,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</dd>
+<dd>En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.</dd>
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
@@ -56,9 +56,9 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 |overholder (conforms to)|http://purl.org/dc/terms/conformsTo	(http://purl.org/dc/terms/Standard)|Denne egenskab angiver en specifikation som datasættet er i overensstemmmelse med.| 0..*|	 Anbefalet|
 |dokumentation (documentation)|http://xmlns.com/foaf/0.1/page	(http://xmlns.com/foaf/0.1/Document)|Denne egenskab angiver en webside eller et dokument som beskriver datasættet.| 0..*|	 Anbefalet|
 |emne (theme/ category)|http://www.w3.org/ns/dcat#theme	(http://www.w3.org/2004/02/skos/core#Concept)|Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.| 0..*|	 Anbefalet|
-|sprog (language)|http://purl.org/dc/terms/language	(Anvend følgende klassifikation: ^http://publications.europa.eu/resource/dataset/language/)|Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language | 0..*|	 Anbefalet|
+|sprog (language)|http://purl.org/dc/terms/language	(http://purl.org/dc/terms/LinguisticSystem)|Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language | 0..*|	 Anbefalet|
 |dækningsperiode (temporal coverage)|http://purl.org/dc/terms/temporal	(http://purl.org/dc/terms/PeriodOfTime)|Denne egenskab angiver den periode datasættet dækker| 0..*|	 Anbefalet|
-|opdateringsfrekvens (frequency)|http://purl.org/dc/terms/accrualPeriodicity	(Anvend følgende klassifikation: http://publications.europa.eu/resource/authority/frequency/)|Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency | 0..1|	 Anbefalet|
+|opdateringsfrekvens (frequency)|http://purl.org/dc/terms/accrualPeriodicity	(http://purl.org/dc/terms/Frequency)|Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency | 0..1|	 Anbefalet|
 |udgivelsesdato (release date)|http://purl.org/dc/terms/issued	(http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime)|Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet| 0..1|	 Anbefalet|
 |seneste ændringsdato (update/ modification date)|http://purl.org/dc/terms/modified	(http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime)|Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.| 0..1|	 Anbefalet|	
 			
@@ -79,8 +79,8 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
 |adgangsadresse (access address)|http://www.w3.org/ns/dcat#accessURL	(http://www.w3.org/2001/XMLSchema#anyURI)|Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. | 1..*|	 Obligatorisk|
 |beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af distributionen. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 0..*|	 Anbefalet|
-|tilgængeligstype (availability)|http://data.europa.eu/r5r/availability	(Anvend følgende klassifikation: ^http://data.europa.eu/r5r/availability/)|Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/| 0..1|	 Anbefalet|
-|format (format)|http://purl.org/dc/terms/format	(Anvend følgende klassifikation: ^http://publications.europa.eu/resource/authority/file-type/)|Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)| 0..1|	 Anbefalet|
+|tilgængeligstype (availability)|http://data.europa.eu/r5r/availability	(http://www.w3.org/2004/02/skos/core#Concept)|Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/| 0..1|	 Anbefalet|
+|format (format)|http://purl.org/dc/terms/format	(http://purl.org/dc/terms/MediaTypeOrExtent)|Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)| 0..1|	 Anbefalet|
 |licens (license)|http://purl.org/dc/terms/license	(http://purl.org/dc/terms/LicenseDocument)|Denne egenskab angiver den licens distributionen er gjort tilgængelig under.| 0..1|	 Anbefalet|	
 			
 ## Klasse: Aktør (Agent) 
@@ -98,6 +98,17 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
 |navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|	
+			
+## Klasse: Organisation (Organisation) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/org#Organization</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+	
 			
 ## Klasse: Begrebssystem (Category Scheme) 
 <dl class="def">
@@ -145,4 +156,4 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|licenstype (licence type)|http://purl.org/dc/terms/type	(Anvend følgende klassifikation: ^http://purl.org/adms/licencetype/)|Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) | 0..*|	 Anbefalet|
+|licenstype (licence type)|http://purl.org/dc/terms/type	(http://www.w3.org/2004/02/skos/core#Concept)|Denne egenskab angiver licensens type som defineret af ADMS licence type vocabulary (http://purl.org/adms/licencetype/) | 0..*|	 Anbefalet|</BODY>
