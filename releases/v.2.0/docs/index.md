@@ -2662,7 +2662,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#algorithm</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>http://spdx.org/rdf/terms#checksumAlgorithm_sha1</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver den algoritme der er blevet anvendt til at beregne checksum-værdien. Iøjeblikket understøttes alene SHA-1-algoritment. Der forventes at yderligere algoritmer vil blive understøttet på et senere tidspunkt.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2682,7 +2682,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://spdx.org/rdf/terms#checksumValue</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>http://www.w3.org/2001/XMLSchema#hexBinary</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en digest-værdi beregnet med en specifik algoritme og udtrykt osm en lower case hexidecimal</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2720,7 +2720,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#notation</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>rdfs:Literal</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne engenskab indeholder en streng som fungerer som en identifikator i kontekst af det identifikatorschema datatypen refererer til.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2918,7 +2918,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2006/time#Instant</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Denne egenskab angiver begyndelsen på en periode eller tidsinterval.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the beginning of a period or interval.</dd>
 <dt>Definition (da)</dt>
@@ -2938,7 +2938,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2006/time#Instant</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Denne egenskab angiver slutningen på en periode eller tidsinterval.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the end of a period or interval</dd>
 <dt>Definition (da)</dt>
@@ -2996,7 +2996,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#hadRole</dd>
 <dt>Rækkevidde</dt>
-<dd></dd>
+<dd>http://www.w3.org/ns/dcat#Catalog; http://www.w3.org/ns/dcat#Dataset; http://www.w3.org/ns/dcat#DataService</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver den rolle som en entitet eller aktør spiller i forhold til en anden entitet eller ressource.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3192,7 +3192,8 @@ Klassens egenskaber:
 <dd>Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
-</dl>		
+</dl>	
+			
 
 # Klassifikationer
 
