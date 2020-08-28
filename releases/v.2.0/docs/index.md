@@ -2554,7 +2554,7 @@ Klassens egenskaber:
 <dt>Definition (en)</dt>
 <dd>Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
+<dd>Anbefalet</dd>
 </dl>	
 			
 ## Klasse: Begrebssystem (Category Scheme) 
