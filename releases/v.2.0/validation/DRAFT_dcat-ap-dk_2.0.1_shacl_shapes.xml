@@ -531,9 +531,9 @@
     <sh:name xml:lang="en">Dataset</sh:name>
     <sh:name xml:lang="da">Datasæt</sh:name>	
 	<sh:description xml:lang="en">A conceptual entity that represents the information published. </sh:description>
-	<sh:description xml:lang="da">En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</sh:description>		
+	<sh:description xml:lang="da">En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.</sh:description>		
 	<rdfs:comment xml:lang="en">A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</rdfs:comment>	
-	<rdfs:comment xml:lang="da">En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.</rdfs:comment>	
+	<rdfs:comment xml:lang="da">En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer.</rdfs:comment>	
 	
     <sh:property>
       <rdf:Description>
@@ -1809,6 +1809,41 @@
 
   </rdf:Description>
 
+
+<!-- ====================================== --> 
+<!--                Organisation            -->
+<!-- ====================================== -->  
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Organisation_Shape">
+  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+  <sh:targetClass rdf:resource="http://www.w3.org/ns/org#Organization"/> 
+    <sh:name xml:lang="en">Organisation</sh:name>
+    <sh:name xml:lang="da">Organisation</sh:name>	
+	<sh:description xml:lang="en">collection of people organized together into a community or other social, commercial or political structure</sh:description>
+	<sh:description xml:lang="da">samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur</sh:description>		
+	<rdfs:comment xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</rdfs:comment>		
+	<rdfs:comment xml:lang="da">Repræsenterer en samling mennesker, der er organiseret i et fællesskab eller anden social, kommerciel eller politisk struktur.</rdfs:comment>	
+	
+<!--	
+    <sh:property>
+      <rdf:Description>
+	    <sh:name xml:lang="en">preferred label</sh:name>		  
+	    <sh:name xml:lang="da">foretrukken betegnelse</sh:name>			  
+		<sh:description xml:lang="en">Used for specifying the primary legally recognised name.</sh:description>
+		<sh:description xml:lang="da">Bruges til at angive organisationens primære, juridisk anerkendte navn. </sh:description>	
+		<rdfs:comment xml:lang="en">The preferred lexical label for a resource, in a given language.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Den foretrukne leksikalske betegnelse for en ressource på et givet sprog.</rdfs:comment>			
+        <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+        <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
+        <sh:path rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
+		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
+      </rdf:Description>
+    </sh:property>
+-->
+	
+  </rdf:Description>	
+
 <!-- ====================================== --> 
 <!--          Begrebssystem                 -->
 <!-- ====================================== --> 
@@ -2247,7 +2282,7 @@
 	  <sh:name xml:lang="en">Provenance Statement</sh:name>
 	  <sh:name xml:lang="da">Proveniensudsagn</sh:name>	
 	  <sh:description xml:lang="en">A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation </sh:description>
-	  <sh:description xml:lang="da">Udsagn omkring en ressources proveniens i form af udsagn eventuelle aktørskift som er centrale for autencitet, integritet og fortolkning.</sh:description>	
+	  <sh:description xml:lang="da">Denne egenskab angiver udsagn omkring datasættets oprindelse og udvikling. Proveniensudsagn erstatter ikke direkte brug af udsagn om ejerskab og varetagelse af datasættet, men er et supplement.</sh:description>	
 	  <rdfs:comment xml:lang="en">Any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.</rdfs:comment>		
 	  <rdfs:comment xml:lang="da">Enhver ændring i en ressources ejerskabs- eller kustodeforhold siden ressourcen blev skabt som er centrale for autencitet, integritet og fortolkning. </rdfs:comment>	  
   </rdf:Description> 
