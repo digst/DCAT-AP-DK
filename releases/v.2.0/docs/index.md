@@ -188,7 +188,7 @@ Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for
 
 ### Globalt unikke og stabile identifikatorer
 Data skal have tilknyttet metadata, og data skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til data på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering  af ressourcer som på internettet. 
-Der henvises til [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt  [Retningslinjer for stablile http-urier](https://arkitektur.digst.dk/node/588).”
+Der henvises til [FAIR-principperne](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) samt  [Retningslinjer for stablile http-urier](https://arkitektur.digst.dk/node/588).
 
 ## Profilens anvendelse
 Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære funktioner:
@@ -3267,7 +3267,7 @@ Klassens egenskaber:
 
 # Klassifikationer
 
-I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer.
+I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikation til anvendelse i dansk fællesoffentlig kontekst.
 
 Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)
 
