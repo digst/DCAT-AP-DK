@@ -1,4 +1,4 @@
-<!doctype html><html lang="da">
+<!doctype html><html lang="en">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</title>
@@ -1940,6 +1940,10 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
     En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service">Gå til klassen Datatjeneste</a> 
    <h3 class="heading settled" data-level="2.5" id="distribution"><span class="secno">2.5. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
     En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution">Gå til klassen Distribution</a> 
+   <p>Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
+’titel’, ’beskrivelse’, ’dokumentation’, ’udgivelsesdato’, ’seneste ændringsdato’, ’overholder’, ’geografisk opløsning’ og ’tidslig opløsning’.
+Hvor en distributions egenskabs information svarer til den information der er givet på datasættets tilsvarende egenskab, er det ikke nødvendigt at gentage informationen. I de tilfælde hvor der altså ikke er information for en distributions egenskab gælder den information der er givet for datasættets tilsvarendeegenskab.
+Hvis der for egenskaben er relevante tilføjelser eller at der er afvigelser i forhold til information givet for datasættet, så bør de fremgå at distributionens egenskab.</p>
    <h3 class="heading settled" data-level="2.6" id="katalogpost"><span class="secno">2.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record">Gå til klassen Katalogpost</a> 
    <h3 class="heading settled" data-level="2.7" id="illustration"><span class="secno">2.7. </span><span class="content">Illustration</span><a class="self-link" href="#illustration"></a></h3>
@@ -1959,6 +1963,8 @@ Se: <a href="https://github.com/digst/DCAT-AP-DK/issues">https://github.com/digs
    </ul>
    <h3 class="heading settled" data-level="3.2" id="forskellige-visninger-af-dcat-ap-dk"><span class="secno">3.2. </span><span class="content">Forskellige visninger af DCAT-AP-DK</span><a class="self-link" href="#forskellige-visninger-af-dcat-ap-dk"></a></h3>
     På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.1. 
+   <p>Som det er beskrevet i kapitlet ’Modellens grundlæggende struktur’ så er en distribution en direkte og konkret repræsentation af et datasæt. Det kunne måske derfor undre at klassen for distributioner ikke er med i det diagram der viser de obligatoriske klasser. Selv om det er sandsynligt at der til alle datasæt er tilknyttet mindst en distribution, er det ikke en absolut nødvendighed. Eksempelvis kan der være tale om et datasæt der er så tilstrækkeligt langt i sin udvikling at det er meningsfyldt at beskrive datasættet i sig selv, mens en eller flere distributioner endnu ikke har nået samme stadie.
+Klassen for distributioner er med i de to øvrige diagrammer.</p>
    <p>Se oversigt over anvendte namespaces i bilaget <a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces">Namespaces</a></p>
    <h4 class="heading settled" data-level="3.2.1" id="diagram-med-obligatoriske-elementer-minimumsmodel"><span class="secno">3.2.1. </span><span class="content">Diagram med obligatoriske elementer (minimumsmodel)</span><a class="self-link" href="#diagram-med-obligatoriske-elementer-minimumsmodel"></a></h4>
     <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory">DCAT-AP-DK-visning 1</a> beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
@@ -4692,6 +4698,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory
+    <dt>Anvendelsesnote (da) 
+    <dd>Data kan opmærkes med en Personoplysningskategori som beskrives i Datatilsynets vejledning: almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger.
+    <dt>Anvendelsesnote (en)
+    <dd>Data can be marked with a category of personal data as it is described in the Danish Data Protection Agency’s guideline: general personal data, sensitive personal data or data about criminal offences. To that is added information regarding the absence of personal data.
     <dt>Definition (da)
     <dd>kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne
     <dt>Definition (en)
@@ -4704,6 +4714,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <dl class="def">
     <dt>URI
     <dd>https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType
+    <dt>Anvendelsesnote (da) 
+    <dd>Anvendes som overklasse for klassen ConfidentialityTypeNatoEu der indeholder klassifikationer anvendt i henholdsvis NATO og EU. 
+    <dt>Anvendelsesnote (en)
+    <dd>Used as a super class for the class ConfidentialityTypeNatoEu that contains classification used in NATO and EU respectively
     <dt>Definition (da)
     <dd>grad af fortrolighed forstået som i hvilket omfang information kan videregives
     <dt>Definition (en)
@@ -4814,7 +4828,8 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <h3 class="heading settled" data-level="5.8" id="statusser"><span class="secno">5.8. </span><span class="content">Statusser</span><a class="self-link" href="#statusser"></a></h3>
     Egenskab: adms:status 
    <p><strong>KLASSIFIKATION: ADMS Statusser</strong></p>
-   <p>URI: http://purl.org/adms/status/</p>
+   <p>EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme).
+Begreberne anvendt til klassifikation af status for datasæt er struktureret i begrebssystemet med URI = http://purl.org/adms/status/1.0</p>
    <p><a href="http://purl.org/adms/status/">Se klassifikationens indhold</a></p>
    <ul>
     <li data-md>
@@ -4830,7 +4845,8 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <h3 class="heading settled" data-level="5.9" id="udgivertyper"><span class="secno">5.9. </span><span class="content">Udgivertyper</span><a class="self-link" href="#udgivertyper"></a></h3>
     Egenskab: dct:type (på foaf:Agent) 
    <p><strong>KLASSIFIKATION: ADMS udgivertyper</strong></p>
-   <p>URI: http://purl.org/adms/publishertype/</p>
+   <p>EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme).
+Begreberne anvendt til klassifikation af udgivertyper er struktureret i begrebssystemet med URI = http://purl.org/adms/publishertype/1.0</p>
    <p><a href="http://purl.org/adms/publishertype/">Se klassifikationens indhold</a></p>
    <ul>
     <li data-md>
@@ -4990,9 +5006,9 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
    <h4 class="heading settled" data-level="7.2.1" id="uml-diagram-dcat-ap-dk"><span class="secno">7.2.1. </span><span class="content">UML-diagram: DCAT-AP-DK</span><a class="self-link" href="#uml-diagram-dcat-ap-dk"></a></h4>
    <ul>
     <li data-md>
-     <p>URI: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1</p>
+     <p>URI: https://data.gov.dk/model/profile/dcat-ap-dk</p>
     <li data-md>
-     <p>Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
+     <p>Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/</p>
     <li data-md>
      <p>Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger</p>
     <li data-md>
@@ -5014,9 +5030,9 @@ DCAT-AP er også udtrykt med DCAT-AP og der er udviklet en online validator som 
    <h4 class="heading settled" data-level="7.2.2" id="uml-diagram-dcat-dk"><span class="secno">7.2.2. </span><span class="content">UML-diagram: DCAT-DK</span><a class="self-link" href="#uml-diagram-dcat-dk"></a></h4>
    <ul>
     <li data-md>
-     <p>URI: https://data.gov.dk/model/core/dcat-dk-1.0.0</p>
+     <p>URI: https://data.gov.dk/model/core/dcat-dk</p>
     <li data-md>
-     <p>Namespace: https://data.gov.dk/model/core/dcat-dk/</p>
+     <p>Denne version: https://data.gov.dk/model/core/dcat-dk-1.0.0/</p>
     <li data-md>
      <p>Modelnavn (label): DCAT-DK</p>
     <li data-md>
