@@ -284,7 +284,7 @@
 		<sh:description xml:lang="en">This property refers to a statement that specifies rights associated with the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget</sh:description>	
 		<rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>		
-		<rdfs:comment xml:lang="en">Information om rettigheder forbundet med ressourcen.</rdfs:comment>				
+		<rdfs:comment xml:lang="da">Information om rettigheder forbundet med ressourcen.</rdfs:comment>				
         <sh:class rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/rights"/>
