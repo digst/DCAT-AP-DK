@@ -283,6 +283,11 @@ En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller op
 En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
 [Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution)
 
+Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
+’titel’, ’beskrivelse’, ’dokumentation’, ’udgivelsesdato’, ’seneste ændringsdato’, ’overholder’, ’geografisk opløsning’ og ’tidslig opløsning’.
+Hvor en distributions egenskabs information svarer til den information der er givet på datasættets tilsvarende egenskab, er det ikke nødvendigt at gentage informationen. I de tilfælde hvor der altså ikke er information for en distributions egenskab gælder den information der er givet for datasættets tilsvarendeegenskab.
+Hvis der for egenskaben er relevante tilføjelser eller at der er afvigelser i forhold til information givet for datasættet, så bør de fremgå at distributionens egenskab.
+
 ## Katalogpost 
 En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
 [Gå til klassen Katalogpost](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record)
@@ -307,6 +312,9 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 
 ## Forskellige visninger af DCAT-AP-DK 
 På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.1. 
+
+Som det er beskrevet i kapitlet ’Modellens grundlæggende struktur’ så er en distribution en direkte og konkret repræsentation af et datasæt. Det kunne måske derfor undre at klassen for distributioner ikke er med i det diagram der viser de obligatoriske klasser. Selv om det er sandsynligt at der til alle datasæt er tilknyttet mindst en distribution, er det ikke en absolut nødvendighed. Eksempelvis kan der være tale om et datasæt der er så tilstrækkeligt langt i sin udvikling at det er meningsfyldt at beskrive datasættet i sig selv, mens en eller flere distributioner endnu ikke har nået samme stadie. 
+Klassen for distributioner er med i de to øvrige diagrammer.
 
 Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces)
 
@@ -3221,6 +3229,10 @@ Klassens egenskaber:
 <dl class="def">
 <dt>URI</dt>
 <dd>https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>Data kan opmærkes med en Personoplysningskategori som beskrives i Datatilsynets vejledning: almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>Data can be marked with a category of personal data as it is described in the Danish Data Protection Agency’s guideline: general personal data, sensitive personal data or data about criminal offences. To that is added information regarding the absence of personal data.</dd>
 <dt>Definition (da)</dt>
 <dd>kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</dd>
 <dt>Definition (en)</dt>
@@ -3234,6 +3246,10 @@ Klassens egenskaber:
 <dl class="def">
 <dt>URI</dt>
 <dd>https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>Anvendes som overklasse for klassen ConfidentialityTypeNatoEu der indeholder klassifikationer anvendt i henholdsvis NATO og EU. </dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>Used as a super class for the class ConfidentialityTypeNatoEu that contains classification used in NATO and EU respectively</dd>
 <dt>Definition (da)</dt>
 <dd>grad af fortrolighed forstået som i hvilket omfang information kan videregives</dd>
 <dt>Definition (en)</dt>
@@ -3383,7 +3399,8 @@ Egenskab: adms:status
 
 **KLASSIFIKATION: ADMS Statusser**
 
-URI: http://purl.org/adms/status/
+EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme). 
+Begreberne anvendt til klassifikation af status for datasæt er struktureret i begrebssystemet med URI = http://purl.org/adms/status/1.0 
 
 [Se klassifikationens indhold](http://purl.org/adms/status/)
 * http://purl.org/adms/status/Completed
@@ -3399,8 +3416,8 @@ Egenskab: dct:type (på foaf:Agent)
 
 **KLASSIFIKATION: ADMS udgivertyper**
 
-URI: http://purl.org/adms/publishertype/
-
+EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme). 
+Begreberne anvendt til klassifikation af udgivertyper er struktureret i begrebssystemet med URI = http://purl.org/adms/publishertype/1.0 
 
 [Se klassifikationens indhold](http://purl.org/adms/publishertype/)
 * http://purl.org/adms/publishertype/Academia-ScientificOrganisation
@@ -3528,8 +3545,8 @@ Relevante links:
 ## UML-diagrammer
 
 ### UML-diagram: DCAT-AP-DK
-- URI: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1
-- Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
+- URI: https://data.gov.dk/model/profile/dcat-ap-dk
+- Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 2.0.1
@@ -3543,8 +3560,8 @@ Relevante links:
 
 
 ### UML-diagram: DCAT-DK
-- URI: https://data.gov.dk/model/core/dcat-dk-1.0.0
-- Namespace: https://data.gov.dk/model/core/dcat-dk/
+- URI: https://data.gov.dk/model/core/dcat-dk
+- Denne version: https://data.gov.dk/model/core/dcat-dk-1.0.0/
 - Modelnavn (label): DCAT-DK
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
