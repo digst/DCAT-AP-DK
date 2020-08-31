@@ -1162,8 +1162,8 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk/Optional>
   ], [
     sh:name "end"@en, "har slutning"@da ;
-    sh:description "This property contains the end of a period or interval"@en ;
-    rdfs:comment "Denne egenskab angiver slutningen på en periode eller tidsinterval."@da, "End of a temporal entity."@en, "Slutningen på en periode eller tidsinterval."@da ;
+    sh:description "This property contains the end of a period or interval"@en, "Denne egenskab angiver slutningen på en periode eller tidsinterval."@da ;
+    rdfs:comment "End of a temporal entity."@en, "Slutningen på en periode eller tidsinterval."@da ;
     sh:class time:Instant ;
     sh:maxCount 1 ;
     sh:path time:hasEnd ;
@@ -1199,10 +1199,10 @@
 
 <https://data.gov.dk/model/profile/dcat-ap-dk/Frequency_Shape>
   a sh:NodeShape ;
-  sh:targetClass dc:Frequency ;
-  sh:name "Frequency"@en, "Frekvens"@da ;
-  sh:description "A rate at which something recurs, e.g. the publication of a Dataset. "@en, "Den hyppighed med hvilken noget gentages, fx. opdateringen af et datasæt"@da ;
-  rdfs:comment "A rate at which something recurs."@en, "Hyppighed med hvilken noget gentages."@da .
+  sh:targetClass prov:Activity, dc:Frequency ;
+  sh:name "Activity"@en, "Activitet"@da, "Frequency"@en, "Frekvens"@da ;
+  rdfs:comment "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en, "En aktivitet er noget der sker over en tidsperiode og påvirker eller interagerer med entiteter; dette kan inkludere forbrug, behandling, transformation, ændring, omplacering, anvendelse eller skabelse af entiteter."@da, "A rate at which something recurs."@en, "Hyppighed med hvilken noget gentages."@da ;
+  sh:description "A rate at which something recurs, e.g. the publication of a Dataset. "@en, "Den hyppighed med hvilken noget gentages, fx. opdateringen af et datasæt"@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk/LinguisticSystem_Shape>
   a sh:NodeShape ;
@@ -1216,7 +1216,7 @@
   sh:targetClass dc:MediaType ;
   sh:name "Media Type"@en, "Medietype"@da ;
   sh:description "A media type, e.g. the format of a computer file "@en, "Formatet for lagringen af indhold i en computerfil."@da ;
-  rdfs:comment "A file format or physical medium."@en, "Et filformat eller fysisk medie."@en .
+  rdfs:comment "A file format or physical medium."@en, "Et filformat eller fysisk medie."@da .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk/Role_Shape>
   a sh:NodeShape ;
@@ -1273,6 +1273,18 @@
   sh:name "Quality Metadata"@en, "Kvalitetsmetadata DK"@da ;
   sh:description "Represents quality metadata"@en, "Repræsenterer kvalitetsmetadata (dansk tilføjelse)"@da ;
   rdfs:comment "Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf"@da, "Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph"@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk/PersonalDataCategory_Shape>
+  a sh:NodeShape ;
+  sh:targetClass <https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory> ;
+  sh:name "Personal Data Category"@en, "Personoplysningskategori DK"@da ;
+  rdfs:comment "kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne"@da, "classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable"@en .
+
+<https://data.gov.dk/model/profile/dcat-ap-dk/ConfidentialityType_Shape>
+  a sh:NodeShape ;
+  sh:targetClass <https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType> ;
+  sh:name "Confidentiality Type"@en, "Fortrolighedsgrad DK"@da ;
+  rdfs:comment "grad af fortrolighed forstået som i hvilket omfang information kan videregives"@da, "degree of confidentiality with respect to the extent by which information can be disclosed"@en .
 
 <https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape>
   a sh:NodeShape ;
