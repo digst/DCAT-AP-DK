@@ -2053,7 +2053,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: tilgængeligstype (availability) 
+### Egenskab: tilgængelighedstype (availability) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://data.europa.eu/r5r/availability</dd>
@@ -2836,8 +2836,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver en ressource geometriske tyngdepunkt (centroid).</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the geographic center (centroid) of a resource.</dd>
+<dt>Definition (da)</dt>
+<dd>Det geometriske tyngdepunkt (centroid) for en ressource.</dd>
 <dt>Definition (en)</dt>
-<dd>The geographic center (centroid) of a resource.Det geometriske tyngdepunkt (centroid) for en ressource.</dd>
+<dd>The geographic center (centroid) of a resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
