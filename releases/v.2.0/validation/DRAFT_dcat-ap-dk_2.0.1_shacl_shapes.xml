@@ -2401,7 +2401,9 @@
 	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
 	  <sh:targetClass rdf:resource="https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory"/>  	
 	  <sh:name xml:lang="en">Personal Data Category</sh:name>
-	  <sh:name xml:lang="da">Personoplysningskategori DK</sh:name>		
+	  <sh:name xml:lang="da">Personoplysningskategori DK</sh:name>	
+	  <sh:description xml:lang="da">Data kan opmærkes med en Personoplysningskategori som beskrives i Datatilsynets vejledning: almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger.</sh:description>
+	  <sh:description xml:lang="en">Data can be marked with a category of personal data as it is described in the Danish Data Protection Agency’s guideline: general personal data, sensitive personal data or data about criminal offences. To that is added information regarding the absence of personal data.</sh:description>
 	  <rdfs:comment xml:lang="da">kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</rdfs:comment>
 	  <rdfs:comment xml:lang="en">classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable</rdfs:comment>
   </rdf:Description>  
@@ -2415,6 +2417,9 @@
 	  <sh:targetClass rdf:resource="https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType"/>  	
 	  <sh:name xml:lang="en">Confidentiality Type</sh:name>
 	  <sh:name xml:lang="da">Fortrolighedsgrad DK</sh:name>		
+	<sh:description xml:lang="en">Anvendes som overklasse for klassen ConfidentialityTypeNatoEu der indeholder klassifikationer anvendt i henholdsvis NATO og EU</sh:description>
+	<sh:description xml:lang="da">
+Used as a super class for the class ConfidentialityTypeNatoEu that contains classification used in NATO and EU respectively</sh:description>		
 	  <rdfs:comment xml:lang="da">grad af fortrolighed forstået som i hvilket omfang information kan videregives</rdfs:comment>
 	  <rdfs:comment xml:lang="en">degree of confidentiality with respect to the extent by which information can be disclosed</rdfs:comment>
   </rdf:Description>  
