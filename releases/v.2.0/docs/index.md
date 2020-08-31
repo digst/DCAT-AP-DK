@@ -808,8 +808,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller datatjenesten blev registreret i kataloget.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
+<dd>Date of formal issuance of the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
