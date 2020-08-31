@@ -42,10 +42,10 @@
 			<dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>			
 			<dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
 			<dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>	
-			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-26</dc:modified>			
+			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-08-31</dc:modified>			
 			<dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>		
-			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1"/>
-			<dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1_shacl_shapes.xml"/>	
+			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1"/>
+			<dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1-shacl_shapes.xml"/>	
 		</dcat:Distribution>
 	</dcat:distribution>
   </rdf:Description>
@@ -396,7 +396,7 @@
 		<sh:description xml:lang="en">This property contains the date on which the description of the Dataset was included in the Catalogue.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller datatjenesten blev registreret i kataloget.</sh:description>
 		<rdfs:comment xml:lang="en">Date of formal issuance of the resource.</rdfs:comment>			
-		<rdfs:comment xml:lang="en">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>				
+		<rdfs:comment xml:lang="da">Dato for hvornår ressourcen formelt blev udgivet.</rdfs:comment>				
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/issued"/>
