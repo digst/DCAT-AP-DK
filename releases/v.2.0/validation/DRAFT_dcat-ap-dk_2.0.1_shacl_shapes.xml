@@ -1399,7 +1399,7 @@
     <sh:property>
       <rdf:Description>
 	    <sh:name xml:lang="en">availability</sh:name>		  
-	    <sh:name xml:lang="da">tilgængeligstype</sh:name>	
+	    <sh:name xml:lang="da">tilgængelighestype</sh:name>	
 		<sh:description xml:lang="en">This property indicates how long it is planned to keep the Distribution of the Dataset available. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/</sh:description>	
 		<rdfs:comment xml:lang="en">This property indicates how long it is planned to keep the Distribution of the Dataset available. </rdfs:comment>
@@ -2055,7 +2055,7 @@
 		<sh:description xml:lang="en">This property refers to the geographic center (centroid) of a resource.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en ressource geometriske tyngdepunkt (centroid).</sh:description>		
 		<rdfs:comment xml:lang="en">The geographic center (centroid) of a resource.</rdfs:comment>	
-		<rdfs:comment xml:lang="en">Det geometriske tyngdepunkt (centroid) for en ressource.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">Det geometriske tyngdepunkt (centroid) for en ressource.</rdfs:comment>		
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:nodeKind rdf:resource="http://www.w3.org/ns/shacl#Literal"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#centroid"/>
