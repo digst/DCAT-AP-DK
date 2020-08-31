@@ -1499,7 +1499,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2020-08-28">28 August 2020</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Living Document, <time class="dt-updated" datetime="2020-08-31">31 August 2020</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
@@ -1779,8 +1779,11 @@ dfn > a.self-link::before      { content: "#"; }</style>
       <li><a href="#klasse-dokument-document"><span class="secno">4.22</span> <span class="content">Klasse: Dokument (Document)</span></a>
       <li><a href="#klasse-specifikation-standard"><span class="secno">4.23</span> <span class="content">Klasse: Specifikation (Standard)</span></a>
       <li><a href="#klasse-virtuelt-visitkort-kind"><span class="secno">4.24</span> <span class="content">Klasse: Virtuelt visitkort (Kind)</span></a>
-      <li><a href="#klasse-anvendelse-dk-usage"><span class="secno">4.25</span> <span class="content">Klasse: Anvendelse DK (Usage)</span></a>
-      <li><a href="#klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.26</span> <span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span></a>
+      <li><a href="#klasse-aktivitet-activity"><span class="secno">4.25</span> <span class="content">Klasse: Aktivitet (Activity)</span></a>
+      <li><a href="#klasse-anvendelse-dk-usage"><span class="secno">4.26</span> <span class="content">Klasse: Anvendelse DK (Usage)</span></a>
+      <li><a href="#klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.27</span> <span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span></a>
+      <li><a href="#klasse-personoplysningskategori-dk-personal-data-category"><span class="secno">4.28</span> <span class="content">Klasse: Personoplysningskategori DK (Personal Data Category)</span></a>
+      <li><a href="#klasse-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.29</span> <span class="content">Klasse: Fortrolighedsgrad DK (Confidentiality Type)</span></a>
      </ol>
     <li>
      <a href="#klassifikationer"><span class="secno">5</span> <span class="content">Klassifikationer</span></a>
@@ -2162,8 +2165,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver en webside som fungerer som katalogets hjemmeside.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a web page that acts as the main page for the Catalogue.
+    <dt>Definition (da)
+    <dd>Et websted for noget.
     <dt>Definition (en)
-    <dd>A homepage for some thing.Et websted for noget.
+    <dd>A homepage for some thing.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2863,7 +2868,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>http://www.w3.org/2004/02/skos/core#Concept
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.
+    <dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. <br><br>Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
     <dt>Definition (da)
@@ -3146,7 +3151,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>URI
     <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory
     <dt>Rækkevidde
-    <dd>http://www.w3.org/2004/02/skos/core#Concept
+    <dd>https://data.gov.dk/concept/core/personaldata-type/personalDataCategory
     <dt>Anvendelsesnote (da)
     <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)
     <dt>Anvendelsesnote (en)
@@ -4533,8 +4538,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Formatet for lagringen af indhold i en computerfil.
     <dt>Anvendelsesnote (en)
     <dd>A media type, e.g. the format of a computer file 
+    <dt>Definition (da)
+    <dd>Et filformat eller fysisk medie.
     <dt>Definition (en)
-    <dd>A file format or physical medium.Et filformat eller fysisk medie.
+    <dd>A file format or physical medium.
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
@@ -4632,7 +4639,23 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.25" id="klasse-anvendelse-dk-usage"><span class="secno">4.25. </span><span class="content">Klasse: Anvendelse DK (Usage)</span><a class="self-link" href="#klasse-anvendelse-dk-usage"></a></h3>
+   <h3 class="heading settled" data-level="4.25" id="klasse-aktivitet-activity"><span class="secno">4.25. </span><span class="content">Klasse: Aktivitet (Activity)</span><a class="self-link" href="#klasse-aktivitet-activity"></a></h3>
+    <img alt="Aktivitet" src="img/Aktivitet.png"> 
+   <dl class="def">
+    <dt>URI
+    <dd>http://www.w3.org/ns/prov#Activity
+    <dt>Anvendelsesnote (da) 
+    <dd>noget der sker over en tidsperiode og påvirker eller interagerer med entiteter
+    <dt>Anvendelsesnote (en)
+    <dd>something that occurs over a period of time and acts upon or with entities
+    <dt>Definition (da)
+    <dd>En aktivitet er noget der sker over en tidsperiode og påvirker eller interagerer med entiteter; dette kan inkludere forbrug, behandling, transformation, ændring, omplacering, anvendelse eller skabelse af entiteter.
+    <dt>Definition (en)
+    <dd>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h3 class="heading settled" data-level="4.26" id="klasse-anvendelse-dk-usage"><span class="secno">4.26. </span><span class="content">Klasse: Anvendelse DK (Usage)</span><a class="self-link" href="#klasse-anvendelse-dk-usage"></a></h3>
     <img alt="Anvendelse DK" src="img/Anvendelse%20DK.png"> 
    <dl class="def">
     <dt>URI
@@ -4648,7 +4671,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h3 class="heading settled" data-level="4.26" id="klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.26. </span><span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span><a class="self-link" href="#klasse-kvalitetsmetadata-dk-quality-metadata"></a></h3>
+   <h3 class="heading settled" data-level="4.27" id="klasse-kvalitetsmetadata-dk-quality-metadata"><span class="secno">4.27. </span><span class="content">Klasse: Kvalitetsmetadata DK (Quality Metadata)</span><a class="self-link" href="#klasse-kvalitetsmetadata-dk-quality-metadata"></a></h3>
     <img alt="Kvalitetsmetadata DK" src="img/Kvalitetsmetadata%20DK.png"> 
    <dl class="def">
     <dt>URI
@@ -4661,6 +4684,30 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf
     <dt>Definition (en)
     <dd>Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph
+    <dt>Kravniveau
+    <dd>Valgfri
+   </dl>
+   <h3 class="heading settled" data-level="4.28" id="klasse-personoplysningskategori-dk-personal-data-category"><span class="secno">4.28. </span><span class="content">Klasse: Personoplysningskategori DK (Personal Data Category)</span><a class="self-link" href="#klasse-personoplysningskategori-dk-personal-data-category"></a></h3>
+    <img alt="Personoplysningskategori DK" src="img/Personoplysningskategori.png"> 
+   <dl class="def">
+    <dt>URI
+    <dd>https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory
+    <dt>Definition (da)
+    <dd>kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne
+    <dt>Definition (en)
+    <dd>classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable 
+    <dt>Kravniveau
+    <dd>Recommended
+   </dl>
+   <h3 class="heading settled" data-level="4.29" id="klasse-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.29. </span><span class="content">Klasse: Fortrolighedsgrad DK (Confidentiality Type)</span><a class="self-link" href="#klasse-fortrolighedsgrad-dk-confidentiality-type"></a></h3>
+    <img alt="Fortrolighedsgrad DK" src="img/Fortrolighedsgrad.png"> 
+   <dl class="def">
+    <dt>URI
+    <dd>https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType
+    <dt>Definition (da)
+    <dd>grad af fortrolighed forstået som i hvilket omfang information kan videregives
+    <dt>Definition (en)
+    <dd>degree of confidentiality with respect to the extent by which information can be disclosed
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
