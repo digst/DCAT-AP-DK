@@ -1,4 +1,4 @@
-<!doctype html><html lang="en">
+<!doctype html><html lang="da">
  <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <title>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</title>
@@ -1690,7 +1690,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
         <li><a href="#egenskab-udgivelsesdato-release-date②"><span class="secno">4.4.7</span> <span class="content">Egenskab: udgivelsesdato (release date)</span></a>
         <li><a href="#egenskab-seneste-ndringsdato-update-modification-date③"><span class="secno">4.4.8</span> <span class="content">Egenskab: seneste ændringsdato (update/ modification date)</span></a>
         <li><a href="#egenskab-status-status"><span class="secno">4.4.9</span> <span class="content">Egenskab: status (status)</span></a>
-        <li><a href="#egenskab-tilgngeligstype-availability"><span class="secno">4.4.10</span> <span class="content">Egenskab: tilgængeligstype (availability)</span></a>
+        <li><a href="#egenskab-tilgngelighedstype-availability"><span class="secno">4.4.10</span> <span class="content">Egenskab: tilgængelighedstype (availability)</span></a>
         <li><a href="#egenskab-sprog-language③"><span class="secno">4.4.11</span> <span class="content">Egenskab: sprog (language)</span></a>
         <li><a href="#egenskab-checksum-checksum"><span class="secno">4.4.12</span> <span class="content">Egenskab: checksum (checksum)</span></a>
         <li><a href="#egenskab-bytestrrelse-byte-size"><span class="secno">4.4.13</span> <span class="content">Egenskab: bytestørrelse (byte size)</span></a>
@@ -1839,7 +1839,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
    <p>Selve udviklingsarbejdet er foretaget i henhold de <a href="https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering">Fællesoffentlige regler for begrebs- og datamodellering</a>, og specifikationen sammensætter flere eksisterende nationale og internationale modeller.</p>
    <h4 class="heading settled" data-level="1.3.1" id="globalt-unikke-og-stabile-identifikatorer"><span class="secno">1.3.1. </span><span class="content">Globalt unikke og stabile identifikatorer</span><a class="self-link" href="#globalt-unikke-og-stabile-identifikatorer"></a></h4>
     Data skal have tilknyttet metadata, og data skal være tildelt en unik og stabil global identifikator for at kunne genfindes og for, at man kan referere til data på en konsistent måde. Til dette anvendes en eksisterende global og bredt anvendt syntaks - URIer (Uniform Resource Identifiers). URI-specifikationen definerer en fælles syntaks for identificering og adressering  af ressourcer som på internettet. 
-Der henvises til <a href="https://www.go-fair.org/fair-principles/">FAIR-principperne</a>, <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris">EU 10 Rules for Persistent URIs</a> samt <a href="https://arkitektur.digst.dk/node/588">Retningslinjer for stablile http-urier</a>.” 
+Der henvises til <a href="https://www.go-fair.org/fair-principles/">FAIR-principperne</a>, <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris">EU 10 Rules for Persistent URIs</a> samt <a href="https://arkitektur.digst.dk/node/588">Retningslinjer for stablile http-urier</a>. 
    <h3 class="heading settled" data-level="1.4" id="profilens-anvendelse"><span class="secno">1.4. </span><span class="content">Profilens anvendelse</span><a class="self-link" href="#profilens-anvendelse"></a></h3>
     Anvendelsesprofilen er udformet så den kan bruges til varetagelse to primære funktioner: 
    <ul>
@@ -2298,8 +2298,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a statement that specifies rights associated with the Catalogue.
+    <dt>Definition (da)
+    <dd>Information om rettigheder forbundet med ressourcen.
     <dt>Definition (en)
-    <dd>Information about rights held in and over the resource.Information om rettigheder forbundet med ressourcen.
+    <dd>Information about rights held in and over the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -2425,8 +2427,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller datatjenesten blev registreret i kataloget.
     <dt>Anvendelsesnote (en)
     <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.
+    <dt>Definition (da)
+    <dd>Dato for hvornår ressourcen formelt blev udgivet.
     <dt>Definition (en)
-    <dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.
+    <dd>Date of formal issuance of the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -3601,7 +3605,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.4.10" id="egenskab-tilgngeligstype-availability"><span class="secno">4.4.10. </span><span class="content">Egenskab: tilgængeligstype (availability)</span><a class="self-link" href="#egenskab-tilgngeligstype-availability"></a></h4>
+   <h4 class="heading settled" data-level="4.4.10" id="egenskab-tilgngelighedstype-availability"><span class="secno">4.4.10. </span><span class="content">Egenskab: tilgængelighedstype (availability)</span><a class="self-link" href="#egenskab-tilgngelighedstype-availability"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>http://data.europa.eu/r5r/availability
@@ -4329,8 +4333,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver en ressource geometriske tyngdepunkt (centroid).
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the geographic center (centroid) of a resource.
+    <dt>Definition (da)
+    <dd>Det geometriske tyngdepunkt (centroid) for en ressource.
     <dt>Definition (en)
-    <dd>The geographic center (centroid) of a resource.Det geometriske tyngdepunkt (centroid) for en ressource.
+    <dd>The geographic center (centroid) of a resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -4726,7 +4732,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Valgfri
    </dl>
    <h2 class="heading settled" data-level="5" id="klassifikationer"><span class="secno">5. </span><span class="content">Klassifikationer</span><a class="self-link" href="#klassifikationer"></a></h2>
-   <p>I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer.</p>
+   <p>I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikation til anvendelse i dansk fællesoffentlig kontekst.</p>
    <p>Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)</p>
    <p>Bemærk at hvis den pågældende egenskab anvendes så er det et krav at de(n) udpegede klassifikation anvendes (med enkelte undtagelser - se noter).</p>
    <h3 class="heading settled" data-level="5.1" id="datatemaer-emner"><span class="secno">5.1. </span><span class="content">Datatemaer (Emner)</span><a class="self-link" href="#datatemaer-emner"></a></h3>
