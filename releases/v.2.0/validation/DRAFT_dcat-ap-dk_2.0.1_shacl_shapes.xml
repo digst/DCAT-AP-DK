@@ -1028,7 +1028,7 @@
 		<rdfs:comment xml:lang="da">angivelse af en relation til en bestemt personoplysningskategori</rdfs:comment>		
         <sh:path rdf:resource="https://data.gov.dk/model/core/dcat-dk/personalDataCategory"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-  <!--  <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>	-->
+  <!--  <sh:class rdf:resource="https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory"/>	-->
         <sh:pattern>^https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Optional"/>			
@@ -2210,6 +2210,18 @@
   </rdf:Description>
 
 
+<!-- ====================================== --> 
+<!--                Aktivitet               -->
+<!-- ====================================== --> 
+
+  <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Frequency_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="http://www.w3.org/ns/prov#Activity"/>  
+	  <sh:name xml:lang="en">Activity</sh:name>
+	  <sh:name xml:lang="da">Activitet</sh:name>	
+	  <rdfs:comment xml:lang="en">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</rdfs:comment>	  
+	  <rdfs:comment xml:lang="da">En aktivitet er noget der sker over en tidsperiode og påvirker eller interagerer med entiteter; dette kan inkludere forbrug, behandling, transformation, ændring, omplacering, anvendelse eller skabelse af entiteter.</rdfs:comment>	 	  
+  </rdf:Description>
 
 
 <!-- ====================================== --> 
@@ -2254,7 +2266,7 @@
 	  <sh:description xml:lang="en">A media type, e.g. the format of a computer file </sh:description>
 	  <sh:description xml:lang="da">Formatet for lagringen af indhold i en computerfil.</sh:description>	
 	  <rdfs:comment xml:lang="en">A file format or physical medium.</rdfs:comment>		  
-	  <rdfs:comment xml:lang="en">Et filformat eller fysisk medie.</rdfs:comment>		  
+	  <rdfs:comment xml:lang="da">Et filformat eller fysisk medie.</rdfs:comment>		  
   </rdf:Description>
   
 
@@ -2379,8 +2391,33 @@
 	  <rdfs:comment xml:lang="da">Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf</rdfs:comment>		  
 	  <rdfs:comment xml:lang="en">Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</rdfs:comment>		  
   </rdf:Description>  
-  
-  
+
+<!-- ====================================== --> 
+<!--   Personoplysningskategori (dansk tilføjelse) -->
+<!-- ====================================== --> 
+
+	
+<rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/PersonalDataCategory_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory"/>  	
+	  <sh:name xml:lang="en">Personal Data Category</sh:name>
+	  <sh:name xml:lang="da">Personoplysningskategori DK</sh:name>		
+	  <rdfs:comment xml:lang="da">kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</rdfs:comment>
+	  <rdfs:comment xml:lang="en">classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable</rdfs:comment>
+  </rdf:Description>  
+	
+<!-- ====================================== --> 
+<!--   Fortrolighedsgrad (dansk tilføjelse) -->
+<!-- ====================================== --> 
+		  
+<rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/ConfidentialityType_Shape">
+	  <rdf:type rdf:resource="http://www.w3.org/ns/shacl#NodeShape"/>
+	  <sh:targetClass rdf:resource="https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType"/>  	
+	  <sh:name xml:lang="en">Confidentiality Type</sh:name>
+	  <sh:name xml:lang="da">Fortrolighedsgrad DK</sh:name>		
+	  <rdfs:comment xml:lang="da">grad af fortrolighed forstået som i hvilket omfang information kan videregives</rdfs:comment>
+	  <rdfs:comment xml:lang="en">degree of confidentiality with respect to the extent by which information can be disclosed</rdfs:comment>
+  </rdf:Description>  
   
   
 <!-- ====================================== --> 
