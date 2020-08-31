@@ -670,8 +670,10 @@ Klassens egenskaber:
 <dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a statement that specifies rights associated with the Catalogue.</dd>
+<dt>Definition (da)</dt>
+<dd>Information om rettigheder forbundet med ressourcen.</dd>
 <dt>Definition (en)</dt>
-<dd>Information about rights held in and over the resource.Information om rettigheder forbundet med ressourcen.</dd>
+<dd>Information about rights held in and over the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
