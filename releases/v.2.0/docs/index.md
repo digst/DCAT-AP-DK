@@ -149,7 +149,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.1 (udkast)
-Date: 2020-08-28
+Date: 2020-08-31
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -1273,7 +1273,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
+<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. </br></br>Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</dd>
 <dt>Definition (da)</dt>
@@ -1572,7 +1572,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+<dd>https://data.gov.dk/concept/core/personaldata-type/personalDataCategory</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3057,8 +3057,10 @@ Klassens egenskaber:
 <dd>Formatet for lagringen af indhold i en computerfil.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A media type, e.g. the format of a computer file </dd>
+<dt>Definition (da)</dt>
+<dd>Et filformat eller fysisk medie.</dd>	
 <dt>Definition (en)</dt>
-<dd>A file format or physical medium.Et filformat eller fysisk medie.</dd>
+<dd>A file format or physical medium.</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
@@ -3162,6 +3164,23 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
+
+## Klasse: Aktivitet (Activity) 
+<img src="img/Aktivitet.png" alt="Aktivitet">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/prov#Activity</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd>noget der sker over en tidsperiode og påvirker eller interagerer med entiteter</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>something that occurs over a period of time and acts upon or with entities</dd>
+<dt>Definition (da)</dt>
+<dd>En aktivitet er noget der sker over en tidsperiode og påvirker eller interagerer med entiteter; dette kan inkludere forbrug, behandling, transformation, ændring, omplacering, anvendelse eller skabelse af entiteter.</dd>
+<dt>Definition (en)</dt>
+<dd>An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
 			
 ## Klasse: Anvendelse DK (Usage) 
 <img src="img/Anvendelse%20DK.png" alt="Anvendelse DK">
@@ -3193,6 +3212,32 @@ Klassens egenskaber:
 <dd>Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf</dd>
 <dt>Definition (en)</dt>
 <dd>Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>	
+
+## Klasse: Personoplysningskategori DK (Personal Data Category) 
+<img src="img/Personoplysningskategori.png" alt="Personoplysningskategori DK">
+<dl class="def">
+<dt>URI</dt>
+<dd>https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory</dd>
+<dt>Definition (da)</dt>
+<dd>kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</dd>
+<dt>Definition (en)</dt>
+<dd>classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable </dd>
+<dt>Kravniveau</dt>
+<dd>Recommended</dd>
+</dl>	
+
+## Klasse: Fortrolighedsgrad DK (Confidentiality Type) 
+<img src="img/Fortrolighedsgrad.png" alt="Fortrolighedsgrad DK">
+<dl class="def">
+<dt>URI</dt>
+<dd>https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType</dd>
+<dt>Definition (da)</dt>
+<dd>grad af fortrolighed forstået som i hvilket omfang information kan videregives</dd>
+<dt>Definition (en)</dt>
+<dd>degree of confidentiality with respect to the extent by which information can be disclosed</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
