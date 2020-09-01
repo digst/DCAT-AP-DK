@@ -37,11 +37,11 @@
     dc:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dc:conformsTo <https://www.w3.org/TR/shacl> ;
     dcat-ap:availability dcat-ap:experimental ;
-    dc:modified "2020-08-31"^^xsd:date ;
-    dc:license <https://creativecommons.org/licenses/by/4.0> ;
+    dc:modified "2020-09-01"^^xsd:date ;
     dcat:accessURL <https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1> ;
     dcat:downloadURL <https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1-shacl_shapes.ttl>
   ] .
+
 
 <https://data.gov.dk/model/profile/dcat-ap-dk/Catalog_Shape>
   a <http://www.w3.org/ns/shacl#NodeShape> ;
@@ -141,7 +141,7 @@
   ], [
     sh:name "spatial/geographic"@en, "geografisk område"@da ;
     sh:description "This property refers to a geographical area covered by the Catalogue. "@en, "Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists."@da ;
-    rdfs:comment "Spatial characteristics of the resource."@en, "Ressourcens geografiske karakteristika."@en ;
+    rdfs:comment "Spatial characteristics of the resource."@en, "Ressourcens geografiske karakteristika."@da ;
     sh:class dc:Location ;
     sh:path dc:spatial ;
     sh:severity sh:Violation ;
@@ -157,8 +157,8 @@
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk/Recommended>
   ], [
     sh:name "license"@en, "licens"@da ;
-    sh:description "This property refers to the licence under which the Catalogue can be used or reused."@en, "Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under."@da, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
-    rdfs:comment "A legal document giving official permission to do something with a resource."@en ;
+    sh:description "This property refers to the licence under which the Catalogue can be used or reused."@en, "Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under."@da ;
+    rdfs:comment "A legal document giving official permission to do something with a resource."@en, "Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource."@da ;
     sh:class dc:LicenseDocument ;
     sh:maxCount 1 ;
     sh:path dc:license ;
@@ -200,7 +200,7 @@
   ], [
     sh:name "is part of"@en, "er del af katalog"@da ;
     sh:description "This property refers to a related Catalogue in which the described Catalogue is physically or logically included."@en, "Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af."@da ;
-    rdfs:comment "A related resource in which the described resource is physically or logically included."@en, "En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i."@en ;
+    rdfs:comment "A related resource in which the described resource is physically or logically included."@en, "En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i."@da ;
     sh:class dcat:Catalog ;
     sh:maxCount 1 ;
     sh:path dc:isPartOf ;
@@ -368,7 +368,7 @@
   ], [
     sh:name "contributor"@en, "bidragsyder DK"@da ;
     sh:description "This property refers to the entity responsible for making contributions to the resource."@en, "Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)"@da ;
-    rdfs:comment "An entity responsible for making contributions to the resource."@en, "En entitet der er ansvarlig for bidrage til skabelsen af ressourcen."@en ;
+    rdfs:comment "An entity responsible for making contributions to the resource."@en, "En entitet der er ansvarlig for bidrage til skabelsen af ressourcen."@da ;
     sh:class foaf:Agent ;
     sh:path dc:contributor ;
     sh:severity sh:Violation ;
@@ -732,7 +732,7 @@
   ], [
     sh:name "linked schemas"@en, "overholder"@da ;
     sh:description "This property refers to an established schema to which the described Distribution conforms."@en, "Denne egenskab angiver en specifikation (schema) som distributionen er i overensstemmmelse med."@da ;
-    rdfs:comment "An established standard to which the described resource conforms."@en, "En estableret standard som den beskrevne ressource er i overensstemelse med."@en ;
+    rdfs:comment "An established standard to which the described resource conforms."@en, "En estableret standard som den beskrevne ressource er i overensstemelse med."@da ;
     sh:class dc:Standard ;
     sh:path dc:conformsTo ;
     sh:severity sh:Violation ;
@@ -758,7 +758,7 @@
   ], [
     sh:name "status"@en, "status"@da ;
     sh:description "This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. "@en, "Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)"@da ;
-    rdfs:comment "Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property."@en ;
+    rdfs:comment "Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property."@en, "Relation til den status et aktiv eller et aktivs distribution har i et bestemt workflow. "@da ;
     sh:pattern "^http://purl.org/adms/status/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
@@ -772,7 +772,7 @@
     sh:pattern "^http://data.europa.eu/r5r/availability/" ;
     sh:flags "i" ;
     sh:maxCount 1 ;
-    sh:path dcat-ap:availability ;
+    sh:path dcap-ap:availability ;
     sh:severity sh:Violation ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk/Recommended>
   ], [
