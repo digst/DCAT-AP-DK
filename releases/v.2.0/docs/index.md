@@ -149,7 +149,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.1 (udkast)
-Date: 2020-08-31
+Date: 2020-09-01
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -174,7 +174,7 @@ Specifikationen skal være med til sørge for at begreber til beskrivelse af dat
 
 ## Baggrund
 
-De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0.1 vil anvende elementer fra, og vil være i overensstemmelse med DCAT-AP 2.0.1 DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst. 
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0.1 vil anvende elementer fra, og vil være i overensstemmelse med DCAT-AP 2.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at opfylde behov i en dansk administrativ og fællesoffentlig kontekst. 
 
 Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
 
@@ -266,22 +266,22 @@ Se:  [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-
 DCAT har seks centrale elementer hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebmodel-for-beskrivelse-af-datast).
 
 ## Katalog
-Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger. [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalog-catalog)
+Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.</br> [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalog-catalog)
 
 ## Katalogiseret ressource 
-En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller kurateret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
+En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller udvalgt og arrangeret af en enkelt aktør. Denne klasse bærer egenskaber der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
 
 ## Datasæt
 Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
-[Gå til klassen Datasæt](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datast-dataset)
+</br>[Gå til klassen Datasæt](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datast-dataset)
 
 ## Datatjeneste
 En datatjeneste (dcat:DataService) er et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
-[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service)
+</br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service)
 
 ## Distribution
 En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
-[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution)
+</br>[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution)
 
 Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
 ’titel’, ’beskrivelse’, ’dokumentation’, ’udgivelsesdato’, ’seneste ændringsdato’, ’overholder’, ’geografisk opløsning’ og ’tidslig opløsning’.
@@ -290,7 +290,7 @@ Hvis der for egenskaben er relevante tilføjelser eller at der er afvigelser i f
 
 ## Katalogpost 
 En katalogpost (dcat:CatalogRecord) er en post i et katalog der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i de kataloger for der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
-[Gå til klassen Katalogpost](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record)
+</br>[Gå til klassen Katalogpost](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record)
 
 
 ## Illustration
@@ -614,8 +614,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a geographical area covered by the Catalogue. </dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens geografiske karakteristika.</dd>	
 <dt>Definition (en)</dt>
-<dd>Spatial characteristics of the resource.Ressourcens geografiske karakteristika.</dd>
+<dd>Spatial characteristics of the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -652,6 +654,8 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under.Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the licence under which the Catalogue can be used or reused.</dd>
+<dt>Definition (da)</dt>
+<dd>Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource.</dd>	
 <dt>Definition (en)</dt>
 <dd>A legal document giving official permission to do something with a resource.</dd>
 <dt>Multiplicitet</dt>
@@ -750,8 +754,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</dd>
+<dt>Definition (da)</dt>
+<dd>En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i.</dd>
 <dt>Definition (en)</dt>
-<dd>A related resource in which the described resource is physically or logically included.En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i.</dd>
+<dd>A related resource in which the described resource is physically or logically included.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -1128,8 +1134,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the entity responsible for making contributions to the resource.</dd>
+<dt>Definition (da)</dt>
+<dd>En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</dd>
 <dt>Definition (en)</dt>
-<dd>An entity responsible for making contributions to the resource.En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</dd>
+<dd>An entity responsible for making contributions to the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -1285,7 +1293,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. </br></br>Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
+<dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. </br></br> Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</dd>
 <dt>Definition (da)</dt>
@@ -1991,6 +1999,8 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver en specifikation (schema) som distributionen er i overensstemmmelse med.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an established schema to which the described Distribution conforms.</dd>
+<dt>Definition (da)</dt>
+<dd>En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Definition (en)</dt>
 <dd>An established standard to which the described resource conforms.En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Multiplicitet</dt>
@@ -2009,8 +2019,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver den dato hvor distributionen først blev formelt udgivet</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date of formal issuance (e.g., publication) of the Distribution.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
+<dd>Date of formal issuance of the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -2047,6 +2059,8 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. </dd>
+<dt>Definition (da)</dt>
+<dd>Relation til den status et aktiv eller et aktivs distribution har i et bestemt workflow. </dd>
 <dt>Definition (en)</dt>
 <dd>Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property.</dd>
 <dt>Multiplicitet</dt>
@@ -3269,9 +3283,9 @@ Klassens egenskaber:
 
 I forbindelse med DCAT-AP udpeger EU Kommissionen en række klassifikationer skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikation til anvendelse i dansk fællesoffentlig kontekst.
 
-Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)
+Her under kan I se hvilke klassifikationer der er i anevndelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)
 
-Bemærk at hvis den pågældende egenskab anvendes så er det et krav at de(n) udpegede klassifikation anvendes (med enkelte undtagelser - se noter).
+Bemærk at hvis den pågældende egenskab anvendes så er det et krav at den udpegede klassifikation anvendes (med enkelte undtagelser - se noter).
 
 
 ## Datatemaer (Emner)
