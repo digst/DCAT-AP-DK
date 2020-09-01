@@ -236,7 +236,7 @@
 		<sh:description xml:lang="en">This property refers to a geographical area covered by the Catalogue. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</sh:description>	
 		<rdfs:comment xml:lang="en">Spatial characteristics of the resource.</rdfs:comment>			
-		<rdfs:comment xml:lang="en">Ressourcens geografiske karakteristika.</rdfs:comment>			
+		<rdfs:comment xml:lang="da">Ressourcens geografiske karakteristika.</rdfs:comment>			
         <sh:class rdf:resource="http://purl.org/dc/terms/Location"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/spatial"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -268,7 +268,7 @@
 		<sh:description xml:lang="en">This property refers to the licence under which the Catalogue can be used or reused.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver den licens kataloget kan anvendes eller genbruges under.</sh:description>	
 		<rdfs:comment xml:lang="en">A legal document giving official permission to do something with a resource.</rdfs:comment>			
-     	<sh:description xml:lang="da">Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource.</sh:description>			
+     	<rdfs:comment xml:lang="da">Et juridisk dokument der fastlægger de officielle tilladelser vedrørende en ressource.</rdfs:comment>				
         <sh:class rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/license"/>
@@ -347,7 +347,7 @@
 		<sh:description xml:lang="en">This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af.</sh:description>	
 		<rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
-		<rdfs:comment xml:lang="en">En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i.</rdfs:comment>			
+		<rdfs:comment xml:lang="da">En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i.</rdfs:comment>			
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/isPartOf"/>
@@ -652,7 +652,7 @@
 		<sh:description xml:lang="en">This property refers to the entity responsible for making contributions to the resource.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)</sh:description>		 
 		<rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>			
-		<rdfs:comment xml:lang="en">En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</rdfs:comment>		
         <sh:class rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/contributor"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -1339,7 +1339,7 @@
 		<sh:description xml:lang="en">This property refers to an established schema to which the described Distribution conforms.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en specifikation (schema) som distributionen er i overensstemmmelse med.</sh:description>	
 		<rdfs:comment xml:lang="en">An established standard to which the described resource conforms.</rdfs:comment>	
-		<rdfs:comment xml:lang="en">En estableret standard som den beskrevne ressource er i overensstemelse med.</rdfs:comment>		
+		<rdfs:comment xml:lang="da">En estableret standard som den beskrevne ressource er i overensstemelse med.</rdfs:comment>		
         <sh:class rdf:resource="http://purl.org/dc/terms/Standard"/>
         <sh:path rdf:resource="http://purl.org/dc/terms/conformsTo"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -1386,7 +1386,9 @@
 		<sh:description xml:lang="en">This property refers to the maturity of the Distribution. It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn. </sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver hvilken tilstand distributionen befinder sig ift. udvikling og ibrugtagning. Til angivelse af status skal følgende klassifikation anvendes: ADMS Status, http://purl.org/adms/status/ (Udfaldsrum: Completed, Deprecated, Under Development, Withdrawn)</sh:description>	 	
 		<rdfs:comment xml:lang="en">Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property.</rdfs:comment>		  
-<!--    <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> -->
+		<rdfs:comment xml:lang="da">Relation til den status et aktiv eller et aktivs distribution har i et bestemt workflow. </rdfs:comment>		  
+
+	      <!--    <sh:class rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/> -->
         <sh:pattern>^http://purl.org/adms/status/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->	
         <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
