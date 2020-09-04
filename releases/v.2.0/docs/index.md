@@ -328,12 +328,13 @@ beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser 
 [DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
 beskriver obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer)
 
-<img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
+<!-- <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber" width="730"> -->
+<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber" width="730"/></a></p>
 
 ### Diagram med alle elementer  
 Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.1 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer)
 
-<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML" width="730"/></a></p>
 
 
 ## Afvigelser ift. DCAT-AP
@@ -965,7 +966,7 @@ Klassens egenskaber:
 </dl>	
 			
 ## Klasse: Datasæt (Dataset) 
-<img src="img/Datas%C3%A6t.png" alt="Datasæt">
+<img src="img/Datas%C3%A6t.png" alt="Datasæt" width="730">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
