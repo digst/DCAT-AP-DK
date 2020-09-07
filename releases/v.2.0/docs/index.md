@@ -1868,7 +1868,7 @@ Klassens egenskaber:
 </dl>	
 			
 ## Klasse: Distribution (Distribution) 
-<img src="img/Distribution.png" alt="Distribution">
+<img src="img/Distribution.png" alt="Distribution" width="730">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
@@ -3564,7 +3564,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde.
 
-<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK 2.0.1 UML" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK 2.0.1 UML" width="730"/></a></p>
 
 
 ### UML-diagram: DCAT-DK
@@ -3579,7 +3579,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.
 
-<p align="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png" alt="Illustration af DCAT-DK 1.0.0 UML" width="800"/></a></p>
+<p align="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png" alt="Illustration af DCAT-DK 1.0.0 UML" width="730"/></a></p>
 
 
 
@@ -3595,7 +3595,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.
 
-<p align="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 " width="800"/></a></p>
+<p align="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 " width="730"/></a></p>
 
 <table class="term-table">
     <thead>
