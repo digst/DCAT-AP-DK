@@ -292,7 +292,7 @@ En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver regis
 ## Illustration
 Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (anbefalet):
 
-<p align="left"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne"/></a></p>
+<p><a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne"/></a></p>
 
 
 
@@ -327,12 +327,12 @@ beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser 
 beskriver obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer).
 
 <!-- <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"> -->
-<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"/></a></p>
 
 ### Diagram med alle elementer  
 Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.1 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
 
-<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML"/></a></p>
 
 
 ## Afvigelser ift. DCAT-AP
@@ -3564,7 +3564,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde.
 
-<p align="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK 2.0.1 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK 2.0.1 UML"/></a></p>
 
 
 ### UML-diagram: DCAT-DK
@@ -3579,7 +3579,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.
 
-<p align="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png" alt="Illustration af DCAT-DK 1.0.0 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png" alt="Illustration af DCAT-DK 1.0.0 UML"/></a></p>
 
 
 
@@ -3595,7 +3595,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.
 
-<p align="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 "/></a></p>
+<p class="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 "/></a></p>
 
 <table class="term-table">
     <thead>
