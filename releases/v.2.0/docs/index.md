@@ -120,6 +120,13 @@ dl.def dd:after {
     display: block;
     clear: both;
 } 
+
+img{max-width:100%!important}
+p.center{text-align:center!important}
+p.left{text-align:left!important}
+p.right{text-align:right!important}
+p.italic{font-style: italic!important;}
+#toc h2{color:#000!important}
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
@@ -159,7 +166,7 @@ Logo: digst...
 
 Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) og [RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/rdf).
 
-<i>DCAT-AP-DK namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</i>
+<p class="italic">DCAT-AP-DK namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
 
 <h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
 
