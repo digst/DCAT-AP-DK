@@ -5681,12 +5681,12 @@ DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, so
    <p><a href="arkitektur.digst.dk">arkitektur.digst.dk</a></p>
   </main>
 	      <script>
-	var toc = document.getElementById("toc");
+	var toc =  document.querySelectorAll("#toc .content");
 var att = document.createAttribute("tabindex");
 att.value = "0";
-for (var i = 0; i < toc.childNodes.length; i++) {
-    if (toc.childNodes[i].className == "content") {
-		toc.childNodes[i].setAttributeNode(att);
+for (var i = 0; i < toc.length; i++) {
+    if (toc[i].className == "content") {
+		toc[i].setAttributeNode(att);
 		
     }        
 }
