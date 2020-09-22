@@ -5682,10 +5682,10 @@ DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, so
   </main>
 	      <script>
 var toc =  document.querySelectorAll("#toc .content");
-var att = document.createAttribute("tabindex");
-att.value = "0";
 for (var i = 0; i < toc.length; i++) {
 	if (!toc[i].hasAttribute("tabindex")){
+		var att = document.createAttribute("tabindex");
+		att.value = "0";
 		toc[i].setAttributeNode(att);
     }
 }
