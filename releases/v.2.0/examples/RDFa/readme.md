@@ -14,6 +14,7 @@ RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTM
 ## Praktiske vejledninger til DCAT-opmærkning med RDFa : 
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://developers.google.com/search/docs/data-types/dataset
+- https://github.com/SEMICeu/dcat-ap-rdf2html The XSLT transforming a set of DCAT-AP records from RDF/XML to HTML+RDFa.
 
 ## Eksempler
 Med fx [W3Cs RDF distiller](https://www.w3.org/2012/pyRdfa/Overview.html) eller [HTML Structured Data Extractor to RDF](https://www.w3.org/2012/sde/) kan DCAT-metadata udtrækkes fra eksempel-html-filer i denne mappe.
