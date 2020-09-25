@@ -18,7 +18,7 @@ Læs mere her: https://arkitektur.digst.dk/rammearkitektur/datastandarder/retnin
 https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
 https://joinup.ec.europa.eu/release/dcat-ap-how-use-identifiers-datasets-and-distributions
 
-## Hvordan skelner man mellem mulighederne for angivelse af hvordan man får adgang til datasættet?
+## Hvordan angiver man hvordan brugeren får adgang til datasættet?
 - Destinationsside (på dcat:Resource): Se https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page 
 En destinationsside er en webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information.
 
