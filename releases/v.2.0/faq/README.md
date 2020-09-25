@@ -31,7 +31,7 @@ Et websted eller endpoint der giver adgang til distributionen af datasættet. dc
 - Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_download_url
 Download-Url er en URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType. dcat:download-URL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request
 
-![DCAT-Datasæt-distribution](https://www.w3.org/2011/gld/wiki/File:Dcat-distribution-proposal.png "DCAT-AP 2.0.1 UML Diagram")
+![DCAT-Datasæt-distribution](https://www.w3.org/2011/gld/wiki/images/2/26/Dcat-distribution-proposal.png "DCAT-AP 2.0.1 UML Diagram")
 
 OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), så bør destinationssidelinket gentages som adgangsadresse for en distribution 
 
