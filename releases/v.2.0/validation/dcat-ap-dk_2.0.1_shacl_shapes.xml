@@ -2183,12 +2183,13 @@
 		<sh:description xml:lang="en">This property refers to the resource related to the source resource.</sh:description>
 		<sh:description xml:lang="da">Denne egenskab angiver en ressource som er relateret til den aktuelle ressource.</sh:description>		 
 		<rdfs:comment xml:lang="en">A related resource.</rdfs:comment>		  
-		<rdfs:comment xml:lang="da">En relateret ressource.</rdfs:comment>			
+		<rdfs:comment xml:lang="da">En relateret ressource.</rdfs:comment>	
+        <sh:nodeKind rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape"/>	      
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Role"/>
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/relation"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
+	<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
       </rdf:Description>
     </sh:property>
 
@@ -2201,7 +2202,7 @@
 		<rdfs:comment xml:lang="en">The function of an entity or agent with respect to another entity or resource.</rdfs:comment>		  
 		<rdfs:comment xml:lang="da">Den funktion en entitet eller aktør har i forhold til en anden ressource.</rdfs:comment>			
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
-        <sh:nodeKind rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape"/>
+        <sh:class rdf:resource="http://www.w3.org/ns/dcat#Role"/>
         <sh:path rdf:resource="http://www.w3.org/ns/dcat#hadRole"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
 		<sh:group rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory"/>			
