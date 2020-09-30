@@ -156,7 +156,7 @@ Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
 Revision: 2.0.1 (udkast)
-Date: 2020-09-07
+Date: 2020-09-30
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -166,7 +166,7 @@ Logo: digst...
 
 Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) og [RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/rdf).
 
-<p class="italic">DCAT-AP-DK namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
+DCAT-AP-DK namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
 <h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
 
@@ -283,7 +283,7 @@ En datatjeneste (dcat:DataService) er et websted eller endpoint, der udstiller o
 </br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service)
 
 ## Distribution
-En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer, der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution kan betragtes som et fysisk element og indeholder derfor information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
+En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
 </br>[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution)
 
 Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber, der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
@@ -562,8 +562,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver den dato hvor kataloget først blev formelt udgivet</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains the date of formal issuance (e.g., publication) of the Catalogue.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen formelt blev udgivet.</dd>
 <dt>Definition (en)</dt>
-<dd>Date of formal issuance of the resource.Dato for hvornår ressourcen formelt blev udgivet.</dd>
+<dd>Date of formal issuance of the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -1379,7 +1381,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/RightsStatement</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan det angives hvorvidt datasættet er åbent, har adgangsbegrænsninger eller om det ikke er tilgængeligt. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC)</dd>
+<dd>Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan udsagnet omkring rettigheder kategoriseres. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC). Til opmærkning skal følgende klassifikation anvendes: EU Vocabularies Access Right Named Authority List, http://publications.europa.eu/resource/authority/access-right</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. </dd>
 <dt>Definition (da)</dt>
@@ -1880,8 +1882,8 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En fysisk repræsentation af datasættet. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)
-	</dd>
+<dd>En specifik repræsentation af datasættet. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). 
+</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A physical embodiment of the Dataset in a particular format.</dd>
 <dt>Definition (da)</dt>
@@ -3013,7 +3015,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/relation</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/ns/dcat#Role</dd>
+<dd>http://www.w3.org/ns/dcat#Catalog; http://www.w3.org/ns/dcat#Dataset; http://www.w3.org/ns/dcat#DataService</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en ressource som er relateret til den aktuelle ressource.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3033,7 +3035,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#hadRole</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/ns/dcat#Catalog; http://www.w3.org/ns/dcat#Dataset; http://www.w3.org/ns/dcat#DataService</dd>
+<dd>http://www.w3.org/ns/dcat#Role</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver den rolle som en entitet eller aktør spiller i forhold til en anden entitet eller ressource.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3215,6 +3217,58 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
+
+## Klasse: Retslig ressource (Legal Resource) 
+<img src="img/Retslig ressource.png" alt="Retskilde">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+<dt>Definition (da)</dt>
+<dd>Et værk i et lovgivende korpus</dd>
+<dt>Definition (en)</dt>
+<dd>A work in a legislative corpus. This applies to acts that have been legally enacted (whether or not they are still in force).A legal resource can represent a legal act or any component of a legal act, like an article.  Legal resources can be linked together using properties defined in the model.</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+## Klasse: Politik (Policy) 
+<img src="img/Politik.png" alt="Politik">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/odrl/2/Policy</dd>
+<dt>Definition (da)</dt>
+<dd>Samling af tilladelse og/eller forbud</dd>
+<dt>Definition (en)</dt>
+<dd>A non-empty group of Permissions and/or Prohibitions.</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+## Klasse: Kreditering (Attribution) 
+<img src="img/Kreditering.png" alt=" Kreditering">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/prov#Attribution</dd>
+<dt>Definition (da)</dt>
+<dd>Det at kreditere en aktør for en ressource</dd>
+<dt>Definition (en)</dt>
+<dd>Attribution is the ascribing of an entity to an agent.</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+## Klasse: Forvaltningsopgave DK (PublicAdministrativeTaskType) 
+<img src="img/Forvaltningsopgave.png" alt="">
+<dl class="def">
+<dt>URI</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd>Type af offentlige opgaver  i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet </dd>
+</dl>
 			
 ## Klasse: Anvendelse DK (Usage) 
 <img src="img/Anvendelse%20DK.png" alt="Anvendelse DK">
@@ -3283,7 +3337,47 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
-			
+	
+## Klasse: Tidspunkt (Instant) 
+<img src="img/Tidspunkt.png" alt="Tidspunkt">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/2006/time#Instant </dd>
+<dt>Definition (da)</dt>
+<dd>Temporal entitet uden udstrækning eller varighed</dd>
+<dt>Definition (en)</dt>
+<dd>A temporal entity with zero extent or duration</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+
+## Klasse: Literal (Literal) 
+<img src="img/Literal.png" alt="Literal">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dt>Definition (da)</dt>
+<dd>Foreningsmængden af alle datatyper</dd>
+<dt>Definition (en)</dt>
+<dd>The class of literal values, eg. textual strings and integers.</dd>
+<dt>Kravniveau</dt>
+<dd>Obligatorisk</dd>
+</dl>
+
+
+## Klasse: Ressource (Resource) 
+<img src="img/Ressource.png" alt="">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/2000/01/rdf-schema#Resource</dd>
+<dt>Definition (da)</dt>
+<dd>Klassen der omfatter alt: alle andre klasser, alle individer, alle datatyper og alle egenskaber</dd>
+<dt>Definition (en)</dt>
+<dd>The class resource, everything.</dd>
+<dt>Kravniveau</dt>
+<dd>Obligatorisk</dd>
+</dl>
+	
 
 # Klassifikationer
 I forbindelse med DCAT-AP udpeger Europa-Kommissionen en række klassifikationer, som skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikationer til anvendelse i dansk fællesoffentlig kontekst.
@@ -3298,7 +3392,7 @@ Egenskab: dcat:theme
 
 **KLASSIFIKATION: EU Datatemaer**
 URI: http://publications.europa.eu/resource/authority/data-theme
-[Se klassifikationens indhold](
+[Se klassifikationen EU Datatemaer](
 https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/data-theme/?target=Browse&uri=http://publications.europa.eu/resource/authority/data-theme)
 
 
@@ -3307,10 +3401,10 @@ Egenskab: dcat:theme
 
 **KLASSIFIKATION: FORM (FællesOffentligeReferenceModel)**
 
-[Se FORM](https://www.form-online.dk/soegning)
+[Se klassifikationen FORM](https://www.form-online.dk/soegning)
 
 **KLASSIFIKATION: KLE (KL Emnesystematik)**
-[Se KLE](http://www.kle-online.dk/soegning)
+[Se klassifikationen KLE](http://www.kle-online.dk/soegning)
 
 
 
@@ -3321,7 +3415,7 @@ Egenskab: dct:accrualPeriodicity
 
 URI: http://publications.europa.eu/resource/authority/frequency
 
-[Se klassifikationens indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/frequency/?target=Browse&uri=http://publications.europa.eu/resource/authority/frequency)
+[Se klassifikationen EU Frekvenser](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/frequency/?target=Browse&uri=http://publications.europa.eu/resource/authority/frequency)
 
 
 ## Medietyper
@@ -3331,7 +3425,7 @@ Egenskab: dct:mediaType
 
 URI: http://www.iana.org/assignments/media-types/
 
-[Se klassifikationens indhold](http://www.iana.org/assignments/media-types/media-types.xhtml)
+[Se klassifikationen IANA Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml)
 
 Eksempler:
 * https://www.iana.org/assignments/media-types/text/html
@@ -3354,7 +3448,7 @@ Egenskab: dct:format
 
 URI: http://publications.europa.eu/resource/authority/file-type
 
-[Se klassifikationens indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/file-type/?target=Browse&uri=http://publications.europa.eu/resource/authority/file-type)
+[Se klassifikationen EU Filtyper](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/file-type/?target=Browse&uri=http://publications.europa.eu/resource/authority/file-type)
 
 Eksempler:
 * http://publications.europa.eu/resource/authority/file-type/CSV
@@ -3374,7 +3468,7 @@ Egenskab: dct:language
 
 URI: http://publications.europa.eu/resource/authority/language
  
-[Se klassifikationens indhold](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language)
+[Se klassifikationen EU Sprog](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language)
 
 Eksempler:
 * http://publications.europa.eu/resource/dataset/language/DAN
@@ -3388,28 +3482,28 @@ Egenskab: dct:spatial
 
 URI: http://publications.europa.eu/resource/authority/continent/
 
-[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/) 
+[Se klassifikation Kontinenter](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/) 
 
 **KLASSIFIKATION: lande**
 
 URI: http://publications.europa.eu/resource/authority/country
 
-[Se klassifikations indhold](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/)
+[Se klassifikation Lande](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/)
 
 **KLASSIFIKATION: stednavne**
 
 URI: http://publications.europa.eu/resource/authority/place/
 
-[Se klassifikations indhold](
+[Se klassifikation Stednavne](
 https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/place/)
 
 **KLASSIFIKATION: Geonames**
 
 URI: http://sws.geonames.org/
 
-[Se klassifikations indhold](http://sws.geonames.org/)
+[Se klassifikation Geonames](http://sws.geonames.org/)
 
-Bemærk at EUs geografiske vokabularer SKAL anvendes hvis det pågældende kontinent, land eller sted optræder dér. Hvis et givet sted ikke findes i EUs geografiske vokabularer, så skal der anvendes URIer fra Geonames.
+Bemærk at EUs geografiske klassifikationer SKAL anvendes hvis det pågældende kontinent, land eller sted optræder dér. Hvis et givet sted ikke findes i EUs geografiske klassifikationer, så skal der anvendes URIer fra Geonames.
 
 
 ## Statusser
@@ -3420,7 +3514,7 @@ Egenskab: adms:status
 EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme). 
 Begreberne anvendt til klassifikation af status for datasæt er struktureret i begrebssystemet med URI = http://purl.org/adms/status/1.0 
 
-[Se klassifikationens indhold](http://purl.org/adms/status/)
+[Se klassifikationen ADMS Statusser](http://purl.org/adms/status/)
 * http://purl.org/adms/status/Completed
 * http://purl.org/adms/status/Deprecated
 * http://purl.org/adms/status/UnderDevelopment
@@ -3437,7 +3531,7 @@ Egenskab: dct:type (på foaf:Agent)
 EU har samlet en række klassifikationen og kontrollerede vokabularer i filen [ADMS_SKOS_v1.00.rdf](https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf). I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme). 
 Begreberne anvendt til klassifikation af udgivertyper er struktureret i begrebssystemet med URI = http://purl.org/adms/publishertype/1.0 
 
-[Se klassifikationens indhold](http://purl.org/adms/publishertype/)
+[Se klassifikationen ADMS udgivertyper](http://purl.org/adms/publishertype/)
 * http://purl.org/adms/publishertype/Academia-ScientificOrganisation
 * http://purl.org/adms/publishertype/Company
 * http://purl.org/adms/publishertype/IndustryConsortium
@@ -3458,7 +3552,7 @@ Egenskab: dct:license
 
 URI: http://purl.org/adms/licencetype/
 
-[Se klassifikationens indhold](http://purl.org/adms/licencetype/)  
+[Se klassifikationen ADMS licenstyper**](http://purl.org/adms/licencetype/)  
 * http://purl.org/adms/licencetype/Attribution
 * http://purl.org/adms/licencetype/PublicDomain
 * http://purl.org/adms/licencetype/ViralEffect-ShareAlike
@@ -3483,11 +3577,21 @@ Egenskab: dcat-ap:availability
 
 URI: http://data.europa.eu/r5r/availability/
 
-[Se klassifikationens indhold](http://data.europa.eu/r5r/availability/)
+[Se klassifikationen Tilgængeligshedstyper ](http://data.europa.eu/r5r/availability/)
 * http://data.europa.eu/r5r/availability/temporary
 * http://data.europa.eu/r5r/availability/experimental
 * http://data.europa.eu/r5r/availability/available
 * http://data.europa.eu/r5r/availability/stable
+
+
+## Adgangsrettigheder
+Egenskab: dct:accessRights 
+
+**KLASSIFIKATION: Adgangsrettigheder**
+
+URI: http://publications.europa.eu/resource/authority/access-right
+
+[Se klassifikationen Adgangsrettigheder]https://op.europa.eu/da/web/eu-vocabularies/at-concept-scheme/-/resource/authority/access-right/?target=Browse&uri=http://publications.europa.eu/resource/authority/access-right
 
 
 ## Personoplysningskategori
