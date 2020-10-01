@@ -1,4 +1,4 @@
-# DCAT-AP-DK v.2.0.1 (Afventer godkendelse)
+# DCAT-AP-DK v.2.0.1
 DCAT-AP-DK v.2.0.1 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 2.0.1, men tilføjer også enkelte elementer for at opfylde behovet i en dansk administrativ og fællesoffentlig kontekst
 
 ## Link til specifikation
