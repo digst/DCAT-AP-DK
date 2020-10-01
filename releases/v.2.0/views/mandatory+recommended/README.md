@@ -67,8 +67,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En fysisk repræsentation af datasættet. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)
-	</dd>
+<dd>En specifik repræsentation af datasættet. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående).</dd>
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
