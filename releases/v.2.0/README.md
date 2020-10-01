@@ -2,7 +2,7 @@
 DCAT-AP-DK v.2.0.1 anvender elementer fra og er i overenstemmelse med DCAT-AP v. 2.0.1, men tilføjer også enkelte elementer for at opfylde behovet i en dansk administrativ og fællesoffentlig kontekst
 
 ## Link til specifikation
-Link til udkast til v.2.0.1: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/
+https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/
 
 ## Anvendelseprofilen DCAT-AP-DK 2.0.1 visualiseret med UML-diagram 
 ![DCAT-AP-DK UML-diagram](https://github.com/digst/DCAT-AP-DK/raw/master/releases/v.2.0/docs/img/Illustration-DCAT-AP-DK-v2.0.1-UML.png "DCAT-AP-DK 2.0.1 UML Diagram")
