@@ -132,7 +132,7 @@ p.italic{font-style: italic!important;}
 </style>
 
 <pre class="metadata">
-Title: DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)
+Title: DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Følgegruppemedlem, Følgegruppemedlemmer 
@@ -155,8 +155,8 @@ Group: Udvalget for Arkitektur og Standarder (UAS)
 Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0.1)' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
-Revision: 2.0.1 (udkast)
-Date: 2020-09-30
+Revision: 2.0.1 
+Date: 2020-10-01
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -164,11 +164,13 @@ Inline Github Issues: full
 Logo: digst...
 </pre>
 
+DCAT-AP-DK 2.0.1 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
+
 Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) og [RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/rdf).
 
-DCAT-AP-DK namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
+Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
-<h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (UDKAST)</h1>
+<h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger </h1>
 
 
 # Introduktion
@@ -3110,6 +3112,8 @@ Klassens egenskaber:
 <dd>En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcekreditering eller ressourcerelationer.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships. Note it is a subclass of skos:Concept.</dd>
+<dt>Definition (da)</dt>
+<dd>En rolle er den funktion en ressource eller aktør har i forhold til en anden ressource, i forbindelse med ressourcekreditering eller ressourcerelationer.</dd>
 <dt>Definition (en)</dt>
 <dd>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</dd>
 <dt>Kravniveau</dt>
@@ -3237,7 +3241,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/odrl/2/Policy</dd>
 <dt>Definition (da)</dt>
-<dd>Samling af tilladelse og/eller forbud</dd>
+<dd>Samling af tilladelser og/eller forbud</dd>
 <dt>Definition (en)</dt>
 <dd>A non-empty group of Permissions and/or Prohibitions.</dd>
 <dt>Kravniveau</dt>
@@ -3245,7 +3249,7 @@ Klassens egenskaber:
 </dl>
 
 ## Klasse: Kreditering (Attribution) 
-<img src="img/Kreditering.png" alt=" Kreditering">
+<img src="img/Kreditering.png" alt="Kreditering">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/prov#Attribution</dd>
@@ -3258,14 +3262,14 @@ Klassens egenskaber:
 </dl>
 
 ## Klasse: Forvaltningsopgave DK (PublicAdministrativeTaskType) 
-<img src="img/Forvaltningsopgave.png" alt="">
+<img src="img/Forvaltningsopgave.png" alt="Forvaltningsopgave DK">
 <dl class="def">
 <dt>URI</dt>
-<dd></dd>
+<dd>https:/data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType </dd>
 <dt>Definition (da)</dt>
-<dd>Type af offentlige opgaver  i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</dd>
+<dd>Type af offentlige opgaver i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>Type of public-sector task in relation to governance and administration in the Danish public sector</dd>
 <dt>Kravniveau</dt>
 <dd>Anbefalet </dd>
 </dl>
@@ -3669,9 +3673,10 @@ Relevante links:
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 2.0.1
-- Seneste opdateringsdato (dateModified): 2020-08-27
+- Seneste opdateringsdato (dateModified): 2020-10-01
 - Modelstatus (modelStatus): completed
-- Godkendelsesstatus (approvalStatus): afventer godkendelse
+- Godkendelsesstatus (approvalStatus): godkendt
+- Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde.
 
@@ -3684,9 +3689,10 @@ Relevante links:
 - Modelnavn (label): DCAT-DK
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
-- Seneste opdateringsdato (dateModified): 2020-08-27
+- Seneste opdateringsdato (dateModified): 2020-10-01
 - Modelstatus (modelStatus): completed
-- Godkendelsesstatus (approvalStatus): afventer godkendelse
+- Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
+- Godkendelsesstatus (approvalStatus): godkendt
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.
 
@@ -3700,9 +3706,10 @@ Relevante links:
 - Modelnavn (label): Begrebsmodel for beskrivelse datasæt og datakataloger
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
-- Seneste opdateringsdato (dateModified): 2020-08-27
+- Seneste opdateringsdato (dateModified): 2020-10-01
 - Modelstatus (modelStatus): completed
-- Godkendelsesstatus (approvalStatus): afventer godkendelse
+- Godkendelsesstatus (approvalStatus): godkendt
+- Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.
 
