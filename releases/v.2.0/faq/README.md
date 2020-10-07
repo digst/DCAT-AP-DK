@@ -10,15 +10,15 @@ Anvendelse af DCAT og bagvedliggende metamodel -->
 ## TITEL, BESKRIVELSE og IDENTIFIKATION
 
 ### Hvordan giver man datasæt gode titler og beskrivelser?
-https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#1-bra-namn-ska-vara-korta-och-beskrivande
-https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#2-%C3%B6vers%C3%A4tt-fritextf%C3%A4lt-till-andra-spr%C3%A5k
+- https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#1-bra-namn-ska-vara-korta-och-beskrivande
+- https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#2-%C3%B6vers%C3%A4tt-fritextf%C3%A4lt-till-andra-spr%C3%A5k
 
 ### Hvorfor skal man oprette en identifikator og hvordan oprettes de?
 Læs mere her: 
-https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier ; 
-https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
-https://joinup.ec.europa.eu/release/dcat-ap-how-use-identifiers-datasets-and-distributions
-https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/
+- https://arkitektur.digst.dk/rammearkitektur/datastandarder/retningslinjer-stabile-http-urier ; 
+- https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris
+- https://joinup.ec.europa.eu/release/dcat-ap-how-use-identifiers-datasets-and-distributions
+- https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/
 
 
 ## KRAV OM OVERHOLDELSE
