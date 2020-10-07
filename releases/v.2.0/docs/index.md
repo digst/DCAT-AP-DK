@@ -127,6 +127,18 @@ p.left{text-align:left!important}
 p.right{text-align:right!important}
 p.italic{font-style: italic!important;}
 #toc h2{color:#000!important}
+#toc ol, #toc li, #toc a {
+    display: block;
+}
+.toc .secno {
+    margin-right: 1rem!important;
+}
+:not(li) > .toc {
+    margin-left: 0rem!important;
+}
+	#toc > .toc > li > a > span {
+    margin-top: 0rem;
+}
 	
 /* style til egne og andres definitioner rød/blå*/
 </style>
