@@ -5828,11 +5828,11 @@ DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, so
 (function() {
   "use strict";
   var collapseSidebarText = '<span aria-hidden="true">←</span> '
-                          + '<span>Collapse Sidebar</span>';
+                          + '<span>Fold ind</span>';
   var expandSidebarText   = '<span aria-hidden="true">→</span> '
-                          + '<span>Pop Out Sidebar</span>';
+                          + '<span>Fold ud</span>';
   var tocJumpText         = '<span aria-hidden="true">↑</span> '
-                          + '<span>Jump to Table of Contents</span>';
+                          + '<span>Gå til inholdsfortegnelse</span>';
 
   var sidebarMedia = window.matchMedia('screen and (min-width: 78em)');
   var autoToggle   = function(e){ toggleSidebar(e.matches) };
