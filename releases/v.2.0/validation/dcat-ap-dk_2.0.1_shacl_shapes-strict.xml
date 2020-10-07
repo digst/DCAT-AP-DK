@@ -36,7 +36,7 @@
     <prof:isProfileOf rdf:resource="http://data.europa.eu/r5r/"/>
     <dcat:distribution>
       <dcat:Distribution>
-        <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1-shacl_shapes.xml"/>
+        <dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1-shacl_shapes-strict.xml"/>
         <dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1"/>
         <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
         >2020-10-01</dct:modified>
@@ -44,7 +44,7 @@
         <dct:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
         <dct:description>This document specifies the constraints on properties and classes of DCAT-AP-DK expressed in SHACL (RDF/XML) </dct:description>
-        <dct:title>DCAT-AP-DK v.2.0.1 SHACL shapes (RDF/XML)</dct:title>
+        <dct:title>DCAT-AP-DK v.2.0.1 SHACL shapes - strict (RDF/XML)</dct:title>
       </dcat:Distribution>
     </dcat:distribution>
     <prof:isProfileOf rdf:resource="http://www.w3.org/ns/dcat#"/>
