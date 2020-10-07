@@ -2184,7 +2184,7 @@
 		<sh:description xml:lang="da">Denne egenskab angiver en ressource som er relateret til den aktuelle ressource.</sh:description>		 
 		<rdfs:comment xml:lang="en">A related resource.</rdfs:comment>		  
 		<rdfs:comment xml:lang="da">En relateret ressource.</rdfs:comment>	
-        <sh:nodeKind rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape"/>	      
+        <sh:node rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape"/>	      
         <sh:class rdf:resource="http://www.w3.org/ns/dcat#Role"/>
         <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
         <sh:path rdf:resource="http://purl.org/dc/terms/relation"/>
