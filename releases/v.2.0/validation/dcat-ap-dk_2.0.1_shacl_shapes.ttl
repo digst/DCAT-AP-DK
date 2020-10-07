@@ -1180,7 +1180,7 @@
     sh:name "relation"@en, "relation"@da ;
     sh:description "This property refers to the resource related to the source resource."@en, "Denne egenskab angiver en ressource som er relateret til den aktuelle ressource."@da ;
     rdfs:comment "A related resource."@en, "En relateret ressource."@da ;
-    sh:nodeKind <https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape> ;
+    sh:node <https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape> ;
     sh:class dcat:Role ;
     sh:minCount 1 ;
     sh:path dc:relation ;
