@@ -4,7 +4,7 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		 xmlns:owl="http://www.w3.org/2002/07/owl#" 
 		 xmlns:org="http://www.w3.org/ns/org#"
-		 xmlns:adms="http://purl.org/adms"			 
+		 xmlns:adms="http://www.w3.org/ns/adms#"			 
          xmlns:dcat="http://www.w3.org/ns/dcat#"
          xmlns:dcat-ap="http://data.europa.eu/r5r/"
 		 xmlns:dcat-ap-dk="https://data.gov.dk/model/profile/dcat-ap-dk/"
