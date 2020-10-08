@@ -2184,7 +2184,7 @@ dfn > a.self-link::before      { content: "#"; }
   </nav>
   <main>
    <p>DCAT-AP-DK 2.0.1 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur (<a href="https://arkitektur.digst.dk/">FDA</a>)</p>
-   <p>Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi">XMI</a>, <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">SHACL</a> og <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/rdf">RDF</a>.</p>
+   <p>Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi">XMI</a>, <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">SHACL/RDF</a>.</p>
    <p>Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
    <h2 class="heading settled" data-level="1" id="introduktion"><span class="secno">1. </span><span class="content">Introduktion</span><a class="self-link" href="#introduktion"></a></h2>
    <p>DCAT-AP-DK 2.0.1 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer.</p>
@@ -2511,8 +2511,10 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dd>Denne egenskab angiver den aktør der primært er ansvarlig for katalogets skabelse.
     <dt>Anvendelsesnote (en)
     <dd>This property refers to the entity primarily responsible for producing the catalogue.
+    <dt>Definition (da)
+    <dd>En entitet der er ansvarlig for ressourcens skabelse.	    
     <dt>Definition (en)
-    <dd>An entity responsible for making the resource.En entitet der er ansvarlig for ressourcens skabelse.
+    <dd>An entity responsible for making the resource.
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -5526,9 +5528,9 @@ DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, so
    <h3 class="heading settled" data-level="7.3" id="begrebmodel-for-beskrivelse-af-datast"><span class="secno">7.3. </span><span class="content">Begrebmodel for beskrivelse af datasæt</span><a class="self-link" href="#begrebmodel-for-beskrivelse-af-datast"></a></h3>
    <ul>
     <li data-md>
-     <p>URI: https://data.gov.dk/concept/core/dataset-1.0.0</p>
+     <p>URI: https://data.gov.dk/concept/core/dataset/</p>
     <li data-md>
-     <p>Namespace: https://data.gov.dk/concept/core/dataset/</p>
+     <p>Denne version: https://data.gov.dk/concept/core/dataset-1.0.0</p>
     <li data-md>
      <p>Modelnavn (label): Begrebsmodel for beskrivelse datasæt og datakataloger</p>
     <li data-md>
