@@ -1,6 +1,6 @@
 
 
-<p><a href="DCAT-DK.png"><img src="DCAT-DK.png" alt="Vokabularet som UML-diagram"/></a></p>
+<p><a href="DCAT-DK 1.0.png"><img src="DCAT-DK 1.0.png" alt="Vokabularet som UML-diagram"/></a></p>
 
 DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.
 Vokabularets fire egenskaber er:
