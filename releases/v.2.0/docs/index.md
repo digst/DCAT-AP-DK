@@ -178,7 +178,7 @@ Logo: digst...
 
 DCAT-AP-DK 2.0.1 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
 
-Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation) og [RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/rdf).
+Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL/RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation).
 
 Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
@@ -538,8 +538,10 @@ Klassens egenskaber:
 <dd>Denne egenskab angiver den aktør der primært er ansvarlig for katalogets skabelse.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the entity primarily responsible for producing the catalogue.</dd>
+<dt>Definition (da)</dt>
+<dd>En entitet der er ansvarlig for ressourcens skabelse.</dd>
 <dt>Definition (en)</dt>
-<dd>An entity responsible for making the resource.En entitet der er ansvarlig for ressourcens skabelse.</dd>
+<dd>An entity responsible for making the resource..</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -3713,8 +3715,8 @@ Relevante links:
 
 
 ## Begrebmodel for beskrivelse af datasæt
-- URI: https://data.gov.dk/concept/core/dataset-1.0.0
-- Namespace: https://data.gov.dk/concept/core/dataset/
+- URI: https://data.gov.dk/concept/core/dataset/
+- Denne version:  https://data.gov.dk/concept/core/dataset-1.0.0
 - Modelnavn (label): Begrebsmodel for beskrivelse datasæt og datakataloger
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 1.0.0
