@@ -2,7 +2,7 @@
 DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.
 Vokabularets fire egenskaber er:
 
-### dcat-dk:datasetResponsibleOrganisation
+**dcat-dk:datasetResponsibleOrganisation**
    Organisation der har det juridiske ansvar for datasættet
 
 ### dcat-dk:hasConfidentialityType
