@@ -6,11 +6,14 @@ Vokabularets fire egenskaber er:
 
 Organisation der har det juridiske ansvar for datasættet
 
-** dcat-dk:hasConfidentialityType **
-   Angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives
+**dcat-dk:hasConfidentialityType**
 
-### dcat-dk:personalDataCategory
-   Udfaldsrummet for denne egenskab skal være en klassifikation
+Angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives
 
-### dcat-dk:paymentImposedContents#
-   Angivelse af hvorvidt datasættet er betalingspålagt eller ej. 
+**dcat-dk:personalDataCategory**
+
+Udfaldsrummet for denne egenskab skal være en klassifikation
+
+**dcat-dk:paymentImposedContents**
+
+Angivelse af hvorvidt datasættet er betalingspålagt eller ej. 
