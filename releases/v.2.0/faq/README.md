@@ -104,6 +104,9 @@ Læs mere her: https://github.com/w3c/dxwg/wiki/Dataset-(and-other-DCAT)-version
 ### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
 Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
 
+### Hvor finder jeg eksempler på anvendelse af DCAT, DCAT-AP og DCAT-AP-dk?
+Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
+
 ### Findes der andre generelle specifikationer til beskrivelse af datasæt?
 Ja, udover W3Cs DCAT specificerer Schema.org også [datasæt](https://schema.org/Dataset)
 
