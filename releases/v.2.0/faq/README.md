@@ -108,12 +108,26 @@ Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-da
 Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
 
 ### Findes der andre generelle specifikationer til beskrivelse af datasæt?
-Ja, udover W3Cs DCAT specificerer Schema.org også [datasæt](https://schema.org/Dataset)
+Ja, se fx.
 
-Schema.org er et samarbejde imellem de største søgemaskiner i et forsøg på at levere rigere og bedre søgeresultater på nettet. Opmærker man derfor med Schema.org vil datasættet derfor typisk opnås en bedre formidling og placering søgemaskinernes resultatliste. 
-Der er et pågående arbejde i regi af W3C vedrørende mapping mellem DCAT-AP og Schema.org.
-
+[Schema.org](https://schema.org/Dataset).
+Schema.org er et samarbejde imellem de største søgemaskiner i et forsøg på at levere rigere og bedre søgeresultater på nettet. Opmærker man derfor med Schema.org vil datasættet derfor typisk opnås en bedre formidling og placering søgemaskinernes resultatliste. Der er et pågående arbejde i regi af W3C vedrørende mapping mellem DCAT-AP og Schema.org.
 Læs mere her: https://schema.org/Dataset; https://schema.org/docs/data-and-datasets.html; https://ec-jrc.github.io/dcat-ap-to-schema-org/
+
+[ISO/IEC 11179-7:2019(en)](https://webshop.ds.dk/da-dk/standarder/standard/sprog-og-operativsystemer/iso-iec-11179-72019)
+Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registries (MDR) — Part 7: Metamodel for data set registration), udvides ISO 11179 Metadata Registry (MDR) til datasætbeskrivelse, og det står anført at standarden "was prepared taking into account concepts described in the following documents: — Data Catalog Vocabulary (DCAT)[1] (published by the World Wide Web Consortium (W3C)) (..);"
+
+### Hvilke mapninger mellem DCAT-AP og øvrige specifikationer findes der?
+- [GeoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) (EU ISA Programme) - Defines mappings from INSPIRE/ISO 19115 metadata to DCAT-AP
+  - [Alignment of INSPIRE metadata with DCAT-AP](https://ies-svn.jrc.ec.europa.eu/projects/metadata/wiki/Alignment_of_INSPIRE_metadata_with_DCAT-AP)
+  - [Mappings defined in GeoDCAT-AP](https://github.com/GeoCat/iso-19139-to-dcat-ap/blob/master/documentation/Mappings.md)
+- [ISO 19115 - DCAT - Schema.org mapping](https://www.w3.org/2015/spatial/wiki/ISO_19115_-_DCAT_-_Schema.org_mapping) (W3C SDW WG)
+- [StatDCAT-AP](https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe) (EU ISA Programme) - Defines mappings from SDMX metadata to DCAT-AP
+- [DDI v2 to Dublin Core](http://www.ddialliance.org/resources/ddi-profiles/dc) (DDI Alliance)
+- [DCAT to Schema.org mapping](https://project-open-data.cio.gov/metadata-resources/) (Project Open Data)
+- [DCAT-AP to Schema.org mapping](https://ec-jrc.github.io/dcat-ap-to-schema-org/) (JRC)
+- [DataCite to DCAT-AP mapping](https://ec-jrc.github.io/datacite-to-dcat-ap/) (JRC)
+Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_DCAT_application_profiles.29
 
 ### Kan jeg opmærke min eksisterende html-side med DCAT?
 Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
