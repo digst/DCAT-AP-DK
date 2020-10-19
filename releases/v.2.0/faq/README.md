@@ -25,8 +25,12 @@ Læs mere her:
 
 ### Hvilke egenskaber er obligatoriske til beskrivelse af datasæt? 
 Alle egenskaber er i specifikationen opmærket med deres kravniveau (obligatorisk, anbefalet eller valgfri), 
+
 Følgende egenskaber er obligatoriske: 
-titel (title), beskrivelse (description) - derudover skal entes udgiver (publisher) eller datasætansvarlig organisation DK angives.
+
+- titel (title), 
+- beskrivelse (description) -
+- udgiver (publisher) ELLER datasætansvarlig organisation DK
 
 Se også denne oversigt:
 https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory
@@ -34,8 +38,25 @@ og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger
 
 ### Hvilke egenskaber anbefales til beskrivelse af datasæt?
 Alle egenskaber er opmærket med deres kravniveau (obligatorisk, anbefalet eller valgfri).
+
 Følgende egenskaber anbefales: 
-identifikator (identifier), titel (title), beskrivelse (description), udgiver (publisher), datasætansvarlig organisation DK (dataset responsible organisation), skaber (creator), kontaktpunkt (contact point), har distribution (dataset distribution), destinationsside (landing page), overholder (conforms to), dokumentation (documentation), emne (theme/ category), sprog (language), dækningsperiode (temporal coverage), opdateringsfrekvens (frequency), udgivelsesdato (release date), seneste ændringsdato (update/ modification date)
+
+- identifikator (identifier), 
+- titel (title), 
+- beskrivelse (description), 
+- udgiver (publisher),
+- datasætansvarlig organisation DK (dataset responsible organisation), 
+- skaber (creator), 
+- kontaktpunkt (contact point), 
+- har distribution (dataset distribution), 
+- destinationsside (landing page), 
+- overholder (conforms to), 
+- dokumentation (documentation), 
+- emne (theme/ category), sprog (language),
+- dækningsperiode (temporal coverage), 
+- opdateringsfrekvens (frequency), 
+- udgivelsesdato (release date), 
+- seneste ændringsdato (update/ modification date)
 
 Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended
 og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger-af-dcat-ap-dk
