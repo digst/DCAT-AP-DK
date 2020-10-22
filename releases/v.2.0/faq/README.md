@@ -83,7 +83,27 @@ OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinations
 
 Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
 
+## RETTIGHEDER OG LICENSER
 
+### Hvordan udtrykkes licenser og rettighedsudsagn?
+
+På kataloget (dcat:Catalog) anvendes følgende:
+- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-licens-license
+- dcc:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-rettigheder-rights
+
+På datasættet (dcat:Dataset)  anvendes følgende:
+- dct:accessRights -  https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-adgangsrettigheder-access-rights
+
+På distributionen (dcat:Distributionen) anvendes følgende:
+- dct:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-rettigheder-rights%E2%91%A0
+- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-licens-license%E2%91%A0
+- odrl:hasPolicy - https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-har-politik-has-policy
+
+Rettighedsudsagnet beskrives med klassen dct:RightsStatement: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-rettighedsudsagn-rights-statement
+ 
+Ift. adgangsrettigheder kan klassifikationen Adgangsrettigheder anvendes: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#adgangsrettigheder
+
+Læs mere om anvendelse af ovenstående egenskaber i DCAT-AP-DK og her: https://www.w3.org/TR/vocab-dcat-2/#license-rights 
 
 ## DATAKVALITET
 
