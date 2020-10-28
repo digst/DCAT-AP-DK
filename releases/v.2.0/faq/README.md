@@ -146,7 +146,7 @@ https://github.com/w3c/dxwg/issues/868
 ### Hvordan skal versioner beskrives?
 Læs mere her: https://github.com/w3c/dxwg/wiki/Dataset-(and-other-DCAT)-versioning
 
-
+Det er et spørgsmål der behandles i DCAT-gruppen, og emnet forventes at blive behandles i DCAT 3.
 
 ## ADGANG TIL DATA
 
