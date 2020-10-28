@@ -62,7 +62,7 @@ Følgende egenskaber anbefales:
 Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended
 og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger-af-dcat-ap-dk
 
-### Hvorfor indeholder DCAT-AP-DK ikke flere egenskaber til beskrivelse af klassen X? 
+### Hvilken egenskaber til beskrivelse af klassen X indeholder DCAT-AP-DK? 
 DCAT og DCAT-AP har som det overordnede formål at beskrive _datasæt_ og _datakataloger_ og relationerne til øvrige centrale forretningsobjekter. Disse forretningsobjekter vil være defineret i selvstændige kernemodeller (RDF-vokabularer) og foldes ud dér med tilhørende egenskaber. Det centrale forretningsobjekt fra en ekstern kernemodel kan indgå i en given anvendelsesprofil og derved skabes der sammenhæng til de bagvedliggende kernemodeller og øvrige egenskaber derfra kan hentes ind efter behov.
 
 DCAT-AP og DCAT-AP-DK indeholder derfor ikke en fuld beskrivelse af eksempelvis organisationer, virtuelle visitkort, lokationer, begreber etc., men disse er modelleret i følgende W3C modeller:
@@ -80,7 +80,7 @@ Se oversigten her for at få et overblik over hvilke kernemodeller (RDF-vokabula
 https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces
 
 
-### Hvorfor indeholder DCAT-AP-DK ikke egenskaben X til beskrivelse af datasæt?
+### Kan man tilføje yderligere egenskaber til beskrivelse af datasæt end hvad der er indholdet i DCAT-AP-DK?
 Det er muligt at oprette en mere specifik profil baseret på en eksisterende profil såsom DCAT-AP-DK, så savner man bestemte egenskaber/modelelementer er det muligt at tilføje disse og dermed imødekomme behovene i en specifik anvendelseskontekst. Dog skal man følge nogle generelle retningslinjer for modellering med RDF:
 
 -	Hvis modelelementet allerede er defineret andetsteds, skal dette genbruges. I praksis skal man hente modelelementet ind med dets URI. 
