@@ -72,7 +72,7 @@ DCAT-AP og DCAT-AP-DK indeholder derfor ikke en fuld beskrivelse af eksempelvis 
 - vcard	http://www.w3.org/2006/vcard/ns#	Virtual Contact File Vocabulary
 - locn	http://www.w3.org/ns/locn#	Core Location
 
-DCAT, DCAT-AP og de øvrige modeller der udvikles i regi af EU SEMIC (The Semantic Interoperability Community) anvender en modelleringsmetode, som fremmer genbrugelighed og interoperabilitet. En del af modelleringsmetoden er, at opdele modelleringsarbejdet på en måde, så selvstændige emneområder modelleres selvstændigt - denne opdeling gør det muligt at genbruge eksterne modeller i egne modellering, og dermed skabes der automatisk sammenhæng med disse eksterne modeller. 
+DCAT, DCAT-AP og de øvrige modeller der udvikles i regi af EU SEMIC (The Semantic Interoperability Community) anvender en modelleringsmetode, som fremmer genbrugelighed og interoperabilitet. En del af modelleringsmetoden er, at opdele modelleringsarbejdet på en måde, så selvstændige emneområder modelleres selvstændigt - denne opdeling gør det muligt at genbruge eksterne modeller i egen modellering, og dermed skabes der automatisk sammenhæng med disse eksterne modeller. 
 
 Som metamodel anvendes RDF (Resource Description Framework).
 
