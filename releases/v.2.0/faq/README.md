@@ -205,11 +205,15 @@ Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_
 
 ### Kan jeg opmærke min eksisterende html-side med DCAT?
 Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
-RDFa er en W3C-anbefaling der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter, https://en.wikipedia.org/wiki/RDFa
 
-Se fx vejledninger og eksempler her: 
-- https://theodi.org/article/marking-up-your-dataset-with-dcat/
+JSON-LD (JavaScript Object Notation for Linked Data) er et format til struktureret opmærkning der indeholder linked data (LD) i en script-blok. Læs mere om RDFa her:  https://json-ld.org/
+Se yderligerevejledninger og eksempler med JSON-LD her: 
 - https://developers.google.com/search/docs/data-types/dataset
+- https://structuredseo.com/how-to-markup-structured-data-with-json-ld/
+- https://codelabs.developers.google.com/codelabs/structured-data/#0 
+
+RDFa (Resource Description Framework in attributes) er et format der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter. Læs mere om RDFa her: https://en.wikipedia.org/wiki/RDFa. Se yderligere vejledninger og eksempler med RDFa her: 
+- https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
 
 ### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
