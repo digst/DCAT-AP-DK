@@ -206,7 +206,7 @@ Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_
 ### Kan jeg opmærke min eksisterende html-side med DCAT?
 Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
 
-JSON-LD (JavaScript Object Notation for Linked Data) er et format til struktureret opmærkning der indeholder linked data (LD) i en script-blok. Læs mere om RDFa her:  https://json-ld.org/
+JSON-LD (JavaScript Object Notation for Linked Data) er et format til struktureret opmærkning der indeholder linked data (LD) i en script-blok. Læs mere om JSON-LD her:  https://json-ld.org/
 Se yderligerevejledninger og eksempler med JSON-LD her: 
 - https://developers.google.com/search/docs/data-types/dataset
 - https://structuredseo.com/how-to-markup-structured-data-with-json-ld/
