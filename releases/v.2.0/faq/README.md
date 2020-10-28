@@ -173,8 +173,8 @@ Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
 
 ## ANVENDELSE AF DCAT 
 
-### På hvilket niveau skal DCAT-AP-DK anvendes?
-DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt og definerer ikke på hvilket niveau anvendelsesprofilen skal anvendes. Det er op til den enkelte organisation at beslutte. Større datasæt kan også nedbrydes i mindre datasæt, men DCAT vil kunne anvendes til beskrivelse af begge 'niveauer'.
+### På hvilket detaljeringsniveau skal DCAT-AP-DK anvendes?
+DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt og definerer ikke på hvilket detaljeringsniveau anvendelsesprofilen skal anvendes. Det er op til den enkelte organisation at beslutte. Større datasæt kan også nedbrydes i mindre datasæt, men DCAT vil kunne anvendes til beskrivelse af begge 'niveauer'.
 
 
 ### Hvor finder jeg eksempler på anvendelse af DCAT, DCAT-AP og DCAT-AP-dk?
