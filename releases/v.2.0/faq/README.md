@@ -207,7 +207,7 @@ Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_
 Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
 
 JSON-LD (JavaScript Object Notation for Linked Data) er et format til struktureret opmærkning der indeholder linked data (LD) i en script-blok. Læs mere om JSON-LD her:  https://json-ld.org/
-Se yderligerevejledninger og eksempler med JSON-LD her: 
+Se yderligere vejledninger og eksempler med JSON-LD her: 
 - https://developers.google.com/search/docs/data-types/dataset
 - https://structuredseo.com/how-to-markup-structured-data-with-json-ld/
 - https://codelabs.developers.google.com/codelabs/structured-data/#0 
@@ -219,5 +219,5 @@ RDFa (Resource Description Framework in attributes) tilføjer et sæt attributni
 ### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
 Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
 
-### Hvilke applikationer understøtter DCAT?
+<!-- ### Hvilke applikationer understøtter DCAT? Tilføjes senere-->
 
