@@ -62,7 +62,7 @@ Følgende egenskaber anbefales:
 Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended
 og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger-af-dcat-ap-dk
 
-### Hvilken egenskaber til beskrivelse af klassen X indeholder DCAT-AP-DK? 
+### Hvilke egenskaber til beskrivelse af klassen X indeholder DCAT-AP-DK? 
 DCAT og DCAT-AP har som det overordnede formål at beskrive _datasæt_ og _datakataloger_ og relationerne til øvrige centrale forretningsobjekter. Disse forretningsobjekter vil være defineret i selvstændige kernemodeller (RDF-vokabularer) og foldes ud dér med tilhørende egenskaber. Det centrale forretningsobjekt fra en ekstern kernemodel kan indgå i en given anvendelsesprofil og derved skabes der sammenhæng til de bagvedliggende kernemodeller og øvrige egenskaber derfra kan hentes ind efter behov.
 
 DCAT-AP og DCAT-AP-DK indeholder derfor ikke en fuld beskrivelse af eksempelvis organisationer, virtuelle visitkort, lokationer, begreber etc., men disse er modelleret i følgende W3C modeller:
