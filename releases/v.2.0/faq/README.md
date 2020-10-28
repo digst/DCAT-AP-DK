@@ -80,7 +80,7 @@ Se oversigten her for at få et overblik over hvilke kernemodeller (RDF-vokabula
 https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces
 
 
-### Kan man tilføje yderligere egenskaber til beskrivelse af datasæt end hvad der er indholdet i DCAT-AP-DK?
+### Kan man tilføje yderligere egenskaber til beskrivelse af datasæt?
 Det er muligt at oprette en mere specifik profil baseret på en eksisterende profil såsom DCAT-AP-DK, så savner man bestemte egenskaber/modelelementer er det muligt at tilføje disse og dermed imødekomme behovene i en specifik anvendelseskontekst. Dog skal man følge nogle generelle retningslinjer for modellering med RDF:
 
 -	Hvis modelelementet allerede er defineret andetsteds, skal dette genbruges. I praksis skal man hente modelelementet ind med dets URI. 
