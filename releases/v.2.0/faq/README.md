@@ -203,6 +203,9 @@ Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registr
 
 Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_DCAT_application_profiles.29
 
+### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
+Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
+
 ### Kan jeg opmærke min eksisterende html-side med DCAT?
 Ja, DCAT-metadata kan indlejres i eksisterende opmærkning vha. JSON-LD eller RFDa.
 
@@ -216,8 +219,6 @@ RDFa (Resource Description Framework in attributes) tilføjer et sæt attributni
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
 
-### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
-Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
 
 <!-- ### Hvilke applikationer understøtter DCAT? Tilføjes senere-->
 
