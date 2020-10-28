@@ -89,30 +89,6 @@ Det er muligt at oprette en mere specifik profil baseret på en eksisterende pro
 
 Der er ingen faste, universelt gældende regler for hvordan eksisterende kernemodeller undersøges. Gode råd og sund fornuft er derfor modellørens udgangspunkt.
 
-### På hvilket niveau skal DCAT-AP-DK anvendes?
-DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt og definerer ikke på hvilket niveau anvendelsesprofilen skal anvendes. Det er op til den enkelte organisation at beslutte. Større datasæt kan også nedbrydes i mindre datasæt, men DCAT vil kunne anvendes til beskrivelse af begge 'niveauer'.
-
-## ADGANG TIL DATA
-
-### Hvordan angiver man hvordan brugeren får adgang til datasættet?
-- Destinationsside (på dcat:Resource): Se https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page 
-En destinationsside er en webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information.
-
-- Adgangs-URL (på dcat:Distribution): Se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_url
-En adgangs-URL er en URL for en ressource som giver adgang til en distribution af datasættet. Fx, destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben download-URL foretrækkes.
-
-- Dataadgangstjeneste (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_service
-Et websted eller endpoint der giver adgang til distributionen af datasættet. dcat:accessService BØR anvendes til at angive et link til en beskrivelse af en dcat:DataService som kan give adgang til distributionen.
-
-- Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_download_url
-Download-Url er en URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType. dcat:download-URL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request
-
-![DCAT-Datasæt-distribution](https://www.w3.org/2011/gld/wiki/images/2/26/Dcat-distribution-proposal.png "DCAT-AP 2.0.1 UML Diagram")
-
-OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), så bør destinationssidelinket gentages som adgangsadresse for en distribution 
-
-Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
-
 ## RETTIGHEDER OG LICENSER
 
 ### Hvordan udtrykkes licenser og rettighedsudsagn?
@@ -171,10 +147,35 @@ https://github.com/w3c/dxwg/issues/868
 Læs mere her: https://github.com/w3c/dxwg/wiki/Dataset-(and-other-DCAT)-versioning
 
 
+
+## ADGANG TIL DATA
+
+### Hvordan angiver man hvordan brugeren får adgang til datasættet?
+- Destinationsside (på dcat:Resource): Se https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page 
+En destinationsside er en webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information.
+
+- Adgangs-URL (på dcat:Distribution): Se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_url
+En adgangs-URL er en URL for en ressource som giver adgang til en distribution af datasættet. Fx, destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben download-URL foretrækkes.
+
+- Dataadgangstjeneste (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_service
+Et websted eller endpoint der giver adgang til distributionen af datasættet. dcat:accessService BØR anvendes til at angive et link til en beskrivelse af en dcat:DataService som kan give adgang til distributionen.
+
+- Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_download_url
+Download-Url er en URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType. dcat:download-URL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request
+
+![DCAT-Datasæt-distribution](https://www.w3.org/2011/gld/wiki/images/2/26/Dcat-distribution-proposal.png "DCAT-AP 2.0.1 UML Diagram")
+
+OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), så bør destinationssidelinket gentages som adgangsadresse for en distribution 
+
+Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
+
+
+
 ## ANVENDELSE AF DCAT 
 
-### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
-Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
+### På hvilket niveau skal DCAT-AP-DK anvendes?
+DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt og definerer ikke på hvilket niveau anvendelsesprofilen skal anvendes. Det er op til den enkelte organisation at beslutte. Større datasæt kan også nedbrydes i mindre datasæt, men DCAT vil kunne anvendes til beskrivelse af begge 'niveauer'.
+
 
 ### Hvor finder jeg eksempler på anvendelse af DCAT, DCAT-AP og DCAT-AP-dk?
 Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
@@ -210,6 +211,9 @@ Se fx vejledninger og eksempler her:
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://developers.google.com/search/docs/data-types/dataset
 - https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
+
+### Hvordan anvender man DCAT til beskrivelse af forskningsdata?
+Læs mere her: https://ec.europa.eu/jrc/en/publication/using-dcat-ap-research-data; https://ec-jrc.github.io/dcat-ap-jrc/; https://www.go-fair.org/fair-principles/
 
 ### Hvilke applikationer understøtter DCAT?
 
