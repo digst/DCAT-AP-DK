@@ -212,7 +212,7 @@ Se yderligerevejledninger og eksempler med JSON-LD her:
 - https://structuredseo.com/how-to-markup-structured-data-with-json-ld/
 - https://codelabs.developers.google.com/codelabs/structured-data/#0 
 
-RDFa (Resource Description Framework in attributes) er et format der tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter. Læs mere om RDFa her: https://en.wikipedia.org/wiki/RDFa. Se yderligere vejledninger og eksempler med RDFa her: 
+RDFa (Resource Description Framework in attributes) tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter. Læs mere om RDFa her: https://en.wikipedia.org/wiki/RDFa. Se yderligere vejledninger og eksempler med RDFa her: 
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
 - https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
 
