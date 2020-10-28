@@ -21,7 +21,7 @@ Læs mere her:
 - https://www.go-fair.org/fair-principles/f1-meta-data-assigned-globally-unique-persistent-identifiers/
 
 
-## KRAV OM OVERHOLDELSE
+## PROFILENS EGENSKABER OG KRAV OM OVERHOLDELSE
 
 ### Hvilke egenskaber er obligatoriske til beskrivelse af datasæt? 
 Alle egenskaber er i specifikationen opmærket med deres kravniveau (obligatorisk, anbefalet eller valgfri), 
@@ -61,6 +61,36 @@ Følgende egenskaber anbefales:
 
 Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended
 og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger-af-dcat-ap-dk
+
+## Hvorfor indeholder DCAT-AP-DK ikke flere egenskaber til beskrivelse af klassen X? 
+DCAT og DCAT-AP har som det overordnede formål at beskrive _datasæt_ og _datakataloger_ og relationerne til øvrige centrale forretningsobjekter. Disse forretningsobjekter vil være defineret i selvstændige kernemodeller (RDF-vokabularer) og foldes ud dér med tilhørende egenskaber. Det centrale forretningsobjekt fra en ekstern kernemodel kan indgå i en given anvendelsesprofil og derved skabes der sammenhæng til de bagvedliggende kernemodeller og øvrige egenskaber derfra kan hentes ind efter behov.
+
+DCAT-AP og DCAT-AP-DK indeholder derfor ikke en fuld beskrivelse af eksempelvis organisationer, virtuelle visitkort, lokationer, begreber etc., men disse er modelleret i følgende W3C modeller:
+
+- skos	http://www.w3.org/2004/02/skos/core#	Simple Knowledge Organization System, se også dansk anvendelsesprofil [Anvendelsesprofil for klassifikation](https://arkitektur.digst.dk/node/587)
+- org	http://www.w3.org/ns/org#	The Organization Ontology, se også dansk anvendelsesprofil [Anvendelsesprofil for organisation](https://arkitektur.digst.dk/node/586)
+- vcard	http://www.w3.org/2006/vcard/ns#	Virtual Contact File Vocabulary
+- locn	http://www.w3.org/ns/locn#	Core Location
+
+DCAT, DCAT-AP og de øvrige modeller der udvikles i regi af EU SEMIC (The Semantic Interoperability Community) anvender en modelleringsmetode, som fremmer genbrugelighed og interoperabilitet. En del af modelleringsmetoden er, at opdele modelleringsarbejdet på en måde, så selvstændige emneområder modelleres selvstændigt - denne opdeling gør det muligt at genbruge eksterne modeller i egne modellering, og dermed skabes der automatisk sammenhæng med disse eksterne modeller. 
+
+Som metamodel anvendes RDF (Resource Description Framework).
+
+Se oversigten her for at få et overblik over hvilke kernemodeller (RDF-vokabularer) der sammensættes i DCAT-AP-DK:
+https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces
+
+
+### Hvorfor indeholder DCAT-AP-DK ikke egenskaben X til beskrivelse af datasæt?
+Det er muligt at oprette en mere specifik profil baseret på en eksisterende profil såsom DCAT-AP-DK, så savner man bestemte egenskaber/modelelementer er det muligt at tilføje disse og dermed imødekomme behovene i en specifik anvendelseskontekst. Dog skal man følge nogle generelle retningslinjer for modellering med RDF:
+
+-	Hvis modelelementet allerede er defineret andetsteds, skal dette genbruges. I praksis skal man hente modelelementet ind med dets URI. 
+-	Hvis modelelementet kan fortolkes som en specialisering af et eksisterende modelelement, skal der oprettes et nyt modelelement med en specialiseringsrelation.
+-	Hvis modelelementet ikke allerede er defineret, og det ikke kan fortolkes som en specialisering, og der er behov for et nyt element, skal dette oprettes.
+
+Der er ingen faste, universelt gældende regler for hvordan eksisterende kernemodeller undersøges. Gode råd og sund fornuft er derfor modellørens udgangspunkt.
+
+### På hvilket niveau skal DCAT-AP-DK anvendes?
+DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt og definerer ikke på hvilket niveau anvendelsesprofilen skal anvendes. Det er op til den enkelte organisation at beslutte. Større datasæt kan også nedbrydes i mindre datasæt, men DCAT vil kunne anvendes til beskrivelse af begge 'niveauer'.
 
 ## ADGANG TIL DATA
 
