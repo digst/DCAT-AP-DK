@@ -142,6 +142,7 @@ I den danske profilering af DCAT er det valgt i videst muligt omfang at videref�
 ### Hvordan beskriver man tidsserier?
 Læs mere her: https://joinup.ec.europa.eu/release/dcat-ap-how-model-dataset-series og
 https://github.com/w3c/dxwg/issues/868
+Se eksempler her: https://github.com/w3c/dxwg/wiki/Examples-on-dataset-series
 
 ### Hvordan skal versioner beskrives?
 Læs mere her: https://github.com/w3c/dxwg/wiki/Dataset-(and-other-DCAT)-versioning
