@@ -719,9 +719,9 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a Catalogue Record that is part of the Catalogue</dd>
 <dt>Definition (da)</dt>
-<dd>En post der beskriver registreringen af et enkelt datasæt eller en datatjeneste som er opført i kataloget.</dd>
+<dd>En post der beskriver registreringen af en enkelt ressource som er opført i kataloget.</dd>
 <dt>Definition (en)</dt>
-<dd>A record describing the registration of a single dataset or data service that is part of the catalog.</dd>
+<dd>A record in a catalog, describing the registration of a single dcat:Resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
