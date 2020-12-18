@@ -89,6 +89,12 @@ Det er muligt at oprette en mere specifik profil baseret på en eksisterende pro
 
 Der er ingen faste, universelt gældende regler for hvordan eksisterende kernemodeller undersøges. Gode råd og sund fornuft er derfor modellørens udgangspunkt.
 
+### Hvordan kan egenskaber såsom titel og beskrivelse forekomme flere gange?
+Når egenskaber såsom dct:title og dct:description har multipliciteten en-til-mange så er det for at kunne favne sprogvarianter, fx
+  dct:title "Dataset 001"@en ;
+  dct:title "Datasæt 001"@da ; 
+
+
 ## RETTIGHEDER OG LICENSER
 
 ### Hvordan udtrykkes licenser og rettighedsudsagn?
