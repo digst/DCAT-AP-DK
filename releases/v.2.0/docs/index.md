@@ -302,7 +302,7 @@ En distribution (dcat:Distribution) er en specifik repræsentation af et datasæ
 
 Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber, der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
 ’titel’, ’beskrivelse’, ’dokumentation’, ’udgivelsesdato’, ’seneste ændringsdato’, ’overholder’, ’geografisk opløsning’ og ’tidslig opløsning’.
-Hvor en distributions egenskabs information svarer til den information, der er givet på datasættets tilsvarende egenskab, er det ikke nødvendigt at gentage informationen. I de tilfælde, hvor der altså ikke er information for en distributions egenskab, gælder den information, der er givet for datasættets tilsvarende egenskab.
+Hvor en distributions egenskabsinformation svarer til den information, der er givet på datasættets tilsvarende egenskab, er det ikke nødvendigt at gentage informationen. I de tilfælde, hvor der altså ikke er information for en distributions egenskab, gælder den information, der er givet for datasættets tilsvarende egenskab.
 Hvis der for egenskaben er relevante tilføjelser, eller der er afvigelser i forhold til information givet for datasættet, bør de fremgå af distributionens egenskab.
 
 ## Katalogpost 
@@ -389,7 +389,7 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
 I indholdsfortegnelsen har disse mærket 'DK'.
 
 ### Udeladelser
-Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP 2.0.1.
+Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP-DK 2.0.1.
 
 ## Centrale modeller som anvender DCAT
 
@@ -798,9 +798,9 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>A description of a Dataset’s entry in the Catalogue. </dd>
 <dt>Definition (da)</dt>
-<dd>En post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste.</dd>
+<dd>En post i et katalog der beskriver registreringen af et enkelt katalogiseret ressource.</dd>
 <dt>Definition (en)</dt>
-<dd>A record in a data catalog, describing the registration of a single dataset or data service.</dd>
+<dd>A record in a catalog, describing the registration of a single dcat:Resource.</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	 
@@ -1115,7 +1115,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>https://www.w3.org/ns/org#Organization</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den organisation der har det juridiske ansvar for datasættet. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) </dd>
+<dd>Denne egenskab angiver den organisation der har det juridiske ansvar for det samlede datasæt. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property specifies the organization that is legally accountable for the dataset. </dd>
 <dt>Definition (da)</dt>
@@ -3384,7 +3384,7 @@ Klassens egenskaber:
 
 
 ## Klasse: Ressource (Resource) 
-<img src="img/Ressource.png" alt="">
+<img src="img/Ressource.png" alt="Ressource">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/2000/01/rdf-schema#Resource</dd>
@@ -3400,7 +3400,7 @@ Klassens egenskaber:
 # Klassifikationer
 I forbindelse med DCAT-AP udpeger Europa-Kommissionen en række klassifikationer, som skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikationer til anvendelse i dansk fællesoffentlig kontekst.
 
-Herunder  ses hvilke klassifikationer, der er i advendelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf)
+Herunder  ses hvilke klassifikationer, der er i anvendelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf)
 
 Bemærk at hvis den pågældende egenskab anvendes, er det et krav, at den udpegede klassifikation også anvendes (med enkelte undtagelser - se noter).
 
@@ -3529,7 +3529,7 @@ Egenskab: adms:status
 
 **KLASSIFIKATION: ADMS Statusser**
 
-EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme). 
+EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret i begrebssystemer (instanser af skos:ConceptScheme). 
 Begreberne anvendt til klassifikation af status for datasæt er struktureret i begrebssystemet med URI = http://purl.org/adms/status/1.0 
 
 [Se klassifikationen ADMS Statusser](http://purl.org/adms/status/)
@@ -3546,7 +3546,7 @@ Egenskab: dct:type (på foaf:Agent)
 
 **KLASSIFIKATION: ADMS udgivertyper**
 
-EU har samlet en række klassifikationen og kontrollerede vokabularer i filen [ADMS_SKOS_v1.00.rdf](https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf). I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme). 
+EU har samlet en række klassifikationen og kontrollerede vokabularer i filen [ADMS_SKOS_v1.00.rdf](https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf). I filen er de enkelte begreber (instanser af skos:Concept) struktureret i begrebssystemer (instanser af skos:ConceptScheme). 
 Begreberne anvendt til klassifikation af udgivertyper er struktureret i begrebssystemet med URI = http://purl.org/adms/publishertype/1.0 
 
 [Se klassifikationen ADMS udgivertyper](http://purl.org/adms/publishertype/)
@@ -3610,7 +3610,9 @@ Egenskab: dct:accessRights
 URI: http://publications.europa.eu/resource/authority/access-right
 
 [Se klassifikationen Adgangsrettigheder]https://op.europa.eu/da/web/eu-vocabularies/at-concept-scheme/-/resource/authority/access-right/?target=Browse&uri=http://publications.europa.eu/resource/authority/access-right
-
+* http://publications.europa.eu/resource/authority/access-right/PUBLIC
+* http://publications.europa.eu/resource/authority/access-right/RESTRICTED
+* http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC
 
 ## Personoplysningskategori
 **KLASSIFIKATION: Personoplysningskategorier**
@@ -3670,7 +3672,7 @@ SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF
 Find SHACL-filen her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
 
 I SHACL Playground kan indholdet af TTL-filen her indsættes, hvorefter DCAT-AP-DK-metadata indsættes.
-DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, som anvender denne.
+DCAT-AP er også udtrykt med SHACL, og der er udviklet en online validator, som anvender denne.
 
 Relevante links:
 * SHACL Playground: [https://shacl.org/playground/](https://shacl.org/playground/)
@@ -3682,7 +3684,7 @@ Relevante links:
 ## UML-diagrammer
 
 ### UML-diagram: DCAT-AP-DK
-- URI: https://data.gov.dk/model/profile/dcat-ap-dk
+- URI: https://data.gov.dk/model/profile/dcat-ap-dk/
 - Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
@@ -3698,7 +3700,7 @@ Relevante links:
 
 
 ### UML-diagram: DCAT-DK
-- URI: https://data.gov.dk/model/core/dcat-dk
+- URI: https://data.gov.dk/model/core/dcat-dk/
 - Denne version: https://data.gov.dk/model/core/dcat-dk-1.0.0/
 - Modelnavn (label): DCAT-DK
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
@@ -3725,7 +3727,7 @@ Relevante links:
 - Godkendelsesstatus (approvalStatus): godkendt
 - Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
-- Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.
+- Kommentar (comment): Begrebsmodel der indeholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.
 
 <p class="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 "/></a></p>
 
@@ -3768,7 +3770,7 @@ Relevante links:
  <tr><td>begrebssystem</td><td>samling af ét eller flere begreber, samt eventuelt også udsagn om de indbyrdes semantiske relationer mellem disse begreber</td><td>&nbsp;</td><td>http://www.w3.org/2004/02/skos/core# </td><td>&nbsp;nej</td><td>concept scheme </td></tr>
  <tr><td>bytestørrelse</td><td>størrelsen af en distribution angivet i bytes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>bytesize </td></tr>  
  <tr><td>sprog</td><td>system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>language </td></tr>
- <tr><td>datasætansvarlig</td><td>organisation der har det juridiske ansvar for datasættet</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset responsible organisation </td></tr>
+ <tr><td>datasætansvarlig</td><td>organisation der har det juridiske ansvar for det samlede datasæt</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset responsible organisation </td></tr>
  <tr><td>datasætskaber</td><td>aktør der er primært ansvarlig for datasættets skabelse</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset creator </td></tr>
  <tr><td>skaber</td><td>entitet som er ansvarlig for ressourcens skabelse</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>creator </td></tr>
  <tr><td>udgiver</td><td>entitet som er ansvarlig for at gøre ressourcen tilgængelig</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>publisher </td></tr> 
