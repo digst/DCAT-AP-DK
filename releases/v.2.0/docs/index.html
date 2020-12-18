@@ -2298,7 +2298,7 @@ Blandt andet kræves det, at der anvendes en tværgående taksonomi.
     En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri. <br><a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution">Gå til klassen Distribution</a> 
    <p>Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber, der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
 ’titel’, ’beskrivelse’, ’dokumentation’, ’udgivelsesdato’, ’seneste ændringsdato’, ’overholder’, ’geografisk opløsning’ og ’tidslig opløsning’.
-Hvor en distributions egenskabs information svarer til den information, der er givet på datasættets tilsvarende egenskab, er det ikke nødvendigt at gentage informationen. I de tilfælde, hvor der altså ikke er information for en distributions egenskab, gælder den information, der er givet for datasættets tilsvarende egenskab.
+Hvor en distributions egenskabsinformation svarer til den information, der er givet på datasættets tilsvarende egenskab, er det ikke nødvendigt at gentage informationen. I de tilfælde, hvor der altså ikke er information for en distributions egenskab, gælder den information, der er givet for datasættets tilsvarende egenskab.
 Hvis der for egenskaben er relevante tilføjelser, eller der er afvigelser i forhold til information givet for datasættet, bør de fremgå af distributionens egenskab.</p>
    <h3 class="heading settled" data-level="2.6" id="katalogpost"><span class="secno">2.6. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
     En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger, såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i kataloger, hvor der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget. <br><a href="https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record">Gå til klassen Katalogpost</a> 
@@ -2380,7 +2380,7 @@ Klassen for distributioner er med i de to øvrige diagrammer.</p>
    </ul>
    <p>I indholdsfortegnelsen har disse mærket <a class="property" data-link-type="propdesc">DK</a>.</p>
    <h4 class="heading settled" data-level="3.3.3" id="udeladelser"><span class="secno">3.3.3. </span><span class="content">Udeladelser</span><a class="self-link" href="#udeladelser"></a></h4>
-    Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP 2.0.1. 
+    Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP-DK 2.0.1. 
    <h3 class="heading settled" data-level="3.4" id="centrale-modeller-som-anvender-dcat"><span class="secno">3.4. </span><span class="content">Centrale modeller som anvender DCAT</span><a class="self-link" href="#centrale-modeller-som-anvender-dcat"></a></h3>
    <p>DCAT anvendes allerede i danske specifikationer - fx i <a href="https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet">Fælles sprog for datakvalitet</a> og Standard for beskrivelse af it-systemer <a href="https://digst.github.io/IT-System-AP/SYS-AP/docs/">SYS-AP</a> og <a href="https://digst.github.io/IT-System-AP/archvSYS-AP/docs/">archvSYS-AP</a>.</p>
    <p>DCAT anvendes desuden i en  række internationale specifikationer såsom Europa-Kommissionens Single Digital Gateway - <a href="https://github.com/catalogue-of-services-isa/SDG-model">SDG-metamodel</a>, Core Public Service Vocabulary Application Profile (<a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile">CPSV-AP</a>) og
@@ -2683,9 +2683,9 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Anvendelsesnote (en)
     <dd>This property refers to a Catalogue Record that is part of the Catalogue
     <dt>Definition (da)
-    <dd>En post der beskriver registreringen af et enkelt datasæt eller en datatjeneste som er opført i kataloget.
+    <dd>En post der beskriver registreringen af en enkelt ressource som er opført i kataloget.
     <dt>Definition (en)
-    <dd>A record describing the registration of a single dataset or data service that is part of the catalog.
+    <dd>A record in a catalog, describing the registration of a single dcat:Resource.
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
@@ -3055,13 +3055,13 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
     <dt>Rækkevidde
     <dd>https://www.w3.org/ns/org#Organization
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den organisation der har det juridiske ansvar for datasættet. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) 
+    <dd>Denne egenskab angiver den organisation der har det juridiske ansvar for det samlede datasæt. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) 
     <dt>Anvendelsesnote (en)
-    <dd>This property specifies the organization that is legally accountable for the dataset. 
+    <dd>This property specifies the organization that is legally accountable for the entire dataset. 
     <dt>Definition (da)
-    <dd>organisation der har det juridiske ansvar for datasættet
+    <dd>organisation der har det juridiske ansvar for det samlede datasæt
     <dt>Definition (en)
-    <dd>organization that is legally accountable for the dataset
+    <dd>organization that is legally accountable for the entire dataset
     <dt>Multiplicitet
     <dd>0..1
     <dt>Kravniveau
@@ -5194,7 +5194,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    </dl>
    <h2 class="heading settled" data-level="5" id="klassifikationer"><span class="secno">5. </span><span class="content">Klassifikationer</span><a class="self-link" href="#klassifikationer"></a></h2>
     I forbindelse med DCAT-AP udpeger Europa-Kommissionen en række klassifikationer, som skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikationer til anvendelse i dansk fællesoffentlig kontekst. 
-   <p>Herunder  ses hvilke klassifikationer, der er i advendelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 <a href="https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf">Controlled Vocabularies i DCAT-AP</a></p>
+   <p>Herunder  ses hvilke klassifikationer, der er i anvendelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 <a href="https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2019-12/12f0dc1d-50b6-43e4-90c2-0afe213ac2be/DCAT_AP_2.0.0.pdf">Controlled Vocabularies i DCAT-AP</a></p>
    <p>Bemærk at hvis den pågældende egenskab anvendes, er det et krav, at den udpegede klassifikation også anvendes (med enkelte undtagelser - se noter).</p>
    <h3 class="heading settled" data-level="5.1" id="datatemaer-emner"><span class="secno">5.1. </span><span class="content">Datatemaer (Emner)</span><a class="self-link" href="#datatemaer-emner"></a></h3>
     Egenskab: dcat:theme 
@@ -5293,7 +5293,7 @@ Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution
    <h3 class="heading settled" data-level="5.8" id="statusser"><span class="secno">5.8. </span><span class="content">Statusser</span><a class="self-link" href="#statusser"></a></h3>
     Egenskab: adms:status 
    <p><strong>KLASSIFIKATION: ADMS Statusser</strong></p>
-   <p>EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme).
+   <p>EU har samlet en række klassifikationen og kontrollerede vokabularer i filen https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf. I filen er de enkelte begreber (instanser af skos:Concept) struktureret i begrebssystemer (instanser af skos:ConceptScheme).
 Begreberne anvendt til klassifikation af status for datasæt er struktureret i begrebssystemet med URI = http://purl.org/adms/status/1.0</p>
    <p><a href="http://purl.org/adms/status/">Se klassifikationen ADMS Statusser</a></p>
    <ul>
@@ -5310,7 +5310,7 @@ Begreberne anvendt til klassifikation af status for datasæt er struktureret i b
    <h3 class="heading settled" data-level="5.9" id="udgivertyper"><span class="secno">5.9. </span><span class="content">Udgivertyper</span><a class="self-link" href="#udgivertyper"></a></h3>
     Egenskab: dct:type (på foaf:Agent) 
    <p><strong>KLASSIFIKATION: ADMS udgivertyper</strong></p>
-   <p>EU har samlet en række klassifikationen og kontrollerede vokabularer i filen <a href="https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf">ADMS_SKOS_v1.00.rdf</a>. I filen er de enkelte begreber (instanser af skos:Concept) struktureret som begrebssystemer (instanser af skos:ConceptScheme).
+   <p>EU har samlet en række klassifikationen og kontrollerede vokabularer i filen <a href="https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.rdf">ADMS_SKOS_v1.00.rdf</a>. I filen er de enkelte begreber (instanser af skos:Concept) struktureret i begrebssystemer (instanser af skos:ConceptScheme).
 Begreberne anvendt til klassifikation af udgivertyper er struktureret i begrebssystemet med URI = http://purl.org/adms/publishertype/1.0</p>
    <p><a href="http://purl.org/adms/publishertype/">Se klassifikationen ADMS udgivertyper</a></p>
    <ul>
@@ -5460,7 +5460,7 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
    <p>SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).</p>
    <p>Find SHACL-filen her: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation</a></p>
    <p>I SHACL Playground kan indholdet af TTL-filen her indsættes, hvorefter DCAT-AP-DK-metadata indsættes.
-DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, som anvender denne.</p>
+DCAT-AP er også udtrykt med SHACL, og der er udviklet en online validator, som anvender denne.</p>
    <p>Relevante links:</p>
    <ul>
     <li data-md>
@@ -5476,7 +5476,7 @@ DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, so
    <h4 class="heading settled" data-level="7.2.1" id="uml-diagram-dcat-ap-dk"><span class="secno">7.2.1. </span><span class="content">UML-diagram: DCAT-AP-DK</span><a class="self-link" href="#uml-diagram-dcat-ap-dk"></a></h4>
    <ul>
     <li data-md>
-     <p>URI: https://data.gov.dk/model/profile/dcat-ap-dk</p>
+     <p>URI: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
     <li data-md>
      <p>Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/</p>
     <li data-md>
@@ -5548,7 +5548,7 @@ DCAT-AP er også udtrykt med DCAT-AP, og der er udviklet en online validator, so
     <li data-md>
      <p>Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10</p>
     <li data-md>
-     <p>Kommentar (comment): Begrebsmodel der indholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.</p>
+     <p>Kommentar (comment): Begrebsmodel der indeholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.</p>
    </ul>
    <p class="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img alt="Illustration af Begrebsmodel for datasæt v1.0.0 " src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"></a></p>
    <table class="term-table">
