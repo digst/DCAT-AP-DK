@@ -328,7 +328,7 @@ This class is optional.
 ## Illustration
 The below illustration depicts the three commonly used elements in the basic structure, namely "catalog" (mandatory), "dataset" (mandatory) and "distribution" (recommended):
 
-<p> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-basic-structure.png"> <img src = "img/Illustration-DCAT-AP-GB-v2.0.1-Basic- structure.png "alt =" Figure DCAT levels "/> </a> </p>
+<p> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-basic-structure.png"> <img src = "img/Illustration-DCAT-AP-GB-v2.0.1-Basic-structure.png" alt ="Figure DCAT levels"/> </a> </p>
 
 
 # Requirements and compliance
@@ -352,22 +352,22 @@ As described in the chapter ‘Basic structure of the model’, a distribution i
 For an overview of applied namespaces, see the appendix [Namespaces] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#namespaces)
 
 ### Diagram with mandatory elements (the minimal model)
-[DCAT-AP-DK-view 1] (https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory)
+[DCAT-AP-DK-view 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory)
 describes mandatory classes as well as mandatory properties for these classes (the minimal model).
 
 <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-UML-mandatory.png" alt = "Diagram showing mandatory classes and mandatory properties for these classes (the minimal model)">
 
 ### Diagram with mandatory and recommended elements
-[DCAT-AP-DK-view 2] (https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
+[DCAT-AP-DK-view 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
 describes mandatory / recommended classes as well as mandatory / recommended properties for these classes (and optional elements and hidden).
 
 <! - <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt = "Diagram showing mandatory / recommended classes as well as mandatory / recommended properties"> ->
-<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"> <img src = "img/Illustration-DCAT-AP-DK-v2 .0.1-UML-recommended.png "alt =" Diagram showing required / recommended classes and mandatory/ recommended properties "/> </a> </p>
+<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"><img src ="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram showing required / recommended classes and mandatory/ recommended properties"/> </a> </p>
 
 ### Diagram with all elements
 The full application profile DCAT-AP-DK v.2.0.1 visualized in a UML diagram (all mandatory, recommended and optional elements).
 
-<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"> <img src = "img/Illustration-DCAT-AP-DK-v2.0.1 -UML.png "alt =" Illustration of DCAT-AP-DK v. 2.0.1 UML "/> </a> </p>
+<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"> <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt ="Illustration of DCAT-AP-DK v. 2.0.1 UML"/> </a> </p>
 
 
 ## Divergence from DCAT-AP
