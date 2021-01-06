@@ -217,7 +217,7 @@ Data must be associated with metadata, and data must be assigned a unique and pe
 ## Use of the profile
 The application profile is designed so that it can be used to perform two primary functions:
 * Internal overview of data within organisations.
-* External data catalogues about data shared between organisations.
+* Externally scoped catalogues about data shared between organisations
 
 The metadata useful for these two functions is essentially the same. Therefore, when designing the Danish application profile, the intention has been to encompass both a profile for internal and external data catalogs.
 
