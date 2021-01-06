@@ -174,6 +174,7 @@ Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
 Inline Github Issues: full
 Logo: digst...
+Translation: en https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html
 </pre>
 
 DCAT-AP-DK 2.0.1 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
