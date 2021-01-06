@@ -202,22 +202,22 @@ The basic structures and elements are taken from the specification 'The DCAT App
 
 The specification has been developed with feedback from an advisory group with members representing municipalities, regions and governmental authorities. To ensure that needs are met, the Danish specification has thus been based on the advisory group’s assessment of mandatory, recommended and optional properties in DCAT-AP 2.0.
 
-The specification also has strong relations to the Public Sector Information Act (PSI) and the EU [Open Data and PSI Directive] (https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), which includes requirements for the establishment of a single access point to public data.
+The specification also has strong relations to the Public Sector Information Act (PSI) and the EU [Open Data and PSI Directive](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), which includes requirements for the establishment of a single access point to public data.
 
 ## Methodology
 This specification constitutes a basic Danish application profile for datasets and data catalogs (DCAT-AP-DK), which contains basic information about datasets and data catalogs. The basic information forms a common core that can be expanded with additional context-dependent information in new and more domain-specific application profiles. Information formed on the basis of two or several specific application profiles can potentially be linked together via this common core.
 
-The development work itself has been carried out in accordance with the [Rules for concept and data modeling] (https://arkitektur.digst.dk/en/metoder/regler-begrebs-og-datamodellering), and the specification is based on several existing national and international models.
+The development work itself has been carried out in accordance with the [Rules for concept and data modeling](https://arkitektur.digst.dk/en/metoder/regler-begrebs-og-datamodellering), and the specification is based on several existing national and international models.
 
 
 ### Globally unique and persistent identifiers
 
-Data must be associated with metadata, and data must be assigned a unique and persistent global identifier in order to be retrieved and to be able to refer to data in a consistent manner. For this, an existing global and widely used syntax - URIs (Uniform Resource Identifiers) is applied. The URI specification defines a common syntax for identifying and addressing resources as on the Internet. See the [FAIR Principles] (https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs] (https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) and [Guidelines for stable http-uries] (https://arkitektur.digst.dk/node/588).
+Data must be associated with metadata, and data must be assigned a unique and persistent global identifier in order to be retrieved and to be able to refer to data in a consistent manner. For this, an existing global and widely used syntax - URIs (Uniform Resource Identifiers) is applied. The URI specification defines a common syntax for identifying and addressing resources as on the Internet. See the [FAIR Principles](https://www.go-fair.org/fair-principles/), [EU 10 Rules for Persistent URIs](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/document/10-rules-persistent-uris) and [Guidelines for stable http-uries](https://arkitektur.digst.dk/node/588).
 
 ## Use of the profile
 The application profile is designed so that it can be used to perform two primary functions:
 * Internal overview of data within organisations.
-* Externally scoped catalogues about data shared between organisations
+* External data catalogues about data shared between organisations.
 
 The metadata useful for these two functions is essentially the same. Therefore, when designing the Danish application profile, the intention has been to encompass both a profile for internal and external data catalogs.
 
@@ -294,26 +294,26 @@ The application profile DCAT-AP-DK is based on an international profile that has
 
 
 # The basic structure of the model
-DCAT has six key elements whose interrelationships form the basic structure of the model. These six elements are described below in the context of a data catalogue. Each element at a given level can be described with metadata such as * title *, * description * and * identifier *. All elements are described in detail in Chapter 5 [Elements of DCAT-AP-DK] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#elements-in-dcat-ap-dk), and see also [the concept model] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#concept-model).
+DCAT has six key elements whose interrelationships form the basic structure of the model. These six elements are described below in the context of a data catalogue. Each element at a given level can be described with metadata such as * title *, * description * and * identifier *. All elements are described in detail in Chapter 5 [Elements of DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#elements-in-dcat-ap-dk), and see also [the concept model](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#concept-model).
 
 
 ## Catalogue
-A catalogue (dcat:Catalog) is a curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog). The element contains metadata about the catalogue itself as well as references to the datasets and data services that are listed in the data catalogue. Thus, a data catalogue * must * contain datasets, but it * can * also contain data services and other data catalogues. </br> [Skip to Catalog class] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-catalog)
+A catalogue (dcat:Catalog) is a curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog). The element contains metadata about the catalogue itself as well as references to the datasets and data services that are listed in the data catalogue. Thus, a data catalogue * must * contain datasets, but it * can * also contain data services and other data catalogues. </br> [Skip to Catalog class](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-catalog)
 
 ## Catalogued resource
 A catalogued resource (dcat:Resource) is a resource published or curated by a single agent. This class carries properties that apply to all catalogued resources. In the context of a data catalog, this element will not be used - the three data-related subclasses will however, that is dataset, data service and catalogue.
 
 ## Dataset
 A dataset (dcat:Dataset) is a collection of data, published or selected and arranged by a single source, and which is available for access or download in one or more representations (via instances of the class dcat:Distribution). Ie. independent of the way data is formalized.
-</br> [Skip to Dataset class] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-dataset)
+</br> [Skip to Dataset class](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-dataset)
 
 ## Data service
 A data service (dcat:DataService) is a site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.. A data service may be related to one or more specific data sets. This class is optional.
-</br> [Skip to DataService class] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-data-service)
+</br> [Skip to DataService class](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-data-service)
 
 ## Distribution
 A distribution (dcat:Distribution) is a specific representation of a dataset. A distribution of a data set always belongs to one and only one dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organisation, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above). A distribution contains information about access address, format, byte size, download URL, access service etc. In other words, instances of dcat:Distribution carries the information about the dataset that varies between different representations of the same dataset. This class is optional.
-</br> [Skip to Distribution class] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-distribution)
+</br> [Skip to Distribution class](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-distribution)
 
 Note that several of the properties used for describing distributions are also used to describe the dataset of the distribution. The properties are: ‘title’, ‘description’, ‘documentation’, ‘release date’, ‘modification date’, ‘conforms to, ‘geographical resolution’ and ‘temporal resolution’.
 Where the information of a distribution property corresponds to the information given on the corresponding property of the dataset, it is not necessary to repeat the information. In cases where there is no information for a distribution property, the information given for the corresponding property of the data set applies.
@@ -322,7 +322,7 @@ If there are relevant additions to the property, or there are deviations from th
 ## Catalog Record
 A catalogue record (dcat:CatalogRecord) is a record in a catalogue, describing the registration of a single resource. This element contains information such as who registered the resource in the catalogue and when the resource was registered. It can be used in catalogues where a distinction is made between metadata about a dataset or data service and metadata about the entry in the catalogue about the dataset or service
 This class is optional.
-</br> [Skip to CatalogRecord class] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-catalog-record)
+</br> [Skip to CatalogRecord class](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#class-catalog-record)
 
 
 ## Illustration
@@ -341,7 +341,7 @@ DCAT-AP defines the following requirement levels which are also used in this app
 * ** Recommended ** (Recommended): The information SHOULD be provided if available
 * ** Optional ** (Optional): The information MAY be provided
 
-Read more about these requirement levels in Chapter 2 of [DCAT-AP 2.0.1] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).
+Read more about these requirement levels in Chapter 2 of [DCAT-AP 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).
 
 
 ## Views of DCAT-AP-DK
@@ -349,7 +349,7 @@ Based on the above requirement levels, three corresponding UML diagrams of DCAT-
 
 As described in the chapter ‘Basic structure of the model’, a distribution is a direct and concrete representation of a dataset. It might therefore be surprising that the class for distributions is not included in the view visualing the mandatory classes. Although it is likely that at least one distribution is associated with a dataset, it is not an absolute necessity to provide information about distributions. For example, although it might make sense to describe a dataset far advanced in its development stage, one or more distributions may have not yet reached the same stage. The class for distributions is included in the other two diagrams.
 
-For an overview of applied namespaces, see the appendix [Namespaces] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#namespaces)
+For an overview of applied namespaces, see the appendix [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#namespaces)
 
 ### Diagram with mandatory elements (the minimal model)
 [DCAT-AP-DK-view 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory)
@@ -408,15 +408,14 @@ No elements from DCAT-AP 2.0.1 have been omitted in DCAT-AP 2.0.1.
 
 ## Key models that use DCAT
 
-DCAT is already used in Danish specifications - eg in [Danish public sector data quality vocabulary
-] (https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) and Standard for Description of IT systems [SYS-AP] (https: //digst.github.io/IT-System-AP/SYS-AP/docs/) and [archvSYS-AP] (https://digst.github.io/IT-System-AP/archvSYS-AP/docs/ ).
+DCAT is already used in Danish specifications - eg in [Danish public sector data quality vocabulary](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) and Standard for Description of IT systems [SYS-AP](https://digst.github.io/IT-System-AP/SYS-AP/docs/) and [archvSYS-AP](https://digst.github.io/IT-System-AP/archvSYS-AP/docs/ ).
 
-DCAT is also used in a number of international specifications such as the European Commission's Single Digital Gateway - [SDG MetaModel] (https://github.com/catalogue-of-services-isa/SDG-model), Core Public Service Vocabulary Application Profile ( [CPSV-AP] (https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile)) and
-Asset Description Metadata Schema ([ADMS] (https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms))
+DCAT is also used in a number of international specifications such as the European Commission's Single Digital Gateway - [SDG MetaModel](https://github.com/catalogue-of-services-isa/SDG-model), Core Public Service Vocabulary Application Profile ( [CPSV-AP](https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile)) and
+Asset Description Metadata Schema ([ADMS](https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms))
 
-Several national profiles of DCAT-AP have also been developed by other EU Member States as well as domain-specific profiles, eg [geoDCAT-AP] (https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals -europe) for geodata, [BregDCAP-AP] (https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) for basic data and [statDCAT-AP] (https://joinup.ec .europa.eu / solution / statdcat-application-profile-data-portals-europe) for statistical datasets.
+Several national profiles of DCAT-AP have also been developed by other EU Member States as well as domain-specific profiles, eg [geoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) for geodata, [BregDCAP-AP](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) for basic data and [statDCAT-AP](https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe) for statistical datasets.
 
-Find a report on DCAT-AP profiles (from 2018) and other relevant links in the section [References] (https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#references) .
+Find a report on DCAT-AP profiles (from 2018) and other relevant links in the section [References](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html#references) .
 
 
 
@@ -2819,7 +2818,7 @@ The properties of this class:
 # Classifications
 In DCAT-AP, the European Commission specifies a number of classifications to be used in the description of catalogue, datasets and distributioner. In addition, DCAT-AP-DK introduces a few additional classifications for use in the Danish public sector
 
-Please find below, the classifications to be used in relation to the different properties / fields. Also, please refer to Chapter 5 [Controlled Vocabularies in DCAT-AP] (https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf)
+Please find below, the classifications to be used in relation to the different properties / fields. Also, please refer to Chapter 5 [Controlled Vocabularies in DCAT-AP](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf)
 
 Note that if the property in question is used, it is a requirement that the designated classification is also used (with a few exceptions - see notes).
 
