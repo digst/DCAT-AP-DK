@@ -328,7 +328,7 @@ This class is optional.
 ## Illustration
 The below illustration depicts the three commonly used elements in the basic structure, namely "catalog" (mandatory), "dataset" (mandatory) and "distribution" (recommended):
 
-<p> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-basic-structure.png"> <img src = "img/Illustration-DCAT-AP-GB-v2.0.1-Basic-structure.png" alt ="Figure DCAT levels"/> </a> </p>
+<p> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundl%C3%A6ggende-struktur.png"> <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-grundl%C3%A6ggende-struktur.png" alt ="Figure DCAT levels"/> </a> </p>
 
 
 # Requirements and compliance
