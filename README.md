@@ -12,7 +12,7 @@ DCAT-AP-DK er baseret på DCAT-AP som er EU-Kommissionens specifikation for data
 ## Kommentarer til DCAT-AP-DK
 Vi sætter stor pris på tilbagemeldinger og issues ifm. anvendelsen af DCAT-AP-DK, og i nedenstående issue tracker kan man løbende indsende issues. 
 
-Indsend venligt kommentarer og ændringsforslag via den indbyggede issue trackeren her: https://github.com/digst/DCAT-AP-DK/issues. 
+Indsend venligt kommentarer og ændringsforslag via den indbyggede issue tracker her: https://github.com/digst/DCAT-AP-DK/issues. 
 
 Se eventuelt også vores FAQ inden issueindsendelse: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq 
 
