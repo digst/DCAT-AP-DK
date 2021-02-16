@@ -1,7 +1,7 @@
 # DCAT-AP-DK-visning: obligatoriske/ anbefalede klasser
 samt obligatoriske/anbefalede egenskaber for disse klasser
 
-<img src="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/docs/img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
+<img src="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.2.0/docs/img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
 
 			
 ## Klasse: Katalog (Catalog) 
@@ -18,8 +18,8 @@ samt obligatoriske/anbefalede egenskaber for disse klasser
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan optræde én gang for hver sprogvariant af titlen. | 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 1..*|	 Obligatorisk|
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan optræde én gang for hver sprogvariant af titlen. | 1..*|	 Obligatorisk|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 1..*|	 Obligatorisk|
 |har datasæt (dataset)|http://www.w3.org/ns/dcat#dataset	(http://www.w3.org/ns/dcat#Dataset)|Denne egenskab angiver et datasæt som er opført i kataloget| 1..*|	 Obligatorisk|
 |udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent)|Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre kataloget tilgængeligt.| 1..1|	 Obligatorisk|
 |websted (homepage)|http://xmlns.com/foaf/0.1/homepage	(http://xmlns.com/foaf/0.1/Document)|Denne egenskab angiver en webside som fungerer som katalogets hjemmeside.| 0..1|	 Anbefalet|
@@ -45,10 +45,10 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
 |identifikator (identifier)|http://purl.org/dc/terms/identifier	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver den primære identifikator for datasættet, for eksempel en URI eller anden identifikator i kontekst af kataloget.| 0..*|	 Anbefalet|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan optræde én gang for hver sprogvariant af titlen.| 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 1..*|	 Obligatorisk|
-|udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent)|Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig.| 0..1|	 Anbefalet|
-|datasætansvarlig organisation DK (dataset responsible organisation)|https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation	(https://www.w3.org/ns/org#Organization)|Denne egenskab angiver den organisation der har det juridiske ansvar for datasættet. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) | 0..1|	 Anbefalet|
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan optræde én gang for hver sprogvariant af titlen.| 1..*|	 Obligatorisk|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 1..*|	 Obligatorisk|
+|udgiver (publisher)|http://purl.org/dc/terms/publisher	(http://xmlns.com/foaf/0.1/Agent)|Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig organisation.| 0..1|	 Anbefalet|
+|datasætansvarlig organisation DK (dataset responsible organisation)|https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation	(https://www.w3.org/ns/org#Organization)|Denne egenskab angiver den organisation der har det juridiske ansvar for datasættet. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig organisation. (dansk tilføjelse) | 0..1|	 Anbefalet|
 |skaber (creator)|http://purl.org/dc/terms/creator	(http://xmlns.com/foaf/0.1/Agent)|Denne egenskab angiver den aktør der er primært ansvarlig for datasættets skabelse.| 0..1|	 Anbefalet|
 |kontaktpunkt (contact point)|http://www.w3.org/ns/dcat#contactPoint	(http://www.w3.org/2006/vcard/ns#Kind)|Denne egenskab angiver kontaktoplysninger som kan anvendes til at indsende spørgsmål eller kommentarer om datasættet.| 0..*|	 Anbefalet|
 |har distribution (dataset distribution)|http://www.w3.org/ns/dcat#distribution	(http://www.w3.org/ns/dcat#Distribution)|Denne egenskab angiver en tilgængelig distribution af datasættet.| 0..*|	 Anbefalet|
@@ -58,7 +58,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 |emne (theme/ category)|http://www.w3.org/ns/dcat#theme	(http://www.w3.org/2004/02/skos/core#Concept)|Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.| 0..*|	 Anbefalet|
 |sprog (language)|http://purl.org/dc/terms/language	(http://purl.org/dc/terms/LinguisticSystem)|Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language | 0..*|	 Anbefalet|
 |dækningsperiode (temporal coverage)|http://purl.org/dc/terms/temporal	(http://purl.org/dc/terms/PeriodOfTime)|Denne egenskab angiver den periode datasættet dækker| 0..*|	 Anbefalet|
-|opdateringsfrekvens (frequency)|http://purl.org/dc/terms/accrualPeriodicity	(http://purl.org/dc/terms/Frequency)|Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency | 0..1|	 Anbefalet|
+|opdateringsfrekvens (frequency)|http://purl.org/dc/terms/accrualPeriodicity	(http://purl.org/dc/terms/Frequency)|Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequency http://publications.europa.eu/resource/authority/frequency | 0..1|	 Anbefalet|
 |udgivelsesdato (release date)|http://purl.org/dc/terms/issued	(http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime)|Denne egenskab angiver den dato hvor datasættet først blev formelt udgivet| 0..1|	 Anbefalet|
 |seneste ændringsdato (update/ modification date)|http://purl.org/dc/terms/modified	(http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime)|Denne egenskab angiver den dato hvor datasættet senest er blevet ændret.| 0..1|	 Anbefalet|	
 			
@@ -77,7 +77,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
 |adgangsadresse (access address)|http://www.w3.org/ns/dcat#accessURL	(http://www.w3.org/2001/XMLSchema#anyURI)|Denne egenskab angiver en URL som giver adgang til en distribution af datasættet. | 1..*|	 Obligatorisk|
-|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab giver en tekstbaseret beskrivelse af distributionen. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 0..*|	 Anbefalet|
+|beskrivelse (description)|http://purl.org/dc/terms/description	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab giver en tekstbaseret beskrivelse af distributionen. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.| 0..*|	 Anbefalet|
 |tilgængeligstype (availability)|http://data.europa.eu/r5r/availability	(http://www.w3.org/2004/02/skos/core#Concept)|Denne egenskab indikerer hvor længe det er planlagt at distributionen af datasættet skal være tilgængelig. Til angivelse af tilgængelighedstype skal følgende klassifikation anvendes: Distribution Availability Vocabulary, http://data.europa.eu/r5r/availability/| 0..1|	 Anbefalet|
 |format (format)|http://purl.org/dc/terms/format	(http://purl.org/dc/terms/MediaTypeOrExtent)|Denne egenskab angiver filformatet for distributionen som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)| 0..1|	 Anbefalet|
 |licens (license)|http://purl.org/dc/terms/license	(http://purl.org/dc/terms/LicenseDocument)|Denne egenskab angiver den licens distributionen er gjort tilgængelig under.| 0..1|	 Anbefalet|	
@@ -96,7 +96,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|	
+|navn (name)|http://xmlns.com/foaf/0.1/name	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.| 1..*|	 Obligatorisk|	
 			
 ## Klasse: Organisation (Organisation) 
 <dl class="def">
@@ -123,7 +123,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.| 1..*|	 Obligatorisk|	
+|titel (title)|http://purl.org/dc/terms/title	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.| 1..*|	 Obligatorisk|	
 			
 ## Klasse: Begreb (Category) 
 <dl class="def">
@@ -139,7 +139,7 @@ Property|	URI (Range)|	Usage note|	Card |Requirement|
 
 Property|	URI (Range)|	Usage note|	Card |Requirement|
 |---|---|---|---|---|
-|foretrukken betegnelse (preferred label)|http://www.w3.org/2004/02/skos/core#prefLabel	(http://www.w3.org/2000/01/rdf-schema#Literal)|Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan optræde én gang for hver sprogvariant af betegnelsen.| 1..*|	 Obligatorisk|	
+|foretrukken betegnelse (preferred label)|http://www.w3.org/2004/02/skos/core#prefLabel	(http://www.w3.org/2001/XMLSchema#string)|Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan optræde én gang for hver sprogvariant af betegnelsen.| 1..*|	 Obligatorisk|	
 			
 ## Klasse: Licensdokument (Licence Document) 
 <dl class="def">
