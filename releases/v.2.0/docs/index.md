@@ -144,31 +144,31 @@ p.italic{font-style: italic!important;}
 </style>
 
 <pre class="metadata">
-Title: DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
+Title: DCAT-AP-DK 2.0.2: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Følgegruppemedlem, Følgegruppemedlemmer 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
-Editor: [Geodatastyrelsen]
-Editor: [Erhvervsstyrelsen]
-Editor: [Danmarks Miljøportal]
-Editor: [Danmarks Statistik]
-Editor: [KL]
-Editor: [KOMBIT]
-Editor: [Københavns Kommune]
-Editor: [Miljøstyrelsen]
-Editor: [Region Midtjylland]
-Editor: [Rigsarkivet]
-Editor: [Styrelsen for Arbejdsmarked og Rekruttering]
-Editor: [Styrelsen for Dataforsyning og Effektivisering]
+Editor: Geodatastyrelsen
+Editor: Erhvervsstyrelsen
+Editor: Danmarks Miljøportal
+Editor: Danmarks Statistik
+Editor: KL
+Editor: KOMBIT
+Editor: Københavns Kommune
+Editor: Miljøstyrelsen
+Editor: Region Midtjylland
+Editor: Rigsarkivet
+Editor: Styrelsen for Arbejdsmarked og Rekruttering
+Editor: Styrelsen for Dataforsyning og Effektivisering
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
-Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0.1)' .
+Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0.2)' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
-Revision: 2.0.1 
-Date: 2020-10-01
+Revision: 2.0.2 
+Date: 2021-02-16
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -177,25 +177,25 @@ Logo: digst...
 Translation: en https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html
 </pre>
 
-DCAT-AP-DK 2.0.1 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
+DCAT-AP-DK 2.0.2 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
 
 Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL/RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation).
 
 Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
-<h1>DCAT-AP-DK 2.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger </h1>
+<h1>DCAT-AP-DK 2.0.2: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger </h1>
 
 
 # Introduktion
 
-DCAT-AP-DK 2.0.1 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
+DCAT-AP-DK 2.0.2 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
 
 ## Formål
 Specifikationen skal være med til sørge for, at begreber til beskrivelse af datasæt og datakataloger anvendes mere ens, og dermed skal den understøtte højere grad af interoperabilitet og kvalitet i oplysningerne. 
 
 
 ## Baggrund
-De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0.1 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0.2 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
 
 Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
 
@@ -314,12 +314,12 @@ En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver regis
 ## Illustration
 Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (anbefalet):
 
-<p><a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne"/></a></p>
+<p><a href="img/Illustration-DCAT-AP-DK-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne"/></a></p>
 
 
 
 # Gældende krav og overensstemmelse
-DCAT-AP-DK 2.0.1 er i overensstemmelse med DCAT-AP 2.0.1. Metadatabeskrivelser af datasæt og datakataloger, der overholder DCAT-AP-DK, overholder også DCAT-AP. 
+DCAT-AP-DK 2.0.2 er i overensstemmelse med DCAT-AP 2.0.1. Metadatabeskrivelser af datasæt og datakataloger, der overholder DCAT-AP-DK, overholder også DCAT-AP. 
 
 ## Kravniveauer
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. 
@@ -331,7 +331,7 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).
 
 ## Forskellige visninger af DCAT-AP-DK 
-På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.1. 
+På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.2. 
 
 Som det er beskrevet i kapitlet ’Modellens grundlæggende struktur’, er en distribution en direkte og konkret repræsentation af et datasæt. Det kunne måske derfor undre, at klassen for distributioner ikke er med i det diagram, der viser de obligatoriske klasser. Selv om det er sandsynligt, at der til alle datasæt er tilknyttet mindst en distribution, er det ikke en absolut nødvendighed. Eksempelvis kan der være tale om et datasæt, der er så tilstrækkeligt langt i sin udvikling, at det er meningsfyldt at beskrive datasættet i sig selv, mens en eller flere distributioner endnu ikke har nået samme stadie. 
 Klassen for distributioner er med i de to øvrige diagrammer.
@@ -342,26 +342,26 @@ Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github
 [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
 beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
 
-<img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
+<img src="img/Illustration-DCAT-AP-DK-v2.0-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 
 ### Diagram med obligatoriske og anbefalede elementer
 [DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
 beskriver obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer).
 
-<!-- <img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"> -->
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"/></a></p>
+<!-- <img src="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"> -->
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"/></a></p>
 
 ### Diagram med alle elementer  
-Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.1 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
+Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.2 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
 
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0.1 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0 UML"/></a></p>
 
 
 ## Afvigelser ift. DCAT-AP
 Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK, som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses, afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 ### Ændringer af kravniveau
-Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
+Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 2.0.2 ift. DCAT-AP 2.0.1:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
 * Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
@@ -372,9 +372,9 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 2.0.1 ift. D
 
 
 ### Tilføjelser
-Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
+Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.2 ift. DCAT-AP 2.0.1:
 
-* Datasæt: dataansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)
+* Datasæt: datasætansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)
 * Datasæt: bidragsyder (dct:contributor)
 * Datasæt: vedligeholder (schema:maintainer)
 * Datasæt: hjemmel (cv:hasLegalResource)
@@ -390,7 +390,7 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.1 ift. DCAT-AP 2.0.1:
 I indholdsfortegnelsen har disse mærket 'DK'.
 
 ### Udeladelser
-Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP-DK 2.0.1.
+Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP-DK 2.0.2.
 
 ## Centrale modeller som anvender DCAT
 
@@ -434,7 +434,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver det eller de ord der navngiver kataloget. Egenskaben kan optræde én gang for hver sprogvariant af titlen. </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -454,7 +454,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af datakatalogets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -658,7 +658,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List,  http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages. </dd>
+<dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue. This property can be repeated if the metadata is provided in multiple languages. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Definition (da)</dt>
 <dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
@@ -894,7 +894,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det eller de ord som navngiver katalogposten. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -914,7 +914,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af katalogposten. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -940,7 +940,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an Application Profile that the Dataset’s metadata conforms to</dd>
 <dt>Definition (da)</dt>
-<dd>En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
+<dd>En etableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Definition (en)</dt>
 <dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicitet</dt>
@@ -958,7 +958,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</dd>
+<dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Definition (da)</dt>
 <dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
@@ -1054,7 +1054,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det eller de ord som navngiver datasættet. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1074,7 +1074,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af datasættets formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1096,9 +1096,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig.</dd>
+<dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig organisation.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the entity (organisation) responsible for making the Dataset available.</dd>
+<dd>This property refers to the entity (organisation) responsible for making the Dataset available. Any dataset in a catalog must be linked to at least one agent, either a publisher or the dataset responsible organisation.</dd>
 <dt>Definition (da)</dt>
 <dd>En entitet som er ansvarlig for at gøre ressourcen tilgængelig.</dd>
 <dt>Definition (en)</dt>
@@ -1116,9 +1116,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>https://www.w3.org/ns/org#Organization</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den organisation der har det juridiske ansvar for det samlede datasæt. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig. (dansk tilføjelse) </dd>
+<dd>Denne egenskab angiver den organisation der har det juridiske ansvar for det samlede datasæt. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig organisation. (dansk tilføjelse) </dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property specifies the organization that is legally accountable for the dataset. </dd>
+<dd>This property specifies the organization that is legally accountable for the dataset. This property specifies the organization that is legally accountable for the entire dataset.</dd>
 <dt>Definition (da)</dt>
 <dd>organisation der har det juridiske ansvar for datasættet</dd>
 <dt>Definition (en)</dt>
@@ -1282,7 +1282,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an implementing rule or other specification.</dd>
 <dt>Definition (da)</dt>
-<dd>En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
+<dd>En etableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Definition (en)</dt>
 <dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicitet</dt>
@@ -1320,7 +1320,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et emne for datasættet. Et datasæt kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. </br></br> Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</dd>
+<dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes - potentially from different classifications <br><br>The use of the EU Dataset Themes is recommended, see http://publications.europa.eu/resource/authority/data-theme. Using FORM - the Danish Public Task Reference Model - (http://www.form-online.dk/) and KLE - a Municipal Task Reference Model - (http://www.kle-online.dk/) for thematic categorisation is optional, and it is suggested that KLE is used by municipalities and FORM by regional and govermental authorities.</dd>
 <dt>Definition (da)</dt>
 <dd>Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</dd>
 <dt>Definition (en)</dt>
@@ -1340,7 +1340,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</dd>
+<dd>This property refers to the type of the dataset in relation to its genre or inherent character. A controlled vocabulary for the values in range of this property has not been established in DCAT-AP, but DCAT recommends that you SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary or ISO-19115-1 scope codes (see: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</dd>
 <dt>Definition (da)</dt>
 <dd>Type set i forhold til ressourcens genre eller iboende karakter.</dd>
 <dt>Definition (en)</dt>
@@ -1356,7 +1356,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#keyword</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et nøgleord eller tag der beskriver datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1380,7 +1380,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det sprog der er anvendt i datasættet. Egenskaben kan gentages for hver sprogvariant. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language </dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</dd>
+<dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Definition (da)</dt>
 <dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
@@ -1400,9 +1400,9 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver oplysninger hvem der har rettighed til at tilgå datasættet. Via en klassifikation kan udsagnet omkring rettigheder kategoriseres. (Udfaldsrum: PUBLIC, RESTRICTED, NON_PUBLIC). Til opmærkning skal følgende klassifikation anvendes: EU Vocabularies Access Right Named Authority List, http://publications.europa.eu/resource/authority/access-right</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. </dd>
+<dd>This property refers to information about who has rights to access the dataset. A controlled vocabulary with three members (:public, :restricted, :non-public) has been created by the Publications Office of the EU. See EU Vocabularies Access Right Named Authority List: http://publications.europa.eu/resource/authority/access-right </dd>
 <dt>Definition (da)</dt>
-<dd>Information om hvem kan tilgå ressourcen eller en indikations af ressourcens sikkerhedsstatus.</dd>
+<dd>Information om hvem kan tilgå ressourcen eller en indikation af ressourcens sikkerhedsstatus.</dd>
 <dt>Definition (en)</dt>
 <dd>Information about who access the resource or an indication of its security status.</dd>
 <dt>Multiplicitet</dt>
@@ -1420,7 +1420,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et geografisk område som datasættet dækker. Afgræsningen kan enten udtrykkes ved geografiske koordinater eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a geographic region that is covered by the Dataset. </dd>
+<dd>This property refers to a geographic region that is covered by the dataset. The spatial scope can be expressed by geographical coordinates or by using one of the following classifications: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List or Geonames. (Geonames should only be used if a particular location is not in one of the mentioned Named Authority Lists. </dd>
 <dt>Definition (da)</dt>
 <dd>Ressourcens geografiske karaktetistika.</dd>
 <dt>Definition (en)</dt>
@@ -1438,7 +1438,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2001/XMLSchema#decimal</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angivermindste geografiske afstand som kan resolveres i et datasæt, målt i meter. Muligheden for at registrere detaljer i et rasterbillede eller grid kaldes geografisk opløsning. Den geografiske opløsning er angivet i meter. Jo flere pixels der er inkluderet i et rasterbillede af et bestemt område, jo højere er den geografiske opløsning, hvilket betyder, jo flere detaljer kan observeres. </dd>
+<dd>Denne egenskab angiver mindste geografiske afstand som kan resolveres i et datasæt, målt i meter. Muligheden for at registrere detaljer i et rasterbillede eller grid kaldes geografisk opløsning. Den geografiske opløsning er angivet i meter. Jo flere pixels der er inkluderet i et rasterbillede af et bestemt område, jo højere er den geografiske opløsning, hvilket betyder, jo flere detaljer kan observeres. </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the minimum spatial separation resolvable in a dataset, measured in meters. The ability of to detect details in an raster image or grid is referred to as spatial resolution. The spatial resolution is stated in metres. The more pixels are included in a raster image of a certain area, the higher the spatial resolution meaning the more details can be observed. </dd>
 <dt>Definition (da)</dt>
@@ -1480,7 +1480,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver mindste tidsperiode der kan resolveres i datasættet.  Alternative tidslige opløsninger kan leveres som forskellige datasætdistributioner. Hvis datasættet er en tidsserie, så bør denne egenskab svare til afstanden mellem elementerne i tidsserien. For andre typer af datasæt indikerer denne egenskab den mindste tidsforskel mellem elementer i datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the minimum time period resolvable in the dataset.</dd>
+<dd>This property refers to the minimum time period resolvable in the dataset. Alternative temporal resolutions might be provided in different dataset distributions. If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.</dd>
 <dt>Definition (da)</dt>
 <dd>mindste tidsperiode der kan resolveres i datasættet.</dd>
 <dt>Definition (en)</dt>
@@ -1498,9 +1498,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/Frequency</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequencym http://publications.europa.eu/resource/authority/frequency </dd>
+<dd>Denne egenskab angiver med hvilken frekvens datasættet opdateres. Til angivelse af frekvens skal følgende klassifikation anvendes: EU Authority Table Frequency http://publications.europa.eu/resource/authority/frequency </dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the frequency at which the Dataset is updated.</dd>
+<dd>This property refers to the frequency at which the Dataset is updated. For specifying frequency use the following classification: EU Authority Table Frequency http://publications.europa.eu/resource/authority/frequency</dd>
 <dt>Definition (da)</dt>
 <dd>Hyppighed med hvilken noget gentages.</dd>
 <dt>Definition (en)</dt>
@@ -1761,7 +1761,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver udsagn omkring datasættets proveniens i form af udsagn om eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property contains a statement about the lineage of a Dataset.</dd>
+<dd>This property contains a statement about the lineage of a dataset in the form of statements about any agent changes significant for the authenticity, integrity, and interpretation of the dataset.</dd>
 <dt>Definition (da)</dt>
 <dd>Udsagn omkring datasættets proveniens i form af udsagn om eventuelle aktørskift som er centrale for autenciteten, integriteten og fortolkningen af ressourcen.</dd>
 <dt>Definition (en)</dt>
@@ -1841,7 +1841,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab tilskriver en aktør et bestemt ansvar i forbindelse med datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a link to an Agent having some form of responsibility for the resource</dd>
+<dd>This property ascribes an agent some form of responsibility for the dataset.</dd>
 <dt>Definition (da)</dt>
 <dd>Kreditering er handlingen hvormed en en aktør anerkendes et ansvar for en entitet. </dd>
 <dt>Definition (en)</dt>
@@ -1883,10 +1883,9 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an activity that generated, or provides the business context for, the creation of the dataset.</dd>
 <dt>Definition (da)</dt>
-<dd>Generering er det at færdiggøre produktionen af en ny entitet gennem en aktivitet. 
-		Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</dd>
+<dd>Reference til aktivitet der tilvejebragte entiteten.</dd>
 <dt>Definition (en)</dt>
-<dd>Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</dd>
+<dd>Reference to an activity that made the entity available for usage.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -1945,7 +1944,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a URL that is a direct link to a downloadable file in a given format. </dd>
 <dt>Definition (da)</dt>
-<dd>URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.</dd>
+<dd>URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType.</dd>
 <dt>Definition (en)</dt>
 <dd>The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution's dct:format and/or dcat:mediaType.</dd>
 <dt>Multiplicitet</dt>
@@ -1979,7 +1978,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det eller de ord som navngiver distributionen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1999,7 +1998,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af distributionen. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2025,9 +2024,9 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to an established schema to which the described Distribution conforms.</dd>
 <dt>Definition (da)</dt>
-<dd>En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
+<dd>En etableret standard som den beskrevne ressource er i overensstemelse med.</dd>
 <dt>Definition (en)</dt>
-<dd>An established standard to which the described resource conforms.En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
+<dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -2123,7 +2122,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver et sprog som er anvendt i distributionen. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages.</dd>
+<dd>This property refers to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Definition (da)</dt>
 <dd>Ressourcens sprog.</dd>
 <dt>Definition (en)</dt>
@@ -2145,7 +2144,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property provides a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL</dd>
 <dt>Definition (da)</dt>
-<dd>Checksum-egenskaben gør det muligt at verificere at indholdet af en fil eller pakke ikke er blevet ændret..</dd>
+<dd>Checksum-egenskaben gør det muligt at verificere at indholdet af en fil eller pakke ikke er blevet ændret.</dd>
 <dt>Definition (en)</dt>
 <dd>The checksum property provides a mechanism that can be used to verify that the contents of a File or Package have not changed.</dd>
 <dt>Multiplicitet</dt>
@@ -2225,7 +2224,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file. It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA.</dd>
 <dt>Definition (da)</dt>
-<dd>Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx. for at reducere størrelsen af downloadfilen,</dd>
+<dd>Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx. for at reducere størrelsen af downloadfilen.</dd>
 <dt>Definition (en)</dt>
 <dd>The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.</dd>
 <dt>Multiplicitet</dt>
@@ -2361,7 +2360,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2001/XMLSchema#decimal</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angivermindste geografiske afstand som kan resolveres i en distribution, målt i meter.</dd>
+<dd>Denne egenskab angiver mindste geografiske afstand som kan resolveres i en distribution, målt i meter.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to the  minimum spatial separation resolvable in a dataset distribution, measured in meters.</dd>
 <dt>Definition (da)</dt>
@@ -2419,7 +2418,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det eller de ord som navngiver datatjenesten. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2459,7 +2458,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en tekstbaseret beskrivelse af datatjenesten</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2559,7 +2558,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/name</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver aktørens navn. Egenskaben kan optræde én gang for hver sprogvariant af navnet.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2636,7 +2635,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2676,7 +2675,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver begrebets foretrukne betegnelse. Egenskaben kan optræde én gang for hver sprogvariant af betegnelsen.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3412,7 +3411,7 @@ Egenskab: dcat:theme
 **KLASSIFIKATION: EU Datatemaer**
 URI: http://publications.europa.eu/resource/authority/data-theme
 [Se klassifikationen EU Datatemaer](
-https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/data-theme/?target=Browse&uri=http://publications.europa.eu/resource/authority/data-theme)
+https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/data-theme)
 
 
 ## Forvaltningsopgaver (Emner)
@@ -3434,7 +3433,7 @@ Egenskab: dct:accrualPeriodicity
 
 URI: http://publications.europa.eu/resource/authority/frequency
 
-[Se klassifikationen EU Frekvenser](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/frequency/?target=Browse&uri=http://publications.europa.eu/resource/authority/frequency)
+[Se klassifikationen EU Frekvenser](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
 
 
 ## Medietyper
@@ -3467,7 +3466,7 @@ Egenskab: dct:format
 
 URI: http://publications.europa.eu/resource/authority/file-type
 
-[Se klassifikationen EU Filtyper](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/file-type/?target=Browse&uri=http://publications.europa.eu/resource/authority/file-type)
+[Se klassifikationen EU Filtyper](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/file-type)
 
 Eksempler:
 * http://publications.europa.eu/resource/authority/file-type/CSV
@@ -3487,7 +3486,7 @@ Egenskab: dct:language
 
 URI: http://publications.europa.eu/resource/authority/language
  
-[Se klassifikationen EU Sprog](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language)
+[Se klassifikationen EU Sprog](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language)
 
 Eksempler:
 * http://publications.europa.eu/resource/dataset/language/DAN
@@ -3501,20 +3500,20 @@ Egenskab: dct:spatial
 
 URI: http://publications.europa.eu/resource/authority/continent/
 
-[Se klassifikation Kontinenter](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/) 
+[Se klassifikation Kontinenter](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent) 
 
 **KLASSIFIKATION: lande**
 
 URI: http://publications.europa.eu/resource/authority/country
 
-[Se klassifikation Lande](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/)
+[Se klassifikation Lande](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country)
 
 **KLASSIFIKATION: stednavne**
 
 URI: http://publications.europa.eu/resource/authority/place/
 
 [Se klassifikation Stednavne](
-https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/place/)
+https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place)
 
 **KLASSIFIKATION: Geonames**
 
@@ -3610,7 +3609,7 @@ Egenskab: dct:accessRights
 
 URI: http://publications.europa.eu/resource/authority/access-right
 
-[Se klassifikationen Adgangsrettigheder]https://op.europa.eu/da/web/eu-vocabularies/at-concept-scheme/-/resource/authority/access-right/?target=Browse&uri=http://publications.europa.eu/resource/authority/access-right
+[Se klassifikationen Adgangsrettigheder]https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/access-right
 * http://publications.europa.eu/resource/authority/access-right/PUBLIC
 * http://publications.europa.eu/resource/authority/access-right/RESTRICTED
 * http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC
@@ -3686,7 +3685,7 @@ Relevante links:
 
 ### UML-diagram: DCAT-AP-DK
 - URI: https://data.gov.dk/model/profile/dcat-ap-dk/
-- Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/
+- Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.2/
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 2.0.1
@@ -3697,7 +3696,7 @@ Relevante links:
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde.
 
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration af DCAT-AP-DK 2.0.1 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML.png" alt="Illustration af DCAT-AP-DK 2.0 UML"/></a></p>
 
 
 ### UML-diagram: DCAT-DK
