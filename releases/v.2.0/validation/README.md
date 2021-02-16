@@ -1,4 +1,4 @@
-# DCAT-AP-DK 2.0.1: SHACL-distributioner (til validering)
+# DCAT-AP-DK 2.0: SHACL-distributioner (til validering)
 
 Med ovenstående udkast til SHACL-filer kan validering af DCAT-AP-DK-metadata afprøves:
 
