@@ -144,31 +144,31 @@ p.italic{font-style: italic!important;}
 </style>
 
 <pre class="metadata">
-Title: DCAT-AP-DK 2.0.1: Danish Application Profile for the Description of Datasets and Data Catalogues 
+Title: DCAT-AP-DK 2.0.2: Danish Application Profile for the Description of Datasets and Data Catalogues 
 Status: LD
 URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
 Editor Term: Advisory Group Member, Advisory Group Members 
 Editor: The Danish Agency for Digitisation,, arkitektur@digst.dk
-Editor: [The Danish Geodata Agency]
-Editor: [The Danish Business Authority]
-Editor: [The Danish Environmental Portal]
-Editor: [Statistics Denmark]
-Editor: [KL - Local Government Denmark]
-Editor: [KOMBIT]
-Editor: [Copenhagen Municipality]
-Editor: [The Danish Environmental Protection Agency]
-Editor: [Central Denmark Region]
-Editor: [The Danish National Archives]
-Editor: [The Danish Agency for Labour Market and Recruitment]
-Editor: [The Danish Agency for Data Supply and Efficiency]
+Editor: The Danish Geodata Agency
+Editor: The Danish Business Authority
+Editor: The Danish Environmental Portal
+Editor: Statistics Denmark
+Editor: KL - Local Government Denmark
+Editor: KOMBIT
+Editor: Copenhagen Municipality
+Editor: The Danish Environmental Protection Agency
+Editor: Central Denmark Region
+Editor: The Danish National Archives
+Editor: The Danish Agency for Labour Market and Recruitment
+Editor: The Danish Agency for Data Supply and Efficiency
 Group: The Architecture and Standards Counsel (of FDA)
 
 
-Abstract: 'Danish Application Profile for the Description of Datasets and Data Catalogues  (DCAT-AP-DK 2.0.1)' .
+Abstract: 'Danish Application Profile for the Description of Datasets and Data Catalogues  (DCAT-AP-DK 2.0.2)' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
-Revision: 2.0.1 
-Date: 2020-10-01
+Revision: 2.0.2 
+Date: 2021-02-16
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
@@ -176,20 +176,20 @@ Inline Github Issues: full
 Logo: digst...
 </pre>
 
-DCAT-AP-DK 2.0.1 has been approved by the Architecture and Standards Counsel (1st October 2020) and has been accepted as part of the Danish Federal Digital Architecture, ([FDA](https://arkitektur.digst.dk/)) 
+DCAT-AP-DK 2.0 has been approved by the Architecture and Standards Counsel (1st October 2020) and has been accepted as part of the Danish Federal Digital Architecture, ([FDA](https://arkitektur.digst.dk/)) 
 
-This is a non-normative translation of the Danish application profile DCAT-AP-DK 2.0.1.
+This is a non-normative translation of the Danish application profile DCAT-AP-DK.
 
 The application profile is also accessible in these non-normative formats [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL/RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation).
 
 Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
-<h1>DCAT-AP-DK 2.0.1: Danish Application Profile for the Description of Datasets and Data Catalogues </h1>
+<h1>DCAT-AP-DK 2.0.2: Danish Application Profile for the Description of Datasets and Data Catalogues </h1>
 
 
 # Introduction
 
-DCAT-AP-DK 2.0.1 is a specification for the description of datasets and data catalogues for application in the Danish public sector. The specification includes basic information about datasets, such as title, description, publisher, release date, etc., and presents this information in a uniform structure in a common exchange format, which makes it possible to share information about datasets in an efficient way. The specification takes the form of a so-called application profile based on international and national specifications.
+DCAT-AP-DK 2.0.2 is a specification for the description of datasets and data catalogues for application in the Danish public sector. The specification includes basic information about datasets, such as title, description, publisher, release date, etc., and presents this information in a uniform structure in a common exchange format, which makes it possible to share information about datasets in an efficient way. The specification takes the form of a so-called application profile based on international and national specifications.
 
 ## Purpose
 
@@ -198,7 +198,7 @@ The specification will help to ensure that concepts for the description of datas
 
 ## Background
 
-The basic structures and elements are taken from the specification 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1 published by the European Commission, which aims to standardize and establish coherence between data portals in the European Member States. DCAT-AP 2.0.1 is based on the W3C specification 'Data Catalog Vocabulary' (DCAT) 2.0. DCAT-AP indicates properties that are * mandatory * as well as * recommended * and * optional * properties. The specification thus allows for a comprehensive metadata description. DCAT-AP-DK 2.0.1 uses elements from conforms to DCAT-AP 2.0.1. However, DCAT-AP-DK also adds new elements to meet the needs in a Danish administrative and public-sector context.
+The basic structures and elements are taken from the specification 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1 published by the European Commission, which aims to standardize and establish coherence between data portals in the European Member States. DCAT-AP 2.0.1 is based on the W3C specification 'Data Catalog Vocabulary' (DCAT) 2.0. DCAT-AP indicates properties that are * mandatory * as well as * recommended * and * optional * properties. The specification thus allows for a comprehensive metadata description. DCAT-AP-DK 2.0.2 uses elements from conforms to DCAT-AP 2.0.1. However, DCAT-AP-DK also adds new elements to meet the needs in a Danish administrative and public-sector context.
 
 The specification has been developed with feedback from an advisory group with members representing municipalities, regions and governmental authorities. To ensure that needs are met, the Danish specification has thus been based on the advisory group’s assessment of mandatory, recommended and optional properties in DCAT-AP 2.0.
 
@@ -328,11 +328,11 @@ This class is optional.
 ## Illustration
 The below illustration depicts the three commonly used elements in the basic structure, namely "catalog" (mandatory), "dataset" (mandatory) and "distribution" (recommended):
 
-<p> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-grundl%C3%A6ggende-struktur.png"> <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-grundl%C3%A6ggende-struktur.png" alt ="Figure DCAT levels"/> </a> </p>
+<p> <a href="img/Illustration-DCAT-AP-DK-grundl%C3%A6ggende-struktur.png"> <img src = "img/Illustration-DCAT-AP-DK-grundl%C3%A6ggende-struktur.png" alt ="Figure DCAT levels"/> </a> </p>
 
 
 # Requirements and compliance
-DCAT-AP-DK 2.0.1 conforms to DCAT-AP 2.0.1. Metadata descriptions of datasets and data catalogues that comply with DCAT-AP-DK also comply with DCAT-AP.
+DCAT-AP-DK 2.0.2 conforms to DCAT-AP 2.0.1. Metadata descriptions of datasets and data catalogues that comply with DCAT-AP-DK also comply with DCAT-AP.
 
 ## Requirement levels
 DCAT-AP defines the following requirement levels which are also used in this application profile.
@@ -345,7 +345,7 @@ Read more about these requirement levels in Chapter 2 of [DCAT-AP 2.0.1](https:/
 
 
 ## Views of DCAT-AP-DK
-Based on the above requirement levels, three corresponding UML diagrams of DCAT-AP-DK 2.0.1 have been prepared.
+Based on the above requirement levels, three corresponding UML diagrams of DCAT-AP-DK 2.0.2 have been prepared.
 
 As described in the chapter ‘Basic structure of the model’, a distribution is a direct and concrete representation of a dataset. It might therefore be surprising that the class for distributions is not included in the view visualing the mandatory classes. Although it is likely that at least one distribution is associated with a dataset, it is not an absolute necessity to provide information about distributions. For example, although it might make sense to describe a dataset far advanced in its development stage, one or more distributions may have not yet reached the same stage. The class for distributions is included in the other two diagrams.
 
@@ -355,26 +355,26 @@ For an overview of applied namespaces, see the appendix [Namespaces](https://dig
 [DCAT-AP-DK-view 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory)
 describes mandatory classes as well as mandatory properties for these classes (the minimal model).
 
-<img src = "img/Illustration-DCAT-AP-DK-v2.0.1-UML-mandatory.png" alt = "Diagram showing mandatory classes and mandatory properties for these classes (the minimal model)">
+<img src = "img/Illustration-DCAT-AP-DK-v2.0-UML-mandatory.png" alt = "Diagram showing mandatory classes and mandatory properties for these classes (the minimal model)">
 
 ### Diagram with mandatory and recommended elements
 [DCAT-AP-DK-view 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
 describes mandatory / recommended classes as well as mandatory / recommended properties for these classes (and optional elements and hidden).
 
-<! - <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt = "Diagram showing mandatory / recommended classes as well as mandatory / recommended properties"> ->
-<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png"><img src ="img/Illustration-DCAT-AP-DK-v2.0.1-UML-recommended.png" alt="Diagram showing required / recommended classes and mandatory/ recommended properties"/> </a> </p>
+<! - <img src = "img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt = "Diagram showing mandatory / recommended classes as well as mandatory / recommended properties"> ->
+<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png"><img src ="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt="Diagram showing required / recommended classes and mandatory/ recommended properties"/> </a> </p>
 
 ### Diagram with all elements
-The full application profile DCAT-AP-DK v.2.0.1 visualized in a UML diagram (all mandatory, recommended and optional elements).
+The full application profile DCAT-AP-DK v.2.0.2 visualized in a UML diagram (all mandatory, recommended and optional elements).
 
-<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"> <img src = "img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt ="Illustration of DCAT-AP-DK v. 2.0.1 UML"/> </a> </p>
+<p class = "center"> <a href="img/Illustration-DCAT-AP-DK-v2.0-UML.png"> <img src = "img/Illustration-DCAT-AP-DK-v2.0-UML.png" alt ="Illustration of DCAT-AP-DK v. 2.0 UML"/> </a> </p>
 
 
 ## Divergence from DCAT-AP
 Below is a description of the divergence between DCAT-AP and DCAT-AP-DK, which are expressed through changes in the requirement level as well as additions of new elements. As described below, the Danish profile differs primarily with relation to the addition of new elements for an extended description of datasets.
 
 ### Changes in requirement level
-The requirement level for the following elements has been changed in DCAT-AP-DK 2.0.1 compared to DCAT-AP 2.0.1:
+The requirement level for the following elements has been changed in DCAT-AP-DK 2.0.2 compared to DCAT-AP 2.0.1:
 
 * Dataset: identifier (dct:identifier) ​​- Requirement level: Optional> Recommended
 * Dataset: keyword (dcat:keyword) - Requirement level: Recommended> Optional
@@ -385,7 +385,7 @@ The requirement level for the following elements has been changed in DCAT-AP-DK 
 
 
 ### Additions
-The following elements have been added in DCAT-AP-DK 2.0.1 compared to DCAT-AP 2.0.1:
+The following elements have been added in DCAT-AP-DK 2.0.2 compared to DCAT-AP 2.0.1:
 
 * Dataset: dataset responsible organisation (dcat-dk:datasetResponsibleOrganisation)
 * Dataset: contributor (dct:contributor)
@@ -403,7 +403,7 @@ The following elements have been added in DCAT-AP-DK 2.0.1 compared to DCAT-AP 2
 In the table of contents, these Danish additions have been marked 'DK'.
 
 ### Omissions
-No elements from DCAT-AP 2.0.1 have been omitted in DCAT-AP 2.0.1.
+No elements from DCAT-AP 2.0.1 have been omitted in DCAT-AP-DK 2.0.2.
 
 
 ## Key models that use DCAT
@@ -445,7 +445,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name given to the Catalogue. This property can be repeated for parallel language versions of the name.</dd>
 <dt>Definition (en)</dt>
@@ -461,7 +461,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description.</dd>
 <dt>Definition (en)</dt>
@@ -814,7 +814,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name.</dd>
 <dt>Definition (en)</dt>
@@ -830,7 +830,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a free-text account of the record. This property can be repeated for parallel language versions of the description.</dd>
 <dt>Definition (en)</dt>
@@ -942,7 +942,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name given to the Dataset. This property can be repeated for parallel language versions of the name.</dd>
 <dt>Definition (en)</dt>
@@ -958,7 +958,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description.</dd>
 <dt>Definition (en)</dt>
@@ -976,7 +976,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://xmlns.com/foaf/0.1/Agent</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to the entity (organisation) responsible for making the Dataset available.</dd>
+<dd>This property refers to the entity (organisation) responsible for making the Dataset available. Any dataset in a catalog must be linked to at least one agent, either a publisher or the dataset responsible organisation.</dd>
 <dt>Definition (en)</dt>
 <dd>An entity responsible for making the resource available.</dd>
 <dt>Multiplicity</dt>
@@ -992,7 +992,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>https://www.w3.org/ns/org#Organization</dd>
 <dt>Usage note (en)</dt>
-<dd>This property specifies the organization that is legally accountable for the dataset. </dd>
+<dd>This property specifies the organization that is legally accountable for the dataset. Any dataset in a catalog must be linked to at least one agent, either a publisher or the dataset responsible organisation.</dd>
 <dt>Definition (en)</dt>
 <dd>organization that is legally accountable for the dataset</dd>
 <dt>Multiplicity</dt>
@@ -1153,7 +1153,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.</dd>
+<dd>This property refers to a category of the Dataset. A Dataset may be associated with multiple themes - potentially from different classifications <br><br>The use of the EU Dataset Themes is recommended, see http://publications.europa.eu/resource/authority/data-theme. Using FORM - the Danish Public Task Reference Model - (http://www.form-online.dk/) and KLE - a Municipal Task Reference Model - (http://www.kle-online.dk/) for thematic categorisation is optional, and it is suggested that KLE is used by municipalities and FORM by regional and govermental authorities.</dd>
 <dt>Definition (en)</dt>
 <dd>A main category of the resource. A resource can have multiple themes.</dd>
 <dt>Multiplicity</dt>
@@ -1169,7 +1169,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established.</dd>
+<dd>This property refers to the type of the dataset in relation to its genre or inherent character. A controlled vocabulary for the values in range of this property has not been established in DCAT-AP, but DCAT recommends that you SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary or ISO-19115-1 scope codes (see: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</dd>
 <dt>Definition (en)</dt>
 <dd>The nature or genre of the resource.</dd>
 <dt>Multiplicity</dt>
@@ -1183,7 +1183,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#keyword</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a keyword or tag describing the Dataset.</dd>
 <dt>Definition (en)</dt>
@@ -1201,7 +1201,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://purl.org/dc/terms/LinguisticSystem</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset.</dd>
+<dd>This property refers to a language of the Dataset. This property can be repeated if there are multiple languages in the Dataset. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language</dd>
 <dt>Definition (en)</dt>
 <dd>A language of the resource.</dd>
 <dt>Multiplicity</dt>
@@ -1217,7 +1217,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://purl.org/dc/terms/RightsStatement</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to information that indicates whether the Dataset is open data, has access restrictions or is not public. A controlled vocabulary with three members (:public, :restricted, :non-public) will be created and maintained by the Publications Office of the EU. </dd>
+<dd>This property refers to information about who has rights to access the dataset. A controlled vocabulary with three members (:public, :restricted, :non-public) has been created by the Publications Office of the EU. See EU Vocabularies Access Right Named Authority List: http://publications.europa.eu/resource/authority/access-right </dd>
 <dt>Definition (en)</dt>
 <dd>Information about who access the resource or an indication of its security status.</dd>
 <dt>Multiplicity</dt>
@@ -1233,7 +1233,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://purl.org/dc/terms/Location</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to a geographic region that is covered by the Dataset. </dd>
+<dd>This property refers to a geographic region that is covered by the dataset. The spatial scope can be expressed by geographical coordinates or by using one of the following classifications: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List or Geonames. (Geonames should only be used if a particular location is not in one of the mentioned Named Authority Lists. </dd>
 <dt>Definition (en)</dt>
 <dd>Spatial characteristics of the resource.</dd>
 <dt>Multiplicity</dt>
@@ -1281,7 +1281,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://www.w3.org/2001/XMLSchema#duration</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to the minimum time period resolvable in the dataset.</dd>
+<dd>This property refers to the minimum time period resolvable in the dataset. Alternative temporal resolutions might be provided in different dataset distributions. If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.</dd>
 <dt>Definition (en)</dt>
 <dd>minimum time period resolvable in a dataset.</dd>
 <dt>Multiplicity</dt>
@@ -1297,7 +1297,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://purl.org/dc/terms/Frequency</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to the frequency at which the Dataset is updated.</dd>
+<dd>This property refers to the frequency at which the Dataset is updated. For specifying frequency use the following classification: EU Authority Table Frequency http://publications.europa.eu/resource/authority/frequency</dd>
 <dt>Definition (en)</dt>
 <dd>A rate at which something recurs.</dd>
 <dt>Multiplicity</dt>
@@ -1505,7 +1505,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://purl.org/dc/terms/ProvenanceStatement</dd>
 <dt>Usage note (en)</dt>
-<dd>This property contains a statement about the lineage of a Dataset.</dd>
+<dd>This property contains a statement about the lineage of a dataset in the form of statements about any agent changes significant for the authenticity, integrity, and interpretation of the dataset.</dd>
 <dt>Definition (en)</dt>
 <dd>A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.</dd>
 <dt>Multiplicity</dt>
@@ -1569,7 +1569,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://www.w3.org/ns/prov#Attribution</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to a link to an Agent having some form of responsibility for the resource</dd>
+<dd>This property ascribes an agent some form of responsibility for the dataset.</dd>
 <dt>Definition (en)</dt>
 <dd>Attribution is the ascribing of an entity to an agent. When an entity e is attributed to agent ag, entity e was generated by some unspecified activity that in turn was associated to agent ag. Thus, this relation is useful when the activity is not known, or irrelevant.</dd>
 <dt>Multiplicity</dt>
@@ -1679,7 +1679,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name given to the Distribution. This property can be repeated for parallel language versions of the description.</dd>
 <dt>Definition (en)</dt>
@@ -1695,7 +1695,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a free-text account of the Distribution. This property can be repeated for parallel language versions of the description.</dd>
 <dt>Definition (en)</dt>
@@ -1715,7 +1715,7 @@ The properties of this class:
 <dt>Usage note (en)</dt>
 <dd>This property refers to an established schema to which the described Distribution conforms.</dd>
 <dt>Definition (en)</dt>
-<dd>An established standard to which the described resource conforms.En estableret standard som den beskrevne ressource er i overensstemelse med.</dd>
+<dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicity</dt>
 <dd>0..*</dd>
 <dt>Requirement level</dt>
@@ -2031,7 +2031,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name given to the Data Service. This property can be repeated for parallel language versions of the name.</dd>
 <dt>Definition (en)</dt>
@@ -2063,7 +2063,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/description</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.</dd>
 <dt>Definition (en)</dt>
@@ -2143,7 +2143,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://xmlns.com/foaf/0.1/name</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages)</dd>
 <dt>Definition (en)</dt>
@@ -2204,7 +2204,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/title</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a name of the category scheme. May be repeated for different versions of the name</dd>
 <dt>Definition (en)</dt>
@@ -2236,7 +2236,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://www.w3.org/2004/02/skos/core#prefLabel</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a preferred label of the category. This property can be repeated for parallel language versions of the label.</dd>
 <dt>Definition (en)</dt>
@@ -2828,7 +2828,7 @@ Property: dcat:theme
 **CLASSIFICATION: EU Data theme**
 URI: http://publications.europa.eu/resource/authority/data-theme
 [View the classification EU Datatemaer](
-https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/data-theme/?target=Browse&uri=http://publications.europa.eu/resource/authority/data-theme)
+https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/data-theme)
 
 
 ## Public Administrative Task type (Themes)
@@ -2850,7 +2850,7 @@ Property: dct:accrualPeriodicity
 
 URI: http://publications.europa.eu/resource/authority/frequency
 
-[View the classification EU Frekvenser](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/frequency/?target=Browse&uri=http://publications.europa.eu/resource/authority/frequency)
+[View the classification EU Frekvenser](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
 
 
 ## Media Types
@@ -2883,7 +2883,7 @@ Property: dct:format
 
 URI: http://publications.europa.eu/resource/authority/file-type
 
-[View the classification EU File Type](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/file-type/?target=Browse&uri=http://publications.europa.eu/resource/authority/file-type)
+[View the classification EU File Type](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/file-type)
 
 Examples:
 * http://publications.europa.eu/resource/authority/file-type/CSV
@@ -2903,7 +2903,7 @@ Property: dct:language
 
 URI: http://publications.europa.eu/resource/authority/language
  
-[View the classification EU Sprog](https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language)
+[View the classification EU Sprog](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language)
 
 Examples:
 * http://publications.europa.eu/resource/dataset/language/DAN
@@ -2917,20 +2917,20 @@ Property: dct:spatial
 
 URI: http://publications.europa.eu/resource/authority/continent/
 
-[View the classification continent](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/continent/) 
+[View the classification continent](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent) 
 
 **CLASSIFICATION: country**
 
 URI: http://publications.europa.eu/resource/authority/country
 
-[View the classification country](https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/country/)
+[View the classification country](https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country)
 
 **CLASSIFICATION: place name**
 
 URI: http://publications.europa.eu/resource/authority/place/
 
 [View the classification place name](
-https://op.europa.eu/en/web/eu-vocabularies/at-concept-scheme/-/resource/authority/place/)
+https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place)
 
 **CLASSIFICATION: Geonames**
 
@@ -3023,7 +3023,7 @@ Property: dct:accessRights
 
 URI: http://publications.europa.eu/resource/authority/access-right
 
-[View the classification Access Right]https://op.europa.eu/da/web/eu-vocabularies/at-concept-scheme/-/resource/authority/access-right/?target=Browse&uri=http://publications.europa.eu/resource/authority/access-right
+[View the classification Access Right]https://op.europa.eu/da/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/access-right
 
 
 ## Personal Data Category
@@ -3099,18 +3099,18 @@ Relevant links:
 
 ### UML-diagram: DCAT-AP-DK
 - URI: https://data.gov.dk/model/profile/dcat-ap-dk
-- this version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/
+- this version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.2/
 - label: DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - responsibleEntity: Digitaliseringsstyrelsen
-- versionInfo: 2.0.1
-- dateModified: 2020-10-01
+- versionInfo: 2.0.2
+- dateModified: Date: 2020-10-01
 - modelStatus: completed
 - approvalStatus): approved
 - approvedBy: The Public-Sector Architecture and Standards Counsel (Udvalget for Arkitektur og Standarder)
 - theme:  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - comment: DCAT-AP-DK is a specification for the description of dataset and data catagloues to be used in the Danish public sector
 
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0.1-UML.png" alt="Illustration of DCAT-AP-DK 2.0.1 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML.png" alt="Illustration of DCAT-AP-DK 2.0 UML"/></a></p>
 
 
 ### UML-diagram: DCAT-DK
