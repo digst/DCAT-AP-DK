@@ -14,7 +14,7 @@ Anvendelse af DCAT og bagvedliggende metamodel -->
 - https://diggsweden.github.io/DCAT-AP-SE/docs/recommendations.html#2-%C3%B6vers%C3%A4tt-fritextf%C3%A4lt-till-andra-spr%C3%A5k
 
 #### Kan man forsyne datasæt med titler og beskrivelser på flere sprog?
-Ja, det er et krav at tekstuelle egenskaber såsom dct:title og dct:description har datatypen xsd:string, men ønsker man at registrere flere sprogvarianter af titel og beskrivelse, så kan angive sprog vha. rdf:langString. fx med turtle:
+Ja, det er et krav at tekstuelle egenskaber såsom dct:title og dct:description har datatypen xsd:string, men ønsker man at registrere flere sprogvarianter af titel og beskrivelse, så kan man angive sprog vha. rdf:langString. fx med turtle:
 ```
   dct:title "Dataset 001"@en ;
   dct:title "Datasæt 001"@da ;  
