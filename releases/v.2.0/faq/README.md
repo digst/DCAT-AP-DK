@@ -213,7 +213,7 @@ Læs mere her: https://schema.org/Dataset; https://schema.org/docs/data-and-data
 [ISO/IEC 11179-7:2019(en)](https://webshop.ds.dk/da-dk/standarder/standard/sprog-og-operativsystemer/iso-iec-11179-72019)
 Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registries (MDR) — Part 7: Metamodel for data set registration), udvides ISO 11179 Metadata Registry (MDR) til datasætbeskrivelse, og det står anført at standarden "was prepared taking into account concepts described in the following documents: — Data Catalog Vocabulary (DCAT)[1] (published by the World Wide Web Consortium (W3C)) (..);"
 
-### Hvilke mapninger mellem DCAT-AP og øvrige specifikationer findes der?
+### Hvilke profiler og mapninger mellem DCAT-AP og øvrige specifikationer findes der?
 - [GeoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) (EU ISA Programme) - Defines mappings from INSPIRE/ISO 19115 metadata to DCAT-AP
   - [Alignment of INSPIRE metadata with DCAT-AP](https://ies-svn.jrc.ec.europa.eu/projects/metadata/wiki/Alignment_of_INSPIRE_metadata_with_DCAT-AP)
   - [Mappings defined in GeoDCAT-AP](https://github.com/GeoCat/iso-19139-to-dcat-ap/blob/master/documentation/Mappings.md)
@@ -223,7 +223,8 @@ Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registr
 - [DCAT to Schema.org mapping](https://project-open-data.cio.gov/metadata-resources/) (Project Open Data)
 - [DCAT-AP to Schema.org mapping](https://ec-jrc.github.io/dcat-ap-to-schema-org/) (JRC)
 - [DataCite to DCAT-AP mapping](https://ec-jrc.github.io/datacite-to-dcat-ap/) (JRC)
-- [napDCAT-AP](https://www.its-platform.eu/highlights/progressing-metadata-national-access-points) (NAP Working Group) under development
+- [bregDCAT-AP-DK](https://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-bregdcat-ap/release/200) 
+- [napDCAT-AP](https://www.its-platform.eu/highlights/progressing-metadata-national-access-points) (NAP Working Group -transport-related data) under development
 
 Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_DCAT_application_profiles.29
 
