@@ -223,6 +223,7 @@ Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registr
 - [DCAT to Schema.org mapping](https://project-open-data.cio.gov/metadata-resources/) (Project Open Data)
 - [DCAT-AP to Schema.org mapping](https://ec-jrc.github.io/dcat-ap-to-schema-org/) (JRC)
 - [DataCite to DCAT-AP mapping](https://ec-jrc.github.io/datacite-to-dcat-ap/) (JRC)
+- [napDCAT-AP](https://www.its-platform.eu/highlights/progressing-metadata-national-access-points) (NAP Working Group) under development
 
 Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_DCAT_application_profiles.29
 
