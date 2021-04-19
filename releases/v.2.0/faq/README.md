@@ -107,8 +107,8 @@ Når egenskaber såsom dct:title og dct:description har multipliciteten en-til-m
 Både UML-navn og dansk alias er registreret for alle modelelementer (og alle elementer er forsynes med prefLabel (da) og prefLabel (en).)
 Dog skal man selv indstille Sparx EA til enten at vise UML-navn eller alias - eller begge dele. Se evt. tips og tricks til Sparx EA på dette link: https://docs.google.com/document/d/14oSR_QnLja8LuUbpsNE2FnV-22CK-TzNG1xqwIlp6Jo/edit?usp=sharing
 
-### Hvad er betydningen af stereotyperne <<Optional>>,<<Recommended>>, og <<Mandatory>>?
-Anvendelse af stereotyperne <<Optional>>,<<Recommended>>, og <<Mandatory>> er  fastlagt af EU, og hvad de betyder kan du læse om i Kapitel 2 i DCAT-AP: https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf 
+### Hvad er betydningen af stereotyperne 'Optional', 'Recommended' og 'Mandatory'?
+Anvendelse af stereotyperne 'Optional', 'Recommended' og 'Mandatory' er  fastlagt af EU, og hvad de betyder kan du læse om i Kapitel 2 i DCAT-AP: https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf 
 
 ## RETTIGHEDER OG LICENSER
 
