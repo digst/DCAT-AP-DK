@@ -1558,9 +1558,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf (dansk tilføjelse). Se Fælles sprog for datakvalitet: https://arkitektur.digst.dk/node/625</dd>
+<dd>Denne egenskab er en reference til kvalitetsinformation om datasættet, fx en datakvalitetsdeklaration (dansk tilføjelse). Se Fælles sprog for datakvalitet: https://arkitektur.digst.dk/node/625</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph.</dd>
+<dd>This property refers to a grouping of quality information about the dataset</dd>
 <dt>Definition (da)</dt>
 <dd>Refererer til en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf. Kvalitetsinformation repræsenteret i en sådan gruppering kan vedrøre enhver ressourcetype (fx. et datasæt, en linksamling, en graf, et mængde af tripler). I kontekst af DQV forventes denne egenskab dog at blive anvendt i udsagn hvor subjektet er instanser af dcat:Dataste eller dcat:Distribution.		
 		</dd>
@@ -2438,7 +2438,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endpointDescription</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2001/XMLSchema#anyURI</dd>
+<dd>https://www.w3.org/2000/01/rdf-schema#Resource</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. </dd>
 <dt>Anvendelsesnote (en)</dt>
