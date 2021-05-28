@@ -217,6 +217,7 @@ Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registr
 - [GeoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) (EU ISA Programme) - Defines mappings from INSPIRE/ISO 19115 metadata to DCAT-AP
   - [Alignment of INSPIRE metadata with DCAT-AP](https://ies-svn.jrc.ec.europa.eu/projects/metadata/wiki/Alignment_of_INSPIRE_metadata_with_DCAT-AP)
   - [Mappings defined in GeoDCAT-AP](https://github.com/GeoCat/iso-19139-to-dcat-ap/blob/master/documentation/Mappings.md)
+  - [INSPIRE Themes mapped to EU data themes](https://raw.githubusercontent.com/SEMICeu/iso-19139-to-dcat-ap/master/alignments/inspire-themes-to-mdr-data-themes.rdf)
 - [ISO 19115 - DCAT - Schema.org mapping](https://www.w3.org/2015/spatial/wiki/ISO_19115_-_DCAT_-_Schema.org_mapping) (W3C SDW WG)
 - [StatDCAT-AP](https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe) (EU ISA Programme) - Defines mappings from SDMX metadata to DCAT-AP
 - [DDI v2 to Dublin Core](http://www.ddialliance.org/resources/ddi-profiles/dc) (DDI Alliance)
