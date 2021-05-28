@@ -1345,7 +1345,7 @@ The properties of this class:
 <dt>Range</dt>
 <dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
 <dt>Usage note (en)</dt>
-<dd>This property refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph.</dd>
+<dd>This property refers to a grouping of quality information about the dataset.</dd>
 <dt>Definition (en)</dt>
 <dd>Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution.</dd>
 <dt>Multiplicity</dt>
@@ -2047,7 +2047,7 @@ The properties of this class:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endpointDescription</dd>
 <dt>Range</dt>
-<dd>http://www.w3.org/2001/XMLSchema#anyURI</dd>
+<dd>https://www.w3.org/2000/01/rdf-schema#Resource</dd>
 <dt>Usage note (en)</dt>
 <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.</dd>
 <dt>Definition (en)</dt>
