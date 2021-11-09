@@ -192,7 +192,10 @@ OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinations
 
 Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
 
+### Hvordan angiver man hvilke oplysningertyper/variable et givet datasæt indeholder?
 
+Det primære formål med DCAT, DCAT-AP og DCAT-AP-DK at standardisere metadata om datasæt i et katalog og ikke selve dataindholdet. Det kan dog ofte være relevant at man i metadatabeskrivelsen henviser til den datamodel eller det schema en givet datadistribution er i overenstemmelse med via egenskaben dct:conformsTo. 
+Øvrige W3C-grupper har dog fokus på de konkrete data. Se evt. [https://www.w3.org/2013/csvw/wiki/Main_Page](CSV on the Web), [https://www.w3.org/TR/vocab-data-cube/](The RDF Data Cube Vocabulary) og [https://www.w3.org/2021/sdw/](Spatial Data on the Web and others), jf. https://github.com/w3c/dxwg/issues/1418#issuecomment-955162937
 
 ## ANVENDELSE AF DCAT 
 
