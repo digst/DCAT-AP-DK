@@ -192,6 +192,9 @@ OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinations
 
 Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
 
+### Hvad er forskellen mellem en distribution og en datatjeneste?
+Se denne udgivelse om emnet: [Usage guide on Datasets, Distributions and Data Services](https://github.com/SEMICeu/DCAT-AP/blob/2.1.0-draft/releases/2.1.0/usageguide-dataset-distribution-dataservice.md) (Bemærk dokumentet er i udkast og en del af den kommende DCAT-AP 2.1.0 release)
+
 ### Hvordan angiver man hvilke oplysningertyper/variable et givet datasæt indeholder?
 
 Det primære formål med DCAT, DCAT-AP og DCAT-AP-DK at standardisere metadata om datasæt i et katalog og ikke selve dataindholdet. Det kan dog ofte være relevant at man i metadatabeskrivelsen henviser til den datamodel eller det schema en givet datadistribution er i overenstemmelse med via egenskaben dct:conformsTo. 
