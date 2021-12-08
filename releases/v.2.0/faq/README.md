@@ -252,5 +252,11 @@ RDFa (Resource Description Framework in attributes) tilføjer et sæt attributni
 - https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
 
 
+### Hvor kan jeg finde mere information om DCAT og DCAT-AP?
+
+- Webkurser på EU Academy: https://academy.europa.eu/courses/?search=dcat
+- DCAT-AP på JoinUp:  https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe
+- DCAT: https://www.w3.org/TR/vocab-dcat-2/
+
 <!-- ### Hvilke applikationer understøtter DCAT? Tilføjes senere-->
 
