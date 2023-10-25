@@ -1,0 +1,344 @@
+{
+  "@graph" : [ {
+    "@id" : "dct:modified",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "modified",
+    "prefLabel" : "modified"
+  }, {
+    "@id" : "dct:publisher",
+    "@type" : "rdf:Property",
+    "label" : "publisher",
+    "prefLabel" : "publisher"
+  }, {
+    "@id" : "vann:preferredNamespacePrefix",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "preferred namespace prefix",
+    "prefLabel" : "preferred namespace prefix"
+  }, {
+    "@id" : "vann:preferredNamespaceUri",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "preferred namespace uri",
+    "prefLabel" : "preferred namespace uri"
+  }, {
+    "@id" : "skos:altLabel",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "alt label"
+  }, {
+    "@id" : "skos:definition",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "definition"
+  }, {
+    "@id" : "skos:prefLabel",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "pref label"
+  }, {
+    "@id" : "adms:status",
+    "@type" : "owl:ObjectProperty",
+    "label" : "status",
+    "prefLabel" : "status"
+  }, {
+    "@id" : "dcat:Dataset",
+    "@type" : "owl:Class",
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."
+    }, {
+      "@language" : "da",
+      "@value" : "En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."
+    } ],
+    "isDefinedBy" : [ "http://www.w3.org/TR/vocab-dcat/", "http://www.w3.org/ns/dcat#" ],
+    "label" : [ {
+      "@language" : "en",
+      "@value" : "Dataset"
+    }, {
+      "@language" : "da",
+      "@value" : "Datasæt"
+    } ],
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "dcat:Resource",
+    "@type" : "owl:Class",
+    "isDefinedBy" : [ "http://www.w3.org/ns/dcat#", "http://www.w3.org/TR/vocab-dcat/" ],
+    "label" : [ {
+      "@language" : "da",
+      "@value" : "Katalogressource"
+    }, {
+      "@language" : "en",
+      "@value" : "Catalogued resource"
+    } ],
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "dcat:theme",
+    "@type" : "owl:DatatypeProperty",
+    "label" : "theme",
+    "prefLabel" : "theme",
+    "theme" : "<http://www.form-online.dk/opgavenoegle/06/#06.38.10.10>"
+  }, {
+    "@id" : "org:Organization",
+    "@type" : "owl:Class",
+    "comment" : {
+      "@language" : "en",
+      "@value" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"
+    },
+    "isDefinedBy" : "http://www.w3.org/ns/org",
+    "label" : [ {
+      "@language" : "da",
+      "@value" : "Organisation"
+    }, {
+      "@language" : "en",
+      "@value" : "Organization"
+    } ],
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "mdl-app:approval",
+    "@type" : "owl:ObjectProperty",
+    "label" : "approval",
+    "prefLabel" : "approval"
+  }, {
+    "@id" : "conf:ConfidentialityType",
+    "@type" : "owl:Class",
+    "comment" : [ {
+      "@language" : "da",
+      "@value" : "grad af fortrolighed forstået som i hvilket omfang information kan videregives"
+    }, {
+      "@language" : "en",
+      "@value" : "degree of confidentiality with respect to the extent by which information can be disclosed"
+    } ],
+    "isDefinedBy" : "https://data.gov.dk/concept/core/confidentiality-type/",
+    "label" : [ {
+      "@language" : "en",
+      "@value" : "confidentiality degree"
+    }, {
+      "@language" : "da",
+      "@value" : "fortrolighedsgrad"
+    } ],
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "pers-cat:PersonalDataCategory",
+    "@type" : "owl:Class",
+    "comment" : [ {
+      "@language" : "da",
+      "@value" : "kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne"
+    }, {
+      "@language" : "en",
+      "@value" : "classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable"
+    } ],
+    "isDefinedBy" : "https://data.gov.dk/concept/core/personaldata/",
+    "label" : [ {
+      "@language" : "en",
+      "@value" : "personal data category"
+    }, {
+      "@language" : "da",
+      "@value" : "personoplysningskategori"
+    } ],
+    "subClassOf" : "owl:Thing"
+  }, {
+    "@id" : "https://data.gov.dk/model/core/dcat-dk",
+    "@type" : "owl:Ontology",
+    "modified" : "2020-10-01",
+    "publisher" : "<https://digst.dk/>",
+    "preferredNamespacePrefix" : "dcat-dk",
+    "preferredNamespaceUri" : "https://data.gov.dk/model/core/dcat-dk/",
+    "comment" : [ {
+      "@language" : "da",
+      "@value" : "DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT."
+    }, {
+      "@language" : "en",
+      "@value" : "DCAT-DK is a vocabulary that expands the possibilities for describing data sets in the Danish common public context and defines characteristics such as data set manager, payment required, personal data category and degree of confidentiality, which are not included in DCAT-AP or DCAT."
+    } ],
+    "label" : [ {
+      "@language" : "da",
+      "@value" : "DCAT vokabular udvidelse"
+    }, {
+      "@language" : "en",
+      "@value" : "DCAT vocabulary extension"
+    } ],
+    "versionIRI" : "https://data.gov.dk/model/core/dcat-dk-1.0.0/",
+    "versionInfo" : "version 1.0.0",
+    "status" : "http://purl.org/adms/status/Completed",
+    "approval" : "mdl-app:Approved"
+  }, {
+    "@id" : "dcat-dk:datasetResponsibleOrganisation",
+    "@type" : "owl:ObjectProperty",
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "organization that is legally accountable for the dataset"
+    }, {
+      "@language" : "da",
+      "@value" : "organisation der har det juridiske ansvar for datasættet"
+    } ],
+    "domain" : "dcat:Dataset",
+    "label" : [ {
+      "@language" : "da",
+      "@value" : "datasætansvarlig organisation"
+    }, {
+      "@language" : "en",
+      "@value" : "dataset responsible organisation"
+    } ],
+    "range" : "org:Organization",
+    "definition" : [ {
+      "@language" : "en",
+      "@value" : "organization that is legally accountable for the dataset"
+    }, {
+      "@language" : "da",
+      "@value" : "organisation der har det juridiske ansvar for datasættet"
+    } ],
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "dataset responsible organisation"
+    }, {
+      "@language" : "da",
+      "@value" : "datasætansvarlig organisation"
+    } ]
+  }, {
+    "@id" : "dcat-dk:hasConfidentialityType",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "dcat:Dataset",
+    "isDefinedBy" : "https://data.gov.dk/model/core/dcat-dk/",
+    "label" : "has confidentiality type",
+    "range" : "conf:ConfidentialityType",
+    "definition" : [ {
+      "@language" : "da",
+      "@value" : "angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives"
+    }, {
+      "@language" : "en",
+      "@value" : "specification of the extent by which information can be disclosed"
+    } ],
+    "prefLabel" : [ {
+      "@language" : "da",
+      "@value" : "har fortrolighedsgrad"
+    }, {
+      "@language" : "en",
+      "@value" : "has confidentiality type"
+    } ]
+  }, {
+    "@id" : "dcat-dk:paymentImposedContents",
+    "@type" : "owl:DatatypeProperty",
+    "domain" : "dcat:Resource",
+    "isDefinedBy" : "https://data.gov.dk/model/core/dcat-dk/",
+    "label" : [ {
+      "@language" : "en",
+      "@value" : "payment imposed contents"
+    }, {
+      "@language" : "da",
+      "@value" : "betalingspålagt"
+    } ],
+    "range" : "xsd:boolean",
+    "definition" : [ {
+      "@language" : "en",
+      "@value" : "specification of whether payment is imposed on the catalogued resource or not."
+    }, {
+      "@language" : "da",
+      "@value" : "angivelse af hvorvidt datasættet er betalingspålagt eller ej."
+    } ],
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "payment imposed contents"
+    }, {
+      "@language" : "da",
+      "@value" : "betalingspålagt"
+    } ]
+  }, {
+    "@id" : "dcat-dk:personalDataCategory",
+    "@type" : "owl:ObjectProperty",
+    "comment" : [ {
+      "@language" : "en",
+      "@value" : "Values for this property must be provided by a controlled vocabulary (A SKOS classification)"
+    }, {
+      "@language" : "da",
+      "@value" : "Udfaldsrummet for denne egenskab skal være en klassifikation (SKOS)"
+    } ],
+    "domain" : "dcat:Dataset",
+    "isDefinedBy" : "https://data.gov.dk/model/core/dcat-dk/",
+    "label" : "personal data category",
+    "range" : "pers-cat:PersonalDataCategory",
+    "definition" : [ {
+      "@language" : "da",
+      "@value" : "angivelse af tilhørsforhold til en bestemt personoplysningskategori"
+    }, {
+      "@language" : "en",
+      "@value" : "specification of a relation to specific personal data category"
+    } ],
+    "prefLabel" : [ {
+      "@language" : "en",
+      "@value" : "personal data category"
+    }, {
+      "@language" : "da",
+      "@value" : "personoplysningskategori"
+    } ]
+  } ],
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "approval" : {
+      "@id" : "https://data.gov.dk/concept/core/approvalstatus/approval",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "status" : {
+      "@id" : "http://www.w3.org/ns/adms#status",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "theme" : {
+      "@id" : "http://www.w3.org/ns/dcat#theme"
+    },
+    "adms" : "http://www.w3.org/ns/adms#",
+    "org" : "http://www.w3.org/ns/org#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "dcat-dk" : "https://data.gov.dk/model/core/dcat-dk/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "conf" : "https://data.gov.dk/concept/core/confidentiality-type/",
+    "dct" : "http://purl.org/dc/terms/",
+    "pers-cat" : "https://data.gov.dk/concept/core/personaldata/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "mdl-app" : "https://data.gov.dk/concept/core/approvalstatus/",
+    "dcat" : "http://www.w3.org/ns/dcat#",
+    "vann" : "http://purl.org/vocab/vann/"
+  }
+}

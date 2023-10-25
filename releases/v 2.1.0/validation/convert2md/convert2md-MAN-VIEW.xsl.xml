@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:xmi="http://www.omg.org/spec/XMI/20110701" 
+xmlns:dct="http://purl.org/dc/terms/" 
+xmlns:ms="http://purl.org/ms-lod/MetaShare.ttl#" 
+xmlns:dcat-dk="https:/data.gov.dk/model/core/dcat-dk/"
+xmlns:sh="http://www.w3.org/ns/shacl#"
+xmlns:dcat="http://www.w3.org/ns/dcat#" 
+xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+xmlns:vcard="http://www.w3.org/2006/vcard/ns#" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<xsl:output method="html"/>
+<!--
+<xsl:result-document href="/foo.xml" method="xml"> -->
+  
+<xsl:template match="rdf:RDF">
+
+ <textarea> 
+	<HTML lang="da">
+		<HEAD>
+			<TITLE>KONVERTERING</TITLE>
+			<link rel="stylesheet" type="text/css" href="convert.css"/>	
+		</HEAD>
+	    <BODY>
+		
+		<!--Vis katalogmetadata 
+		<xsl:for-each select="//rdf:type[@rdf:resource='http://www.w3.org/ns/shacl#NodeShape' ]/..">
+		<h1><xsl:apply-templates select="dct:title"/></h1>	 
+		<p><xsl:apply-templates select="dct:description"/> </p>		
+		<p>Udgiver: <xsl:apply-templates select="dct:publisher"/> </p>		
+		<xsl:if test="dct:modified"><p>Seneste opdateringsdato: <xsl:value-of select="dct:modified"/></p> </xsl:if>	
+		<br/><br/>
+
+			 <xsl:if test="dcat:dataset"> 
+				<h2>Datasæt:</h2>
+				<xsl:apply-templates select="dcat:dataset/dcat:Dataset"/>									
+			 </xsl:if>
+		</xsl:for-each>   -->	
+			<xsl:if test="//rdf:type[@rdf:resource='http://www.w3.org/ns/shacl#NodeShape' ]/..">
+
+			<xsl:for-each select="//rdf:type[@rdf:resource='http://www.w3.org/ns/shacl#NodeShape' ]/..">	
+				 <xsl:choose>
+					<xsl:when test="sh:name='Catalog' or sh:name='Dataset' or sh:name='Agent'">	
+						<xsl:call-template name="nodes-metadata"/>
+
+							<xsl:for-each select="sh:property/rdf:Description"> 
+
+								 <xsl:choose>
+									<xsl:when test="sh:group[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory']">
+											<xsl:call-template name="properties-metadata"/>					
+									</xsl:when>	
+									
+									<xsl:otherwise>
+									</xsl:otherwise>
+								 </xsl:choose>	
+							</xsl:for-each>
+
+					</xsl:when>
+					<xsl:otherwise></xsl:otherwise>
+				 </xsl:choose>	
+			
+			</xsl:for-each>
+			
+			</xsl:if>							 
+	     </BODY>
+    </HTML>
+
+ </textarea>  
+
+</xsl:template>	  
+
+
+<!-- Nodes metadata -->	
+<xsl:template name="nodes-metadata">	
+			
+## Klasse: <xsl:apply-templates select="sh:name"/> (<xsl:value-of select="sh:name[@xml:lang='en']"/>) <xsl:text>&#xd;</xsl:text>
+
+<dl class="def"> 
+<dt>URI</dt><dd><xsl:for-each select="sh:targetClass[@rdf:resource]"><xsl:value-of select="@rdf:resource"/></xsl:for-each>	</dd>
+<dt>Anvendelsesnote (da) </dt><dd><xsl:for-each select="sh:description[@xml:lang='da']"><xsl:value-of select="."/></xsl:for-each></dd>
+<dt>Kravniveau</dt><dd>
+
+ <xsl:choose>
+	<xsl:when test="sh:name='Catalog' or sh:name='Dataset' or sh:name='Agent'">Obligatorisk</xsl:when>			
+	<xsl:when test="sh:name='Category' or sh:name='Category Scheme' or sh:name='Distribution' or sh:name='Licence Document'">Anbefalet</xsl:when>		
+	<xsl:otherwise>Valgfri</xsl:otherwise>
+ </xsl:choose>
+ 
+ <!-- 
+<xsl:if test="sh:name='Catalog' or sh:name='Dataset' or sh:name='Agent'">Obligatorisk</xsl:if>
+
+
+<xsl:if test="sh:name='Category' or sh:name='Category Scheme' or sh:name='Distribution' or sh:name='Licence Document'">Anbefalet</xsl:if>
+
+
+'|sh:name='Agent'|sh:name='Dataset'|sh:name='Category'|sh:name='Category Scheme'|sh:name='Category'|sh:name='Distribution'|sh:name='Licence Document' -->
+
+</dd>
+</dl>
+
+<xsl:if test="sh:name">
+<!--
+<img><xsl:attribute name="src">img/<xsl:value-of select="sh:name[@xml:lang='da']"/>.png</xsl:attribute><xsl:attribute name="alt"><xsl:value-of select="sh:name[@xml:lang='da']"/></xsl:attribute></img>	 -->
+<xsl:text>&#xd;</xsl:text>	
+</xsl:if>
+
+<xsl:if test="sh:property">	 
+### Klassens obligatoriske/anbefalede egenskaber:
+
+Property|	URI (Range)|	Usage note|	Card |Requirement|
+|---|---|---|---|---|</xsl:if>
+
+</xsl:template>	
+
+<!-- Properties metadata -->	
+<xsl:template name="properties-metadata">
+|<xsl:apply-templates select="sh:name"/> (<xsl:value-of select="sh:name[@xml:lang='en']"/>)|<xsl:for-each select="sh:path[@rdf:resource]"><xsl:value-of select="@rdf:resource"/></xsl:for-each>	(<xsl:for-each select="sh:class[@rdf:resource]"><xsl:value-of select="@rdf:resource"/></xsl:for-each>	
+<!--<xsl:for-each select="sh:nodeKind[@rdf:resource]"><xsl:value-of select="@rdf:resource"/></xsl:for-each> -->
+<xsl:for-each select="sh:nodeKind[@rdf:resource='http://www.w3.org/ns/shacl#BlankNodeOrIRI']">http://www.w3.org/2001/XMLSchema#anyURI</xsl:for-each>
+<xsl:for-each select="sh:nodeKind[@rdf:resource='http://www.w3.org/ns/shacl#Literal']">http://www.w3.org/2000/01/rdf-schema#Literal</xsl:for-each>
+<xsl:for-each select="sh:datatype[@rdf:resource='http://www.w3.org/2001/XMLSchema#decimal']">http://www.w3.org/2001/XMLSchema#decimal</xsl:for-each>
+<xsl:for-each select="sh:datatype[@rdf:resource='http://www.w3.org/2001/XMLSchema#duration']">http://www.w3.org/2001/XMLSchema#duration</xsl:for-each>
+<xsl:for-each select="sh:datatype[@rdf:resource='http://www.w3.org/2001/XMLSchema#boolean']">http://www.w3.org/2001/XMLSchema#boolean</xsl:for-each>
+<xsl:for-each select="sh:node[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape']">http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime</xsl:for-each>
+<xsl:for-each select="sh:shape[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/DateOrDateTimeDataType_Shape']">http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime</xsl:for-each>
+<xsl:for-each select="sh:node[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/DcatResource_Shape']">http://www.w3.org/ns/dcat#Catalog; http://www.w3.org/ns/dcat#Dataset; http://www.w3.org/ns/dcat#DataService</xsl:for-each>
+<xsl:for-each select="sh:pattern">Anvend følgende klassifikation: <xsl:value-of select="."/></xsl:for-each>)|<xsl:for-each select="sh:description[@xml:lang='da']"><xsl:value-of select="."/></xsl:for-each>| <xsl:choose>
+	<xsl:when test="sh:minCount">
+		<xsl:value-of select="sh:minCount"/>	
+		 <xsl:choose>
+			<xsl:when test="sh:maxCount">..<xsl:value-of select="sh:maxCount"/></xsl:when>	
+			<xsl:otherwise>..*</xsl:otherwise>
+		 </xsl:choose>	
+	</xsl:when>			
+	<xsl:when test="sh:maxCount">0..<xsl:value-of select="sh:maxCount"/></xsl:when>		
+	<xsl:otherwise>0..*</xsl:otherwise>
+ </xsl:choose>|	 <xsl:for-each select="sh:group[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/Mandatory']">Obligatorisk</xsl:for-each>	
+	 <xsl:for-each select="sh:group[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/Recommended']">Anbefalet</xsl:for-each>
+	 <xsl:for-each select="sh:group[@rdf:resource='https://data.gov.dk/model/profile/dcat-ap-dk/Optional']">Valgfri</xsl:for-each>|</xsl:template>	
+
+
+<!-- Vis danske annotationer (titel/beskrivelse)  -->	
+<xsl:template match="dct:title|dct:description|sh:name">				
+		   <xsl:choose>
+			 <xsl:when test="@xml:lang!=''">
+				<xsl:if test="@xml:lang='da'">
+					<xsl:value-of select="."/>
+				</xsl:if>						
+			 </xsl:when>				 
+			 <xsl:otherwise>
+				<xsl:value-of select="."/>	 
+			</xsl:otherwise>							 
+		   </xsl:choose>
+</xsl:template>	  	 
+	    		  
+<!-- Vis udgiver  -->	
+<xsl:template match="dct:publisher">	
+  <xsl:if test="foaf:Agent/foaf:name"><xsl:value-of select="."/></xsl:if>
+  <xsl:value-of select="@rdf:resource"/>
+</xsl:template>
+
+<!-- Vis datasetmetadata  -->	
+<xsl:template match="dcat:Dataset">				
+	<xsl:call-template name="metadata"/>	 
+</xsl:template>	
+
+
+<!-- Vis datasætrepræsentationer (adgangsURL) -->	
+<xsl:template match="dcat:distribution/dcat:Distribution/dcat:accessURL">
+<a><xsl:attribute name='href'><xsl:value-of select='@rdf:resource'/></xsl:attribute><xsl:value-of select='@rdf:resource'/></a>				
+</xsl:template>	
+
+<!-- Vis datasætrepræsentationer (adgangsURL) -->	
+<xsl:template match="dcat:distribution">
+<p><a><xsl:attribute name='href'><xsl:value-of select='@rdf:resource'/></xsl:attribute><xsl:value-of select='@rdf:resource'/></a>	</p>			
+</xsl:template>	
+
+</xsl:stylesheet>
