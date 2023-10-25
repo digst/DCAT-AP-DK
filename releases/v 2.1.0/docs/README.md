@@ -5,8 +5,10 @@ Her ligger følgende filer:
 - README.md - Denne fil
 - index.md - Mastertekst i Markdown-format  [2] [3]
 - index.html - Mastertekst konverteret til html
+- ?
 
 [1] Udstilling via GitHub Pages kan aktiveres via repositoriets 'Settings' (scroll ned til GitHub Pages)
+
 
 [2] Konvertering kan fx ske via Bikeshed's webformular: https://api.csswg.org/bikeshed/
 
