@@ -656,7 +656,7 @@
     sh:class dct:LinguisticSystem ;
     rdfs:comment "A language of the resource."@en, "Ressourcens sprog."@da ;
     sh:severity sh:Violation ;
-    sh:pattern "^http://publications.europa.eu/resource/dataset/language/" ;
+    sh:pattern "^http://publications.europa.eu/resource/authority/language/" ;
     sh:name "sprog"@da, "language"@en ;
     sh:description "This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages."@en, "Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language "@da ;
     sh:group <https://data.gov.dk/model/profile/dcat-ap-dk/Optional> ;
