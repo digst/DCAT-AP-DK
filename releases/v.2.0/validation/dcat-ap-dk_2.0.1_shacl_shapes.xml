@@ -252,7 +252,7 @@
 		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
 <!--    <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>  -->
-        <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
+        <sh:pattern>^http://publications.europa.eu/resource/authority/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->	
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -494,7 +494,7 @@
 		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>	
 		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
 <!--    <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/> -->
-        <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
+        <sh:pattern>^http://publications.europa.eu/resource/authority/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
@@ -828,7 +828,7 @@
 		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
 <!--   <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/> -->
-        <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
+        <sh:pattern>^http://publications.europa.eu/resource/authority/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Info"/>
@@ -1424,7 +1424,7 @@
 		<rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>		
 		<rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>			
  <!--   <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/> -->
-        <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
+        <sh:pattern>^http://publications.europa.eu/resource/authority/language/</sh:pattern>
         <sh:flags>i</sh:flags> <!-- ignore case -->	
         <sh:path rdf:resource="http://purl.org/dc/terms/language"/>
         <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
