@@ -1049,7 +1049,7 @@
       <sh:class rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
       <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
       <sh:severity rdf:resource="http://www.w3.org/ns/shacl#Violation"/>
-      <sh:pattern>^http://publications.europa.eu/resource/dataset/language/</sh:pattern>
+      <sh:pattern>^http://publications.europa.eu/resource/authority/language/</sh:pattern>
       <sh:name xml:lang="da">sprog</sh:name>
       <rdfs:comment xml:lang="da">Ressourcens sprog.</rdfs:comment>
       <sh:description xml:lang="en">This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages.</sh:description>
