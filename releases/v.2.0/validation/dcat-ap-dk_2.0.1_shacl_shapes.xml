@@ -9,7 +9,7 @@
          xmlns:dcat-ap="http://data.europa.eu/r5r/"
 		 xmlns:dcat-ap-dk="https://data.gov.dk/model/profile/dcat-ap-dk/"
 		 xmlns:dcat-dk="https://data.gov.dk/model/core/dcat-dk/"
-         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dct="http://purl.org/dc/terms/"
          xmlns:cc="http://creativecommons.org/ns#"
 		 xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:sh="http://www.w3.org/ns/shacl#"
@@ -21,12 +21,12 @@
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1/">
     <rdf:type rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/dx/prof/Profile"/>	
-    <dc:title>DCAT-AP-DK v.2.0.1</dc:title>
-	<dc:description>The Danish DCAT Application profile for datasets and data catalogues (DCAT-AP-DK) is a specification based on DCAT and DCAT-AP for describing public sector datasets in Denmark.</dc:description> 	
+    <dct:title>DCAT-AP-DK v.2.0.1</dct:title>
+	<dct:description>The Danish DCAT Application profile for datasets and data catalogues (DCAT-AP-DK) is a specification based on DCAT and DCAT-AP for describing public sector datasets in Denmark.</dct:description> 	
     <owl:versionInfo>2.0.1</owl:versionInfo>
 	<prof:isProfileOf rdf:resource="http://www.w3.org/ns/dcat#"/>	
     <prof:isProfileOf rdf:resource="http://data.europa.eu/r5r/"/>		
-    <dc:publisher rdf:resource="https://digst.dk"/>
+    <dct:publisher rdf:resource="https://digst.dk"/>
     <foaf:page rdf:resource="https://arkitektur.digst.dk/rammearkitektur/datastandarder/dcat-ap-dk"/> 
     <foaf:page rdf:resource="https://github.com/digst/DCAT-AP-DK"/>
 	<dcat:contactPoint>
@@ -37,12 +37,12 @@
 	</dcat:contactPoint>
 	<dcat:distribution>	
 		<dcat:Distribution>	
-			<dc:title>DCAT-AP-DK v.2.0.1 SHACL shapes (RDF/XML)</dc:title>		
-			<dc:description>This document specifies the constraints on properties and classes of DCAT-AP-DK expressed in SHACL (RDF/XML) </dc:description> 			
-			<dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>			
-			<dc:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
+			<dct:title>DCAT-AP-DK v.2.0.1 SHACL shapes (RDF/XML)</dct:title>		
+			<dct:description>This document specifies the constraints on properties and classes of DCAT-AP-DK expressed in SHACL (RDF/XML) </dct:description> 			
+			<dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>			
+			<dct:conformsTo rdf:resource="https://www.w3.org/TR/shacl"/>
 			<dcat-ap:availability rdf:resource="http://data.europa.eu/r5r/experimental"/>	
-			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-01</dc:modified>					
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-01</dct:modified>					
 			<dcat:accessURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk-2.0.1"/>
 			<dcat:downloadURL rdf:resource="https://data.gov.dk/model/profile/dcat-ap-dk_2.0.1-shacl_shapes.xml"/>	
 		</dcat:Distribution>
@@ -2518,21 +2518,21 @@ Used as a super class for the class ConfidentialityTypeNatoEu that contains clas
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Obligatorisk</rdfs:label>
     <rdfs:label xml:lang="en">Mandatory</rdfs:label>
-    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</dc:description> 	
+    <dct:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</dct:description> 	
   </rdf:Description>
   
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Recommended">
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Anbefalet</rdfs:label>
     <rdfs:label xml:lang="en">Recommended</rdfs:label>	
-    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender SHOULD provide the information for that property if it is available.</dc:description> 
+    <dct:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender SHOULD provide the information for that property if it is available.</dct:description> 
   </rdf:Description>
   
   <rdf:Description rdf:about="https://data.gov.dk/model/profile/dcat-ap-dk/Optional">
     <rdf:type rdf:resource="http://www.w3.org/ns/shacl#/PropertyGroup"/>  
     <rdfs:label xml:lang="da">Valgfri</rdfs:label>
     <rdfs:label xml:lang="en">Optional</rdfs:label>		
-    <dc:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</dc:description> 	
+    <dct:description xml:lang="en">a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</dct:description> 	
   </rdf:Description>
   
 
