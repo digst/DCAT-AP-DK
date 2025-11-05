@@ -476,17 +476,17 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et datasæt som er opført i kataloget</dd>
+<dd>Denne egenskab angiver et datasæt som er opført i kataloget. Da tomme kataloger ofte er tegn på problemer, bør egenskaben kombineres med datatjeneste egenskaben til en implementation af et tomt katalog tjek.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property links the Catalogue with a Dataset that is part of the Catalogue.</dd>
+<dd>This property links the Catalogue with a Dataset that is part of the Catalogue. As empty Catalogues are usually indications of problems, this property should be combined with the property service to implement an empty Catalogue check.</dd>
 <dt>Definition (da)</dt>
 <dd>En samling af data som er opført i kataloget.</dd>
 <dt>Definition (en)</dt>
 <dd>A collection of data that is listed in the catalog.</dd>
 <dt>Multiplicitet</dt>
-<dd>1..*</dd>
+<dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Obligatorisk</dd>
+<dd>Anbefalet</dd>
 </dl>
 				
 ### Egenskab: har datatjeneste (service) 
@@ -496,17 +496,17 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#DataService</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et websted eller endpoint som er opført i kataloget.</dd>
+<dd>Denne egenskab angiver et websted eller endpoint som er opført i kataloget. Da tomme kataloger ofte er tegn på problemer, bør egenskaben kombineres med datasæt egenskaben til en implementation af et tomt katalog tjek.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a site or end-point that is listed in the catalog.</dd>
+<dd>This property refers to a site or end-point that is listed in the catalog. As empty Catalogues are usually indications of problems, this property should be combined with the property dataset to implement an empty Catalogue check.</dd>
 <dt>Definition (da)</dt>
-<dd>Et websted eller et endpoint som er opført i kataloget</dd>
+<dd>Et websted eller et endpoint (datatjeneste) som er opført i kataloget.</dd>
 <dt>Definition (en)</dt>
-<dd>A site or endpoint that is listed in the catalog.</dd>
+<dd>A site or endpoint (Data Service) that is listed in the catalog.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
+<dd>Anbefalet</dd>
 </dl>
 				
 ### Egenskab: udgiver (publisher) 
@@ -616,9 +616,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2004/02/skos/core#ConceptScheme</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og datatjenester i kataloget.</dd>
+<dd>Denne egenskab angiver en emneklassifikation der anvendes til klassifikation af datasæt og datatjenester i kataloget. Værdien NAL:data-theme skal som minimum optræde, da det er obligatorisk for dcat:theme.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a knowledge organization system used to classify the Catalogue's Datasets.</dd>
+<dd>This property refers to a knowledge organization system used to classify the Catalogue's Datasets. It must have at least the value NAL:data-theme as this is the manatory controlled vocabulary for dcat:theme.</dd>
 <dt>Definition (da)</dt>
 <dd>Vidensorganiseringssystem (KOS) som anvendes til at klassificere datasæt i kataloget.</dd>
 <dt>Definition (en)</dt>
@@ -787,8 +787,29 @@ Klassens egenskaber:
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
+</dl>
+
+### Egenskab: gældende lovgivning (applicable legislation)
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/r5r/applicableLegislation </dd>
+<dt>Rækkevidde</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
 </dl>	
-			
+
+
 ## Klasse: Katalogpost (Catalog Record) 
 <img src="img/Katalogpost.png" alt="Katalogpost">
 <dl class="def">
@@ -944,7 +965,7 @@ Klassens egenskaber:
 <dt>Definition (en)</dt>
 <dd>An established standard to which the described resource conforms.</dd>
 <dt>Multiplicitet</dt>
-<dd>0..1</dd>
+<dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
@@ -1715,7 +1736,7 @@ Klassens egenskaber:
 ### Egenskab: har version (has version) 
 <dl class="def">
 <dt>URI</dt>
-<dd>http://purl.org/dc/terms/hasVersion</dd>
+<dd>http://www.w3.org/ns/dcat#hasVersion</dd>
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#Dataset</dd>
 <dt>Anvendelsesnote (da)</dt>
@@ -1890,8 +1911,48 @@ Klassens egenskaber:
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
+</dl>
+
+### Egenskab: gældende lovgivning (applicable legislation)
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/r5r/applicableLegislation </dd>
+<dt>Rækkevidde</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
 </dl>	
-			
+
+### Egenskab: i serie (in serie)
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#inSeries</dd>
+<dt>Rækkevidde</dt>
+<dd>https://www.w3.org/ns/dcat#DatasetSeries</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>	
+
 ## Klasse: Distribution (Distribution) 
 <img src="img/Distribution.png" alt="Distribution">
 <dl class="def">
@@ -2158,7 +2219,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#byteSize</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2001/XMLSchema#decimal</dd>
+<dd>http://www.w3.org/2001/XMLSchema#nonNegativeInteger</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver størrelsen af en distribution angivet i bytes.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2371,7 +2432,27 @@ Klassens egenskaber:
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
-</dl>	
+</dl>
+
+### Egenskab: gældende lovgivning (applicable legislation)
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/r5r/applicableLegislation </dd>
+<dt>Rækkevidde</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
 			
 ## Klasse: Datatjeneste (Data Service) 
 <img src="img/Datatjeneste.png" alt="Datatjeneste">
@@ -2438,7 +2519,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endpointDescription</dd>
 <dt>Rækkevidde</dt>
-<dd>https://www.w3.org/2000/01/rdf-schema#Resource</dd>
+<dd>http://www.w3.org/2000/01/rdf-schema#Resource</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2532,7 +2613,293 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
-			
+
+### Egenskab: dokumentation (documentation) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://xmlns.com/foaf/0.1/page</dd>
+<dt>Rækkevidde</dt>
+<dd>http://xmlns.com/foaf/0.1/Document</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver en webside eller et dokument som beskriver datasættet.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to a page or document about this Dataset.</dd>
+<dt>Definition (da)</dt>
+<dd>En side eller et dokument vedrørende denne entitet.</dd>
+<dt>Definition (en)</dt>
+<dd>A page or document about this thing.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: format (format) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/format</dd>
+<dt>Rækkevidde</dt>
+<dd>http://purl.org/dc/terms/MediaTypeOrExtent</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver filformatet som kan fås fra endpoint som den er defineret af 'EU Vocabularies File Type Named Authority List' (http://publications.europa.eu/resource/authority/file-type)</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to the file format that can be obtained from the endpoint.</dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens filformat, fysiske medium eller dimensioner som kan fås af endpoint.</dd>
+<dt>Definition (en)</dt>
+<dd>The file format, physical medium, or dimensions that can be returned by the endpoint.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: gældende lovgivning (applicable legislation)
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/r5r/applicableLegislation </dd>
+<dt>Rækkevidde</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd></dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: udgiver (publisher) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/publisher</dd>
+<dt>Rækkevidde</dt>
+<dd>http://xmlns.com/foaf/0.1/Agent</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre datatjenesten tilgængeligt.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to an entity (organisation) responsible for making the Data service available. </dd>
+<dt>Definition (da)</dt>
+<dd>En entitet som er ansvarlig for at gøre datatjenesten tilgængelig.</dd>
+<dt>Definition (en)</dt>
+<dd>An entity responsible for making the Data service available.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..1</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+
+
+
+## Klasse: Datasætserie (Dataset Series) 
+<img src="img/Datasætserie.png" alt="Datasætserie">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#DatasetSeries</dd>
+<dt>Anvendelsesnote (da) </dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>A collection of datasets that are published separately, but share some characteristics that group them.</dd>
+<dt>Definition (da)</dt>
+<dd></dd>
+<dt>Definition (en)</dt>
+<dd>A collection of datasets that are published separately, but share some characteristics that group them.</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>	 
+Klassens egenskaber:	
+
+
+				
+### Egenskab: gældende lovgivning (applicable legislation) 
+
+### Egenskab: kontaktpunkt (contact point) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#contactPoint</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2006/vcard/ns#Kind</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver kontaktoplysninger som kan anvendes til at indsende spørgsmål eller kommentarer om datasætserien.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property contains contact information that can be used for sending comments about the Dataset Series.</dd>
+<dt>Definition (da)</dt>
+<dd>Relevante kontaktoplysninger for datasætserien. Anvendelse af vCard anbefales.</dd>
+<dt>Definition (en)</dt>
+<dd>Relevant contact information for the dataset series. Use of vCard is recommended.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+
+### Egenskab: beskrivelse (description) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/description</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab giver en tekstbaseret beskrivelse af datasætseriens formål og indhold. Egenskaben kan optræde én gang for hver sprogvariant af beskrivelsen.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property contains a free-text account of the Dataset Series. This property can be repeated for parallel language versions of the description.</dd>
+<dt>Definition (da)</dt>
+<dd>En forklaring af ressourcen.</dd>
+<dt>Definition (en)</dt>
+<dd>An account of the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>1..*</dd>
+<dt>Kravniveau</dt>
+<dd>Obligatorisk</dd>
+</dl>
+
+
+### Egenskab: opdateringsfrekvens (frequency) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/accrualPeriodicity</dd>
+<dt>Rækkevidde</dt>
+<dd>http://purl.org/dc/terms/Frequency</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd></dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd></dd>
+<dt>Definition (da)</dt>
+<dd>Hyppighed med hvilken noget gentages.</dd>
+<dt>Definition (en)</dt>
+<dd>A rate at which something recurs.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..1</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: geografisk område (spatial/geographic) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/spatial</dd>
+<dt>Rækkevidde</dt>
+<dd>http://purl.org/dc/terms/Location</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to a geographical area covered by the Catalogue. </dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens geografiske karakteristika.</dd>	
+<dt>Definition (en)</dt>
+<dd>Spatial characteristics of the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: seneste ændringsdato (update/modification date) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/modified</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver den dato hvor datasætserien senest er blevet ændret. Dette er ikke den seneste ændringsdato for et datasæt i dataserien.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>The most recent date on which the Dataset Series was changed or modified. This is not equal to the most recent modified dataset in the collection of the dataset series.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen blev ændret.</dd>
+<dt>Definition (en)</dt>
+<dd>Date on which the resource was changed.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..1</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: udgiver (publisher) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/publisher</dd>
+<dt>Rækkevidde</dt>
+<dd>http://xmlns.com/foaf/0.1/Agent</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver den aktør (organisation) der er ansvarlig for at gøre datasætserien tilgængeligt.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to an entity (organisation) responsible for making the Dataset Series available. </dd>
+<dt>Definition (da)</dt>
+<dd>En entitet som er ansvarlig for at gøre ressourcen tilgængelig.</dd>
+<dt>Definition (en)</dt>
+<dd>An entity responsible for making the resource available.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..1</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+
+### Egenskab: udgivelsesdato (release date) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/issued</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver den dato hvor datasætserien først blev formelt udgivet</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property contains the date of formal issuance (e.g., publication) of the Dataset Series.</dd>
+<dt>Definition (da)</dt>
+<dd>Dato for hvornår ressourcen formelt blev udgivet.</dd>
+<dt>Definition (en)</dt>
+<dd>Date of formal issuance of the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..1</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: dækningsperiode (temporal coverage) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/temporal</dd>
+<dt>Rækkevidde</dt>
+<dd>http://purl.org/dc/terms/PeriodOfTime</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver den periode datasætserien dækker</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to a temporal period that the Dataset Series covers.</dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens tidslige karakteristika.</dd>
+<dt>Definition (en)</dt>
+<dd>Temporal characteristics of the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: titel (title) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/title</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property contains a name of the Dataset Series scheme. May be repeated for different versions of the name</dd>
+<dt>Definition (da)</dt>
+<dd>Et navn givet til ressourcen.</dd>
+<dt>Definition (en)</dt>
+<dd>A name given to the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>1..*</dd>
+<dt>Kravniveau</dt>
+<dd>Obligatorisk</dd>
+</dl>	
+
+
 ## Klasse: Aktør (Agent) 
 <img src="img/Akt%C3%B8r.png" alt="Aktør">
 <dl class="def">
@@ -2891,7 +3258,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/locn#geometry</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Literal</dd>
+<dd>http://www.w3.org/ns/locn#Geometry</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab knytter en ressource til dens tilsvarende geometri.</dd>
 <dt>Anvendelsesnote (en)</dt>
