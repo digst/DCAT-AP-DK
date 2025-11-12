@@ -1757,26 +1757,6 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: er version af (is version of) 
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/isVersionOf</dd>
-<dt>Rækkevidde</dt>
-<dd>http://www.w3.org/ns/dcat#Dataset</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et relateret datasæt som det aktuelle datasæt er en version, udgave eller bearbejdelse af.</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.</dd>
-<dt>Definition (da)</dt>
-<dd>En relateret ressource som den beskrevne ressource er en version, udgave eller tilpasning af.</dd>
-<dt>Definition (en)</dt>
-<dd>A related resource of which the described resource is a version, edition, or adaptation.</dd>
-<dt>Multiplicitet</dt>
-<dd>0..*</dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>
-				
 ### Egenskab: proveniensudsagn (provenance) 
 <dl class="def">
 <dt>URI</dt>
