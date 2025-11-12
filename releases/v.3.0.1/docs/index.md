@@ -417,7 +417,7 @@ I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
 <dt>Anvendelsesnote (da) </dt>
 <dd>En udvalgt og arrangeret samling af metadata om datasæt og datatjenester i et katalog.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>A catalogue or repository that hosts the Datasets being described.</dd>
+<dd>A catalogue or repository that hosts the Datasets or Data Services being described.</dd>
 <dt>Definition (da)</dt>
 <dd>En udvalgt og arrangeret samling af metadata om ressourcer (fx. datasæt og datatjenester i kontekst af et datakatalog).</dd>
 <dt>Definition (en)</dt>
@@ -796,13 +796,13 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Bemyndigelse til oprettelsen eller administrationen af kataloget.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd></dd>
+<dd>The legislation that mandates the creation or management of the Catalog.</dd>
 <dt>Definition (da)</dt>
-<dd></dd>
+<dd>Lovgivning som er gældende for denne ressource.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>The legislation that is applicable to this resource. </dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -1920,13 +1920,13 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Bemyndigelse til oprettelsen eller administrationen af datasættet.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd></dd>
+<dd>The legislation that mandates the creation or management of the Dataset.</dd>
 <dt>Definition (da)</dt>
-<dd></dd>
+<dd>Lovgivning som er gældende for denne ressource.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>The legislation that is applicable to this resource. </dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -1940,13 +1940,13 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>https://www.w3.org/ns/dcat#DatasetSeries</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>En datasætserie som datasættet tilhører.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd></dd>
+<dd>A dataset series of which the dataset is part.</dd>
 <dt>Definition (da)</dt>
-<dd></dd>
+<dd>En serie som ressourcen tilhører.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>A series of which the resource is part.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -2441,13 +2441,13 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Bemyndigelse til oprettelsen eller administrationen af distributionen.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd></dd>
+<dd>The legislation that mandates the creation or management of the Distribution.</dd>
 <dt>Definition (da)</dt>
-<dd></dd>
+<dd>Lovgivning som er gældende for denne ressource.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>The legislation that is applicable to this resource. </dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -2458,7 +2458,7 @@ Klassens egenskaber:
 <img src="img/Datatjeneste.png" alt="Datatjeneste">
 <dl class="def">
 <dt>URI</dt>
-<dd>http://www.w3.org/ns/dcat#DataService</dd>
+<dd>https://www.w3.org/ns/dcat#DataService</dd>
 <dt>Anvendelsesnote (da) </dt>
 <dd>Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2519,7 +2519,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#endpointDescription</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2000/01/rdf-schema#Resource</dd>
+<dd>https://www.w3.org/2000/01/rdf-schema#Resource</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. </dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -2661,13 +2661,13 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Bemyndigelse til oprettelsen eller administrationen af datatjenesten.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd></dd>
+<dd>The legislation that mandates the creation or management of the Data Service.</dd>
 <dt>Definition (da)</dt>
-<dd></dd>
+<dd>Lovgivning som er gældende for denne ressource.</dd>
 <dt>Definition (en)</dt>
-<dd></dd>
+<dd>The legislation that is applicable to this resource. </dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
@@ -2702,11 +2702,11 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#DatasetSeries</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd></dd>
+<dd>Datasætserier uden nogen datasæt bør undgås. Der bør være mindst et datasæt som henviser til datasætserien gennem egenskaben i serie (dcat:inSeries).</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>A collection of datasets that are published separately, but share some characteristics that group them.</dd>
+<dd>It is recommended to avoid Dataset Series without a dataset in the collection. Therefore at least one Dataset should refer to a Dataset Series using the property in series (dcat:inSeries).</dd>
 <dt>Definition (da)</dt>
-<dd></dd>
+<dd>En samling af datasæt der udgives separat, men deler egenskaber som grupperer dem.</dd>
 <dt>Definition (en)</dt>
 <dd>A collection of datasets that are published separately, but share some characteristics that group them.</dd>
 <dt>Kravniveau</dt>
@@ -2766,9 +2766,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/Frequency</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd></dd>
+<dd>Angiver opdateringsfrekvensen af datasætserien. Dette er ikke det samme som opdateringsfrekvensen for de enkelte datasæt i serien.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd></dd>
+<dd>The frequency at which the Dataset Series is updated. The frequency of a dataset series is not equal to the frequency of the dataset in the collection.</dd>
 <dt>Definition (da)</dt>
 <dd>Hyppighed med hvilken noget gentages.</dd>
 <dt>Definition (en)</dt>
