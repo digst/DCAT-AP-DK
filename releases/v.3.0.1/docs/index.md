@@ -144,9 +144,9 @@ p.italic{font-style: italic!important;}
 </style>
 
 <pre class="metadata">
-Title: DCAT-AP-DK 2.0.2: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
+Title: DCAT-AP-DK 3.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 Status: LD
-URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/
+URL: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/
 Editor Term: Følgegruppemedlem, Følgegruppemedlemmer 
 Editor: Digitaliseringsstyrelsen,, arkitektur@digst.dk
 Editor: Geodatastyrelsen
@@ -164,40 +164,40 @@ Editor: Styrelsen for Dataforsyning og Effektivisering
 Group: Udvalget for Arkitektur og Standarder (UAS) 
 
 
-Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 2.0.2)' .
+Abstract: 'Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger (DCAT-AP-DK 3.0.1)' .
 Boilerplate: copyright no, conformance no, abstract no
 Shortname: DCAT-AP-DK
-Revision: 2.0.2 
-Date: 2021-02-16
+Revision: 3.0.1 
+Date: 2025-11-12
 Max ToC Depth: 3
 Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
 Inline Github Issues: full
 Logo: digst...
-Translation: en https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/index-en.html
+Translation: en https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/index-en.html
 </pre>
 
-DCAT-AP-DK 2.0.2 er godkendt af Udvalget for Arkitektur og Standarder (1. okt. 2020) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
+DCAT-AP-DK 3.0.1 er godkendt af Udvalget for Arkitektur og Standarder (dd. mmmm. yyyy) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
 
-Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/xmi), [SHACL/RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation).
+Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/xmi), [SHACL/RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/validation).
 
 Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
-<h1>DCAT-AP-DK 2.0.2: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger </h1>
+<h1>DCAT-AP-DK 3.0.1: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger </h1>
 
 
 # Introduktion
 
-DCAT-AP-DK 2.0.2 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
+DCAT-AP-DK 3.0.1 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
 
 ## Formål
 Specifikationen skal være med til sørge for, at begreber til beskrivelse af datasæt og datakataloger anvendes mere ens, og dermed skal den understøtte højere grad af interoperabilitet og kvalitet i oplysningerne. 
 
 
 ## Baggrund
-De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 2.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 2.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 2.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 2.0.2 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 2.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.1 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
 
-Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 2.0. 
+Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 3.0.1. 
 
 Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s [åbne data og PSI-direktiv](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data.
 
@@ -268,38 +268,42 @@ Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har der
 
 ### Yderligere information vedrørende anvendelse af DCAT-AP-DK
 * Eksempler:  
-[https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
+[https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/examples)
 
 * Validering:
-[https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
+[https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/validation)
 
 * Ofte stillede spørgsmål (FAQ):
-[https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/faq)
+[https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/faq](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/faq)
 
 * Kommentarer til DCAT-AP-DK (Issuetracker):
 [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
 
 # Modellens grundlæggende struktur
-DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#begrebmodel-for-beskrivelse-af-datast).
+DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#begrebmodel-for-beskrivelse-af-datast).
 
 ## Katalog
-Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester, som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.</br> [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalog-catalog)
+Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester, som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.</br> [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-katalog-catalog)
 
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller udvalgt og arrangeret af en enkelt aktør. Denne klasse bærer egenskaber, der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
 
 ## Datasæt
 Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde, og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
-</br>[Gå til klassen Datasæt](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datast-dataset)
+</br>[Gå til klassen Datasæt](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-datast-dataset)
 
 ## Datatjeneste
 En datatjeneste (dcat:DataService) er et websted eller endpoint, der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
-</br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-datatjeneste-data-service)
+</br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-datatjeneste-data-service)
+
+## Datasætserie
+En datasætserie (dcat:DatasetSeries) er en samling af datasæt der udgives separat, men deler et eller flere egenskaber som grupperer dem. Ofte anvendendes datasætserien til tidslige serier af datasæt eller geografiske serier som har samme type eller tema, men dækker over forskellige geografiske områder. Et datasæt kan være bundet til flere forskellige datasætserier. Denne klasse er valgfri.
+</br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-datasetserien-dataset-series)
 
 ## Distribution
 En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
-</br>[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-distribution-distribution)
+</br>[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-distribution-distribution)
 
 Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber, der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
 ’titel’, ’beskrivelse’, ’dokumentation’, ’udgivelsesdato’, ’seneste ændringsdato’, ’overholder’, ’geografisk opløsning’ og ’tidslig opløsning’.
@@ -308,7 +312,7 @@ Hvis der for egenskaben er relevante tilføjelser, eller der er afvigelser i for
 
 ## Katalogpost 
 En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger, såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i kataloger, hvor der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
-</br>[Gå til klassen Katalogpost](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-katalogpost-catalog-record)
+</br>[Gå til klassen Katalogpost](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-katalogpost-catalog-record)
 
 
 ## Illustration
@@ -319,7 +323,7 @@ Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende 
 
 
 # Gældende krav og overensstemmelse
-DCAT-AP-DK 2.0.2 er i overensstemmelse med DCAT-AP 2.0.1. Metadatabeskrivelser af datasæt og datakataloger, der overholder DCAT-AP-DK, overholder også DCAT-AP. 
+DCAT-AP-DK 3.0.1 er i overensstemmelse med DCAT-AP 3.0.1. Metadatabeskrivelser af datasæt og datakataloger, der overholder DCAT-AP-DK, overholder også DCAT-AP. 
 
 ## Kravniveauer
 I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelsesprofil. 
@@ -328,40 +332,40 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 * **Anbefalet** (Recommended): informationen BØR angives hvis den er tilgængelig
 * **Valgfri** (Optional): informationen KAN angives  
 
-Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 2.0.1](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf).
+Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 3.0.1](https://semiceu.github.io/DCAT-AP/releases/3.0.1/).
 
 ## Forskellige visninger af DCAT-AP-DK 
-På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 2.0.2. 
+På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 3.0.1. 
 
 Som det er beskrevet i kapitlet ’Modellens grundlæggende struktur’, er en distribution en direkte og konkret repræsentation af et datasæt. Det kunne måske derfor undre, at klassen for distributioner ikke er med i det diagram, der viser de obligatoriske klasser. Selv om det er sandsynligt, at der til alle datasæt er tilknyttet mindst en distribution, er det ikke en absolut nødvendighed. Eksempelvis kan der være tale om et datasæt, der er så tilstrækkeligt langt i sin udvikling, at det er meningsfyldt at beskrive datasættet i sig selv, mens en eller flere distributioner endnu ikke har nået samme stadie. 
 Klassen for distributioner er med i de to øvrige diagrammer.
 
-Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces)
+Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#namespaces)
 
 ### Diagram med obligatoriske elementer (minimumsmodel)
-[DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory) 
+[DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/views/mandatory) 
 beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
 
-<img src="img/Illustration-DCAT-AP-DK-v2.0-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
+<img src="img/Illustration-DCAT-AP-DK-v3.0.1-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 
 ### Diagram med obligatoriske og anbefalede elementer
-[DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended)
+[DCAT-AP-DK-visning 2](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/views/mandatory%2Brecommended)
 beskriver obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber for disse klasser (og som skjuler valgfrie elementer).
 
-<!-- <img src="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"> -->
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"/></a></p>
+<!-- <img src="img/Illustration-DCAT-AP-DK-v3.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"> -->
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v3.0.1-UML-recommended.png"><img src="img/Illustration-DCAT-AP-DK-v3.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber"/></a></p>
 
 ### Diagram med alle elementer  
-Den fulde anvendelsesprofil DCAT-AP-DK v.2.0.2 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
+Den fulde anvendelsesprofil DCAT-AP-DK v.3.0.1 visualiseret med UML-diagram  (alle obligatoriske, anbefalede og valgfrie elementer).
 
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML.png" alt="Illustration af DCAT-AP-DK v. 2.0 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v3.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v3.0.1-UML.png" alt="Illustration af DCAT-AP-DK v.3.0.1 UML"/></a></p>
 
 
 ## Afvigelser ift. DCAT-AP
 Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK, som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses, afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 ### Ændringer af kravniveau
-Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 2.0.2 ift. DCAT-AP 2.0.1:
+Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 3.0.1 ift. DCAT-AP 3.0.1:
 
 * Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
 * Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
@@ -372,7 +376,7 @@ Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 2.0.2 ift. D
 
 
 ### Tilføjelser
-Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.2 ift. DCAT-AP 2.0.1:
+Følgende elementer er blevet tilføjet i DCAT-AP-DK 3.0.1 ift. DCAT-AP 3.0.1:
 
 * Datasæt: datasætansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)
 * Datasæt: bidragsyder (dct:contributor)
@@ -390,7 +394,7 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK 2.0.2 ift. DCAT-AP 2.0.1:
 I indholdsfortegnelsen har disse mærket 'DK'.
 
 ### Udeladelser
-Der er ikke udeladt elementer fra DCAT-AP 2.0.1 i DCAT-AP-DK 2.0.2.
+Der er ikke udeladt elementer fra DCAT-AP 3.0.1 i DCAT-AP-DK 3.0.1.
 
 ## Centrale modeller som anvender DCAT
 
@@ -401,7 +405,7 @@ Asset Description Metadata Schema ([ADMS](https://joinup.ec.europa.eu/solution/a
 
 Der er også udviklet flere nationale profiler af DCAT-AP af andre EU-medlemslande samt domænespecifikke profiler, fx [geoDCAT-AP](https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe) til geodata, [BregDCAP-AP](https://joinup.ec.europa.eu/solution/abr-specification-registry-registries) til grunddata og [statDCAT-AP](https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe) til statistiske datasæt. 
 
-Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i afsnittet [Referencer](https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#referencer). 
+Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i afsnittet [Referencer](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#referencer). 
 
 
 
@@ -4027,7 +4031,7 @@ Se https://www.retsinformation.dk/eli/retsinfo/2014/10338
 Der er oprettet eksempler på DCAT-AP-DK-metadata, som er i overensstemmelse med DCAT-AP-DK.
 Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan konverteres til flere såsom JSON-LD (fx vha. http://www.easyrdf.org/converter)
 
-Find eksemplerne her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples)
+Find eksemplerne her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/examples](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/examples)
 
 
 ### Validering 
@@ -4036,7 +4040,7 @@ Anvendelsesprofilen er også udtrykt med SHACL (Shapes Constraint Language), som
 
 SHACL-profilen er ligeledes serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF).
 
-Find SHACL-filen her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation)
+Find SHACL-filen her: [https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/validation](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/validation)
 
 I SHACL Playground kan indholdet af TTL-filen her indsættes, hvorefter DCAT-AP-DK-metadata indsættes.
 DCAT-AP er også udtrykt med SHACL, og der er udviklet en online validator, som anvender denne.
@@ -4052,18 +4056,18 @@ Relevante links:
 
 ### UML-diagram: DCAT-AP-DK
 - URI: https://data.gov.dk/model/profile/dcat-ap-dk/
-- Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-2.0.2/
+- Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-3.0.1/
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
 - Versionnummer (versionInfo): 2.0.1
-- Seneste opdateringsdato (dateModified): 2020-10-01
+- Seneste opdateringsdato (dateModified): 2025-11-12
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): godkendt
 - Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-AP-DK er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde.
 
-<p class="center"><a href="img/Illustration-DCAT-AP-DK-v2.0-UML.png"><img src="img/Illustration-DCAT-AP-DK-v2.0-UML.png" alt="Illustration af DCAT-AP-DK 2.0 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-AP-DK-v3.0.1-UML.png"><img src="img/Illustration-DCAT-AP-DK-v3.0.1-UML.png" alt="Illustration af DCAT-AP-DK 3.0.1 UML"/></a></p>
 
 
 ### UML-diagram: DCAT-DK
