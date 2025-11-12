@@ -3771,7 +3771,7 @@ Klassens egenskaber:
 # Klassifikationer
 I forbindelse med DCAT-AP udpeger Europa-Kommissionen en række klassifikationer, som skal anvendes til opmærkning af dels kataloger, datasæt og datasætrepræsentationer. Derudover introducerer DCAT-AP-DK få yderligere klassifikationer til anvendelse i dansk fællesoffentlig kontekst.
 
-Herunder  ses hvilke klassifikationer, der er i anvendelse ift. forskellige egenskaber/felter. Se evt. også kapitel 5 [Controlled Vocabularies i DCAT-AP](https://joinup.ec.europa.eu/sites/default/files/distribution/access_url/2020-06/e4823478-4458-4546-9a85-3609867ad089/DCAT_AP_2.0.1.pdf)
+Herunder  ses hvilke klassifikationer, der er i anvendelse ift. forskellige egenskaber/felter. Se evt. også kapitel 10 [Controlled Vocabularies i DCAT-AP](https://semiceu.github.io/DCAT-AP/releases/3.0.1/#controlled-vocs)
 
 Bemærk at hvis den pågældende egenskab anvendes, er det et krav, at den udpegede klassifikation også anvendes (med enkelte undtagelser - se noter).
 
@@ -4007,8 +4007,8 @@ Se https://www.retsinformation.dk/eli/retsinfo/2014/10338
 
 
 # Referencer
-* W3C: DCAT 2.0:[https://www.w3.org/TR/vocab-dcat-2/](https://www.w3.org/TR/vocab-dcat-2/)
-* EU: DCAT-AP 2.0.1: [https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/201-0](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/201-0)
+* W3C: DCAT 3.0:[https://www.w3.org/TR/vocab-dcat-3/](https://www.w3.org/TR/vocab-dcat-3/)
+* EU: DCAT-AP 3.0.1: [https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/301](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/301)
 * EU: DCAT-AP validator: [https://www.itb.ec.europa.eu/shacl/dcat-ap/upload](https://www.itb.ec.europa.eu/shacl/dcat-ap/upload)
 * EU: DCAT-AP-OP (1.1): [http://data.europa.eu/euodp/en/developerscorner](http://data.europa.eu/euodp/en/developerscorner)
 * Overblik over nationale DCAT-APer: [https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf](https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf)
@@ -4059,7 +4059,7 @@ Relevante links:
 - Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-3.0.1/
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
-- Versionnummer (versionInfo): 2.0.1
+- Versionnummer (versionInfo): 3.0.1
 - Seneste opdateringsdato (dateModified): 2025-11-12
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): godkendt
