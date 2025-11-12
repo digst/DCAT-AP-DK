@@ -1363,9 +1363,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</dd>
+<dd>Denne egenskab angiver datasættets type i forhold til dets genre eller iboende karakter. Der er ift. DCAT-AP endnu ikke fastlagt et kontrolleret udfaldsrum for denne egenskab, men DCAT anbefaler at man BØR genbruge udbredte og anerkendte kontrollerede udfaldsrum såsom fx DCMI Type vocabulary eller ISO-19115-1 scope codes (se: https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type)</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the type of the dataset in relation to its genre or inherent character. A controlled vocabulary for the values in range of this property has not been established in DCAT-AP, but DCAT recommends that you SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary or ISO-19115-1 scope codes (see: https://www.w3.org/TR/vocab-dcat-2/#Property:resource_type)</dd>
+<dd>This property refers to the type of the dataset in relation to its genre or inherent character. A controlled vocabulary for the values in range of this property has not been established in DCAT-AP, but DCAT recommends that you SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as DCMI Type vocabulary or ISO-19115-1 scope codes (see: https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type)</dd>
 <dt>Definition (da)</dt>
 <dd>Type set i forhold til ressourcens genre eller iboende karakter.</dd>
 <dt>Definition (en)</dt>
