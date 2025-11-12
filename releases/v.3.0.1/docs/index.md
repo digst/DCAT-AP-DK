@@ -280,6 +280,28 @@ Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har der
 [https://github.com/digst/DCAT-AP-DK/issues](https://github.com/digst/DCAT-AP-DK/issues)
 
 
+## Revisionslog
+Udgivelsen af DCAT-AP-DK v.3.0.1 bringer DCAT-AP-DK op til nyeste version af DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 [vocab-dcat-3](https://www.w3.org/TR/vocab-dcat-3/), datasætserier er tilføjet som element, samt er der generelle justeringer på datamodellen.
+For den komplette revisionslog og datamodelændringer over DCAT-AP 3.0.1 henvises der til [DCAT-AP 3.0.1's revisionslog](https://semiceu.github.io/DCAT-AP/releases/3.0.1/#revision-history). Der henvises til [DCAT-AP 3.0.0's revisionslog](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#revision-history) for tilføjelsen af datasætserier og yderligere datamodelændringer.
+
+Ud over ændringerne fra den nye DCAT-AP version, er der følgende ændringer for de danske specialisering sammenlignet med DCAT-AP-DK v.2.0.2:
+* Alle særlige danske kravniveauer udgår
+* Følgende danske egenskaber udfases fordi de (nu) kan udtrykkes i DCAT-AP på anden vis og ikke reelt er taget i brug:
+    - **Datasætansvarlig organisation** - brug i stedet kvalificeret kreditering + passende rolle, fx custodian 
+    - **Bidragsyder** - brug i stedet kvalificeret kreditering + passende rolle, fx contributor 
+    - **Vedligeholder** - brug i stedet kvalificeret kreditering + passende rolle, fx maintainer
+    - **Hjemmel** - brug i stedet applicable legislation
+    - **Betalingspålagt** – brug i stedet ’has policy’ + ODRL 
+
+
+* org:Organization udgår som udfaldsrum for datasætansvarlig organisation, men anbefales (som i DCAT-AP) anvendt når aktør er en organisation.
+* Datakvalitetsoplysninger ændrer egenskaber:
+    - Udfasning af duv:usage (**Anvendelse**), duv:hasUsage (**har anvendelse**), dqv:QualityMetadata (**Kvalitetsmetadata**) og dqv:hasQualityMetadata (**har kvalitetsmetadata**) 
+    - Indførelse af dqv:QualityAnnotation (**Kvalitetsannotation**), dqv:hasQualityAnnotation (**har kvalitetsannotation**) og dqv:inDimension (**i dimension**)
+    - Kvalitetsannotation peger på beskrivelse af en enkelt datakvalitetsdimension (og der kan så være flere per datasæt), hvor Kvalitetsmetadata pegede på det fulde erklæringsdokument, der så indeholdt annotationerne.
+
+Udfasningen betyder at felterne stadigvæk er en del af datamodellen for DCAT-AP-DK v.3.0.1, men kan risikere at blive fjernet i en fremtidig version af DCAT-AP-DK.
+
 # Modellens grundlæggende struktur
 DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#begrebmodel-for-beskrivelse-af-datast).
 
