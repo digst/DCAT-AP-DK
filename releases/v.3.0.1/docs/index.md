@@ -700,15 +700,15 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/RightsStatement</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab giver reference til et dokument der beskriver adgangsrettighederne forbundet med kataloget</dd>
+<dd>Denne egenskab giver reference til dokumenter der beskriver adgangsrettighederne forbundet med kataloget</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a statement that specifies rights associated with the Catalogue.</dd>
+<dd>This property refers to statements that specify rights associated with the Catalogue.</dd>
 <dt>Definition (da)</dt>
 <dd>Information om rettigheder forbundet med ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>Information about rights held in and over the resource.</dd>
 <dt>Multiplicitet</dt>
-<dd>0..1</dd>
+<dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -2385,15 +2385,15 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/RightsStatement</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab giver reference til et dokument der beskriver rettighederne forbundet med distributionen</dd>
+<dd>Denne egenskab giver reference til dokumenter der beskriver rettighederne forbundet med distributionen</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a statement that specifies rights associated with the Distribution.</dd>
+<dd>This property refers to statements that specify rights associated with the Distribution.</dd>
 <dt>Definition (da)</dt>
 <dd>Information om rettigheder forbundet med ressourcen.</dd>
 <dt>Definition (en)</dt>
 <dd>Information about rights held in and over the resource.</dd>
 <dt>Multiplicitet</dt>
-<dd>0..1</dd>
+<dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
