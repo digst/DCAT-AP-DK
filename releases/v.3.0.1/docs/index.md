@@ -321,7 +321,7 @@ En datatjeneste (dcat:DataService) er et websted eller endpoint, der udstiller o
 
 ## Datasætserie
 En datasætserie (dcat:DatasetSeries) er en samling af datasæt der udgives separat, men deler et eller flere egenskaber som grupperer dem. Ofte anvendendes datasætserien til tidslige serier af datasæt eller geografiske serier som har samme type eller tema, men dækker over forskellige geografiske områder. Et datasæt kan være bundet til flere forskellige datasætserier. Denne klasse er valgfri.
-</br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-datasetserien-dataset-series)
+</br>[Gå til klassen Datasætserie](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-datasetserien-dataset-series)
 
 ## Distribution
 En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
