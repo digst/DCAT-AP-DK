@@ -2723,6 +2723,26 @@ Klassens egenskaber:
 
 				
 ### Egenskab: gældende lovgivning (applicable legislation) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://data.europa.eu/r5r/applicableLegislation </dd>
+<dt>Rækkevidde</dt>
+<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Bemyndigelse til oprettelsen eller administrationen af datasætserien.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>The legislation that mandates the creation or management of the Dataset series.</dd>
+<dt>Definition (da)</dt>
+<dd>Lovgivning som er gældende for denne ressource.</dd>
+<dt>Definition (en)</dt>
+<dd>The legislation that is applicable to this resource. </dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>	
+
+
 
 ### Egenskab: kontaktpunkt (contact point) 
 <dl class="def">
