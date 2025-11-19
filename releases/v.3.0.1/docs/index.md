@@ -293,8 +293,10 @@ Ud over ændringerne fra den nye DCAT-AP version, er der følgende ændringer fo
     - **Hjemmel** - brug i stedet applicable legislation
     - **Betalingspålagt** – brug i stedet ’has policy’ + ODRL 
 
-
 * org:Organization udgår som udfaldsrum for datasætansvarlig organisation, men anbefales (som i DCAT-AP) anvendt når aktør er en organisation.
+* Personoplysningskategori (dcat-dk:personalDataCategory) ændrer udfaldsrum til [udarbejdet standard](https://data.gov.dk/concept/profile/personal-data-categories/).
+* Fortrolighedsgrad (dcat-dk:confidentialityType) ændrer udfaldsrum til [udarbejdet standard](https://data.gov.dk/concept/profile/conf-eu-nato-types/).
+
 * Datakvalitetsoplysninger ændrer egenskaber:
     - Udfasning af duv:usage (**Anvendelse**), duv:hasUsage (**har anvendelse**), dqv:QualityMetadata (**Kvalitetsmetadata**) og dqv:hasQualityMetadata (**har kvalitetsmetadata**) 
     - Indførelse af dqv:QualityAnnotation (**Kvalitetsannotation**), dqv:hasQualityAnnotation (**har kvalitetsannotation**) og dqv:inDimension (**i dimension**)
@@ -1550,7 +1552,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/personalDataCategory</dd>
 <dt>Rækkevidde</dt>
-<dd>https://data.gov.dk/concept/core/personaldata-type/personalDataCategory</dd>
+<dd>https://data.gov.dk/concept/profile/personal-data-categories/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en relation til en bestemt personoplysningskategori. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -1570,7 +1572,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>https://data.gov.dk/model/core/dcat-dk/confidentialityType</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+<dd>https://data.gov.dk/concept/profile/conf-eu-nato-types/</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver i hvilket omfang information indeholdt i et datasæt kan videregives. (dansk tilføjelse) </dd>
 <dt>Anvendelsesnote (en)</dt>
