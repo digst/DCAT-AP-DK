@@ -3159,7 +3159,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>	
 			
-## Klasse: Licensdokument (Licence Document) 
+## Klasse: Licensdokument (License Document) 
 <img src="img/Licensdokument.png" alt="Licensdokument">
 <dl class="def">
 <dt>URI</dt>
