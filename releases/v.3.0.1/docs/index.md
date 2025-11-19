@@ -393,18 +393,12 @@ Kravniveauet for elementer DCAT-AP-DK 3.0.1 er ikke justeret ift. DCAT-AP 3.0.1,
 ### Tilføjelser
 Følgende elementer er blevet tilføjet i DCAT-AP-DK 3.0.1 ift. DCAT-AP 3.0.1:
 
-* Datasæt: datasætansvarlig organisation (dcat-dk:datasetResponsibleOrganisation)
-* Datasæt: bidragsyder (dct:contributor)
-* Datasæt: vedligeholder (schema:maintainer)
-* Datasæt: hjemmel (cv:hasLegalResource)
-* Datasæt: betalingspålagt (dcat-dk:paymentImposed)
 * Datasæt: personoplysningskategori (dcat-dk:personalDataCategory) 
 * Datasæt: fortrolighedsgrad (dcat-dk:confidentialityType)
-* Datasæt: har kvalitetsmetadata (dqv:hasQualityMetadata)
-* Datasæt: har anvendelse (duv:hasUsage)
-* Klassen duv:Usage
-* Klassen dqv:QualityMetadata
+* Datasæt: har kvalitetsannotation (dqv:hasQualityAnnotation)
 * Klassen org:Organization
+* Klassen dqv:QualityAnnotation
+* Kvalitetsannotation: i dimension (dqv:inDimension)
 
 I indholdsfortegnelsen har disse mærket 'DK'.
 
@@ -1149,26 +1143,6 @@ Klassens egenskaber:
 <dd>Anbefalet</dd>
 </dl>
 				
-### Egenskab: datasætansvarlig organisation DK (dataset responsible organisation) 
-<dl class="def">
-<dt>URI</dt>
-<dd>https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation</dd>
-<dt>Rækkevidde</dt>
-<dd>https://www.w3.org/ns/org#Organization</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver den organisation der har det juridiske ansvar for det samlede datasæt. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig organisation. (dansk tilføjelse) </dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property specifies the organization that is legally accountable for the dataset. This property specifies the organization that is legally accountable for the entire dataset.</dd>
-<dt>Definition (da)</dt>
-<dd>organisation der har det juridiske ansvar for datasættet</dd>
-<dt>Definition (en)</dt>
-<dd>organization that is legally accountable for the dataset</dd>
-<dt>Multiplicitet</dt>
-<dd>0..1</dd>
-<dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
-</dl>
-				
 ### Egenskab: skaber (creator) 
 <dl class="def">
 <dt>URI</dt>
@@ -1188,47 +1162,7 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Anbefalet</dd>
 </dl>
-				
-### Egenskab: bidragsyder DK (contributor) 
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/contributor</dd>
-<dt>Rækkevidde</dt>
-<dd>http://xmlns.com/foaf/0.1/Agent</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en aktør der er har bidraget til datasættets skabelse. (dansk tilføjelse)</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the entity responsible for making contributions to the resource.</dd>
-<dt>Definition (da)</dt>
-<dd>En entitet der er ansvarlig for bidrage til skabelsen af ressourcen.</dd>
-<dt>Definition (en)</dt>
-<dd>An entity responsible for making contributions to the resource.</dd>
-<dt>Multiplicitet</dt>
-<dd>0..*</dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>
-				
-### Egenskab: vedligeholder DK (maintainer) 
-<dl class="def">
-<dt>URI</dt>
-<dd>http://schema.org/maintainer</dd>
-<dt>Rækkevidde</dt>
-<dd>http://xmlns.com/foaf/0.1/Agent</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en aktør der administrerer bidrag til eller udgivelsen af et datasæt. (dansk tilføjelse)</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to the agent that manages contributions to, and/or publication of a dataset.</dd>
-<dt>Definition (da)</dt>
-<dd>En vedligeholder af et datasæt, softwarepakke (Softwareapplikation), eller et andet projekt .</dd>
-<dt>Definition (en)</dt>
-<dd>A maintainer of a Dataset, software package (SoftwareApplication), or other Project.</dd>
-<dt>Multiplicitet</dt>
-<dd>0..1</dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>
-				
+
 ### Egenskab: kontaktpunkt (contact point) 
 <dl class="def">
 <dt>URI</dt>
@@ -1588,66 +1522,25 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
-</dl>
-				
-### Egenskab: har kvalitetsmetadata DK (has quality metadata) 
-<dl class="def">
-<dt>URI</dt>
-<dd>http://www.w3.org/ns/dqv#hasQualityMetadata</dd>
-<dt>Rækkevidde</dt>
-<dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab er en reference til kvalitetsinformation om datasættet, fx en datakvalitetsdeklaration (dansk tilføjelse). Se Fælles sprog for datakvalitet: https://arkitektur.digst.dk/node/625</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a grouping of quality information about the dataset</dd>
-<dt>Definition (da)</dt>
-<dd>Refererer til en gruppering af kvalitetsinformation så som certifikater, politikker, målinger og annotationer som en navngiven graf. Kvalitetsinformation repræsenteret i en sådan gruppering kan vedrøre enhver ressourcetype (fx. et datasæt, en linksamling, en graf, et mængde af tripler). I kontekst af DQV forventes denne egenskab dog at blive anvendt i udsagn hvor subjektet er instanser af dcat:Dataste eller dcat:Distribution.		
-		</dd>
-<dt>Definition (en)</dt>
-<dd>Refers to a grouping of quality information such as certificates, policies, measurements and annotations as a named graph. Quality information represented in such a grouping can pertain to any kind of resource (e.g., a dataset, a linkset, a graph, a set of triples). However, in the DQV context, this property is generally expected to be used in statements in which subjects are instances of dcat:Dataset or dcat:Distribution.</dd>
-<dt>Multiplicitet</dt>
-<dd>0..1</dd>
-<dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-				
-### Egenskab: har anvendelse DK (has usage) 
+
+### Egenskab: har kvalitetsannotation DK (has quality annotation) 
 <dl class="def">
 <dt>URI</dt>
-<dd>http://www.w3.org/ns/duv#hasUsage</dd>
+<dd>https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation</dd>
 <dt>Rækkevidde</dt>
-<dd>http://www.w3.org/ns/duv#Usage</dd>
+<dd>https://www.w3.org/TR/vocab-dqv/#dqv:QualityAnnotation</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver instruktioner eller vejledning til anvendelse af datasættet. (dansk tilføjelse)</dd>
+<dd>Denne egenskab angiver en kvalitetsannotation. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to dataset or distribution usage guidance/instructions.</dd>
+<dd>This property refers to quality annotations.</dd>
 <dt>Definition (da)</dt>
-<dd>Instruktioner eller vejledning til anvendelse af datasættet.</dd>
+<dd>Henviser til en kvalitetsannotation. Kvalitetsannotationer kan bruges til et datasæt.</dd>
 <dt>Definition (en)</dt>
-<dd>Dataset or distribution usage guidance/instructions.</dd>
+<dd>Refers to a quality annotation. Quality annotation can be applied to any kind of resource, e.g., a dataset, a linkset, a graph, a set of triples.</dd>
 <dt>Multiplicitet</dt>
-<dd>0..1</dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>
-				
-### Egenskab: betalingspålagt DK (payment imposed) 
-<dl class="def">
-<dt>URI</dt>
-<dd>https://data.gov.dk/model/core/dcat-dk/paymentImposedContents</dd>
-<dt>Rækkevidde</dt>
-<dd>http://www.w3.org/2001/XMLSchema#boolean</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver hvorvidt datasættet er betalingspålagt eller ej. (dansk tilføjelse)</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property specifies whether payment is imposed on the dataset or not.</dd>
-<dt>Definition (da)</dt>
-<dd>angivelse af hvorvidt datasættet er betalingspålagt eller ej. </dd>
-<dt>Definition (en)</dt>
-<dd>specification of whether payment is imposed on the catalogued resource or not.</dd>
-<dt>Multiplicitet</dt>
-<dd>0..1</dd>
+<dd>0..*</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -1691,27 +1584,7 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
-				
-### Egenskab: hjemmel (has legal resource) 
-<dl class="def">
-<dt>URI</dt>
-<dd>http://data.europa.eu/m8g/hasLegalResource</dd>
-<dt>Rækkevidde</dt>
-<dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver med hvilken hjemmel datasættet blev skabt. (dansk tilføjelse)</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property specifies the legal framework for the dataset.</dd>
-<dt>Definition (da)</dt>
-<dd>reference til retskilde som danner grundlag for ressourcen</dd>
-<dt>Definition (en)</dt>
-<dd>It indicates the Legal Resource (e.g. legislation) to which the Public Service (red:resource) relates, operates or has its legal basis</dd>
-<dt>Multiplicitet</dt>
-<dd>0..*</dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>
-				
+						
 ### Egenskab: versionsnummer (version) 
 <dl class="def">
 <dt>URI</dt>
@@ -3673,40 +3546,43 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Anbefalet </dd>
 </dl>
-			
-## Klasse: Anvendelse DK (Usage) 
-<img src="img/Anvendelse%20DK.png" alt="Anvendelse DK">
+
+## Klasse: Kvalitetsannotation DK (QualityAnnotation)
+<img src="img/Kvalitetsannotation%20DK.png" alt="Kvalitetsannotation DK">
 <dl class="def">
 <dt>URI</dt>
-<dd>http://www.w3.org/ns/duv#Usage</dd>
+<dd></dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution (dansk tilføjelse)</dd>
+<dd>Repræsenterer en kvalitetsannotation. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>A helpful description of actions that can be performed on a given dataset or distribution</dd>
+<dd>Represents quality annotation.</dd>
 <dt>Definition (da)</dt>
-<dd>En beskrivelse af de handlinger der kan udføres med et datasæt eller dets distribution</dd>
+<dd>Repræsenterer en kvalitetsannotation, inklusiv anmeldelser, kvalitetscertifikater eller feedback til tilhørende datasæt eller distributioner.</dd>
 <dt>Definition (en)</dt>
-<dd>A helpful description of actions that can be performed on a given dataset or distribution</dd>
+<dd>Represents quality annotations, including ratings, quality certificates or feedback that can be associated to datasets or distributions.</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>	
-			
-## Klasse: Kvalitetsmetadata DK (Quality Metadata) 
-<img src="img/Kvalitetsmetadata%20DK.png" alt="Kvalitetsmetadata DK">
+
+### Egenskab: i dimension DK (In Dimension) 
 <dl class="def">
 <dt>URI</dt>
-<dd>http://www.w3.org/ns/dqv#QualityMetadata</dd>
-<dt>Anvendelsesnote (da) </dt>
-<dd>Repræsenterer kvalitetsmetadata (dansk tilføjelse)</dd>
+<dd>https://www.w3.org/TR/vocab-dqv/#dqv:inDimension</dd>
+<dt>Rækkevidde</dt>
+<dd>https://www.w3.org/TR/vocab-dqv/#dqv:Dimension</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Dimensioner bruges til organisering af metrikker, kvalitetscertifikater og kvalitetsannotationer.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>Represents quality metadata</dd>
+<dd>Dimensions are meant to systematically organize metrics, quality certificates and quality annotations. </dd>
 <dt>Definition (da)</dt>
-<dd>Repræsenterer kvalitetsmetadata, og er defineret for at gruppere kvalitetscertifikater, -politikker, -målinger pg annotationer under er navngiven graf</dd>
+<dd>Repræsenterer dimensionen af en kvalitetsmetrik, et certifikat og en annotation som der måles med.</dd>
 <dt>Definition (en)</dt>
-<dd>Represents quality metadata, it is defined to group quality certificates, policies, measurements and annotations under a named graph</dd>
+<dd>Represents the dimensions a quality metric, certificate and annotation allow a measurement of.</dd>
+<dt>Multiplicitet</dt>
+<dd>1..1</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>	
+<dd>Obligatorisk</dd>
+</dl>
 
 ## Klasse: Personoplysningskategori DK (Personal Data Category) 
 <img src="img/Personoplysningskategori.png" alt="Personoplysningskategori DK">
