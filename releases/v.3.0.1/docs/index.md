@@ -1315,7 +1315,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: overholder (conforms to) 
@@ -1335,7 +1335,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: dokumentation (documentation) 
@@ -1355,7 +1355,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: emne (theme/ category) 
@@ -1435,7 +1435,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: adgangsrettigheder (access rights) 
@@ -1475,7 +1475,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
+<dd>Anbefalet</dd>
 </dl>
 				
 ### Egenskab: geografisk opløsning (i meter) (spatial resolution in meters) 
