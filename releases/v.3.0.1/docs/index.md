@@ -3729,7 +3729,7 @@ Klassens egenskaber:
 <dt>Definition (en)</dt>
 <dd>classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable </dd>
 <dt>Kravniveau</dt>
-<dd>Recommended</dd>
+<dd>Anbefalet</dd>
 </dl>	
 
 ## Klasse: Fortrolighedsgrad DK (Confidentiality Type) 
