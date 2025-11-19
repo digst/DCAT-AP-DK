@@ -387,14 +387,7 @@ Den fulde anvendelsesprofil DCAT-AP-DK v.3.0.1 visualiseret med UML-diagram  (al
 Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK, som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses, afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
 
 ### Ændringer af kravniveau
-Kravniveauet for følgende elementer er blevet ændret i DCAT-AP-DK 3.0.1 ift. DCAT-AP 3.0.1:
-
-* Datasæt: identifikator (dct:identifier) - Kravniveau: Valgfri > Anbefalet
-* Datasæt: nøgleord (dcat:keyword) - Kravniveau: Anbefalet > Valgfri
-* Datasæt: dokumentation (foaf:page) - Kravniveau:  Valgfri > Anbefalet
-* Datasæt: udgivelsesdato (dct:issued) - Kravniveau: Valgfri > Anbefalet
-* Datasæt: seneste ændringsdato (dct:modified) - Kravniveau: Valgfri > Anbefalet
-* Datasæt: har distribution (dcat:distribution) - Kravniveau: Valgfri > Anbefalet
+Kravniveauet for elementer DCAT-AP-DK 3.0.1 er ikke justeret ift. DCAT-AP 3.0.1, da kravniveau specialiseringen er frafaldet fra DCAT-AP-DK v.2.0.2 til DCAT-AP-DK v.3.0.1.
 
 
 ### Tilføjelser
@@ -1073,7 +1066,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: anden identifikator (other identifier) 
@@ -1273,7 +1266,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: uddrag (sample) 
@@ -1415,7 +1408,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
+<dd>Anbefalet</dd>
 </dl>
 				
 ### Egenskab: sprog (language) 
@@ -1575,7 +1568,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: seneste ændringsdato (update/ modification date) 
