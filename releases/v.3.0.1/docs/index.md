@@ -3553,7 +3553,7 @@ Klassens egenskaber:
 <img src="img/Kvalitetsannotation%20DK.png" alt="Kvalitetsannotation DK">
 <dl class="def">
 <dt>URI</dt>
-<dd></dd>
+<dd>https://www.w3.org/TR/vocab-dqv/#dqv:QualityAnnotation</dd>
 <dt>Anvendelsesnote (da) </dt>
 <dd>Repræsenterer en kvalitetsannotation. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
