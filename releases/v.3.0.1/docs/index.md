@@ -3549,7 +3549,7 @@ Klassens egenskaber:
 <dd>Anbefalet </dd>
 </dl>
 
-## Klasse: Kvalitetsannotation DK (QualityAnnotation)
+## Klasse: Kvalitetsannotation DK (Quality Annotation)
 <img src="img/Kvalitetsannotation%20DK.png" alt="Kvalitetsannotation DK">
 <dl class="def">
 <dt>URI</dt>
@@ -3566,7 +3566,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>	
 
-### Egenskab: i dimension DK (In Dimension) 
+### Egenskab: i dimension DK (in dimension) 
 <dl class="def">
 <dt>URI</dt>
 <dd>https://www.w3.org/TR/vocab-dqv/#dqv:inDimension</dd>
