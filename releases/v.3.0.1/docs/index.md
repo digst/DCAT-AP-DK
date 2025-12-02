@@ -197,9 +197,9 @@ Specifikationen skal være med til sørge for, at begreber til beskrivelse af da
 ## Baggrund
 De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.1 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
 
-Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 3.0.1. 
+Specifikationen er oprindeligt udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. Opdateringen til version 3.0.1 har været forankret i Digitaliseringsstyrelsen med orientering af de fællesoffentlige parter. Udover de opdateringerne der følger af at DCAT og DCAT-AP er opdateret, har arbejdet med opdateringen været anledning til at vurderer de danske tilføjelser. Her er der især taget udgangspunkt i det praktiske arbejde med at implementere en fællesoffentlig dataportal, [Datavejviseren](https://datavejviser.dk/), herunder dialog med både dataudstillere og anvendere af kataloget, samt det relaterede arbejde med at videregive data til den [europæiske dataportal](https://data.europa.eu/da). På baggrund af dette er flertallet af danske tilføjelse blevet fjernet igen, da de ikke ses anvendt i praksis, samtidigt med at der er mulighed for at udtrykke samme reelle informationsindhold ved hjælp af egenskaber der er inkluderet i DCAT-AP 3.0.1. Det er derfor vurderet ønskeligt at udfase dem inden der evt. opbygges en ikke interoperabel anvendelsesskik. Desuden vurderes de særlige danske kravniveauer ikke at give værd i praksis, og de bortfalder derfor i denne version.
 
-Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s [åbne data og PSI-direktiv](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data.
+Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s [åbne data](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data og [Datastyringsforordningen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R0868) (2022/868), som regulerer vilkår for adgang til beskyttede offentlige data.
 
 ## Metode
 Denne specifikation udgør en dansk basisprofil for datasæt og datakataloger (DCAT-AP-DK), som indeholder basisoplysninger om datasæt og datakataloger.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
@@ -281,7 +281,7 @@ Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har der
 
 
 ## Revisionslog
-Udgivelsen af DCAT-AP-DK v.3.0.1 bringer DCAT-AP-DK op til nyeste version af DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 [vocab-dcat-3](https://www.w3.org/TR/vocab-dcat-3/), datasætserier er tilføjet som element, samt er der generelle justeringer på datamodellen.
+Udgivelsen af DCAT-AP-DK v.3.0.1 bringer DCAT-AP-DK op til nyeste version af DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 [vocab-dcat-3](https://www.w3.org/TR/vocab-dcat-3/), datasætserier er tilføjet som element og der er andre mindre justeringer til datamodellen.
 For den komplette revisionslog og datamodelændringer over DCAT-AP 3.0.1 henvises der til [DCAT-AP 3.0.1's revisionslog](https://semiceu.github.io/DCAT-AP/releases/3.0.1/#revision-history). Der henvises til [DCAT-AP 3.0.0's revisionslog](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#revision-history) for tilføjelsen af datasætserier og yderligere datamodelændringer.
 
 Ud over ændringerne fra den nye DCAT-AP version, er der følgende ændringer for de danske specialisering sammenlignet med DCAT-AP-DK v.2.0.2:
@@ -291,18 +291,18 @@ Ud over ændringerne fra den nye DCAT-AP version, er der følgende ændringer fo
     - **Bidragsyder** - brug i stedet kvalificeret kreditering + passende rolle, fx contributor 
     - **Vedligeholder** - brug i stedet kvalificeret kreditering + passende rolle, fx maintainer
     - **Hjemmel** - brug i stedet applicable legislation
-    - **Betalingspålagt** – brug i stedet ’has policy’ + ODRL 
+    - **Betalingspålagt** – brug i stedet ’has policy’ + [ODRL](https://www.w3.org/TR/odrl-model/)
 
 * org:Organization udgår som udfaldsrum for datasætansvarlig organisation, men anbefales (som i DCAT-AP) anvendt når aktør er en organisation.
-* Personoplysningskategori (dcat-dk:personalDataCategory) ændrer udfaldsrum til [udarbejdet standard](https://data.gov.dk/concept/profile/personal-data-categories/).
-* Fortrolighedsgrad (dcat-dk:confidentialityType) ændrer udfaldsrum til [udarbejdet standard](https://data.gov.dk/concept/profile/conf-eu-nato-types/).
+* Personoplysningskategori (dcat-dk:personalDataCategory) ændrer udfaldsrum til udarbejdet standard for [Personoplysningskategorier](https://data.gov.dk/concept/profile/personal-data-categories/).
+* Fortrolighedsgrad (dcat-dk:confidentialityType) ændrer udfaldsrum til udarbejdet standard for [Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)](https://data.gov.dk/concept/profile/conf-eu-nato-types/).
 
 * Datakvalitetsoplysninger ændrer egenskaber:
     - Udfasning af duv:usage (**Anvendelse**), duv:hasUsage (**har anvendelse**), dqv:QualityMetadata (**Kvalitetsmetadata**) og dqv:hasQualityMetadata (**har kvalitetsmetadata**) 
     - Indførelse af dqv:QualityAnnotation (**Kvalitetsannotation**), dqv:hasQualityAnnotation (**har kvalitetsannotation**) og dqv:inDimension (**i dimension**)
     - Kvalitetsannotation peger på beskrivelse af en enkelt datakvalitetsdimension (og der kan så være flere per datasæt), hvor Kvalitetsmetadata pegede på det fulde erklæringsdokument, der så indeholdt annotationerne.
 
-Udfasningen betyder at felterne stadigvæk er en del af datamodellen for DCAT-AP-DK v.3.0.1, men kan risikere at blive fjernet i en fremtidig version af DCAT-AP-DK.
+Udfasning betyder at egenskaberne får status "deprecated" i DCAT-AP-DK 3.0.1, og formodentligt vil blive fjernet helt i en senere version.
 
 # Modellens grundlæggende struktur
 DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#begrebmodel-for-beskrivelse-af-datast).
