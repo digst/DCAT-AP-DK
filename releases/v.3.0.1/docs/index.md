@@ -3881,22 +3881,34 @@ URI: http://publications.europa.eu/resource/authority/access-right
 ## Personoplysningskategori
 **KLASSIFIKATION: Personoplysningskategorier**
 
-Indeholder følgende udfaldsrum:
+URI: https://data.gov.dk/concept/profile/personal-data-categories/
+
+Indeholder følgende [udfaldsrum](https://data.gov.dk/concept/profile/personal-data-categories.rdf):
 * https://data.gov.dk/concept/core/personaldata-type/SensitivePersonalData (følsomme personoplysninger)
 * https://data.gov.dk/concept/core/personaldata-type/GeneralPersonalData (almindelige personoplysninger) 
 * https://data.gov.dk/concept/core/personaldata-type/CivilRegistrationNumberData (personnummeroplysninger)
 * https://data.gov.dk/concept/core/personaldata-type/DataAboutCriminalOffences (oplysninger om strafbare forhold)
 * https://data.gov.dk/concept/core/personaldata-type/NonPersonalData (ingen personoplysninger)
 
-https://www.retsinformation.dk/eli/lta/2018/502
-https://eur-lex.europa.eu/eli/reg/2016/679/oj
-https://www.datatilsynet.dk/generelt-om-databeskyttelse/hvad-er-personoplysninger
+Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60
+
+Juridisk kilde: http://data.europa.eu/eli/reg/2016/679/oj
+
+Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502
+
+Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
 ## Fortrolighedsgrad
 **KLASSIFIKATION: Fortrolighedsgrader**
 
+URI: https://data.gov.dk/concept/profile/conf-eu-nato-types/
+
 Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO):
 Se https://www.retsinformation.dk/eli/retsinfo/2014/10338
+
+Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20
+
+Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338
 
 
 # Referencer
