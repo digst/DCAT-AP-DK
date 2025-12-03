@@ -3903,6 +3903,13 @@ Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf
 
 URI: https://data.gov.dk/concept/profile/conf-eu-nato-types/
 
+Indeholder følgende [udfaldsrum](https://data.gov.dk/concept/profile/conf-eu-nato-types.rdf):
+* https://data.gov.dk/concept/core/confidentiality-type-eu-nato/Public (må offentliggøres)
+* https://data.gov.dk/concept/core/confidentiality-type-eu-nato/Restricted (til tjenestebrug)
+* https://data.gov.dk/concept/core/confidentiality-type-eu-nato/Confidential (fortroligt)
+* https://data.gov.dk/concept/core/confidentiality-type-eu-nato/Secret (hemmeligt)
+* https://data.gov.dk/concept/core/confidentiality-type-eu-nato/Topsecret (yderst hemmeligt)
+
 Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO):
 Se https://www.retsinformation.dk/eli/retsinfo/2014/10338
 
