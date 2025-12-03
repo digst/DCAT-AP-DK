@@ -281,7 +281,7 @@ Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har der
 
 
 ## Revisionslog
-Udgivelsen af DCAT-AP-DK v.3.0.0 bringer DCAT-AP-DK op til nyeste version af DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 [vocab-dcat-3](https://www.w3.org/TR/vocab-dcat-3/), datasætserier er tilføjet som element og der er andre mindre justeringer til datamodellen.
+Udgivelsen af DCAT-AP-DK v.3.0.0 medfører at DCAT-AP-DK bliver en udvidelse til DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 [vocab-dcat-3](https://www.w3.org/TR/vocab-dcat-3/), datasætserier er tilføjet som element og der er andre mindre justeringer til datamodellen.
 For den komplette revisionslog og datamodelændringer over DCAT-AP 3.0.1 henvises der til [DCAT-AP 3.0.1's revisionslog](https://semiceu.github.io/DCAT-AP/releases/3.0.1/#revision-history). Der henvises til [DCAT-AP 3.0.0's revisionslog](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#revision-history) for tilføjelsen af datasætserier og yderligere datamodelændringer.
 
 Ud over ændringerne fra den nye DCAT-AP version, er der følgende ændringer for de danske specialisering sammenlignet med DCAT-AP-DK v.2.0.2:
