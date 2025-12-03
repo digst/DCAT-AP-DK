@@ -1488,7 +1488,7 @@ Possible extra rowspan handling
 		}
 	}
 </style>
-  <meta content="Bikeshed version 86e3be07a, updated Tue Nov 18 16:58:08 2025 +0000" name="generator">
+  <meta content="Bikeshed version 3c53a5b02, updated Thu Nov 27 17:03:30 2025 +0000" name="generator">
   <link href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/" rel="canonical">
   <meta content="dark light" name="color-scheme">
 <style>
@@ -2069,7 +2069,7 @@ dfn > a.self-link::before      { content: "#"; }
   <div data-fill-with="at-risk"></div>
   <nav data-fill-with="table-of-contents" id="toc">
    <h2 class="no-num no-ref no-toc" id="contents">Table of Contents</h2>
-   <ol class="toc" role="directory">
+   <ol class="toc">
     <li>
      <a href="#introduktion"><span class="secno">1</span> <span class="content">Introduktion</span></a>
      <ol class="toc">
@@ -2330,9 +2330,9 @@ dfn > a.self-link::before      { content: "#"; }
       <li><a href="#klasse-kreditering-attribution"><span class="secno">4.29</span> <span class="content">Klasse: Kreditering (Attribution)</span></a>
       <li><a href="#klasse-forvaltningsopgave-dk-publicadministrativetasktype"><span class="secno">4.30</span> <span class="content">Klasse: Forvaltningsopgave DK (PublicAdministrativeTaskType)</span></a>
       <li>
-       <a href="#klasse-kvalitetsannotation-dk-qualityannotation"><span class="secno">4.31</span> <span class="content">Klasse: Kvalitetsannotation DK (QualityAnnotation)</span></a>
+       <a href="#klasse-kvalitetsannotation-dk-quality-annotation"><span class="secno">4.31</span> <span class="content">Klasse: Kvalitetsannotation DK (Quality Annotation)</span></a>
        <ol class="toc">
-        <li><a href="#egenskab-i-dimension-dk-in-dimension"><span class="secno">4.31.1</span> <span class="content">Egenskab: i dimension DK (In Dimension)</span></a>
+        <li><a href="#egenskab-i-dimension-dk-in-dimension"><span class="secno">4.31.1</span> <span class="content">Egenskab: i dimension DK (in dimension)</span></a>
        </ol>
       <li><a href="#klasse-personoplysningskategori-dk-personal-data-category"><span class="secno">4.32</span> <span class="content">Klasse: Personoplysningskategori DK (Personal Data Category)</span></a>
       <li><a href="#klasse-fortrolighedsgrad-dk-confidentiality-type"><span class="secno">4.33</span> <span class="content">Klasse: Fortrolighedsgrad DK (Confidentiality Type)</span></a>
@@ -2396,8 +2396,8 @@ Specifikationen skal være med til sørge for, at begreber til beskrivelse af da
 De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er <em>obligatoriske</em> at udfylde samt <em>anbefalede</em> og <em>valgfrie</em> egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.1 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
 
 
-   <p>Specifikationen er udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. For at sikre at behov imødekommes vil den danske specifikation således tage udgangspunkt i følgegruppens vurdering af obligatoriske, anbefalede og valgfrie egenskaber i DCAT-AP 3.0.1.</p>
-   <p>Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s <a href="https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&amp;from=EN">åbne data og PSI-direktiv</a> (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data.</p>
+   <p>Specifikationen er oprindeligt udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. Opdateringen til version 3.0.1 har været forankret i Digitaliseringsstyrelsen med orientering af de fællesoffentlige parter. Udover de opdateringerne der følger af at DCAT og DCAT-AP er opdateret, har arbejdet med opdateringen været anledning til at vurderer de danske tilføjelser. Her er der især taget udgangspunkt i det praktiske arbejde med at implementere en fællesoffentlig dataportal, <a href="https://datavejviser.dk/">Datavejviseren</a>, herunder dialog med både dataudstillere og anvendere af kataloget, samt det relaterede arbejde med at videregive data til den <a href="https://data.europa.eu/da">europæiske dataportal</a>. På baggrund af dette er flertallet af danske tilføjelse blevet fjernet igen, da de ikke ses anvendt i praksis, samtidigt med at der er mulighed for at udtrykke samme reelle informationsindhold ved hjælp af egenskaber der er inkluderet i DCAT-AP 3.0.1. Det er derfor vurderet ønskeligt at udfase dem inden der evt. opbygges en ikke interoperabel anvendelsesskik. Desuden vurderes de særlige danske kravniveauer ikke at give værd i praksis, og de bortfalder derfor i denne version.</p>
+   <p>Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s <a href="https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&amp;from=EN">åbne data</a> (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data og <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R0868">Datastyringsforordningen</a> (2022/868), som regulerer vilkår for adgang til beskyttede offentlige data.</p>
    <h3 class="heading settled" data-level="1.3" id="metode"><span class="secno">1.3. </span><span class="content">Metode</span><a class="self-link" href="#metode"></a></h3>
    
 Denne specifikation udgør en dansk basisprofil for datasæt og datakataloger (DCAT-AP-DK), som indeholder basisoplysninger om datasæt og datakataloger.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
@@ -2518,7 +2518,7 @@ Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har der
    </ul>
    <h3 class="heading settled" data-level="1.5" id="revisionslog"><span class="secno">1.5. </span><span class="content">Revisionslog</span><a class="self-link" href="#revisionslog"></a></h3>
    
-Udgivelsen af DCAT-AP-DK v.3.0.1 bringer DCAT-AP-DK op til nyeste version af DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 <a href="https://www.w3.org/TR/vocab-dcat-3/">vocab-dcat-3</a>, datasætserier er tilføjet som element, samt er der generelle justeringer på datamodellen.
+Udgivelsen af DCAT-AP-DK v.3.0.1 bringer DCAT-AP-DK op til nyeste version af DCAT-AP 3.0.1. Som følge af dette anvendes nu W3C DCAT 3 <a href="https://www.w3.org/TR/vocab-dcat-3/">vocab-dcat-3</a>, datasætserier er tilføjet som element og der er andre mindre justeringer til datamodellen.
 For den komplette revisionslog og datamodelændringer over DCAT-AP 3.0.1 henvises der til <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.1/#revision-history">DCAT-AP 3.0.1’s revisionslog</a>. Der henvises til <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#revision-history">DCAT-AP 3.0.0’s revisionslog</a> for tilføjelsen af datasætserier og yderligere datamodelændringer.
 
 
@@ -2538,14 +2538,14 @@ For den komplette revisionslog og datamodelændringer over DCAT-AP 3.0.1 henvise
       <li data-md>
        <p><strong>Hjemmel</strong> - brug i stedet applicable legislation</p>
       <li data-md>
-       <p><strong>Betalingspålagt</strong> – brug i stedet ’has policy’ + ODRL</p>
+       <p><strong>Betalingspålagt</strong> – brug i stedet ’has policy’ + <a href="https://www.w3.org/TR/odrl-model/">ODRL</a></p>
      </ul>
     <li data-md>
      <p>org:Organization udgår som udfaldsrum for datasætansvarlig organisation, men anbefales (som i DCAT-AP) anvendt når aktør er en organisation.</p>
     <li data-md>
-     <p>Personoplysningskategori (dcat-dk:personalDataCategory) ændrer udfaldsrum til <a href="https://data.gov.dk/concept/profile/personal-data-categories/">udarbejdet standard</a>.</p>
+     <p>Personoplysningskategori (dcat-dk:personalDataCategory) ændrer udfaldsrum til udarbejdet standard for <a href="https://data.gov.dk/concept/profile/personal-data-categories/">Personoplysningskategorier</a>.</p>
     <li data-md>
-     <p>Fortrolighedsgrad (dcat-dk:confidentialityType) ændrer udfaldsrum til <a href="https://data.gov.dk/concept/profile/conf-eu-nato-types/">udarbejdet standard</a>.</p>
+     <p>Fortrolighedsgrad (dcat-dk:confidentialityType) ændrer udfaldsrum til udarbejdet standard for <a href="https://data.gov.dk/concept/profile/conf-eu-nato-types/">Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO)</a>.</p>
     <li data-md>
      <p>Datakvalitetsoplysninger ændrer egenskaber:</p>
      <ul>
@@ -2557,7 +2557,7 @@ For den komplette revisionslog og datamodelændringer over DCAT-AP 3.0.1 henvise
        <p>Kvalitetsannotation peger på beskrivelse af en enkelt datakvalitetsdimension (og der kan så være flere per datasæt), hvor Kvalitetsmetadata pegede på det fulde erklæringsdokument, der så indeholdt annotationerne.</p>
      </ul>
    </ul>
-   <p>Udfasningen betyder at felterne stadigvæk er en del af datamodellen for DCAT-AP-DK v.3.0.1, men kan risikere at blive fjernet i en fremtidig version af DCAT-AP-DK.</p>
+   <p>Udfasning betyder at egenskaberne får status "deprecated" i DCAT-AP-DK 3.0.1, og formodentligt vil blive fjernet helt i en senere version.</p>
    <h2 class="heading settled" data-level="2" id="modellens-grundlggende-struktur"><span class="secno">2. </span><span class="content">Modellens grundlæggende struktur</span><a class="self-link" href="#modellens-grundlggende-struktur"></a></h2>
    
 DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom <em>titel</em>, <em>beskrivelse</em> og <em>identifikator</em>. Alle elementerne er beskrevet i detaljer i kapitel 5 <a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#elementer-i-dcat-ap-dk">Elementer i DCAT-AP-DK</a>, og se evt. også <a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#begrebmodel-for-beskrivelse-af-datast">begrebsmodellen</a>.
@@ -5773,7 +5773,7 @@ Klassens egenskaber:
     <dt>Kravniveau
     <dd>Anbefalet 
    </dl>
-   <h3 class="heading settled" data-level="4.31" id="klasse-kvalitetsannotation-dk-qualityannotation"><span class="secno">4.31. </span><span class="content">Klasse: Kvalitetsannotation DK (QualityAnnotation)</span><a class="self-link" href="#klasse-kvalitetsannotation-dk-qualityannotation"></a></h3>
+   <h3 class="heading settled" data-level="4.31" id="klasse-kvalitetsannotation-dk-quality-annotation"><span class="secno">4.31. </span><span class="content">Klasse: Kvalitetsannotation DK (Quality Annotation)</span><a class="self-link" href="#klasse-kvalitetsannotation-dk-quality-annotation"></a></h3>
    
 <img alt="Kvalitetsannotation DK" src="img/Kvalitetsannotation%20DK.png">
 
@@ -5791,7 +5791,7 @@ Klassens egenskaber:
     <dt>Kravniveau
     <dd>Valgfri
    </dl>
-   <h4 class="heading settled" data-level="4.31.1" id="egenskab-i-dimension-dk-in-dimension"><span class="secno">4.31.1. </span><span class="content">Egenskab: i dimension DK (In Dimension)</span><a class="self-link" href="#egenskab-i-dimension-dk-in-dimension"></a></h4>
+   <h4 class="heading settled" data-level="4.31.1" id="egenskab-i-dimension-dk-in-dimension"><span class="secno">4.31.1. </span><span class="content">Egenskab: i dimension DK (in dimension)</span><a class="self-link" href="#egenskab-i-dimension-dk-in-dimension"></a></h4>
    <dl class="def">
     <dt>URI
     <dd>https://www.w3.org/TR/vocab-dqv/#dqv:inDimension
@@ -6145,7 +6145,8 @@ Egenskab: dct:accessRights
 <strong>KLASSIFIKATION: Personoplysningskategorier</strong>
 
 
-   <p>Indeholder følgende udfaldsrum:</p>
+   <p>URI: https://data.gov.dk/concept/profile/personal-data-categories/</p>
+   <p>Indeholder følgende <a href="https://data.gov.dk/concept/profile/personal-data-categories.rdf">udfaldsrum</a>:</p>
    <ul>
     <li data-md>
      <p>https://data.gov.dk/concept/core/personaldata-type/SensitivePersonalData (følsomme personoplysninger)</p>
@@ -6158,16 +6159,20 @@ Egenskab: dct:accessRights
     <li data-md>
      <p>https://data.gov.dk/concept/core/personaldata-type/NonPersonalData (ingen personoplysninger)</p>
    </ul>
-   <p>https://www.retsinformation.dk/eli/lta/2018/502
-https://eur-lex.europa.eu/eli/reg/2016/679/oj
-https://www.datatilsynet.dk/generelt-om-databeskyttelse/hvad-er-personoplysninger</p>
+   <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/05/#05.05.12.60</p>
+   <p>Juridisk kilde: http://data.europa.eu/eli/reg/2016/679/oj</p>
+   <p>Juridisk kilde: https://www.retsinformation.dk/eli/lta/2018/502</p>
+   <p>Kilde: https://www.datatilsynet.dk/media/6567/fortegnelse.pdf</p>
    <h3 class="heading settled" data-level="5.14" id="fortrolighedsgrad"><span class="secno">5.14. </span><span class="content">Fortrolighedsgrad</span><a class="self-link" href="#fortrolighedsgrad"></a></h3>
    
 <strong>KLASSIFIKATION: Fortrolighedsgrader</strong>
 
 
+   <p>URI: https://data.gov.dk/concept/profile/conf-eu-nato-types/</p>
    <p>Fortrolighedsgrader iht. sikkerhedscirkulæret (EU/NATO):
 Se https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
+   <p>Forretningsområde: http://www.form-online.dk/opgavenoegle/68/#68.55.20</p>
+   <p>Kilde: https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
    <h2 class="heading settled" data-level="6" id="referencer"><span class="secno">6. </span><span class="content">Referencer</span><a class="self-link" href="#referencer"></a></h2>
    <ul>
     <li data-md>
