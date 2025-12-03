@@ -1,5 +1,5 @@
 
-HTML-indholdet er udstillet som GitHub Pages[1] her: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/
+HTML-indholdet er udstillet som GitHub Pages[1] her: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/
 
 Her ligger følgende filer:
 - README.md - Denne fil

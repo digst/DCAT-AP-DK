@@ -2,7 +2,7 @@
 
 Henvend jer gerne til arkitektur@digst.dk hvis I som dansk organisation udstiller metadata om datasæt iht. DCAT allerede, så vil vil tilføje jeres eksempler til listen herunder.
 
-## Eksempler på anvendelse af DCAT-AP-DK 3.0.1
+## Eksempler på anvendelse af DCAT-AP-DK 3.0.0
 Se ovenstående rdf/ttl-filer.
 
 ## Eksempler på anvendelse af DCAT-AP - generelt

@@ -1,7 +1,7 @@
 # DCAT-AP-DK-visning: obligatoriske/ anbefalede klasser
 samt obligatoriske/anbefalede egenskaber for disse klasser
 
-<img src="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.3.0.1/docs/img/Illustration-DCAT-AP-DK-v.3.0.1-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
+<img src="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.3.0.0/docs/img/Illustration-DCAT-AP-DK-v.3.0.0-UML-recommended.png" alt="Diagram som viser obligatoriske/anbefalede klasser samt obligatoriske/anbefalede egenskaber">
 
 			
 ## Klasse: Katalog (Catalog) 

@@ -1,7 +1,7 @@
 # DCAT-AP-DK-visning: obligatoriske klasser 
 obligatoriske klasser samt obligatoriske egenskaber for disse klasser
 
-<img src="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.3.0.1/docs/img/Illustration-DCAT-AP-DK-v3.0.1-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
+<img src="https://github.com/digst/DCAT-AP-DK/blob/master/releases/v.3.0.0/docs/img/Illustration-DCAT-AP-DK-v3.0.0-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 			
 ## Klasse: Katalog (Catalog) 
 <dl class="def">

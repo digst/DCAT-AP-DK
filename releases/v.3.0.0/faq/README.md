@@ -42,8 +42,8 @@ Følgende egenskaber er obligatoriske:
 - udgiver (publisher) ELLER datasætansvarlig organisation DK
 
 Se også denne oversigt:
-https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/views/mandatory
-og https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#forskellige-visninger-af-dcat-ap-dk
+https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/views/mandatory
+og https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#forskellige-visninger-af-dcat-ap-dk
 
 ### Hvilke egenskaber anbefales til beskrivelse af datasæt?
 Alle egenskaber er opmærket med deres kravniveau (obligatorisk, anbefalet eller valgfri).
@@ -68,8 +68,8 @@ Følgende egenskaber anbefales:
 - udgivelsesdato (release date), 
 - seneste ændringsdato (update/ modification date)
 
-Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/views/mandatory%2Brecommended
-og https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#forskellige-visninger-af-dcat-ap-dk
+Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/views/mandatory%2Brecommended
+og https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#forskellige-visninger-af-dcat-ap-dk
 
 ### Hvilke egenskaber til beskrivelse af klassen X indeholder DCAT-AP-DK? 
 DCAT og DCAT-AP har som det overordnede formål at beskrive _datasæt_ og _datakataloger_ og relationerne til øvrige centrale forretningsobjekter. Disse forretningsobjekter vil være defineret i selvstændige kernemodeller (RDF-vokabularer) og foldes ud dér med tilhørende egenskaber. Det centrale forretningsobjekt fra en ekstern kernemodel kan indgå i en given anvendelsesprofil og derved skabes der sammenhæng til de bagvedliggende kernemodeller og øvrige egenskaber derfra kan hentes ind efter behov.
@@ -86,7 +86,7 @@ DCAT, DCAT-AP og de øvrige modeller der udvikles i regi af EU SEMIC (The Semant
 Som metamodel anvendes RDF (Resource Description Framework).
 
 Se oversigten her for at få et overblik over hvilke kernemodeller (RDF-vokabularer) der sammensættes i DCAT-AP-DK:
-https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#namespaces
+https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#namespaces
 
 
 ### Kan man tilføje yderligere egenskaber til beskrivelse af datasæt?
@@ -115,20 +115,20 @@ Anvendelse af stereotyperne 'Optional', 'Recommended' og 'Mandatory' er  fastlag
 ### Hvordan udtrykkes licenser og rettighedsudsagn?
 
 På kataloget (dcat:Catalog) anvendes følgende:
-- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#egenskab-licens-license
-- dcc:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#egenskab-rettigheder-rights
+- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#egenskab-licens-license
+- dcc:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#egenskab-rettigheder-rights
 
 På datasættet (dcat:Dataset)  anvendes følgende:
-- dct:accessRights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#egenskab-adgangsrettigheder-access-rights
+- dct:accessRights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#egenskab-adgangsrettigheder-access-rights
 
 På distributionen (dcat:Distributionen) anvendes følgende:
-- dct:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#egenskab-rettigheder-rights%E2%91%A0
-- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#egenskab-licens-license%E2%91%A0
-- odrl:hasPolicy - https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#egenskab-har-politik-has-policy
+- dct:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#egenskab-rettigheder-rights%E2%91%A0
+- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#egenskab-licens-license%E2%91%A0
+- odrl:hasPolicy - https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#egenskab-har-politik-has-policy
 
-Rettighedsudsagnet beskrives med klassen dct:RightsStatement: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-rettighedsudsagn-rights-statement
+Rettighedsudsagnet beskrives med klassen dct:RightsStatement: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-rettighedsudsagn-rights-statement
  
-Ift. adgangsrettigheder kan klassifikationen Adgangsrettigheder anvendes: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#adgangsrettigheder
+Ift. adgangsrettigheder kan klassifikationen Adgangsrettigheder anvendes: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#adgangsrettigheder
 
 Læs mere om anvendelse af ovenstående egenskaber i DCAT-AP-DK og her: https://www.w3.org/TR/vocab-dcat-3/#license-rights 
 
@@ -142,12 +142,12 @@ Læs mere her: https://www.w3.org/TR/vocab-dcat-3/#quality-information; https://
 ### Hvordan kan man understøtte god datakvalitet i DCAT-metadatabeskrivelser?
 Ved hjælp af SHACL-implementeringen af den danske anvendelsesprofil er det muligt at validere indholdet af en given DCAT-metadatabeskrivelse iht. DCAT-AP-DK og adressere flere kernekvalitetsdimensioner. Hvis den obligatoriske information mangler eller hvis obligatoriske, anbefalede eller valgfrie elementer er ikke er angivet korrekt, kan en validator baseret på SHACL-indholdet give relevante valideringsresultater og beskeder.   
 
-Læs mere her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/validation
+Læs mere her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/validation
 
 ## BESKRIVELSE AF PERIODER
 
 ### Hvad er forskellen mellem 'startdato og 'har begyndelse', samt 'slutdato' og 'har slutning' ift. en periode?
-Klassen Periode har følgende fire egenskaber: Se også: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.1/docs/#klasse-periode-periodoftime
+Klassen Periode har følgende fire egenskaber: Se også: https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-periode-periodoftime
 - Egenskab: startdato (start date)
 - Egenskab: slutdato (end date)
 - Egenskab: har begyndelse (beginning)
@@ -210,7 +210,7 @@ DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt 
 
 
 ### Hvor finder jeg eksempler på anvendelse af DCAT, DCAT-AP og DCAT-AP-dk?
-Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/examples
+Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/examples
 
 ### Findes der andre generelle specifikationer til beskrivelse af datasæt?
 Ja, se fx.
@@ -252,7 +252,7 @@ Se yderligere vejledninger og eksempler med JSON-LD her:
 
 RDFa (Resource Description Framework in attributes) tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter. Læs mere om RDFa her: https://en.wikipedia.org/wiki/RDFa. Se yderligere vejledninger og eksempler med RDFa her: 
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
-- https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.1/examples/RDFa
+- https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/examples/RDFa
 
 
 ### Hvor kan jeg finde mere information om DCAT og DCAT-AP?
