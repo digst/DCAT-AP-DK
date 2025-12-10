@@ -3971,7 +3971,7 @@ Relevante links:
 - Denne version: https://data.gov.dk/model/profile/dcat-ap-dk-3.0.1/
 - Modelnavn (label): DCAT-AP-DK: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger 
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
-- Versionnummer (versionInfo): 3.0.1
+- Versionnummer (versionInfo): 3.0.0
 - Seneste opdateringsdato (dateModified): 2025-11-12
 - Modelstatus (modelStatus): completed
 - Godkendelsesstatus (approvalStatus): godkendt
