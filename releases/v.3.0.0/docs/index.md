@@ -942,7 +942,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: beskrivelse (description) 
@@ -962,7 +962,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: overholder (application profile) 
@@ -1162,7 +1162,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 
 ### Egenskab: kontaktpunkt (contact point) 
@@ -1484,7 +1484,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
-<dd>Anbefalet</dd>
+<dd>Valgfri</dd>
 </dl>
 				
 ### Egenskab: udgivelsesdato (release date) 
