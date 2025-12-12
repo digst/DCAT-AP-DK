@@ -3984,35 +3984,35 @@ Relevante links:
 
 ### UML-diagram: DCAT-DK
 - URI: https://data.gov.dk/model/core/dcat-dk/
-- Denne version: https://data.gov.dk/model/core/dcat-dk-1.0.0/
+- Denne version: https://data.gov.dk/model/core/dcat-dk-2.0.0/
 - Modelnavn (label): DCAT-DK
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
-- Versionnummer (versionInfo): 1.0.0
-- Seneste opdateringsdato (dateModified): 2020-10-01
+- Versionnummer (versionInfo): 2.0.0
+- Seneste opdateringsdato (dateModified): 2025-12-12
 - Modelstatus (modelStatus): completed
-- Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
-- Godkendelsesstatus (approvalStatus): godkendt
+- Godkendt af:
+- Godkendelsesstatus (approvalStatus): 
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.
 
-<p class="center"><a href="img/Illustration-DCAT-DK-v1.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v1.0.0-UML.png" alt="Illustration af DCAT-DK 1.0.0 UML"/></a></p>
+<p class="center"><a href="img/Illustration-DCAT-DK-v2.0.0-UML.png"><img src="img/Illustration-DCAT-DK-v2.0.0-UML.png" alt="Illustration af DCAT-DK 2.0.0 UML"/></a></p>
 
 
 
 ## Begrebmodel for beskrivelse af datasæt
 - URI: https://data.gov.dk/concept/core/dataset/
-- Denne version:  https://data.gov.dk/concept/core/dataset-1.0.0
+- Denne version:  https://data.gov.dk/concept/core/dataset-2.0.0
 - Modelnavn (label): Begrebsmodel for beskrivelse datasæt og datakataloger
 - Modelansvarlig (responsibleEntity): Digitaliseringsstyrelsen
-- Versionnummer (versionInfo): 1.0.0
-- Seneste opdateringsdato (dateModified): 2020-10-01
+- Versionnummer (versionInfo): 2.0.0
+- Seneste opdateringsdato (dateModified): 2025-12-12
 - Modelstatus (modelStatus): completed
-- Godkendelsesstatus (approvalStatus): godkendt
-- Godkendt af: Udvalget for Arkitektur og Standarder (UAS)
+- Godkendelsesstatus (approvalStatus): 
+- Godkendt af: 
 - Forretningsområde (theme):  http://www.form-online.dk/opgavenoegle/06/#06.38.10.10  
 - Kommentar (comment): Begrebsmodel der indeholder centrale begreber i forhold til beskrivelse af dataset og datakataloger.
 
-<p class="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-v1.0.0.png" alt="Illustration af Begrebsmodel for datasæt v1.0.0 "/></a></p>
+<p class="center"><a href="img/Illustration-Begrebsmodel-for-datasæt-og-datakataloger-v2.0.0.png"><img src="img/Illustration-Begrebsmodel-for-datasæt-og-datakataloger-v2.0.0.png" alt="Illustration af Begrebsmodel for datasæt v2.0.0 "/></a></p>
 
 <table class="term-table">
     <thead>
@@ -4053,7 +4053,6 @@ Relevante links:
  <tr><td>begrebssystem</td><td>samling af ét eller flere begreber, samt eventuelt også udsagn om de indbyrdes semantiske relationer mellem disse begreber</td><td>&nbsp;</td><td>http://www.w3.org/2004/02/skos/core# </td><td>&nbsp;nej</td><td>concept scheme </td></tr>
  <tr><td>bytestørrelse</td><td>størrelsen af en distribution angivet i bytes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>bytesize </td></tr>  
  <tr><td>sprog</td><td>system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>language </td></tr>
- <tr><td>datasætansvarlig</td><td>organisation der har det juridiske ansvar for det samlede datasæt</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset responsible organisation </td></tr>
  <tr><td>datasætskaber</td><td>aktør der er primært ansvarlig for datasættets skabelse</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;ja</td><td>dataset creator </td></tr>
  <tr><td>skaber</td><td>entitet som er ansvarlig for ressourcens skabelse</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>creator </td></tr>
  <tr><td>udgiver</td><td>entitet som er ansvarlig for at gøre ressourcen tilgængelig</td><td>&nbsp;</td><td>http://purl.org/dc/terms/</td><td>&nbsp;nej</td><td>publisher </td></tr> 
