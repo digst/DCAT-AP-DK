@@ -102,7 +102,7 @@
   </owl:Class>
 
   <owl:Ontology rdf:about="https://data.gov.dk/model/core/dcat-dk">
-    <dc:modified>2020-10-01</dc:modified>
+    <dc:modified>2025-12-12</dc:modified>
     <dc:publisher>&lt;https://digst.dk/&gt;</dc:publisher>
     <ns0:preferredNamespacePrefix>dcat-dk</ns0:preferredNamespacePrefix>
     <ns0:preferredNamespaceUri>https://data.gov.dk/model/core/dcat-dk/</ns0:preferredNamespaceUri>
@@ -110,8 +110,8 @@
     <rdfs:comment xml:lang="en">DCAT-DK is a vocabulary that expands the possibilities for describing data sets in the Danish common public context and defines characteristics such as data set manager, payment required, personal data category and degree of confidentiality, which are not included in DCAT-AP or DCAT.</rdfs:comment>
     <rdfs:label xml:lang="en">DCAT vocabulary extension</rdfs:label>
     <rdfs:label xml:lang="da">DCAT vokabular udvidelse</rdfs:label>
-    <owl:versionIRI rdf:resource="https://data.gov.dk/model/core/dcat-dk-1.0.0/"/>
-    <owl:versionInfo>version 1.0.0</owl:versionInfo>
+    <owl:versionIRI rdf:resource="https://data.gov.dk/model/core/dcat-dk-2.0.0/"/>
+    <owl:versionInfo>version 2.0.0</owl:versionInfo>
     <ns1:status rdf:resource="http://purl.org/adms/status/Completed"/>
     <ns2:approval rdf:resource="https://data.gov.dk/concept/core/approvalstatus/Approved"/>
   </owl:Ontology>

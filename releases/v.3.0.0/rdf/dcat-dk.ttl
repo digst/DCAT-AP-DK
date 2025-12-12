@@ -109,7 +109,7 @@ pers-cat:PersonalDataCategory
 .
 <https://data.gov.dk/model/core/dcat-dk>
   a owl:Ontology ;
-  dct:modified "2020-10-01" ;
+  dct:modified "2025-12-12" ;
   dct:publisher "<https://digst.dk/>" ;
   vann:preferredNamespacePrefix "dcat-dk" ;
   vann:preferredNamespaceUri "https://data.gov.dk/model/core/dcat-dk/" ;
@@ -117,8 +117,8 @@ pers-cat:PersonalDataCategory
   rdfs:comment "DCAT-DK is a vocabulary that expands the possibilities for describing data sets in the Danish common public context and defines characteristics such as data set manager, payment required, personal data category and degree of confidentiality, which are not included in DCAT-AP or DCAT."@en ;
   rdfs:label "DCAT vocabulary extension"@en ;
   rdfs:label "DCAT vokabular udvidelse"@da ;
-  owl:versionIRI <https://data.gov.dk/model/core/dcat-dk-1.0.0/> ;
-  owl:versionInfo "version 1.0.0" ;
+  owl:versionIRI <https://data.gov.dk/model/core/dcat-dk-2.0.0/> ;
+  owl:versionInfo "version 2.0.0" ;
   adms:status <http://purl.org/adms/status/Completed> ;
   mdl-app:approval mdl-app:Approved ;
 .

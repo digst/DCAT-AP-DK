@@ -192,7 +192,7 @@
   {
     "@id": "https://data.gov.dk/model/core/dcat-dk",
     "@type": ["http://www.w3.org/2002/07/owl#Ontology"],
-    "http://purl.org/dc/terms/modified": [{ "@value": "2020-10-01" }],
+    "http://purl.org/dc/terms/modified": [{ "@value": "2025-12-12" }],
     "http://purl.org/dc/terms/publisher": [{ "@value": "<https://digst.dk/>" }],
     "http://purl.org/vocab/vann/preferredNamespacePrefix": [
       { "@value": "dcat-dk" }
@@ -215,10 +215,10 @@
       { "@value": "DCAT vokabular udvidelse", "@language": "da" }
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
-      { "@id": "https://data.gov.dk/model/core/dcat-dk-1.0.0/" }
+      { "@id": "https://data.gov.dk/model/core/dcat-dk-2.0.0/" }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
-      { "@value": "version 1.0.0" }
+      { "@value": "version 2.0.0" }
     ],
     "http://www.w3.org/ns/adms#status": [
       { "@id": "http://purl.org/adms/status/Completed" }
@@ -227,7 +227,7 @@
       { "@id": "https://data.gov.dk/concept/core/approvalstatus/Approved" }
     ]
   },
-  { "@id": "https://data.gov.dk/model/core/dcat-dk-1.0.0/" },
+  { "@id": "https://data.gov.dk/model/core/dcat-dk-2.0.0/" },
   { "@id": "https://data.gov.dk/model/core/dcat-dk/" },
   {
     "@id": "https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation",
