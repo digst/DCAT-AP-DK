@@ -1286,7 +1286,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: emne (theme/ category) 
+### Egenskab: emne (theme) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#theme</dd>
@@ -2567,7 +2567,107 @@ Klassens egenskaber:
 <dd>Anbefalet</dd>
 </dl>
 
+### Egenskab: kontaktpunkt (contact point) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#contactPoint</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2006/vcard/ns#Kind</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Kontaktoplysninger som kan anvendes til at indsende kommentarer om datatjenesten.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>Contact information that can be used for sending comments about the Data Service.</dd>
+<dt>Definition (da)</dt>
+<dd>Relevante kontaktoplysninger for datasætserien. Anvendelse af vCard anbefales.</dd>
+<dt>Definition (en)</dt>
+<dd>Relevant contact information for the dataset series. Use of vCard is recommended.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
 
+### Egenskab: overholder (conforms to) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/conformsTo</dd>
+<dt>Rækkevidde</dt>
+<dd>http://purl.org/dc/terms/Standard</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>En etableret (teknisk) standard som datatjenesten er i overensstemmmelse med. Den standard der henvises til her BØR beskrive datatjenesten, ikke de data den leverer. Data beskrives af det datasæt, datatjenesten er forbundet til. Til eksempel overholder en datatjeneste OGC WFS API standarden, mens det tilknyttede datasæt overholder INSPIRE datamodel for Adresse</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>An established (technical) standard to which the Data Service conforms. The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE Address data model.</dd>
+<dt>Definition (da)</dt>
+<dd>En etableret standard som den beskrevne ressource er i overensstemelse med.</dd>
+<dt>Definition (en)</dt>
+<dd>An established standard to which the described resource conforms.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+
+### Egenskab: nøgleord (keyword/ tag) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#keyword</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2001/XMLSchema#string</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver et nøgleord eller tag der beskriver datatjenesten.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property contains a keyword or tag describing the Data Service.</dd>
+<dt>Definition (da)</dt>
+<dd>Et nøgleord eller tag til beskrivelse af en ressource.</dd>
+<dt>Definition (en)</dt>
+<dd>A keyword or tag describing the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
+
+### Egenskab: destinationsside (landing page) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#landingPage</dd>
+<dt>Rækkevidde</dt>
+<dd>http://xmlns.com/foaf/0.1/Document</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver en webside som giver adgang til datatjenesten og/eller yderligere information. 
+		Egenskaben bør pege på en webside hos den oprindelige dataudstiller - ikke en side eller et websted hos tredjepart, såsom en aggregator.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to a web page that provides access to the Data Service and/or additional information. 
+		It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.</dd>
+<dt>Definition (da)</dt>
+<dd>En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information</dd>
+<dt>Definition (en)</dt>
+<dd>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
+### Egenskab: emne (theme) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#theme</dd>
+<dt>Rækkevidde</dt>
+<dd>http://www.w3.org/2004/02/skos/core#Concept</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver et emne for datatjenesten. En datatjeneste kan opmærkes med flere forskellige emner - eventuelt fra flere forskellige klassifikationer. </br></br> Anvendelse af EUs klassifikation Dataset Theme er anbefalet, se http://publications.europa.eu/resource/authority/data-theme. Anvendelse af FORM  (http://www.form-online.dk/) og KLE (http://www.kle-online.dk/) til opmærkning med forvaltningsopgave er valgfrit, og det foreslås, at KLE anvendes af kommunerne, og FORM af regioner og statslige administrative enheder.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This property refers to a category of the Data Service. A Data Service may be associated with multiple themes - potentially from different classifications <br><br>The use of the EU Dataset Themes is recommended, see http://publications.europa.eu/resource/authority/data-theme. Using FORM - the Danish Public Task Reference Model - (http://www.form-online.dk/) and KLE - a Municipal Task Reference Model - (http://www.kle-online.dk/) for thematic categorisation is optional, and it is suggested that KLE is used by municipalities and FORM by regional and govermental authorities.</dd>
+<dt>Definition (da)</dt>
+<dd>Et centralt emne for ressourcen. En ressource kan have flere centrale emner.</dd>
+<dt>Definition (en)</dt>
+<dd>A main category of the resource. A resource can have multiple themes.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet</dd>
+</dl>
 
 ## Klasse: Datasætserie (Dataset Series) 
 <img src="img/Datasætserie.png" alt="Datasætserie">
