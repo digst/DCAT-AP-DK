@@ -174,7 +174,6 @@ Markup Shorthands: markdown yes
 Repository: digst/DCAT-AP-DK
 Inline Github Issues: full
 Logo: digst...
-Translation: en https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/index-en.html
 </pre>
 
 DCAT-AP-DK 3.0.0 er godkendt af Udvalget for Arkitektur og Standarder (dd. mmmm. yyyy) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
@@ -644,7 +643,7 @@ Klassens egenskaber:
 <dd>Anbefalet</dd>
 </dl>
 				
-### Egenskab: geografisk område (spatial/geographic) 
+### Egenskab: geografisk område (geographic coverage) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/spatial</dd>
@@ -744,14 +743,14 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: har delkatalog (catalog) 
+### Egenskab: relateret katalog (catalog) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#catalog</dd>
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#Catalog</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et katalog som udgør en del af det aktuelle katalog.</dd>
+<dd>Denne egenskab angiver et katalog som er interessant i kontekst af det aktuelle katalog.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a catalog whose contents are of interest in the context of this catalog.</dd>
 <dt>Definition (da)</dt>
@@ -2395,7 +2394,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>https://www.w3.org/2000/01/rdf-schema#Resource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. </dd>
+<dd>Denne egenskab giver en beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc. Egenskaben udtrykker specifikke oplysninger om de faktiske endpointinstanser, hvorimod dct:conformsTo (overholder) anvendes til at angive en generel standard eller specifikation som det aktuelle endpoint er i overensstemmelse med. </dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property contains a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.</dd>
 <dt>Definition (da)</dt>
@@ -2428,7 +2427,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: datatjeneste for datasæt (serves dataset) 
+### Egenskab: leverer datasæt (serves dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#servesDataset</dd>
@@ -2680,9 +2679,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://purl.org/dc/terms/Location</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et geografisk område som kataloget dækker. Afgræsningen kan enten udtrykkes ved udpegnings af geofrafisk område eller ved anvendelse af en af følgende klassifikationen: EU Vocabularies Continents Named Authority List, EU Vocabularies Countries Named Authority List, EU Vocabularies Places Named Authority List eller Geonames (Sidstnævnte bør kun anvendes såfremt lokationen ikke findes i et af de nævnte EU Authority Lists.</dd>
+<dd>Denne egenskab angiver et geografisk område som datasætserien dækker. Når et geografisk område er en dimension af datasætserien, bør det geografiske område for hvert datasæt i serien være en den af det geografiske område. I så tilfælde anbefales en bred værdiangivelses, fx EU eller en bred bounding box der dækker de forventede værdier. </dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a geographical area covered by the Catalogue. </dd>
+<dd>A geographic region that is covered by the Dataset Series. When spatial coverage is a dimension in the dataset series then the spatial coverage of each dataset in the collection should be part of the spatial coverage. In that case, an open ended value is recommended, e.g. EU or a broad bounding box covering the expected value</dd>
 <dt>Definition (da)</dt>
 <dd>Ressourcens geografiske karakteristika.</dd>	
 <dt>Definition (en)</dt>
@@ -2780,9 +2779,9 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/2001/XMLSchema#string</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver det eller de ord som navngiver emneklassifikationen. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
+<dd>Et navn givet til datasætserien. Egenskaben kan optræde én gang for hver sprogvariant af titlen.</dd>
 <dt>Anvendelsesnote (en)</dt>
-<dd>This property contains a name of the Dataset Series scheme. May be repeated for different versions of the name</dd>
+<dd>A name given to the Dataset Series. This property can be repeated for parallel language versions of the name.</dd>
 <dt>Definition (da)</dt>
 <dd>Et navn givet til ressourcen.</dd>
 <dt>Definition (en)</dt>
