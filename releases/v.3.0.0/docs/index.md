@@ -823,6 +823,26 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>	
 
+### Egenskab: dækningsperiode (temporal coverage) 
+<dl class="def">
+<dt>URI</dt>
+<dd>http://purl.org/dc/terms/temporal</dd>
+<dt>Rækkevidde</dt>
+<dd>http://purl.org/dc/terms/PeriodOfTime</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne egenskab angiver den periode kataloget dækker</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>A temporal period that the Catalogue covers.</dd>
+<dt>Definition (da)</dt>
+<dd>Ressourcens tidslige karakteristika.</dd>
+<dt>Definition (en)</dt>
+<dd>Temporal characteristics of the resource.</dd>
+<dt>Multiplicitet</dt>
+<dd>0..*</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>
+
 
 ## Klasse: Katalogpost (Catalog Record) 
 <img src="img/Katalogpost.png" alt="Katalogpost">
