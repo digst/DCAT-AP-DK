@@ -743,7 +743,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: relateret katalog (catalog) 
+### Egenskab: katalog (catalog) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#catalog</dd>
@@ -1549,7 +1549,7 @@ Klassens egenskaber:
 ### Egenskab: har kvalitetsannotation DK (has quality annotation) 
 <dl class="def">
 <dt>URI</dt>
-<dd>https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation</dd>
+<dd>http://www.w3.org/ns/dqv#hasQualityAnnotation</dd>
 <dt>Rækkevidde</dt>
 <dd>https://www.w3.org/TR/vocab-dqv/#dqv:QualityAnnotation</dd>
 <dt>Anvendelsesnote (da)</dt>
@@ -1557,7 +1557,7 @@ Klassens egenskaber:
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to quality annotations.</dd>
 <dt>Definition (da)</dt>
-<dd>Henviser til en kvalitetsannotation. Kvalitetsannotationer kan bruges til et datasæt.</dd>
+<dd>Henviser til en kvalitetsannotation. Kvalitetsannotationer kan bruges til enhver form for ressource, fx et datasæt, et linksæt, en graf, et sæt tripler</dd>
 <dt>Definition (en)</dt>
 <dd>Refers to a quality annotation. Quality annotation can be applied to any kind of resource, e.g., a dataset, a linkset, a graph, a set of triples.</dd>
 <dt>Multiplicitet</dt>
@@ -1826,7 +1826,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>	
 
-### Egenskab: i serie (in serie)
+### Egenskab: i serie (in series)
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#inSeries</dd>
@@ -1967,7 +1967,7 @@ Klassens egenskaber:
 <dd>Anbefalet</dd>
 </dl>
 				
-### Egenskab: overholder (linked schemas) 
+### Egenskab: overholder (linked schemas / conforms to) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://purl.org/dc/terms/conformsTo</dd>
