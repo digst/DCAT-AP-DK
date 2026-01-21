@@ -2447,7 +2447,7 @@ Klassens egenskaber:
 <dd>Valgfri</dd>
 </dl>
 				
-### Egenskab: leverer datasæt (serves dataset) 
+### Egenskab: datatjeneste for datasæt (serves dataset) 
 <dl class="def">
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#servesDataset</dd>
@@ -2970,7 +2970,7 @@ Klassens egenskaber:
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
-<dd>Valgfri</dd>
+<dd>Anbefalet</dd>
 </dl>	
 			
 ## Klasse: Organisation (Organisation) 
