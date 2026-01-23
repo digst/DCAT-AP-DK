@@ -310,7 +310,7 @@ DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens gru
 Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester, som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.</br> [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-katalog-catalog)
 
 ## Katalogiseret ressource 
-En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller udvalgt og arrangeret af en enkelt aktør. Denne klasse bærer egenskaber, der gælder alle katalogiserede ressourcer. I kontekst af et datakatalog vil dette element ikke blive anvendt – det vil de tre datarelaterede undertyper derimod, hhv. datasæt, datatjeneste og katalog. 
+En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller udvalgt og arrangeret af en enkelt kilde. Dette er en abstrakt klasse, der reræsenterer de forskellige typer at ting man kan have opført i et katalog. I kontekst af et datakatalog eller en dataudveksling vil dette element ikke blive anvendt – det vil de tre underklasser derimod, hhv. datasæt, datatjeneste og datasætserie. 
 
 ## Datasæt
 Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde, og som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
@@ -367,7 +367,7 @@ Se oversigt over anvendte namespaces i bilaget [Namespaces](https://digst.github
 
 ### Diagram med obligatoriske elementer (minimumsmodel)
 [DCAT-AP-DK-visning 1](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/views/mandatory) 
-beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). 
+beskriver obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen). Deruover er klasserne Datasæt og Datatjeneste (med obligatoriske egenskaber) medtaget, da det reelt er nødvendigt at have mindst en af disse, for at have noget at have et katalog over.
 
 <img src="img/Illustration-DCAT-AP-DK-v3.0.0-UML-mandatory.png" alt="Diagram som viser obligatoriske klasser samt obligatoriske egenskaber for disse klasser (minimumsmodellen)">
 
@@ -3617,7 +3617,7 @@ Klassens egenskaber:
 </dl>
 
 ## Klasse: Retslig ressource (Legal Resource) 
-<img src="img/Retslig ressource.png" alt="Retskilde">
+<img src="img/retskilde.png" alt="retskilde">
 <dl class="def">
 <dt>URI</dt>
 <dd>http://data.europa.eu/eli/ontology#LegalResource</dd>
@@ -3627,6 +3627,23 @@ Klassens egenskaber:
 <dd>A work in a legislative corpus. This applies to acts that have been legally enacted (whether or not they are still in force).A legal resource can represent a legal act or any component of a legal act, like an article.  Legal resources can be linked together using properties defined in the model.</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
+</dl>
+
+## Klasse: Katalogiseret ressource (Catalogued Resource) 
+<img src="img/katalogiseret ressource.png" alt="katalogiseret ressource">
+<dl class="def">
+<dt>URI</dt>
+<dd>http://www.w3.org/ns/dcat#Resource</dd>
+<dt>Anvendelsesnote (da)</dt>
+<dd>Denne klasse er en abstrakt klasse i DCAT-AP. Derfor bør der i dataudveksling kun anvendes underklasser.</dd>
+<dt>Anvendelsesnote (en)</dt>
+<dd>This class Catalogued Resource is an abstract class for DCAT-AP. Therefore only subclasses should be used in a data exchange.</dd>
+<dt>Definition (da)</dt>
+<dd>ressource udgivet eller udvalgt og arrangeret af en enkelt kilde</dd>
+<dt>Definition (en)</dt>
+<dd>Resource published or curated by a single agent.</dd>
+<dt>Type</dt>
+<dd>Abstrakt</dd>
 </dl>
 
 ## Klasse: Politik (Policy) 
@@ -3688,15 +3705,15 @@ Klassens egenskaber:
 ### Egenskab: i dimension DK (in dimension) 
 <dl class="def">
 <dt>URI</dt>
-<dd>https://www.w3.org/TR/vocab-dqv/#dqv:inDimension</dd>
+<dd>https://www.w3.org/ns/dqv#inDimension</dd>
 <dt>Rækkevidde</dt>
-<dd>https://www.w3.org/TR/vocab-dqv/#dqv:Dimension</dd>
+<dd>https://www.w3.org/ns/dqv#Dimension</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Dimensioner bruges til organisering af metrikker, kvalitetscertifikater og kvalitetsannotationer.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>Dimensions are meant to systematically organize metrics, quality certificates and quality annotations. </dd>
 <dt>Definition (da)</dt>
-<dd>Repræsenterer dimensionen af en kvalitetsmetrik, et certifikat og en annotation som der måles med.</dd>
+<dd>Repræsenterer den dimension en kvalitetsmetrik, et certifikat og en annotation er en måling af.</dd>
 <dt>Definition (en)</dt>
 <dd>Represents the dimensions a quality metric, certificate and annotation allow a measurement of.</dd>
 <dt>Multiplicitet</dt>
@@ -3704,6 +3721,19 @@ Klassens egenskaber:
 <dt>Kravniveau</dt>
 <dd>Obligatorisk</dd>
 </dl>
+
+## Klasse: Dimension DK (Dimension) 
+<img src="img/Dimension.png" alt="Dimension">
+<dl class="def">
+<dt>URI</dt>
+<dd>https://www.w3.org/ns/dqv#Dimension</dd>
+<dt>Definition (da)</dt>
+<dd>repræsenterer kriterier der er relevante for at vurdere kvalitet</dd>
+<dt>Definition (en)</dt>
+<dd>Represents criteria relevant for assessing quality.</dd>
+<dt>Kravniveau</dt>
+<dd>Valgfri</dd>
+</dl>	
 
 ## Klasse: Personoplysningskategori DK (Personal Data Category) 
 <img src="img/Personoplysningskategori.png" alt="Personoplysningskategori DK">
