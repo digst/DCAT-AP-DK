@@ -176,7 +176,7 @@ Inline Github Issues: full
 Logo: digst...
 </pre>
 
-DCAT-AP-DK 3.0.0 er godkendt af Udvalget for Arkitektur og Standarder (dd. mmmm. yyyy) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
+Opdateringen til DCAT-AP-DK 3.0.0 er godkendt af Udvalget for Arkitektur og Standarder (dd. mmmm. yyyy) og optaget i den Fællesoffentlige Digitale Arkitektur ([FDA](https://arkitektur.digst.dk/))
 
 Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: [XMI](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/xmi), [SHACL/RDF](https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/validation).
 
@@ -187,21 +187,21 @@ Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/
 
 # Introduktion
 
-DCAT-AP-DK 3.0.0 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen resulterer i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
+DCAT-AP-DK 3.0.0 er en specifikation til beskrivelse af datasæt og datakataloger til anvendelse i dansk fællesoffentlig regi. Specifikationen omfatter basisoplysninger om datasæt og datatjenester, som fx titel, beskrivelse, udgiver, udgivelsesdato mv., samt en ensartet struktur for disse oplysninger i et fælles udvekslingsformat, som gør det muligt at dele oplysninger om datasæt på en effektiv måde. Specifikationen er i en såkaldt anvendelsesprofil baseret på internationale og nationale specifikationer. 
 
 ## Formål
 Specifikationen skal være med til sørge for, at begreber til beskrivelse af datasæt og datakataloger anvendes mere ens, og dermed skal den understøtte højere grad af interoperabilitet og kvalitet i oplysningerne. 
 
 
 ## Baggrund
-De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK vil dog også tilføje enkelte nye elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er *obligatoriske* at udfylde samt *anbefalede* og *valgfrie* egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK vil dog også tilføje enkelte elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
 
 Specifikationen er oprindeligt udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. Opdateringen til version 3.0.0 har været forankret i Digitaliseringsstyrelsen med orientering af de fællesoffentlige parter. Udover de opdateringerne der følger af at DCAT og DCAT-AP er opdateret, har arbejdet med opdateringen været anledning til at vurderer de danske tilføjelser. Her er der især taget udgangspunkt i det praktiske arbejde med at implementere en fællesoffentlig dataportal, [Datavejviseren](https://datavejviser.dk/), herunder dialog med både dataudstillere og anvendere af kataloget, samt det relaterede arbejde med at videregive data til den [europæiske dataportal](https://data.europa.eu/da). På baggrund af dette er flertallet af danske tilføjelse blevet fjernet igen, da de ikke ses anvendt i praksis, samtidigt med at der er mulighed for at udtrykke samme reelle informationsindhold ved hjælp af egenskaber der er inkluderet i DCAT-AP 3.0.1. Det er derfor vurderet ønskeligt at udfase dem inden der evt. opbygges en ikke interoperabel anvendelsesskik. Desuden vurderes de særlige danske kravniveauer ikke at give værd i praksis, og de bortfalder derfor i denne version.
 
 Specifikationen har også snitflader til PSI-loven (Public Sector Information) og EU’s [åbne data](https://eur-lex.europa.eu/legal-content/DA/TXT/HTML/?uri=CELEX:32019L1024&from=EN) (2019/1024), der blandt andet indeholder krav om etablering af et enkelt adgangspunkt til offentlige data og [Datastyringsforordningen](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R0868) (2022/868), som regulerer vilkår for adgang til beskyttede offentlige data.
 
 ## Metode
-Denne specifikation udgør en dansk basisprofil for datasæt og datakataloger (DCAT-AP-DK), som indeholder basisoplysninger om datasæt og datakataloger.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
+Denne specifikation udgør en dansk basisprofil for datasæt, datatjenester og datakataloger (DCAT-AP-DK), og specificerer basisoplysninger om disse.  Basisoplysningerne udgør en fælles kerne, der kan udvides med yderligere kontekstafhængige oplysninger i nye og mere specifikke anvendelsesprofiler. Informationer dannet på baggrund af to eller flere specifikke anvendelsesprofiler kan potentielt bringes til at hænge sammen via denne fælles kerne.
 
 Selve udviklingsarbejdet er foretaget i henhold de [Fællesoffentlige regler for begrebs- og datamodellering](https://arkitektur.digst.dk/metoder/regler-begrebs-og-datamodellering), og specifikationen sammensætter flere eksisterende nationale og internationale modeller.
 
@@ -304,10 +304,10 @@ Ud over ændringerne fra den nye DCAT-AP version, er der følgende ændringer fo
 Udfasning betyder at egenskaberne får status "deprecated" i DCAT-AP-DK 3.0.0, og formodentligt vil blive fjernet helt i en senere version.
 
 # Modellens grundlæggende struktur
-DCAT har seks centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse seks elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#begrebmodel-for-beskrivelse-af-datast).
+DCAT har syv centrale elementer, hvis indbyrdes relationer udgør modellens grundlæggende struktur. Disse syv elementer beskrives herunder i kontekst af et datakatalog. Hvert element på et givet niveau kan beskrives med metadata såsom *titel*, *beskrivelse* og *identifikator*. Alle elementerne er beskrevet i detaljer i kapitel 5 [Elementer i DCAT-AP-DK](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#elementer-i-dcat-ap-dk), og se evt. også [begrebsmodellen](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#begrebmodel-for-beskrivelse-af-datast).
 
 ## Katalog
-Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester, som indgår i det pågældende datakatalog. Et datakatalog *skal* således indeholde datasæt, men det *kan* også indeholde datatjenester og andre datakataloger.</br> [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-katalog-catalog)
+Et katalog (dcat:Catalog) er en udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). Elementet indeholder metadata om selve kataloget samt reference til de datasæt og datatjenester, som indgår i det pågældende datakatalog. Et datakatalog *bør* således indeholde datasæt og/eller datatjenester, men det *kan* også indeholde datasætserier og andre datakataloger.</br> [Gå til klassen Katalog](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-katalog-catalog)
 
 ## Katalogiseret ressource 
 En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller udvalgt og arrangeret af en enkelt kilde. Dette er en abstrakt klasse, der reræsenterer de forskellige typer at ting man kan have opført i et katalog. I kontekst af et datakatalog eller en dataudveksling vil dette element ikke blive anvendt – det vil de tre underklasser derimod, hhv. datasæt, datatjeneste og datasætserie. 
@@ -317,7 +317,7 @@ Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arran
 </br>[Gå til klassen Datasæt](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-datast-dataset)
 
 ## Datatjeneste
-En datatjeneste (dcat:DataService) er et websted eller endpoint, der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. Denne klasse er valgfri.
+En datatjeneste (dcat:DataService) er et websted eller endpoint, der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer. En datatjeneste kan være bundet til en eller flere specifikke datasæt. 
 </br>[Gå til klassen Datatjeneste](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-datatjeneste-data-service)
 
 ## Datasætserie
@@ -325,7 +325,7 @@ En datasætserie (dcat:DatasetSeries) er en samling af datasæt der udgives sepa
 </br>[Gå til klassen Datasætserie](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-datasetserien-dataset-series)
 
 ## Distribution
-En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er valgfri.
+En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er anbefalet.
 </br>[Gå til klassen Distribution](https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-distribution-distribution)
 
 Bemærk at det til beskrivelse af en distribution er muligt at benytte en række egenskaber, der også benyttes til beskrivelsen af distributionens datasæt. Egenskaberne er:
@@ -339,7 +339,7 @@ En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver regis
 
 
 ## Illustration
-Her ses en illustration af tre typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (obligatorisk) og "distribution" (anbefalet):
+Her ses en illustration af fire typisk anvendte elementer fra den grundlæggende struktur, nemlig "katalog" (obligatorisk), "datasæt" (anbefalet), "datatjeneste" (anbefalet) og "distribution" (anbefalet):
 
 <p><a href="img/Illustration-DCAT-AP-DK-grundlæggende-struktur.png"><img src="img/Illustration-DCAT-AP-DK-grundlæggende-struktur.png" alt="Figur DCAT-niveauerne"/></a></p>
 
@@ -354,8 +354,6 @@ I DCAT-AP defineres følgende kravniveauer som også anvendes i denne anvendelse
 * **Obligatorisk** (Mandatory): informationen SKAL angives
 * **Anbefalet** (Recommended): informationen BØR angives hvis den er tilgængelig
 * **Valgfri** (Optional): informationen KAN angives  
-
-Læs mere om disse kravniveauer i kapitel 2 af [DCAT-AP 3.0.1](https://semiceu.github.io/DCAT-AP/releases/3.0.1/).
 
 ## Forskellige visninger af DCAT-AP-DK 
 På baggrund af de tre ovenstående kravniveauer er der udarbejdet tre tilsvarende diagrammer over DCAT-AP-DK 3.0.0. 
@@ -385,7 +383,7 @@ Den fulde anvendelsesprofil DCAT-AP-DK v.3.0.0 visualiseret med UML-diagram  (al
 
 
 ## Afvigelser ift. DCAT-AP
-Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK, som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses, afviger den danske profil primært i forhold til tilføjelsen af nye elementer til beskrivelse af datasæt.
+Herunder beskrives afvigelser mellem DCAT-AP og DCAT-AP-DK, som kommer til udtryk gennem ændringer af kravniveau samt tilføjelser af nye elementer. Som det ses, afviger den danske profil i forhold til tilføjelsen af elementer til beskrivelse af datasæt.
 
 ### Ændringer af kravniveau
 Kravniveauet for elementer DCAT-AP-DK 3.0.0 er ikke justeret ift. DCAT-AP 3.0.1, da kravniveau specialiseringen er frafaldet fra DCAT-AP-DK v.2.0.2 til DCAT-AP-DK v.3.0.0.
@@ -400,8 +398,9 @@ Følgende elementer er blevet tilføjet i DCAT-AP-DK 3.0.0 ift. DCAT-AP 3.0.1:
 * Klassen org:Organization
 * Klassen dqv:QualityAnnotation
 * Kvalitetsannotation: i dimension (dqv:inDimension)
+* Klassen: dqv:Dimension
 
-I indholdsfortegnelsen har disse mærket 'DK'.
+I indholdsfortegnelsen har disse mærket 'DK' uanset om de er helt danske eller genbrugt fra andre internationale specifikationer, da tilføjelsem til denne specifikation er dansk.
 
 ### Udeladelser
 Der er ikke udeladt elementer fra DCAT-AP 3.0.1 i DCAT-AP-DK 3.0.0.
@@ -556,7 +555,7 @@ Klassens egenskaber:
 <dt>Definition (da)</dt>
 <dd>En entitet der er ansvarlig for ressourcens skabelse.</dd>
 <dt>Definition (en)</dt>
-<dd>An entity responsible for making the resource..</dd>
+<dd>An entity responsible for making the resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..1</dd>
 <dt>Kravniveau</dt>
@@ -730,7 +729,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#CatalogRecord</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en registrering af et enkelt datasæt eller en enkelt datatjeneste som er en del af kataloget</dd>
+<dd>Denne egenskab angiver til en katalogpost der er del af kataloget</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a Catalogue Record that is part of the Catalogue</dd>
 <dt>Definition (da)</dt>
@@ -770,7 +769,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#Resource</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver en katalogiseret ressource som er en del af det aktuelle katalog.</dd>
+<dd>Denne egenskab angiver et relateret katalog som er en del af det aktuelle katalog.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a related Catalogue that is part of the described Catalogue.</dd>
 <dt>Definition (da)</dt>
@@ -779,26 +778,6 @@ Klassens egenskaber:
 <dd>A related resource that is included either physically or logically in the described resource.</dd>
 <dt>Multiplicitet</dt>
 <dd>0..*</dd>
-<dt>Kravniveau</dt>
-<dd>Valgfri</dd>
-</dl>
-				
-### Egenskab: er del af katalog (is part of) 
-<dl class="def">
-<dt>URI</dt>
-<dd>http://purl.org/dc/terms/isPartOf</dd>
-<dt>Rækkevidde</dt>
-<dd>http://www.w3.org/ns/dcat#Catalog</dd>
-<dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et relateret katalog som det aktuelle katalog fysisk eller logisk er en del af.</dd>
-<dt>Anvendelsesnote (en)</dt>
-<dd>This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</dd>
-<dt>Definition (da)</dt>
-<dd>En relateret ressource som den beskrevne ressource fysisk eller logisk er inkluderet i.</dd>
-<dt>Definition (en)</dt>
-<dd>A related resource in which the described resource is physically or logically included.</dd>
-<dt>Multiplicitet</dt>
-<dd>0..1</dd>
 <dt>Kravniveau</dt>
 <dd>Valgfri</dd>
 </dl>
@@ -850,7 +829,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dcat#CatalogRecord</dd>
 <dt>Anvendelsesnote (da) </dt>
-<dd>Post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en enkelt datatjeneste.</dd>
+<dd>En beskrivelse af en katalogiseret ressources indgang i kataloget.</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>A description of a Dataset’s entry in the Catalogue. </dd>
 <dt>Definition (da)</dt>
@@ -1231,7 +1210,7 @@ Klassens egenskaber:
 <dt>Rækkevidde</dt>
 <dd>http://www.w3.org/ns/dcat#Distribution</dd>
 <dt>Anvendelsesnote (da)</dt>
-<dd>Denne egenskab angiver et uddrag af en distribution af datasættet</dd>
+<dd>Denne egenskab angiver  en distribution der er et uddrag af datasættet</dd>
 <dt>Anvendelsesnote (en)</dt>
 <dd>This property refers to a sample distribution of the dataset.</dd>
 <dt>Definition (da)</dt>
@@ -1551,7 +1530,7 @@ Klassens egenskaber:
 <dt>URI</dt>
 <dd>http://www.w3.org/ns/dqv#hasQualityAnnotation</dd>
 <dt>Rækkevidde</dt>
-<dd>https://www.w3.org/TR/vocab-dqv/#dqv:QualityAnnotation</dd>
+<dd>http://www.w3.org/ns/dqv#QualityAnnotation</dd>
 <dt>Anvendelsesnote (da)</dt>
 <dd>Denne egenskab angiver en kvalitetsannotation. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -3689,7 +3668,7 @@ Klassens egenskaber:
 <img src="img/Kvalitetsannotation%20DK.png" alt="Kvalitetsannotation DK">
 <dl class="def">
 <dt>URI</dt>
-<dd>https://www.w3.org/TR/vocab-dqv/#dqv:QualityAnnotation</dd>
+<dd>http://www.w3.org/ns/dqv#QualityAnnotation</dd>
 <dt>Anvendelsesnote (da) </dt>
 <dd>Repræsenterer en kvalitetsannotation. (dansk tilføjelse)</dd>
 <dt>Anvendelsesnote (en)</dt>
@@ -4198,6 +4177,7 @@ Relevante links:
  <tr><td>adgangsadresse</td><td>URL for en ressource som giver adgang til en distribution af datasættet</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#accessURL</td><td>&nbsp;ja</td><td>access address</td></tr> 
 <tr><td>download-URL</td><td>URL til fil der kan downloades i et bestemt format</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#downloadURL</td><td>&nbsp;ja</td><td>download URL </td></tr> 
  <tr><td>datasæt</td><td>samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til rådighed for adgang eller download af i en eller flere repræsentationer</td><td>&nbsp;</td><td>http://www.w3.org/ns/dcat#Dataset</td><td>&nbsp;ja</td><td>dataset </td></tr>
+ <tr><td>datasætserie</td><td>en samling af datasæt der udgives separat, men deler egenskaber som grupperer dem</td><td>>&nbsp;/td><td>https://www.w3.org/ns/dcat#DatasetSeries</td><td>&nbsp;ja</td><td>dataset series</td></tr>
  <tr><td>begreb</td><td>en idé eller en forestilling; en tankeenhed</td><td>&nbsp;</td><td>http://www.w3.org/2004/02/skos/core# </td><td>&nbsp;nej</td><td>concept </td></tr>
  <tr><td>begrebssystem</td><td>samling af ét eller flere begreber, samt eventuelt også udsagn om de indbyrdes semantiske relationer mellem disse begreber</td><td>&nbsp;</td><td>http://www.w3.org/2004/02/skos/core# </td><td>&nbsp;nej</td><td>concept scheme </td></tr>
  <tr><td>bytestørrelse</td><td>størrelsen af en distribution angivet i bytes</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;nej</td><td>bytesize </td></tr>  
