@@ -1,0 +1,175 @@
+# baseURI: https://data.gov.dk/model/core/dcat-dk
+
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix conf: <https://data.gov.dk/concept/core/confidentiality-type/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcat-dk: <https://data.gov.dk/model/core/dcat-dk/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix mdl-app: <https://data.gov.dk/concept/core/approvalstatus/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pers-cat: <https://data.gov.dk/concept/core/personaldata/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dct:modified
+  a owl:DatatypeProperty ;
+  rdfs:label "modified" ;
+  skos:prefLabel "modified" ;
+.
+dct:publisher
+  a rdf:Property ;
+  rdfs:label "publisher" ;
+  skos:prefLabel "publisher" ;
+.
+vann:preferredNamespacePrefix
+  a owl:DatatypeProperty ;
+  rdfs:label "preferred namespace prefix" ;
+  skos:prefLabel "preferred namespace prefix" ;
+.
+vann:preferredNamespaceUri
+  a owl:DatatypeProperty ;
+  rdfs:label "preferred namespace uri" ;
+  skos:prefLabel "preferred namespace uri" ;
+.
+skos:altLabel
+  a owl:DatatypeProperty ;
+  rdfs:label "alt label" ;
+.
+skos:definition
+  a owl:DatatypeProperty ;
+  rdfs:label "definition" ;
+.
+skos:prefLabel
+  a owl:DatatypeProperty ;
+  rdfs:label "pref label" ;
+.
+adms:status
+  a owl:ObjectProperty ;
+  rdfs:label "status" ;
+  skos:prefLabel "status" ;
+.
+dcat:Dataset
+  a owl:Class ;
+  rdfs:comment "A collection of data, published or curated by a single source, and available for access or download in one or more represenations."@en ;
+  rdfs:comment "En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer."@da ;
+  rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+  rdfs:isDefinedBy dcat: ;
+  rdfs:label "Dataset"@en ;
+  rdfs:label "Datasæt"@da ;
+  rdfs:subClassOf owl:Thing ;
+.
+dcat:Resource
+  a owl:Class ;
+  rdfs:isDefinedBy <http://www.w3.org/TR/vocab-dcat/> ;
+  rdfs:isDefinedBy dcat: ;
+  rdfs:label "Catalogued resource"@en ;
+  rdfs:label "Katalogressource"@da ;
+  rdfs:subClassOf owl:Thing ;
+.
+dcat:theme
+  a owl:DatatypeProperty ;
+  rdfs:label "theme" ;
+  skos:prefLabel "theme" ;
+  dcat:theme "<http://www.form-online.dk/opgavenoegle/06/#06.38.10.10>" ;
+.
+org:Organization
+  a owl:Class ;
+  rdfs:comment "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_"@en ;
+  rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+  rdfs:label "Organisation"@da ;
+  rdfs:label "Organization"@en ;
+  rdfs:subClassOf owl:Thing ;
+.
+mdl-app:approval
+  a owl:ObjectProperty ;
+  rdfs:label "approval" ;
+  skos:prefLabel "approval" ;
+.
+conf:ConfidentialityType
+  a owl:Class ;
+  rdfs:comment "degree of confidentiality with respect to the extent by which information can be disclosed"@en ;
+  rdfs:comment "grad af fortrolighed forstået som i hvilket omfang information kan videregives"@da ;
+  rdfs:isDefinedBy conf: ;
+  rdfs:label "confidentiality degree"@en ;
+  rdfs:label "fortrolighedsgrad"@da ;
+  rdfs:subClassOf owl:Thing ;
+.
+pers-cat:PersonalDataCategory
+  a owl:Class ;
+  rdfs:comment "classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable"@en ;
+  rdfs:comment "kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne"@da ;
+  rdfs:isDefinedBy pers-cat: ;
+  rdfs:label "personal data category"@en ;
+  rdfs:label "personoplysningskategori"@da ;
+  rdfs:subClassOf owl:Thing ;
+.
+<https://data.gov.dk/model/core/dcat-dk>
+  a owl:Ontology ;
+  dct:modified "2025-12-12" ;
+  dct:publisher "<https://digst.dk/>" ;
+  vann:preferredNamespacePrefix "dcat-dk" ;
+  vann:preferredNamespaceUri "https://data.gov.dk/model/core/dcat-dk/" ;
+  rdfs:comment "DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT."@da ;
+  rdfs:comment "DCAT-DK is a vocabulary that expands the possibilities for describing data sets in the Danish common public context and defines characteristics such as data set manager, payment required, personal data category and degree of confidentiality, which are not included in DCAT-AP or DCAT."@en ;
+  rdfs:label "DCAT vocabulary extension"@en ;
+  rdfs:label "DCAT vokabular udvidelse"@da ;
+  owl:versionIRI <https://data.gov.dk/model/core/dcat-dk-2.0.0/> ;
+  owl:versionInfo "version 2.0.0" ;
+  adms:status <http://purl.org/adms/status/Completed> ;
+  mdl-app:approval mdl-app:Approved ;
+.
+dcat-dk:datasetResponsibleOrganisation
+  a owl:ObjectProperty ;
+  rdfs:comment "organisation der har det juridiske ansvar for datasættet"@da ;
+  rdfs:comment "organization that is legally accountable for the dataset"@en ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:label "dataset responsible organisation"@en ;
+  rdfs:label "datasætansvarlig organisation"@da ;
+  rdfs:range org:Organization ;
+  skos:definition "organisation der har det juridiske ansvar for datasættet"@da ;
+  skos:definition "organization that is legally accountable for the dataset"@en ;
+  skos:prefLabel "dataset responsible organisation"@en ;
+  skos:prefLabel "datasætansvarlig organisation"@da ;
+  owl:deprecated "true"^^xsd:boolean ;
+.
+dcat-dk:hasConfidentialityType
+  a owl:ObjectProperty ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:isDefinedBy dcat-dk: ;
+  rdfs:label "has confidentiality type" ;
+  rdfs:range conf:ConfidentialityType ;
+  skos:definition "angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives"@da ;
+  skos:definition "specification of the extent by which information can be disclosed"@en ;
+  skos:prefLabel "har fortrolighedsgrad"@da ;
+  skos:prefLabel "has confidentiality type"@en ;
+.
+dcat-dk:paymentImposedContents
+  a owl:DatatypeProperty ;
+  rdfs:domain dcat:Resource ;
+  rdfs:isDefinedBy dcat-dk: ;
+  rdfs:label "betalingspålagt"@da ;
+  rdfs:label "payment imposed contents"@en ;
+  rdfs:range xsd:boolean ;
+  skos:definition "angivelse af hvorvidt datasættet er betalingspålagt eller ej."@da ;
+  skos:definition "specification of whether payment is imposed on the catalogued resource or not."@en ;
+  skos:prefLabel "betalingspålagt"@da ;
+  skos:prefLabel "payment imposed contents"@en ;
+  owl:deprecated "true"^^xsd:boolean ;
+.
+dcat-dk:personalDataCategory
+  a owl:ObjectProperty ;
+  rdfs:comment "Udfaldsrummet for denne egenskab skal være en klassifikation (SKOS)"@da ;
+  rdfs:comment "Values for this property must be provided by a controlled vocabulary (A SKOS classification)"@en ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:isDefinedBy dcat-dk: ;
+  rdfs:label "personal data category" ;
+  rdfs:range pers-cat:PersonalDataCategory ;
+  skos:definition "angivelse af tilhørsforhold til en bestemt personoplysningskategori"@da ;
+  skos:definition "specification of a relation to specific personal data category"@en ;
+  skos:prefLabel "personal data category"@en ;
+  skos:prefLabel "personoplysningskategori"@da ;
+.
