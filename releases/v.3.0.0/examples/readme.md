@@ -14,8 +14,5 @@ Derudover kan det også være relevant at inspicere nogle af de endpoints, som D
 
 * Rigsarkivets digitalt skabte data: https://digidata.rigsarkivet.dk/api/dcat/v1 (RDF/XML)
 
-* Styrelsen for Arbejdsmarked og Rekrutterings Jobindsats: https://api.jobindsats.dk/v2/digst (JSON-LD)
-
-
 ## Eksempler på anvendelse af DCAT - generelt
 * DCAT-eksempler fra W3C: https://github.com/w3c/dxwg/tree/gh-pages/dcat/examples
