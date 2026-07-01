@@ -2395,7 +2395,7 @@ Specifikationen skal være med til sørge for, at begreber til beskrivelse af da
 
    <h3 class="heading settled" data-level="1.2" id="baggrund"><span class="secno">1.2. </span><span class="content">Baggrund</span><a class="self-link" href="#baggrund"></a></h3>
    
-De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er <em>obligatoriske</em> at udfylde, samt <em>anbefalede</em> og <em>valgfrie</em> egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.0 vil anvende elementer fra og vil være i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK vil dog også tilføje enkelte elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
+De grundlæggende strukturer og elementer hentes fra Europa-Kommissionens specifikation 'The DCAT Application Profile for Data Portals in Europe' (DCAT-AP) 3.0.1, der har til formål at standardisere og etablere sammenhæng mellem dataportaler i medlemslandene. DCAT-AP 3.0.1 tager afsæt i W3C-specifikationen 'Data Catalog Vocabulary' (DCAT) 3.0. Europa-Kommissionens specifikation angiver felter, der er <em>obligatoriske</em> at udfylde, samt <em>anbefalede</em> og <em>valgfrie</em> egenskaber. Specifikationen giver dermed mulighed for en meget omfangsrig metadatabeskrivelse. DCAT-AP-DK 3.0.0 anvender elementer fra og er i overensstemmelse med DCAT-AP 3.0.1. DCAT-AP-DK tilføjer dog også enkelte elementer for at imødekomme behov i en dansk administrativ og fællesoffentlig kontekst. 
 
 
    <p>Specifikationen er oprindeligt udarbejdet med feedback fra og sparring med en følgegruppe med medlemmer, som repræsenterer både kommuner, regioner og statslige myndigheder. Opdateringen til version 3.0.0 har været forankret i Digitaliseringsstyrelsen med orientering af de fællesoffentlige parter. Udover de opdateringer, der følger af at DCAT og DCAT-AP er opdateret, har arbejdet med opdateringen givet anledning til at vurdere de danske tilføjelser. Her er der især taget udgangspunkt i det praktiske arbejde med at implementere en national dataportal, <a href="https://datavejviser.dk/">Datavejviser</a>, herunder dialog med både dataudstillere og anvendere af kataloget, samt det relaterede arbejde med at videregive data til den <a href="https://data.europa.eu/da">europæiske dataportal</a>. På baggrund af dette er flertallet af danske tilføjelser blevet fjernet igen, da de ikke ses anvendt i praksis, samtidig med at der er mulighed for at udtrykke samme reelle informationsindhold ved hjælp af egenskaber der er inkluderet i DCAT-AP 3.0.1. Det er derfor vurderet ønskeligt at udfase dem inden der evt. opbygges en ikke-interoperabel anvendelsesskik. Desuden vurderes de særlige danske kravniveauer ikke at give værdi i praksis, og de bortfalder derfor i denne version.</p>
@@ -2458,7 +2458,7 @@ Profilens informationer kan grupperes som:</p>
    <h4 class="heading settled" data-level="1.4.1" id="anvendelsesscenarie-1-organisationers-interne-datastkatalog"><span class="secno">1.4.1. </span><span class="content">Anvendelsesscenarie 1: Organisationers interne datasætkatalog</span><a class="self-link" href="#anvendelsesscenarie-1-organisationers-interne-datastkatalog"></a></h4>
    
 I takt med at en organisations portefølje af datasæt stiger, øges behovet for en formel og kontrolleret håndtering af alle anvendelsesaspekter for de pågældende datasæt.
-Med en samlet og koordineret registrering af organisationens datasæt kan organisationen eksempelvis få styr på, hvilke data der er i organisationen, hvad de anvendes til, hvilke services der benyttes, hvilke datasæt der er forbundne og til kontrakter og kontakter.
+Med en samlet og koordineret registrering af organisationens datasæt kan organisationen eksempelvis få styr på, hvilke data der er i organisationen, hvad de anvendes til, og hvilke forbindelser der er mellem dem.
 Et organisatorisk datasætkatalog hjælper på tværs af organisationens systemansvarlige, beslutningstagere og brugere, både ved opståede problemer, nye behov, videreudvikling og vedligehold.
 Søgninger efter organisationens datasæt, dataansvarlige eller dokumentation bliver både tidskrævende og usikker, hvis der ikke eksisterer et vedligeholdt overblik.
 
@@ -2495,12 +2495,12 @@ Domænespecifikke datasætkataloger kan forventes at have registreringsbehov, de
 
    <h5 class="heading settled" data-level="1.4.3.2" id="anvendelsesscenarie-32-nationalt-datastkatalog"><span class="secno">1.4.3.2. </span><span class="content">Anvendelsesscenarie 3.2: Nationalt datasætkatalog</span><a class="self-link" href="#anvendelsesscenarie-32-nationalt-datastkatalog"></a></h5>
    
-Et nationalt katalog kræver særlige løsninger for at kunne rumme den bredde af datasæt, der må forventes at blive indeholdt. 
+Alle EU-medlemsstater har mindst ét nationalt datakatalog, der viser anvendere vej til offentlige (og i nogle tilfælde private) data fra det pågældende land. Disse datakataloger bygger på DCAT-AP. I Danmark er det nationale katalog <a href="https://datavejviser.dk/">Datavejviser</a>. 
 Blandt andet kræves det, at der anvendes en tværgående taksonomi. 
 
    <h5 class="heading settled" data-level="1.4.3.3" id="anvendelsesscenarie-33-internationalt-datastkatalog"><span class="secno">1.4.3.3. </span><span class="content">Anvendelsesscenarie 3.3: Internationalt datasætkatalog</span><a class="self-link" href="#anvendelsesscenarie-33-internationalt-datastkatalog"></a></h5>
    
-Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har derfor som udgangspunkt til hensigt at gøre data mere søgbare på tværs af grænser og sektorer. Det er også hensigten, at danske metadata skal kunne gøres tilgængelige i den europæisk dataportal. For at øge søgbarheden af danske data bør tekstuelle beskrivelser oversættes til engelsk i videst muligt omfang.
+Anvendelsesprofilen DCAT-AP-DK er baseret på en international profil og har derfor som udgangspunkt til hensigt at gøre data mere søgbare på tværs af grænser og sektorer. Danske metadata fra Datavejviser er også tilgængelige gennem <a href="https://data.europa.eu/en">den europæiske dataportal</a>, hvor metadata maskinoversættes til de øvrige EU-sprog, så internationale anvendere har nemmere ved at finde frem til relevante data.
 
 
    <h4 class="heading settled" data-level="1.4.4" id="yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"><span class="secno">1.4.4. </span><span class="content">Yderligere information vedrørende anvendelse af DCAT-AP-DK</span><a class="self-link" href="#yderligere-information-vedrrende-anvendelse-af-dcat-ap-dk"></a></h4>
@@ -2574,7 +2574,7 @@ En katalogiseret ressource (dcat:Resource) er en ressource udgivet eller udvalgt
 
    <h3 class="heading settled" data-level="2.3" id="datast"><span class="secno">2.3. </span><span class="content">Datasæt</span><a class="self-link" href="#datast"></a></h3>
    
-Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde, som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution). Dvs. uafhængige af den måde data er formaliseret på.
+Et datasæt (dcat:Dataset) er en samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde, som er til rådighed for adgang eller download i en eller flere repræsentationer (via instanser af klassen dcat:Distribution).
 <br><a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-datast-dataset">Gå til klassen Datasæt</a>
 
 
@@ -2586,13 +2586,13 @@ En datatjeneste (dcat:DataService) er et websted eller endpoint, der udstiller o
 
    <h3 class="heading settled" data-level="2.5" id="datastserie"><span class="secno">2.5. </span><span class="content">Datasætserie</span><a class="self-link" href="#datastserie"></a></h3>
    
-En datasætserie (dcat:DatasetSeries) er en samling af datasæt der udgives separat, men deler en eller flere egenskaber som grupperer dem. Ofte anvendes datasætserier til tidslige serier af datasæt eller geografiske serier som har samme type eller tema, men dækker over forskellige geografiske områder. Et datasæt kan være bundet til flere forskellige datasætserier. Denne klasse er valgfri.
+En datasætserie (dcat:DatasetSeries) er en samling af datasæt der udgives separat, men deler en eller flere egenskaber som grupperer dem. Ofte anvendes datasætserier til tidslige serier af datasæt eller geografiske serier som har samme type eller tema, men dækker over forskellige geografiske områder. Et datasæt kan være bundet til flere forskellige datasætserier.
 <br><a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-datasetserien-dataset-series">Gå til klassen Datasætserie</a>
 
 
    <h3 class="heading settled" data-level="2.6" id="distribution"><span class="secno">2.6. </span><span class="content">Distribution</span><a class="self-link" href="#distribution"></a></h3>
    
-En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt. Denne klasse er anbefalet.
+En distribution (dcat:Distribution) er en specifik repræsentation af et datasæt. En distribution af et datasæt tilhører altid et og kun et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis. Alle distributioner af et givet datasæt indeholder de samme data. Forskelle mellem distributioner skal alene være betinget i distributionens anvendelse af sprog, medietype eller format, systemorganisering, tidslig og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående). En distribution indeholder information om adgangsadresse, format, bytestørrelse, download-URL, adgangstjeneste m.fl. Instanser af dcat:Distribution indeholder med andre ord de informationer om datasættet, der kan variere mellem forskellige repræsentationer af samme datasæt.
 <br><a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-distribution-distribution">Gå til klassen Distribution</a>
 
 
@@ -2602,7 +2602,7 @@ Hvor en distributions egenskabsinformation svarer til den information, der er gi
 Hvis der for egenskaben er relevante tilføjelser, eller der er afvigelser i forhold til information givet for datasættet, bør de fremgå af distributionens egenskab.</p>
    <h3 class="heading settled" data-level="2.7" id="katalogpost"><span class="secno">2.7. </span><span class="content">Katalogpost</span><a class="self-link" href="#katalogpost"></a></h3>
    
-En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger, såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Denne klasse er valgfri. Den kan anvendes i kataloger, hvor der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
+En katalogpost (dcat:CatalogRecord) er en post i et katalog, der beskriver registreringen af en enkelt ressource. Dette element kan rumme oplysninger, såsom hvem der har registreret ressourcen i kataloget og hvornår ressourcen blev registreret. Klassen kan anvendes i kataloger, hvor der skelnes mellem metadata om datasættet eller datatjenesten og metadata om selve registreringen af datasættet eller datatjenesten i kataloget.
 <br><a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#klasse-katalogpost-catalog-record">Gå til klassen Katalogpost</a>
 
 
@@ -2700,7 +2700,6 @@ Der er ikke udeladt elementer fra DCAT-AP 3.0.1 i DCAT-AP-DK 3.0.0.
    <p>DCAT anvendes desuden i en  række internationale specifikationer såsom Europa-Kommissionens Single Digital Gateway - <a href="https://github.com/catalogue-of-services-isa/SDG-model">SDG-metamodel</a>, Core Public Service Vocabulary Application Profile (<a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary-application-profile">CPSV-AP</a>) og
 Asset Description Metadata Schema (<a href="https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms">ADMS</a>)</p>
    <p>Der er også udviklet flere nationale profiler af DCAT-AP af andre EU-medlemslande samt domænespecifikke profiler, fx <a href="https://joinup.ec.europa.eu/solution/geodcat-application-profile-data-portals-europe">GeoDCAT-AP</a> til geodata, <a href="https://joinup.ec.europa.eu/solution/abr-specification-registry-registries">BRegDCAP-AP</a> til grunddata og <a href="https://joinup.ec.europa.eu/solution/statdcat-application-profile-data-portals-europe">StatDCAT-AP</a> til statistiske datasæt.</p>
-   <p>Find en rapport over DCAT-AP-profiler (fra 2018) samt øvrige relevante links i afsnittet <a href="https://digst.github.io/DCAT-AP-DK/releases/v.3.0.0/docs/#referencer">Referencer</a>.</p>
    <h2 class="heading settled" data-level="4" id="elementer-i-dcat-ap-dk"><span class="secno">4. </span><span class="content">Elementer i DCAT-AP-DK</span><a class="self-link" href="#elementer-i-dcat-ap-dk"></a></h2>
    
 I det følgende præsenteres alle egenskaberne i DCAT-AP-DK per klasse.
@@ -3394,9 +3393,9 @@ Klassens egenskaber:
     <dt>Rækkevidde
     <dd>http://xmlns.com/foaf/0.1/Agent
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig. Ethvert datasæt i et givet katalog skal være tilknyttet mindst én aktør, enten en udgiver eller en datasætanvarlig organisation.
+    <dd>Denne egenskab angiver den aktør (organisation) som primært er ansvarlig for at gøre datasættet tilgængelig.
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to the entity (organisation) responsible for making the Dataset available. Any dataset in a catalog must be linked to at least one agent, either a publisher or the dataset responsible organisation.
+    <dd>This property refers to the entity (organisation) responsible for making the Dataset available.
     <dt>Definition (da)
     <dd>En entitet som er ansvarlig for at gøre ressourcen tilgængelig.
     <dt>Definition (en)
@@ -5917,7 +5916,7 @@ Klassens egenskaber:
     <dt>URI
     <dd>https://www.w3.org/ns/dqv#Dimension
     <dt>Definition (da)
-    <dd>Repræsenterer kriterier der er relevante for at vurdere kvalitet.
+    <dd>Repræsenterer kriterier der er relevante for at vurdere kvalitet. (Dansk tilføjelse).
     <dt>Definition (en)
     <dd>Represents criteria relevant for assessing quality.
     <dt>Kravniveau
@@ -5931,7 +5930,7 @@ Klassens egenskaber:
     <dt>URI
     <dd>https://data.gov.dk/concept/core/personaldata-type/PersonalDataCategory
     <dt>Anvendelsesnote (da) 
-    <dd>Data kan opmærkes med en Personoplysningskategori som beskrives i Datatilsynets vejledning: almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger.
+    <dd>Data kan opmærkes med en Personoplysningskategori som beskrives i Datatilsynets vejledning: almindelige personoplysninger, følsomme personoplysninger eller oplysninger om strafbare forhold. Dertil tilføjes en angivelse af fraværet af personoplysninger. (Dansk tilføjelse).
     <dt>Anvendelsesnote (en)
     <dd>Data can be marked with a category of personal data as it is described in the Danish Data Protection Agency’s guideline: general personal data, sensitive personal data or data about criminal offences. To that is added information regarding the absence of personal data.
     <dt>Definition (da)
@@ -5949,7 +5948,7 @@ Klassens egenskaber:
     <dt>URI
     <dd>https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType
     <dt>Anvendelsesnote (da) 
-    <dd>Anvendes som overklasse for klassen ConfidentialityTypeNatoEu der indeholder klassifikationer anvendt i henholdsvis NATO og EU. 
+    <dd>Anvendes som overklasse for klassen ConfidentialityTypeNatoEu der indeholder klassifikationer anvendt i henholdsvis NATO og EU. (Dansk tilføjelse).
     <dt>Anvendelsesnote (en)
     <dd>Used as a super class for the class ConfidentialityTypeNatoEu that contains classification used in NATO and EU, respectively.
     <dt>Definition (da)
