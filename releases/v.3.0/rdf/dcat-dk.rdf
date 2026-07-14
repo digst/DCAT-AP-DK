@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns0="http://purl.org/vocab/vann/"
+         xmlns:ns1="http://www.w3.org/ns/adms#"
+         xmlns:ns2="https://data.gov.dk/concept/core/approvalstatus/">
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/modified">
+    <rdfs:label>modified</rdfs:label>
+    <skos:prefLabel>modified</skos:prefLabel>
+  </owl:DatatypeProperty>
+
+  <rdf:Property rdf:about="http://purl.org/dc/terms/publisher">
+    <rdfs:label>publisher</rdfs:label>
+    <skos:prefLabel>publisher</skos:prefLabel>
+  </rdf:Property>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdfs:label>preferred namespace prefix</rdfs:label>
+    <skos:prefLabel>preferred namespace prefix</skos:prefLabel>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdfs:label>preferred namespace uri</rdfs:label>
+    <skos:prefLabel>preferred namespace uri</skos:prefLabel>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+    <rdfs:label>alt label</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+    <rdfs:label>definition</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+    <rdfs:label>pref label</rdfs:label>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#status">
+    <rdfs:label>status</rdfs:label>
+    <skos:prefLabel>status</skos:prefLabel>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
+    <rdfs:comment xml:lang="en">A collection of data, published or curated by a single source, and available for access or download in one or more represenations.</rdfs:comment>
+    <rdfs:comment xml:lang="da">En samling a data, udgivet eller organiseret af en enkelt kilde og som der er adgang til i en eller flere repræsentationer.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat#"/>
+    <rdfs:label xml:lang="en">Dataset</rdfs:label>
+    <rdfs:label xml:lang="da">Datasæt</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://www.w3.org/ns/dcat#Resource">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/vocab-dcat/"/>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/dcat#"/>
+    <rdfs:label xml:lang="en">Catalogued resource</rdfs:label>
+    <rdfs:label xml:lang="da">Katalogressource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#theme">
+    <rdfs:label>theme</rdfs:label>
+    <skos:prefLabel>theme</skos:prefLabel>
+    <dcat:theme>&lt;http://www.form-online.dk/opgavenoegle/06/#06.38.10.10&gt;</dcat:theme>
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+    <rdfs:comment xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+    <rdfs:label xml:lang="da">Organisation</rdfs:label>
+    <rdfs:label xml:lang="en">Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/concept/core/approvalstatus/approval">
+    <rdfs:label>approval</rdfs:label>
+    <skos:prefLabel>approval</skos:prefLabel>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType">
+    <rdfs:comment xml:lang="en">degree of confidentiality with respect to the extent by which information can be disclosed</rdfs:comment>
+    <rdfs:comment xml:lang="da">grad af fortrolighed forstået som i hvilket omfang information kan videregives</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/concept/core/confidentiality-type/"/>
+    <rdfs:label xml:lang="en">confidentiality degree</rdfs:label>
+    <rdfs:label xml:lang="da">fortrolighedsgrad</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="https://data.gov.dk/concept/core/personaldata/PersonalDataCategory">
+    <rdfs:comment xml:lang="en">classification according to the sensitivity of information as defifferent conditions and procedures for processing are applicable</rdfs:comment>
+    <rdfs:comment xml:lang="da">kategori af personoplysninger set i forhold til følsomhed idet der gælder forskellige betingelser og procedurer for behandling af oplysningerne</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/concept/core/personaldata/"/>
+    <rdfs:label xml:lang="en">personal data category</rdfs:label>
+    <rdfs:label xml:lang="da">personoplysningskategori</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+
+  <owl:Ontology rdf:about="https://data.gov.dk/model/core/dcat-dk">
+    <dc:modified>2025-12-12</dc:modified>
+    <dc:publisher>&lt;https://digst.dk/&gt;</dc:publisher>
+    <ns0:preferredNamespacePrefix>dcat-dk</ns0:preferredNamespacePrefix>
+    <ns0:preferredNamespaceUri>https://data.gov.dk/model/core/dcat-dk/</ns0:preferredNamespaceUri>
+    <rdfs:comment xml:lang="da">DCAT-DK er et vokabular, der udvider mulighederne for beskrivelse af datasæt i dansk fællesoffentlig kontekst og definerer egenskaber såsom datasætansvarlig, betalingspålagt, personoplysningskategori og fortrolighedsgrad, som ikke indgår i DCAT-AP eller DCAT.</rdfs:comment>
+    <rdfs:comment xml:lang="en">DCAT-DK is a vocabulary that expands the possibilities for describing data sets in the Danish common public context and defines characteristics such as data set manager, payment required, personal data category and degree of confidentiality, which are not included in DCAT-AP or DCAT.</rdfs:comment>
+    <rdfs:label xml:lang="en">DCAT vocabulary extension</rdfs:label>
+    <rdfs:label xml:lang="da">DCAT vokabular udvidelse</rdfs:label>
+    <owl:versionIRI rdf:resource="https://data.gov.dk/model/core/dcat-dk-2.0.0/"/>
+    <owl:versionInfo>version 2.0.0</owl:versionInfo>
+    <ns1:status rdf:resource="http://purl.org/adms/status/Completed"/>
+    <ns2:approval rdf:resource="https://data.gov.dk/concept/core/approvalstatus/Approved"/>
+  </owl:Ontology>
+
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/datasetResponsibleOrganisation">
+    <rdfs:comment xml:lang="da">organisation der har det juridiske ansvar for datasættet</rdfs:comment>
+    <rdfs:comment xml:lang="en">organization that is legally accountable for the dataset</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:label xml:lang="en">dataset responsible organisation</rdfs:label>
+    <rdfs:label xml:lang="da">datasætansvarlig organisation</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+    <skos:definition xml:lang="da">organisation der har det juridiske ansvar for datasættet</skos:definition>
+    <skos:definition xml:lang="en">organization that is legally accountable for the dataset</skos:definition>
+    <skos:prefLabel xml:lang="en">dataset responsible organisation</skos:prefLabel>
+    <skos:prefLabel xml:lang="da">datasætansvarlig organisation</skos:prefLabel>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/hasConfidentialityType">
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk/"/>
+    <rdfs:label>has confidentiality type</rdfs:label>
+    <rdfs:range rdf:resource="https://data.gov.dk/concept/core/confidentiality-type/ConfidentialityType"/>
+    <skos:definition xml:lang="da">angivelse af i hvilket omfang information indeholdt i et datasæt kan videregives</skos:definition>
+    <skos:definition xml:lang="en">specification of the extent by which information can be disclosed</skos:definition>
+    <skos:prefLabel xml:lang="da">har fortrolighedsgrad</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">has confidentiality type</skos:prefLabel>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/paymentImposedContents">
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk/"/>
+    <rdfs:label xml:lang="da">betalingspålagt</rdfs:label>
+    <rdfs:label xml:lang="en">payment imposed contents</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <skos:definition xml:lang="da">angivelse af hvorvidt datasættet er betalingspålagt eller ej.</skos:definition>
+    <skos:definition xml:lang="en">specification of whether payment is imposed on the catalogued resource or not.</skos:definition>
+    <skos:prefLabel xml:lang="da">betalingspålagt</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">payment imposed contents</skos:prefLabel>
+    <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:about="https://data.gov.dk/model/core/dcat-dk/personalDataCategory">
+    <rdfs:comment xml:lang="da">Udfaldsrummet for denne egenskab skal være en klassifikation (SKOS)</rdfs:comment>
+    <rdfs:comment xml:lang="en">Values for this property must be provided by a controlled vocabulary (A SKOS classification)</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdfs:isDefinedBy rdf:resource="https://data.gov.dk/model/core/dcat-dk/"/>
+    <rdfs:label>personal data category</rdfs:label>
+    <rdfs:range rdf:resource="https://data.gov.dk/concept/core/personaldata/PersonalDataCategory"/>
+    <skos:definition xml:lang="da">angivelse af tilhørsforhold til en bestemt personoplysningskategori</skos:definition>
+    <skos:definition xml:lang="en">specification of a relation to specific personal data category</skos:definition>
+    <skos:prefLabel xml:lang="en">personal data category</skos:prefLabel>
+    <skos:prefLabel xml:lang="da">personoplysningskategori</skos:prefLabel>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
