@@ -2038,11 +2038,11 @@ dfn > a.self-link::before      { content: "#"; }
    <p data-fill-with="logo"></p>
    <h1>DCAT-AP-DK 3.0.0: Dansk anvendelsesprofil til beskrivelse af datasæt og datakataloger </h1>
    <h2 class="heading no-num no-ref no-toc settled" id="profile-and-date"><span class="content">Living Document,
-    <time class="dt-updated" datetime="2026-01-26">26 January 2026</time></span></h2>
+    <time class="dt-updated" datetime="2026-01-26">14 July 2026</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>This version:
-     <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/</a>
+     <dd><a class="u-url" href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0/">https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0/</a>
      <dt>Issue Tracking:
      <dd><a href="https://github.com/digst/DCAT-AP-DK/issues/">GitHub</a>
      <dt class="editor">Følgegruppemedlemmer ved oprettelsen af den danske profil:
@@ -2381,7 +2381,8 @@ dfn > a.self-link::before      { content: "#"; }
    </ol>
   </nav>
   <main>
-   <p>Opdateringen til DCAT-AP-DK 3.0.0 er godkendt af Udvalget for Arkitektur og Standarder (04. feb. 2026) og optaget i den Fællesoffentlige Digitale Arkitektur (<a href="https://arkitektur.digst.dk/">FDA</a>)</p>
+   <p>Opdateringen til DCAT-AP-DK 3.0.0 er godkendt af Udvalget for Arkitektur og Standarder (04. feb. 2026) og optaget i den Fællesoffentlige Digitale Arkitektur (<a href="https://arkitektur.digst.dk/">FDA</a>)<br>
+   3.0.1 er publiceret d. 14 juli 2026 med mindre fejlrettelser.</p>
    <p>Denne anvendelsesprofil er også tilgængelig i disse ikke-normative formater: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/uml-xmi">XMI</a><br>
 	   DCAT-DK-vokabularet for de danske tilføjelser er desuden tilgængeligt i: <a href="https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0.0/rdf">RDF</a></p>
    <p>Namespace: https://data.gov.dk/model/profile/dcat-ap-dk/</p>
@@ -3141,9 +3142,9 @@ Klassens egenskaber:
     <dt>Rækkevidde
     <dd>http://www.w3.org/2001/XMLSchema#date;   http://www.w3.org/2001/XMLSchema#dateTime
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver den dato hvor beskrivelsen af datasættet eller datatjenesten blev registreret i kataloget.
+    <dd>Denne egenskab angiver den dato hvor beskrivelsen af ressourcen blev registreret i kataloget.
     <dt>Anvendelsesnote (en)
-    <dd>This property contains the date on which the description of the Dataset was included in the Catalogue.
+    <dd>This property contains the date on which the description of the Resource was included in the Catalogue.
     <dt>Definition (da)
     <dd>Dato for hvornår ressourcen formelt blev udgivet.
     <dt>Definition (en)
@@ -3236,9 +3237,9 @@ Klassens egenskaber:
     <dt>Rækkevidde
     <dd>http://purl.org/dc/terms/Standard
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver en specifikation (anvendelsesprofil) som datasættets metadata er i overensstemmmelse med.
+    <dd>Denne egenskab angiver en specifikation (anvendelsesprofil) som den katalogiserede ressources metadata er i overensstemmmelse med.
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to an Application Profile that the Dataset’s metadata conforms to.
+    <dd>This property refers to an Application Profile that the Catalogued Resource’s metadata conforms to.
     <dt>Definition (da)
     <dd>En etableret standard som den beskrevne ressource er i overensstemelse med.
     <dt>Definition (en)
@@ -3255,9 +3256,9 @@ Klassens egenskaber:
     <dt>Rækkevidde
     <dd>http://purl.org/dc/terms/LinguisticSystem
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om datasæt og datatjenester i kataloget. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
+    <dd>Denne egenskab angiver et sprog som er anvendt til tekstbaserede metadata om den katalogiserede ressource. Egenskaben kan gentages for hver sprogvariant metadata forefindes på. Til angivelse af sprog skal følgende klassifikation anvendes: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language 
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Dataset. This property can be repeated if the metadata is provided in multiple languages. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language
+    <dd>This property refers to a language used in the textual metadata describing titles, descriptions, etc. of the Catalogued Resource. This property can be repeated if the metadata is provided in multiple languages. When specifying a language, use the following classification: EU Vocabularies Languages Named Authority List, http://publications.europa.eu/resource/authority/language
     <dt>Definition (da)
     <dd>Ressourcens sprog.
     <dt>Definition (en)
@@ -3274,9 +3275,9 @@ Klassens egenskaber:
     <dt>Rækkevidde
     <dd>http://www.w3.org/ns/dcat#CatalogRecord
     <dt>Anvendelsesnote (da)
-    <dd>Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om det aktuelle datasæt eller den aktuelle datatjeneste.
+    <dd>Denne egenskab angiver de oprindelige metadata som blev anvendt til oprettelse af metadata om datasættet, datatjenesten eller datasætserien.
     <dt>Anvendelsesnote (en)
-    <dd>This property refers to the original metadata that was used in creating metadata for the Dataset.
+    <dd>This property refers to the original metadata that was used in creating metadata for the Dataset, Data Service or Dataset Series.
     <dt>Definition (da)
     <dd>En relateret ressource som den beskrevne ressource er afledt af.
     <dt>Definition (en)
@@ -3460,7 +3461,7 @@ Klassens egenskaber:
     <dt>Multiplicitet
     <dd>0..*
     <dt>Kravniveau
-    <dd>Valgfri
+    <dd>Anbefalet
    </dl>
    <h4 class="heading settled" data-level="4.3.9" id="egenskab-uddrag-sample"><span class="secno">4.3.9. </span><span class="content">Egenskab: uddrag (sample)</span><a class="self-link" href="#egenskab-uddrag-sample"></a></h4>
    <dl class="def">
@@ -5872,7 +5873,20 @@ Klassens egenskaber:
     <dd>Valgfri
    </dl>
    <h3 class="heading settled" data-level="4.31" id="klasse-forvaltningsopgave-dk-publicadministrativetasktype"><span class="secno">4.31. </span><span class="content">Klasse: Forvaltningsopgave DK (PublicAdministrativeTaskType)</span><a class="self-link" href="#klasse-forvaltningsopgave-dk-publicadministrativetasktype"></a></h3>
-   
+
+<img alt="Forvaltningsopgave DK" src="img/Forvaltningsopgave.svg">
+	  
+<dl class="def">
+<dt>URI</dt>
+<dd>https:/data.gov.dk/concept/core/tasktype/PublicAdministrativeTaskType </dd>
+<dt>Definition (da)</dt>
+<dd>Type af offentlige opgaver i forhold til styring og forvaltning i dansk administrativ og fællesoffentlig kontekst</dd>
+<dt>Definition (en)</dt>
+<dd>Type of public-sector task in relation to governance and administration in the Danish public sector</dd>
+<dt>Kravniveau</dt>
+<dd>Anbefalet </dd>
+</dl> 
+ <h3 class="heading settled" data-level="4.32" id="klasse-kvalitetsannotation-dk-quality-annotation"><span class="secno">4.32. </span><span class="content">Klasse: Kvalitetsannotation DK (Quality Annotation)</span><a class="self-link" href="#klasse-kvalitetsannotation-dk-quality-annotation"></a></h3>
   
 <img alt="Kvalitetsannotation DK" src="img/Kvalitetsannotation.svg">
 
@@ -6305,11 +6319,9 @@ Se https://www.retsinformation.dk/eli/retsinfo/2014/10338</p>
     <li data-md>
      <p>EU: DCAT-AP validator: <a href="https://www.itb.ec.europa.eu/shacl/dcat-ap/upload">https://www.itb.ec.europa.eu/shacl/dcat-ap/upload</a></p>
     <li data-md>
-     <p>EU: DCAT-AP-OP (1.1): <a href="http://data.europa.eu/euodp/en/developerscorner">http://data.europa.eu/euodp/en/developerscorner</a></p>
+     <p>Overblik på spansk over nationale DCAT-APer: <a href="https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf">https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf</a></p>
     <li data-md>
-     <p>Overblik over nationale DCAT-APer: <a href="https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf">https://datos.gob.es/sites/default/files/doc/file/report_dcat-ap_and_its_extensions.pdf</a></p>
-    <li data-md>
-     <p>EU: EDP Goldbook: <a href="https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf">https://www.europeandataportal.eu/sites/default/files/european_data_portal_-_open_data_goldbook.pdf</a></p>
+     <p>EU: Open Data Goldbook for Data Managers and Data Holders: <a href="https://data.europa.eu/sites/default/files/goldbook.pdf">https://data.europa.eu/sites/default/files/goldbook.pdf</a></p>
     <li data-md>
      <p>FAIR-principperne: <a href="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</a></p>
     <li data-md>
@@ -6427,9 +6439,6 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
                 Definition
             
       <th>
-                Juridisk kilde
-            
-      <th>
                 Kilde
             
       <th>
@@ -6442,21 +6451,18 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
      <tr>
       <td>katalog
       <td>udvalgt og arrangeret samling af metadata om ressourcer
-      <td>
       <td>http://www.w3.org/ns/dcat#Catalog
       <td> ja
       <td>catalog 
      <tr>
       <td>katalogpost
       <td>post i et katalog der beskriver registreringen af en enkelt katalogiseret ressource
-      <td>
       <td>http://www.w3.org/ns/dcat#CatalogPost
       <td> ja
       <td>catalog record 
      <tr>
       <td>katalogiseret ressource
       <td>ressource udgivet eller udvalgt og arrangeret af en enkelt aktør i et katalog
-      <td>
       <td>http://www.w3.org/ns/dcat#Resource
       <td> ja
       <td>catalogued resource 
@@ -6464,20 +6470,17 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
       <td>datakatalog
       <td>katalog som indeholder metadata om datarelaterede ressoucer
       <td>
-      <td>
       <td> ja
       <td>data catalog 
      <tr>
       <td>datatjeneste
       <td>websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer
-      <td>
       <td>http://www.w3.org/ns/dcat#DataService
       <td> ja
       <td>data service 
      <tr>
       <td>distribution
       <td>specifik repræsentation af et datasæt
-      <td>
       <td>http://www.w3.org/ns/dcat#Distribution
       <td> ja
       <td>distribution 
@@ -6485,48 +6488,41 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
       <td>serialisering
       <td>metode til at konvertere en datastruktur eller et objekt til et format der kan lagres eller sendes i et computermiljø
       <td>
-      <td>
       <td> nej
       <td>serialization 
      <tr>
       <td>adgangsadresse
       <td>URL for en ressource som giver adgang til en distribution af datasættet
-      <td>
       <td>http://www.w3.org/ns/dcat#accessURL
       <td> ja
       <td>access address
      <tr>
       <td>download-URL
       <td>URL til fil der kan downloades i et bestemt format
-      <td>
       <td>http://www.w3.org/ns/dcat#downloadURL
       <td> ja
       <td>download URL 
      <tr>
       <td>datasæt
       <td>samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde, som er til rådighed for adgang eller download i en eller flere repræsentationer
-      <td>
       <td>http://www.w3.org/ns/dcat#Dataset
       <td> ja
       <td>dataset 
      <tr>
       <td>datasætserie
       <td>en samling af datasæt der udgives separat, men deler egenskaber som grupperer dem
-      <td>
       <td>https://www.w3.org/ns/dcat#DatasetSeries
       <td> ja
       <td>dataset series
      <tr>
       <td>begreb
       <td>en idé eller en forestilling; en tankeenhed
-      <td>
       <td>http://www.w3.org/2004/02/skos/core# 
       <td> nej
       <td>concept 
      <tr>
       <td>begrebssystem
       <td>samling af ét eller flere begreber, samt eventuelt også udsagn om de indbyrdes semantiske relationer mellem disse begreber
-      <td>
       <td>http://www.w3.org/2004/02/skos/core# 
       <td> nej
       <td>concept scheme 
@@ -6534,13 +6530,11 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
       <td>bytestørrelse
       <td>størrelsen af en distribution angivet i bytes
       <td>
-      <td>
       <td> nej
       <td>bytesize 
      <tr>
       <td>sprog
       <td>system bestående af tegn, symboler, lyde, gestikulation eller regler anvendt i kommunikation
-      <td>
       <td>http://purl.org/dc/terms/
       <td> nej
       <td>language 
@@ -6548,41 +6542,35 @@ Eksemplerne er serialiseret som hhv. Turtle (.TTL) og RDF/XML (.RDF), men kan ko
       <td>datasætskaber
       <td>aktør der er primært ansvarlig for datasættets skabelse
       <td>
-      <td>
       <td> ja
       <td>dataset creator 
      <tr>
       <td>skaber
       <td>entitet som er ansvarlig for ressourcens skabelse
-      <td>
       <td>http://purl.org/dc/terms/
       <td> nej
       <td>creator 
      <tr>
       <td>udgiver
       <td>entitet som er ansvarlig for at gøre ressourcen tilgængelig
-      <td>
       <td>http://purl.org/dc/terms/
       <td> nej
       <td>publisher 
      <tr>
       <td>aktør
       <td>objekt, der deltager i en aktivitet
-      <td>
       <td>FORVIR Topontologi
       <td> nej
       <td>agent 
      <tr>
       <td>format
       <td>en ressources filformat, fysiske medium eller dimensioner
-      <td>
       <td>http://purl.org/dc/terms/
       <td> nej
       <td>format 
      <tr>
       <td>hjemmeside
       <td>websted for en ressource som udgøres af en primær webside samt en række indbyrdes forbundne websider
-      <td>
       <td>
       <td> nej
       <td>homepage 
