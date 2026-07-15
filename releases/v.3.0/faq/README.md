@@ -41,9 +41,7 @@ Følgende egenskaber er obligatoriske:
 - beskrivelse (description) -
 - udgiver (publisher) ELLER datasætansvarlig organisation DK
 
-Se også denne oversigt:
-https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory
-og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger-af-dcat-ap-dk
+For diagramvisning se: [https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#forskellige-visninger-af-dcat-ap-dk](https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#forskellige-visninger-af-dcat-ap-dk)
 
 ### Hvilke egenskaber anbefales til beskrivelse af datasæt?
 Alle egenskaber er opmærket med deres kravniveau (obligatorisk, anbefalet eller valgfri).
@@ -68,9 +66,6 @@ Følgende egenskaber anbefales:
 - udgivelsesdato (release date), 
 - seneste ændringsdato (update/ modification date)
 
-Se også denne oversigt: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/views/mandatory%2Brecommended
-og https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#forskellige-visninger-af-dcat-ap-dk
-
 ### Hvilke egenskaber til beskrivelse af klassen X indeholder DCAT-AP-DK? 
 DCAT og DCAT-AP har som det overordnede formål at beskrive _datasæt_ og _datakataloger_ og relationerne til øvrige centrale forretningsobjekter. Disse forretningsobjekter vil være defineret i selvstændige kernemodeller (RDF-vokabularer) og foldes ud dér med tilhørende egenskaber. Det centrale forretningsobjekt fra en ekstern kernemodel kan indgå i en given anvendelsesprofil og derved skabes der sammenhæng til de bagvedliggende kernemodeller og øvrige egenskaber derfra kan hentes ind efter behov.
 
@@ -86,7 +81,7 @@ DCAT, DCAT-AP og de øvrige modeller der udvikles i regi af EU SEMIC (The Semant
 Som metamodel anvendes RDF (Resource Description Framework).
 
 Se oversigten her for at få et overblik over hvilke kernemodeller (RDF-vokabularer) der sammensættes i DCAT-AP-DK:
-https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#namespaces
+https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#namespaces
 
 
 ### Kan man tilføje yderligere egenskaber til beskrivelse af datasæt?
@@ -103,7 +98,7 @@ Når egenskaber såsom dct:title og dct:description har multipliciteten en-til-m
   dct:title "Dataset 001"@en ;
   dct:title "Datasæt 001"@da ; 
   
-### Hvorfor kan jeg kun se de danske attributbetegnelser når jeg åbner eap/xmi-distributionen med Sparx EA?
+### Hvorfor kan jeg kun se de danske attributbetegnelser når jeg åbner qea/xmi-distributionen med Sparx EA?
 Både UML-navn og dansk alias er registreret for alle modelelementer (og alle elementer er forsynes med prefLabel (da) og prefLabel (en).)
 Dog skal man selv indstille Sparx EA til enten at vise UML-navn eller alias - eller begge dele. Se evt. tips og tricks til Sparx EA på dette link: https://docs.google.com/document/d/14oSR_QnLja8LuUbpsNE2FnV-22CK-TzNG1xqwIlp6Jo/edit?usp=sharing
 
@@ -115,39 +110,39 @@ Anvendelse af stereotyperne 'Optional', 'Recommended' og 'Mandatory' er  fastlag
 ### Hvordan udtrykkes licenser og rettighedsudsagn?
 
 På kataloget (dcat:Catalog) anvendes følgende:
-- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-licens-license
-- dcc:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-rettigheder-rights
+- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#egenskab-licens-license
+- dcc:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#egenskab-rettigheder-rights
 
 På datasættet (dcat:Dataset)  anvendes følgende:
-- dct:accessRights -  https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-adgangsrettigheder-access-rights
+- dct:accessRights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#egenskab-adgangsrettigheder-access-rights
 
 På distributionen (dcat:Distributionen) anvendes følgende:
-- dct:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-rettigheder-rights%E2%91%A0
-- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-licens-license%E2%91%A0
-- odrl:hasPolicy - https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#egenskab-har-politik-has-policy
+- dct:rights -  https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#egenskab-rettigheder-rights%E2%91%A0
+- dct:license - https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#egenskab-licens-license%E2%91%A0
+- odrl:hasPolicy - https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#egenskab-har-politik-has-policy
 
-Rettighedsudsagnet beskrives med klassen dct:RightsStatement: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-rettighedsudsagn-rights-statement
+Rettighedsudsagnet beskrives med klassen dct:RightsStatement: https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#klasse-rettighedsudsagn-rights-statement
  
-Ift. adgangsrettigheder kan klassifikationen Adgangsrettigheder anvendes: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#adgangsrettigheder
+Ift. adgangsrettigheder kan klassifikationen Adgangsrettigheder anvendes: https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#adgangsrettigheder
 
-Læs mere om anvendelse af ovenstående egenskaber i DCAT-AP-DK og her: https://www.w3.org/TR/vocab-dcat-2/#license-rights 
+Læs mere om anvendelse af ovenstående egenskaber i DCAT-AP-DK og her: https://www.w3.org/TR/vocab-dcat-3/#license-rights 
 
 ## DATAKVALITET
 
 ### Hvordan sikrer man god datakvalitet i de udgivne datasæt
-Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet) (Vejledning til deklaration af datasæt med kernedimensioner vers. 1.0.0) anvender også DQV.
+Til at beskrive kvalitetsrelaterede informationer af DCAT-datasæt og -distributioner anvendes [Data on the Web Best Practices: Data Quality Vocabulary](https://www.w3.org/TR/vocab-dqv/). [Fælles sprog for datakvalitet](vhttps://arkitektur.digst.dk/FC3A6lles-sprog-for-datakvalitet) anvender også DQV.
 
-Læs mere her: https://www.w3.org/TR/vocab-dcat-2/#quality-information; https://www.w3.org/TR/vocab-dqv/; https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet;  https://github.com/w3c/dxwg/wiki/Quality-documentation
+Læs mere her: https://www.w3.org/TR/vocab-dcat-3/#quality-information; https://www.w3.org/TR/vocab-dqv/; [https://arkitektur.digst.dk/metoder/faelles-sprog-datakvalitet](https://arkitektur.digst.dk/FC3A6lles-sprog-for-datakvalitet);  https://github.com/w3c/dxwg/wiki/Quality-documentation
 
 ### Hvordan kan man understøtte god datakvalitet i DCAT-metadatabeskrivelser?
 Ved hjælp af SHACL-implementeringen af den danske anvendelsesprofil er det muligt at validere indholdet af en given DCAT-metadatabeskrivelse iht. DCAT-AP-DK og adressere flere kernekvalitetsdimensioner. Hvis den obligatoriske information mangler eller hvis obligatoriske, anbefalede eller valgfrie elementer er ikke er angivet korrekt, kan en validator baseret på SHACL-indholdet give relevante valideringsresultater og beskeder.   
 
-Læs mere her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/validation
+Læs mere her: https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0/validation
 
 ## BESKRIVELSE AF PERIODER
 
 ### Hvad er forskellen mellem 'startdato og 'har begyndelse', samt 'slutdato' og 'har slutning' ift. en periode?
-Klassen Periode har følgende fire egenskaber: Se også: https://digst.github.io/DCAT-AP-DK/releases/v.2.0/docs/#klasse-periode-periodoftime
+Klassen Periode har følgende fire egenskaber: Se også: https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#klasse-periode-periodoftime
 - Egenskab: startdato (start date)
 - Egenskab: slutdato (end date)
 - Egenskab: har begyndelse (beginning)
@@ -161,36 +156,31 @@ I den danske profilering af DCAT er det valgt i videst muligt omfang at videref�
 ## TIDSSERIER og VERSIONER
 
 ### Hvordan beskriver man tidsserier?
-Se issueliste: https://github.com/digst/DCAT-AP-DK/issues/24#issuecomment-775009478
-Læs mere her: https://joinup.ec.europa.eu/release/dcat-ap-how-model-dataset-series og
-https://github.com/w3c/dxwg/issues/868
-Se eksempler her: https://github.com/w3c/dxwg/wiki/Examples-on-dataset-series
+Der er med version 3 af DCAT (og DCAT-AP-DK) blevet indført datasætserier, som er bl.a. er egnede til beskrivelse af tidsserier, se mere her: https://digst.github.io/DCAT-AP-DK/releases/v.3.0/docs/#datastserie
 
 ### Hvordan skal versioner beskrives?
-Læs mere her: https://github.com/w3c/dxwg/wiki/Dataset-(and-other-DCAT)-versioning
-
-Det er et spørgsmål der behandles i DCAT-gruppen, og emnet forventes at blive behandles i DCAT 3.
+Læs mere her: https://www.w3.org/TR/vocab-dcat-3/#dataset-versions
 
 ## ADGANG TIL DATA
 
 ### Hvordan angiver man hvordan brugeren får adgang til datasættet?
-- Destinationsside (på dcat:Resource): Se https://www.w3.org/TR/vocab-dcat-2/#Property:resource_landing_page 
+- Destinationsside (på dcat:Resource): Se https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page 
 En destinationsside er en webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information.
 
-- Adgangs-URL (på dcat:Distribution): Se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_url
+- Adgangs-URL (på dcat:Distribution): Se https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url
 En adgangs-URL er en URL for en ressource som giver adgang til en distribution af datasættet. Fx, destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben download-URL foretrækkes.
 
-- Dataadgangstjeneste (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_access_service
+- Dataadgangstjeneste (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_service
 Et websted eller endpoint der giver adgang til distributionen af datasættet. dcat:accessService BØR anvendes til at angive et link til en beskrivelse af en dcat:DataService som kan give adgang til distributionen.
 
-- Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-2/#Property:distribution_download_url
+- Download-Url (på dcat:Distribution): se https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url
 Download-Url er en URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dct:format og/eller dcat:mediaType. dcat:download-URL BØR anvendes til angivelse af den adresse hvor distributionen er tilgængelig direkte, typisk gennem et HTTP Get request
 
 ![DCAT-Datasæt-distribution](https://www.w3.org/2011/gld/wiki/images/2/26/Dcat-distribution-proposal.png "DCAT-AP 2.0.1 UML Diagram")
 
 OBS: Hvis en eller flere distributioner kun er tilgængelige via en destinationsside (dvs. en URL til direkte download er ikke kendt), så bør destinationssidelinket gentages som adgangsadresse for en distribution (som vist på illustrationen)
 
-Se eksempler her: https://www.w3.org/TR/vocab-dcat-2/#example-landing-page
+Se eksempler her: https://www.w3.org/TR/vocab-dcat-3/#example-landing-page
 
 ### Hvad er forskellen mellem en distribution og en datatjeneste?
 Se denne udgivelse om emnet: [Usage guide on Datasets, Distributions and Data Services](https://github.com/SEMICeu/DCAT-AP/blob/2.1.0-draft/releases/2.1.0/usageguide-dataset-distribution-dataservice.md) (Bemærk dokumentet er i udkast og en del af den kommende DCAT-AP 2.1.0 release)
@@ -207,7 +197,7 @@ DCAT-AP-DK giver mulighed for beskrivelse af datasæt og datakataloger generelt 
 
 
 ### Hvor finder jeg eksempler på anvendelse af DCAT, DCAT-AP og DCAT-AP-dk?
-Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples
+Se https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0/examples
 
 ### Findes der andre generelle specifikationer til beskrivelse af datasæt?
 Ja, se fx.
@@ -231,7 +221,6 @@ Med del 7 - ISO/IEC 11179-7:2019(en) Information technology — Metadata registr
 - [DCAT-AP to Schema.org mapping](https://ec-jrc.github.io/dcat-ap-to-schema-org/) (JRC)
 - [DataCite to DCAT-AP mapping](https://ec-jrc.github.io/datacite-to-dcat-ap/) (JRC)
 - [bregDCAT-AP-DK](https://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-bregdcat-ap/release/200) 
-- [napDCAT-AP](https://www.its-platform.eu/highlights/progressing-metadata-national-access-points) (NAP Working Group -transport-related data) under development
 
 Ref: https://www.w3.org/2017/dxwg/wiki/Main_Page#Mappings_to.2Ffrom_DCAT_.28and_DCAT_application_profiles.29
 
@@ -249,14 +238,14 @@ Se yderligere vejledninger og eksempler med JSON-LD her:
 
 RDFa (Resource Description Framework in attributes) tilføjer et sæt attributniveauudvidelser til HTML, XHTML og forskellige XML-baserede dokumenttyper til indlejring af metadata i webdokumenter. Læs mere om RDFa her: https://en.wikipedia.org/wiki/RDFa. Se yderligere vejledninger og eksempler med RDFa her: 
 - https://theodi.org/article/marking-up-your-dataset-with-dcat/
-- https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.2.0/examples/RDFa
+- https://github.com/digst/DCAT-AP-DK/tree/master/releases/v.3.0/examples/RDFa
 
 
 ### Hvor kan jeg finde mere information om DCAT og DCAT-AP?
 
 - Webkurser på EU Academy: https://academy.europa.eu/courses/?search=dcat
 - DCAT-AP på JoinUp:  https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe
-- DCAT: https://www.w3.org/TR/vocab-dcat-2/
+- DCAT: https://www.w3.org/TR/vocab-dcat-3/
 
 <!-- ### Hvilke applikationer understøtter DCAT? Tilføjes senere-->
 
